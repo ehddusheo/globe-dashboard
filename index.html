@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Industry Intelligence Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-container">
+            <div class="loader-ring"></div>
+            <div class="loader-text">GLOBAL DATABASE INITIALIZING</div>
+            <div class="loader-sub">Connecting to global database...</div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <div id="app" style="opacity:0">
+        <header id="header">
+            <div class="header-left">
+                <span class="logo-icon">&#127760;</span>
+                <h1>GLOBAL INDUSTRY <span class="accent">INTELLIGENCE</span></h1>
+            </div>
+            <div class="header-stats">
+                <div class="stat-item"><span class="stat-value" data-target="195">0</span><span class="stat-label">COUNTRIES</span></div>
+                <div class="stat-item"><span class="stat-value" data-target="12">0</span><span class="stat-label">INDUSTRIES</span></div>
+                <div class="stat-item"><span class="stat-value" data-target="2340">0</span><span class="stat-label">DATA POINTS</span></div>
+                <div class="stat-item"><span class="stat-value" data-target="104">0</span><span class="stat-label">TRILLION USD</span></div>
+            </div>
+            <div class="header-right">
+                <div class="live-dot"><span class="dot"></span>LIVE</div>
+                <div id="clock"></div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <aside id="left-panel" class="glass-panel">
+                <div class="panel-section">
+                    <h2 class="section-title">&#128269; 국가 선택</h2>
+                    <input type="text" id="country-search" class="search-input" placeholder="국가 검색..." autocomplete="off">
+                    <div id="search-results" class="search-results"></div>
+                    <select id="country-select" class="styled-select">
+                        <option value="">-- 국가를 선택하세요 --</option>
+                    </select>
+                </div>
+                <div class="panel-section">
+                    <h2 class="section-title">&#128188; 업종 선택</h2>
+                    <div id="industry-grid" class="industry-grid"></div>
+                </div>
+                <div id="quick-stats" class="quick-stats"></div>
+            </aside>
+
+            <div id="globe-container"></div>
+
+            <aside id="right-panel" class="glass-panel hidden">
+                <button id="close-panel" class="close-btn">&times;</button>
+                <div id="data-content"></div>
+            </aside>
+        </main>
+
+        <footer id="ticker">
+            <div class="ticker-wrap">
+                <div class="ticker-content" id="ticker-content"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/globe.gl@2.27.2/dist/globe.gl.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
