@@ -465,5 +465,45 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
 .exp-btn { flex: 1; padding: 10px; border-radius: 8px; cursor: pointer; text-align: center; font: 500 13px var(--font-body); transition: all 0.2s; border: 1px solid rgba(0,240,255,0.1); background: rgba(0,240,255,0.03); color: var(--text); }
 .exp-btn:hover { border-color: rgba(0,240,255,0.25); background: rgba(0,240,255,0.08); }
 
+/* --- Wizard: API Key & Divider --- */
+.wz-divider { height: 1px; background: rgba(0,240,255,0.08); margin: 20px 0; }
+.wz-api-key-wrap { position: relative; }
+.wz-api-key-wrap .wz-input { padding-right: 42px; }
+.wz-api-toggle {
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    background: none; border: none; cursor: pointer; font-size: 16px;
+    color: rgba(208,216,255,0.4); transition: color 0.2s; padding: 4px;
+}
+.wz-api-toggle:hover { color: var(--text); }
+.wz-api-hint { font: 400 11px var(--font-body); color: rgba(208,216,255,0.3); margin-top: 6px; line-height: 1.5; }
+.wz-api-hint a { color: var(--primary); text-decoration: none; }
+.wz-api-hint a:hover { text-decoration: underline; }
+
+/* --- AI Badge variant --- */
+.exp-badge.ai-badge {
+    color: #ffd700; border-color: rgba(255,215,0,0.3);
+    background: rgba(255,215,0,0.08);
+    text-shadow: 0 0 8px rgba(255,215,0,0.3);
+}
+
+/* --- Executive Summary --- */
+.exp-executive-summary {
+    padding: 14px; border-radius: 10px; margin-bottom: 14px;
+    background: linear-gradient(135deg, rgba(255,215,0,0.05), rgba(0,240,255,0.05));
+    border: 1px solid rgba(255,215,0,0.12);
+}
+.exp-summary-label {
+    font: 600 11px var(--font-title); color: #ffd700; letter-spacing: 1px;
+    margin-bottom: 8px; text-transform: uppercase;
+}
+.exp-summary-text { font: 400 13px var(--font-body); color: var(--text); line-height: 1.6; }
+
+/* --- Accordion Verdict --- */
+.acc-verdict {
+    font: 500 12px var(--font-body); color: #ffd700;
+    padding: 6px 10px; margin-bottom: 8px; border-radius: 6px;
+    background: rgba(255,215,0,0.05); border-left: 2px solid rgba(255,215,0,0.3);
+}
+
 /* Animations */
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }

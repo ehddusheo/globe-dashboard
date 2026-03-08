@@ -569,6 +569,8 @@ const EA = {
     step: 0,              // wizard step (0-2)
     profile: {},          // collected company profile
     results: null,        // analysis results
+    aiData: null,         // Gemini AI response
+    aiPromise: null,      // pending AI call
     animTimer: null,      // animation timer reference
 
     // Korea ISO ID
@@ -824,7 +826,31 @@ function renderStep3(el) {
             <div class="wz-summary-row"><span>우선순위</span><span class="wz-summary-val">${priLabels}</span></div>
             <div class="wz-summary-row"><span>관심 지역</span><span class="wz-summary-val">${regLabels}</span></div>
         </div>
-        <div class="wz-analyze-sub">149개국 × ${Object.keys(INDUSTRIES).length}개 업종 데이터를 AI가 분석합니다</div>`;
+        <div class="wz-divider"></div>
+        <div class="wz-field">
+            <label class="wz-label">🔑 Gemini API Key (선택사항)</label>
+            <div class="wz-api-key-wrap">
+                <input type="password" class="wz-input wz-api-key" id="wz-api-key"
+                       placeholder="AI 맞춤 분석을 원하면 입력하세요"
+                       value="${localStorage.getItem('gemini_api_key') || ''}" autocomplete="off">
+                <button class="wz-api-toggle" id="wz-api-toggle" type="button">👁</button>
+            </div>
+            <div class="wz-api-hint">
+                <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a>에서
+                무료 발급 가능 · Key는 브라우저에만 저장됩니다
+            </div>
+        </div>
+        <div class="wz-analyze-sub">149개국 × ${Object.keys(INDUSTRIES).length}개 업종 데이터를 ${localStorage.getItem('gemini_api_key') ? 'Gemini AI가' : 'AI가'} 분석합니다</div>`;
+    // API key bindings
+    const apiInput = el.querySelector('#wz-api-key');
+    apiInput.addEventListener('input', e => {
+        const v = e.target.value.trim();
+        if (v) localStorage.setItem('gemini_api_key', v);
+        else localStorage.removeItem('gemini_api_key');
+    });
+    el.querySelector('#wz-api-toggle').addEventListener('click', () => {
+        apiInput.type = apiInput.type === 'password' ? 'text' : 'password';
+    });
 }
 
 // ---- SCORING ALGORITHM ----
@@ -875,6 +901,139 @@ function determineStrategy(profile, country) {
     return 'export';
 }
 
+// ---- GEMINI AI ----
+const GEMINI_RESPONSE_SCHEMA = {
+    type: "object",
+    properties: {
+        executive_summary: { type: "string" },
+        countries: {
+            type: "array",
+            items: {
+                type: "object",
+                properties: {
+                    rank: { type: "integer" },
+                    country_name: { type: "string" },
+                    opportunities: { type: "array", items: { type: "string" } },
+                    risks: { type: "array", items: { type: "string" } },
+                    one_line_verdict: { type: "string" }
+                },
+                required: ["rank", "country_name", "opportunities", "risks", "one_line_verdict"]
+            }
+        },
+        strategy: {
+            type: "object",
+            properties: {
+                reasoning: { type: "string" },
+                timeline: {
+                    type: "array",
+                    items: {
+                        type: "object",
+                        properties: {
+                            phase: { type: "string" },
+                            period: { type: "string" },
+                            actions: { type: "array", items: { type: "string" } }
+                        },
+                        required: ["phase", "period", "actions"]
+                    }
+                }
+            },
+            required: ["reasoning", "timeline"]
+        }
+    },
+    required: ["executive_summary", "countries", "strategy"]
+};
+
+function buildGeminiPrompt(results) {
+    const profile = results.profile;
+    const indInfo = INDUSTRIES[profile.industry];
+    const top5Data = results.top5.map((t, i) => ({
+        rank: i + 1,
+        name: t.country.name,
+        nameEn: t.country.nameEn,
+        region: t.country.region,
+        income: t.country.income,
+        gdp_billion_usd: t.country.gdp,
+        population_million: t.country.pop,
+        gdp_growth_pct: t.country.gdp_growth_pct,
+        inflation_pct: t.country.inflation_pct,
+        unemployment_pct: t.country.unemployment_pct,
+        trade_pct_gdp: t.country.trade_pct_gdp,
+        internet_users_pct: t.country.internet_users_pct,
+        industry: {
+            name: indInfo.nameEn,
+            market_size_billion: t.industry.size,
+            growth_pct: t.industry.growth,
+            potential_score: t.industry.potential,
+            global_rank: t.industry.rank,
+        },
+        ces_score: t.ces,
+        dimension_scores: t.scores,
+        recommended_strategy: t.strategy,
+    }));
+
+    const systemInstruction = `당신은 한국 기업의 해외진출을 돕는 글로벌 시장 분석 전문가입니다.
+주어진 기업 프로필과 상위 5개 유망국가 데이터를 분석하여, 각 국가별 구체적이고 실행 가능한 기회요인과 리스크요인, 그리고 1위 국가에 대한 진출 전략을 JSON 형식으로 작성하세요.
+
+분석 원칙:
+- 해당 기업의 업종, 규모, 경험 수준에 맞는 구체적 조언을 제공하세요
+- 일반적인 내용이 아닌, 해당 국가와 업종에 특화된 분석을 제공하세요
+- 각 기회/리스크는 1~2문장으로 구체적 데이터나 트렌드를 포함하세요
+- 전략 추천은 기업 규모와 경험에 맞는 현실적인 방안이어야 합니다
+- 모든 텍스트는 한국어로 작성하세요`;
+
+    const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === profile.revenue)?.label || '미입력';
+    const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === profile.employees)?.label || '미입력';
+    const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === profile.experience)?.label || '처음';
+    const priLabels = profile.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ');
+
+    const userMessage = `## 기업 프로필
+- 회사명: ${profile.companyName || '(미입력)'}
+- 업종: ${indInfo?.name || ''} (${indInfo?.nameEn || ''})
+- 연 매출: ${revLabel}
+- 임직원: ${empLabel}
+- 해외경험: ${expLabel}
+- 우선순위: ${priLabels}
+- 관심지역: ${profile.regions.includes('all') ? '전체' : profile.regions.join(', ')}
+
+## 상위 5개 유망국가 데이터
+${JSON.stringify(top5Data, null, 2)}
+
+위 데이터를 바탕으로 각 국가별 기회 3개, 리스크 3개, 한줄평, 그리고 1위 국가에 대한 진출 전략(이유 + 3단계 타임라인)을 분석해주세요.`;
+
+    return { systemInstruction, userMessage };
+}
+
+async function callGeminiAPI(results) {
+    const apiKey = localStorage.getItem('gemini_api_key');
+    if (!apiKey) return null;
+
+    const { systemInstruction, userMessage } = buildGeminiPrompt(results);
+
+    const body = {
+        system_instruction: { parts: [{ text: systemInstruction }] },
+        contents: [{ parts: [{ text: userMessage }] }],
+        generationConfig: {
+            response_mime_type: "application/json",
+            response_schema: GEMINI_RESPONSE_SCHEMA,
+            temperature: 0.7,
+            maxOutputTokens: 4096,
+        }
+    };
+
+    const resp = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+    );
+
+    if (!resp.ok) throw new Error(`Gemini API ${resp.status}`);
+
+    const data = await resp.json();
+    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (!text) throw new Error('Empty Gemini response');
+
+    return JSON.parse(text);
+}
+
 function runAnalysis() {
     const indKey = EA.profile.industry;
     const priorities = EA.profile.priorities;
@@ -920,6 +1079,8 @@ function startAnalysis() {
     document.getElementById('expansion-wizard').classList.add('hidden');
     document.getElementById('expansion-cta').style.display = 'none';
     EA.results = null;
+    EA.aiData = null;
+    EA.aiPromise = null;
 
     // Hide existing panels
     document.getElementById('left-panel').style.opacity = '0';
@@ -979,6 +1140,8 @@ function startAnalysis() {
             clearInterval(ringInterval);
             globe.ringsData([]);
             EA.results = runAnalysis();
+            // Fire Gemini API call in parallel with remaining animation
+            EA.aiPromise = callGeminiAPI(EA.results).catch(e => { console.warn('Gemini:', e); return null; });
             statusEl.textContent = '유망 시장 선별 완료';
             barEl.style.width = '85%';
 
@@ -1016,9 +1179,18 @@ function startAnalysis() {
                 }));
                 globe.labelsData(labels).labelText('text').labelColor('color').labelSize('size').labelDotRadius(0.3).labelAltitude(0.06);
 
-                // Final: show report
-                setTimeout(() => {
+                // Final: await AI + show report
+                setTimeout(async () => {
                     barEl.style.width = '100%';
+                    if (EA.aiPromise) {
+                        statusEl.textContent = 'AI 분석 보고서 생성중...';
+                        try {
+                            EA.aiData = await Promise.race([
+                                EA.aiPromise,
+                                new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 15000))
+                            ]);
+                        } catch (e) { console.warn('AI fallback:', e); EA.aiData = null; }
+                    }
                     setTimeout(() => {
                         overlay.classList.add('hidden');
                         showExpansionReport();
@@ -1042,9 +1214,11 @@ function showExpansionReport() {
 
     let html = '';
 
+    const ai = EA.aiData; // null if no AI response
+
     // Header
     html += `
-        <div class="exp-badge">AI EXPANSION REPORT</div>
+        <div class="exp-badge ${ai ? 'ai-badge' : ''}">${ai ? '✨ AI-POWERED REPORT' : 'AI EXPANSION REPORT'}</div>
         <div class="exp-title">해외진출 전략 보고서</div>
         <div class="exp-meta">${companyName} · ${indInfo?.name || ''} · ${r.date}</div>
         <div class="exp-scan-badge">🌍 ${r.all.length}개국 데이터 분석 완료</div>
@@ -1060,6 +1234,15 @@ function showExpansionReport() {
                 <span class="pick-sub">${shortRegionLabel(top1.country.region)} · ${top1.country.nameEn}</span>
             </div>
         </div>`;
+
+    // Executive summary (AI only)
+    if (ai?.executive_summary) {
+        html += `
+        <div class="exp-executive-summary">
+            <div class="exp-summary-label">AI 분석 요약</div>
+            <p class="exp-summary-text">${ai.executive_summary}</p>
+        </div>`;
+    }
 
     // Gauge
     const gaugeR = 40, gaugeC = 2 * Math.PI * gaugeR;
@@ -1105,25 +1288,35 @@ function showExpansionReport() {
 
     // Strategy for #1
     const strat = EA.STRATEGIES[top1.strategy];
+    const aiStrat = ai?.strategy;
     html += `
         <div class="exp-section-title">🎯 추천 진출 전략 (${top1.country.name})</div>
         <div class="exp-strategy">
             <div class="strategy-head">
                 <span class="strategy-icon">${strat.icon}</span>
-                <div><div class="strategy-name">${strat.name}</div><div class="strategy-desc">${strat.desc}</div></div>
+                <div><div class="strategy-name">${strat.name}</div><div class="strategy-desc">${aiStrat?.reasoning || strat.desc}</div></div>
             </div>
-            <div class="exp-timeline">
+            <div class="exp-timeline">`;
+    if (aiStrat?.timeline?.length > 0) {
+        aiStrat.timeline.forEach(ph => {
+            html += `<div class="timeline-phase"><span class="phase-period">${ph.period}</span><span class="phase-action">${ph.actions.join('<br>')}</span></div>`;
+        });
+    } else {
+        html += `
                 <div class="timeline-phase"><span class="phase-period">0-6개월</span><span class="phase-action">시장조사<br>파트너 탐색</span></div>
                 <div class="timeline-phase"><span class="phase-period">6-18개월</span><span class="phase-action">시장 진입<br>초기 매출</span></div>
-                <div class="timeline-phase"><span class="phase-period">18-36개월</span><span class="phase-action">거점 확장<br>현지화</span></div>
-            </div>
-        </div>
-        <div class="exp-divider"></div>`;
+                <div class="timeline-phase"><span class="phase-period">18-36개월</span><span class="phase-action">거점 확장<br>현지화</span></div>`;
+    }
+    html += `</div></div><div class="exp-divider"></div>`;
 
     // Accordion: Opportunities & Risks for each TOP 5
     html += `<div class="exp-section-title">🚀 기회 vs ⚠️ 리스크</div>`;
     r.top5.forEach((t, i) => {
         const ind = t.industry;
+        const aiC = ai?.countries?.find(c => c.rank === i + 1);
+        const oppos = aiC?.opportunities || ind.oppo || [];
+        const risks = aiC?.risks || ind.risk || [];
+        const verdict = aiC?.one_line_verdict;
         html += `
             <div class="exp-accordion-item ${i===0?'open':''}">
                 <div class="exp-accordion-head">
@@ -1134,10 +1327,11 @@ function showExpansionReport() {
                 </div>
                 <div class="exp-accordion-body">
                     <div class="exp-accordion-inner">
+                        ${verdict ? `<div class="acc-verdict">${verdict}</div>` : ''}
                         <div style="font:500 11px var(--font-body);color:var(--primary);margin-bottom:4px">기회</div>
-                        ${(ind.oppo||[]).map(o => `<div class="acc-oppo-item">${o}</div>`).join('')}
+                        ${oppos.map(o => `<div class="acc-oppo-item">${o}</div>`).join('')}
                         <div style="font:500 11px var(--font-body);color:var(--accent);margin-top:8px;margin-bottom:4px">리스크</div>
-                        ${(ind.risk||[]).map(r => `<div class="acc-risk-item">${r}</div>`).join('')}
+                        ${risks.map(r => `<div class="acc-risk-item">${r}</div>`).join('')}
                         <div class="acc-mini-grid">
                             <div class="acc-mini-stat"><span class="acc-mini-val">${t.country.gdp >= 1000 ? (t.country.gdp/1000).toFixed(1)+'T' : t.country.gdp+'B'}</span><span class="acc-mini-label">GDP</span></div>
                             <div class="acc-mini-stat"><span class="acc-mini-val">${(t.country.gdp_growth_pct||0).toFixed(1)}%</span><span class="acc-mini-label">GDP성장률</span></div>
