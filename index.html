@@ -60,6 +60,44 @@
             </aside>
         </main>
 
+        <!-- Expansion Advisor CTA -->
+        <button id="expansion-cta" class="expansion-cta-btn">
+            <span class="cta-icon">🚀</span>
+            <span class="cta-text">AI 수출전략 분석</span>
+            <span class="cta-glow"></span>
+        </button>
+
+        <!-- Wizard Modal -->
+        <div id="expansion-wizard" class="expansion-wizard hidden">
+            <div class="wizard-backdrop"></div>
+            <div class="wizard-modal glass-panel">
+                <button class="close-btn wizard-close" id="wizard-close-btn">&times;</button>
+                <div class="wizard-steps" id="wizard-steps"></div>
+                <div class="wizard-content" id="wizard-content"></div>
+                <div class="wizard-nav">
+                    <button class="wizard-btn prev hidden" id="wizard-prev">← 이전</button>
+                    <button class="wizard-btn next" id="wizard-next">다음 →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analysis Overlay -->
+        <div id="analysis-overlay" class="analysis-overlay hidden">
+            <div class="analysis-hud">
+                <div class="analysis-status" id="analysis-status">글로벌 데이터베이스 연결중...</div>
+                <div class="analysis-progress">
+                    <div class="analysis-bar"><div class="analysis-bar-fill" id="analysis-bar"></div></div>
+                    <div class="analysis-count" id="analysis-count">0 / 149</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expansion Report Panel -->
+        <aside id="expansion-report" class="glass-panel expansion-panel hidden">
+            <button class="close-btn" id="close-expansion">&times;</button>
+            <div id="expansion-content"></div>
+        </aside>
+
         <footer id="ticker">
             <div class="ticker-wrap">
                 <div class="ticker-content" id="ticker-content"></div>

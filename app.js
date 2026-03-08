@@ -557,3 +557,766 @@ document.addEventListener('visibilitychange', () => {
         });
     }
 });
+
+
+// ============================================================
+//  EXPANSION ADVISOR — AI 수출전략 분석
+// ============================================================
+
+const EA = {
+    // State
+    mode: false,          // expansion mode active?
+    step: 0,              // wizard step (0-2)
+    profile: {},          // collected company profile
+    results: null,        // analysis results
+    animTimer: null,      // animation timer reference
+
+    // Korea ISO ID
+    KOREA_ID: '410',
+
+    // Revenue options
+    REVENUE_OPTIONS: [
+        { value: 'u10', label: '10억 미만' },
+        { value: 'u50', label: '10억 ~ 50억' },
+        { value: 'u200', label: '50억 ~ 200억' },
+        { value: 'u1000', label: '200억 ~ 1,000억' },
+        { value: 'o1000', label: '1,000억 이상' },
+    ],
+    EMPLOYEE_OPTIONS: [
+        { value: 'u10', label: '10명 이하' },
+        { value: 'u50', label: '11 ~ 50명' },
+        { value: 'u200', label: '51 ~ 200명' },
+        { value: 'u1000', label: '201 ~ 1,000명' },
+        { value: 'o1000', label: '1,000명 이상' },
+    ],
+    EXPERIENCE_OPTIONS: [
+        { value: 'none', label: '처음', desc: '해외사업 경험 없음' },
+        { value: 'some', label: '일부 경험', desc: '1~2개국 수출/진출' },
+        { value: 'many', label: '다수 경험', desc: '3개국 이상 진출' },
+    ],
+    PRIORITY_OPTIONS: [
+        { value: 'marketSize', label: '시장규모' },
+        { value: 'growth', label: '성장률' },
+        { value: 'potential', label: '잠재력' },
+        { value: 'stability', label: '경제안정성' },
+        { value: 'openness', label: '무역개방도' },
+        { value: 'digital', label: '디지털인프라' },
+    ],
+    REGION_OPTIONS: [
+        { value: 'all', label: '전체' },
+        { value: 'East Asia & Pacific', label: '동아시아' },
+        { value: 'Europe & Central Asia', label: '유럽' },
+        { value: 'North America', label: '북미' },
+        { value: 'Latin America & Caribbean', label: '남미' },
+        { value: 'Middle East & North Africa', label: '중동' },
+        { value: 'South Asia', label: '남아시아' },
+        { value: 'Sub-Saharan Africa', label: '아프리카' },
+    ],
+
+    // Strategy definitions
+    STRATEGIES: {
+        export: { icon: '🌐', name: '수출 & 이커머스', desc: '현지 유통망·온라인 플랫폼을 통한 제품 수출 중심 전략' },
+        partnership: { icon: '🤝', name: '현지 파트너십', desc: '합작투자·현지 파트너를 통한 시장 진입 전략' },
+        fdi: { icon: '🏢', name: '직접투자 (현지법인)', desc: '현지 법인 설립을 통한 본격 시장 공략 전략' },
+        digital: { icon: '📱', name: '디지털 퍼스트', desc: 'SaaS·앱·디지털 서비스 중심의 원격 진출 전략' },
+    },
+};
+
+// ---- INIT ADVISOR ----
+function initExpansionAdvisor() {
+    document.getElementById('expansion-cta').addEventListener('click', openWizard);
+    document.getElementById('wizard-close-btn').addEventListener('click', closeWizard);
+    document.getElementById('wizard-prev').addEventListener('click', wizardPrev);
+    document.getElementById('wizard-next').addEventListener('click', wizardNext);
+    document.getElementById('close-expansion').addEventListener('click', closeExpansionReport);
+    document.querySelector('.wizard-backdrop').addEventListener('click', closeWizard);
+}
+// Call init after DOM ready
+document.addEventListener('DOMContentLoaded', initExpansionAdvisor);
+
+// ---- WIZARD ----
+function openWizard() {
+    EA.mode = true;
+    EA.step = 0;
+    EA.profile = { companyName: '', industry: '', revenue: '', employees: '', experience: 'none', priorities: [], regions: ['all'] };
+    document.getElementById('expansion-wizard').classList.remove('hidden');
+    document.getElementById('expansion-cta').style.display = 'none';
+    renderWizardSteps();
+    renderWizardContent();
+}
+
+function closeWizard() {
+    document.getElementById('expansion-wizard').classList.add('hidden');
+    document.getElementById('expansion-cta').style.display = '';
+    EA.mode = false;
+}
+
+function wizardPrev() {
+    if (EA.step > 0) { EA.step--; renderWizardSteps(); renderWizardContent(); }
+}
+
+function wizardNext() {
+    if (EA.step === 2) { startAnalysis(); return; }
+    // Validation
+    if (EA.step === 0 && !EA.profile.industry) { flashField('.wz-ind-grid'); return; }
+    if (EA.step === 1 && EA.profile.priorities.length < 1) { flashField('.wz-chips'); return; }
+    EA.step++;
+    renderWizardSteps();
+    renderWizardContent();
+}
+
+function flashField(sel) {
+    const el = document.querySelector(sel);
+    if (!el) return;
+    el.style.boxShadow = '0 0 12px rgba(255,51,102,0.4)';
+    setTimeout(() => el.style.boxShadow = '', 1200);
+}
+
+function renderWizardSteps() {
+    const labels = ['기업정보', '전략설정', '확인'];
+    const container = document.getElementById('wizard-steps');
+    container.innerHTML = labels.map((l, i) => {
+        const cls = i < EA.step ? 'completed' : i === EA.step ? 'active' : '';
+        return `<div class="wizard-step ${cls}"><div class="step-circle">${i < EA.step ? '✓' : i+1}</div><div class="step-label">${l}</div></div>` +
+               (i < labels.length-1 ? `<div class="wizard-step-line ${i < EA.step ? 'active' : ''}"></div>` : '');
+    }).join('');
+    // Nav buttons
+    document.getElementById('wizard-prev').classList.toggle('hidden', EA.step === 0);
+    const nextBtn = document.getElementById('wizard-next');
+    nextBtn.textContent = EA.step === 2 ? '🔍 AI 분석 시작' : '다음 →';
+    if (EA.step === 2) { nextBtn.style.maxWidth = '100%'; } else { nextBtn.style.maxWidth = '200px'; }
+}
+
+function renderWizardContent() {
+    const container = document.getElementById('wizard-content');
+    if (EA.step === 0) renderStep1(container);
+    else if (EA.step === 1) renderStep2(container);
+    else renderStep3(container);
+}
+
+function renderStep1(el) {
+    el.innerHTML = `
+        <div class="wz-title">기업 기본 정보</div>
+        <div class="wz-field">
+            <label class="wz-label">회사명</label>
+            <input type="text" class="wz-input" id="wz-company" placeholder="예: 주식회사 테크원" value="${EA.profile.companyName}" autocomplete="off">
+        </div>
+        <div class="wz-field">
+            <label class="wz-label">대표 업종 *</label>
+            <div class="wz-ind-grid" id="wz-industry-grid"></div>
+        </div>
+        <div class="wz-field" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div>
+                <label class="wz-label">연 매출</label>
+                <select class="wz-input wz-select" id="wz-revenue">
+                    <option value="">선택</option>
+                    ${EA.REVENUE_OPTIONS.map(o => `<option value="${o.value}" ${EA.profile.revenue===o.value?'selected':''}>${o.label}</option>`).join('')}
+                </select>
+            </div>
+            <div>
+                <label class="wz-label">임직원 수</label>
+                <select class="wz-input wz-select" id="wz-employees">
+                    <option value="">선택</option>
+                    ${EA.EMPLOYEE_OPTIONS.map(o => `<option value="${o.value}" ${EA.profile.employees===o.value?'selected':''}>${o.label}</option>`).join('')}
+                </select>
+            </div>
+        </div>`;
+    // Industry grid
+    const grid = el.querySelector('#wz-industry-grid');
+    Object.entries(INDUSTRIES).forEach(([key, ind]) => {
+        const btn = document.createElement('div');
+        btn.className = 'wz-ind-btn' + (EA.profile.industry === key ? ' selected' : '');
+        btn.innerHTML = `<span class="wz-ind-icon">${ind.icon}</span>${ind.name}`;
+        btn.addEventListener('click', () => {
+            EA.profile.industry = key;
+            grid.querySelectorAll('.wz-ind-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+        });
+        grid.appendChild(btn);
+    });
+    // Bind inputs
+    el.querySelector('#wz-company').addEventListener('input', e => EA.profile.companyName = e.target.value);
+    el.querySelector('#wz-revenue').addEventListener('change', e => EA.profile.revenue = e.target.value);
+    el.querySelector('#wz-employees').addEventListener('change', e => EA.profile.employees = e.target.value);
+}
+
+function renderStep2(el) {
+    el.innerHTML = `
+        <div class="wz-title">수출 전략 설정</div>
+        <div class="wz-field">
+            <label class="wz-label">해외사업 경험</label>
+            <div class="wz-radio-group" id="wz-exp-group"></div>
+        </div>
+        <div class="wz-field">
+            <label class="wz-label">우선순위 (최대 3개 선택) *</label>
+            <div class="wz-chips" id="wz-priority-chips"></div>
+        </div>
+        <div class="wz-field">
+            <label class="wz-label">관심 지역</label>
+            <div class="wz-chips" id="wz-region-chips"></div>
+        </div>`;
+    // Experience radio
+    const expGroup = el.querySelector('#wz-exp-group');
+    EA.EXPERIENCE_OPTIONS.forEach(o => {
+        const btn = document.createElement('div');
+        btn.className = 'wz-radio' + (EA.profile.experience === o.value ? ' selected' : '');
+        btn.innerHTML = `<strong>${o.label}</strong><br><span style="font-size:11px;color:rgba(208,216,255,0.4)">${o.desc}</span>`;
+        btn.addEventListener('click', () => {
+            EA.profile.experience = o.value;
+            expGroup.querySelectorAll('.wz-radio').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+        });
+        expGroup.appendChild(btn);
+    });
+    // Priority chips
+    const priChips = el.querySelector('#wz-priority-chips');
+    EA.PRIORITY_OPTIONS.forEach(o => {
+        const chip = document.createElement('div');
+        chip.className = 'wz-chip' + (EA.profile.priorities.includes(o.value) ? ' selected' : '');
+        chip.textContent = o.label;
+        chip.addEventListener('click', () => {
+            const idx = EA.profile.priorities.indexOf(o.value);
+            if (idx >= 0) { EA.profile.priorities.splice(idx, 1); chip.classList.remove('selected'); }
+            else if (EA.profile.priorities.length < 3) { EA.profile.priorities.push(o.value); chip.classList.add('selected'); }
+        });
+        priChips.appendChild(chip);
+    });
+    // Region chips
+    const regChips = el.querySelector('#wz-region-chips');
+    EA.REGION_OPTIONS.forEach(o => {
+        const chip = document.createElement('div');
+        chip.className = 'wz-chip' + (EA.profile.regions.includes(o.value) ? ' selected' : '');
+        chip.textContent = o.label;
+        chip.addEventListener('click', () => {
+            if (o.value === 'all') {
+                EA.profile.regions = ['all'];
+                regChips.querySelectorAll('.wz-chip').forEach(c => c.classList.remove('selected'));
+                chip.classList.add('selected');
+            } else {
+                EA.profile.regions = EA.profile.regions.filter(v => v !== 'all');
+                const idx = EA.profile.regions.indexOf(o.value);
+                if (idx >= 0) { EA.profile.regions.splice(idx, 1); chip.classList.remove('selected'); }
+                else { EA.profile.regions.push(o.value); chip.classList.add('selected'); }
+                regChips.querySelector('.wz-chip').classList.remove('selected'); // remove 'all'
+                if (EA.profile.regions.length === 0) { EA.profile.regions = ['all']; regChips.querySelector('.wz-chip').classList.add('selected'); }
+            }
+        });
+        regChips.appendChild(chip);
+    });
+}
+
+function renderStep3(el) {
+    const indName = INDUSTRIES[EA.profile.industry]?.name || '미선택';
+    const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === EA.profile.revenue)?.label || '미선택';
+    const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === EA.profile.employees)?.label || '미선택';
+    const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === EA.profile.experience)?.label || '처음';
+    const priLabels = EA.profile.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ') || '미선택';
+    const regLabels = EA.profile.regions.includes('all') ? '전체' : EA.profile.regions.map(v => EA.REGION_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ');
+
+    el.innerHTML = `
+        <div class="wz-title">분석 준비 완료</div>
+        <div class="wz-summary">
+            <div class="wz-summary-row"><span>회사명</span><span class="wz-summary-val">${EA.profile.companyName || '(미입력)'}</span></div>
+            <div class="wz-summary-row"><span>업종</span><span class="wz-summary-val">${indName}</span></div>
+            <div class="wz-summary-row"><span>연 매출</span><span class="wz-summary-val">${revLabel}</span></div>
+            <div class="wz-summary-row"><span>임직원</span><span class="wz-summary-val">${empLabel}</span></div>
+            <div class="wz-summary-row"><span>해외 경험</span><span class="wz-summary-val">${expLabel}</span></div>
+            <div class="wz-summary-row"><span>우선순위</span><span class="wz-summary-val">${priLabels}</span></div>
+            <div class="wz-summary-row"><span>관심 지역</span><span class="wz-summary-val">${regLabels}</span></div>
+        </div>
+        <div class="wz-analyze-sub">149개국 × ${Object.keys(INDUSTRIES).length}개 업종 데이터를 AI가 분석합니다</div>`;
+}
+
+// ---- SCORING ALGORITHM ----
+function calculateCES(countryId, indKey, priorities) {
+    const c = COUNTRIES[countryId];
+    if (!c) return null;
+    const ind = c.industries[indKey];
+    if (!ind) return null;
+
+    // Raw scores (0~100)
+    const allSizes = Object.values(COUNTRIES).map(cc => cc.industries[indKey]?.size || 0).filter(s => s > 0);
+    const maxLogSize = Math.log(Math.max(...allSizes) + 1);
+    const marketSize = maxLogSize > 0 ? (Math.log((ind.size || 0.1) + 1) / maxLogSize) * 100 : 50;
+    const growth = Math.max(0, Math.min(100, 50 + (ind.growth || 0) * 5));
+    const potential = ind.potential || 50;
+    const stability = Math.max(0, Math.min(100, 50 + (c.gdp_growth_pct || 0) * 3 - (c.inflation_pct || 5) * 0.5 - (c.unemployment_pct || 8) * 0.5));
+    const openness = Math.min(100, (c.trade_pct_gdp || 50) / 2);
+    const digital = c.internet_users_pct || 30;
+
+    const scores = { marketSize, growth, potential, stability, openness, digital };
+
+    // Weights
+    let weights = { marketSize: 1/6, growth: 1/6, potential: 1/6, stability: 1/6, openness: 1/6, digital: 1/6 };
+    if (priorities.length > 0) {
+        const bonuses = [0.10, 0.05, 0.02];
+        priorities.forEach((p, i) => { if (weights[p] !== undefined) weights[p] += bonuses[i] || 0; });
+        const wSum = Object.values(weights).reduce((a,b) => a+b, 0);
+        Object.keys(weights).forEach(k => weights[k] /= wSum);
+    }
+
+    const total = Object.keys(scores).reduce((sum, k) => sum + scores[k] * weights[k], 0);
+
+    return { total: Math.round(total * 10) / 10, scores, weights };
+}
+
+function determineStrategy(profile, country) {
+    const isSmall = ['u10', 'u50'].includes(profile.revenue);
+    const isLarge = ['u1000', 'o1000'].includes(profile.revenue);
+    const noExp = profile.experience === 'none';
+    const digitalIndustries = ['tech', 'retail', 'telecom', 'education'];
+    const highDigital = (country.internet_users_pct || 0) >= 70;
+    const openEconomy = (country.trade_pct_gdp || 0) >= 80;
+
+    if (isSmall && noExp) return 'export';
+    if (digitalIndustries.includes(profile.industry) && highDigital) return 'digital';
+    if (isLarge && !noExp) return 'fdi';
+    if (openEconomy || profile.experience === 'some') return 'partnership';
+    return 'export';
+}
+
+function runAnalysis() {
+    const indKey = EA.profile.industry;
+    const priorities = EA.profile.priorities;
+    const regionFilter = EA.profile.regions;
+
+    const scored = [];
+    Object.entries(COUNTRIES).forEach(([id, c]) => {
+        if (id === EA.KOREA_ID) return; // exclude Korea
+        // Region filter
+        if (!regionFilter.includes('all')) {
+            const norm = normalizeRegion(c.region);
+            if (!regionFilter.some(r => norm.includes(r) || r.includes(norm.split(' ')[0]))) return;
+        }
+        const ind = c.industries[indKey];
+        if (!ind) return;
+        const ces = calculateCES(id, indKey, priorities);
+        if (!ces) return;
+        const strategy = determineStrategy(EA.profile, c);
+        // Risk score (inverse of stability + some factors)
+        const riskScore = Math.max(0, Math.min(100, 100 - ces.scores.stability));
+        const opportunityScore = (ces.scores.marketSize * 0.3 + ces.scores.growth * 0.3 + ces.scores.potential * 0.4);
+        scored.push({
+            id, country: c, industry: ind,
+            ces: ces.total, scores: ces.scores, weights: ces.weights,
+            strategy, riskScore, opportunityScore,
+            bubbleSize: Math.max(8, Math.min(40, Math.log(Math.max(1, ind.size)) * 5)),
+        });
+    });
+
+    scored.sort((a, b) => b.ces - a.ces);
+
+    return {
+        top5: scored.slice(0, 5),
+        top10: scored.slice(0, 10),
+        all: scored,
+        profile: { ...EA.profile },
+        date: new Date().toISOString().slice(0, 10),
+    };
+}
+
+// ---- ANALYSIS ANIMATION ----
+function startAnalysis() {
+    document.getElementById('expansion-wizard').classList.add('hidden');
+    document.getElementById('expansion-cta').style.display = 'none';
+    EA.results = null;
+
+    // Hide existing panels
+    document.getElementById('left-panel').style.opacity = '0';
+    document.getElementById('left-panel').style.pointerEvents = 'none';
+    document.getElementById('right-panel').classList.add('hidden');
+
+    // Show overlay
+    const overlay = document.getElementById('analysis-overlay');
+    overlay.classList.remove('hidden');
+    const statusEl = document.getElementById('analysis-status');
+    const barEl = document.getElementById('analysis-bar');
+    const countEl = document.getElementById('analysis-count');
+
+    // Phase 1: Zoom out + darken (0~2s)
+    statusEl.textContent = '글로벌 데이터베이스 연결중...';
+    barEl.style.width = '0%';
+    countEl.textContent = '0 / 149';
+    globe.controls().autoRotate = false;
+    globe.pointOfView({ lat: 37.5, lng: 127, altitude: 3.5 }, 2000);
+    globe.polygonCapColor(() => 'rgba(10,15,40,0.7)');
+    globe.polygonAltitude(() => 0.005);
+    globe.arcsData([]);
+
+    // Phase 2: Radar scan from Korea (2~5s)
+    const korea = COUNTRIES[EA.KOREA_ID];
+    const allIds = Object.keys(COUNTRIES).filter(id => id !== EA.KOREA_ID);
+    let scanIdx = 0;
+    const totalToScan = allIds.length;
+
+    setTimeout(() => {
+        statusEl.textContent = '149개국 시장 데이터 스캔중...';
+        // Add radar rings
+        const rings = [];
+        let ringInterval = setInterval(() => {
+            rings.push({ lat: korea.lat, lng: korea.lng, maxR: 8, propagationSpeed: 3, repeatPeriod: 1200 });
+            if (rings.length > 4) clearInterval(ringInterval);
+            globe.ringsData([...rings]).ringColor(() => t => `rgba(0,240,255,${1-t})`).ringMaxRadius('maxR').ringPropagationSpeed('propagationSpeed').ringRepeatPeriod('repeatPeriod');
+        }, 600);
+
+        // Sequential country flash
+        const scanTimer = setInterval(() => {
+            scanIdx += 3;
+            if (scanIdx >= totalToScan) { scanIdx = totalToScan; clearInterval(scanTimer); }
+            const pct = (scanIdx / totalToScan * 60 + 10); // 10~70%
+            barEl.style.width = pct + '%';
+            countEl.textContent = `${Math.min(scanIdx, totalToScan)} / ${totalToScan}`;
+            // Flash some countries with lighter color
+            globe.polygonCapColor(feat => {
+                const idx2 = allIds.indexOf(feat.id);
+                if (idx2 >= 0 && idx2 < scanIdx) return 'rgba(0,240,255,0.12)';
+                return 'rgba(10,15,40,0.7)';
+            });
+        }, 50);
+
+        // Phase 3: Run actual calculation + highlight TOP 5 (5~7s)
+        setTimeout(() => {
+            clearInterval(ringInterval);
+            globe.ringsData([]);
+            EA.results = runAnalysis();
+            statusEl.textContent = '유망 시장 선별 완료';
+            barEl.style.width = '85%';
+
+            const top5 = EA.results.top5;
+            // Highlight TOP 5
+            globe.polygonCapColor(feat => {
+                const rank = top5.findIndex(t => t.id === feat.id);
+                if (rank === 0) return 'rgba(255,170,0,0.6)';
+                if (rank >= 1) return 'rgba(0,240,255,0.45)';
+                if (feat.id === EA.KOREA_ID) return 'rgba(0,255,136,0.4)';
+                return 'rgba(10,15,40,0.4)';
+            });
+            globe.polygonAltitude(feat => {
+                const rank = top5.findIndex(t => t.id === feat.id);
+                if (rank >= 0) return 0.04 + (5 - rank) * 0.008;
+                return 0.005;
+            });
+
+            // Phase 4: Draw arcs from Korea to TOP 5 (7~8s)
+            setTimeout(() => {
+                statusEl.textContent = '전략 보고서 생성중...';
+                barEl.style.width = '95%';
+                const arcs = top5.map((t, i) => ({
+                    startLat: korea.lat, startLng: korea.lng,
+                    endLat: t.country.lat, endLng: t.country.lng,
+                    color: [i === 0 ? 'rgba(255,170,0,0.8)' : 'rgba(0,240,255,0.7)', 'rgba(123,47,255,0.5)'],
+                }));
+                globe.arcsData(arcs).arcColor('color').arcAltitude(0.15).arcStroke(0.8).arcDashLength(0.4).arcDashGap(1).arcDashAnimateTime(1500);
+
+                // Labels
+                const labels = top5.map((t, i) => ({
+                    lat: t.country.lat, lng: t.country.lng,
+                    text: `#${i+1} ${t.country.flag} ${t.country.name}`,
+                    color: i === 0 ? '#ffaa00' : '#00f0ff', size: i === 0 ? 1.0 : 0.8,
+                }));
+                globe.labelsData(labels).labelText('text').labelColor('color').labelSize('size').labelDotRadius(0.3).labelAltitude(0.06);
+
+                // Final: show report
+                setTimeout(() => {
+                    barEl.style.width = '100%';
+                    setTimeout(() => {
+                        overlay.classList.add('hidden');
+                        showExpansionReport();
+                    }, 400);
+                }, 1200);
+            }, 1500);
+        }, 3000);
+    }, 2000);
+}
+
+// ---- REPORT RENDERING ----
+function showExpansionReport() {
+    const panel = document.getElementById('expansion-report');
+    const content = document.getElementById('expansion-content');
+    const r = EA.results;
+    if (!r || r.top5.length === 0) { content.innerHTML = '<p style="color:var(--text)">분석 결과가 없습니다.</p>'; panel.classList.remove('hidden'); return; }
+
+    const top1 = r.top5[0];
+    const indInfo = INDUSTRIES[r.profile.industry];
+    const companyName = r.profile.companyName || '귀사';
+
+    let html = '';
+
+    // Header
+    html += `
+        <div class="exp-badge">AI EXPANSION REPORT</div>
+        <div class="exp-title">해외진출 전략 보고서</div>
+        <div class="exp-meta">${companyName} · ${indInfo?.name || ''} · ${r.date}</div>
+        <div class="exp-scan-badge">🌍 ${r.all.length}개국 데이터 분석 완료</div>
+        <div class="exp-divider"></div>`;
+
+    // Top pick
+    html += `
+        <div class="exp-top-pick" data-country-id="${top1.id}">
+            <span class="pick-rank">#1</span>
+            <span class="pick-flag">${top1.country.flag}</span>
+            <div class="pick-info">
+                <span class="pick-name">${top1.country.name}</span>
+                <span class="pick-sub">${shortRegionLabel(top1.country.region)} · ${top1.country.nameEn}</span>
+            </div>
+        </div>`;
+
+    // Gauge
+    const gaugeR = 40, gaugeC = 2 * Math.PI * gaugeR;
+    const gaugePct = top1.ces / 100;
+    const gaugeColor = top1.ces >= 70 ? '#00ff88' : top1.ces >= 50 ? '#ffaa00' : '#ff3366';
+    html += `
+        <div class="exp-gauge">
+            <svg class="gauge-svg" viewBox="0 0 100 100">
+                <circle class="gauge-bg" cx="50" cy="50" r="${gaugeR}"/>
+                <circle class="gauge-fill" cx="50" cy="50" r="${gaugeR}" stroke="${gaugeColor}"
+                    stroke-dasharray="${gaugeC}" stroke-dashoffset="${gaugeC}" transform="rotate(-90 50 50)"
+                    data-target="${gaugeC * (1 - gaugePct)}"/>
+                <text class="gauge-text" x="50" y="47" data-target="${top1.ces.toFixed(1)}">0</text>
+                <text class="gauge-label" x="50" y="62">종합점수</text>
+            </svg>
+        </div>
+        <div class="exp-divider"></div>`;
+
+    // TOP 5 Ranking
+    html += `<div class="exp-section-title">🏆 추천 시장 TOP 5</div><div class="exp-rank-list">`;
+    r.top5.forEach((t, i) => {
+        const medals = ['🥇','🥈','🥉','4','5'];
+        html += `
+            <div class="exp-rank-item ${i===0?'active':''}" data-country-id="${t.id}">
+                <span class="rank-num">${medals[i]}</span>
+                <span class="rank-flag">${t.country.flag}</span>
+                <div class="rank-info">
+                    <div class="rank-name">${t.country.name}</div>
+                    <div class="rank-bar-wrap"><div class="rank-bar-fill" data-width="${t.ces}"></div></div>
+                </div>
+                <span class="rank-score">${t.ces.toFixed(1)}</span>
+            </div>`;
+    });
+    html += `</div><div class="exp-divider"></div>`;
+
+    // Radar Chart (top 3)
+    html += renderRadarChart(r.top5.slice(0, 3));
+    html += `<div class="exp-divider"></div>`;
+
+    // Bubble Matrix (top 10)
+    html += renderBubbleMatrix(r.top10);
+    html += `<div class="exp-divider"></div>`;
+
+    // Strategy for #1
+    const strat = EA.STRATEGIES[top1.strategy];
+    html += `
+        <div class="exp-section-title">🎯 추천 진출 전략 (${top1.country.name})</div>
+        <div class="exp-strategy">
+            <div class="strategy-head">
+                <span class="strategy-icon">${strat.icon}</span>
+                <div><div class="strategy-name">${strat.name}</div><div class="strategy-desc">${strat.desc}</div></div>
+            </div>
+            <div class="exp-timeline">
+                <div class="timeline-phase"><span class="phase-period">0-6개월</span><span class="phase-action">시장조사<br>파트너 탐색</span></div>
+                <div class="timeline-phase"><span class="phase-period">6-18개월</span><span class="phase-action">시장 진입<br>초기 매출</span></div>
+                <div class="timeline-phase"><span class="phase-period">18-36개월</span><span class="phase-action">거점 확장<br>현지화</span></div>
+            </div>
+        </div>
+        <div class="exp-divider"></div>`;
+
+    // Accordion: Opportunities & Risks for each TOP 5
+    html += `<div class="exp-section-title">🚀 기회 vs ⚠️ 리스크</div>`;
+    r.top5.forEach((t, i) => {
+        const ind = t.industry;
+        html += `
+            <div class="exp-accordion-item ${i===0?'open':''}">
+                <div class="exp-accordion-head">
+                    <span class="acc-flag">${t.country.flag}</span>
+                    <span class="acc-name">${t.country.name}</span>
+                    <span class="acc-score">${t.ces.toFixed(1)}</span>
+                    <span class="acc-arrow">▼</span>
+                </div>
+                <div class="exp-accordion-body">
+                    <div class="exp-accordion-inner">
+                        <div style="font:500 11px var(--font-body);color:var(--primary);margin-bottom:4px">기회</div>
+                        ${(ind.oppo||[]).map(o => `<div class="acc-oppo-item">${o}</div>`).join('')}
+                        <div style="font:500 11px var(--font-body);color:var(--accent);margin-top:8px;margin-bottom:4px">리스크</div>
+                        ${(ind.risk||[]).map(r => `<div class="acc-risk-item">${r}</div>`).join('')}
+                        <div class="acc-mini-grid">
+                            <div class="acc-mini-stat"><span class="acc-mini-val">${t.country.gdp >= 1000 ? (t.country.gdp/1000).toFixed(1)+'T' : t.country.gdp+'B'}</span><span class="acc-mini-label">GDP</span></div>
+                            <div class="acc-mini-stat"><span class="acc-mini-val">${(t.country.gdp_growth_pct||0).toFixed(1)}%</span><span class="acc-mini-label">GDP성장률</span></div>
+                            <div class="acc-mini-stat"><span class="acc-mini-val">${(t.country.internet_users_pct||0).toFixed(0)}%</span><span class="acc-mini-label">인터넷보급</span></div>
+                            <div class="acc-mini-stat"><span class="acc-mini-val">${(t.country.trade_pct_gdp||0).toFixed(0)}%</span><span class="acc-mini-label">무역/GDP</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+    });
+
+    // Action buttons
+    html += `
+        <div class="exp-actions">
+            <button class="exp-btn" id="exp-back-btn">← 탐색기로 돌아가기</button>
+            <button class="exp-btn" id="exp-redo-btn">🔄 다시 분석</button>
+        </div>`;
+
+    content.innerHTML = html;
+    panel.classList.remove('hidden');
+
+    // Animate gauge
+    setTimeout(() => {
+        const gaugeFill = content.querySelector('.gauge-fill');
+        if (gaugeFill) gaugeFill.style.strokeDashoffset = gaugeFill.dataset.target;
+        const gaugeText = content.querySelector('.gauge-text');
+        if (gaugeText) animateNumber(gaugeText, parseFloat(gaugeText.dataset.target), 1200);
+        // Animate rank bars
+        content.querySelectorAll('.rank-bar-fill').forEach(bar => {
+            setTimeout(() => bar.style.width = bar.dataset.width + '%', 100);
+        });
+    }, 100);
+
+    // Bind interactions
+    bindReportInteractions(content);
+}
+
+function animateNumber(el, target, duration) {
+    const start = performance.now();
+    function tick(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = (eased * target).toFixed(1);
+        if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+}
+
+// ---- RADAR CHART SVG ----
+function renderRadarChart(top3) {
+    const axes = ['marketSize','growth','potential','stability','openness','digital'];
+    const axisLabels = ['시장규모','성장률','잠재력','안정성','개방도','디지털'];
+    const colors = ['#ffaa00','#00f0ff','#7b2fff'];
+    const cx = 120, cy = 120, maxR = 80;
+    const angleStep = (2 * Math.PI) / axes.length;
+
+    let svg = `<div class="exp-section-title">📊 상위 3개국 비교</div><div class="exp-radar-wrap"><svg class="radar-svg" viewBox="0 0 240 240">`;
+
+    // Grid circles
+    [0.25, 0.5, 0.75, 1].forEach(r => {
+        const points = axes.map((_, i) => {
+            const angle = -Math.PI/2 + i * angleStep;
+            return `${cx + Math.cos(angle)*maxR*r},${cy + Math.sin(angle)*maxR*r}`;
+        }).join(' ');
+        svg += `<polygon class="radar-grid" points="${points}"/>`;
+    });
+
+    // Axis lines + labels
+    axes.forEach((_, i) => {
+        const angle = -Math.PI/2 + i * angleStep;
+        const x2 = cx + Math.cos(angle) * maxR;
+        const y2 = cy + Math.sin(angle) * maxR;
+        svg += `<line class="radar-axis" x1="${cx}" y1="${cy}" x2="${x2}" y2="${y2}"/>`;
+        const lx = cx + Math.cos(angle) * (maxR + 16);
+        const ly = cy + Math.sin(angle) * (maxR + 16);
+        svg += `<text class="radar-label" x="${lx}" y="${ly}">${axisLabels[i]}</text>`;
+    });
+
+    // Country polygons
+    top3.forEach((t, ci) => {
+        const points = axes.map((axis, i) => {
+            const val = (t.scores[axis] || 0) / 100;
+            const angle = -Math.PI/2 + i * angleStep;
+            return `${cx + Math.cos(angle)*maxR*val},${cy + Math.sin(angle)*maxR*val}`;
+        }).join(' ');
+        svg += `<polygon class="radar-poly" points="${points}" fill="${colors[ci]}" stroke="${colors[ci]}" style="stroke-dasharray:500;stroke-dashoffset:500" data-animate="true"/>`;
+    });
+
+    svg += `</svg></div>`;
+
+    // Legend
+    svg += `<div class="radar-legend">`;
+    top3.forEach((t, i) => {
+        svg += `<div class="radar-legend-item"><span class="radar-legend-dot" style="background:${colors[i]}"></span>${t.country.flag} ${t.country.name}</div>`;
+    });
+    svg += `</div>`;
+
+    return svg;
+}
+
+// ---- BUBBLE MATRIX ----
+function renderBubbleMatrix(top10) {
+    let html = `<div class="exp-section-title">⚖️ 리스크-기회 매트릭스</div><div class="exp-matrix-wrap">`;
+    html += `<div class="matrix-mid-x"></div><div class="matrix-mid-y"></div>`;
+    html += `<div class="matrix-axis-label" style="bottom:2px;left:50%;transform:translateX(-50%)">기회 →</div>`;
+    html += `<div class="matrix-axis-label" style="left:2px;top:50%;transform:translateY(-50%) rotate(-90deg)">← 리스크</div>`;
+    html += `<div class="matrix-quadrant" style="right:8px;top:4px">고위험/고수익</div>`;
+    html += `<div class="matrix-sweet" style="right:4px;bottom:4px">SWEET SPOT ★</div>`;
+
+    // Normalize to spread bubbles across the full chart
+    const opps = top10.map(t => t.opportunityScore);
+    const risks = top10.map(t => t.riskScore);
+    const oppMin = Math.min(...opps), oppMax = Math.max(...opps);
+    const riskMin = Math.min(...risks), riskMax = Math.max(...risks);
+    const oppRange = oppMax - oppMin || 1;
+    const riskRange = riskMax - riskMin || 1;
+
+    top10.forEach((t, i) => {
+        const x = ((t.opportunityScore - oppMin) / oppRange) * 80 + 10; // 10~90%
+        const y = 90 - ((t.riskScore - riskMin) / riskRange) * 80; // 10~90%, inverted
+        const size = Math.max(18, Math.min(36, t.bubbleSize));
+        const color = i === 0 ? '#ffaa00' : i < 3 ? '#00f0ff' : '#7b2fff';
+        html += `<div class="matrix-bubble" style="left:${x}%;top:${y}%;width:${size}px;height:${size}px;background:${color}22;border-color:${color}" title="${t.country.name}: 기회${t.opportunityScore.toFixed(0)} / 리스크${t.riskScore.toFixed(0)}">${t.country.flag}</div>`;
+    });
+
+    html += `</div>`;
+    return html;
+}
+
+// ---- INTERACTIONS ----
+function bindReportInteractions(container) {
+    // Rank item click → globe zoom
+    container.querySelectorAll('.exp-rank-item, .exp-top-pick').forEach(item => {
+        item.addEventListener('click', () => {
+            const cid = item.dataset.countryId;
+            if (!cid || !COUNTRIES[cid]) return;
+            const c = COUNTRIES[cid];
+            globe.pointOfView({ lat: c.lat, lng: c.lng, altitude: 2.0 }, 1000);
+            // Highlight active
+            container.querySelectorAll('.exp-rank-item').forEach(ri => ri.classList.remove('active'));
+            if (item.classList.contains('exp-rank-item')) item.classList.add('active');
+        });
+    });
+
+    // Accordion toggle
+    container.querySelectorAll('.exp-accordion-head').forEach(head => {
+        head.addEventListener('click', () => {
+            head.closest('.exp-accordion-item').classList.toggle('open');
+        });
+    });
+
+    // Back button
+    const backBtn = container.querySelector('#exp-back-btn');
+    if (backBtn) backBtn.addEventListener('click', closeExpansionReport);
+
+    // Redo button
+    const redoBtn = container.querySelector('#exp-redo-btn');
+    if (redoBtn) redoBtn.addEventListener('click', () => { closeExpansionReport(); setTimeout(openWizard, 300); });
+
+    // Animate radar polygons
+    setTimeout(() => {
+        container.querySelectorAll('.radar-poly[data-animate]').forEach(poly => {
+            poly.style.strokeDashoffset = '0';
+        });
+    }, 300);
+}
+
+function closeExpansionReport() {
+    document.getElementById('expansion-report').classList.add('hidden');
+    document.getElementById('expansion-cta').style.display = '';
+    document.getElementById('left-panel').style.opacity = '1';
+    document.getElementById('left-panel').style.pointerEvents = '';
+    EA.mode = false;
+
+    // Restore globe
+    globe.polygonCapColor(feat => getCountryColor(feat.id));
+    globe.polygonAltitude(feat => selectedCountry === feat.id ? 0.06 : 0.01);
+    globe.labelsData([]);
+    globe.ringsData([]);
+    updateArcs(selectedCountry || undefined);
+    globe.controls().autoRotate = true;
+}
