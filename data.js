@@ -1,7 +1,7 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-03-09 04:48:35
+// Auto-generated: 2026-03-09 21:38:10
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
-// Countries: 149 | Industries: 18
+// Countries: 149 | Industries: 12
 
 const INDUSTRIES = {
     "tech": {
@@ -75,42 +75,6 @@ const INDUSTRIES = {
         "nameEn": "Education",
         "icon": "📚",
         "color": "#44ddcc"
-    },
-    "beauty": {
-        "name": "뷰티 & 화장품",
-        "nameEn": "Beauty & Cosmetics",
-        "icon": "💄",
-        "color": "#ff69b4"
-    },
-    "food": {
-        "name": "식품 & 음료",
-        "nameEn": "Food & Beverage",
-        "icon": "🍽️",
-        "color": "#ff9966"
-    },
-    "logistics": {
-        "name": "물류 & 운송",
-        "nameEn": "Logistics & Shipping",
-        "icon": "📦",
-        "color": "#8899aa"
-    },
-    "fashion": {
-        "name": "패션 & 의류",
-        "nameEn": "Fashion & Apparel",
-        "icon": "👗",
-        "color": "#dd66aa"
-    },
-    "entertainment": {
-        "name": "엔터테인먼트",
-        "nameEn": "Entertainment & Media",
-        "icon": "🎬",
-        "color": "#ff4488"
-    },
-    "construction": {
-        "name": "건설 & 인프라",
-        "nameEn": "Construction & Infrastructure",
-        "icon": "🏗️",
-        "color": "#bb8844"
     }
 };
 
@@ -208,9 +172,9 @@ const COUNTRIES = {
                 "rank": 113
             },
             "agriculture": {
-                "size": 6.0,
+                "size": 1,
                 "growth": 2.6,
-                "potential": 58,
+                "potential": 55,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -221,7 +185,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 75
+                "rank": 105
             },
             "automotive": {
                 "size": 1,
@@ -301,7 +265,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 83
+                "rank": 85
             },
             "education": {
                 "size": 1,
@@ -318,102 +282,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 93
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6,
-                "potential": 42,
-                "oppo": [
-                    "성장 잠재력 높음",
-                    "미개척 시장",
-                    "할랄 화장품 시장"
-                ],
-                "risk": [
-                    "유통 채널 미비",
-                    "디지털 채널 부재",
-                    "마케팅 도달 제한"
-                ],
-                "rank": 149
-            },
-            "food": {
-                "size": 0.7,
-                "growth": 4.6,
-                "potential": 51,
-                "oppo": [
-                    "농업 현대화",
-                    "할랄 식품 시장",
-                    "지역 시장 활성화"
-                ],
-                "risk": [
-                    "식량 안보 불안",
-                    "마케팅 제한",
-                    "할랄 인증 요구"
-                ],
-                "rank": 136
-            },
-            "logistics": {
-                "size": 0.5,
-                "growth": 7.9,
-                "potential": 45,
-                "oppo": [
-                    "기본 물류 인프라",
-                    "중계 무역 허브",
-                    "물류 시장 형성"
-                ],
-                "risk": [
-                    "지정학적 리스크",
-                    "기본 인프라 부재",
-                    "정치적 불안정"
-                ],
-                "rank": 139
-            },
-            "fashion": {
-                "size": 0.1,
-                "growth": 6.8,
-                "potential": 50,
-                "oppo": [
-                    "의류 제조 기지",
-                    "모데스트 패션 시장",
-                    "럭셔리 소비"
-                ],
-                "risk": [
-                    "오프라인 한계",
-                    "마케팅 제한",
-                    "소비력 부족"
-                ],
-                "rank": 149
-            },
-            "entertainment": {
-                "size": 0.1,
-                "growth": 6.7,
-                "potential": 42,
-                "oppo": [
-                    "모바일 미디어 성장",
-                    "모바일 콘텐츠",
-                    "미디어 시장 개방"
-                ],
-                "risk": [
-                    "콘텐츠 접근성",
-                    "문화적 제약",
-                    "소비력 제한"
-                ],
-                "rank": 149
-            },
-            "construction": {
-                "size": 0.6,
-                "growth": 5.9,
-                "potential": 44,
-                "oppo": [
-                    "노동집약 건설",
-                    "메가 프로젝트",
-                    "도로/수도 건설"
-                ],
-                "risk": [
-                    "프로젝트 지연",
-                    "자본 부족",
-                    "기술 인력 부재"
-                ],
-                "rank": 144
             }
         },
         "gdp_growth_pct": 2.3,
@@ -516,9 +384,9 @@ const COUNTRIES = {
                 "rank": 72
             },
             "agriculture": {
-                "size": 22.3,
+                "size": 3.0,
                 "growth": 3.5,
-                "potential": 73,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -529,7 +397,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 34
+                "rank": 71
             },
             "automotive": {
                 "size": 3.0,
@@ -609,7 +477,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 84
+                "rank": 86
             },
             "education": {
                 "size": 1.5,
@@ -626,102 +494,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 80
-            },
-            "beauty": {
-                "size": 0.6,
-                "growth": 6.5,
-                "potential": 50,
-                "oppo": [
-                    "젊은 인구 수요",
-                    "뷰티 시장 초기 성장",
-                    "직접 판매 채널"
-                ],
-                "risk": [
-                    "소비력 부족",
-                    "위조품 문제",
-                    "유통 인프라 부재"
-                ],
-                "rank": 77
-            },
-            "food": {
-                "size": 4.6,
-                "growth": 6.6,
-                "potential": 53,
-                "oppo": [
-                    "지역 시장 활성화",
-                    "농산물 부가가치화",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "물류 인프라 부재",
-                    "유통 비효율",
-                    "콜드체인 부족"
-                ],
-                "rank": 70
-            },
-            "logistics": {
-                "size": 2.6,
-                "growth": 7,
-                "potential": 55,
-                "oppo": [
-                    "아프리카 내륙 물류",
-                    "창고업 현대화",
-                    "무역 성장 기회"
-                ],
-                "risk": [
-                    "물류비 높음",
-                    "추적 시스템 부재",
-                    "디지털 전환 지연"
-                ],
-                "rank": 79
-            },
-            "fashion": {
-                "size": 1.2,
-                "growth": 6.2,
-                "potential": 46,
-                "oppo": [
-                    "도매 시장 성장",
-                    "아프리카 패션 부상",
-                    "OEM/ODM 기회"
-                ],
-                "risk": [
-                    "품질 관리",
-                    "수입 의존도",
-                    "저가 경쟁"
-                ],
-                "rank": 73
-            },
-            "entertainment": {
-                "size": 1,
-                "growth": 6.9,
-                "potential": 43,
-                "oppo": [
-                    "모바일 엔터테인먼트",
-                    "모바일 콘텐츠 수요",
-                    "모바일 콘텐츠"
-                ],
-                "risk": [
-                    "제작 인프라 부족",
-                    "인프라 부족",
-                    "수익 모델 한계"
-                ],
-                "rank": 84
-            },
-            "construction": {
-                "size": 7.1,
-                "growth": 5.9,
-                "potential": 64,
-                "oppo": [
-                    "아프리카 인프라 개발",
-                    "기초 인프라 건설",
-                    "국제 개발 프로젝트"
-                ],
-                "risk": [
-                    "기술 도입 지연",
-                    "관리 비효율",
-                    "자금 조달 어려움"
-                ],
-                "rank": 69
             }
         },
         "gdp_growth_pct": 4.4,
@@ -824,9 +596,9 @@ const COUNTRIES = {
                 "rank": 110
             },
             "agriculture": {
-                "size": 4.2,
+                "size": 1,
                 "growth": 2.8,
-                "potential": 75,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -837,7 +609,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 90
+                "rank": 106
             },
             "automotive": {
                 "size": 1.1,
@@ -917,7 +689,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 69
+                "rank": 71
             },
             "education": {
                 "size": 1,
@@ -934,102 +706,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 94
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 5.7,
-                "potential": 61,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "중산층 소비 증가",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "엄격한 규제",
-                    "품질 규제"
-                ],
-                "rank": 115
-            },
-            "food": {
-                "size": 1.4,
-                "growth": 4.8,
-                "potential": 62,
-                "oppo": [
-                    "푸드테크 성장",
-                    "가공식품 시장 성장",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "온라인 경쟁",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 108
-            },
-            "logistics": {
-                "size": 0.8,
-                "growth": 5.9,
-                "potential": 62,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "실시간 추적 시스템",
-                    "이커머스 물류 성장"
-                ],
-                "risk": [
-                    "규제 복잡성",
-                    "환경 규제 강화",
-                    "플랫폼 의존"
-                ],
-                "rank": 116
-            },
-            "fashion": {
-                "size": 0.4,
-                "growth": 6,
-                "potential": 58,
-                "oppo": [
-                    "유럽 패션 수도",
-                    "로컬 브랜드 성장",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "원자재 비용",
-                    "가격 투명성",
-                    "트렌드 변화"
-                ],
-                "rank": 109
-            },
-            "entertainment": {
-                "size": 0.5,
-                "growth": 6.6,
-                "potential": 69,
-                "oppo": [
-                    "로컬 콘텐츠 제작",
-                    "유럽 콘텐츠 시장",
-                    "게임 시장 성장"
-                ],
-                "risk": [
-                    "언어 장벽",
-                    "콘텐츠 제작비 상승",
-                    "주의력 경쟁"
-                ],
-                "rank": 106
-            },
-            "construction": {
-                "size": 2.2,
-                "growth": 5.9,
-                "potential": 69,
-                "oppo": [
-                    "건설 테크 도입",
-                    "BIM 기술 활용",
-                    "교통 인프라 투자"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "인력 부족",
-                    "부동산 거품 리스크"
-                ],
-                "rank": 105
             }
         },
         "gdp_growth_pct": 4.0,
@@ -1065,7 +741,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 33
+                "rank": 32
             },
             "manufacturing": {
                 "size": 51.8,
@@ -1132,9 +808,9 @@ const COUNTRIES = {
                 "rank": 27
             },
             "agriculture": {
-                "size": 4.2,
+                "size": 16.6,
                 "growth": 2.8,
-                "potential": 79,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -1145,7 +821,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 91
+                "rank": 27
             },
             "automotive": {
                 "size": 16.6,
@@ -1212,9 +888,9 @@ const COUNTRIES = {
                 "rank": 30
             },
             "tourism": {
-                "size": 24.6,
+                "size": 11.0,
                 "growth": 5.2,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -1225,7 +901,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 10
+                "rank": 24
             },
             "education": {
                 "size": 12.9,
@@ -1242,102 +918,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 30
-            },
-            "beauty": {
-                "size": 8.7,
-                "growth": 4.7,
-                "potential": 68,
-                "oppo": [
-                    "프리미엄 뷰티 시장",
-                    "클린 뷰티 트렌드",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "소비자 트렌드 변화",
-                    "시장 포화 경쟁",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 20
-            },
-            "food": {
-                "size": 25.8,
-                "growth": 2.7,
-                "potential": 77,
-                "oppo": [
-                    "건강식품 트렌드",
-                    "식품 수입 의존도",
-                    "할랄 식품 시장"
-                ],
-                "risk": [
-                    "할랄 인증 요구",
-                    "소비 트렌드 변화",
-                    "식품 안전 규제"
-                ],
-                "rank": 28
-            },
-            "logistics": {
-                "size": 104.8,
-                "growth": 3.3,
-                "potential": 77,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "디지털 물류 플랫폼",
-                    "중계 무역 허브"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "환경 규제",
-                    "인건비 상승"
-                ],
-                "rank": 8
-            },
-            "fashion": {
-                "size": 8.3,
-                "growth": 4.1,
-                "potential": 78,
-                "oppo": [
-                    "모데스트 패션 시장",
-                    "SNS 패션 마케팅",
-                    "지속가능 패션"
-                ],
-                "risk": [
-                    "지속가능성 압박",
-                    "문화적 제약",
-                    "가격 투명성"
-                ],
-                "rank": 29
-            },
-            "entertainment": {
-                "size": 9.9,
-                "growth": 4.6,
-                "potential": 80,
-                "oppo": [
-                    "스트리밍 시장 성장",
-                    "OTT 플랫폼 확대",
-                    "미디어 시장 개방"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "플랫폼 경쟁",
-                    "저작권 분쟁"
-                ],
-                "rank": 30
-            },
-            "construction": {
-                "size": 156.4,
-                "growth": 3,
-                "potential": 87,
-                "oppo": [
-                    "스마트시티 개발",
-                    "메가 프로젝트",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "환경 규제",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 10
             }
         },
         "gdp_growth_pct": 4.0,
@@ -1373,7 +953,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 28
+                "rank": 27
             },
             "manufacturing": {
                 "size": 96.9,
@@ -1440,9 +1020,9 @@ const COUNTRIES = {
                 "rank": 25
             },
             "agriculture": {
-                "size": 37.1,
+                "size": 19.2,
                 "growth": 1.2,
-                "potential": 75,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -1453,7 +1033,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 25
+                "rank": 24
             },
             "automotive": {
                 "size": 19.2,
@@ -1533,7 +1113,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 43
+                "rank": 47
             },
             "education": {
                 "size": 22.6,
@@ -1550,102 +1130,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 23
-            },
-            "beauty": {
-                "size": 4.8,
-                "growth": 7,
-                "potential": 60,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "중산층 소비 증가",
-                    "온라인 뷰티 성장"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "환율 변동성",
-                    "수입 관세"
-                ],
-                "rank": 31
-            },
-            "food": {
-                "size": 44.2,
-                "growth": 4.1,
-                "potential": 61,
-                "oppo": [
-                    "식품 가공 산업",
-                    "가공식품 시장 성장",
-                    "외식 산업 확대"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "규제 환경",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 21
-            },
-            "logistics": {
-                "size": 16,
-                "growth": 5.7,
-                "potential": 65,
-                "oppo": [
-                    "실시간 추적 시스템",
-                    "이커머스 물류 성장",
-                    "농산물 물류"
-                ],
-                "risk": [
-                    "규제 복잡성",
-                    "인프라 병목",
-                    "도로 인프라 노후"
-                ],
-                "rank": 31
-            },
-            "fashion": {
-                "size": 10.1,
-                "growth": 4.9,
-                "potential": 63,
-                "oppo": [
-                    "온라인 패션 확대",
-                    "패스트패션 성장",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "환율 리스크",
-                    "가격 투명성",
-                    "트렌드 변화"
-                ],
-                "rank": 25
-            },
-            "entertainment": {
-                "size": 12.8,
-                "growth": 7.8,
-                "potential": 67,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "게임 시장 성장",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "주의력 경쟁",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 24
-            },
-            "construction": {
-                "size": 15.1,
-                "growth": 5.5,
-                "potential": 70,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "BIM 기술 활용",
-                    "도시 인프라 투자"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "건설 테크 투자 부담",
-                    "부동산 거품 리스크"
-                ],
-                "rank": 46
             }
         },
         "gdp_growth_pct": -1.3,
@@ -1748,9 +1232,9 @@ const COUNTRIES = {
                 "rank": 111
             },
             "agriculture": {
-                "size": 2.0,
+                "size": 1,
                 "growth": 3.6,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -1761,7 +1245,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 115
+                "rank": 107
             },
             "automotive": {
                 "size": 1,
@@ -1841,7 +1325,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 85
+                "rank": 87
             },
             "education": {
                 "size": 1,
@@ -1858,102 +1342,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 95
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 6.2,
-                "potential": 63,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "인플루언서 마케팅",
-                    "K-뷰티 수요 확대"
-                ],
-                "risk": [
-                    "브랜드 경쟁 심화",
-                    "온라인 가격 경쟁",
-                    "리뷰 리스크"
-                ],
-                "rank": 116
-            },
-            "food": {
-                "size": 1.1,
-                "growth": 4.5,
-                "potential": 70,
-                "oppo": [
-                    "지역 특산품 브랜드화",
-                    "푸드테크 성장",
-                    "식품 안전 의식 증가"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "엄격한 식품 규제",
-                    "식품 안전 이슈"
-                ],
-                "rank": 121
-            },
-            "logistics": {
-                "size": 1.2,
-                "growth": 4.2,
-                "potential": 67,
-                "oppo": [
-                    "이커머스 물류 성장",
-                    "디지털 물류 플랫폼",
-                    "항만 현대화"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "규제 복잡성",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 101
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 5.1,
-                "potential": 63,
-                "oppo": [
-                    "패스트패션 성장",
-                    "하이엔드 브랜드",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "트렌드 변화",
-                    "지속가능성 규제",
-                    "인건비 상승"
-                ],
-                "rank": 123
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 6.4,
-                "potential": 68,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "문화 콘텐츠 다양성",
-                    "OTT 시장 확대"
-                ],
-                "risk": [
-                    "콘텐츠 제작비 상승",
-                    "불법 복제",
-                    "플랫폼 과포화"
-                ],
-                "rank": 116
-            },
-            "construction": {
-                "size": 3.1,
-                "growth": 7,
-                "potential": 60,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "건설 테크 도입",
-                    "주택 건설 확대"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "자재비 상승",
-                    "인허가 절차"
-                ],
-                "rank": 92
             }
         },
         "gdp_growth_pct": 5.9,
@@ -2056,9 +1444,9 @@ const COUNTRIES = {
                 "rank": 15
             },
             "agriculture": {
-                "size": 35.8,
+                "size": 52.7,
                 "growth": 1.7,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -2069,7 +1457,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 27
+                "rank": 14
             },
             "automotive": {
                 "size": 68.5,
@@ -2149,7 +1537,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 10
             },
             "education": {
                 "size": 53.3,
@@ -2166,102 +1554,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 13
-            },
-            "beauty": {
-                "size": 19.4,
-                "growth": 4.6,
-                "potential": 80,
-                "oppo": [
-                    "아시안 뷰티 트렌드",
-                    "인플루언서 마케팅",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "소비자 트렌드 변화",
-                    "과잉 경쟁",
-                    "리뷰 리스크"
-                ],
-                "rank": 13
-            },
-            "food": {
-                "size": 117.6,
-                "growth": 3.2,
-                "potential": 72,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "건강식품 트렌드",
-                    "아시아 식품 수출"
-                ],
-                "risk": [
-                    "수입 규제",
-                    "식품 안전 규제",
-                    "온라인 경쟁"
-                ],
-                "rank": 14
-            },
-            "logistics": {
-                "size": 43.9,
-                "growth": 4.2,
-                "potential": 78,
-                "oppo": [
-                    "콜드체인 확대",
-                    "디지털 물류 플랫폼",
-                    "첨단 물류 자동화"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "자동화 투자 부담",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 22
-            },
-            "fashion": {
-                "size": 27.7,
-                "growth": 3.8,
-                "potential": 66,
-                "oppo": [
-                    "한류 패션 영향",
-                    "아시아 패션 허브",
-                    "지속가능 패션"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "시장 포화",
-                    "가격 투명성"
-                ],
-                "rank": 16
-            },
-            "entertainment": {
-                "size": 52.1,
-                "growth": 6.1,
-                "potential": 80,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "콘텐츠 IP 수출",
-                    "한류 콘텐츠 수출"
-                ],
-                "risk": [
-                    "경쟁 과열",
-                    "플랫폼 과포화",
-                    "콘텐츠 과잉 공급"
-                ],
-                "rank": 12
-            },
-            "construction": {
-                "size": 70.8,
-                "growth": 3.5,
-                "potential": 66,
-                "oppo": [
-                    "인프라 수출",
-                    "건설 테크 도입",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "부동산 과열 리스크",
-                    "인건비 상승"
-                ],
-                "rank": 21
             }
         },
         "gdp_growth_pct": 1.4,
@@ -2364,9 +1656,9 @@ const COUNTRIES = {
                 "rank": 26
             },
             "agriculture": {
-                "size": 6.5,
+                "size": 16.0,
                 "growth": 1.2,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -2377,7 +1669,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 70
+                "rank": 30
             },
             "automotive": {
                 "size": 20.9,
@@ -2457,7 +1749,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 13
+                "rank": 14
             },
             "education": {
                 "size": 16.9,
@@ -2474,102 +1766,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 25
-            },
-            "beauty": {
-                "size": 5.4,
-                "growth": 4.6,
-                "potential": 75,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "이커머스 뷰티 판매",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "엄격한 규제",
-                    "리뷰 리스크"
-                ],
-                "rank": 29
-            },
-            "food": {
-                "size": 22.5,
-                "growth": 2.5,
-                "potential": 66,
-                "oppo": [
-                    "푸드테크 성장",
-                    "유기농 수요 증가",
-                    "프리미엄 식품 시장"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "온라인 경쟁",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 32
-            },
-            "logistics": {
-                "size": 20.7,
-                "growth": 3.7,
-                "potential": 76,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "크로스보더 물류",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "자동화 투자 부담",
-                    "환경 규제"
-                ],
-                "rank": 30
-            },
-            "fashion": {
-                "size": 8.1,
-                "growth": 3,
-                "potential": 74,
-                "oppo": [
-                    "럭셔리 패션 시장",
-                    "지속가능 패션",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "가격 투명성",
-                    "패스트패션 비판"
-                ],
-                "rank": 30
-            },
-            "entertainment": {
-                "size": 9.9,
-                "growth": 5.9,
-                "potential": 73,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "문화 콘텐츠 다양성",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "시장 분절",
-                    "언어 장벽"
-                ],
-                "rank": 31
-            },
-            "construction": {
-                "size": 15.2,
-                "growth": 3.6,
-                "potential": 69,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "리노베이션 시장",
-                    "스마트시티 개발"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "환경 규제 강화",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 45
             }
         },
         "gdp_growth_pct": -0.7,
@@ -2672,7 +1868,7 @@ const COUNTRIES = {
                 "rank": 79
             },
             "agriculture": {
-                "size": 4.2,
+                "size": 2.2,
                 "growth": 2.8,
                 "potential": 75,
                 "oppo": [
@@ -2685,7 +1881,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 92
+                "rank": 84
             },
             "automotive": {
                 "size": 2.9,
@@ -2765,7 +1961,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 86
+                "rank": 88
             },
             "education": {
                 "size": 1.6,
@@ -2782,102 +1978,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 79
-            },
-            "beauty": {
-                "size": 0.6,
-                "growth": 5.1,
-                "potential": 59,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "온라인 뷰티 성장",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "리뷰 리스크",
-                    "엄격한 규제"
-                ],
-                "rank": 78
-            },
-            "food": {
-                "size": 3.3,
-                "growth": 5.5,
-                "potential": 68,
-                "oppo": [
-                    "식품 안전 의식 증가",
-                    "가공식품 시장 성장",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "온라인 경쟁",
-                    "원자재 가격 변동"
-                ],
-                "rank": 84
-            },
-            "logistics": {
-                "size": 2.6,
-                "growth": 4.9,
-                "potential": 68,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "이커머스 물류 성장",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "인프라 병목",
-                    "규제 복잡성",
-                    "국경 통관"
-                ],
-                "rank": 80
-            },
-            "fashion": {
-                "size": 0.9,
-                "growth": 5.8,
-                "potential": 57,
-                "oppo": [
-                    "하이엔드 브랜드",
-                    "패스트패션 성장",
-                    "로컬 브랜드 성장"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "온라인 반품률",
-                    "인건비 상승"
-                ],
-                "rank": 83
-            },
-            "entertainment": {
-                "size": 1.6,
-                "growth": 7.5,
-                "potential": 57,
-                "oppo": [
-                    "로컬 콘텐츠 제작",
-                    "OTT 시장 확대",
-                    "유럽 콘텐츠 시장"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "언어 장벽",
-                    "플랫폼 과포화"
-                ],
-                "rank": 76
-            },
-            "construction": {
-                "size": 4.9,
-                "growth": 5.8,
-                "potential": 58,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "교통 인프라 투자",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "인허가 절차",
-                    "자재비 상승"
-                ],
-                "rank": 81
             }
         },
         "gdp_growth_pct": 4.1,
@@ -2900,7 +2000,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 34.3,
+                "size": 33.6,
                 "growth": 4.6,
                 "potential": 86,
                 "oppo": [
@@ -2913,7 +2013,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 27
+                "rank": 26
             },
             "manufacturing": {
                 "size": 84.5,
@@ -2980,9 +2080,9 @@ const COUNTRIES = {
                 "rank": 22
             },
             "agriculture": {
-                "size": 5.3,
+                "size": 20.1,
                 "growth": 1.6,
-                "potential": 77,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -2993,7 +2093,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 82
+                "rank": 23
             },
             "automotive": {
                 "size": 26.2,
@@ -3073,7 +2173,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 29
+                "rank": 30
             },
             "education": {
                 "size": 25.3,
@@ -3090,102 +2190,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 20
-            },
-            "beauty": {
-                "size": 5.7,
-                "growth": 3.7,
-                "potential": 76,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "이커머스 뷰티 판매",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "엄격한 규제",
-                    "소비자 트렌드 변화"
-                ],
-                "rank": 27
-            },
-            "food": {
-                "size": 30.1,
-                "growth": 3.1,
-                "potential": 75,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "온라인 푸드 배달",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "엄격한 식품 규제",
-                    "식품 안전 규제"
-                ],
-                "rank": 25
-            },
-            "logistics": {
-                "size": 63.4,
-                "growth": 3.8,
-                "potential": 74,
-                "oppo": [
-                    "라스트마일 혁신",
-                    "크로스보더 물류",
-                    "첨단 물류 자동화"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "자동화 투자 부담",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 15
-            },
-            "fashion": {
-                "size": 9.7,
-                "growth": 3.8,
-                "potential": 68,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "럭셔리 패션 시장",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "인건비 상승",
-                    "지속가능성 압박"
-                ],
-                "rank": 27
-            },
-            "entertainment": {
-                "size": 12.4,
-                "growth": 4.7,
-                "potential": 72,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "게임 산업 확대",
-                    "스트리밍 시장 성장"
-                ],
-                "risk": [
-                    "저작권 분쟁",
-                    "플랫폼 경쟁",
-                    "플랫폼 과포화"
-                ],
-                "rank": 25
-            },
-            "construction": {
-                "size": 19.7,
-                "growth": 4,
-                "potential": 70,
-                "oppo": [
-                    "리노베이션 시장",
-                    "BIM 기술 활용",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "인허가 절차",
-                    "인건비 상승"
-                ],
-                "rank": 39
             }
         },
         "gdp_growth_pct": 1.1,
@@ -3288,9 +2292,9 @@ const COUNTRIES = {
                 "rank": 114
             },
             "agriculture": {
-                "size": 5.2,
+                "size": 1,
                 "growth": 4.7,
-                "potential": 74,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -3301,7 +2305,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 83
+                "rank": 108
             },
             "automotive": {
                 "size": 1,
@@ -3381,7 +2385,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 87
+                "rank": 89
             },
             "education": {
                 "size": 1,
@@ -3398,102 +2402,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 96
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.9,
-                "potential": 51,
-                "oppo": [
-                    "스킨케어 수요 증가",
-                    "뷰티 시장 초기 성장",
-                    "젊은 인구 수요"
-                ],
-                "risk": [
-                    "디지털 채널 부재",
-                    "위조품 문제",
-                    "마케팅 도달 제한"
-                ],
-                "rank": 122
-            },
-            "food": {
-                "size": 0.9,
-                "growth": 4.3,
-                "potential": 53,
-                "oppo": [
-                    "전통 유통 채널",
-                    "지역 시장 활성화",
-                    "농업 현대화 기회"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "물류 비용",
-                    "물류 인프라 부재"
-                ],
-                "rank": 123
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 6.6,
-                "potential": 56,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "물류 인프라 구축",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "국경 통과 지연",
-                    "물류비 높음"
-                ],
-                "rank": 127
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 6.5,
-                "potential": 50,
-                "oppo": [
-                    "전통 의류 현대화",
-                    "아프리카 패션 부상",
-                    "전통 시장 유통"
-                ],
-                "risk": [
-                    "노동 환경 이슈",
-                    "저가 경쟁",
-                    "수입 의존도"
-                ],
-                "rank": 127
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 5.5,
-                "potential": 56,
-                "oppo": [
-                    "모바일 콘텐츠 수요",
-                    "놀리우드 성장",
-                    "콘텐츠 소비 증가"
-                ],
-                "risk": [
-                    "대역폭 부족",
-                    "제작 인프라 부족",
-                    "디지털 콘텐츠 접근 제한"
-                ],
-                "rank": 127
-            },
-            "construction": {
-                "size": 2.7,
-                "growth": 8.6,
-                "potential": 61,
-                "oppo": [
-                    "도시화 가속",
-                    "기초 인프라 건설",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "관리 비효율",
-                    "자금 부족",
-                    "기술력 부족"
-                ],
-                "rank": 94
             }
         },
         "gdp_growth_pct": 7.5,
@@ -3596,9 +2504,9 @@ const COUNTRIES = {
                 "rank": 115
             },
             "agriculture": {
-                "size": 4.8,
+                "size": 1,
                 "growth": 3.6,
-                "potential": 59,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -3609,7 +2517,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 87
+                "rank": 109
             },
             "automotive": {
                 "size": 1,
@@ -3689,7 +2597,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 88
+                "rank": 90
             },
             "education": {
                 "size": 1,
@@ -3706,102 +2614,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 97
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 8.7,
-                "potential": 52,
-                "oppo": [
-                    "아프리카 뷰티 시장 성장",
-                    "스킨케어 수요 증가",
-                    "성장 잠재력 높음"
-                ],
-                "risk": [
-                    "마케팅 도달 제한",
-                    "유통 채널 미비",
-                    "소비력 부족"
-                ],
-                "rank": 146
-            },
-            "food": {
-                "size": 1.2,
-                "growth": 4.8,
-                "potential": 50,
-                "oppo": [
-                    "기초 식품 가공",
-                    "농업 현대화",
-                    "지역 시장 활성화"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "물류 인프라 부재",
-                    "기후 변화 영향"
-                ],
-                "rank": 114
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 7.6,
-                "potential": 38,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "기본 물류 인프라",
-                    "기초 인프라 구축"
-                ],
-                "risk": [
-                    "디지털 전환 지연",
-                    "도로망 미비",
-                    "국경 통과 지연"
-                ],
-                "rank": 132
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 7.8,
-                "potential": 43,
-                "oppo": [
-                    "섬유 산업 잠재력",
-                    "전통 의류 현대화",
-                    "도매 시장 성장"
-                ],
-                "risk": [
-                    "소비력 부족",
-                    "원자재 수급",
-                    "유통 한계"
-                ],
-                "rank": 140
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 7.2,
-                "potential": 35,
-                "oppo": [
-                    "라디오/TV 보급",
-                    "방송 미디어 발전",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "수익 모델 미성숙",
-                    "디지털 콘텐츠 접근 제한",
-                    "기본 인프라 부족"
-                ],
-                "rank": 140
-            },
-            "construction": {
-                "size": 1.8,
-                "growth": 8.8,
-                "potential": 54,
-                "oppo": [
-                    "국제 개발 원조",
-                    "기본 인프라 구축",
-                    "노동집약 건설"
-                ],
-                "risk": [
-                    "자금 부족",
-                    "관리 비효율",
-                    "정치적 불안정"
-                ],
-                "rank": 109
             }
         },
         "gdp_growth_pct": 4.8,
@@ -3837,7 +2649,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 32
+                "rank": 31
             },
             "manufacturing": {
                 "size": 98.5,
@@ -3904,9 +2716,9 @@ const COUNTRIES = {
                 "rank": 36
             },
             "agriculture": {
-                "size": 90.5,
+                "size": 24.3,
                 "growth": 3.4,
-                "potential": 75,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -3917,7 +2729,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 6
+                "rank": 22
             },
             "automotive": {
                 "size": 13.5,
@@ -3997,7 +2809,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 54
+                "rank": 56
             },
             "education": {
                 "size": 6.6,
@@ -4014,102 +2826,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 49
-            },
-            "beauty": {
-                "size": 2.7,
-                "growth": 7.4,
-                "potential": 52,
-                "oppo": [
-                    "뷰티 시장 초기 성장",
-                    "젊은 인구 수요",
-                    "젊은 인구 구조"
-                ],
-                "risk": [
-                    "디지털 채널 부재",
-                    "가격 민감 시장",
-                    "마케팅 도달 제한"
-                ],
-                "rank": 42
-            },
-            "food": {
-                "size": 22,
-                "growth": 6.1,
-                "potential": 54,
-                "oppo": [
-                    "전통 유통 채널",
-                    "농산물 부가가치화",
-                    "식품 가공업 발전"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "위생 관리 어려움",
-                    "유통 비효율"
-                ],
-                "rank": 34
-            },
-            "logistics": {
-                "size": 10.7,
-                "growth": 5.3,
-                "potential": 52,
-                "oppo": [
-                    "운송 네트워크 확장",
-                    "창고업 현대화",
-                    "물류 인프라 구축"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "물류비 높음",
-                    "디지털 전환 지연"
-                ],
-                "rank": 39
-            },
-            "fashion": {
-                "size": 13.3,
-                "growth": 6.1,
-                "potential": 62,
-                "oppo": [
-                    "내수 패션 시장 성장",
-                    "수출 주도 성장",
-                    "섬유 제조 강국"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "저가 경쟁",
-                    "품질 관리"
-                ],
-                "rank": 22
-            },
-            "entertainment": {
-                "size": 3.8,
-                "growth": 6.6,
-                "potential": 48,
-                "oppo": [
-                    "콘텐츠 소비 증가",
-                    "미디어 디지털화",
-                    "볼리우드 산업"
-                ],
-                "risk": [
-                    "대역폭 부족",
-                    "수익화 어려움",
-                    "디지털 콘텐츠 접근 제한"
-                ],
-                "rank": 54
-            },
-            "construction": {
-                "size": 37,
-                "growth": 6.3,
-                "potential": 59,
-                "oppo": [
-                    "주택 수요 증가",
-                    "전통 건설 방식",
-                    "도시화 수요"
-                ],
-                "risk": [
-                    "자금 조달 어려움",
-                    "안전 관리",
-                    "안전 규제 미흡"
-                ],
-                "rank": 28
             }
         },
         "gdp_growth_pct": 4.2,
@@ -4212,9 +2928,9 @@ const COUNTRIES = {
                 "rank": 62
             },
             "agriculture": {
-                "size": 2.7,
+                "size": 3.4,
                 "growth": 2.6,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4225,7 +2941,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 107
+                "rank": 66
             },
             "automotive": {
                 "size": 4.4,
@@ -4305,7 +3021,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 55
+                "rank": 57
             },
             "education": {
                 "size": 3.1,
@@ -4322,102 +3038,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 62
-            },
-            "beauty": {
-                "size": 1.2,
-                "growth": 4.4,
-                "potential": 71,
-                "oppo": [
-                    "천연 화장품 수요",
-                    "프리미엄 뷰티 시장",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "소비자 트렌드 변화",
-                    "시장 포화",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 59
-            },
-            "food": {
-                "size": 5,
-                "growth": 2.7,
-                "potential": 72,
-                "oppo": [
-                    "프리미엄 식품 시장",
-                    "유럽 식품 규제 대응",
-                    "지역 특산품 브랜드화"
-                ],
-                "risk": [
-                    "소비 트렌드 변화",
-                    "원가 상승",
-                    "식품 안전 규제"
-                ],
-                "rank": 66
-            },
-            "logistics": {
-                "size": 3.8,
-                "growth": 3.8,
-                "potential": 69,
-                "oppo": [
-                    "콜드체인 확대",
-                    "크로스보더 물류",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "환경 규제",
-                    "환경 규제 강화"
-                ],
-                "rank": 64
-            },
-            "fashion": {
-                "size": 1.4,
-                "growth": 3,
-                "potential": 78,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "럭셔리 패션 시장",
-                    "지속가능 패션"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "지속가능성 규제",
-                    "온라인 반품률"
-                ],
-                "rank": 64
-            },
-            "entertainment": {
-                "size": 1.9,
-                "growth": 4.7,
-                "potential": 77,
-                "oppo": [
-                    "게임 산업 확대",
-                    "스트리밍 시장 성장",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "시장 분절",
-                    "언어 장벽"
-                ],
-                "rank": 67
-            },
-            "construction": {
-                "size": 6.2,
-                "growth": 3.2,
-                "potential": 69,
-                "oppo": [
-                    "건설 테크 도입",
-                    "BIM 기술 활용",
-                    "리노베이션 시장"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "원자재 가격 변동",
-                    "환경 규제"
-                ],
-                "rank": 74
             }
         },
         "gdp_growth_pct": 3.4,
@@ -4520,9 +3140,9 @@ const COUNTRIES = {
                 "rank": 94
             },
             "agriculture": {
-                "size": 1,
+                "size": 1.4,
                 "growth": 2.2,
-                "potential": 76,
+                "potential": 77,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4533,7 +3153,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 132
+                "rank": 96
             },
             "automotive": {
                 "size": 1.4,
@@ -4613,7 +3233,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 89
+                "rank": 91
             },
             "education": {
                 "size": 1,
@@ -4630,102 +3250,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 98
-            },
-            "beauty": {
-                "size": 0.5,
-                "growth": 4.6,
-                "potential": 81,
-                "oppo": [
-                    "프리미엄 뷰티 시장",
-                    "인플루언서 마케팅",
-                    "프리미엄 뷰티 수요"
-                ],
-                "risk": [
-                    "소비자 트렌드 변화",
-                    "온라인 가격 경쟁",
-                    "규제 강화"
-                ],
-                "rank": 82
-            },
-            "food": {
-                "size": 2.2,
-                "growth": 3,
-                "potential": 77,
-                "oppo": [
-                    "할랄 식품 시장",
-                    "식품 수입 의존도",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "원가 상승",
-                    "식품 안전 규제",
-                    "수입 의존도"
-                ],
-                "rank": 94
-            },
-            "logistics": {
-                "size": 2.4,
-                "growth": 2.9,
-                "potential": 78,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "중계 무역 허브",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "플랫폼 의존",
-                    "환경 규제"
-                ],
-                "rank": 85
-            },
-            "fashion": {
-                "size": 0.6,
-                "growth": 3.8,
-                "potential": 78,
-                "oppo": [
-                    "모데스트 패션 시장",
-                    "럭셔리 소비",
-                    "지속가능 패션"
-                ],
-                "risk": [
-                    "지속가능성 압박",
-                    "패스트패션 비판",
-                    "가격 투명성"
-                ],
-                "rank": 96
-            },
-            "entertainment": {
-                "size": 0.9,
-                "growth": 5,
-                "potential": 78,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "아랍어 콘텐츠 수요",
-                    "게임 산업 확대"
-                ],
-                "risk": [
-                    "문화적 제약",
-                    "콘텐츠 과잉 공급",
-                    "저작권 분쟁"
-                ],
-                "rank": 87
-            },
-            "construction": {
-                "size": 4.1,
-                "growth": 2.7,
-                "potential": 82,
-                "oppo": [
-                    "스마트시티 개발",
-                    "건설 테크 도입",
-                    "메가 프로젝트"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "프로젝트 지연",
-                    "인건비 상승"
-                ],
-                "rank": 85
             }
         },
         "gdp_growth_pct": 2.6,
@@ -4828,7 +3352,7 @@ const COUNTRIES = {
                 "rank": 107
             },
             "agriculture": {
-                "size": 1.3,
+                "size": 1,
                 "growth": 2.4,
                 "potential": 73,
                 "oppo": [
@@ -4841,7 +3365,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 126
+                "rank": 110
             },
             "automotive": {
                 "size": 1.2,
@@ -4921,7 +3445,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 90
+                "rank": 92
             },
             "education": {
                 "size": 1,
@@ -4938,102 +3462,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 99
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 5.7,
-                "potential": 68,
-                "oppo": [
-                    "온라인 뷰티 성장",
-                    "중산층 소비 증가",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "리뷰 리스크",
-                    "수입 의존도"
-                ],
-                "rank": 117
-            },
-            "food": {
-                "size": 1.2,
-                "growth": 5.3,
-                "potential": 66,
-                "oppo": [
-                    "외식 산업 확대",
-                    "가공식품 시장 성장",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "엄격한 식품 규제",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 115
-            },
-            "logistics": {
-                "size": 1,
-                "growth": 4.9,
-                "potential": 61,
-                "oppo": [
-                    "크로스보더 물류",
-                    "이커머스 물류 성장",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "사이버 보안 리스크",
-                    "환경 규제 강화"
-                ],
-                "rank": 107
-            },
-            "fashion": {
-                "size": 0.4,
-                "growth": 5.3,
-                "potential": 61,
-                "oppo": [
-                    "유럽 패션 수도",
-                    "패스트패션 성장",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "원자재 비용",
-                    "인건비 상승",
-                    "지속가능성 규제"
-                ],
-                "rank": 110
-            },
-            "entertainment": {
-                "size": 0.5,
-                "growth": 8.1,
-                "potential": 62,
-                "oppo": [
-                    "문화 콘텐츠 다양성",
-                    "디지털 콘텐츠 유통",
-                    "로컬 콘텐츠 제작"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "언어 장벽",
-                    "플랫폼 과포화"
-                ],
-                "rank": 107
-            },
-            "construction": {
-                "size": 1.4,
-                "growth": 4.5,
-                "potential": 69,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "리노베이션 시장",
-                    "친환경 건축"
-                ],
-                "risk": [
-                    "인허가 절차",
-                    "부동산 거품 리스크",
-                    "인력 부족"
-                ],
-                "rank": 119
             }
         },
         "gdp_growth_pct": 3.0,
@@ -5136,9 +3564,9 @@ const COUNTRIES = {
                 "rank": 80
             },
             "agriculture": {
-                "size": 5.2,
+                "size": 2.3,
                 "growth": 2.8,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -5149,7 +3577,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 84
+                "rank": 82
             },
             "automotive": {
                 "size": 3.0,
@@ -5229,7 +3657,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 91
+                "rank": 93
             },
             "education": {
                 "size": 2.3,
@@ -5246,102 +3674,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 68
-            },
-            "beauty": {
-                "size": 0.6,
-                "growth": 6.6,
-                "potential": 66,
-                "oppo": [
-                    "중산층 소비 증가",
-                    "이커머스 뷰티 판매",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "품질 규제",
-                    "시장 포화",
-                    "브랜드 경쟁 심화"
-                ],
-                "rank": 75
-            },
-            "food": {
-                "size": 3,
-                "growth": 4.9,
-                "potential": 59,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "식품 안전 의식 증가",
-                    "지역 특산품 브랜드화"
-                ],
-                "risk": [
-                    "엄격한 식품 규제",
-                    "온라인 경쟁",
-                    "원자재 가격 변동"
-                ],
-                "rank": 86
-            },
-            "logistics": {
-                "size": 3.3,
-                "growth": 4,
-                "potential": 57,
-                "oppo": [
-                    "물류 인프라 투자",
-                    "항만 현대화",
-                    "유럽 물류 허브"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "국경 통관",
-                    "플랫폼 의존"
-                ],
-                "rank": 69
-            },
-            "fashion": {
-                "size": 1.1,
-                "growth": 5.9,
-                "potential": 57,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "로컬 브랜드 성장",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "원자재 비용",
-                    "트렌드 변화",
-                    "온라인 반품률"
-                ],
-                "rank": 74
-            },
-            "entertainment": {
-                "size": 1.6,
-                "growth": 6.7,
-                "potential": 56,
-                "oppo": [
-                    "게임 시장 성장",
-                    "유럽 콘텐츠 시장",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "주의력 경쟁",
-                    "언어 장벽"
-                ],
-                "rank": 73
-            },
-            "construction": {
-                "size": 5.4,
-                "growth": 5.5,
-                "potential": 71,
-                "oppo": [
-                    "교통 인프라 투자",
-                    "주택 건설 확대",
-                    "리노베이션 시장"
-                ],
-                "risk": [
-                    "인허가 절차",
-                    "부동산 거품 리스크",
-                    "디지털 전환 비용"
-                ],
-                "rank": 78
             }
         },
         "gdp_growth_pct": 4.0,
@@ -5444,9 +3776,9 @@ const COUNTRIES = {
                 "rank": 88
             },
             "agriculture": {
-                "size": 4.8,
+                "size": 1.6,
                 "growth": 1.7,
-                "potential": 67,
+                "potential": 66,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -5537,7 +3869,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 92
+                "rank": 94
             },
             "education": {
                 "size": 2.7,
@@ -5554,102 +3886,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 67
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 7.3,
-                "potential": 61,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "뷰티 소비 증가",
-                    "자연 원료 활용"
-                ],
-                "risk": [
-                    "위조품 문제",
-                    "수입 관세",
-                    "소비력 제한"
-                ],
-                "rank": 101
-            },
-            "food": {
-                "size": 2.2,
-                "growth": 5.9,
-                "potential": 58,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "식품 가공업 발전",
-                    "농산물 수출 강국"
-                ],
-                "risk": [
-                    "물류 비용",
-                    "규제 환경",
-                    "콜드체인 부족"
-                ],
-                "rank": 95
-            },
-            "logistics": {
-                "size": 1.3,
-                "growth": 5.9,
-                "potential": 51,
-                "oppo": [
-                    "항만 인프라 투자",
-                    "농산물 물류",
-                    "창고업 현대화"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "도로 인프라 부족",
-                    "물류비 높음"
-                ],
-                "rank": 97
-            },
-            "fashion": {
-                "size": 0.7,
-                "growth": 6.5,
-                "potential": 56,
-                "oppo": [
-                    "섬유 원료 풍부",
-                    "OEM/ODM 기회",
-                    "의류 제조업 강세"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "품질 관리",
-                    "수입 경쟁"
-                ],
-                "rank": 91
-            },
-            "entertainment": {
-                "size": 0.9,
-                "growth": 8.4,
-                "potential": 49,
-                "oppo": [
-                    "미디어 디지털화",
-                    "디지털 콘텐츠 유통",
-                    "라틴 콘텐츠 시장"
-                ],
-                "risk": [
-                    "광고 시장 제한",
-                    "불법 복제",
-                    "저작권 보호 미흡"
-                ],
-                "rank": 88
-            },
-            "construction": {
-                "size": 1.4,
-                "growth": 7.4,
-                "potential": 55,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "도시 인프라 투자",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "기술력 부족",
-                    "정치적 불안정",
-                    "자금 조달"
-                ],
-                "rank": 120
             }
         },
         "gdp_growth_pct": -1.1,
@@ -5752,7 +3988,7 @@ const COUNTRIES = {
                 "rank": 11
             },
             "agriculture": {
-                "size": 125.7,
+                "size": 65.6,
                 "growth": 2.6,
                 "potential": 79,
                 "oppo": [
@@ -5765,7 +4001,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 5
+                "rank": 10
             },
             "automotive": {
                 "size": 65.6,
@@ -5845,7 +4081,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 27
+                "rank": 26
             },
             "education": {
                 "size": 73.7,
@@ -5862,102 +4098,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 8
-            },
-            "beauty": {
-                "size": 44.5,
-                "growth": 6.1,
-                "potential": 79,
-                "oppo": [
-                    "온라인 뷰티 성장",
-                    "인플루언서 마케팅",
-                    "자연 원료 활용"
-                ],
-                "risk": [
-                    "수입 관세",
-                    "온라인 가격 경쟁",
-                    "브랜드 경쟁 심화"
-                ],
-                "rank": 9
-            },
-            "food": {
-                "size": 260.4,
-                "growth": 4.6,
-                "potential": 81,
-                "oppo": [
-                    "농산물 수출 강국",
-                    "푸드테크 성장",
-                    "가공식품 시장 성장"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "물류 비용",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 6
-            },
-            "logistics": {
-                "size": 53.3,
-                "growth": 4.9,
-                "potential": 63,
-                "oppo": [
-                    "농산물 물류",
-                    "물류 인프라 투자",
-                    "항만 인프라 투자"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "세관 절차",
-                    "인프라 병목"
-                ],
-                "rank": 19
-            },
-            "fashion": {
-                "size": 50.3,
-                "growth": 4.5,
-                "potential": 73,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "온라인 패션 플랫폼",
-                    "로컬 브랜드 성장"
-                ],
-                "risk": [
-                    "원자재 비용",
-                    "온라인 반품률",
-                    "글로벌 브랜드 경쟁"
-                ],
-                "rank": 11
-            },
-            "entertainment": {
-                "size": 88.1,
-                "growth": 6.9,
-                "potential": 60,
-                "oppo": [
-                    "로컬 콘텐츠 제작",
-                    "OTT 플랫폼 확대",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "플랫폼 과포화",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 9
-            },
-            "construction": {
-                "size": 151.4,
-                "growth": 5.1,
-                "potential": 70,
-                "oppo": [
-                    "도시 인프라 투자",
-                    "교통 인프라 투자",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "자재비 상승",
-                    "정치적 불안정"
-                ],
-                "rank": 11
             }
         },
         "gdp_growth_pct": 3.4,
@@ -6073,7 +4213,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 133
+                "rank": 111
             },
             "automotive": {
                 "size": 1,
@@ -6153,7 +4293,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 93
+                "rank": 95
             },
             "education": {
                 "size": 1,
@@ -6170,102 +4310,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 100
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 4.4,
-                "potential": 74,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "안티에이징 수요 증가",
-                    "K-뷰티 열풍"
-                ],
-                "risk": [
-                    "트렌드 변화 빠름",
-                    "온라인 가격 경쟁",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 118
-            },
-            "food": {
-                "size": 0.7,
-                "growth": 2.8,
-                "potential": 71,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "푸드테크 성장",
-                    "한식/일식 인기"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "배달 플랫폼 수수료",
-                    "식품 안전 우려"
-                ],
-                "rank": 137
-            },
-            "logistics": {
-                "size": 0.7,
-                "growth": 3.5,
-                "potential": 70,
-                "oppo": [
-                    "콜드체인 확대",
-                    "디지털 물류 플랫폼",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "항만 혼잡",
-                    "플랫폼 의존"
-                ],
-                "rank": 124
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 4,
-                "potential": 70,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "한류 패션 영향",
-                    "디자이너 브랜드"
-                ],
-                "risk": [
-                    "패스트패션 포화",
-                    "패스트패션 비판",
-                    "지속가능성 압박"
-                ],
-                "rank": 142
-            },
-            "entertainment": {
-                "size": 0.3,
-                "growth": 6.2,
-                "potential": 78,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "콘텐츠 IP 수출",
-                    "스트리밍 시장 성장"
-                ],
-                "risk": [
-                    "저작권 분쟁",
-                    "콘텐츠 과잉 공급",
-                    "플랫폼 과포화"
-                ],
-                "rank": 124
-            },
-            "construction": {
-                "size": 1,
-                "growth": 3.7,
-                "potential": 68,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "스마트시티 개발",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "부동산 과열 리스크",
-                    "디지털 전환 비용"
-                ],
-                "rank": 133
             }
         },
         "gdp_growth_pct": 4.1,
@@ -6381,7 +4425,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 134
+                "rank": 112
             },
             "automotive": {
                 "size": 1,
@@ -6461,7 +4505,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 94
+                "rank": 96
             },
             "education": {
                 "size": 1,
@@ -6478,102 +4522,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 101
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 6.8,
-                "potential": 72,
-                "oppo": [
-                    "스킨케어 수요 증가",
-                    "중산층 소비 증가",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "품질 규제",
-                    "소비력 부족",
-                    "유통 인프라 부재"
-                ],
-                "rank": 119
-            },
-            "food": {
-                "size": 0.8,
-                "growth": 4.2,
-                "potential": 66,
-                "oppo": [
-                    "외식 산업 확대",
-                    "가공식품 시장 성장",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "온라인 경쟁",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 133
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 4.7,
-                "potential": 67,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "실시간 추적 시스템",
-                    "항만 현대화"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "국경 통과 지연",
-                    "인프라 병목"
-                ],
-                "rank": 133
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 6.3,
-                "potential": 67,
-                "oppo": [
-                    "패스트패션 성장",
-                    "아프리카 패션 부상",
-                    "전통 의류 현대화"
-                ],
-                "risk": [
-                    "트렌드 변화",
-                    "원자재 비용",
-                    "글로벌 브랜드 경쟁"
-                ],
-                "rank": 124
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 6.3,
-                "potential": 63,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "OTT 시장 확대",
-                    "로컬 콘텐츠 제작"
-                ],
-                "risk": [
-                    "콘텐츠 제작비 상승",
-                    "주의력 경쟁",
-                    "수익 모델 미성숙"
-                ],
-                "rank": 117
-            },
-            "construction": {
-                "size": 0.5,
-                "growth": 5.9,
-                "potential": 72,
-                "oppo": [
-                    "주택 건설 확대",
-                    "국제 개발 프로젝트",
-                    "교통 인프라 투자"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "부동산 거품 리스크",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 147
             }
         },
         "gdp_growth_pct": -3.0,
@@ -6609,7 +4557,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 6
             },
             "manufacturing": {
                 "size": 186.9,
@@ -6676,9 +4624,9 @@ const COUNTRIES = {
                 "rank": 10
             },
             "agriculture": {
-                "size": 35.9,
+                "size": 67.3,
                 "growth": 1.8,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -6689,7 +4637,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 9
             },
             "automotive": {
                 "size": 67.3,
@@ -6786,102 +4734,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 9
-            },
-            "beauty": {
-                "size": 27.2,
-                "growth": 4.9,
-                "potential": 72,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "안티에이징 수요 증가",
-                    "클린 뷰티 트렌드"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "시장 포화 경쟁",
-                    "소비자 트렌드 변화"
-                ],
-                "rank": 11
-            },
-            "food": {
-                "size": 145.6,
-                "growth": 3.4,
-                "potential": 69,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "푸드테크 성장",
-                    "프리미엄 식품 시장"
-                ],
-                "risk": [
-                    "소비 트렌드 변화",
-                    "식품 안전 규제",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 11
-            },
-            "logistics": {
-                "size": 71.9,
-                "growth": 4,
-                "potential": 70,
-                "oppo": [
-                    "라스트마일 혁신",
-                    "디지털 물류 플랫폼",
-                    "첨단 물류 자동화"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "플랫폼 의존",
-                    "자동화 투자 부담"
-                ],
-                "rank": 13
-            },
-            "fashion": {
-                "size": 28.5,
-                "growth": 4,
-                "potential": 80,
-                "oppo": [
-                    "디자이너 브랜드",
-                    "지속가능 패션",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "온라인 반품률",
-                    "패스트패션 비판"
-                ],
-                "rank": 15
-            },
-            "entertainment": {
-                "size": 72.9,
-                "growth": 5,
-                "potential": 82,
-                "oppo": [
-                    "콘텐츠 IP 수출",
-                    "게임 산업 확대",
-                    "스트리밍 시장 성장"
-                ],
-                "risk": [
-                    "저작권 분쟁",
-                    "콘텐츠 과잉 공급",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 10
-            },
-            "construction": {
-                "size": 74.1,
-                "growth": 2.4,
-                "potential": 67,
-                "oppo": [
-                    "인프라 현대화",
-                    "스마트시티 개발",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "환경 규제",
-                    "디지털 전환 비용"
-                ],
-                "rank": 20
             }
         },
         "gdp_growth_pct": 1.6,
@@ -6917,7 +4769,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 20
             },
             "manufacturing": {
                 "size": 182.3,
@@ -6984,9 +4836,9 @@ const COUNTRIES = {
                 "rank": 20
             },
             "agriculture": {
-                "size": 5.9,
+                "size": 28.1,
                 "growth": 1.7,
-                "potential": 78,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -6997,7 +4849,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 77
+                "rank": 20
             },
             "automotive": {
                 "size": 36.5,
@@ -7064,7 +4916,7 @@ const COUNTRIES = {
                 "rank": 20
             },
             "tourism": {
-                "size": 13.0,
+                "size": 24.4,
                 "growth": 4.1,
                 "potential": 84,
                 "oppo": [
@@ -7077,7 +4929,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 12
             },
             "education": {
                 "size": 27.7,
@@ -7094,102 +4946,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 18
-            },
-            "beauty": {
-                "size": 7.9,
-                "growth": 4.2,
-                "potential": 70,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "클린 뷰티 트렌드",
-                    "천연 화장품 수요"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "규제 강화",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 22
-            },
-            "food": {
-                "size": 42.5,
-                "growth": 3.4,
-                "potential": 68,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "유럽 식품 규제 대응",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "온라인 경쟁",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 22
-            },
-            "logistics": {
-                "size": 68,
-                "growth": 3.2,
-                "potential": 78,
-                "oppo": [
-                    "라스트마일 혁신",
-                    "실시간 추적 시스템",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "사이버 보안 리스크",
-                    "자동화 투자 부담"
-                ],
-                "rank": 14
-            },
-            "fashion": {
-                "size": 14.5,
-                "growth": 3.3,
-                "potential": 76,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "하이엔드 브랜드",
-                    "유럽 패션 수도"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "지속가능성 압박",
-                    "시장 포화"
-                ],
-                "rank": 21
-            },
-            "entertainment": {
-                "size": 20.7,
-                "growth": 4.9,
-                "potential": 71,
-                "oppo": [
-                    "문화 콘텐츠 다양성",
-                    "게임 산업 확대",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "주의력 경쟁",
-                    "저작권 분쟁"
-                ],
-                "rank": 20
-            },
-            "construction": {
-                "size": 24.7,
-                "growth": 3.4,
-                "potential": 71,
-                "oppo": [
-                    "친환경 건축",
-                    "그린빌딩 트렌드",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "건설 테크 투자 부담",
-                    "환경 규제 강화"
-                ],
-                "rank": 35
             }
         },
         "gdp_growth_pct": 1.3,
@@ -7292,7 +5048,7 @@ const COUNTRIES = {
                 "rank": 45
             },
             "agriculture": {
-                "size": 12.9,
+                "size": 9.9,
                 "growth": 2.3,
                 "potential": 80,
                 "oppo": [
@@ -7305,7 +5061,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 47
+                "rank": 44
             },
             "automotive": {
                 "size": 9.9,
@@ -7385,7 +5141,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 66
+                "rank": 69
             },
             "education": {
                 "size": 9.7,
@@ -7402,102 +5158,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 35
-            },
-            "beauty": {
-                "size": 2.9,
-                "growth": 4.4,
-                "potential": 82,
-                "oppo": [
-                    "프리미엄 뷰티 시장",
-                    "안티에이징 수요 증가",
-                    "자연 원료 활용"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "환율 변동성",
-                    "리뷰 리스크"
-                ],
-                "rank": 39
-            },
-            "food": {
-                "size": 13.4,
-                "growth": 3.1,
-                "potential": 69,
-                "oppo": [
-                    "건강식품 트렌드",
-                    "농산물 수출 강국",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "물류 비용",
-                    "원가 상승",
-                    "규제 환경"
-                ],
-                "rank": 49
-            },
-            "logistics": {
-                "size": 8.8,
-                "growth": 3.2,
-                "potential": 72,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "실시간 추적 시스템",
-                    "농산물 물류"
-                ],
-                "risk": [
-                    "도로 인프라 노후",
-                    "자동화 투자 부담",
-                    "세관 절차"
-                ],
-                "rank": 46
-            },
-            "fashion": {
-                "size": 4.1,
-                "growth": 3.8,
-                "potential": 74,
-                "oppo": [
-                    "럭셔리 패션 시장",
-                    "온라인 패션 플랫폼",
-                    "라틴 패션 트렌드"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "지속가능성 압박",
-                    "패스트패션 비판"
-                ],
-                "rank": 44
-            },
-            "entertainment": {
-                "size": 5.5,
-                "growth": 5.7,
-                "potential": 70,
-                "oppo": [
-                    "게임 산업 확대",
-                    "디지털 콘텐츠 유통",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "플랫폼 경쟁",
-                    "광고 시장 제한"
-                ],
-                "rank": 45
-            },
-            "construction": {
-                "size": 16.6,
-                "growth": 3.3,
-                "potential": 76,
-                "oppo": [
-                    "건설 테크 도입",
-                    "그린빌딩 트렌드",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "환경 규제",
-                    "디지털 전환 비용"
-                ],
-                "rank": 42
             }
         },
         "gdp_growth_pct": 2.6,
@@ -7600,9 +5260,9 @@ const COUNTRIES = {
                 "rank": 2
             },
             "agriculture": {
-                "size": 1270.1,
+                "size": 562.3,
                 "growth": 3.2,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -7613,7 +5273,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 1
+                "rank": 2
             },
             "automotive": {
                 "size": 731.0,
@@ -7693,7 +5353,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 1
+                "rank": 2
             },
             "education": {
                 "size": 450.0,
@@ -7710,102 +5370,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 2
-            },
-            "beauty": {
-                "size": 562.9,
-                "growth": 7.2,
-                "potential": 82,
-                "oppo": [
-                    "K-뷰티 열풍",
-                    "이커머스 뷰티 판매",
-                    "아시안 뷰티 트렌드"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "품질 규제",
-                    "과잉 경쟁"
-                ],
-                "rank": 2
-            },
-            "food": {
-                "size": 2783.9,
-                "growth": 4.3,
-                "potential": 78,
-                "oppo": [
-                    "푸드테크 성장",
-                    "가공식품 시장 성장",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "온라인 경쟁",
-                    "식품 안전 우려"
-                ],
-                "rank": 2
-            },
-            "logistics": {
-                "size": 1268.1,
-                "growth": 5.6,
-                "potential": 68,
-                "oppo": [
-                    "글로벌 공급망 허브",
-                    "항만 물류 강세",
-                    "물류 인프라 투자"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "경쟁 심화",
-                    "인건비 상승"
-                ],
-                "rank": 2
-            },
-            "fashion": {
-                "size": 923.3,
-                "growth": 5.5,
-                "potential": 66,
-                "oppo": [
-                    "온라인 패션 확대",
-                    "온라인 패션 플랫폼",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "원자재 비용",
-                    "가격 경쟁 심화"
-                ],
-                "rank": 2
-            },
-            "entertainment": {
-                "size": 1318.7,
-                "growth": 7.5,
-                "potential": 69,
-                "oppo": [
-                    "로컬 콘텐츠 제작",
-                    "한류 콘텐츠 수출",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "콘텐츠 규제",
-                    "콘텐츠 제작비 상승",
-                    "경쟁 과열"
-                ],
-                "rank": 2
-            },
-            "construction": {
-                "size": 5123.5,
-                "growth": 6.3,
-                "potential": 70,
-                "oppo": [
-                    "메가시티 개발",
-                    "인프라 수출",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "자재비 상승",
-                    "부동산 거품 리스크",
-                    "인력 부족"
-                ],
-                "rank": 1
             }
         },
         "gdp_growth_pct": 5.0,
@@ -7908,9 +5472,9 @@ const COUNTRIES = {
                 "rank": 77
             },
             "agriculture": {
-                "size": 13.8,
+                "size": 2.6,
                 "growth": 4.1,
-                "potential": 74,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -7921,7 +5485,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 44
+                "rank": 76
             },
             "automotive": {
                 "size": 2.6,
@@ -8001,7 +5565,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 95
+                "rank": 97
             },
             "education": {
                 "size": 1.8,
@@ -8018,102 +5582,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 77
-            },
-            "beauty": {
-                "size": 0.5,
-                "growth": 7.4,
-                "potential": 54,
-                "oppo": [
-                    "스킨케어 수요 증가",
-                    "뷰티 시장 초기 성장",
-                    "성장하는 중산층"
-                ],
-                "risk": [
-                    "소비력 제한",
-                    "마케팅 도달 제한",
-                    "소비력 부족"
-                ],
-                "rank": 80
-            },
-            "food": {
-                "size": 4.3,
-                "growth": 5.9,
-                "potential": 55,
-                "oppo": [
-                    "지역 시장 활성화",
-                    "농산물 부가가치화",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "위생 관리 어려움",
-                    "콜드체인 부족",
-                    "물류 비용"
-                ],
-                "rank": 72
-            },
-            "logistics": {
-                "size": 2.6,
-                "growth": 6.1,
-                "potential": 50,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "물류 인프라 구축",
-                    "운송 네트워크 확장"
-                ],
-                "risk": [
-                    "디지털 전환 지연",
-                    "추적 시스템 부재",
-                    "물류비 높음"
-                ],
-                "rank": 78
-            },
-            "fashion": {
-                "size": 0.9,
-                "growth": 5.4,
-                "potential": 57,
-                "oppo": [
-                    "OEM/ODM 기회",
-                    "내수 패션 시장 성장",
-                    "도매 시장 성장"
-                ],
-                "risk": [
-                    "저가 경쟁",
-                    "오프라인 한계",
-                    "수입 의존도"
-                ],
-                "rank": 82
-            },
-            "entertainment": {
-                "size": 0.9,
-                "growth": 8.3,
-                "potential": 53,
-                "oppo": [
-                    "놀리우드 성장",
-                    "콘텐츠 소비 증가",
-                    "모바일 콘텐츠"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "저작권 보호 미흡",
-                    "제작 인프라 부족"
-                ],
-                "rank": 85
-            },
-            "construction": {
-                "size": 10.5,
-                "growth": 9.2,
-                "potential": 55,
-                "oppo": [
-                    "도시화 가속",
-                    "아프리카 인프라 개발",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "자금 부족",
-                    "기술력 부족",
-                    "관리 비효율"
-                ],
-                "rank": 55
             }
         },
         "gdp_growth_pct": 6.0,
@@ -8216,9 +5684,9 @@ const COUNTRIES = {
                 "rank": 90
             },
             "agriculture": {
-                "size": 9.8,
+                "size": 1.6,
                 "growth": 3.1,
-                "potential": 71,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -8229,7 +5697,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 57
+                "rank": 89
             },
             "automotive": {
                 "size": 1.6,
@@ -8309,7 +5777,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 96
+                "rank": 98
             },
             "education": {
                 "size": 1,
@@ -8326,102 +5794,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 102
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 6.5,
-                "potential": 59,
-                "oppo": [
-                    "스킨케어 수요 증가",
-                    "직접 판매 채널",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "디지털 채널 부재",
-                    "소비력 부족",
-                    "소비력 제한"
-                ],
-                "rank": 93
-            },
-            "food": {
-                "size": 2.6,
-                "growth": 6.6,
-                "potential": 57,
-                "oppo": [
-                    "프랜차이즈 확대",
-                    "농업 현대화 기회",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "위생 관리 어려움",
-                    "물류 비용"
-                ],
-                "rank": 87
-            },
-            "logistics": {
-                "size": 1.1,
-                "growth": 6.5,
-                "potential": 47,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "기본 물류 인프라",
-                    "운송 네트워크 확장"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "물류비 높음",
-                    "국경 통과 지연"
-                ],
-                "rank": 102
-            },
-            "fashion": {
-                "size": 0.7,
-                "growth": 6.4,
-                "potential": 46,
-                "oppo": [
-                    "전통 의류 현대화",
-                    "내수 패션 시장 성장",
-                    "전통 시장 유통"
-                ],
-                "risk": [
-                    "노동 환경 이슈",
-                    "오프라인 한계",
-                    "품질 관리"
-                ],
-                "rank": 86
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 6,
-                "potential": 46,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "방송 미디어 발전",
-                    "미디어 디지털화"
-                ],
-                "risk": [
-                    "저작권 보호 미흡",
-                    "디지털 콘텐츠 접근 제한",
-                    "수익 모델 한계"
-                ],
-                "rank": 108
-            },
-            "construction": {
-                "size": 3.5,
-                "growth": 6.1,
-                "potential": 58,
-                "oppo": [
-                    "아프리카 인프라 개발",
-                    "주택 수요 증가",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "기술 도입 지연",
-                    "기술력 부족",
-                    "안전 관리"
-                ],
-                "rank": 88
             }
         },
         "gdp_growth_pct": 3.5,
@@ -8524,9 +5896,9 @@ const COUNTRIES = {
                 "rank": 86
             },
             "agriculture": {
-                "size": 6.8,
+                "size": 2.1,
                 "growth": 4.2,
-                "potential": 61,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -8537,7 +5909,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 68
+                "rank": 87
             },
             "automotive": {
                 "size": 2.1,
@@ -8617,7 +5989,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 97
+                "rank": 99
             },
             "education": {
                 "size": 1.2,
@@ -8634,102 +6006,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 87
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 7.6,
-                "potential": 51,
-                "oppo": [
-                    "오프라인 유통 기회",
-                    "스킨케어 수요 증가",
-                    "기초 화장품 수요"
-                ],
-                "risk": [
-                    "유통 인프라 부재",
-                    "인프라 부족",
-                    "소비력 극히 제한"
-                ],
-                "rank": 102
-            },
-            "food": {
-                "size": 3.7,
-                "growth": 5.8,
-                "potential": 47,
-                "oppo": [
-                    "지역 시장 활성화",
-                    "농업 현대화",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "인프라 미비",
-                    "기후 변화 영향",
-                    "유통 비효율"
-                ],
-                "rank": 79
-            },
-            "logistics": {
-                "size": 2.7,
-                "growth": 7.6,
-                "potential": 35,
-                "oppo": [
-                    "아프리카 내륙 물류",
-                    "운송 네트워크 확장",
-                    "기초 인프라 구축"
-                ],
-                "risk": [
-                    "운송 비용",
-                    "도로망 미비",
-                    "디지털 전환 지연"
-                ],
-                "rank": 76
-            },
-            "fashion": {
-                "size": 0.7,
-                "growth": 8.7,
-                "potential": 36,
-                "oppo": [
-                    "아프리카 패션 부상",
-                    "전통 시장 유통",
-                    "도매 시장 성장"
-                ],
-                "risk": [
-                    "원자재 수급",
-                    "기술력 부족",
-                    "유통 한계"
-                ],
-                "rank": 87
-            },
-            "entertainment": {
-                "size": 0.7,
-                "growth": 9.6,
-                "potential": 37,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "모바일 미디어 성장",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "기본 인프라 부족",
-                    "대역폭 부족",
-                    "소비력 제한"
-                ],
-                "rank": 91
-            },
-            "construction": {
-                "size": 8.5,
-                "growth": 7.9,
-                "potential": 45,
-                "oppo": [
-                    "노동집약 건설",
-                    "국제 개발 원조",
-                    "도로/수도 건설"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "기술 도입 지연",
-                    "관리 비효율"
-                ],
-                "rank": 61
             }
         },
         "gdp_growth_pct": 6.1,
@@ -8831,9 +6107,9 @@ const COUNTRIES = {
                 "rank": 118
             },
             "agriculture": {
-                "size": 1.5,
+                "size": 1,
                 "growth": 2.7,
-                "potential": 68,
+                "potential": 67,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -8844,7 +6120,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 123
+                "rank": 113
             },
             "automotive": {
                 "size": 1,
@@ -8924,7 +6200,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 98
+                "rank": 100
             },
             "education": {
                 "size": 1,
@@ -8941,102 +6217,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 103
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.7,
-                "potential": 49,
-                "oppo": [
-                    "뷰티 시장 초기 성장",
-                    "스킨케어 수요 증가",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "디지털 채널 부재",
-                    "위조품 문제",
-                    "소비력 제한"
-                ],
-                "rank": 121
-            },
-            "food": {
-                "size": 0.6,
-                "growth": 6.3,
-                "potential": 58,
-                "oppo": [
-                    "농산물 부가가치화",
-                    "농업 현대화 기회",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "물류 비용",
-                    "콜드체인 부족"
-                ],
-                "rank": 138
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 5.5,
-                "potential": 59,
-                "oppo": [
-                    "운송 네트워크 확장",
-                    "아프리카 내륙 물류",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "국경 통과 지연",
-                    "도로망 미비"
-                ],
-                "rank": 126
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 5.8,
-                "potential": 55,
-                "oppo": [
-                    "내수 패션 시장 성장",
-                    "OEM/ODM 기회",
-                    "전통 의류 현대화"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "유통 한계",
-                    "저가 경쟁"
-                ],
-                "rank": 126
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 7.5,
-                "potential": 52,
-                "oppo": [
-                    "모바일 엔터테인먼트",
-                    "방송 미디어 발전",
-                    "콘텐츠 소비 증가"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "제작 인프라 부족",
-                    "수익 모델 미성숙"
-                ],
-                "rank": 126
-            },
-            "construction": {
-                "size": 0.8,
-                "growth": 8,
-                "potential": 64,
-                "oppo": [
-                    "주택 수요 증가",
-                    "아프리카 인프라 개발",
-                    "도시화 가속"
-                ],
-                "risk": [
-                    "자금 조달 어려움",
-                    "관리 비효율",
-                    "기술 도입 지연"
-                ],
-                "rank": 135
             }
         },
         "gdp_growth_pct": 2.6,
@@ -9139,9 +6319,9 @@ const COUNTRIES = {
                 "rank": 38
             },
             "agriculture": {
-                "size": 38.9,
+                "size": 12.6,
                 "growth": 1.8,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -9152,7 +6332,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 22
+                "rank": 38
             },
             "automotive": {
                 "size": 12.6,
@@ -9232,7 +6412,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 59
+                "rank": 62
             },
             "education": {
                 "size": 13.2,
@@ -9249,102 +6429,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 29
-            },
-            "beauty": {
-                "size": 3,
-                "growth": 6.1,
-                "potential": 61,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "온라인 뷰티 성장",
-                    "뷰티 소비 증가"
-                ],
-                "risk": [
-                    "환율 변동성",
-                    "브랜드 경쟁 심화",
-                    "수입 의존도"
-                ],
-                "rank": 38
-            },
-            "food": {
-                "size": 18.9,
-                "growth": 4.7,
-                "potential": 67,
-                "oppo": [
-                    "식품 가공 산업",
-                    "푸드테크 성장",
-                    "식품 안전 의식 증가"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "물류 비용",
-                    "식품 안전 이슈"
-                ],
-                "rank": 40
-            },
-            "logistics": {
-                "size": 9,
-                "growth": 4.9,
-                "potential": 64,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "농산물 물류",
-                    "물류 인프라 투자"
-                ],
-                "risk": [
-                    "인프라 병목",
-                    "세관 절차",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 45
-            },
-            "fashion": {
-                "size": 5.9,
-                "growth": 6.4,
-                "potential": 63,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "온라인 패션 확대",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "환율 리스크",
-                    "온라인 반품률",
-                    "수입 경쟁"
-                ],
-                "rank": 36
-            },
-            "entertainment": {
-                "size": 7.2,
-                "growth": 7.5,
-                "potential": 67,
-                "oppo": [
-                    "라틴 콘텐츠 시장",
-                    "스페인어 콘텐츠",
-                    "게임 시장 성장"
-                ],
-                "risk": [
-                    "콘텐츠 제작비 상승",
-                    "불법 복제",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 37
-            },
-            "construction": {
-                "size": 12.1,
-                "growth": 6.3,
-                "potential": 72,
-                "oppo": [
-                    "교통 인프라 투자",
-                    "도시화 인프라 수요",
-                    "도시 인프라 투자"
-                ],
-                "risk": [
-                    "자금 조달",
-                    "디지털 전환 비용",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 48
             }
         },
         "gdp_growth_pct": 1.6,
@@ -9447,7 +6531,7 @@ const COUNTRIES = {
                 "rank": 75
             },
             "agriculture": {
-                "size": 3.4,
+                "size": 2.9,
                 "growth": 2.9,
                 "potential": 79,
                 "oppo": [
@@ -9460,7 +6544,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 101
+                "rank": 72
             },
             "automotive": {
                 "size": 2.9,
@@ -9540,7 +6624,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 70
+                "rank": 74
             },
             "education": {
                 "size": 3.6,
@@ -9557,102 +6641,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 61
-            },
-            "beauty": {
-                "size": 0.9,
-                "growth": 4.5,
-                "potential": 79,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "클린 뷰티 트렌드",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "시장 포화 경쟁",
-                    "소비자 트렌드 변화",
-                    "리뷰 리스크"
-                ],
-                "rank": 65
-            },
-            "food": {
-                "size": 4.2,
-                "growth": 3,
-                "potential": 73,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "온라인 푸드 배달",
-                    "프리미엄 식품 시장"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "소비 트렌드 변화",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 73
-            },
-            "logistics": {
-                "size": 2.9,
-                "growth": 3.9,
-                "potential": 73,
-                "oppo": [
-                    "항만 인프라 투자",
-                    "라스트마일 혁신",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "사이버 보안 리스크",
-                    "자동화 투자 부담"
-                ],
-                "rank": 72
-            },
-            "fashion": {
-                "size": 1.1,
-                "growth": 3.4,
-                "potential": 71,
-                "oppo": [
-                    "섬유 원료 풍부",
-                    "온라인 패션 플랫폼",
-                    "럭셔리 패션 시장"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "환율 리스크",
-                    "수입 경쟁"
-                ],
-                "rank": 75
-            },
-            "entertainment": {
-                "size": 2.1,
-                "growth": 6,
-                "potential": 77,
-                "oppo": [
-                    "라틴 콘텐츠 시장",
-                    "스트리밍 시장 성장",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "주의력 경쟁",
-                    "저작권 분쟁"
-                ],
-                "rank": 63
-            },
-            "construction": {
-                "size": 6.8,
-                "growth": 2.1,
-                "potential": 65,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "주택 부족 해소",
-                    "도시 인프라 투자"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "인건비 상승",
-                    "환경 규제"
-                ],
-                "rank": 71
             }
         },
         "gdp_growth_pct": 4.3,
@@ -9755,9 +6743,9 @@ const COUNTRIES = {
                 "rank": 68
             },
             "agriculture": {
-                "size": 1.3,
+                "size": 3.2,
                 "growth": 1.2,
-                "potential": 71,
+                "potential": 72,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -9768,7 +6756,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 127
+                "rank": 69
             },
             "automotive": {
                 "size": 3.2,
@@ -9848,7 +6836,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 76
+                "rank": 80
             },
             "education": {
                 "size": 5.4,
@@ -9865,102 +6853,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 54
-            },
-            "beauty": {
-                "size": 1,
-                "growth": 4.9,
-                "potential": 69,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "인플루언서 마케팅",
-                    "자연 원료 활용"
-                ],
-                "risk": [
-                    "환율 변동성",
-                    "품질 규제",
-                    "수입 의존도"
-                ],
-                "rank": 62
-            },
-            "food": {
-                "size": 4.4,
-                "growth": 3.6,
-                "potential": 59,
-                "oppo": [
-                    "식품 가공 산업",
-                    "농산물 수출 강국",
-                    "외식 산업 확대"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "경쟁 심화",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 71
-            },
-            "logistics": {
-                "size": 4.1,
-                "growth": 5.2,
-                "potential": 59,
-                "oppo": [
-                    "농산물 물류",
-                    "디지털 물류 플랫폼",
-                    "항만 인프라 투자"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "규제 복잡성",
-                    "도로 인프라 노후"
-                ],
-                "rank": 62
-            },
-            "fashion": {
-                "size": 1.3,
-                "growth": 6.2,
-                "potential": 61,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "온라인 패션 확대",
-                    "라틴 패션 트렌드"
-                ],
-                "risk": [
-                    "원자재 비용",
-                    "글로벌 브랜드 경쟁",
-                    "트렌드 변화"
-                ],
-                "rank": 69
-            },
-            "entertainment": {
-                "size": 1.7,
-                "growth": 8.2,
-                "potential": 61,
-                "oppo": [
-                    "게임 시장 성장",
-                    "OTT 플랫폼 확대",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "불법 복제",
-                    "광고 시장 제한"
-                ],
-                "rank": 71
-            },
-            "construction": {
-                "size": 3.1,
-                "growth": 5.8,
-                "potential": 59,
-                "oppo": [
-                    "주택 부족 해소",
-                    "건설 테크 도입",
-                    "교통 인프라 투자"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "자재비 상승",
-                    "부동산 거품 리스크"
-                ],
-                "rank": 90
             }
         },
         "gdp_growth_pct": -1.1,
@@ -10062,7 +6954,7 @@ const COUNTRIES = {
                 "rank": 100
             },
             "agriculture": {
-                "size": 1,
+                "size": 1.1,
                 "growth": 2.8,
                 "potential": 78,
                 "oppo": [
@@ -10075,7 +6967,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 135
+                "rank": 102
             },
             "automotive": {
                 "size": 1.5,
@@ -10155,7 +7047,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 99
+                "rank": 101
             },
             "education": {
                 "size": 1.1,
@@ -10172,102 +7064,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 89
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 3.9,
-                "potential": 75,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "안티에이징 수요 증가",
-                    "클린 뷰티 트렌드"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "시장 포화 경쟁",
-                    "리뷰 리스크"
-                ],
-                "rank": 94
-            },
-            "food": {
-                "size": 1.9,
-                "growth": 2.7,
-                "potential": 73,
-                "oppo": [
-                    "지역 특산품 브랜드화",
-                    "건강식품 트렌드",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "소비 트렌드 변화",
-                    "배달 플랫폼 수수료",
-                    "원가 상승"
-                ],
-                "rank": 100
-            },
-            "logistics": {
-                "size": 1.9,
-                "growth": 3.6,
-                "potential": 79,
-                "oppo": [
-                    "라스트마일 혁신",
-                    "첨단 물류 자동화",
-                    "유럽 물류 허브"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "플랫폼 의존",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 90
-            },
-            "fashion": {
-                "size": 0.5,
-                "growth": 3.7,
-                "potential": 75,
-                "oppo": [
-                    "하이엔드 브랜드",
-                    "지속가능 패션",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "패스트패션 비판",
-                    "시장 포화"
-                ],
-                "rank": 98
-            },
-            "entertainment": {
-                "size": 0.7,
-                "growth": 4.7,
-                "potential": 69,
-                "oppo": [
-                    "스트리밍 시장 성장",
-                    "게임 산업 확대",
-                    "콘텐츠 IP 수출"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "시장 분절",
-                    "언어 장벽"
-                ],
-                "rank": 92
-            },
-            "construction": {
-                "size": 2.4,
-                "growth": 2.5,
-                "potential": 73,
-                "oppo": [
-                    "건설 테크 도입",
-                    "친환경 건축",
-                    "리노베이션 시장"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "인허가 절차",
-                    "원자재 가격 변동"
-                ],
-                "rank": 102
             }
         },
         "gdp_growth_pct": 3.9,
@@ -10370,7 +7166,7 @@ const COUNTRIES = {
                 "rank": 42
             },
             "agriculture": {
-                "size": 6.6,
+                "size": 10.4,
                 "growth": 1.7,
                 "potential": 78,
                 "oppo": [
@@ -10383,7 +7179,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 69
+                "rank": 43
             },
             "automotive": {
                 "size": 13.5,
@@ -10463,7 +7259,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 39
+                "rank": 41
             },
             "education": {
                 "size": 9.0,
@@ -10480,102 +7276,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 37
-            },
-            "beauty": {
-                "size": 3.3,
-                "growth": 3.7,
-                "potential": 73,
-                "oppo": [
-                    "천연 화장품 수요",
-                    "클린 뷰티 트렌드",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "소비자 트렌드 변화",
-                    "리뷰 리스크",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 35
-            },
-            "food": {
-                "size": 17.7,
-                "growth": 3.4,
-                "potential": 72,
-                "oppo": [
-                    "지역 특산품 브랜드화",
-                    "유기농 수요 증가",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "원가 상승",
-                    "소비 트렌드 변화"
-                ],
-                "rank": 42
-            },
-            "logistics": {
-                "size": 14.2,
-                "growth": 4,
-                "potential": 67,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "라스트마일 혁신",
-                    "콜드체인 확대"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "인건비 상승",
-                    "플랫폼 의존"
-                ],
-                "rank": 35
-            },
-            "fashion": {
-                "size": 5.5,
-                "growth": 3.3,
-                "potential": 76,
-                "oppo": [
-                    "럭셔리 패션 시장",
-                    "온라인 패션 플랫폼",
-                    "유럽 패션 수도"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "인건비 상승",
-                    "패스트패션 비판"
-                ],
-                "rank": 40
-            },
-            "entertainment": {
-                "size": 6.4,
-                "growth": 5.1,
-                "potential": 77,
-                "oppo": [
-                    "스트리밍 시장 성장",
-                    "유럽 콘텐츠 시장",
-                    "게임 산업 확대"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "저작권 분쟁",
-                    "주의력 경쟁"
-                ],
-                "rank": 39
-            },
-            "construction": {
-                "size": 11,
-                "growth": 2.9,
-                "potential": 79,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "인프라 현대화",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "인허가 절차",
-                    "원자재 가격 변동"
-                ],
-                "rank": 51
             }
         },
         "gdp_growth_pct": 1.2,
@@ -10678,9 +7378,9 @@ const COUNTRIES = {
                 "rank": 3
             },
             "agriculture": {
-                "size": 42.8,
+                "size": 140.6,
                 "growth": 1.2,
-                "potential": 79,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -10691,7 +7391,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 19
+                "rank": 4
             },
             "automotive": {
                 "size": 182.7,
@@ -10788,102 +7488,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 3
-            },
-            "beauty": {
-                "size": 76,
-                "growth": 4.1,
-                "potential": 86,
-                "oppo": [
-                    "클린 뷰티 트렌드",
-                    "유럽 프리미엄 시장",
-                    "천연 화장품 수요"
-                ],
-                "risk": [
-                    "시장 포화 경쟁",
-                    "리뷰 리스크",
-                    "규제 강화"
-                ],
-                "rank": 5
-            },
-            "food": {
-                "size": 371,
-                "growth": 2.6,
-                "potential": 79,
-                "oppo": [
-                    "유럽 식품 규제 대응",
-                    "유기농 수요 증가",
-                    "건강식품 트렌드"
-                ],
-                "risk": [
-                    "원가 상승",
-                    "온라인 경쟁",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 5
-            },
-            "logistics": {
-                "size": 467.9,
-                "growth": 3.5,
-                "potential": 76,
-                "oppo": [
-                    "라스트마일 혁신",
-                    "실시간 추적 시스템",
-                    "콜드체인 확대"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "자동화 투자 부담",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 3
-            },
-            "fashion": {
-                "size": 127.8,
-                "growth": 3,
-                "potential": 71,
-                "oppo": [
-                    "디자이너 브랜드",
-                    "유럽 패션 수도",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "패스트패션 비판",
-                    "가격 투명성",
-                    "지속가능성 압박"
-                ],
-                "rank": 6
-            },
-            "entertainment": {
-                "size": 164.1,
-                "growth": 5.6,
-                "potential": 80,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "디지털 콘텐츠 유통",
-                    "문화 콘텐츠 다양성"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "언어 장벽",
-                    "저작권 분쟁"
-                ],
-                "rank": 6
-            },
-            "construction": {
-                "size": 242.9,
-                "growth": 3.8,
-                "potential": 76,
-                "oppo": [
-                    "건설 테크 도입",
-                    "리노베이션 시장",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "인건비 상승",
-                    "환경 규제"
-                ],
-                "rank": 5
             }
         },
         "gdp_growth_pct": -0.5,
@@ -10986,9 +7590,9 @@ const COUNTRIES = {
                 "rank": 34
             },
             "agriculture": {
-                "size": 3.9,
+                "size": 12.7,
                 "growth": 2.6,
-                "potential": 79,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -10999,7 +7603,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 95
+                "rank": 36
             },
             "automotive": {
                 "size": 16.6,
@@ -11079,7 +7683,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 21
             },
             "education": {
                 "size": 16.2,
@@ -11096,102 +7700,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 26
-            },
-            "beauty": {
-                "size": 3.9,
-                "growth": 4.4,
-                "potential": 74,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "프리미엄 뷰티 시장",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "리뷰 리스크",
-                    "엄격한 규제"
-                ],
-                "rank": 34
-            },
-            "food": {
-                "size": 19.5,
-                "growth": 3.2,
-                "potential": 70,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "프리미엄 식품 시장",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "온라인 경쟁",
-                    "원가 상승"
-                ],
-                "rank": 38
-            },
-            "logistics": {
-                "size": 15.3,
-                "growth": 2.9,
-                "potential": 68,
-                "oppo": [
-                    "라스트마일 혁신",
-                    "콜드체인 확대",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "인건비 상승",
-                    "자동화 투자 부담"
-                ],
-                "rank": 32
-            },
-            "fashion": {
-                "size": 7.8,
-                "growth": 3.9,
-                "potential": 74,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "디자이너 브랜드",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "가격 투명성",
-                    "지속가능성 압박"
-                ],
-                "rank": 33
-            },
-            "entertainment": {
-                "size": 8,
-                "growth": 4.9,
-                "potential": 78,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "스트리밍 시장 성장",
-                    "문화 콘텐츠 다양성"
-                ],
-                "risk": [
-                    "저작권 분쟁",
-                    "시장 분절",
-                    "콘텐츠 과잉 공급"
-                ],
-                "rank": 34
-            },
-            "construction": {
-                "size": 31,
-                "growth": 3.8,
-                "potential": 70,
-                "oppo": [
-                    "친환경 건축",
-                    "BIM 기술 활용",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "환경 규제 강화",
-                    "인건비 상승"
-                ],
-                "rank": 31
             }
         },
         "gdp_growth_pct": 3.5,
@@ -11294,9 +7802,9 @@ const COUNTRIES = {
                 "rank": 63
             },
             "agriculture": {
-                "size": 5.5,
+                "size": 3.7,
                 "growth": 3.2,
-                "potential": 77,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -11307,7 +7815,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 79
+                "rank": 62
             },
             "automotive": {
                 "size": 3.7,
@@ -11387,7 +7895,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 31
+                "rank": 34
             },
             "education": {
                 "size": 2.8,
@@ -11404,102 +7912,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 65
-            },
-            "beauty": {
-                "size": 0.9,
-                "growth": 4.8,
-                "potential": 67,
-                "oppo": [
-                    "뷰티 소비 증가",
-                    "이커머스 뷰티 판매",
-                    "K-뷰티 수요 확대"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "환율 변동성",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 67
-            },
-            "food": {
-                "size": 4.8,
-                "growth": 5.3,
-                "potential": 65,
-                "oppo": [
-                    "농산물 수출 강국",
-                    "온라인 푸드 배달",
-                    "식품 안전 의식 증가"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "경쟁 심화",
-                    "식품 안전 이슈"
-                ],
-                "rank": 68
-            },
-            "logistics": {
-                "size": 2.9,
-                "growth": 4.3,
-                "potential": 63,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "항만 인프라 투자",
-                    "물류 인프라 투자"
-                ],
-                "risk": [
-                    "도로 인프라 노후",
-                    "인프라 병목",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 73
-            },
-            "fashion": {
-                "size": 1.8,
-                "growth": 4.9,
-                "potential": 56,
-                "oppo": [
-                    "패스트패션 성장",
-                    "라틴 패션 트렌드",
-                    "섬유 원료 풍부"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "가격 투명성",
-                    "글로벌 브랜드 경쟁"
-                ],
-                "rank": 60
-            },
-            "entertainment": {
-                "size": 2.2,
-                "growth": 6,
-                "potential": 60,
-                "oppo": [
-                    "로컬 콘텐츠 제작",
-                    "라틴 콘텐츠 시장",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "플랫폼 과포화",
-                    "콘텐츠 제작비 상승"
-                ],
-                "rank": 62
-            },
-            "construction": {
-                "size": 10.1,
-                "growth": 6.3,
-                "potential": 62,
-                "oppo": [
-                    "교통 인프라 투자",
-                    "BIM 기술 활용",
-                    "도시화 인프라 수요"
-                ],
-                "risk": [
-                    "부동산 거품 리스크",
-                    "정치적 불안정",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 58
             }
         },
         "gdp_growth_pct": 5.0,
@@ -11602,9 +8014,9 @@ const COUNTRIES = {
                 "rank": 51
             },
             "agriculture": {
-                "size": 37.6,
+                "size": 8.1,
                 "growth": 2.7,
-                "potential": 78,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -11615,7 +8027,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 24
+                "rank": 50
             },
             "automotive": {
                 "size": 8.1,
@@ -11695,7 +8107,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 73
+                "rank": 77
             },
             "education": {
                 "size": 9.1,
@@ -11712,102 +8124,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 36
-            },
-            "beauty": {
-                "size": 2.1,
-                "growth": 5.4,
-                "potential": 69,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "인플루언서 마케팅",
-                    "할랄 화장품 시장"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "품질 규제",
-                    "브랜드 경쟁 심화"
-                ],
-                "rank": 51
-            },
-            "food": {
-                "size": 11.7,
-                "growth": 4.4,
-                "potential": 63,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "할랄 식품 시장",
-                    "식품 수입 의존도"
-                ],
-                "risk": [
-                    "식품 안전 이슈",
-                    "할랄 인증 요구",
-                    "경쟁 심화"
-                ],
-                "rank": 52
-            },
-            "logistics": {
-                "size": 6.9,
-                "growth": 5.8,
-                "potential": 67,
-                "oppo": [
-                    "자유무역지대 활용",
-                    "물류 인프라 투자",
-                    "이커머스 물류 성장"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "사이버 보안 리스크",
-                    "지정학적 리스크"
-                ],
-                "rank": 55
-            },
-            "fashion": {
-                "size": 3.3,
-                "growth": 4.6,
-                "potential": 63,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "모데스트 패션 시장",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "글로벌 브랜드 경쟁",
-                    "문화적 제약",
-                    "온라인 반품률"
-                ],
-                "rank": 53
-            },
-            "entertainment": {
-                "size": 4.4,
-                "growth": 7.8,
-                "potential": 63,
-                "oppo": [
-                    "게임 시장 성장",
-                    "미디어 시장 개방",
-                    "OTT 시장 확대"
-                ],
-                "risk": [
-                    "문화적 제약",
-                    "플랫폼 경쟁",
-                    "플랫폼 과포화"
-                ],
-                "rank": 51
-            },
-            "construction": {
-                "size": 16.4,
-                "growth": 5.1,
-                "potential": 72,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "교통 인프라 투자",
-                    "메가 프로젝트"
-                ],
-                "risk": [
-                    "자재비 상승",
-                    "인력 부족",
-                    "부동산 거품 리스크"
-                ],
-                "rank": 43
             }
         },
         "gdp_growth_pct": 3.7,
@@ -11910,9 +8226,9 @@ const COUNTRIES = {
                 "rank": 64
             },
             "agriculture": {
-                "size": 11.8,
+                "size": 3.7,
                 "growth": 1.2,
-                "potential": 74,
+                "potential": 72,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -11923,7 +8239,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 49
+                "rank": 63
             },
             "automotive": {
                 "size": 3.7,
@@ -12003,7 +8319,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 100
+                "rank": 102
             },
             "education": {
                 "size": 2.9,
@@ -12020,102 +8336,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 63
-            },
-            "beauty": {
-                "size": 1.1,
-                "growth": 6.4,
-                "potential": 65,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "인플루언서 마케팅",
-                    "뷰티 소비 증가"
-                ],
-                "risk": [
-                    "환율 변동성",
-                    "온라인 가격 경쟁",
-                    "수입 의존도"
-                ],
-                "rank": 60
-            },
-            "food": {
-                "size": 5.9,
-                "growth": 5.5,
-                "potential": 59,
-                "oppo": [
-                    "가공식품 시장 성장",
-                    "푸드테크 성장",
-                    "식품 안전 의식 증가"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "경쟁 심화",
-                    "온라인 경쟁"
-                ],
-                "rank": 61
-            },
-            "logistics": {
-                "size": 3,
-                "growth": 5.1,
-                "potential": 61,
-                "oppo": [
-                    "항만 인프라 투자",
-                    "물류 인프라 투자",
-                    "항만 현대화"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "플랫폼 의존",
-                    "세관 절차"
-                ],
-                "rank": 70
-            },
-            "fashion": {
-                "size": 1.6,
-                "growth": 5.6,
-                "potential": 69,
-                "oppo": [
-                    "온라인 패션 확대",
-                    "섬유 원료 풍부",
-                    "라틴 패션 트렌드"
-                ],
-                "risk": [
-                    "환율 리스크",
-                    "트렌드 변화",
-                    "글로벌 브랜드 경쟁"
-                ],
-                "rank": 62
-            },
-            "entertainment": {
-                "size": 2.1,
-                "growth": 6.7,
-                "potential": 68,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "디지털 콘텐츠 유통",
-                    "라틴 콘텐츠 시장"
-                ],
-                "risk": [
-                    "콘텐츠 제작비 상승",
-                    "플랫폼 과포화",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 64
-            },
-            "construction": {
-                "size": 3.9,
-                "growth": 4.3,
-                "potential": 59,
-                "oppo": [
-                    "주택 건설 확대",
-                    "건설 테크 도입",
-                    "주택 부족 해소"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "자재비 상승",
-                    "인력 부족"
-                ],
-                "rank": 86
             }
         },
         "gdp_growth_pct": -2.0,
@@ -12218,9 +8438,9 @@ const COUNTRIES = {
                 "rank": 41
             },
             "agriculture": {
-                "size": 53.4,
+                "size": 11.7,
                 "growth": 2.7,
-                "potential": 73,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -12231,7 +8451,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 13
+                "rank": 40
             },
             "automotive": {
                 "size": 11.7,
@@ -12311,7 +8531,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 40
+                "rank": 43
             },
             "education": {
                 "size": 7.8,
@@ -12328,102 +8548,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 45
-            },
-            "beauty": {
-                "size": 2.4,
-                "growth": 6.9,
-                "potential": 54,
-                "oppo": [
-                    "젊은 인구 수요",
-                    "프리미엄 뷰티 수요",
-                    "성장하는 중산층"
-                ],
-                "risk": [
-                    "위조품 문제",
-                    "유통 인프라 부족",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 47
-            },
-            "food": {
-                "size": 21,
-                "growth": 6,
-                "potential": 63,
-                "oppo": [
-                    "할랄 식품 시장",
-                    "푸드테크 성장",
-                    "프랜차이즈 확대"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "수입 의존도",
-                    "콜드체인 부족"
-                ],
-                "rank": 35
-            },
-            "logistics": {
-                "size": 10.1,
-                "growth": 7.2,
-                "potential": 59,
-                "oppo": [
-                    "중계 무역 허브",
-                    "디지털 물류 플랫폼",
-                    "창고업 현대화"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "물류비 높음",
-                    "도로 인프라 부족"
-                ],
-                "rank": 42
-            },
-            "fashion": {
-                "size": 5.5,
-                "growth": 5.9,
-                "potential": 57,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "모데스트 패션 시장",
-                    "내수 패션 시장 성장"
-                ],
-                "risk": [
-                    "문화적 제약",
-                    "저가 경쟁",
-                    "가격 투명성"
-                ],
-                "rank": 42
-            },
-            "entertainment": {
-                "size": 6.1,
-                "growth": 7,
-                "potential": 46,
-                "oppo": [
-                    "콘텐츠 소비 증가",
-                    "미디어 시장 개방",
-                    "아랍어 콘텐츠 수요"
-                ],
-                "risk": [
-                    "콘텐츠 검열",
-                    "제작 인프라 부족",
-                    "저작권 보호 미흡"
-                ],
-                "rank": 42
-            },
-            "construction": {
-                "size": 38,
-                "growth": 7.2,
-                "potential": 69,
-                "oppo": [
-                    "도시화 가속",
-                    "건설 테크 도입",
-                    "메가 프로젝트"
-                ],
-                "risk": [
-                    "유가 의존 경제",
-                    "프로젝트 지연",
-                    "자금 조달 어려움"
-                ],
-                "rank": 27
             }
         },
         "gdp_growth_pct": 2.4,
@@ -12526,7 +8650,7 @@ const COUNTRIES = {
                 "rank": 12
             },
             "agriculture": {
-                "size": 47.5,
+                "size": 51.8,
                 "growth": 2.6,
                 "potential": 82,
                 "oppo": [
@@ -12539,7 +8663,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 17
+                "rank": 15
             },
             "automotive": {
                 "size": 67.3,
@@ -12636,102 +8760,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 14
-            },
-            "beauty": {
-                "size": 17.7,
-                "growth": 5,
-                "potential": 73,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "안티에이징 수요 증가",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "규제 강화",
-                    "온라인 가격 경쟁",
-                    "소비자 트렌드 변화"
-                ],
-                "rank": 14
-            },
-            "food": {
-                "size": 85.4,
-                "growth": 2.9,
-                "potential": 70,
-                "oppo": [
-                    "건강식품 트렌드",
-                    "유기농 수요 증가",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "엄격한 식품 규제",
-                    "식품 안전 규제",
-                    "온라인 경쟁"
-                ],
-                "rank": 18
-            },
-            "logistics": {
-                "size": 56,
-                "growth": 3.8,
-                "potential": 77,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "첨단 물류 자동화",
-                    "콜드체인 확대"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "국경 통관",
-                    "플랫폼 의존"
-                ],
-                "rank": 17
-            },
-            "fashion": {
-                "size": 57.8,
-                "growth": 3.4,
-                "potential": 78,
-                "oppo": [
-                    "하이엔드 브랜드",
-                    "유럽 패션 수도",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "패스트패션 비판",
-                    "지속가능성 규제"
-                ],
-                "rank": 10
-            },
-            "entertainment": {
-                "size": 40.3,
-                "growth": 6.5,
-                "potential": 80,
-                "oppo": [
-                    "문화 콘텐츠 다양성",
-                    "유럽 콘텐츠 시장",
-                    "스트리밍 시장 성장"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "콘텐츠 과잉 공급",
-                    "플랫폼 과포화"
-                ],
-                "rank": 15
-            },
-            "construction": {
-                "size": 122.5,
-                "growth": 2.7,
-                "potential": 75,
-                "oppo": [
-                    "친환경 건축",
-                    "인프라 현대화",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "디지털 전환 비용",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 13
             }
         },
         "gdp_growth_pct": 3.5,
@@ -12834,9 +8862,9 @@ const COUNTRIES = {
                 "rank": 95
             },
             "agriculture": {
-                "size": 1,
+                "size": 1.3,
                 "growth": 1.2,
-                "potential": 74,
+                "potential": 75,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -12847,7 +8875,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 136
+                "rank": 98
             },
             "automotive": {
                 "size": 1.7,
@@ -12927,7 +8955,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 78
+                "rank": 81
             },
             "education": {
                 "size": 1.3,
@@ -12944,102 +8972,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 84
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 3,
-                "potential": 75,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "이커머스 뷰티 판매",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "소비자 트렌드 변화",
-                    "규제 강화"
-                ],
-                "rank": 85
-            },
-            "food": {
-                "size": 1.8,
-                "growth": 3.3,
-                "potential": 69,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "건강식품 트렌드",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "배달 플랫폼 수수료",
-                    "온라인 경쟁"
-                ],
-                "rank": 101
-            },
-            "logistics": {
-                "size": 1.9,
-                "growth": 3.9,
-                "potential": 78,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "유럽 물류 허브",
-                    "콜드체인 확대"
-                ],
-                "risk": [
-                    "자동화 투자 부담",
-                    "환경 규제",
-                    "플랫폼 의존"
-                ],
-                "rank": 91
-            },
-            "fashion": {
-                "size": 0.7,
-                "growth": 4.1,
-                "potential": 69,
-                "oppo": [
-                    "하이엔드 브랜드",
-                    "유럽 패션 수도",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "패스트패션 비판",
-                    "인건비 상승"
-                ],
-                "rank": 88
-            },
-            "entertainment": {
-                "size": 0.7,
-                "growth": 5,
-                "potential": 74,
-                "oppo": [
-                    "게임 산업 확대",
-                    "문화 콘텐츠 다양성",
-                    "콘텐츠 IP 수출"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "저작권 분쟁",
-                    "주의력 경쟁"
-                ],
-                "rank": 93
-            },
-            "construction": {
-                "size": 1.3,
-                "growth": 3.1,
-                "potential": 70,
-                "oppo": [
-                    "인프라 현대화",
-                    "스마트시티 개발",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "인허가 절차",
-                    "디지털 전환 비용",
-                    "원자재 가격 변동"
-                ],
-                "rank": 121
             }
         },
         "gdp_growth_pct": -0.1,
@@ -13142,9 +9074,9 @@ const COUNTRIES = {
                 "rank": 60
             },
             "agriculture": {
-                "size": 52.1,
+                "size": 4.5,
                 "growth": 4.2,
-                "potential": 64,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -13155,7 +9087,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 14
+                "rank": 60
             },
             "automotive": {
                 "size": 4.5,
@@ -13235,7 +9167,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 56
+                "rank": 58
             },
             "education": {
                 "size": 2.1,
@@ -13252,102 +9184,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 73
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 8.1,
-                "potential": 39,
-                "oppo": [
-                    "미개척 시장",
-                    "오프라인 유통 기회",
-                    "아프리카 뷰티 시장 성장"
-                ],
-                "risk": [
-                    "유통 인프라 부재",
-                    "소비력 부족",
-                    "소비력 극히 제한"
-                ],
-                "rank": 84
-            },
-            "food": {
-                "size": 9.3,
-                "growth": 6.6,
-                "potential": 44,
-                "oppo": [
-                    "농업 현대화",
-                    "전통 유통 채널",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "식량 안보 불안",
-                    "기후 변화 영향",
-                    "유통 비효율"
-                ],
-                "rank": 54
-            },
-            "logistics": {
-                "size": 3.4,
-                "growth": 6.1,
-                "potential": 46,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "운송 네트워크 개발",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "디지털 전환 지연",
-                    "기본 인프라 부재",
-                    "운송 비용"
-                ],
-                "rank": 67
-            },
-            "fashion": {
-                "size": 1.6,
-                "growth": 6.8,
-                "potential": 37,
-                "oppo": [
-                    "저비용 생산 기반",
-                    "의류 제조 기지",
-                    "도매 시장 성장"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "수입 의존도",
-                    "기술력 부족"
-                ],
-                "rank": 63
-            },
-            "entertainment": {
-                "size": 1.3,
-                "growth": 9.4,
-                "potential": 43,
-                "oppo": [
-                    "놀리우드 성장",
-                    "모바일 미디어 성장",
-                    "라디오/TV 보급"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "대역폭 부족",
-                    "수익 모델 미성숙"
-                ],
-                "rank": 78
-            },
-            "construction": {
-                "size": 18.5,
-                "growth": 9.3,
-                "potential": 53,
-                "oppo": [
-                    "국제 개발 원조",
-                    "도로/수도 건설",
-                    "노동집약 건설"
-                ],
-                "risk": [
-                    "자금 부족",
-                    "자본 부족",
-                    "기술 인력 부재"
-                ],
-                "rank": 41
             }
         },
         "gdp_growth_pct": 7.6,
@@ -13450,9 +9286,9 @@ const COUNTRIES = {
                 "rank": 46
             },
             "agriculture": {
-                "size": 7.4,
+                "size": 9.0,
                 "growth": 1.4,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13463,7 +9299,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 64
+                "rank": 46
             },
             "automotive": {
                 "size": 11.6,
@@ -13543,7 +9379,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 57
+                "rank": 59
             },
             "education": {
                 "size": 11.4,
@@ -13560,102 +9396,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 31
-            },
-            "beauty": {
-                "size": 2.5,
-                "growth": 4.9,
-                "potential": 68,
-                "oppo": [
-                    "클린 뷰티 트렌드",
-                    "이커머스 뷰티 판매",
-                    "천연 화장품 수요"
-                ],
-                "risk": [
-                    "시장 포화 경쟁",
-                    "소비자 트렌드 변화",
-                    "엄격한 규제"
-                ],
-                "rank": 44
-            },
-            "food": {
-                "size": 14.6,
-                "growth": 3.2,
-                "potential": 67,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "온라인 푸드 배달",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "엄격한 식품 규제",
-                    "식품 안전 규제"
-                ],
-                "rank": 46
-            },
-            "logistics": {
-                "size": 10.3,
-                "growth": 4,
-                "potential": 77,
-                "oppo": [
-                    "콜드체인 확대",
-                    "실시간 추적 시스템",
-                    "첨단 물류 자동화"
-                ],
-                "risk": [
-                    "국경 통관",
-                    "사이버 보안 리스크",
-                    "환경 규제 강화"
-                ],
-                "rank": 41
-            },
-            "fashion": {
-                "size": 3.8,
-                "growth": 3.5,
-                "potential": 76,
-                "oppo": [
-                    "지속가능 패션",
-                    "온라인 패션 플랫폼",
-                    "럭셔리 패션 시장"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "지속가능성 압박",
-                    "인건비 상승"
-                ],
-                "rank": 49
-            },
-            "entertainment": {
-                "size": 5.6,
-                "growth": 5.8,
-                "potential": 68,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "문화 콘텐츠 다양성",
-                    "유럽 콘텐츠 시장"
-                ],
-                "risk": [
-                    "언어 장벽",
-                    "저작권 분쟁",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 44
-            },
-            "construction": {
-                "size": 7,
-                "growth": 3.2,
-                "potential": 76,
-                "oppo": [
-                    "스마트시티 개발",
-                    "친환경 건축",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "환경 규제 강화",
-                    "환경 규제"
-                ],
-                "rank": 70
             }
         },
         "gdp_growth_pct": 0.4,
@@ -13691,7 +9431,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 8
             },
             "manufacturing": {
                 "size": 332.6,
@@ -13758,9 +9498,9 @@ const COUNTRIES = {
                 "rank": 7
             },
             "agriculture": {
-                "size": 41.1,
+                "size": 94.8,
                 "growth": 1.7,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13771,7 +9511,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 7
             },
             "automotive": {
                 "size": 123.3,
@@ -13868,102 +9608,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 6
-            },
-            "beauty": {
-                "size": 83.3,
-                "growth": 4.7,
-                "potential": 84,
-                "oppo": [
-                    "프리미엄 뷰티 시장",
-                    "인플루언서 마케팅",
-                    "천연 화장품 수요"
-                ],
-                "risk": [
-                    "소비자 트렌드 변화",
-                    "온라인 가격 경쟁",
-                    "규제 강화"
-                ],
-                "rank": 4
-            },
-            "food": {
-                "size": 241.6,
-                "growth": 3.6,
-                "potential": 81,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "푸드테크 성장",
-                    "지역 특산품 브랜드화"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "배달 플랫폼 수수료",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 8
-            },
-            "logistics": {
-                "size": 86.4,
-                "growth": 4,
-                "potential": 71,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "첨단 물류 자동화",
-                    "콜드체인 확대"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "플랫폼 의존",
-                    "국경 통관"
-                ],
-                "rank": 11
-            },
-            "fashion": {
-                "size": 173.2,
-                "growth": 3.2,
-                "potential": 83,
-                "oppo": [
-                    "디자이너 브랜드",
-                    "지속가능 패션",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "패스트패션 비판",
-                    "온라인 반품률",
-                    "지속가능성 규제"
-                ],
-                "rank": 3
-            },
-            "entertainment": {
-                "size": 115.9,
-                "growth": 5,
-                "potential": 87,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "OTT 플랫폼 확대",
-                    "유럽 콘텐츠 시장"
-                ],
-                "risk": [
-                    "언어 장벽",
-                    "플랫폼 경쟁",
-                    "저작권 분쟁"
-                ],
-                "rank": 8
-            },
-            "construction": {
-                "size": 95.4,
-                "growth": 3,
-                "potential": 79,
-                "oppo": [
-                    "건설 테크 도입",
-                    "스마트시티 개발",
-                    "친환경 건축"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "디지털 전환 비용",
-                    "원자재 가격 변동"
-                ],
-                "rank": 16
             }
         },
         "gdp_growth_pct": 1.2,
@@ -14066,9 +9710,9 @@ const COUNTRIES = {
                 "rank": 119
             },
             "agriculture": {
-                "size": 1.4,
+                "size": 1,
                 "growth": 2.6,
-                "potential": 74,
+                "potential": 73,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14079,7 +9723,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 125
+                "rank": 114
             },
             "automotive": {
                 "size": 1,
@@ -14159,7 +9803,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 101
+                "rank": 103
             },
             "education": {
                 "size": 1,
@@ -14176,102 +9820,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 104
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 6.2,
-                "potential": 70,
-                "oppo": [
-                    "아프리카 뷰티 시장 성장",
-                    "스킨케어 수요 증가",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "품질 규제",
-                    "수입 의존도"
-                ],
-                "rank": 103
-            },
-            "food": {
-                "size": 0.8,
-                "growth": 5.5,
-                "potential": 69,
-                "oppo": [
-                    "외식 산업 확대",
-                    "푸드테크 성장",
-                    "농업 현대화 기회"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "배달 플랫폼 수수료",
-                    "원자재 가격 변동"
-                ],
-                "rank": 129
-            },
-            "logistics": {
-                "size": 0.8,
-                "growth": 5.8,
-                "potential": 58,
-                "oppo": [
-                    "아프리카 내륙 물류",
-                    "디지털 물류 플랫폼",
-                    "물류 인프라 개발"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "도로망 미비",
-                    "규제 복잡성"
-                ],
-                "rank": 111
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 6.3,
-                "potential": 56,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "온라인 패션 확대",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "글로벌 브랜드 경쟁",
-                    "원자재 비용",
-                    "온라인 반품률"
-                ],
-                "rank": 111
-            },
-            "entertainment": {
-                "size": 0.3,
-                "growth": 6.4,
-                "potential": 69,
-                "oppo": [
-                    "모바일 콘텐츠 수요",
-                    "로컬 콘텐츠 제작",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "불법 복제",
-                    "콘텐츠 제작비 상승"
-                ],
-                "rank": 118
-            },
-            "construction": {
-                "size": 1.4,
-                "growth": 5.9,
-                "potential": 63,
-                "oppo": [
-                    "주택 건설 확대",
-                    "아프리카 인프라 개발",
-                    "국제 개발 프로젝트"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "건설 테크 투자 부담",
-                    "부동산 거품 리스크"
-                ],
-                "rank": 117
             }
         },
         "gdp_growth_pct": 3.4,
@@ -14307,7 +9855,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 8
+                "rank": 7
             },
             "manufacturing": {
                 "size": 323.8,
@@ -14374,9 +9922,9 @@ const COUNTRIES = {
                 "rank": 4
             },
             "agriculture": {
-                "size": 23.5,
+                "size": 110.6,
                 "growth": 1.7,
-                "potential": 80,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14387,7 +9935,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 32
+                "rank": 6
             },
             "automotive": {
                 "size": 143.8,
@@ -14484,102 +10032,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 4
-            },
-            "beauty": {
-                "size": 67.8,
-                "growth": 3.7,
-                "potential": 87,
-                "oppo": [
-                    "천연 화장품 수요",
-                    "프리미엄 뷰티 시장",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "소비자 트렌드 변화",
-                    "시장 포화",
-                    "엄격한 규제"
-                ],
-                "rank": 6
-            },
-            "food": {
-                "size": 242.9,
-                "growth": 3,
-                "potential": 73,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "유기농 수요 증가",
-                    "프리미엄 식품 시장"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "소비 트렌드 변화",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 7
-            },
-            "logistics": {
-                "size": 198.4,
-                "growth": 2.8,
-                "potential": 82,
-                "oppo": [
-                    "실시간 추적 시스템",
-                    "디지털 물류 플랫폼",
-                    "유럽 물류 허브"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "사이버 보안 리스크",
-                    "자동화 투자 부담"
-                ],
-                "rank": 5
-            },
-            "fashion": {
-                "size": 156,
-                "growth": 3.3,
-                "potential": 89,
-                "oppo": [
-                    "지속가능 패션",
-                    "온라인 패션 플랫폼",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "인건비 상승",
-                    "시장 포화"
-                ],
-                "rank": 4
-            },
-            "entertainment": {
-                "size": 199.9,
-                "growth": 5.2,
-                "potential": 87,
-                "oppo": [
-                    "스트리밍 시장 성장",
-                    "디지털 콘텐츠 유통",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "시장 분절",
-                    "언어 장벽"
-                ],
-                "rank": 4
-            },
-            "construction": {
-                "size": 164.8,
-                "growth": 2.3,
-                "potential": 67,
-                "oppo": [
-                    "친환경 건축",
-                    "그린빌딩 트렌드",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "인건비 상승",
-                    "원자재 가격 변동"
-                ],
-                "rank": 9
             }
         },
         "gdp_growth_pct": 1.1,
@@ -14682,9 +10134,9 @@ const COUNTRIES = {
                 "rank": 103
             },
             "agriculture": {
-                "size": 1.9,
+                "size": 1,
                 "growth": 5.1,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14695,7 +10147,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 117
+                "rank": 115
             },
             "automotive": {
                 "size": 1.3,
@@ -14775,7 +10227,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 102
+                "rank": 104
             },
             "education": {
                 "size": 1,
@@ -14792,102 +10244,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 105
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 5.4,
-                "potential": 62,
-                "oppo": [
-                    "중산층 소비 증가",
-                    "인플루언서 마케팅",
-                    "K-뷰티 수요 확대"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "품질 규제",
-                    "시장 포화"
-                ],
-                "rank": 96
-            },
-            "food": {
-                "size": 1.4,
-                "growth": 5,
-                "potential": 61,
-                "oppo": [
-                    "가공식품 시장 성장",
-                    "푸드테크 성장",
-                    "식품 안전 의식 증가"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "경쟁 심화",
-                    "온라인 경쟁"
-                ],
-                "rank": 104
-            },
-            "logistics": {
-                "size": 1.2,
-                "growth": 5.4,
-                "potential": 59,
-                "oppo": [
-                    "항만 현대화",
-                    "물류 인프라 투자",
-                    "이커머스 물류 성장"
-                ],
-                "risk": [
-                    "인프라 병목",
-                    "국경 통관",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 98
-            },
-            "fashion": {
-                "size": 0.4,
-                "growth": 5.9,
-                "potential": 57,
-                "oppo": [
-                    "유럽 패션 수도",
-                    "온라인 패션 확대",
-                    "로컬 브랜드 성장"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "글로벌 브랜드 경쟁",
-                    "가격 투명성"
-                ],
-                "rank": 104
-            },
-            "entertainment": {
-                "size": 0.7,
-                "growth": 8.1,
-                "potential": 61,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "디지털 콘텐츠 유통",
-                    "로컬 콘텐츠 제작"
-                ],
-                "risk": [
-                    "콘텐츠 제작비 상승",
-                    "플랫폼 과포화",
-                    "주의력 경쟁"
-                ],
-                "rank": 94
-            },
-            "construction": {
-                "size": 3.5,
-                "growth": 8,
-                "potential": 58,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "교통 인프라 투자",
-                    "도시화 인프라 수요"
-                ],
-                "risk": [
-                    "인허가 절차",
-                    "디지털 전환 비용",
-                    "환경 규제 강화"
-                ],
-                "rank": 89
             }
         },
         "gdp_growth_pct": 9.7,
@@ -14990,9 +10346,9 @@ const COUNTRIES = {
                 "rank": 81
             },
             "agriculture": {
-                "size": 17.2,
+                "size": 2.5,
                 "growth": 3.9,
-                "potential": 74,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15003,7 +10359,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 39
+                "rank": 78
             },
             "automotive": {
                 "size": 2.5,
@@ -15083,7 +10439,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 103
+                "rank": 105
             },
             "education": {
                 "size": 1.4,
@@ -15100,102 +10456,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 83
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 6.1,
-                "potential": 56,
-                "oppo": [
-                    "뷰티 시장 초기 성장",
-                    "아프리카 뷰티 시장 성장",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "유통 인프라 부재",
-                    "유통 인프라 부족",
-                    "소비력 제한"
-                ],
-                "rank": 86
-            },
-            "food": {
-                "size": 3.4,
-                "growth": 6.5,
-                "potential": 53,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "농업 현대화 기회",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "위생 관리 어려움",
-                    "물류 인프라 부재"
-                ],
-                "rank": 83
-            },
-            "logistics": {
-                "size": 2.7,
-                "growth": 6.5,
-                "potential": 48,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "아프리카 내륙 물류",
-                    "물류 인프라 구축"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "도로 인프라 부족",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 77
-            },
-            "fashion": {
-                "size": 0.9,
-                "growth": 6.6,
-                "potential": 48,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "전통 의류 현대화",
-                    "아프리카 패션 부상"
-                ],
-                "risk": [
-                    "저가 경쟁",
-                    "유통 한계",
-                    "노동 환경 이슈"
-                ],
-                "rank": 81
-            },
-            "entertainment": {
-                "size": 1.3,
-                "growth": 6.9,
-                "potential": 57,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "모바일 엔터테인먼트",
-                    "미디어 디지털화"
-                ],
-                "risk": [
-                    "수익 모델 미성숙",
-                    "인프라 부족",
-                    "주의력 경쟁"
-                ],
-                "rank": 79
-            },
-            "construction": {
-                "size": 8.5,
-                "growth": 9.6,
-                "potential": 62,
-                "oppo": [
-                    "주택 수요 증가",
-                    "국제 개발 프로젝트",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "자금 조달 어려움",
-                    "기술력 부족",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 62
             }
         },
         "gdp_growth_pct": 5.6,
@@ -15298,9 +10558,9 @@ const COUNTRIES = {
                 "rank": 120
             },
             "agriculture": {
-                "size": 7.7,
+                "size": 1,
                 "growth": 3.8,
-                "potential": 72,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15311,7 +10571,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 62
+                "rank": 116
             },
             "automotive": {
                 "size": 1,
@@ -15391,7 +10651,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 104
+                "rank": 106
             },
             "education": {
                 "size": 1,
@@ -15408,102 +10668,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 106
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 6.4,
-                "potential": 60,
-                "oppo": [
-                    "오프라인 유통 기회",
-                    "스킨케어 수요 증가",
-                    "젊은 인구 수요"
-                ],
-                "risk": [
-                    "유통 인프라 부재",
-                    "유통 인프라 부족",
-                    "위조품 문제"
-                ],
-                "rank": 104
-            },
-            "food": {
-                "size": 1.2,
-                "growth": 6.3,
-                "potential": 54,
-                "oppo": [
-                    "식량 안보 투자",
-                    "전통 유통 채널",
-                    "지역 시장 활성화"
-                ],
-                "risk": [
-                    "유통 비효율",
-                    "식량 불안정",
-                    "물류 비용"
-                ],
-                "rank": 110
-            },
-            "logistics": {
-                "size": 0.8,
-                "growth": 6.5,
-                "potential": 51,
-                "oppo": [
-                    "무역 성장 기회",
-                    "운송 네트워크 확장",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "추적 시스템 부재",
-                    "물류비 높음",
-                    "도로망 미비"
-                ],
-                "rank": 112
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 5.8,
-                "potential": 52,
-                "oppo": [
-                    "OEM/ODM 기회",
-                    "아프리카 패션 부상",
-                    "전통 의류 현대화"
-                ],
-                "risk": [
-                    "저가 경쟁",
-                    "마케팅 제한",
-                    "품질 관리"
-                ],
-                "rank": 112
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 7,
-                "potential": 51,
-                "oppo": [
-                    "방송 미디어 발전",
-                    "모바일 콘텐츠 수요",
-                    "콘텐츠 소비 증가"
-                ],
-                "risk": [
-                    "수익 모델 한계",
-                    "수익 모델 미성숙",
-                    "대역폭 부족"
-                ],
-                "rank": 129
-            },
-            "construction": {
-                "size": 2.3,
-                "growth": 8.4,
-                "potential": 59,
-                "oppo": [
-                    "도시화 가속",
-                    "노동집약 건설",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "관리 비효율",
-                    "안전 관리",
-                    "기술 인력 부재"
-                ],
-                "rank": 103
             }
         },
         "gdp_growth_pct": 5.4,
@@ -15619,7 +10783,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 137
+                "rank": 117
             },
             "automotive": {
                 "size": 1,
@@ -15699,7 +10863,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 105
+                "rank": 107
             },
             "education": {
                 "size": 1,
@@ -15716,102 +10880,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 107
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.1,
-                "potential": 66,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "스킨케어 수요 증가",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "브랜드 경쟁 심화",
-                    "품질 규제"
-                ],
-                "rank": 123
-            },
-            "food": {
-                "size": 0.6,
-                "growth": 3.7,
-                "potential": 68,
-                "oppo": [
-                    "식품 안전 의식 증가",
-                    "농업 현대화 기회",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "식품 안전 이슈",
-                    "원자재 가격 변동",
-                    "경쟁 심화"
-                ],
-                "rank": 139
-            },
-            "logistics": {
-                "size": 0.4,
-                "growth": 4.8,
-                "potential": 59,
-                "oppo": [
-                    "항만 현대화",
-                    "물류 인프라 개발",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "인프라 병목",
-                    "플랫폼 의존",
-                    "도로망 미비"
-                ],
-                "rank": 140
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 5.3,
-                "potential": 69,
-                "oppo": [
-                    "패스트패션 성장",
-                    "SNS 패션 마케팅",
-                    "온라인 패션 확대"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "트렌드 변화",
-                    "유통 한계"
-                ],
-                "rank": 128
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 6.1,
-                "potential": 66,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "로컬 콘텐츠 제작",
-                    "게임 시장 성장"
-                ],
-                "risk": [
-                    "수익 모델 미성숙",
-                    "플랫폼 과포화",
-                    "주의력 경쟁"
-                ],
-                "rank": 128
-            },
-            "construction": {
-                "size": 0.3,
-                "growth": 6.3,
-                "potential": 60,
-                "oppo": [
-                    "국제 개발 프로젝트",
-                    "도시화 인프라 수요",
-                    "주택 건설 확대"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "기술 인력 부재",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 148
             }
         },
         "gdp_growth_pct": 0.9,
@@ -15914,7 +10982,7 @@ const COUNTRIES = {
                 "rank": 49
             },
             "agriculture": {
-                "size": 9.6,
+                "size": 7.7,
                 "growth": 2.0,
                 "potential": 79,
                 "oppo": [
@@ -15927,7 +10995,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 58
+                "rank": 52
             },
             "automotive": {
                 "size": 10.0,
@@ -16007,7 +11075,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 30
+                "rank": 32
             },
             "education": {
                 "size": 5.2,
@@ -16024,102 +11092,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 55
-            },
-            "beauty": {
-                "size": 2.3,
-                "growth": 4.2,
-                "potential": 80,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "클린 뷰티 트렌드",
-                    "천연 화장품 수요"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "규제 강화",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 48
-            },
-            "food": {
-                "size": 10.9,
-                "growth": 2.3,
-                "potential": 76,
-                "oppo": [
-                    "푸드테크 성장",
-                    "프리미엄 식품 시장",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "원가 상승",
-                    "온라인 경쟁",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 53
-            },
-            "logistics": {
-                "size": 8.1,
-                "growth": 3.3,
-                "potential": 70,
-                "oppo": [
-                    "크로스보더 물류",
-                    "실시간 추적 시스템",
-                    "첨단 물류 자동화"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "국경 통관",
-                    "환경 규제 강화"
-                ],
-                "rank": 49
-            },
-            "fashion": {
-                "size": 4.1,
-                "growth": 4.2,
-                "potential": 67,
-                "oppo": [
-                    "하이엔드 브랜드",
-                    "디자이너 브랜드",
-                    "지속가능 패션"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "가격 투명성",
-                    "온라인 반품률"
-                ],
-                "rank": 45
-            },
-            "entertainment": {
-                "size": 4.7,
-                "growth": 5.9,
-                "potential": 82,
-                "oppo": [
-                    "콘텐츠 IP 수출",
-                    "유럽 콘텐츠 시장",
-                    "스트리밍 시장 성장"
-                ],
-                "risk": [
-                    "언어 장벽",
-                    "저작권 분쟁",
-                    "플랫폼 과포화"
-                ],
-                "rank": 50
-            },
-            "construction": {
-                "size": 9.5,
-                "growth": 3.8,
-                "potential": 66,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "친환경 건축",
-                    "스마트시티 개발"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "원자재 가격 변동",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 60
             }
         },
         "gdp_growth_pct": 2.1,
@@ -16222,9 +11194,9 @@ const COUNTRIES = {
                 "rank": 67
             },
             "agriculture": {
-                "size": 11.1,
+                "size": 3.4,
                 "growth": 2.7,
-                "potential": 77,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16235,7 +11207,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 52
+                "rank": 67
             },
             "automotive": {
                 "size": 3.4,
@@ -16315,7 +11287,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 106
+                "rank": 108
             },
             "education": {
                 "size": 2.1,
@@ -16332,102 +11304,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 74
-            },
-            "beauty": {
-                "size": 1,
-                "growth": 6.6,
-                "potential": 72,
-                "oppo": [
-                    "중산층 소비 증가",
-                    "오프라인 유통 기회",
-                    "K-뷰티 수요 확대"
-                ],
-                "risk": [
-                    "품질 규제",
-                    "수입 관세",
-                    "마케팅 도달 제한"
-                ],
-                "rank": 63
-            },
-            "food": {
-                "size": 5.1,
-                "growth": 4.6,
-                "potential": 61,
-                "oppo": [
-                    "식품 가공 산업",
-                    "전통 유통 채널",
-                    "지역 시장 활성화"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "물류 비용",
-                    "경쟁 심화"
-                ],
-                "rank": 65
-            },
-            "logistics": {
-                "size": 2.9,
-                "growth": 5.3,
-                "potential": 66,
-                "oppo": [
-                    "이커머스 물류 성장",
-                    "항만 현대화",
-                    "물류 인프라 투자"
-                ],
-                "risk": [
-                    "도로 인프라 노후",
-                    "인프라 병목",
-                    "디지털 전환 지연"
-                ],
-                "rank": 74
-            },
-            "fashion": {
-                "size": 1.3,
-                "growth": 5.5,
-                "potential": 59,
-                "oppo": [
-                    "전통 시장 유통",
-                    "로컬 브랜드 성장",
-                    "섬유 원료 풍부"
-                ],
-                "risk": [
-                    "환율 리스크",
-                    "마케팅 제한",
-                    "원자재 비용"
-                ],
-                "rank": 70
-            },
-            "entertainment": {
-                "size": 1.8,
-                "growth": 6.1,
-                "potential": 58,
-                "oppo": [
-                    "OTT 시장 확대",
-                    "로컬 콘텐츠 제작",
-                    "방송 미디어 발전"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "불법 복제",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 68
-            },
-            "construction": {
-                "size": 7.1,
-                "growth": 5,
-                "potential": 59,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "교통 인프라 투자",
-                    "주택 건설 확대"
-                ],
-                "risk": [
-                    "기술 도입 지연",
-                    "자금 조달",
-                    "정치적 불안정"
-                ],
-                "rank": 67
             }
         },
         "gdp_growth_pct": 3.7,
@@ -16530,7 +11406,7 @@ const COUNTRIES = {
                 "rank": 122
             },
             "agriculture": {
-                "size": 1.9,
+                "size": 1,
                 "growth": 18.7,
                 "potential": 99,
                 "oppo": [
@@ -16623,7 +11499,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 107
+                "rank": 109
             },
             "education": {
                 "size": 1,
@@ -16640,102 +11516,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 108
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 4.5,
-                "potential": 69,
-                "oppo": [
-                    "안티에이징 수요 증가",
-                    "클린 뷰티 트렌드",
-                    "뷰티 소비 증가"
-                ],
-                "risk": [
-                    "환율 변동성",
-                    "시장 포화 경쟁",
-                    "규제 강화"
-                ],
-                "rank": 105
-            },
-            "food": {
-                "size": 1.1,
-                "growth": 3.1,
-                "potential": 68,
-                "oppo": [
-                    "식품 가공 산업",
-                    "농산물 수출 강국",
-                    "건강식품 트렌드"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "소비 트렌드 변화",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 116
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 3.5,
-                "potential": 65,
-                "oppo": [
-                    "항만 인프라 투자",
-                    "콜드체인 확대",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "플랫폼 의존",
-                    "자동화 투자 부담"
-                ],
-                "rank": 128
-            },
-            "fashion": {
-                "size": 0.4,
-                "growth": 3.7,
-                "potential": 75,
-                "oppo": [
-                    "섬유 원료 풍부",
-                    "SNS 패션 마케팅",
-                    "라틴 패션 트렌드"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "환율 리스크",
-                    "지속가능성 압박"
-                ],
-                "rank": 105
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 5.3,
-                "potential": 76,
-                "oppo": [
-                    "게임 산업 확대",
-                    "OTT 플랫폼 확대",
-                    "스페인어 콘텐츠"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "불법 복제",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 109
-            },
-            "construction": {
-                "size": 2.7,
-                "growth": 4.2,
-                "potential": 75,
-                "oppo": [
-                    "스마트시티 개발",
-                    "도시 인프라 투자",
-                    "주택 부족 해소"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "환경 규제",
-                    "인건비 상승"
-                ],
-                "rank": 95
             }
         },
         "gdp_growth_pct": 43.8,
@@ -16837,9 +11617,9 @@ const COUNTRIES = {
                 "rank": 104
             },
             "agriculture": {
-                "size": 4.2,
+                "size": 1.1,
                 "growth": 3.1,
-                "potential": 70,
+                "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16850,7 +11630,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 93
+                "rank": 103
             },
             "automotive": {
                 "size": 1.1,
@@ -16930,7 +11710,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 108
+                "rank": 110
             },
             "education": {
                 "size": 1,
@@ -16947,102 +11727,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 109
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 8.3,
-                "potential": 56,
-                "oppo": [
-                    "젊은 인구 수요",
-                    "뷰티 시장 초기 성장",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "위조품 문제",
-                    "마케팅 도달 제한",
-                    "소비력 제한"
-                ],
-                "rank": 106
-            },
-            "food": {
-                "size": 1.4,
-                "growth": 6,
-                "potential": 55,
-                "oppo": [
-                    "농산물 수출 강국",
-                    "식품 가공 산업",
-                    "지역 시장 활성화"
-                ],
-                "risk": [
-                    "위생 관리 어려움",
-                    "콜드체인 부족",
-                    "규제 환경"
-                ],
-                "rank": 105
-            },
-            "logistics": {
-                "size": 1.3,
-                "growth": 6.7,
-                "potential": 57,
-                "oppo": [
-                    "물류 인프라 구축",
-                    "항만 인프라 투자",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "물류비 높음",
-                    "통관 지연",
-                    "도로 인프라 노후"
-                ],
-                "rank": 96
-            },
-            "fashion": {
-                "size": 0.4,
-                "growth": 5.3,
-                "potential": 57,
-                "oppo": [
-                    "섬유 원료 풍부",
-                    "라틴 패션 트렌드",
-                    "도매 시장 성장"
-                ],
-                "risk": [
-                    "노동 환경 이슈",
-                    "저가 경쟁",
-                    "수입 경쟁"
-                ],
-                "rank": 106
-            },
-            "entertainment": {
-                "size": 0.5,
-                "growth": 5.7,
-                "potential": 55,
-                "oppo": [
-                    "콘텐츠 소비 증가",
-                    "방송 미디어 발전",
-                    "모바일 엔터테인먼트"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "디지털 콘텐츠 접근 제한",
-                    "광고 시장 제한"
-                ],
-                "rank": 101
-            },
-            "construction": {
-                "size": 2.6,
-                "growth": 7,
-                "potential": 65,
-                "oppo": [
-                    "전통 건설 방식",
-                    "주택 수요 증가",
-                    "주택 부족 해소"
-                ],
-                "risk": [
-                    "정치적 불안정",
-                    "관리 비효율",
-                    "기술력 부족"
-                ],
-                "rank": 96
             }
         },
         "gdp_growth_pct": 3.6,
@@ -17145,7 +11829,7 @@ const COUNTRIES = {
                 "rank": 70
             },
             "agriculture": {
-                "size": 2.7,
+                "size": 2.8,
                 "growth": 2.7,
                 "potential": 79,
                 "oppo": [
@@ -17158,7 +11842,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 108
+                "rank": 73
             },
             "automotive": {
                 "size": 3.6,
@@ -17238,7 +11922,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 32
+                "rank": 35
             },
             "education": {
                 "size": 2.3,
@@ -17255,102 +11939,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 69
-            },
-            "beauty": {
-                "size": 0.9,
-                "growth": 4.4,
-                "potential": 70,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "이커머스 뷰티 판매",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화",
-                    "온라인 가격 경쟁",
-                    "리뷰 리스크"
-                ],
-                "rank": 66
-            },
-            "food": {
-                "size": 4.2,
-                "growth": 2.7,
-                "potential": 73,
-                "oppo": [
-                    "프리미엄 식품 시장",
-                    "유기농 수요 증가",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "소비 트렌드 변화",
-                    "식품 안전 규제",
-                    "높은 인건비"
-                ],
-                "rank": 74
-            },
-            "logistics": {
-                "size": 3.4,
-                "growth": 2.8,
-                "potential": 74,
-                "oppo": [
-                    "실시간 추적 시스템",
-                    "콜드체인 확대",
-                    "첨단 물류 자동화"
-                ],
-                "risk": [
-                    "국경 통관",
-                    "플랫폼 의존",
-                    "환경 규제 강화"
-                ],
-                "rank": 66
-            },
-            "fashion": {
-                "size": 1.2,
-                "growth": 4.2,
-                "potential": 68,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "유럽 패션 수도",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "패스트패션 비판",
-                    "시장 포화"
-                ],
-                "rank": 72
-            },
-            "entertainment": {
-                "size": 2,
-                "growth": 6.2,
-                "potential": 73,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "문화 콘텐츠 다양성",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "플랫폼 경쟁",
-                    "언어 장벽"
-                ],
-                "rank": 65
-            },
-            "construction": {
-                "size": 6.2,
-                "growth": 2.8,
-                "potential": 78,
-                "oppo": [
-                    "리노베이션 시장",
-                    "인프라 현대화",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "디지털 전환 비용",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 75
             }
         },
         "gdp_growth_pct": 3.8,
@@ -17453,9 +12041,9 @@ const COUNTRIES = {
                 "rank": 123
             },
             "agriculture": {
-                "size": 4.0,
+                "size": 1,
                 "growth": 1.7,
-                "potential": 67,
+                "potential": 65,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -17466,7 +12054,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 94
+                "rank": 119
             },
             "automotive": {
                 "size": 1,
@@ -17546,7 +12134,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 109
+                "rank": 111
             },
             "education": {
                 "size": 1,
@@ -17563,102 +12151,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 110
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.6,
-                "potential": 48,
-                "oppo": [
-                    "자연 원료 활용",
-                    "뷰티 시장 초기 성장",
-                    "직접 판매 채널"
-                ],
-                "risk": [
-                    "마케팅 도달 제한",
-                    "위조품 문제",
-                    "환율 변동성"
-                ],
-                "rank": 124
-            },
-            "food": {
-                "size": 1.1,
-                "growth": 6.4,
-                "potential": 58,
-                "oppo": [
-                    "전통 유통 채널",
-                    "지역 시장 활성화",
-                    "식품 가공 산업"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "유통 비효율",
-                    "물류 비용"
-                ],
-                "rank": 117
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 6.2,
-                "potential": 53,
-                "oppo": [
-                    "창고업 현대화",
-                    "물류 인프라 구축",
-                    "무역 성장 기회"
-                ],
-                "risk": [
-                    "도로 인프라 부족",
-                    "세관 절차",
-                    "디지털 전환 지연"
-                ],
-                "rank": 129
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 5.5,
-                "potential": 46,
-                "oppo": [
-                    "의류 제조업 강세",
-                    "섬유 원료 풍부",
-                    "내수 패션 시장 성장"
-                ],
-                "risk": [
-                    "오프라인 한계",
-                    "저가 경쟁",
-                    "수입 경쟁"
-                ],
-                "rank": 113
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 7.4,
-                "potential": 55,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "방송 미디어 발전",
-                    "모바일 엔터테인먼트"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "제작 인프라 부족",
-                    "디지털 콘텐츠 접근 제한"
-                ],
-                "rank": 130
-            },
-            "construction": {
-                "size": 0.8,
-                "growth": 7.6,
-                "potential": 61,
-                "oppo": [
-                    "기초 인프라 건설",
-                    "도시 인프라 투자",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "안전 관리",
-                    "기술력 부족",
-                    "관리 비효율"
-                ],
-                "rank": 136
             }
         },
         "gdp_growth_pct": -4.2,
@@ -17761,7 +12253,7 @@ const COUNTRIES = {
                 "rank": 54
             },
             "agriculture": {
-                "size": 6.0,
+                "size": 6.7,
                 "growth": 1.4,
                 "potential": 77,
                 "oppo": [
@@ -17774,7 +12266,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 76
+                "rank": 54
             },
             "automotive": {
                 "size": 8.7,
@@ -17854,7 +12346,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 36
+                "rank": 38
             },
             "education": {
                 "size": 5.1,
@@ -17871,102 +12363,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 56
-            },
-            "beauty": {
-                "size": 2,
-                "growth": 3.9,
-                "potential": 74,
-                "oppo": [
-                    "천연 화장품 수요",
-                    "클린 뷰티 트렌드",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "소비자 트렌드 변화",
-                    "리뷰 리스크",
-                    "규제 강화"
-                ],
-                "rank": 52
-            },
-            "food": {
-                "size": 8.8,
-                "growth": 2.9,
-                "potential": 73,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "유럽 식품 규제 대응",
-                    "건강식품 트렌드"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "원가 상승",
-                    "온라인 경쟁"
-                ],
-                "rank": 56
-            },
-            "logistics": {
-                "size": 8.4,
-                "growth": 4.2,
-                "potential": 69,
-                "oppo": [
-                    "크로스보더 물류",
-                    "라스트마일 혁신",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "인건비 상승",
-                    "환경 규제 강화"
-                ],
-                "rank": 47
-            },
-            "fashion": {
-                "size": 3.3,
-                "growth": 4,
-                "potential": 75,
-                "oppo": [
-                    "하이엔드 브랜드",
-                    "럭셔리 패션 시장",
-                    "디자이너 브랜드"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "인건비 상승",
-                    "가격 투명성"
-                ],
-                "rank": 52
-            },
-            "entertainment": {
-                "size": 4.8,
-                "growth": 4.9,
-                "potential": 81,
-                "oppo": [
-                    "게임 산업 확대",
-                    "유럽 콘텐츠 시장",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "주의력 경쟁",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 49
-            },
-            "construction": {
-                "size": 6.7,
-                "growth": 3.5,
-                "potential": 75,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "리노베이션 시장",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "인허가 절차",
-                    "인건비 상승",
-                    "디지털 전환 비용"
-                ],
-                "rank": 72
             }
         },
         "gdp_growth_pct": 0.6,
@@ -18069,9 +12465,9 @@ const COUNTRIES = {
                 "rank": 17
             },
             "agriculture": {
-                "size": 176.1,
+                "size": 41.9,
                 "growth": 3.2,
-                "potential": 81,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18082,7 +12478,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 4
+                "rank": 16
             },
             "automotive": {
                 "size": 54.5,
@@ -18162,7 +12558,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 33
+                "rank": 36
             },
             "education": {
                 "size": 10.7,
@@ -18179,102 +12575,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 33
-            },
-            "beauty": {
-                "size": 13.1,
-                "growth": 6.9,
-                "potential": 69,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "아시안 뷰티 트렌드",
-                    "중산층 소비 증가"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "트렌드 변화 빠름",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 17
-            },
-            "food": {
-                "size": 134.9,
-                "growth": 5.1,
-                "potential": 65,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "식품 안전 의식 증가",
-                    "가공식품 시장 성장"
-                ],
-                "risk": [
-                    "식품 안전 이슈",
-                    "경쟁 심화",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 12
-            },
-            "logistics": {
-                "size": 34.5,
-                "growth": 5.9,
-                "potential": 61,
-                "oppo": [
-                    "실시간 추적 시스템",
-                    "이커머스 물류 성장",
-                    "항만 물류 강세"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "사이버 보안 리스크",
-                    "규제 복잡성"
-                ],
-                "rank": 24
-            },
-            "fashion": {
-                "size": 21.5,
-                "growth": 5.5,
-                "potential": 60,
-                "oppo": [
-                    "한류 패션 영향",
-                    "로컬 브랜드 성장",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "원자재 비용",
-                    "트렌드 변화"
-                ],
-                "rank": 17
-            },
-            "entertainment": {
-                "size": 28.5,
-                "growth": 8.2,
-                "potential": 64,
-                "oppo": [
-                    "OTT 시장 확대",
-                    "디지털 콘텐츠 유통",
-                    "한류 콘텐츠 수출"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "경쟁 과열",
-                    "불법 복제"
-                ],
-                "rank": 16
-            },
-            "construction": {
-                "size": 287,
-                "growth": 5.2,
-                "potential": 81,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "메가시티 개발",
-                    "주택 건설 확대"
-                ],
-                "risk": [
-                    "자재비 상승",
-                    "부동산 과열 리스크",
-                    "디지털 전환 비용"
-                ],
-                "rank": 4
             }
         },
         "gdp_growth_pct": 5.0,
@@ -18377,9 +12677,9 @@ const COUNTRIES = {
                 "rank": 6
             },
             "agriculture": {
-                "size": 1146.1,
+                "size": 211.1,
                 "growth": 4.3,
-                "potential": 80,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18390,7 +12690,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 2
+                "rank": 3
             },
             "automotive": {
                 "size": 117.3,
@@ -18470,7 +12770,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 14
+                "rank": 15
             },
             "education": {
                 "size": 115.4,
@@ -18487,102 +12787,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 5
-            },
-            "beauty": {
-                "size": 39.3,
-                "growth": 6,
-                "potential": 61,
-                "oppo": [
-                    "직접 판매 채널",
-                    "뷰티 의식 성장",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "가격 민감 시장",
-                    "유통 인프라 부족",
-                    "위조품 범람"
-                ],
-                "rank": 10
-            },
-            "food": {
-                "size": 595.9,
-                "growth": 5.3,
-                "potential": 64,
-                "oppo": [
-                    "프랜차이즈 확대",
-                    "대규모 내수 시장",
-                    "지역 시장 활성화"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "마케팅 제한",
-                    "식품 위생 문제"
-                ],
-                "rank": 3
-            },
-            "logistics": {
-                "size": 102.2,
-                "growth": 5.2,
-                "potential": 49,
-                "oppo": [
-                    "물류 현대화 수요",
-                    "운송 네트워크 확장",
-                    "창고업 현대화"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "물류 비효율",
-                    "도로 인프라 부족"
-                ],
-                "rank": 9
-            },
-            "fashion": {
-                "size": 119.4,
-                "growth": 6.9,
-                "potential": 64,
-                "oppo": [
-                    "도매 시장 성장",
-                    "수출 주도 성장",
-                    "내수 패션 시장 성장"
-                ],
-                "risk": [
-                    "품질 인식",
-                    "품질 관리",
-                    "마케팅 제한"
-                ],
-                "rank": 8
-            },
-            "entertainment": {
-                "size": 177.1,
-                "growth": 6.2,
-                "potential": 60,
-                "oppo": [
-                    "대규모 관객 시장",
-                    "미디어 디지털화",
-                    "방송 미디어 발전"
-                ],
-                "risk": [
-                    "제작 인프라 부족",
-                    "대역폭 부족",
-                    "불법 유통"
-                ],
-                "rank": 5
-            },
-            "construction": {
-                "size": 1408.5,
-                "growth": 9.9,
-                "potential": 64,
-                "oppo": [
-                    "주택 수요 증가",
-                    "도시화 가속",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "인프라 제약",
-                    "자금 조달 어려움",
-                    "안전 관리"
-                ],
-                "rank": 3
             }
         },
         "gdp_growth_pct": 6.5,
@@ -18618,7 +12822,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 31
+                "rank": 29
             },
             "manufacturing": {
                 "size": 198.1,
@@ -18685,9 +12889,9 @@ const COUNTRIES = {
                 "rank": 23
             },
             "agriculture": {
-                "size": 6.2,
+                "size": 18.3,
                 "growth": 2.2,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -18698,7 +12902,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 73
+                "rank": 25
             },
             "automotive": {
                 "size": 23.8,
@@ -18778,7 +12982,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 37
+                "rank": 39
             },
             "education": {
                 "size": 10.6,
@@ -18793,102 +12997,6 @@ const COUNTRIES = {
                     "규제 강화 리스크",
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
-                ],
-                "rank": 34
-            },
-            "beauty": {
-                "size": 6.5,
-                "growth": 4.8,
-                "potential": 77,
-                "oppo": [
-                    "안티에이징 수요 증가",
-                    "인플루언서 마케팅",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "소비자 트렌드 변화",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 23
-            },
-            "food": {
-                "size": 26,
-                "growth": 2.8,
-                "potential": 67,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "유럽 식품 규제 대응",
-                    "건강식품 트렌드"
-                ],
-                "risk": [
-                    "엄격한 식품 규제",
-                    "식품 안전 규제",
-                    "온라인 경쟁"
-                ],
-                "rank": 27
-            },
-            "logistics": {
-                "size": 33.6,
-                "growth": 2.8,
-                "potential": 70,
-                "oppo": [
-                    "크로스보더 물류",
-                    "첨단 물류 자동화",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "자동화 투자 부담",
-                    "국경 통관",
-                    "환경 규제"
-                ],
-                "rank": 25
-            },
-            "fashion": {
-                "size": 8.5,
-                "growth": 3.3,
-                "potential": 70,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "온라인 패션 플랫폼",
-                    "디자이너 브랜드"
-                ],
-                "risk": [
-                    "지속가능성 압박",
-                    "온라인 반품률",
-                    "패스트패션 비판"
-                ],
-                "rank": 28
-            },
-            "entertainment": {
-                "size": 11.2,
-                "growth": 6.3,
-                "potential": 68,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "콘텐츠 IP 수출",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "콘텐츠 과잉 공급",
-                    "언어 장벽"
-                ],
-                "rank": 27
-            },
-            "construction": {
-                "size": 24.7,
-                "growth": 3.9,
-                "potential": 66,
-                "oppo": [
-                    "친환경 건축",
-                    "건설 테크 도입",
-                    "리노베이션 시장"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "환경 규제 강화",
-                    "환경 규제"
                 ],
                 "rank": 34
             }
@@ -18993,9 +13101,9 @@ const COUNTRIES = {
                 "rank": 33
             },
             "agriculture": {
-                "size": 51.3,
+                "size": 14.3,
                 "growth": 2.7,
-                "potential": 79,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19006,7 +13114,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 15
+                "rank": 33
             },
             "automotive": {
                 "size": 14.3,
@@ -19086,7 +13194,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 38
+                "rank": 40
             },
             "education": {
                 "size": 8.1,
@@ -19103,102 +13211,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 43
-            },
-            "beauty": {
-                "size": 4.3,
-                "growth": 5.5,
-                "potential": 61,
-                "oppo": [
-                    "온라인 뷰티 성장",
-                    "할랄 화장품 시장",
-                    "중산층 소비 증가"
-                ],
-                "risk": [
-                    "할랄 인증 필요",
-                    "수입 의존도",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 32
-            },
-            "food": {
-                "size": 19.7,
-                "growth": 4.9,
-                "potential": 66,
-                "oppo": [
-                    "외식 산업 확대",
-                    "할랄 식품 시장",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "할랄 인증 요구",
-                    "원자재 가격 변동",
-                    "수입 의존도"
-                ],
-                "rank": 37
-            },
-            "logistics": {
-                "size": 11,
-                "growth": 5.8,
-                "potential": 57,
-                "oppo": [
-                    "항만 현대화",
-                    "실시간 추적 시스템",
-                    "중계 무역 허브"
-                ],
-                "risk": [
-                    "물류 편중",
-                    "사이버 보안 리스크",
-                    "인프라 병목"
-                ],
-                "rank": 37
-            },
-            "fashion": {
-                "size": 6.8,
-                "growth": 5.5,
-                "potential": 69,
-                "oppo": [
-                    "온라인 패션 확대",
-                    "온라인 패션 플랫폼",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "원자재 비용",
-                    "수입 의존"
-                ],
-                "rank": 35
-            },
-            "entertainment": {
-                "size": 6.9,
-                "growth": 7.4,
-                "potential": 62,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "미디어 시장 개방",
-                    "아랍어 콘텐츠 수요"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "문화적 제약",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 38
-            },
-            "construction": {
-                "size": 34.9,
-                "growth": 5.4,
-                "potential": 72,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "BIM 기술 활용",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "인력 부족",
-                    "유가 의존 경제"
-                ],
-                "rank": 29
             }
         },
         "gdp_growth_pct": 3.7,
@@ -19301,7 +13313,7 @@ const COUNTRIES = {
                 "rank": 50
             },
             "agriculture": {
-                "size": 9.5,
+                "size": 8.4,
                 "growth": 1.2,
                 "potential": 73,
                 "oppo": [
@@ -19314,7 +13326,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 59
+                "rank": 49
             },
             "automotive": {
                 "size": 8.4,
@@ -19394,7 +13406,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 71
+                "rank": 75
             },
             "education": {
                 "size": 5.6,
@@ -19411,102 +13423,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 53
-            },
-            "beauty": {
-                "size": 2.4,
-                "growth": 5.1,
-                "potential": 67,
-                "oppo": [
-                    "온라인 뷰티 성장",
-                    "프리미엄 뷰티 수요",
-                    "중산층 소비 증가"
-                ],
-                "risk": [
-                    "브랜드 경쟁 심화",
-                    "수입 의존도",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 46
-            },
-            "food": {
-                "size": 14,
-                "growth": 4.9,
-                "potential": 65,
-                "oppo": [
-                    "가공식품 시장 성장",
-                    "식품 안전 의식 증가",
-                    "식품 수입 의존도"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "수입 의존도",
-                    "식품 안전 이슈"
-                ],
-                "rank": 48
-            },
-            "logistics": {
-                "size": 9.5,
-                "growth": 5.2,
-                "potential": 61,
-                "oppo": [
-                    "물류 인프라 투자",
-                    "디지털 물류 플랫폼",
-                    "중계 무역 허브"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "물류 편중",
-                    "인프라 병목"
-                ],
-                "rank": 43
-            },
-            "fashion": {
-                "size": 3.8,
-                "growth": 5,
-                "potential": 66,
-                "oppo": [
-                    "럭셔리 소비",
-                    "온라인 패션 확대",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "트렌드 변화",
-                    "온라인 반품률",
-                    "문화적 제약"
-                ],
-                "rank": 50
-            },
-            "entertainment": {
-                "size": 5.1,
-                "growth": 6.2,
-                "potential": 68,
-                "oppo": [
-                    "게임 시장 성장",
-                    "로컬 콘텐츠 제작",
-                    "아랍어 콘텐츠 수요"
-                ],
-                "risk": [
-                    "문화적 제약",
-                    "불법 복제",
-                    "주의력 경쟁"
-                ],
-                "rank": 47
-            },
-            "construction": {
-                "size": 8.3,
-                "growth": 6.7,
-                "potential": 65,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "도시화 인프라 수요",
-                    "도시 개발 붐"
-                ],
-                "risk": [
-                    "자재비 상승",
-                    "디지털 전환 비용",
-                    "인력 부족"
-                ],
-                "rank": 64
             }
         },
         "gdp_growth_pct": -1.5,
@@ -19609,9 +13525,9 @@ const COUNTRIES = {
                 "rank": 105
             },
             "agriculture": {
-                "size": 1.3,
+                "size": 1,
                 "growth": 1.2,
-                "potential": 75,
+                "potential": 74,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -19622,7 +13538,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 128
+                "rank": 120
             },
             "automotive": {
                 "size": 1.3,
@@ -19702,7 +13618,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 110
+                "rank": 112
             },
             "education": {
                 "size": 1.5,
@@ -19719,102 +13635,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 81
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 3.5,
-                "potential": 77,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "안티에이징 수요 증가",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "온라인 가격 경쟁",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 87
-            },
-            "food": {
-                "size": 1.4,
-                "growth": 3.2,
-                "potential": 71,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "지역 특산품 브랜드화",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "원가 상승",
-                    "소비 트렌드 변화"
-                ],
-                "rank": 106
-            },
-            "logistics": {
-                "size": 1.2,
-                "growth": 4.1,
-                "potential": 70,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "콜드체인 확대",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "플랫폼 의존",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 99
-            },
-            "fashion": {
-                "size": 0.5,
-                "growth": 2.9,
-                "potential": 73,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "지속가능 패션",
-                    "디자이너 브랜드"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "온라인 반품률",
-                    "가격 투명성"
-                ],
-                "rank": 100
-            },
-            "entertainment": {
-                "size": 0.7,
-                "growth": 6.1,
-                "potential": 71,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "콘텐츠 IP 수출",
-                    "문화 콘텐츠 다양성"
-                ],
-                "risk": [
-                    "시장 분절",
-                    "플랫폼 과포화",
-                    "저작권 분쟁"
-                ],
-                "rank": 95
-            },
-            "construction": {
-                "size": 0.8,
-                "growth": 3.3,
-                "potential": 66,
-                "oppo": [
-                    "인프라 현대화",
-                    "건설 테크 도입",
-                    "리노베이션 시장"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "원자재 가격 변동",
-                    "환경 규제"
-                ],
-                "rank": 137
             }
         },
         "gdp_growth_pct": -1.0,
@@ -19837,9 +13657,9 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 48.8,
+                "size": 27.0,
                 "growth": 4.5,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -19850,7 +13670,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 33
             },
             "manufacturing": {
                 "size": 60.1,
@@ -19917,9 +13737,9 @@ const COUNTRIES = {
                 "rank": 29
             },
             "agriculture": {
-                "size": 6.9,
+                "size": 16.2,
                 "growth": 1.5,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -19930,7 +13750,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 66
+                "rank": 29
             },
             "automotive": {
                 "size": 16.2,
@@ -20010,7 +13830,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 47
+                "rank": 51
             },
             "education": {
                 "size": 19.2,
@@ -20027,102 +13847,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 24
-            },
-            "beauty": {
-                "size": 5.6,
-                "growth": 4.1,
-                "potential": 78,
-                "oppo": [
-                    "할랄 화장품 시장",
-                    "프리미엄 뷰티 시장",
-                    "프리미엄 뷰티 수요"
-                ],
-                "risk": [
-                    "규제 강화",
-                    "할랄 인증 필요",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 28
-            },
-            "food": {
-                "size": 24.2,
-                "growth": 3.5,
-                "potential": 73,
-                "oppo": [
-                    "프리미엄 식품 시장",
-                    "건강식품 트렌드",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "할랄 인증 요구",
-                    "소비 트렌드 변화"
-                ],
-                "rank": 30
-            },
-            "logistics": {
-                "size": 14.6,
-                "growth": 2.9,
-                "potential": 73,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "콜드체인 확대",
-                    "자유무역지대 활용"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "물류 편중",
-                    "인건비 상승"
-                ],
-                "rank": 34
-            },
-            "fashion": {
-                "size": 7.8,
-                "growth": 3.1,
-                "potential": 74,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "디자이너 브랜드",
-                    "럭셔리 패션 시장"
-                ],
-                "risk": [
-                    "지속가능성 압박",
-                    "시장 포화",
-                    "온라인 반품률"
-                ],
-                "rank": 34
-            },
-            "entertainment": {
-                "size": 11.4,
-                "growth": 6.3,
-                "potential": 78,
-                "oppo": [
-                    "미디어 시장 개방",
-                    "스트리밍 시장 성장",
-                    "콘텐츠 IP 수출"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "플랫폼 과포화",
-                    "콘텐츠 검열"
-                ],
-                "rank": 26
-            },
-            "construction": {
-                "size": 15.3,
-                "growth": 2.9,
-                "potential": 69,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "도시 개발 붐",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "인건비 상승",
-                    "유가 의존 경제"
-                ],
-                "rank": 44
             }
         },
         "gdp_growth_pct": 0.9,
@@ -20225,9 +13949,9 @@ const COUNTRIES = {
                 "rank": 8
             },
             "agriculture": {
-                "size": 47.6,
+                "size": 71.4,
                 "growth": 1.5,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -20238,7 +13962,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 16
+                "rank": 8
             },
             "automotive": {
                 "size": 92.9,
@@ -20318,7 +14042,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 8
+                "rank": 9
             },
             "education": {
                 "size": 58.1,
@@ -20335,102 +14059,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 11
-            },
-            "beauty": {
-                "size": 46.2,
-                "growth": 4.8,
-                "potential": 75,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "천연 화장품 수요",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "규제 강화",
-                    "시장 포화",
-                    "소비자 트렌드 변화"
-                ],
-                "rank": 8
-            },
-            "food": {
-                "size": 156.5,
-                "growth": 2.5,
-                "potential": 81,
-                "oppo": [
-                    "푸드테크 성장",
-                    "프리미엄 식품 시장",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "원가 상승",
-                    "온라인 경쟁",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 9
-            },
-            "logistics": {
-                "size": 76.7,
-                "growth": 3.3,
-                "potential": 77,
-                "oppo": [
-                    "라스트마일 혁신",
-                    "콜드체인 확대",
-                    "유럽 물류 허브"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "국경 통관",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 12
-            },
-            "fashion": {
-                "size": 123.7,
-                "growth": 3.5,
-                "potential": 87,
-                "oppo": [
-                    "디자이너 브랜드",
-                    "온라인 패션 플랫폼",
-                    "유럽 패션 수도"
-                ],
-                "risk": [
-                    "패스트패션 비판",
-                    "시장 포화",
-                    "지속가능성 압박"
-                ],
-                "rank": 7
-            },
-            "entertainment": {
-                "size": 64.1,
-                "growth": 5,
-                "potential": 82,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "디지털 콘텐츠 유통",
-                    "콘텐츠 IP 수출"
-                ],
-                "risk": [
-                    "저작권 분쟁",
-                    "플랫폼 경쟁",
-                    "주의력 경쟁"
-                ],
-                "rank": 11
-            },
-            "construction": {
-                "size": 61,
-                "growth": 2.7,
-                "potential": 69,
-                "oppo": [
-                    "리노베이션 시장",
-                    "BIM 기술 활용",
-                    "친환경 건축"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "인허가 절차",
-                    "환경 규제"
-                ],
-                "rank": 22
             }
         },
         "gdp_growth_pct": 0.7,
@@ -20533,9 +14161,9 @@ const COUNTRIES = {
                 "rank": 124
             },
             "agriculture": {
-                "size": 1.8,
+                "size": 1,
                 "growth": 1.2,
-                "potential": 71,
+                "potential": 70,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20546,7 +14174,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 119
+                "rank": 121
             },
             "automotive": {
                 "size": 1,
@@ -20626,7 +14254,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 111
+                "rank": 113
             },
             "education": {
                 "size": 1,
@@ -20643,102 +14271,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 111
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 6,
-                "potential": 70,
-                "oppo": [
-                    "뷰티 소비 증가",
-                    "온라인 뷰티 성장",
-                    "자연 원료 활용"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "수입 의존도",
-                    "브랜드 경쟁 심화"
-                ],
-                "rank": 107
-            },
-            "food": {
-                "size": 0.9,
-                "growth": 4,
-                "potential": 67,
-                "oppo": [
-                    "식품 안전 의식 증가",
-                    "온라인 푸드 배달",
-                    "농산물 수출 강국"
-                ],
-                "risk": [
-                    "규제 환경",
-                    "물류 비용",
-                    "식품 안전 이슈"
-                ],
-                "rank": 124
-            },
-            "logistics": {
-                "size": 0.7,
-                "growth": 4.5,
-                "potential": 58,
-                "oppo": [
-                    "항만 인프라 투자",
-                    "이커머스 물류 성장",
-                    "물류 인프라 투자"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "인프라 병목",
-                    "세관 절차"
-                ],
-                "rank": 117
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 6.1,
-                "potential": 58,
-                "oppo": [
-                    "패스트패션 성장",
-                    "온라인 패션 플랫폼",
-                    "라틴 패션 트렌드"
-                ],
-                "risk": [
-                    "트렌드 변화",
-                    "수입 경쟁",
-                    "글로벌 브랜드 경쟁"
-                ],
-                "rank": 114
-            },
-            "entertainment": {
-                "size": 0.5,
-                "growth": 7.2,
-                "potential": 62,
-                "oppo": [
-                    "게임 시장 성장",
-                    "디지털 콘텐츠 유통",
-                    "로컬 콘텐츠 제작"
-                ],
-                "risk": [
-                    "광고 시장 제한",
-                    "불법 복제",
-                    "주의력 경쟁"
-                ],
-                "rank": 102
-            },
-            "construction": {
-                "size": 0.7,
-                "growth": 4.5,
-                "potential": 63,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "BIM 기술 활용",
-                    "주택 건설 확대"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "인력 부족",
-                    "자금 조달"
-                ],
-                "rank": 139
             }
         },
         "gdp_growth_pct": -0.5,
@@ -20840,9 +14372,9 @@ const COUNTRIES = {
                 "rank": 91
             },
             "agriculture": {
-                "size": 2.7,
+                "size": 1.6,
                 "growth": 2.7,
-                "potential": 69,
+                "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20853,7 +14385,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 109
+                "rank": 90
             },
             "automotive": {
                 "size": 1.6,
@@ -20933,7 +14465,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 67
+                "rank": 70
             },
             "education": {
                 "size": 1.1,
@@ -20950,102 +14482,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 90
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 5.9,
-                "potential": 52,
-                "oppo": [
-                    "할랄 화장품 시장",
-                    "젊은 인구 수요",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "유통 인프라 부족",
-                    "리뷰 리스크",
-                    "문화적 제약"
-                ],
-                "rank": 97
-            },
-            "food": {
-                "size": 2.3,
-                "growth": 5.2,
-                "potential": 63,
-                "oppo": [
-                    "식품 가공업 발전",
-                    "할랄 식품 시장",
-                    "식품 수입 의존도"
-                ],
-                "risk": [
-                    "물류 비용",
-                    "위생 관리 어려움",
-                    "콜드체인 부족"
-                ],
-                "rank": 91
-            },
-            "logistics": {
-                "size": 2.1,
-                "growth": 5.8,
-                "potential": 53,
-                "oppo": [
-                    "물류 인프라 구축",
-                    "실시간 추적 시스템",
-                    "자유무역지대 활용"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "물류비 높음",
-                    "통관 지연"
-                ],
-                "rank": 88
-            },
-            "fashion": {
-                "size": 0.8,
-                "growth": 6.5,
-                "potential": 58,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "럭셔리 소비",
-                    "의류 제조업 강세"
-                ],
-                "risk": [
-                    "품질 관리",
-                    "수입 의존",
-                    "온라인 반품률"
-                ],
-                "rank": 85
-            },
-            "entertainment": {
-                "size": 1.1,
-                "growth": 7.3,
-                "potential": 57,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "미디어 시장 개방",
-                    "아랍어 콘텐츠 수요"
-                ],
-                "risk": [
-                    "문화적 제약",
-                    "수익 모델 한계",
-                    "제작 인프라 부족"
-                ],
-                "rank": 81
-            },
-            "construction": {
-                "size": 2.5,
-                "growth": 7,
-                "potential": 64,
-                "oppo": [
-                    "메가 프로젝트",
-                    "BIM 기술 활용",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "프로젝트 지연",
-                    "자금 조달 어려움"
-                ],
-                "rank": 98
             }
         },
         "gdp_growth_pct": 2.5,
@@ -21068,7 +14504,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 308.6,
+                "size": 302.1,
                 "growth": 4.2,
                 "potential": 88,
                 "oppo": [
@@ -21148,9 +14584,9 @@ const COUNTRIES = {
                 "rank": 5
             },
             "agriculture": {
-                "size": 37.8,
+                "size": 120.8,
                 "growth": 1.2,
-                "potential": 79,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21161,7 +14597,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 5
             },
             "automotive": {
                 "size": 157.1,
@@ -21241,7 +14677,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 12
+                "rank": 13
             },
             "education": {
                 "size": 80.6,
@@ -21258,102 +14694,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 7
-            },
-            "beauty": {
-                "size": 106.7,
-                "growth": 3.6,
-                "potential": 81,
-                "oppo": [
-                    "안티에이징 수요 증가",
-                    "아시안 뷰티 트렌드",
-                    "클린 뷰티 트렌드"
-                ],
-                "risk": [
-                    "과잉 경쟁",
-                    "소비자 트렌드 변화",
-                    "리뷰 리스크"
-                ],
-                "rank": 3
-            },
-            "food": {
-                "size": 406,
-                "growth": 3.1,
-                "potential": 82,
-                "oppo": [
-                    "한식/일식 인기",
-                    "푸드테크 성장",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "수입 규제",
-                    "소비 트렌드 변화"
-                ],
-                "rank": 4
-            },
-            "logistics": {
-                "size": 270.2,
-                "growth": 3.3,
-                "potential": 79,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "항만 물류 강세",
-                    "글로벌 공급망 허브"
-                ],
-                "risk": [
-                    "항만 혼잡",
-                    "환경 규제",
-                    "자동화 투자 부담"
-                ],
-                "rank": 4
-            },
-            "fashion": {
-                "size": 143.2,
-                "growth": 3.4,
-                "potential": 90,
-                "oppo": [
-                    "디자이너 브랜드",
-                    "SNS 패션 마케팅",
-                    "럭셔리 패션 시장"
-                ],
-                "risk": [
-                    "패스트패션 비판",
-                    "가격 경쟁 심화",
-                    "온라인 반품률"
-                ],
-                "rank": 5
-            },
-            "entertainment": {
-                "size": 292.7,
-                "growth": 5.6,
-                "potential": 82,
-                "oppo": [
-                    "콘텐츠 IP 수출",
-                    "OTT 플랫폼 확대",
-                    "웹툰/웹소설 성장"
-                ],
-                "risk": [
-                    "콘텐츠 규제",
-                    "플랫폼 과포화",
-                    "저작권 분쟁"
-                ],
-                "rank": 3
-            },
-            "construction": {
-                "size": 234.7,
-                "growth": 3,
-                "potential": 77,
-                "oppo": [
-                    "메가시티 개발",
-                    "스마트시티 개발",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "인력 부족",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 6
             }
         },
         "gdp_growth_pct": 0.1,
@@ -21456,9 +14796,9 @@ const COUNTRIES = {
                 "rank": 47
             },
             "agriculture": {
-                "size": 11.3,
+                "size": 8.7,
                 "growth": 3.2,
-                "potential": 78,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -21469,7 +14809,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 50
+                "rank": 47
             },
             "automotive": {
                 "size": 11.4,
@@ -21549,7 +14889,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 60
+                "rank": 64
             },
             "education": {
                 "size": 8.5,
@@ -21566,102 +14906,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 40
-            },
-            "beauty": {
-                "size": 2.6,
-                "growth": 5.2,
-                "potential": 72,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "유럽 프리미엄 시장",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "온라인 가격 경쟁",
-                    "품질 규제"
-                ],
-                "rank": 43
-            },
-            "food": {
-                "size": 14.9,
-                "growth": 4.3,
-                "potential": 62,
-                "oppo": [
-                    "식품 안전 의식 증가",
-                    "온라인 푸드 배달",
-                    "가공식품 시장 성장"
-                ],
-                "risk": [
-                    "식품 안전 이슈",
-                    "경쟁 심화",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 44
-            },
-            "logistics": {
-                "size": 7.5,
-                "growth": 5.2,
-                "potential": 68,
-                "oppo": [
-                    "이커머스 물류 성장",
-                    "크로스보더 물류",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "인프라 병목",
-                    "경쟁 심화"
-                ],
-                "rank": 53
-            },
-            "fashion": {
-                "size": 3.4,
-                "growth": 6.3,
-                "potential": 57,
-                "oppo": [
-                    "로컬 브랜드 성장",
-                    "패스트패션 성장",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "글로벌 브랜드 경쟁",
-                    "인건비 상승",
-                    "원자재 비용"
-                ],
-                "rank": 51
-            },
-            "entertainment": {
-                "size": 6.1,
-                "growth": 7,
-                "potential": 59,
-                "oppo": [
-                    "로컬 콘텐츠 제작",
-                    "OTT 시장 확대",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "언어 장벽",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 41
-            },
-            "construction": {
-                "size": 24.8,
-                "growth": 4.3,
-                "potential": 64,
-                "oppo": [
-                    "친환경 건축",
-                    "BIM 기술 활용",
-                    "주택 건설 확대"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "환경 규제 강화",
-                    "디지털 전환 비용"
-                ],
-                "rank": 33
             }
         },
         "gdp_growth_pct": 5.0,
@@ -21764,9 +15008,9 @@ const COUNTRIES = {
                 "rank": 65
             },
             "agriculture": {
-                "size": 27.0,
+                "size": 3.6,
                 "growth": 3.6,
-                "potential": 73,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21777,7 +15021,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 31
+                "rank": 64
             },
             "automotive": {
                 "size": 3.6,
@@ -21857,7 +15101,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 62
+                "rank": 67
             },
             "education": {
                 "size": 2.9,
@@ -21874,102 +15118,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 64
-            },
-            "beauty": {
-                "size": 0.7,
-                "growth": 7.4,
-                "potential": 54,
-                "oppo": [
-                    "젊은 인구 수요",
-                    "직접 판매 채널",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "위조품 문제",
-                    "유통 인프라 부재",
-                    "소비력 부족"
-                ],
-                "rank": 73
-            },
-            "food": {
-                "size": 5.5,
-                "growth": 5.9,
-                "potential": 56,
-                "oppo": [
-                    "식량 안보 투자",
-                    "농산물 부가가치화",
-                    "프랜차이즈 확대"
-                ],
-                "risk": [
-                    "위생 관리 어려움",
-                    "유통 비효율",
-                    "마케팅 제한"
-                ],
-                "rank": 62
-            },
-            "logistics": {
-                "size": 2.5,
-                "growth": 6,
-                "potential": 57,
-                "oppo": [
-                    "기본 물류 인프라",
-                    "물류 인프라 구축",
-                    "아프리카 내륙 물류"
-                ],
-                "risk": [
-                    "도로 인프라 부족",
-                    "추적 시스템 부재",
-                    "물류비 높음"
-                ],
-                "rank": 81
-            },
-            "fashion": {
-                "size": 1.1,
-                "growth": 5.4,
-                "potential": 60,
-                "oppo": [
-                    "OEM/ODM 기회",
-                    "전통 의류 현대화",
-                    "전통 시장 유통"
-                ],
-                "risk": [
-                    "유통 한계",
-                    "노동 환경 이슈",
-                    "품질 관리"
-                ],
-                "rank": 76
-            },
-            "entertainment": {
-                "size": 1,
-                "growth": 8.2,
-                "potential": 47,
-                "oppo": [
-                    "모바일 엔터테인먼트",
-                    "방송 미디어 발전",
-                    "미디어 디지털화"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "제작 인프라 부족",
-                    "대역폭 부족"
-                ],
-                "rank": 82
-            },
-            "construction": {
-                "size": 10.4,
-                "growth": 7.7,
-                "potential": 51,
-                "oppo": [
-                    "아프리카 인프라 개발",
-                    "전통 건설 방식",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "기술 도입 지연",
-                    "자금 부족",
-                    "자금 조달 어려움"
-                ],
-                "rank": 57
             }
         },
         "gdp_growth_pct": 4.7,
@@ -22072,7 +15220,7 @@ const COUNTRIES = {
                 "rank": 125
             },
             "agriculture": {
-                "size": 1.5,
+                "size": 1,
                 "growth": 5.3,
                 "potential": 73,
                 "oppo": [
@@ -22085,7 +15233,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 124
+                "rank": 122
             },
             "automotive": {
                 "size": 1,
@@ -22165,7 +15313,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 112
+                "rank": 114
             },
             "education": {
                 "size": 1,
@@ -22182,102 +15330,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 112
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6,
-                "potential": 49,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "유럽 프리미엄 시장",
-                    "뷰티 시장 초기 성장"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "위조품 문제",
-                    "리뷰 리스크"
-                ],
-                "rank": 125
-            },
-            "food": {
-                "size": 0.8,
-                "growth": 5.9,
-                "potential": 53,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "유럽 식품 규제 대응",
-                    "농산물 부가가치화"
-                ],
-                "risk": [
-                    "엄격한 식품 규제",
-                    "콜드체인 부족",
-                    "온라인 경쟁"
-                ],
-                "rank": 130
-            },
-            "logistics": {
-                "size": 0.7,
-                "growth": 5,
-                "potential": 56,
-                "oppo": [
-                    "창고업 현대화",
-                    "유럽 물류 허브",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "국경 통관",
-                    "통관 지연",
-                    "물류비 높음"
-                ],
-                "rank": 118
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 7.6,
-                "potential": 60,
-                "oppo": [
-                    "내수 패션 시장 성장",
-                    "하이엔드 브랜드",
-                    "OEM/ODM 기회"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "노동 환경 이슈",
-                    "가격 투명성"
-                ],
-                "rank": 115
-            },
-            "entertainment": {
-                "size": 0.3,
-                "growth": 8.3,
-                "potential": 45,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "콘텐츠 소비 증가",
-                    "문화 콘텐츠 다양성"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "저작권 보호 미흡",
-                    "수익 모델 한계"
-                ],
-                "rank": 119
-            },
-            "construction": {
-                "size": 2.1,
-                "growth": 9.4,
-                "potential": 55,
-                "oppo": [
-                    "건설 테크 도입",
-                    "기초 인프라 건설",
-                    "친환경 건축"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "인허가 절차",
-                    "기술력 부족"
-                ],
-                "rank": 106
             }
         },
         "gdp_growth_pct": 9.0,
@@ -22380,9 +15432,9 @@ const COUNTRIES = {
                 "rank": 96
             },
             "agriculture": {
-                "size": 7.7,
+                "size": 1.4,
                 "growth": 4.1,
-                "potential": 73,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -22393,7 +15445,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 63
+                "rank": 97
             },
             "automotive": {
                 "size": 1.8,
@@ -22473,7 +15525,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 79
+                "rank": 82
             },
             "education": {
                 "size": 1,
@@ -22490,102 +15542,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 113
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 7.1,
-                "potential": 60,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "젊은 인구 수요",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "유통 인프라 부족",
-                    "소비력 제한",
-                    "트렌드 변화 빠름"
-                ],
-                "rank": 92
-            },
-            "food": {
-                "size": 2.4,
-                "growth": 4.7,
-                "potential": 54,
-                "oppo": [
-                    "아시아 식품 수출",
-                    "식품 가공업 발전",
-                    "농산물 부가가치화"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "온라인 경쟁",
-                    "식품 안전 우려"
-                ],
-                "rank": 89
-            },
-            "logistics": {
-                "size": 2.1,
-                "growth": 6.5,
-                "potential": 55,
-                "oppo": [
-                    "글로벌 공급망 허브",
-                    "실시간 추적 시스템",
-                    "물류 인프라 구축"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "항만 혼잡",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 87
-            },
-            "fashion": {
-                "size": 0.5,
-                "growth": 5.5,
-                "potential": 60,
-                "oppo": [
-                    "아시아 패션 허브",
-                    "의류 제조업 강세",
-                    "내수 패션 시장 성장"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "온라인 반품률",
-                    "가격 경쟁 심화"
-                ],
-                "rank": 97
-            },
-            "entertainment": {
-                "size": 0.6,
-                "growth": 7.6,
-                "potential": 45,
-                "oppo": [
-                    "콘텐츠 소비 증가",
-                    "디지털 콘텐츠 유통",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "수익 모델 한계",
-                    "콘텐츠 규제"
-                ],
-                "rank": 97
-            },
-            "construction": {
-                "size": 5.6,
-                "growth": 9.6,
-                "potential": 54,
-                "oppo": [
-                    "기초 인프라 건설",
-                    "BIM 기술 활용",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "안전 관리",
-                    "디지털 전환 비용"
-                ],
-                "rank": 77
             }
         },
         "gdp_growth_pct": 6.0,
@@ -22608,9 +15564,9 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 219.9,
+                "size": 140.7,
                 "growth": 5.0,
-                "potential": 89,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22621,7 +15577,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 9
             },
             "manufacturing": {
                 "size": 798.7,
@@ -22688,9 +15644,9 @@ const COUNTRIES = {
                 "rank": 13
             },
             "agriculture": {
-                "size": 27.3,
+                "size": 56.3,
                 "growth": 2.0,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22701,7 +15657,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 30
+                "rank": 12
             },
             "automotive": {
                 "size": 73.1,
@@ -22781,7 +15737,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 24
+                "rank": 22
             },
             "education": {
                 "size": 65.4,
@@ -22798,102 +15754,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 10
-            },
-            "beauty": {
-                "size": 53.6,
-                "growth": 3.7,
-                "potential": 85,
-                "oppo": [
-                    "안티에이징 수요 증가",
-                    "K-뷰티 열풍",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "과잉 경쟁",
-                    "규제 강화",
-                    "소비자 트렌드 변화"
-                ],
-                "rank": 7
-            },
-            "food": {
-                "size": 117.9,
-                "growth": 3.2,
-                "potential": 78,
-                "oppo": [
-                    "아시아 식품 수출",
-                    "온라인 푸드 배달",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "식품 안전 우려",
-                    "소비 트렌드 변화"
-                ],
-                "rank": 13
-            },
-            "logistics": {
-                "size": 147.1,
-                "growth": 4,
-                "potential": 81,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "항만 물류 강세",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "인건비 상승",
-                    "항만 혼잡"
-                ],
-                "rank": 7
-            },
-            "fashion": {
-                "size": 61.2,
-                "growth": 3.5,
-                "potential": 88,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "럭셔리 패션 시장",
-                    "지속가능 패션"
-                ],
-                "risk": [
-                    "지속가능성 압박",
-                    "가격 투명성",
-                    "패스트패션 포화"
-                ],
-                "rank": 9
-            },
-            "entertainment": {
-                "size": 124.1,
-                "growth": 5.9,
-                "potential": 92,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "게임 산업 확대",
-                    "한류 콘텐츠 수출"
-                ],
-                "risk": [
-                    "콘텐츠 규제",
-                    "주의력 경쟁",
-                    "콘텐츠 과잉 공급"
-                ],
-                "rank": 7
-            },
-            "construction": {
-                "size": 106.6,
-                "growth": 3.8,
-                "potential": 70,
-                "oppo": [
-                    "메가시티 개발",
-                    "그린빌딩 트렌드",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "인건비 상승",
-                    "부동산 과열 리스크"
-                ],
-                "rank": 15
             }
         },
         "gdp_growth_pct": 2.0,
@@ -22996,9 +15856,9 @@ const COUNTRIES = {
                 "rank": 57
             },
             "agriculture": {
-                "size": 1,
+                "size": 4.8,
                 "growth": 1.2,
-                "potential": 74,
+                "potential": 76,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23009,7 +15869,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 138
+                "rank": 58
             },
             "automotive": {
                 "size": 4.8,
@@ -23089,7 +15949,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 113
+                "rank": 115
             },
             "education": {
                 "size": 6.2,
@@ -23106,102 +15966,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 50
-            },
-            "beauty": {
-                "size": 1.4,
-                "growth": 4.4,
-                "potential": 73,
-                "oppo": [
-                    "클린 뷰티 트렌드",
-                    "인플루언서 마케팅",
-                    "프리미엄 뷰티 시장"
-                ],
-                "risk": [
-                    "할랄 인증 필요",
-                    "온라인 가격 경쟁",
-                    "문화적 제약"
-                ],
-                "rank": 55
-            },
-            "food": {
-                "size": 6.5,
-                "growth": 3,
-                "potential": 77,
-                "oppo": [
-                    "할랄 식품 시장",
-                    "식품 수입 의존도",
-                    "건강식품 트렌드"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "소비 트렌드 변화",
-                    "온라인 경쟁"
-                ],
-                "rank": 60
-            },
-            "logistics": {
-                "size": 4.8,
-                "growth": 4,
-                "potential": 65,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "중계 무역 허브",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "자동화 투자 부담",
-                    "환경 규제",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 59
-            },
-            "fashion": {
-                "size": 2.3,
-                "growth": 3.1,
-                "potential": 68,
-                "oppo": [
-                    "럭셔리 소비",
-                    "모데스트 패션 시장",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "패스트패션 비판",
-                    "수입 의존"
-                ],
-                "rank": 57
-            },
-            "entertainment": {
-                "size": 2.8,
-                "growth": 4.7,
-                "potential": 82,
-                "oppo": [
-                    "스트리밍 시장 성장",
-                    "게임 산업 확대",
-                    "아랍어 콘텐츠 수요"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "문화적 제약",
-                    "주의력 경쟁"
-                ],
-                "rank": 59
-            },
-            "construction": {
-                "size": 9.8,
-                "growth": 3,
-                "potential": 80,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "건설 테크 도입",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "환경 규제",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 59
             }
         },
         "gdp_growth_pct": -2.6,
@@ -23304,9 +16068,9 @@ const COUNTRIES = {
                 "rank": 126
             },
             "agriculture": {
-                "size": 2.8,
+                "size": 1,
                 "growth": 3.4,
-                "potential": 70,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23317,7 +16081,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 104
+                "rank": 123
             },
             "automotive": {
                 "size": 1,
@@ -23397,7 +16161,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 114
+                "rank": 116
             },
             "education": {
                 "size": 1,
@@ -23414,102 +16178,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 114
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.2,
-                "potential": 55,
-                "oppo": [
-                    "아시안 뷰티 트렌드",
-                    "성장하는 중산층",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "온라인 가격 경쟁",
-                    "유통 인프라 부족"
-                ],
-                "rank": 126
-            },
-            "food": {
-                "size": 0.7,
-                "growth": 5.8,
-                "potential": 58,
-                "oppo": [
-                    "푸드테크 성장",
-                    "한식/일식 인기",
-                    "아시아 식품 수출"
-                ],
-                "risk": [
-                    "위생 관리 어려움",
-                    "수입 규제",
-                    "물류 비용"
-                ],
-                "rank": 134
-            },
-            "logistics": {
-                "size": 0.5,
-                "growth": 5.3,
-                "potential": 51,
-                "oppo": [
-                    "무역 성장 기회",
-                    "항만 물류 강세",
-                    "창고업 현대화"
-                ],
-                "risk": [
-                    "항만 혼잡",
-                    "물류비 높음",
-                    "플랫폼 의존"
-                ],
-                "rank": 134
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 5.6,
-                "potential": 59,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "의류 제조업 강세",
-                    "아시아 패션 허브"
-                ],
-                "risk": [
-                    "가격 경쟁 심화",
-                    "패스트패션 포화",
-                    "품질 관리"
-                ],
-                "rank": 129
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 6.5,
-                "potential": 49,
-                "oppo": [
-                    "웹툰/웹소설 성장",
-                    "디지털 콘텐츠 유통",
-                    "한류 콘텐츠 수출"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "콘텐츠 규제",
-                    "수익 모델 한계"
-                ],
-                "rank": 131
-            },
-            "construction": {
-                "size": 1.2,
-                "growth": 5.1,
-                "potential": 56,
-                "oppo": [
-                    "메가시티 개발",
-                    "도시화 가속",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "기술력 부족",
-                    "건설 테크 투자 부담",
-                    "디지털 전환 비용"
-                ],
-                "rank": 125
             }
         },
         "gdp_growth_pct": 4.1,
@@ -23624,7 +16292,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 139
+                "rank": 124
             },
             "automotive": {
                 "size": 1,
@@ -23704,7 +16372,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 52
+                "rank": 54
             },
             "education": {
                 "size": 1,
@@ -23721,102 +16389,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 115
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.5,
-                "potential": 57,
-                "oppo": [
-                    "프리미엄 뷰티 수요",
-                    "인플루언서 마케팅",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "할랄 인증 필요",
-                    "소비력 제한"
-                ],
-                "rank": 127
-            },
-            "food": {
-                "size": 0.9,
-                "growth": 6.4,
-                "potential": 56,
-                "oppo": [
-                    "식품 수입 의존도",
-                    "농산물 부가가치화",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "물류 비용",
-                    "배달 플랫폼 수수료",
-                    "위생 관리 어려움"
-                ],
-                "rank": 125
-            },
-            "logistics": {
-                "size": 0.7,
-                "growth": 6.9,
-                "potential": 47,
-                "oppo": [
-                    "중계 무역 허브",
-                    "디지털 물류 플랫폼",
-                    "무역 성장 기회"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "지정학적 리스크",
-                    "플랫폼 의존"
-                ],
-                "rank": 119
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 5.7,
-                "potential": 52,
-                "oppo": [
-                    "OEM/ODM 기회",
-                    "럭셔리 소비",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "저가 경쟁",
-                    "품질 관리",
-                    "수입 의존"
-                ],
-                "rank": 116
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 7.2,
-                "potential": 49,
-                "oppo": [
-                    "모바일 엔터테인먼트",
-                    "미디어 디지털화",
-                    "콘텐츠 소비 증가"
-                ],
-                "risk": [
-                    "제작 인프라 부족",
-                    "저작권 보호 미흡",
-                    "플랫폼 과포화"
-                ],
-                "rank": 110
-            },
-            "construction": {
-                "size": 0.6,
-                "growth": 7.3,
-                "potential": 58,
-                "oppo": [
-                    "건설 테크 도입",
-                    "기초 인프라 건설",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "유가 의존 경제",
-                    "프로젝트 지연",
-                    "안전 관리"
-                ],
-                "rank": 141
             }
         },
         "gdp_growth_pct": -0.8,
@@ -23919,9 +16491,9 @@ const COUNTRIES = {
                 "rank": 97
             },
             "agriculture": {
-                "size": 1.2,
+                "size": 1.5,
                 "growth": 2.0,
-                "potential": 72,
+                "potential": 73,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23932,7 +16504,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 130
+                "rank": 92
             },
             "automotive": {
                 "size": 1.5,
@@ -24012,7 +16584,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 115
+                "rank": 117
             },
             "education": {
                 "size": 1,
@@ -24029,102 +16601,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 116
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 4.9,
-                "potential": 72,
-                "oppo": [
-                    "온라인 뷰티 성장",
-                    "이커머스 뷰티 판매",
-                    "할랄 화장품 시장"
-                ],
-                "risk": [
-                    "할랄 인증 필요",
-                    "문화적 제약",
-                    "브랜드 경쟁 심화"
-                ],
-                "rank": 89
-            },
-            "food": {
-                "size": 2,
-                "growth": 4.6,
-                "potential": 63,
-                "oppo": [
-                    "식품 안전 의식 증가",
-                    "할랄 식품 시장",
-                    "외식 산업 확대"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "원자재 가격 변동",
-                    "온라인 경쟁"
-                ],
-                "rank": 98
-            },
-            "logistics": {
-                "size": 1.9,
-                "growth": 4.7,
-                "potential": 60,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "중계 무역 허브",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "인프라 병목",
-                    "지정학적 리스크",
-                    "물류 편중"
-                ],
-                "rank": 92
-            },
-            "fashion": {
-                "size": 0.6,
-                "growth": 6.1,
-                "potential": 60,
-                "oppo": [
-                    "패스트패션 성장",
-                    "온라인 패션 플랫폼",
-                    "럭셔리 소비"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "원자재 비용",
-                    "트렌드 변화"
-                ],
-                "rank": 92
-            },
-            "entertainment": {
-                "size": 0.9,
-                "growth": 7.8,
-                "potential": 56,
-                "oppo": [
-                    "게임 시장 성장",
-                    "아랍어 콘텐츠 수요",
-                    "미디어 시장 개방"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "주의력 경쟁",
-                    "콘텐츠 제작비 상승"
-                ],
-                "rank": 86
-            },
-            "construction": {
-                "size": 1.5,
-                "growth": 6.3,
-                "potential": 66,
-                "oppo": [
-                    "건설 테크 도입",
-                    "메가 프로젝트",
-                    "도시 개발 붐"
-                ],
-                "risk": [
-                    "부동산 거품 리스크",
-                    "유가 의존 경제",
-                    "인력 부족"
-                ],
-                "rank": 113
             }
         },
         "gdp_growth_pct": 1.9,
@@ -24227,9 +16703,9 @@ const COUNTRIES = {
                 "rank": 73
             },
             "agriculture": {
-                "size": 14.8,
+                "size": 5.3,
                 "growth": 3.7,
-                "potential": 73,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -24240,7 +16716,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 43
+                "rank": 57
             },
             "automotive": {
                 "size": 3.0,
@@ -24307,9 +16783,9 @@ const COUNTRIES = {
                 "rank": 71
             },
             "tourism": {
-                "size": 1.1,
+                "size": 2.0,
                 "growth": 6.1,
-                "potential": 74,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -24320,7 +16796,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 80
+                "rank": 63
             },
             "education": {
                 "size": 1.3,
@@ -24337,102 +16813,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 85
-            },
-            "beauty": {
-                "size": 0.5,
-                "growth": 7.2,
-                "potential": 56,
-                "oppo": [
-                    "직접 판매 채널",
-                    "성장하는 중산층",
-                    "젊은 인구 구조"
-                ],
-                "risk": [
-                    "유통 인프라 부족",
-                    "디지털 채널 부재",
-                    "위조품 문제"
-                ],
-                "rank": 79
-            },
-            "food": {
-                "size": 3.8,
-                "growth": 6.4,
-                "potential": 59,
-                "oppo": [
-                    "지역 시장 활성화",
-                    "프랜차이즈 확대",
-                    "대규모 내수 시장"
-                ],
-                "risk": [
-                    "위생 관리 어려움",
-                    "물류 비용",
-                    "콜드체인 부족"
-                ],
-                "rank": 76
-            },
-            "logistics": {
-                "size": 2.4,
-                "growth": 6.5,
-                "potential": 46,
-                "oppo": [
-                    "물류 현대화 수요",
-                    "디지털 물류 도입",
-                    "무역 성장 기회"
-                ],
-                "risk": [
-                    "통관 지연",
-                    "도로 인프라 부족",
-                    "추적 시스템 부재"
-                ],
-                "rank": 82
-            },
-            "fashion": {
-                "size": 1.3,
-                "growth": 5.7,
-                "potential": 56,
-                "oppo": [
-                    "수출 주도 성장",
-                    "OEM/ODM 기회",
-                    "의류 제조업 강세"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "품질 관리",
-                    "품질 인식"
-                ],
-                "rank": 68
-            },
-            "entertainment": {
-                "size": 1.7,
-                "growth": 7,
-                "potential": 46,
-                "oppo": [
-                    "모바일 엔터테인먼트",
-                    "콘텐츠 소비 증가",
-                    "미디어 디지털화"
-                ],
-                "risk": [
-                    "제작 인프라 부족",
-                    "대역폭 부족",
-                    "수익화 어려움"
-                ],
-                "rank": 70
-            },
-            "construction": {
-                "size": 8.3,
-                "growth": 7.5,
-                "potential": 65,
-                "oppo": [
-                    "기초 인프라 건설",
-                    "도시화 수요",
-                    "노동집약 건설"
-                ],
-                "risk": [
-                    "기술 도입 지연",
-                    "자금 조달 어려움",
-                    "안전 규제 미흡"
-                ],
-                "rank": 63
             }
         },
         "gdp_growth_pct": 5.0,
@@ -24535,7 +16915,7 @@ const COUNTRIES = {
                 "rank": 76
             },
             "agriculture": {
-                "size": 2.2,
+                "size": 2.5,
                 "growth": 2.3,
                 "potential": 78,
                 "oppo": [
@@ -24548,7 +16928,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 112
+                "rank": 79
             },
             "automotive": {
                 "size": 3.3,
@@ -24628,7 +17008,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 58
+                "rank": 61
             },
             "education": {
                 "size": 2.2,
@@ -24645,102 +17025,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 72
-            },
-            "beauty": {
-                "size": 0.8,
-                "growth": 4.6,
-                "potential": 77,
-                "oppo": [
-                    "안티에이징 수요 증가",
-                    "클린 뷰티 트렌드",
-                    "프리미엄 뷰티 시장"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "시장 포화 경쟁",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 70
-            },
-            "food": {
-                "size": 3.8,
-                "growth": 3.5,
-                "potential": 70,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "지역 특산품 브랜드화",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "소비 트렌드 변화",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 77
-            },
-            "logistics": {
-                "size": 3.7,
-                "growth": 4.1,
-                "potential": 79,
-                "oppo": [
-                    "콜드체인 확대",
-                    "유럽 물류 허브",
-                    "첨단 물류 자동화"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "플랫폼 의존",
-                    "국경 통관"
-                ],
-                "rank": 65
-            },
-            "fashion": {
-                "size": 1.1,
-                "growth": 3,
-                "potential": 67,
-                "oppo": [
-                    "유럽 패션 수도",
-                    "SNS 패션 마케팅",
-                    "지속가능 패션"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "인건비 상승",
-                    "가격 투명성"
-                ],
-                "rank": 77
-            },
-            "entertainment": {
-                "size": 1.8,
-                "growth": 5.7,
-                "potential": 72,
-                "oppo": [
-                    "스트리밍 시장 성장",
-                    "OTT 플랫폼 확대",
-                    "콘텐츠 IP 수출"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "플랫폼 과포화",
-                    "시장 분절"
-                ],
-                "rank": 69
-            },
-            "construction": {
-                "size": 4.4,
-                "growth": 3.5,
-                "potential": 66,
-                "oppo": [
-                    "인프라 현대화",
-                    "스마트시티 개발",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "인허가 절차",
-                    "환경 규제 강화"
-                ],
-                "rank": 83
             }
         },
         "gdp_growth_pct": 2.8,
@@ -24843,9 +17127,9 @@ const COUNTRIES = {
                 "rank": 71
             },
             "agriculture": {
-                "size": 1,
+                "size": 2.8,
                 "growth": 1.3,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24856,7 +17140,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 140
+                "rank": 74
             },
             "automotive": {
                 "size": 3.6,
@@ -24936,7 +17220,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 35
+                "rank": 37
             },
             "education": {
                 "size": 2.1,
@@ -24953,102 +17237,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 75
-            },
-            "beauty": {
-                "size": 1,
-                "growth": 4.4,
-                "potential": 76,
-                "oppo": [
-                    "안티에이징 수요 증가",
-                    "프리미엄 뷰티 시장",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "리뷰 리스크",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 64
-            },
-            "food": {
-                "size": 3.7,
-                "growth": 3.2,
-                "potential": 69,
-                "oppo": [
-                    "건강식품 트렌드",
-                    "유럽 식품 규제 대응",
-                    "지역 특산품 브랜드화"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "배달 플랫폼 수수료",
-                    "식품 안전 규제"
-                ],
-                "rank": 80
-            },
-            "logistics": {
-                "size": 4.6,
-                "growth": 3.4,
-                "potential": 70,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "콜드체인 확대",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "국경 통관",
-                    "환경 규제 강화"
-                ],
-                "rank": 61
-            },
-            "fashion": {
-                "size": 1.4,
-                "growth": 4,
-                "potential": 72,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "하이엔드 브랜드",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "지속가능성 압박",
-                    "인건비 상승"
-                ],
-                "rank": 65
-            },
-            "entertainment": {
-                "size": 2,
-                "growth": 5.6,
-                "potential": 72,
-                "oppo": [
-                    "문화 콘텐츠 다양성",
-                    "스트리밍 시장 성장",
-                    "게임 산업 확대"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "시장 분절",
-                    "주의력 경쟁"
-                ],
-                "rank": 66
-            },
-            "construction": {
-                "size": 2.6,
-                "growth": 3.7,
-                "potential": 69,
-                "oppo": [
-                    "친환경 건축",
-                    "BIM 기술 활용",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "환경 규제 강화",
-                    "인건비 상승"
-                ],
-                "rank": 97
             }
         },
         "gdp_growth_pct": 0.4,
@@ -25151,7 +17339,7 @@ const COUNTRIES = {
                 "rank": 98
             },
             "agriculture": {
-                "size": 1.8,
+                "size": 1.3,
                 "growth": 1.2,
                 "potential": 75,
                 "oppo": [
@@ -25164,7 +17352,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 120
+                "rank": 99
             },
             "automotive": {
                 "size": 1.7,
@@ -25244,7 +17432,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 81
+                "rank": 83
             },
             "education": {
                 "size": 1.1,
@@ -25261,102 +17449,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 91
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 3.7,
-                "potential": 73,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "유럽 프리미엄 시장",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "시장 포화 경쟁",
-                    "리뷰 리스크"
-                ],
-                "rank": 88
-            },
-            "food": {
-                "size": 2.2,
-                "growth": 3.4,
-                "potential": 75,
-                "oppo": [
-                    "프리미엄 식품 시장",
-                    "유기농 수요 증가",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "소비 트렌드 변화",
-                    "식품 안전 규제",
-                    "높은 인건비"
-                ],
-                "rank": 93
-            },
-            "logistics": {
-                "size": 1.6,
-                "growth": 2.9,
-                "potential": 69,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "첨단 물류 자동화",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "국경 통관",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 93
-            },
-            "fashion": {
-                "size": 0.7,
-                "growth": 4,
-                "potential": 68,
-                "oppo": [
-                    "디자이너 브랜드",
-                    "지속가능 패션",
-                    "럭셔리 패션 시장"
-                ],
-                "risk": [
-                    "패스트패션 비판",
-                    "온라인 반품률",
-                    "인건비 상승"
-                ],
-                "rank": 89
-            },
-            "entertainment": {
-                "size": 0.8,
-                "growth": 5.9,
-                "potential": 71,
-                "oppo": [
-                    "콘텐츠 IP 수출",
-                    "문화 콘텐츠 다양성",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "콘텐츠 과잉 공급",
-                    "언어 장벽"
-                ],
-                "rank": 89
-            },
-            "construction": {
-                "size": 1,
-                "growth": 2,
-                "potential": 66,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "건설 테크 도입",
-                    "친환경 건축"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "인허가 절차",
-                    "환경 규제"
-                ],
-                "rank": 130
             }
         },
         "gdp_growth_pct": -0.0,
@@ -25459,9 +17551,9 @@ const COUNTRIES = {
                 "rank": 58
             },
             "agriculture": {
-                "size": 17.0,
+                "size": 4.8,
                 "growth": 3.2,
-                "potential": 72,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -25472,7 +17564,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 40
+                "rank": 59
             },
             "automotive": {
                 "size": 4.8,
@@ -25552,7 +17644,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 41
+                "rank": 44
             },
             "education": {
                 "size": 5.8,
@@ -25569,102 +17661,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 52
-            },
-            "beauty": {
-                "size": 0.9,
-                "growth": 7.7,
-                "potential": 48,
-                "oppo": [
-                    "성장하는 중산층",
-                    "프리미엄 뷰티 수요",
-                    "할랄 화장품 시장"
-                ],
-                "risk": [
-                    "소비력 제한",
-                    "문화적 제약",
-                    "위조품 문제"
-                ],
-                "rank": 68
-            },
-            "food": {
-                "size": 7.4,
-                "growth": 5.7,
-                "potential": 57,
-                "oppo": [
-                    "식품 가공업 발전",
-                    "푸드테크 성장",
-                    "식품 수입 의존도"
-                ],
-                "risk": [
-                    "물류 비용",
-                    "배달 플랫폼 수수료",
-                    "위생 관리 어려움"
-                ],
-                "rank": 58
-            },
-            "logistics": {
-                "size": 4.7,
-                "growth": 5.2,
-                "potential": 45,
-                "oppo": [
-                    "창고업 현대화",
-                    "중계 무역 허브",
-                    "물류 인프라 구축"
-                ],
-                "risk": [
-                    "물류 편중",
-                    "통관 지연",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 60
-            },
-            "fashion": {
-                "size": 2.5,
-                "growth": 7.1,
-                "potential": 54,
-                "oppo": [
-                    "의류 제조업 강세",
-                    "OEM/ODM 기회",
-                    "내수 패션 시장 성장"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "수입 의존",
-                    "문화적 제약"
-                ],
-                "rank": 56
-            },
-            "entertainment": {
-                "size": 3,
-                "growth": 7.7,
-                "potential": 57,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "디지털 콘텐츠 유통",
-                    "미디어 디지털화"
-                ],
-                "risk": [
-                    "수익 모델 한계",
-                    "플랫폼 과포화",
-                    "저작권 보호 미흡"
-                ],
-                "rank": 57
-            },
-            "construction": {
-                "size": 12.6,
-                "growth": 7.6,
-                "potential": 53,
-                "oppo": [
-                    "도시 개발 붐",
-                    "주택 수요 증가",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "기술력 부족",
-                    "프로젝트 지연"
-                ],
-                "rank": 47
             }
         },
         "gdp_growth_pct": 3.8,
@@ -25767,9 +17763,9 @@ const COUNTRIES = {
                 "rank": 128
             },
             "agriculture": {
-                "size": 1.3,
+                "size": 1,
                 "growth": 1.2,
-                "potential": 71,
+                "potential": 70,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -25780,7 +17776,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 129
+                "rank": 125
             },
             "automotive": {
                 "size": 1,
@@ -25860,7 +17856,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 116
+                "rank": 118
             },
             "education": {
                 "size": 1,
@@ -25877,102 +17873,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 117
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 5.1,
-                "potential": 58,
-                "oppo": [
-                    "천연 화장품 수요",
-                    "이커머스 뷰티 판매",
-                    "K-뷰티 수요 확대"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "엄격한 규제",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 133
-            },
-            "food": {
-                "size": 0.9,
-                "growth": 4,
-                "potential": 70,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "식품 안전 의식 증가",
-                    "지역 특산품 브랜드화"
-                ],
-                "risk": [
-                    "엄격한 식품 규제",
-                    "온라인 경쟁",
-                    "원자재 가격 변동"
-                ],
-                "rank": 126
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 5.4,
-                "potential": 58,
-                "oppo": [
-                    "이커머스 물류 성장",
-                    "실시간 추적 시스템",
-                    "물류 인프라 투자"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "사이버 보안 리스크",
-                    "국경 통관"
-                ],
-                "rank": 131
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 6.1,
-                "potential": 61,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "하이엔드 브랜드",
-                    "유럽 패션 수도"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "원자재 비용",
-                    "트렌드 변화"
-                ],
-                "rank": 133
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 6.8,
-                "potential": 62,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "OTT 시장 확대",
-                    "로컬 콘텐츠 제작"
-                ],
-                "risk": [
-                    "시장 분절",
-                    "언어 장벽",
-                    "플랫폼 과포화"
-                ],
-                "rank": 111
-            },
-            "construction": {
-                "size": 0.5,
-                "growth": 4.6,
-                "potential": 72,
-                "oppo": [
-                    "주택 건설 확대",
-                    "교통 인프라 투자",
-                    "도시화 인프라 수요"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "부동산 거품 리스크",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 145
             }
         },
         "gdp_growth_pct": 0.1,
@@ -26075,9 +17975,9 @@ const COUNTRIES = {
                 "rank": 129
             },
             "agriculture": {
-                "size": 3.9,
+                "size": 1,
                 "growth": 3.4,
-                "potential": 59,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -26088,7 +17988,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 96
+                "rank": 126
             },
             "automotive": {
                 "size": 1,
@@ -26168,7 +18068,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 117
+                "rank": 119
             },
             "education": {
                 "size": 1,
@@ -26185,102 +18085,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 118
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 9.8,
-                "potential": 38,
-                "oppo": [
-                    "직접 판매 채널",
-                    "아프리카 뷰티 시장 성장",
-                    "스킨케어 수요 증가"
-                ],
-                "risk": [
-                    "소비력 부족",
-                    "소비력 극히 제한",
-                    "유통 채널 미비"
-                ],
-                "rank": 128
-            },
-            "food": {
-                "size": 0.7,
-                "growth": 4.9,
-                "potential": 50,
-                "oppo": [
-                    "식량 안보 투자",
-                    "기초 식품 가공",
-                    "농업 현대화"
-                ],
-                "risk": [
-                    "인프라 미비",
-                    "유통 비효율",
-                    "마케팅 제한"
-                ],
-                "rank": 135
-            },
-            "logistics": {
-                "size": 0.4,
-                "growth": 8.4,
-                "potential": 45,
-                "oppo": [
-                    "기초 인프라 구축",
-                    "운송 네트워크 개발",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "디지털 전환 지연",
-                    "도로망 미비",
-                    "정치적 불안정"
-                ],
-                "rank": 141
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 7.3,
-                "potential": 41,
-                "oppo": [
-                    "전통 의류 현대화",
-                    "저비용 생산 기반",
-                    "아프리카 패션 부상"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "소비력 부족",
-                    "원자재 수급"
-                ],
-                "rank": 130
-            },
-            "entertainment": {
-                "size": 0.1,
-                "growth": 7.2,
-                "potential": 42,
-                "oppo": [
-                    "모바일 미디어 성장",
-                    "방송 미디어 발전",
-                    "모바일 콘텐츠 수요"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "콘텐츠 접근성",
-                    "소비력 제한"
-                ],
-                "rank": 142
-            },
-            "construction": {
-                "size": 1.1,
-                "growth": 5.3,
-                "potential": 53,
-                "oppo": [
-                    "전통 건설 방식",
-                    "기본 인프라 구축",
-                    "국제 개발 원조"
-                ],
-                "risk": [
-                    "자본 부족",
-                    "관리 비효율",
-                    "기술 인력 부재"
-                ],
-                "rank": 128
             }
         },
         "gdp_growth_pct": 4.2,
@@ -26383,7 +18187,7 @@ const COUNTRIES = {
                 "rank": 14
             },
             "agriculture": {
-                "size": 69.1,
+                "size": 55.7,
                 "growth": 1.8,
                 "potential": 77,
                 "oppo": [
@@ -26396,7 +18200,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 9
+                "rank": 13
             },
             "automotive": {
                 "size": 55.7,
@@ -26476,7 +18280,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 25
+                "rank": 23
             },
             "education": {
                 "size": 45.3,
@@ -26493,102 +18297,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 15
-            },
-            "beauty": {
-                "size": 16.8,
-                "growth": 7,
-                "potential": 72,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "뷰티 소비 증가",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "수입 관세",
-                    "수입 의존도",
-                    "환율 변동성"
-                ],
-                "rank": 15
-            },
-            "food": {
-                "size": 148.6,
-                "growth": 4.9,
-                "potential": 61,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "가공식품 시장 성장",
-                    "외식 산업 확대"
-                ],
-                "risk": [
-                    "물류 비용",
-                    "규제 환경",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 10
-            },
-            "logistics": {
-                "size": 48.6,
-                "growth": 4,
-                "potential": 68,
-                "oppo": [
-                    "물류 인프라 투자",
-                    "실시간 추적 시스템",
-                    "항만 현대화"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "경쟁 심화",
-                    "플랫폼 의존"
-                ],
-                "rank": 21
-            },
-            "fashion": {
-                "size": 34,
-                "growth": 5.3,
-                "potential": 62,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "로컬 브랜드 성장",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "환율 리스크",
-                    "가격 투명성",
-                    "트렌드 변화"
-                ],
-                "rank": 12
-            },
-            "entertainment": {
-                "size": 45.1,
-                "growth": 7.9,
-                "potential": 66,
-                "oppo": [
-                    "라틴 콘텐츠 시장",
-                    "디지털 콘텐츠 유통",
-                    "OTT 시장 확대"
-                ],
-                "risk": [
-                    "콘텐츠 제작비 상승",
-                    "플랫폼 경쟁",
-                    "플랫폼 과포화"
-                ],
-                "rank": 14
-            },
-            "construction": {
-                "size": 58.5,
-                "growth": 4.9,
-                "potential": 63,
-                "oppo": [
-                    "주택 부족 해소",
-                    "도시 인프라 투자",
-                    "도시화 인프라 수요"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "부동산 거품 리스크",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 23
             }
         },
         "gdp_growth_pct": 1.4,
@@ -26704,7 +18412,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 141
+                "rank": 127
             },
             "automotive": {
                 "size": 1,
@@ -26784,7 +18492,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 118
+                "rank": 120
             },
             "education": {
                 "size": 1,
@@ -26801,102 +18509,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 119
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 5.8,
-                "potential": 69,
-                "oppo": [
-                    "온라인 뷰티 성장",
-                    "천연 화장품 수요",
-                    "K-뷰티 수요 확대"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "품질 규제",
-                    "리뷰 리스크"
-                ],
-                "rank": 145
-            },
-            "food": {
-                "size": 0.8,
-                "growth": 4.7,
-                "potential": 62,
-                "oppo": [
-                    "가공식품 시장 성장",
-                    "지역 특산품 브랜드화",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "엄격한 식품 규제",
-                    "식품 안전 이슈"
-                ],
-                "rank": 132
-            },
-            "logistics": {
-                "size": 0.7,
-                "growth": 5.6,
-                "potential": 68,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "크로스보더 물류",
-                    "이커머스 물류 성장"
-                ],
-                "risk": [
-                    "인프라 병목",
-                    "국경 통관",
-                    "플랫폼 의존"
-                ],
-                "rank": 123
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 5.5,
-                "potential": 66,
-                "oppo": [
-                    "로컬 브랜드 성장",
-                    "온라인 패션 확대",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "글로벌 브랜드 경쟁",
-                    "트렌드 변화"
-                ],
-                "rank": 139
-            },
-            "entertainment": {
-                "size": 0.3,
-                "growth": 7.2,
-                "potential": 59,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "로컬 콘텐츠 제작",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "언어 장벽",
-                    "플랫폼 과포화",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 122
-            },
-            "construction": {
-                "size": 0.9,
-                "growth": 5.1,
-                "potential": 67,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "주택 건설 확대",
-                    "친환경 건축"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "디지털 전환 비용",
-                    "부동산 거품 리스크"
-                ],
-                "rank": 134
             }
         },
         "gdp_growth_pct": 3.0,
@@ -26999,9 +18611,9 @@ const COUNTRIES = {
                 "rank": 112
             },
             "agriculture": {
-                "size": 8.9,
+                "size": 1,
                 "growth": 3.7,
-                "potential": 60,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -27012,7 +18624,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 60
+                "rank": 128
             },
             "automotive": {
                 "size": 1,
@@ -27092,7 +18704,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 119
+                "rank": 121
             },
             "education": {
                 "size": 1,
@@ -27109,102 +18721,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 120
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 9.2,
-                "potential": 40,
-                "oppo": [
-                    "오프라인 유통 기회",
-                    "성장 잠재력 높음",
-                    "기초 화장품 수요"
-                ],
-                "risk": [
-                    "유통 인프라 부재",
-                    "소비력 부족",
-                    "디지털 채널 부재"
-                ],
-                "rank": 130
-            },
-            "food": {
-                "size": 1.2,
-                "growth": 5.5,
-                "potential": 54,
-                "oppo": [
-                    "식량 안보 투자",
-                    "농업 현대화",
-                    "지역 시장 활성화"
-                ],
-                "risk": [
-                    "인프라 미비",
-                    "마케팅 제한",
-                    "식량 불안정"
-                ],
-                "rank": 111
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 8.1,
-                "potential": 41,
-                "oppo": [
-                    "기초 인프라 구축",
-                    "운송 네트워크 확장",
-                    "물류 시장 형성"
-                ],
-                "risk": [
-                    "운송 비용",
-                    "디지털 전환 지연",
-                    "추적 시스템 부재"
-                ],
-                "rank": 130
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 8.5,
-                "potential": 40,
-                "oppo": [
-                    "전통 시장 유통",
-                    "전통 의류 현대화",
-                    "섬유 산업 잠재력"
-                ],
-                "risk": [
-                    "소비력 부족",
-                    "유통 한계",
-                    "원자재 수급"
-                ],
-                "rank": 131
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 9.8,
-                "potential": 42,
-                "oppo": [
-                    "라디오/TV 보급",
-                    "모바일 콘텐츠",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "기본 인프라 부족",
-                    "콘텐츠 접근성",
-                    "소비력 제한"
-                ],
-                "rank": 132
-            },
-            "construction": {
-                "size": 2.5,
-                "growth": 8,
-                "potential": 44,
-                "oppo": [
-                    "노동집약 건설",
-                    "전통 건설 방식",
-                    "기본 인프라 구축"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "정치적 불안정",
-                    "기술 도입 지연"
-                ],
-                "rank": 99
             }
         },
         "gdp_growth_pct": 5.0,
@@ -27307,9 +18823,9 @@ const COUNTRIES = {
                 "rank": 85
             },
             "agriculture": {
-                "size": 15.4,
+                "size": 2.2,
                 "growth": 1.7,
-                "potential": 69,
+                "potential": 66,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27320,7 +18836,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 42
+                "rank": 85
             },
             "automotive": {
                 "size": 2.9,
@@ -27400,7 +18916,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 50
+                "rank": 52
             },
             "education": {
                 "size": 1,
@@ -27417,102 +18933,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 121
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 6.3,
-                "potential": 61,
-                "oppo": [
-                    "직접 판매 채널",
-                    "오프라인 유통 기회",
-                    "아시안 뷰티 트렌드"
-                ],
-                "risk": [
-                    "유통 인프라 부족",
-                    "마케팅 도달 제한",
-                    "과잉 경쟁"
-                ],
-                "rank": 83
-            },
-            "food": {
-                "size": 3.7,
-                "growth": 6.2,
-                "potential": 56,
-                "oppo": [
-                    "전통 유통 채널",
-                    "농산물 부가가치화",
-                    "아시아 식품 수출"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "위생 관리 어려움",
-                    "물류 비용"
-                ],
-                "rank": 78
-            },
-            "logistics": {
-                "size": 1.9,
-                "growth": 5.5,
-                "potential": 54,
-                "oppo": [
-                    "창고업 현대화",
-                    "물류 인프라 구축",
-                    "글로벌 공급망 허브"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "추적 시스템 부재",
-                    "디지털 전환 지연"
-                ],
-                "rank": 89
-            },
-            "fashion": {
-                "size": 0.8,
-                "growth": 5.4,
-                "potential": 46,
-                "oppo": [
-                    "내수 패션 시장 성장",
-                    "OEM/ODM 기회",
-                    "한류 패션 영향"
-                ],
-                "risk": [
-                    "가격 경쟁 심화",
-                    "저가 경쟁",
-                    "마케팅 제한"
-                ],
-                "rank": 84
-            },
-            "entertainment": {
-                "size": 1.2,
-                "growth": 8,
-                "potential": 55,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "방송 미디어 발전",
-                    "웹툰/웹소설 성장"
-                ],
-                "risk": [
-                    "저작권 보호 미흡",
-                    "디지털 콘텐츠 접근 제한",
-                    "콘텐츠 규제"
-                ],
-                "rank": 80
-            },
-            "construction": {
-                "size": 2.2,
-                "growth": 7.9,
-                "potential": 57,
-                "oppo": [
-                    "노동집약 건설",
-                    "인프라 수출",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "기술력 부족",
-                    "인력 부족",
-                    "기술 도입 지연"
-                ],
-                "rank": 104
             }
         },
         "gdp_growth_pct": -1.0,
@@ -27627,7 +19047,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 142
+                "rank": 129
             },
             "automotive": {
                 "size": 1,
@@ -27707,7 +19127,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 120
+                "rank": 122
             },
             "education": {
                 "size": 1,
@@ -27724,102 +19144,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 122
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 5.1,
-                "potential": 67,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "인플루언서 마케팅",
-                    "K-뷰티 수요 확대"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "엄격한 규제",
-                    "리뷰 리스크"
-                ],
-                "rank": 134
-            },
-            "food": {
-                "size": 0.4,
-                "growth": 4.6,
-                "potential": 61,
-                "oppo": [
-                    "외식 산업 확대",
-                    "푸드테크 성장",
-                    "식품 안전 의식 증가"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "경쟁 심화",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 148
-            },
-            "logistics": {
-                "size": 0.3,
-                "growth": 5.3,
-                "potential": 63,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "물류 인프라 투자",
-                    "이커머스 물류 성장"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "플랫폼 의존",
-                    "환경 규제 강화"
-                ],
-                "rank": 146
-            },
-            "fashion": {
-                "size": 0.1,
-                "growth": 4.9,
-                "potential": 60,
-                "oppo": [
-                    "로컬 브랜드 성장",
-                    "온라인 패션 확대",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "글로벌 브랜드 경쟁",
-                    "온라인 반품률",
-                    "지속가능성 규제"
-                ],
-                "rank": 145
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 7.1,
-                "potential": 64,
-                "oppo": [
-                    "로컬 콘텐츠 제작",
-                    "문화 콘텐츠 다양성",
-                    "게임 시장 성장"
-                ],
-                "risk": [
-                    "언어 장벽",
-                    "플랫폼 경쟁",
-                    "주의력 경쟁"
-                ],
-                "rank": 134
-            },
-            "construction": {
-                "size": 0.5,
-                "growth": 5.6,
-                "potential": 72,
-                "oppo": [
-                    "건설 테크 도입",
-                    "친환경 건축",
-                    "교통 인프라 투자"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "자재비 상승",
-                    "부동산 거품 리스크"
-                ],
-                "rank": 146
             }
         },
         "gdp_growth_pct": 3.2,
@@ -27922,9 +19246,9 @@ const COUNTRIES = {
                 "rank": 132
             },
             "agriculture": {
-                "size": 1.7,
+                "size": 1,
                 "growth": 3.2,
-                "potential": 75,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -27935,7 +19259,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 121
+                "rank": 130
             },
             "automotive": {
                 "size": 1,
@@ -28015,7 +19339,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 121
+                "rank": 123
             },
             "education": {
                 "size": 1,
@@ -28032,102 +19356,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 123
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 4.9,
-                "potential": 60,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "아시안 뷰티 트렌드",
-                    "중산층 소비 증가"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "트렌드 변화 빠름",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 108
-            },
-            "food": {
-                "size": 1.1,
-                "growth": 3.9,
-                "potential": 66,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "한식/일식 인기",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "식품 안전 우려",
-                    "원자재 가격 변동",
-                    "수입 규제"
-                ],
-                "rank": 118
-            },
-            "logistics": {
-                "size": 1.1,
-                "growth": 4.4,
-                "potential": 58,
-                "oppo": [
-                    "글로벌 공급망 허브",
-                    "이커머스 물류 성장",
-                    "항만 물류 강세"
-                ],
-                "risk": [
-                    "규제 복잡성",
-                    "사이버 보안 리스크",
-                    "인프라 병목"
-                ],
-                "rank": 103
-            },
-            "fashion": {
-                "size": 0.4,
-                "growth": 5.3,
-                "potential": 60,
-                "oppo": [
-                    "아시아 패션 허브",
-                    "온라인 패션 플랫폼",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "가격 경쟁 심화",
-                    "패스트패션 포화"
-                ],
-                "rank": 107
-            },
-            "entertainment": {
-                "size": 0.5,
-                "growth": 6,
-                "potential": 62,
-                "oppo": [
-                    "로컬 콘텐츠 제작",
-                    "한류 콘텐츠 수출",
-                    "게임 시장 성장"
-                ],
-                "risk": [
-                    "콘텐츠 규제",
-                    "콘텐츠 제작비 상승",
-                    "주의력 경쟁"
-                ],
-                "rank": 103
-            },
-            "construction": {
-                "size": 2.5,
-                "growth": 8.4,
-                "potential": 59,
-                "oppo": [
-                    "인프라 수출",
-                    "BIM 기술 활용",
-                    "교통 인프라 투자"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "인력 부족",
-                    "부동산 거품 리스크"
-                ],
-                "rank": 100
             }
         },
         "gdp_growth_pct": 5.1,
@@ -28230,9 +19458,9 @@ const COUNTRIES = {
                 "rank": 133
             },
             "agriculture": {
-                "size": 5.7,
+                "size": 1,
                 "growth": 2.6,
-                "potential": 57,
+                "potential": 55,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -28243,7 +19471,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 78
+                "rank": 131
             },
             "automotive": {
                 "size": 1,
@@ -28323,7 +19551,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 122
+                "rank": 124
             },
             "education": {
                 "size": 1,
@@ -28340,102 +19568,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 124
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 9.9,
-                "potential": 50,
-                "oppo": [
-                    "오프라인 유통 기회",
-                    "성장 잠재력 높음",
-                    "아프리카 뷰티 시장 성장"
-                ],
-                "risk": [
-                    "소비력 극히 제한",
-                    "디지털 채널 부재",
-                    "인프라 부족"
-                ],
-                "rank": 135
-            },
-            "food": {
-                "size": 1.1,
-                "growth": 6.4,
-                "potential": 54,
-                "oppo": [
-                    "식량 안보 투자",
-                    "식량 안보 투자",
-                    "기초 식품 가공"
-                ],
-                "risk": [
-                    "유통 비효율",
-                    "마케팅 제한",
-                    "식량 불안정"
-                ],
-                "rank": 119
-            },
-            "logistics": {
-                "size": 0.8,
-                "growth": 6.6,
-                "potential": 35,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "아프리카 내륙 물류",
-                    "운송 네트워크 개발"
-                ],
-                "risk": [
-                    "정치적 불안정",
-                    "기본 인프라 부재",
-                    "추적 시스템 부재"
-                ],
-                "rank": 113
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 9,
-                "potential": 36,
-                "oppo": [
-                    "도매 시장 성장",
-                    "섬유 산업 잠재력",
-                    "저비용 생산 기반"
-                ],
-                "risk": [
-                    "유통 한계",
-                    "마케팅 제한",
-                    "오프라인 한계"
-                ],
-                "rank": 134
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 9.1,
-                "potential": 33,
-                "oppo": [
-                    "모바일 미디어 성장",
-                    "놀리우드 성장",
-                    "모바일 콘텐츠"
-                ],
-                "risk": [
-                    "콘텐츠 접근성",
-                    "소비력 제한",
-                    "인프라 부족"
-                ],
-                "rank": 135
-            },
-            "construction": {
-                "size": 1,
-                "growth": 5.4,
-                "potential": 49,
-                "oppo": [
-                    "노동집약 건설",
-                    "국제 개발 원조",
-                    "아프리카 인프라 개발"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "자본 부족",
-                    "정치적 불안정"
-                ],
-                "rank": 131
             }
         },
         "gdp_growth_pct": 2.1,
@@ -28538,9 +19670,9 @@ const COUNTRIES = {
                 "rank": 134
             },
             "agriculture": {
-                "size": 2.1,
+                "size": 1,
                 "growth": 4.2,
-                "potential": 71,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28551,7 +19683,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 114
+                "rank": 132
             },
             "automotive": {
                 "size": 1,
@@ -28631,7 +19763,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 123
+                "rank": 125
             },
             "education": {
                 "size": 1,
@@ -28648,102 +19780,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 125
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 8.2,
-                "potential": 55,
-                "oppo": [
-                    "성장하는 중산층",
-                    "아프리카 뷰티 시장 성장",
-                    "젊은 인구 수요"
-                ],
-                "risk": [
-                    "소비력 제한",
-                    "유통 인프라 부족",
-                    "디지털 채널 부재"
-                ],
-                "rank": 131
-            },
-            "food": {
-                "size": 0.5,
-                "growth": 5.7,
-                "potential": 56,
-                "oppo": [
-                    "전통 유통 채널",
-                    "식품 가공업 발전",
-                    "지역 시장 활성화"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "마케팅 제한",
-                    "식량 불안정"
-                ],
-                "rank": 145
-            },
-            "logistics": {
-                "size": 0.4,
-                "growth": 5,
-                "potential": 52,
-                "oppo": [
-                    "창고업 현대화",
-                    "아프리카 내륙 물류",
-                    "물류 인프라 개발"
-                ],
-                "risk": [
-                    "국경 통과 지연",
-                    "물류비 높음",
-                    "도로 인프라 부족"
-                ],
-                "rank": 142
-            },
-            "fashion": {
-                "size": 0.1,
-                "growth": 6.4,
-                "potential": 49,
-                "oppo": [
-                    "OEM/ODM 기회",
-                    "전통 시장 유통",
-                    "내수 패션 시장 성장"
-                ],
-                "risk": [
-                    "유통 한계",
-                    "수입 의존도",
-                    "마케팅 제한"
-                ],
-                "rank": 144
-            },
-            "entertainment": {
-                "size": 0.1,
-                "growth": 7.1,
-                "potential": 50,
-                "oppo": [
-                    "놀리우드 성장",
-                    "모바일 엔터테인먼트",
-                    "콘텐츠 소비 증가"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "대역폭 부족",
-                    "인프라 부족"
-                ],
-                "rank": 144
-            },
-            "construction": {
-                "size": 1.2,
-                "growth": 9.6,
-                "potential": 64,
-                "oppo": [
-                    "전통 건설 방식",
-                    "도시화 가속",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "자금 부족",
-                    "기술 도입 지연",
-                    "기술 인력 부재"
-                ],
-                "rank": 126
             }
         },
         "gdp_growth_pct": 6.3,
@@ -28859,7 +19895,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 143
+                "rank": 133
             },
             "automotive": {
                 "size": 1,
@@ -28939,7 +19975,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 124
+                "rank": 126
             },
             "education": {
                 "size": 1,
@@ -28956,102 +19992,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 126
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.5,
-                "potential": 71,
-                "oppo": [
-                    "스킨케어 수요 증가",
-                    "아프리카 뷰티 시장 성장",
-                    "중산층 소비 증가"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "품질 규제",
-                    "소비력 부족"
-                ],
-                "rank": 132
-            },
-            "food": {
-                "size": 0.6,
-                "growth": 4.1,
-                "potential": 67,
-                "oppo": [
-                    "가공식품 시장 성장",
-                    "식품 안전 의식 증가",
-                    "농업 현대화 기회"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "물류 인프라 부재",
-                    "식품 안전 이슈"
-                ],
-                "rank": 140
-            },
-            "logistics": {
-                "size": 0.7,
-                "growth": 4.8,
-                "potential": 56,
-                "oppo": [
-                    "이커머스 물류 성장",
-                    "물류 인프라 투자",
-                    "아프리카 내륙 물류"
-                ],
-                "risk": [
-                    "도로망 미비",
-                    "플랫폼 의존",
-                    "인프라 병목"
-                ],
-                "rank": 120
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 4.5,
-                "potential": 60,
-                "oppo": [
-                    "전통 의류 현대화",
-                    "온라인 패션 확대",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "글로벌 브랜드 경쟁",
-                    "트렌드 변화"
-                ],
-                "rank": 132
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 6.6,
-                "potential": 55,
-                "oppo": [
-                    "게임 시장 성장",
-                    "OTT 플랫폼 확대",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "인프라 부족",
-                    "콘텐츠 제작비 상승"
-                ],
-                "rank": 133
-            },
-            "construction": {
-                "size": 1.3,
-                "growth": 4.8,
-                "potential": 64,
-                "oppo": [
-                    "주택 건설 확대",
-                    "아프리카 인프라 개발",
-                    "도시화 인프라 수요"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "건설 테크 투자 부담",
-                    "자금 부족"
-                ],
-                "rank": 122
             }
         },
         "gdp_growth_pct": 4.9,
@@ -29154,9 +20094,9 @@ const COUNTRIES = {
                 "rank": 136
             },
             "agriculture": {
-                "size": 3.6,
+                "size": 1,
                 "growth": 2.4,
-                "potential": 56,
+                "potential": 55,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29167,7 +20107,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 97
+                "rank": 134
             },
             "automotive": {
                 "size": 1,
@@ -29247,7 +20187,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 125
+                "rank": 127
             },
             "education": {
                 "size": 1,
@@ -29264,102 +20204,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 127
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 7.7,
-                "potential": 42,
-                "oppo": [
-                    "미개척 시장",
-                    "직접 판매 채널",
-                    "스킨케어 수요 증가"
-                ],
-                "risk": [
-                    "유통 인프라 부재",
-                    "마케팅 도달 제한",
-                    "인프라 부족"
-                ],
-                "rank": 129
-            },
-            "food": {
-                "size": 0.5,
-                "growth": 5.9,
-                "potential": 44,
-                "oppo": [
-                    "농업 현대화",
-                    "농업 현대화 기회",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "식량 안보 불안",
-                    "인프라 미비",
-                    "기후 변화 영향"
-                ],
-                "rank": 144
-            },
-            "logistics": {
-                "size": 0.2,
-                "growth": 8.4,
-                "potential": 40,
-                "oppo": [
-                    "물류 시장 형성",
-                    "기초 인프라 구축",
-                    "물류 인프라 개발"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "국경 통과 지연",
-                    "추적 시스템 부재"
-                ],
-                "rank": 148
-            },
-            "fashion": {
-                "size": 0.1,
-                "growth": 6.8,
-                "potential": 45,
-                "oppo": [
-                    "저비용 생산 기반",
-                    "도매 시장 성장",
-                    "전통 의류 현대화"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "기술력 부족",
-                    "원자재 수급"
-                ],
-                "rank": 143
-            },
-            "entertainment": {
-                "size": 0.1,
-                "growth": 8.5,
-                "potential": 33,
-                "oppo": [
-                    "기본 엔터테인먼트",
-                    "라디오/TV 보급",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "인프라 부족",
-                    "기본 인프라 부족",
-                    "대역폭 부족"
-                ],
-                "rank": 143
-            },
-            "construction": {
-                "size": 0.3,
-                "growth": 7,
-                "potential": 46,
-                "oppo": [
-                    "도로/수도 건설",
-                    "아프리카 인프라 개발",
-                    "국제 개발 프로젝트"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "기술 인력 부재",
-                    "자본 부족"
-                ],
-                "rank": 149
             }
         },
         "gdp_growth_pct": 1.7,
@@ -29395,7 +20239,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 29
+                "rank": 28
             },
             "manufacturing": {
                 "size": 152.0,
@@ -29462,9 +20306,9 @@ const COUNTRIES = {
                 "rank": 37
             },
             "agriculture": {
-                "size": 34.3,
+                "size": 12.7,
                 "growth": 3.2,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -29475,7 +20319,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 28
+                "rank": 37
             },
             "automotive": {
                 "size": 16.5,
@@ -29555,7 +20399,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 42
+                "rank": 46
             },
             "education": {
                 "size": 8.9,
@@ -29572,102 +20416,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 38
-            },
-            "beauty": {
-                "size": 3.1,
-                "growth": 5.3,
-                "potential": 69,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "K-뷰티 수요 확대",
-                    "온라인 뷰티 성장"
-                ],
-                "risk": [
-                    "브랜드 경쟁 심화",
-                    "수입 의존도",
-                    "리뷰 리스크"
-                ],
-                "rank": 37
-            },
-            "food": {
-                "size": 18.1,
-                "growth": 3.5,
-                "potential": 67,
-                "oppo": [
-                    "아시아 식품 수출",
-                    "한식/일식 인기",
-                    "외식 산업 확대"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "경쟁 심화",
-                    "온라인 경쟁"
-                ],
-                "rank": 41
-            },
-            "logistics": {
-                "size": 33.2,
-                "growth": 5,
-                "potential": 61,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "항만 물류 강세",
-                    "이커머스 물류 성장"
-                ],
-                "risk": [
-                    "항만 혼잡",
-                    "규제 복잡성",
-                    "플랫폼 의존"
-                ],
-                "rank": 26
-            },
-            "fashion": {
-                "size": 5.5,
-                "growth": 6.1,
-                "potential": 69,
-                "oppo": [
-                    "로컬 브랜드 성장",
-                    "SNS 패션 마케팅",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "글로벌 브랜드 경쟁",
-                    "가격 경쟁 심화",
-                    "온라인 반품률"
-                ],
-                "rank": 41
-            },
-            "entertainment": {
-                "size": 7.9,
-                "growth": 6.2,
-                "potential": 58,
-                "oppo": [
-                    "OTT 시장 확대",
-                    "게임 시장 성장",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "경쟁 과열",
-                    "콘텐츠 제작비 상승"
-                ],
-                "rank": 35
-            },
-            "construction": {
-                "size": 82.4,
-                "growth": 7.4,
-                "potential": 70,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "교통 인프라 투자",
-                    "인프라 수출"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "디지털 전환 비용",
-                    "자재비 상승"
-                ],
-                "rank": 18
             }
         },
         "gdp_growth_pct": 5.1,
@@ -29783,7 +20531,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 144
+                "rank": 135
             },
             "automotive": {
                 "size": 1,
@@ -29863,7 +20611,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 126
+                "rank": 128
             },
             "education": {
                 "size": 1,
@@ -29880,102 +20628,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 128
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.1,
-                "potential": 52,
-                "oppo": [
-                    "아프리카 뷰티 시장 성장",
-                    "성장하는 중산층",
-                    "젊은 인구 수요"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "리뷰 리스크",
-                    "소비력 부족"
-                ],
-                "rank": 136
-            },
-            "food": {
-                "size": 0.6,
-                "growth": 5.2,
-                "potential": 54,
-                "oppo": [
-                    "농산물 부가가치화",
-                    "식품 가공업 발전",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "온라인 경쟁",
-                    "위생 관리 어려움"
-                ],
-                "rank": 141
-            },
-            "logistics": {
-                "size": 0.5,
-                "growth": 6.8,
-                "potential": 46,
-                "oppo": [
-                    "무역 성장 기회",
-                    "실시간 추적 시스템",
-                    "물류 인프라 구축"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "물류비 높음",
-                    "국경 통과 지연"
-                ],
-                "rank": 135
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 6.8,
-                "potential": 48,
-                "oppo": [
-                    "OEM/ODM 기회",
-                    "아프리카 패션 부상",
-                    "전통 의류 현대화"
-                ],
-                "risk": [
-                    "저가 경쟁",
-                    "가격 투명성",
-                    "품질 관리"
-                ],
-                "rank": 135
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 7.9,
-                "potential": 49,
-                "oppo": [
-                    "콘텐츠 소비 증가",
-                    "모바일 엔터테인먼트",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "인프라 부족",
-                    "주의력 경쟁",
-                    "플랫폼 과포화"
-                ],
-                "rank": 136
-            },
-            "construction": {
-                "size": 1,
-                "growth": 7,
-                "potential": 57,
-                "oppo": [
-                    "기초 인프라 건설",
-                    "BIM 기술 활용",
-                    "아프리카 인프라 개발"
-                ],
-                "risk": [
-                    "안전 관리",
-                    "건설 테크 투자 부담",
-                    "자금 조달 어려움"
-                ],
-                "rank": 132
             }
         },
         "gdp_growth_pct": 3.7,
@@ -30078,9 +20730,9 @@ const COUNTRIES = {
                 "rank": 138
             },
             "agriculture": {
-                "size": 6.9,
+                "size": 1,
                 "growth": 5.8,
-                "potential": 64,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30091,7 +20743,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 67
+                "rank": 136
             },
             "automotive": {
                 "size": 1,
@@ -30171,7 +20823,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 127
+                "rank": 129
             },
             "education": {
                 "size": 1,
@@ -30188,102 +20840,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 129
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 8.1,
-                "potential": 44,
-                "oppo": [
-                    "성장 잠재력 높음",
-                    "아프리카 뷰티 시장 성장",
-                    "스킨케어 수요 증가"
-                ],
-                "risk": [
-                    "마케팅 도달 제한",
-                    "디지털 채널 부재",
-                    "소비력 극히 제한"
-                ],
-                "rank": 138
-            },
-            "food": {
-                "size": 0.8,
-                "growth": 5.6,
-                "potential": 46,
-                "oppo": [
-                    "농업 현대화 기회",
-                    "농업 현대화",
-                    "전통 유통 채널"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "인프라 미비",
-                    "기후 변화 영향"
-                ],
-                "rank": 131
-            },
-            "logistics": {
-                "size": 0.5,
-                "growth": 8.2,
-                "potential": 46,
-                "oppo": [
-                    "아프리카 내륙 물류",
-                    "운송 네트워크 확장",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "추적 시스템 부재",
-                    "국경 통과 지연",
-                    "운송 비용"
-                ],
-                "rank": 136
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 8,
-                "potential": 50,
-                "oppo": [
-                    "전통 의류 현대화",
-                    "섬유 산업 잠재력",
-                    "저비용 생산 기반"
-                ],
-                "risk": [
-                    "기술력 부족",
-                    "마케팅 제한",
-                    "오프라인 한계"
-                ],
-                "rank": 136
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 6,
-                "potential": 35,
-                "oppo": [
-                    "놀리우드 성장",
-                    "모바일 콘텐츠",
-                    "모바일 미디어 성장"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "인프라 부족",
-                    "수익 모델 미성숙"
-                ],
-                "rank": 137
-            },
-            "construction": {
-                "size": 2,
-                "growth": 9.6,
-                "potential": 50,
-                "oppo": [
-                    "도로/수도 건설",
-                    "노동집약 건설",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "기술 도입 지연",
-                    "정치적 불안정"
-                ],
-                "rank": 108
             }
         },
         "gdp_growth_pct": 10.3,
@@ -30386,9 +20942,9 @@ const COUNTRIES = {
                 "rank": 53
             },
             "agriculture": {
-                "size": 65.3,
+                "size": 7.6,
                 "growth": 3.3,
-                "potential": 74,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30399,7 +20955,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 10
+                "rank": 53
             },
             "automotive": {
                 "size": 7.6,
@@ -30479,7 +21035,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 74
+                "rank": 78
             },
             "education": {
                 "size": 1,
@@ -30496,102 +21052,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 130
-            },
-            "beauty": {
-                "size": 1.3,
-                "growth": 5.7,
-                "potential": 60,
-                "oppo": [
-                    "아프리카 뷰티 시장 성장",
-                    "성장하는 중산층",
-                    "직접 판매 채널"
-                ],
-                "risk": [
-                    "유통 인프라 부족",
-                    "소비력 부족",
-                    "유통 인프라 부재"
-                ],
-                "rank": 58
-            },
-            "food": {
-                "size": 19.9,
-                "growth": 5.3,
-                "potential": 64,
-                "oppo": [
-                    "프랜차이즈 확대",
-                    "식품 가공업 발전",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "물류 인프라 부재",
-                    "마케팅 제한"
-                ],
-                "rank": 36
-            },
-            "logistics": {
-                "size": 7.6,
-                "growth": 4.8,
-                "potential": 45,
-                "oppo": [
-                    "무역 성장 기회",
-                    "창고업 현대화",
-                    "운송 네트워크 확장"
-                ],
-                "risk": [
-                    "도로망 미비",
-                    "도로 인프라 부족",
-                    "국경 통과 지연"
-                ],
-                "rank": 52
-            },
-            "fashion": {
-                "size": 2.1,
-                "growth": 7,
-                "potential": 47,
-                "oppo": [
-                    "전통 시장 유통",
-                    "OEM/ODM 기회",
-                    "전통 의류 현대화"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "마케팅 제한",
-                    "품질 관리"
-                ],
-                "rank": 58
-            },
-            "entertainment": {
-                "size": 3.9,
-                "growth": 6.1,
-                "potential": 54,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "모바일 콘텐츠 수요",
-                    "방송 미디어 발전"
-                ],
-                "risk": [
-                    "인프라 부족",
-                    "수익 모델 한계",
-                    "수익 모델 미성숙"
-                ],
-                "rank": 53
-            },
-            "construction": {
-                "size": 42,
-                "growth": 6.4,
-                "potential": 63,
-                "oppo": [
-                    "노동집약 건설",
-                    "전통 건설 방식",
-                    "도시화 가속"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "안전 관리",
-                    "관리 비효율"
-                ],
-                "rank": 26
             }
         },
         "gdp_growth_pct": 4.1,
@@ -30693,9 +21153,9 @@ const COUNTRIES = {
                 "rank": 139
             },
             "agriculture": {
-                "size": 2.8,
+                "size": 1,
                 "growth": 3.1,
-                "potential": 70,
+                "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30706,7 +21166,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 105
+                "rank": 137
             },
             "automotive": {
                 "size": 1,
@@ -30786,7 +21246,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 128
+                "rank": 130
             },
             "education": {
                 "size": 1,
@@ -30803,102 +21263,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 131
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 7.1,
-                "potential": 49,
-                "oppo": [
-                    "뷰티 시장 초기 성장",
-                    "오프라인 유통 기회",
-                    "자연 원료 활용"
-                ],
-                "risk": [
-                    "환율 변동성",
-                    "수입 관세",
-                    "위조품 문제"
-                ],
-                "rank": 137
-            },
-            "food": {
-                "size": 0.9,
-                "growth": 6.6,
-                "potential": 62,
-                "oppo": [
-                    "식품 가공 산업",
-                    "프랜차이즈 확대",
-                    "농산물 부가가치화"
-                ],
-                "risk": [
-                    "물류 비용",
-                    "마케팅 제한",
-                    "유통 비효율"
-                ],
-                "rank": 127
-            },
-            "logistics": {
-                "size": 0.8,
-                "growth": 6.1,
-                "potential": 50,
-                "oppo": [
-                    "창고업 현대화",
-                    "운송 네트워크 확장",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "도로 인프라 부족",
-                    "도로 인프라 노후",
-                    "세관 절차"
-                ],
-                "rank": 114
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 7.5,
-                "potential": 53,
-                "oppo": [
-                    "내수 패션 시장 성장",
-                    "의류 제조업 강세",
-                    "전통 시장 유통"
-                ],
-                "risk": [
-                    "환율 리스크",
-                    "마케팅 제한",
-                    "품질 관리"
-                ],
-                "rank": 117
-            },
-            "entertainment": {
-                "size": 0.3,
-                "growth": 6.6,
-                "potential": 49,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "미디어 디지털화",
-                    "방송 미디어 발전"
-                ],
-                "risk": [
-                    "저작권 보호 미흡",
-                    "제작 인프라 부족",
-                    "광고 시장 제한"
-                ],
-                "rank": 120
-            },
-            "construction": {
-                "size": 1.3,
-                "growth": 7.6,
-                "potential": 63,
-                "oppo": [
-                    "기초 인프라 건설",
-                    "주택 수요 증가",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "기술 도입 지연",
-                    "자금 조달",
-                    "기술력 부족"
-                ],
-                "rank": 123
             }
         },
         "gdp_growth_pct": 3.6,
@@ -31001,9 +21365,9 @@ const COUNTRIES = {
                 "rank": 18
             },
             "agriculture": {
-                "size": 21.0,
+                "size": 36.4,
                 "growth": 1.6,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -31014,7 +21378,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 37
+                "rank": 19
             },
             "automotive": {
                 "size": 47.4,
@@ -31094,7 +21458,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 19
+                "rank": 18
             },
             "education": {
                 "size": 37.8,
@@ -31111,102 +21475,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 17
-            },
-            "beauty": {
-                "size": 13,
-                "growth": 4.3,
-                "potential": 72,
-                "oppo": [
-                    "클린 뷰티 트렌드",
-                    "천연 화장품 수요",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "시장 포화 경쟁",
-                    "규제 강화",
-                    "소비자 트렌드 변화"
-                ],
-                "rank": 18
-            },
-            "food": {
-                "size": 92.6,
-                "growth": 2.9,
-                "potential": 67,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "건강식품 트렌드",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "배달 플랫폼 수수료",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 17
-            },
-            "logistics": {
-                "size": 176,
-                "growth": 2.8,
-                "potential": 82,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "콜드체인 확대",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "플랫폼 의존",
-                    "환경 규제 강화"
-                ],
-                "rank": 6
-            },
-            "fashion": {
-                "size": 16.8,
-                "growth": 3.2,
-                "potential": 79,
-                "oppo": [
-                    "유럽 패션 수도",
-                    "하이엔드 브랜드",
-                    "럭셔리 패션 시장"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "시장 포화",
-                    "인건비 상승"
-                ],
-                "rank": 19
-            },
-            "entertainment": {
-                "size": 24.9,
-                "growth": 5.7,
-                "potential": 70,
-                "oppo": [
-                    "문화 콘텐츠 다양성",
-                    "유럽 콘텐츠 시장",
-                    "콘텐츠 IP 수출"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "플랫폼 경쟁",
-                    "플랫폼 과포화"
-                ],
-                "rank": 19
-            },
-            "construction": {
-                "size": 32.9,
-                "growth": 3.4,
-                "potential": 79,
-                "oppo": [
-                    "리노베이션 시장",
-                    "인프라 현대화",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "디지털 전환 비용",
-                    "원자재 가격 변동"
-                ],
-                "rank": 30
             }
         },
         "gdp_growth_pct": 1.1,
@@ -31309,7 +21577,7 @@ const COUNTRIES = {
                 "rank": 30
             },
             "agriculture": {
-                "size": 10.0,
+                "size": 14.5,
                 "growth": 2.0,
                 "potential": 79,
                 "oppo": [
@@ -31322,7 +21590,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 56
+                "rank": 32
             },
             "automotive": {
                 "size": 18.9,
@@ -31402,7 +21670,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 45
+                "rank": 48
             },
             "education": {
                 "size": 15.8,
@@ -31419,102 +21687,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 27
-            },
-            "beauty": {
-                "size": 5.3,
-                "growth": 4,
-                "potential": 70,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "클린 뷰티 트렌드",
-                    "천연 화장품 수요"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "리뷰 리스크",
-                    "규제 강화"
-                ],
-                "rank": 30
-            },
-            "food": {
-                "size": 19.2,
-                "growth": 3.4,
-                "potential": 75,
-                "oppo": [
-                    "지역 특산품 브랜드화",
-                    "프리미엄 식품 시장",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "배달 플랫폼 수수료",
-                    "식품 안전 규제"
-                ],
-                "rank": 39
-            },
-            "logistics": {
-                "size": 13.6,
-                "growth": 3.3,
-                "potential": 67,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "콜드체인 확대",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "자동화 투자 부담",
-                    "인건비 상승",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 36
-            },
-            "fashion": {
-                "size": 5.9,
-                "growth": 3.4,
-                "potential": 74,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "럭셔리 패션 시장",
-                    "유럽 패션 수도"
-                ],
-                "risk": [
-                    "패스트패션 비판",
-                    "가격 투명성",
-                    "지속가능성 압박"
-                ],
-                "rank": 37
-            },
-            "entertainment": {
-                "size": 8.6,
-                "growth": 5.5,
-                "potential": 76,
-                "oppo": [
-                    "콘텐츠 IP 수출",
-                    "유럽 콘텐츠 시장",
-                    "게임 산업 확대"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "플랫폼 과포화",
-                    "시장 분절"
-                ],
-                "rank": 32
-            },
-            "construction": {
-                "size": 21.3,
-                "growth": 3.2,
-                "potential": 68,
-                "oppo": [
-                    "건설 테크 도입",
-                    "리노베이션 시장",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "환경 규제 강화",
-                    "디지털 전환 비용"
-                ],
-                "rank": 36
             }
         },
         "gdp_growth_pct": 2.1,
@@ -31617,9 +21789,9 @@ const COUNTRIES = {
                 "rank": 101
             },
             "agriculture": {
-                "size": 16.9,
+                "size": 2.3,
                 "growth": 3.2,
-                "potential": 72,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31630,7 +21802,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 41
+                "rank": 83
             },
             "automotive": {
                 "size": 1.3,
@@ -31710,7 +21882,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 129
+                "rank": 131
             },
             "education": {
                 "size": 1.1,
@@ -31727,102 +21899,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 92
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 6.7,
-                "potential": 53,
-                "oppo": [
-                    "직접 판매 채널",
-                    "젊은 인구 구조",
-                    "젊은 인구 수요"
-                ],
-                "risk": [
-                    "유통 인프라 부족",
-                    "위조품 범람",
-                    "위조품 문제"
-                ],
-                "rank": 98
-            },
-            "food": {
-                "size": 1.6,
-                "growth": 5.9,
-                "potential": 60,
-                "oppo": [
-                    "지역 시장 활성화",
-                    "전통 유통 채널",
-                    "식품 유통 현대화"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "물류 비용",
-                    "식품 위생 문제"
-                ],
-                "rank": 102
-            },
-            "logistics": {
-                "size": 1.1,
-                "growth": 5.8,
-                "potential": 58,
-                "oppo": [
-                    "창고업 현대화",
-                    "물류 현대화 수요",
-                    "물류 인프라 구축"
-                ],
-                "risk": [
-                    "인프라 부족",
-                    "통관 지연",
-                    "디지털 전환 지연"
-                ],
-                "rank": 104
-            },
-            "fashion": {
-                "size": 0.5,
-                "growth": 7,
-                "potential": 47,
-                "oppo": [
-                    "내수 패션 시장 성장",
-                    "수출 주도 성장",
-                    "OEM/ODM 기회"
-                ],
-                "risk": [
-                    "노동권 이슈",
-                    "노동 환경 이슈",
-                    "마케팅 제한"
-                ],
-                "rank": 101
-            },
-            "entertainment": {
-                "size": 0.6,
-                "growth": 7,
-                "potential": 54,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "방송 미디어 발전",
-                    "대규모 관객 시장"
-                ],
-                "risk": [
-                    "불법 유통",
-                    "제작 인프라 부족",
-                    "수익화 어려움"
-                ],
-                "rank": 98
-            },
-            "construction": {
-                "size": 2.8,
-                "growth": 7.8,
-                "potential": 59,
-                "oppo": [
-                    "도시화 가속",
-                    "대규모 인프라 계획",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "관리 비효율",
-                    "기술 도입 지연",
-                    "인프라 제약"
-                ],
-                "rank": 93
             }
         },
         "gdp_growth_pct": 3.7,
@@ -31925,9 +22001,9 @@ const COUNTRIES = {
                 "rank": 52
             },
             "agriculture": {
-                "size": 11.9,
+                "size": 7.8,
                 "growth": 1.7,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -31938,7 +22014,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 48
+                "rank": 51
             },
             "automotive": {
                 "size": 10.1,
@@ -32018,7 +22094,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 25
             },
             "education": {
                 "size": 8.2,
@@ -32035,102 +22111,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 42
-            },
-            "beauty": {
-                "size": 2.2,
-                "growth": 4.9,
-                "potential": 68,
-                "oppo": [
-                    "안티에이징 수요 증가",
-                    "아시안 뷰티 트렌드",
-                    "클린 뷰티 트렌드"
-                ],
-                "risk": [
-                    "과잉 경쟁",
-                    "소비자 트렌드 변화",
-                    "리뷰 리스크"
-                ],
-                "rank": 49
-            },
-            "food": {
-                "size": 13.3,
-                "growth": 3.5,
-                "potential": 76,
-                "oppo": [
-                    "푸드테크 성장",
-                    "건강식품 트렌드",
-                    "프리미엄 식품 시장"
-                ],
-                "risk": [
-                    "수입 규제",
-                    "배달 플랫폼 수수료",
-                    "식품 안전 우려"
-                ],
-                "rank": 50
-            },
-            "logistics": {
-                "size": 7.9,
-                "growth": 3.8,
-                "potential": 79,
-                "oppo": [
-                    "콜드체인 확대",
-                    "디지털 물류 플랫폼",
-                    "글로벌 공급망 허브"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "자동화 투자 부담",
-                    "환경 규제"
-                ],
-                "rank": 50
-            },
-            "fashion": {
-                "size": 3.9,
-                "growth": 3.5,
-                "potential": 76,
-                "oppo": [
-                    "지속가능 패션",
-                    "아시아 패션 허브",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "패스트패션 비판",
-                    "시장 포화"
-                ],
-                "rank": 48
-            },
-            "entertainment": {
-                "size": 5.3,
-                "growth": 6,
-                "potential": 73,
-                "oppo": [
-                    "게임 산업 확대",
-                    "웹툰/웹소설 성장",
-                    "한류 콘텐츠 수출"
-                ],
-                "risk": [
-                    "경쟁 과열",
-                    "플랫폼 경쟁",
-                    "콘텐츠 과잉 공급"
-                ],
-                "rank": 46
-            },
-            "construction": {
-                "size": 8,
-                "growth": 3.1,
-                "potential": 71,
-                "oppo": [
-                    "건설 테크 도입",
-                    "인프라 수출",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "부동산 과열 리스크",
-                    "환경 규제",
-                    "인력 부족"
-                ],
-                "rank": 65
             }
         },
         "gdp_growth_pct": 1.3,
@@ -32233,7 +22213,7 @@ const COUNTRIES = {
                 "rank": 69
             },
             "agriculture": {
-                "size": 2.8,
+                "size": 3.2,
                 "growth": 1.9,
                 "potential": 77,
                 "oppo": [
@@ -32246,7 +22226,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 106
+                "rank": 70
             },
             "automotive": {
                 "size": 3.2,
@@ -32326,7 +22306,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 130
+                "rank": 132
             },
             "education": {
                 "size": 2.8,
@@ -32343,102 +22323,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 66
-            },
-            "beauty": {
-                "size": 1.1,
-                "growth": 4.1,
-                "potential": 77,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "안티에이징 수요 증가",
-                    "할랄 화장품 시장"
-                ],
-                "risk": [
-                    "할랄 인증 필요",
-                    "온라인 가격 경쟁",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 61
-            },
-            "food": {
-                "size": 5,
-                "growth": 2.5,
-                "potential": 76,
-                "oppo": [
-                    "프리미엄 식품 시장",
-                    "식품 수입 의존도",
-                    "할랄 식품 시장"
-                ],
-                "risk": [
-                    "소비 트렌드 변화",
-                    "할랄 인증 요구",
-                    "식품 안전 규제"
-                ],
-                "rank": 67
-            },
-            "logistics": {
-                "size": 4.1,
-                "growth": 4.1,
-                "potential": 74,
-                "oppo": [
-                    "첨단 물류 자동화",
-                    "중계 무역 허브",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "플랫폼 의존",
-                    "지정학적 리스크"
-                ],
-                "rank": 63
-            },
-            "fashion": {
-                "size": 1.3,
-                "growth": 3.3,
-                "potential": 77,
-                "oppo": [
-                    "럭셔리 소비",
-                    "SNS 패션 마케팅",
-                    "디자이너 브랜드"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "수입 의존",
-                    "패스트패션 비판"
-                ],
-                "rank": 71
-            },
-            "entertainment": {
-                "size": 2.4,
-                "growth": 6.3,
-                "potential": 76,
-                "oppo": [
-                    "게임 산업 확대",
-                    "콘텐츠 IP 수출",
-                    "미디어 시장 개방"
-                ],
-                "risk": [
-                    "문화적 제약",
-                    "콘텐츠 과잉 공급",
-                    "저작권 분쟁"
-                ],
-                "rank": 61
-            },
-            "construction": {
-                "size": 7.1,
-                "growth": 3.6,
-                "potential": 78,
-                "oppo": [
-                    "인프라 현대화",
-                    "건설 테크 도입",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "원자재 가격 변동",
-                    "프로젝트 지연"
-                ],
-                "rank": 68
             }
         },
         "gdp_growth_pct": 1.6,
@@ -32541,9 +22425,9 @@ const COUNTRIES = {
                 "rank": 43
             },
             "agriculture": {
-                "size": 88.2,
+                "size": 11.1,
                 "growth": 2.9,
-                "potential": 74,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -32554,7 +22438,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 7
+                "rank": 42
             },
             "automotive": {
                 "size": 11.1,
@@ -32634,7 +22518,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 61
+                "rank": 65
             },
             "education": {
                 "size": 4.3,
@@ -32651,102 +22535,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 57
-            },
-            "beauty": {
-                "size": 2,
-                "growth": 6.7,
-                "potential": 61,
-                "oppo": [
-                    "프리미엄 뷰티 수요",
-                    "성장하는 중산층",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "디지털 채널 부재",
-                    "마케팅 도달 제한",
-                    "유통 인프라 부족"
-                ],
-                "rank": 53
-            },
-            "food": {
-                "size": 22.4,
-                "growth": 5.6,
-                "potential": 53,
-                "oppo": [
-                    "식품 수입 의존도",
-                    "프랜차이즈 확대",
-                    "농산물 부가가치화"
-                ],
-                "risk": [
-                    "물류 비용",
-                    "마케팅 제한",
-                    "유통 비효율"
-                ],
-                "rank": 33
-            },
-            "logistics": {
-                "size": 7.8,
-                "growth": 6.6,
-                "potential": 55,
-                "oppo": [
-                    "자유무역지대 활용",
-                    "중계 무역 허브",
-                    "창고업 현대화"
-                ],
-                "risk": [
-                    "추적 시스템 부재",
-                    "물류비 높음",
-                    "도로 인프라 부족"
-                ],
-                "rank": 51
-            },
-            "fashion": {
-                "size": 4.1,
-                "growth": 7.3,
-                "potential": 47,
-                "oppo": [
-                    "럭셔리 소비",
-                    "전통 시장 유통",
-                    "내수 패션 시장 성장"
-                ],
-                "risk": [
-                    "노동 환경 이슈",
-                    "품질 관리",
-                    "마케팅 제한"
-                ],
-                "rank": 46
-            },
-            "entertainment": {
-                "size": 3.3,
-                "growth": 6.4,
-                "potential": 48,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "미디어 디지털화",
-                    "아랍어 콘텐츠 수요"
-                ],
-                "risk": [
-                    "저작권 보호 미흡",
-                    "제작 인프라 부족",
-                    "수익 모델 한계"
-                ],
-                "rank": 56
-            },
-            "construction": {
-                "size": 20.8,
-                "growth": 6,
-                "potential": 57,
-                "oppo": [
-                    "전통 건설 방식",
-                    "노동집약 건설",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "유가 의존 경제",
-                    "안전 관리",
-                    "기술 도입 지연"
-                ],
-                "rank": 37
             }
         },
         "gdp_growth_pct": 3.0,
@@ -32849,7 +22637,7 @@ const COUNTRIES = {
                 "rank": 78
             },
             "agriculture": {
-                "size": 2.3,
+                "size": 2.6,
                 "growth": 2.3,
                 "potential": 78,
                 "oppo": [
@@ -32862,7 +22650,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 110
+                "rank": 77
             },
             "automotive": {
                 "size": 2.6,
@@ -32942,7 +22730,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 63
+                "rank": 68
             },
             "education": {
                 "size": 1.3,
@@ -32959,102 +22747,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 86
-            },
-            "beauty": {
-                "size": 0.9,
-                "growth": 3.3,
-                "potential": 69,
-                "oppo": [
-                    "클린 뷰티 트렌드",
-                    "프리미엄 뷰티 시장",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "시장 포화 경쟁",
-                    "수입 관세",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 69
-            },
-            "food": {
-                "size": 4,
-                "growth": 3.2,
-                "potential": 73,
-                "oppo": [
-                    "농산물 수출 강국",
-                    "유기농 수요 증가",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "원가 상승",
-                    "소비 트렌드 변화"
-                ],
-                "rank": 75
-            },
-            "logistics": {
-                "size": 6.8,
-                "growth": 3,
-                "potential": 84,
-                "oppo": [
-                    "항만 인프라 투자",
-                    "실시간 추적 시스템",
-                    "농산물 물류"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "도로 인프라 노후",
-                    "자동화 투자 부담"
-                ],
-                "rank": 56
-            },
-            "fashion": {
-                "size": 1.1,
-                "growth": 4,
-                "potential": 71,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "섬유 원료 풍부",
-                    "지속가능 패션"
-                ],
-                "risk": [
-                    "수입 경쟁",
-                    "지속가능성 압박",
-                    "가격 투명성"
-                ],
-                "rank": 78
-            },
-            "entertainment": {
-                "size": 1.4,
-                "growth": 4.8,
-                "potential": 76,
-                "oppo": [
-                    "게임 산업 확대",
-                    "스트리밍 시장 성장",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "광고 시장 제한",
-                    "불법 복제"
-                ],
-                "rank": 77
-            },
-            "construction": {
-                "size": 4.7,
-                "growth": 3.8,
-                "potential": 68,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "주택 부족 해소",
-                    "도시 인프라 투자"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "인건비 상승",
-                    "환경 규제"
-                ],
-                "rank": 82
             }
         },
         "gdp_growth_pct": 2.7,
@@ -33157,9 +22849,9 @@ const COUNTRIES = {
                 "rank": 48
             },
             "agriculture": {
-                "size": 21.2,
+                "size": 8.7,
                 "growth": 2.5,
-                "potential": 77,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -33170,7 +22862,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 35
+                "rank": 48
             },
             "automotive": {
                 "size": 8.7,
@@ -33250,7 +22942,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 72
+                "rank": 76
             },
             "education": {
                 "size": 7.3,
@@ -33267,102 +22959,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 47
-            },
-            "beauty": {
-                "size": 2,
-                "growth": 6.1,
-                "potential": 70,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "자연 원료 활용",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "온라인 가격 경쟁",
-                    "품질 규제"
-                ],
-                "rank": 54
-            },
-            "food": {
-                "size": 12.7,
-                "growth": 3.6,
-                "potential": 67,
-                "oppo": [
-                    "푸드테크 성장",
-                    "식품 가공 산업",
-                    "농산물 수출 강국"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "규제 환경",
-                    "경쟁 심화"
-                ],
-                "rank": 51
-            },
-            "logistics": {
-                "size": 6.9,
-                "growth": 5,
-                "potential": 68,
-                "oppo": [
-                    "항만 현대화",
-                    "실시간 추적 시스템",
-                    "이커머스 물류 성장"
-                ],
-                "risk": [
-                    "세관 절차",
-                    "사이버 보안 리스크",
-                    "플랫폼 의존"
-                ],
-                "rank": 54
-            },
-            "fashion": {
-                "size": 4,
-                "growth": 4.9,
-                "potential": 58,
-                "oppo": [
-                    "온라인 패션 확대",
-                    "온라인 패션 플랫폼",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "원자재 비용",
-                    "수입 경쟁"
-                ],
-                "rank": 47
-            },
-            "entertainment": {
-                "size": 4.9,
-                "growth": 6,
-                "potential": 63,
-                "oppo": [
-                    "OTT 시장 확대",
-                    "라틴 콘텐츠 시장",
-                    "로컬 콘텐츠 제작"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "주의력 경쟁",
-                    "불법 복제"
-                ],
-                "rank": 48
-            },
-            "construction": {
-                "size": 20.1,
-                "growth": 5.1,
-                "potential": 71,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "도시 인프라 투자",
-                    "도시화 인프라 수요"
-                ],
-                "risk": [
-                    "자금 조달",
-                    "부동산 거품 리스크",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 38
             }
         },
         "gdp_growth_pct": 3.3,
@@ -33398,7 +22994,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 26
+                "rank": 25
             },
             "manufacturing": {
                 "size": 115.8,
@@ -33465,9 +23061,9 @@ const COUNTRIES = {
                 "rank": 35
             },
             "agriculture": {
-                "size": 41.9,
+                "size": 13.8,
                 "growth": 4.0,
-                "potential": 75,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -33478,7 +23074,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 20
+                "rank": 35
             },
             "automotive": {
                 "size": 18.0,
@@ -33558,7 +23154,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 46
+                "rank": 50
             },
             "education": {
                 "size": 10.9,
@@ -33575,102 +23171,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 32
-            },
-            "beauty": {
-                "size": 2.7,
-                "growth": 6.7,
-                "potential": 49,
-                "oppo": [
-                    "아시안 뷰티 트렌드",
-                    "뷰티 시장 초기 성장",
-                    "성장하는 중산층"
-                ],
-                "risk": [
-                    "소비력 제한",
-                    "온라인 가격 경쟁",
-                    "트렌드 변화 빠름"
-                ],
-                "rank": 41
-            },
-            "food": {
-                "size": 28,
-                "growth": 4.3,
-                "potential": 62,
-                "oppo": [
-                    "농산물 부가가치화",
-                    "푸드테크 성장",
-                    "식품 가공업 발전"
-                ],
-                "risk": [
-                    "식품 안전 우려",
-                    "배달 플랫폼 수수료",
-                    "수입 규제"
-                ],
-                "rank": 26
-            },
-            "logistics": {
-                "size": 14.7,
-                "growth": 5.5,
-                "potential": 57,
-                "oppo": [
-                    "실시간 추적 시스템",
-                    "물류 인프라 구축",
-                    "글로벌 공급망 허브"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "항만 혼잡",
-                    "도로 인프라 부족"
-                ],
-                "rank": 33
-            },
-            "fashion": {
-                "size": 5.9,
-                "growth": 7.3,
-                "potential": 55,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "내수 패션 시장 성장",
-                    "아시아 패션 허브"
-                ],
-                "risk": [
-                    "패스트패션 포화",
-                    "온라인 반품률",
-                    "품질 관리"
-                ],
-                "rank": 38
-            },
-            "entertainment": {
-                "size": 8.1,
-                "growth": 7.7,
-                "potential": 43,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "콘텐츠 소비 증가",
-                    "모바일 엔터테인먼트"
-                ],
-                "risk": [
-                    "수익 모델 한계",
-                    "저작권 보호 미흡",
-                    "플랫폼 과포화"
-                ],
-                "rank": 33
-            },
-            "construction": {
-                "size": 85.1,
-                "growth": 7.3,
-                "potential": 63,
-                "oppo": [
-                    "주택 수요 증가",
-                    "건설 테크 도입",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "자금 조달 어려움",
-                    "안전 관리",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 17
             }
         },
         "gdp_growth_pct": 5.7,
@@ -33773,9 +23273,9 @@ const COUNTRIES = {
                 "rank": 108
             },
             "agriculture": {
-                "size": 5.4,
+                "size": 1,
                 "growth": 3.2,
-                "potential": 71,
+                "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -33786,7 +23286,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 81
+                "rank": 138
             },
             "automotive": {
                 "size": 1.2,
@@ -33866,7 +23366,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 131
+                "rank": 133
             },
             "education": {
                 "size": 1,
@@ -33883,102 +23383,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 132
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 8.2,
-                "potential": 61,
-                "oppo": [
-                    "K-뷰티 열풍",
-                    "젊은 인구 수요",
-                    "아시안 뷰티 트렌드"
-                ],
-                "risk": [
-                    "마케팅 도달 제한",
-                    "유통 인프라 부족",
-                    "위조품 문제"
-                ],
-                "rank": 109
-            },
-            "food": {
-                "size": 1.3,
-                "growth": 6.1,
-                "potential": 55,
-                "oppo": [
-                    "식품 가공업 발전",
-                    "전통 유통 채널",
-                    "프랜차이즈 확대"
-                ],
-                "risk": [
-                    "유통 비효율",
-                    "위생 관리 어려움",
-                    "마케팅 제한"
-                ],
-                "rank": 109
-            },
-            "logistics": {
-                "size": 0.7,
-                "growth": 6.8,
-                "potential": 59,
-                "oppo": [
-                    "무역 성장 기회",
-                    "창고업 현대화",
-                    "항만 물류 강세"
-                ],
-                "risk": [
-                    "추적 시스템 부재",
-                    "인건비 상승",
-                    "도로 인프라 부족"
-                ],
-                "rank": 121
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 5.3,
-                "potential": 49,
-                "oppo": [
-                    "OEM/ODM 기회",
-                    "전통 시장 유통",
-                    "한류 패션 영향"
-                ],
-                "risk": [
-                    "저가 경쟁",
-                    "노동 환경 이슈",
-                    "품질 관리"
-                ],
-                "rank": 118
-            },
-            "entertainment": {
-                "size": 0.3,
-                "growth": 6.8,
-                "potential": 45,
-                "oppo": [
-                    "한류 콘텐츠 수출",
-                    "모바일 콘텐츠",
-                    "웹툰/웹소설 성장"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "콘텐츠 규제",
-                    "수익 모델 한계"
-                ],
-                "rank": 121
-            },
-            "construction": {
-                "size": 2.5,
-                "growth": 6.7,
-                "potential": 58,
-                "oppo": [
-                    "인프라 수출",
-                    "도시화 가속",
-                    "메가시티 개발"
-                ],
-                "risk": [
-                    "관리 비효율",
-                    "자금 조달 어려움",
-                    "기술력 부족"
-                ],
-                "rank": 101
             }
         },
         "gdp_growth_pct": 3.8,
@@ -34013,7 +23417,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 21
             },
             "manufacturing": {
                 "size": 162.3,
@@ -34080,7 +23484,7 @@ const COUNTRIES = {
                 "rank": 21
             },
             "agriculture": {
-                "size": 23.3,
+                "size": 27.5,
                 "growth": 2.4,
                 "potential": 81,
                 "oppo": [
@@ -34093,7 +23497,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 33
+                "rank": 21
             },
             "automotive": {
                 "size": 35.8,
@@ -34173,7 +23577,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 28
+                "rank": 27
             },
             "education": {
                 "size": 23.8,
@@ -34190,102 +23594,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 22
-            },
-            "beauty": {
-                "size": 8.4,
-                "growth": 5,
-                "potential": 69,
-                "oppo": [
-                    "유럽 프리미엄 시장",
-                    "천연 화장품 수요",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "규제 강화",
-                    "시장 포화 경쟁",
-                    "시장 포화"
-                ],
-                "rank": 21
-            },
-            "food": {
-                "size": 44.6,
-                "growth": 3.1,
-                "potential": 76,
-                "oppo": [
-                    "지역 특산품 브랜드화",
-                    "건강식품 트렌드",
-                    "프리미엄 식품 시장"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "식품 안전 규제",
-                    "높은 인건비"
-                ],
-                "rank": 20
-            },
-            "logistics": {
-                "size": 32.1,
-                "growth": 4.1,
-                "potential": 70,
-                "oppo": [
-                    "실시간 추적 시스템",
-                    "크로스보더 물류",
-                    "콜드체인 확대"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "국경 통관",
-                    "인건비 상승"
-                ],
-                "rank": 27
-            },
-            "fashion": {
-                "size": 14.5,
-                "growth": 3.5,
-                "potential": 70,
-                "oppo": [
-                    "지속가능 패션",
-                    "디자이너 브랜드",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "인건비 상승",
-                    "패스트패션 비판"
-                ],
-                "rank": 20
-            },
-            "entertainment": {
-                "size": 19.8,
-                "growth": 6,
-                "potential": 77,
-                "oppo": [
-                    "콘텐츠 IP 수출",
-                    "OTT 플랫폼 확대",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "언어 장벽",
-                    "플랫폼 과포화",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 21
-            },
-            "construction": {
-                "size": 46.8,
-                "growth": 2.4,
-                "potential": 69,
-                "oppo": [
-                    "스마트시티 개발",
-                    "건설 테크 도입",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "인허가 절차",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 25
             }
         },
         "gdp_growth_pct": 3.0,
@@ -34388,7 +23696,7 @@ const COUNTRIES = {
                 "rank": 44
             },
             "agriculture": {
-                "size": 6.3,
+                "size": 9.4,
                 "growth": 2.1,
                 "potential": 79,
                 "oppo": [
@@ -34401,7 +23709,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 71
+                "rank": 45
             },
             "automotive": {
                 "size": 12.2,
@@ -34481,7 +23789,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 20
             },
             "education": {
                 "size": 8.6,
@@ -34498,102 +23806,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 39
-            },
-            "beauty": {
-                "size": 2.8,
-                "growth": 4.6,
-                "potential": 72,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "인플루언서 마케팅",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "소비자 트렌드 변화",
-                    "규제 강화"
-                ],
-                "rank": 40
-            },
-            "food": {
-                "size": 14.5,
-                "growth": 2.4,
-                "potential": 69,
-                "oppo": [
-                    "푸드테크 성장",
-                    "건강식품 트렌드",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "원가 상승",
-                    "식품 안전 규제",
-                    "높은 인건비"
-                ],
-                "rank": 47
-            },
-            "logistics": {
-                "size": 9.5,
-                "growth": 3.5,
-                "potential": 72,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "크로스보더 물류",
-                    "유럽 물류 허브"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "국경 통관",
-                    "자동화 투자 부담"
-                ],
-                "rank": 44
-            },
-            "fashion": {
-                "size": 7.9,
-                "growth": 3.1,
-                "potential": 75,
-                "oppo": [
-                    "디자이너 브랜드",
-                    "지속가능 패션",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "패스트패션 비판",
-                    "시장 포화"
-                ],
-                "rank": 32
-            },
-            "entertainment": {
-                "size": 6.3,
-                "growth": 6.2,
-                "potential": 71,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "콘텐츠 IP 수출",
-                    "유럽 콘텐츠 시장"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "저작권 분쟁",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 40
-            },
-            "construction": {
-                "size": 10.5,
-                "growth": 2.2,
-                "potential": 65,
-                "oppo": [
-                    "스마트시티 개발",
-                    "리노베이션 시장",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "디지털 전환 비용",
-                    "환경 규제 강화"
-                ],
-                "rank": 56
             }
         },
         "gdp_growth_pct": 2.1,
@@ -34696,9 +23908,9 @@ const COUNTRIES = {
                 "rank": 99
             },
             "agriculture": {
-                "size": 4.8,
+                "size": 1.3,
                 "growth": 2.9,
-                "potential": 76,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -34709,7 +23921,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 89
+                "rank": 100
             },
             "automotive": {
                 "size": 1.3,
@@ -34789,7 +24001,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 132
+                "rank": 134
             },
             "education": {
                 "size": 1,
@@ -34806,102 +24018,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 133
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 6.4,
-                "potential": 70,
-                "oppo": [
-                    "뷰티 소비 증가",
-                    "온라인 뷰티 성장",
-                    "K-뷰티 수요 확대"
-                ],
-                "risk": [
-                    "품질 규제",
-                    "리뷰 리스크",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 99
-            },
-            "food": {
-                "size": 2,
-                "growth": 3.7,
-                "potential": 65,
-                "oppo": [
-                    "외식 산업 확대",
-                    "농산물 수출 강국",
-                    "식품 가공 산업"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "배달 플랫폼 수수료",
-                    "식품 안전 이슈"
-                ],
-                "rank": 99
-            },
-            "logistics": {
-                "size": 1.2,
-                "growth": 5.4,
-                "potential": 69,
-                "oppo": [
-                    "실시간 추적 시스템",
-                    "디지털 물류 플랫폼",
-                    "물류 인프라 투자"
-                ],
-                "risk": [
-                    "세관 절차",
-                    "경쟁 심화",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 100
-            },
-            "fashion": {
-                "size": 0.6,
-                "growth": 4.9,
-                "potential": 61,
-                "oppo": [
-                    "라틴 패션 트렌드",
-                    "온라인 패션 플랫폼",
-                    "섬유 원료 풍부"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "환율 리스크",
-                    "원자재 비용"
-                ],
-                "rank": 93
-            },
-            "entertainment": {
-                "size": 0.8,
-                "growth": 6.7,
-                "potential": 60,
-                "oppo": [
-                    "라틴 콘텐츠 시장",
-                    "게임 시장 성장",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "콘텐츠 제작비 상승",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 90
-            },
-            "construction": {
-                "size": 3.1,
-                "growth": 5.9,
-                "potential": 59,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "교통 인프라 투자",
-                    "주택 부족 해소"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "부동산 거품 리스크",
-                    "자재비 상승"
-                ],
-                "rank": 91
             }
         },
         "gdp_growth_pct": 4.2,
@@ -35004,9 +24120,9 @@ const COUNTRIES = {
                 "rank": 55
             },
             "agriculture": {
-                "size": 1,
+                "size": 6.6,
                 "growth": 2.1,
-                "potential": 76,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -35017,7 +24133,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 145
+                "rank": 55
             },
             "automotive": {
                 "size": 6.6,
@@ -35097,7 +24213,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 18
+                "rank": 17
             },
             "education": {
                 "size": 4.3,
@@ -35114,102 +24230,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 58
-            },
-            "beauty": {
-                "size": 2.2,
-                "growth": 3.1,
-                "potential": 82,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "할랄 화장품 시장",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "할랄 인증 필요",
-                    "시장 포화 경쟁",
-                    "리뷰 리스크"
-                ],
-                "rank": 50
-            },
-            "food": {
-                "size": 9.1,
-                "growth": 2.6,
-                "potential": 70,
-                "oppo": [
-                    "식품 수입 의존도",
-                    "할랄 식품 시장",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "소비 트렌드 변화",
-                    "원가 상승"
-                ],
-                "rank": 55
-            },
-            "logistics": {
-                "size": 8.2,
-                "growth": 3.8,
-                "potential": 67,
-                "oppo": [
-                    "콜드체인 확대",
-                    "첨단 물류 자동화",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "물류 편중",
-                    "지정학적 리스크"
-                ],
-                "rank": 48
-            },
-            "fashion": {
-                "size": 3.1,
-                "growth": 3.2,
-                "potential": 71,
-                "oppo": [
-                    "지속가능 패션",
-                    "SNS 패션 마케팅",
-                    "럭셔리 소비"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "시장 포화",
-                    "지속가능성 압박"
-                ],
-                "rank": 54
-            },
-            "entertainment": {
-                "size": 4.2,
-                "growth": 5.7,
-                "potential": 80,
-                "oppo": [
-                    "미디어 시장 개방",
-                    "콘텐츠 IP 수출",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "콘텐츠 과잉 공급",
-                    "콘텐츠 검열"
-                ],
-                "rank": 52
-            },
-            "construction": {
-                "size": 25.2,
-                "growth": 3.2,
-                "potential": 75,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "스마트시티 개발",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "환경 규제",
-                    "디지털 전환 비용",
-                    "유가 의존 경제"
-                ],
-                "rank": 32
             }
         },
         "gdp_growth_pct": 2.4,
@@ -35312,7 +24332,7 @@ const COUNTRIES = {
                 "rank": 39
             },
             "agriculture": {
-                "size": 10.8,
+                "size": 11.5,
                 "growth": 1.6,
                 "potential": 78,
                 "oppo": [
@@ -35325,7 +24345,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 54
+                "rank": 41
             },
             "automotive": {
                 "size": 14.9,
@@ -35405,7 +24425,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 51
+                "rank": 53
             },
             "education": {
                 "size": 7.5,
@@ -35422,102 +24442,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 46
-            },
-            "beauty": {
-                "size": 4.2,
-                "growth": 4.2,
-                "potential": 71,
-                "oppo": [
-                    "프리미엄 뷰티 시장",
-                    "유럽 프리미엄 시장",
-                    "천연 화장품 수요"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "리뷰 리스크",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 33
-            },
-            "food": {
-                "size": 14.8,
-                "growth": 2.6,
-                "potential": 67,
-                "oppo": [
-                    "건강식품 트렌드",
-                    "온라인 푸드 배달",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "엄격한 식품 규제",
-                    "높은 인건비",
-                    "식품 안전 규제"
-                ],
-                "rank": 45
-            },
-            "logistics": {
-                "size": 10.6,
-                "growth": 3,
-                "potential": 65,
-                "oppo": [
-                    "크로스보더 물류",
-                    "라스트마일 혁신",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "자동화 투자 부담",
-                    "사이버 보안 리스크",
-                    "환경 규제 강화"
-                ],
-                "rank": 40
-            },
-            "fashion": {
-                "size": 4.7,
-                "growth": 3.4,
-                "potential": 77,
-                "oppo": [
-                    "유럽 패션 수도",
-                    "럭셔리 패션 시장",
-                    "SNS 패션 마케팅"
-                ],
-                "risk": [
-                    "지속가능성 압박",
-                    "인건비 상승",
-                    "지속가능성 규제"
-                ],
-                "rank": 43
-            },
-            "entertainment": {
-                "size": 7.4,
-                "growth": 5.2,
-                "potential": 73,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "스트리밍 시장 성장",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "저작권 분쟁",
-                    "시장 분절",
-                    "언어 장벽"
-                ],
-                "rank": 36
-            },
-            "construction": {
-                "size": 11.3,
-                "growth": 2.5,
-                "potential": 73,
-                "oppo": [
-                    "친환경 건축",
-                    "BIM 기술 활용",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "환경 규제 강화",
-                    "인허가 절차"
-                ],
-                "rank": 50
             }
         },
         "gdp_growth_pct": 0.9,
@@ -35620,7 +24544,7 @@ const COUNTRIES = {
                 "rank": 9
             },
             "agriculture": {
-                "size": 59.6,
+                "size": 65.2,
                 "growth": 2.9,
                 "potential": 83,
                 "oppo": [
@@ -35713,7 +24637,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 19
             },
             "education": {
                 "size": 54.3,
@@ -35730,102 +24654,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 12
-            },
-            "beauty": {
-                "size": 20.9,
-                "growth": 4.3,
-                "potential": 80,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "프리미엄 뷰티 시장",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "시장 포화 경쟁",
-                    "리뷰 리스크",
-                    "시장 포화"
-                ],
-                "rank": 12
-            },
-            "food": {
-                "size": 109.6,
-                "growth": 3.3,
-                "potential": 69,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "유럽 식품 규제 대응",
-                    "지역 특산품 브랜드화"
-                ],
-                "risk": [
-                    "식품 안전 규제",
-                    "온라인 경쟁",
-                    "원가 상승"
-                ],
-                "rank": 15
-            },
-            "logistics": {
-                "size": 52.9,
-                "growth": 3.2,
-                "potential": 78,
-                "oppo": [
-                    "콜드체인 확대",
-                    "크로스보더 물류",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "환경 규제",
-                    "환경 규제 강화"
-                ],
-                "rank": 20
-            },
-            "fashion": {
-                "size": 31.2,
-                "growth": 4,
-                "potential": 76,
-                "oppo": [
-                    "지속가능 패션",
-                    "유럽 패션 수도",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "지속가능성 압박",
-                    "시장 포화"
-                ],
-                "rank": 14
-            },
-            "entertainment": {
-                "size": 47.9,
-                "growth": 4.9,
-                "potential": 70,
-                "oppo": [
-                    "게임 산업 확대",
-                    "유럽 콘텐츠 시장",
-                    "콘텐츠 IP 수출"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "주의력 경쟁",
-                    "플랫폼 과포화"
-                ],
-                "rank": 13
-            },
-            "construction": {
-                "size": 181.1,
-                "growth": 3.6,
-                "potential": 69,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "BIM 기술 활용",
-                    "스마트시티 개발"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "건설 테크 투자 부담",
-                    "인허가 절차"
-                ],
-                "rank": 8
             }
         },
         "gdp_growth_pct": 4.3,
@@ -35928,9 +24756,9 @@ const COUNTRIES = {
                 "rank": 140
             },
             "agriculture": {
-                "size": 3.5,
+                "size": 1,
                 "growth": 5.3,
-                "potential": 62,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -35941,7 +24769,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 100
+                "rank": 139
             },
             "automotive": {
                 "size": 1,
@@ -36021,7 +24849,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 133
+                "rank": 135
             },
             "education": {
                 "size": 1,
@@ -36038,102 +24866,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 134
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 8.6,
-                "potential": 52,
-                "oppo": [
-                    "기초 화장품 수요",
-                    "아프리카 뷰티 시장 성장",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "소비력 부족",
-                    "인프라 부족",
-                    "유통 채널 미비"
-                ],
-                "rank": 139
-            },
-            "food": {
-                "size": 0.6,
-                "growth": 6.5,
-                "potential": 48,
-                "oppo": [
-                    "농업 현대화 기회",
-                    "전통 유통 채널",
-                    "농업 현대화"
-                ],
-                "risk": [
-                    "기후 변화 영향",
-                    "인프라 미비",
-                    "식량 안보 불안"
-                ],
-                "rank": 142
-            },
-            "logistics": {
-                "size": 0.4,
-                "growth": 7.4,
-                "potential": 44,
-                "oppo": [
-                    "기본 물류 인프라",
-                    "운송 네트워크 개발",
-                    "아프리카 내륙 물류"
-                ],
-                "risk": [
-                    "도로망 미비",
-                    "디지털 전환 지연",
-                    "정치적 불안정"
-                ],
-                "rank": 143
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 6.4,
-                "potential": 42,
-                "oppo": [
-                    "의류 제조 기지",
-                    "아프리카 패션 부상",
-                    "섬유 산업 잠재력"
-                ],
-                "risk": [
-                    "기술력 부족",
-                    "원자재 수급",
-                    "마케팅 제한"
-                ],
-                "rank": 137
-            },
-            "entertainment": {
-                "size": 0.1,
-                "growth": 7.9,
-                "potential": 37,
-                "oppo": [
-                    "기본 엔터테인먼트",
-                    "모바일 콘텐츠",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "인프라 부족",
-                    "수익 모델 미성숙",
-                    "기본 인프라 부족"
-                ],
-                "rank": 145
-            },
-            "construction": {
-                "size": 1.6,
-                "growth": 8.5,
-                "potential": 51,
-                "oppo": [
-                    "기본 인프라 구축",
-                    "국제 개발 프로젝트",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "정치적 불안정",
-                    "자금 부족",
-                    "기술 인력 부재"
-                ],
-                "rank": 111
             }
         },
         "gdp_growth_pct": 8.9,
@@ -36236,9 +24968,9 @@ const COUNTRIES = {
                 "rank": 19
             },
             "agriculture": {
-                "size": 31.4,
+                "size": 37.2,
                 "growth": 2.0,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -36249,7 +24981,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 29
+                "rank": 18
             },
             "automotive": {
                 "size": 37.2,
@@ -36316,9 +25048,9 @@ const COUNTRIES = {
                 "rank": 18
             },
             "tourism": {
-                "size": 6.2,
+                "size": 24.8,
                 "growth": 4.4,
-                "potential": 83,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -36329,7 +25061,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 34
+                "rank": 11
             },
             "education": {
                 "size": 38.0,
@@ -36346,102 +25078,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 16
-            },
-            "beauty": {
-                "size": 15.1,
-                "growth": 3.3,
-                "potential": 78,
-                "oppo": [
-                    "프리미엄 뷰티 시장",
-                    "프리미엄 뷰티 수요",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "시장 포화 경쟁",
-                    "소비자 트렌드 변화"
-                ],
-                "rank": 16
-            },
-            "food": {
-                "size": 58.9,
-                "growth": 3.2,
-                "potential": 74,
-                "oppo": [
-                    "건강식품 트렌드",
-                    "식품 수입 의존도",
-                    "프리미엄 식품 시장"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "식품 안전 규제",
-                    "수입 의존도"
-                ],
-                "rank": 19
-            },
-            "logistics": {
-                "size": 55,
-                "growth": 2.8,
-                "potential": 78,
-                "oppo": [
-                    "자유무역지대 활용",
-                    "첨단 물류 자동화",
-                    "중계 무역 허브"
-                ],
-                "risk": [
-                    "자동화 투자 부담",
-                    "물류 편중",
-                    "인건비 상승"
-                ],
-                "rank": 18
-            },
-            "fashion": {
-                "size": 17.3,
-                "growth": 3,
-                "potential": 74,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "온라인 패션 플랫폼",
-                    "디자이너 브랜드"
-                ],
-                "risk": [
-                    "지속가능성 압박",
-                    "온라인 반품률",
-                    "패스트패션 비판"
-                ],
-                "rank": 18
-            },
-            "entertainment": {
-                "size": 27.5,
-                "growth": 4.7,
-                "potential": 74,
-                "oppo": [
-                    "콘텐츠 IP 수출",
-                    "미디어 시장 개방",
-                    "아랍어 콘텐츠 수요"
-                ],
-                "risk": [
-                    "콘텐츠 검열",
-                    "플랫폼 경쟁",
-                    "콘텐츠 과잉 공급"
-                ],
-                "rank": 17
-            },
-            "construction": {
-                "size": 142.8,
-                "growth": 2.7,
-                "potential": 88,
-                "oppo": [
-                    "인프라 현대화",
-                    "메가 프로젝트",
-                    "스마트시티 개발"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "디지털 전환 비용",
-                    "프로젝트 지연"
-                ],
-                "rank": 12
             }
         },
         "gdp_growth_pct": 2.0,
@@ -36544,9 +25180,9 @@ const COUNTRIES = {
                 "rank": 93
             },
             "agriculture": {
-                "size": 11.0,
+                "size": 1.5,
                 "growth": 1.7,
-                "potential": 57,
+                "potential": 54,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -36557,7 +25193,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 53
+                "rank": 93
             },
             "automotive": {
                 "size": 1.5,
@@ -36637,7 +25273,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 134
+                "rank": 136
             },
             "education": {
                 "size": 1,
@@ -36654,102 +25290,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 135
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 6.8,
-                "potential": 39,
-                "oppo": [
-                    "미개척 시장",
-                    "오프라인 유통 기회",
-                    "성장 잠재력 높음"
-                ],
-                "risk": [
-                    "유통 인프라 부재",
-                    "소비력 부족",
-                    "마케팅 도달 제한"
-                ],
-                "rank": 112
-            },
-            "food": {
-                "size": 2.4,
-                "growth": 7.4,
-                "potential": 56,
-                "oppo": [
-                    "지역 시장 활성화",
-                    "농업 현대화",
-                    "농업 현대화 기회"
-                ],
-                "risk": [
-                    "물류 인프라 부재",
-                    "마케팅 제한",
-                    "인프라 미비"
-                ],
-                "rank": 90
-            },
-            "logistics": {
-                "size": 0.9,
-                "growth": 7.8,
-                "potential": 44,
-                "oppo": [
-                    "운송 네트워크 확장",
-                    "물류 인프라 개발",
-                    "물류 시장 형성"
-                ],
-                "risk": [
-                    "정치적 불안정",
-                    "도로망 미비",
-                    "기본 인프라 부재"
-                ],
-                "rank": 110
-            },
-            "fashion": {
-                "size": 0.5,
-                "growth": 7.6,
-                "potential": 37,
-                "oppo": [
-                    "아프리카 패션 부상",
-                    "전통 시장 유통",
-                    "의류 제조 기지"
-                ],
-                "risk": [
-                    "원자재 수급",
-                    "기술력 부족",
-                    "오프라인 한계"
-                ],
-                "rank": 102
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 9.8,
-                "potential": 40,
-                "oppo": [
-                    "모바일 미디어 성장",
-                    "모바일 콘텐츠",
-                    "방송 미디어 발전"
-                ],
-                "risk": [
-                    "콘텐츠 접근성",
-                    "수익 모델 미성숙",
-                    "인프라 부족"
-                ],
-                "rank": 113
-            },
-            "construction": {
-                "size": 1.5,
-                "growth": 5.6,
-                "potential": 50,
-                "oppo": [
-                    "전통 건설 방식",
-                    "아프리카 인프라 개발",
-                    "기본 인프라 구축"
-                ],
-                "risk": [
-                    "자금 부족",
-                    "자본 부족",
-                    "기술 도입 지연"
-                ],
-                "rank": 114
             }
         },
         "gdp_growth_pct": -14.0,
@@ -36852,9 +25392,9 @@ const COUNTRIES = {
                 "rank": 109
             },
             "agriculture": {
-                "size": 5.5,
+                "size": 1,
                 "growth": 4.1,
-                "potential": 72,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -36865,7 +25405,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 80
+                "rank": 140
             },
             "automotive": {
                 "size": 1,
@@ -36945,7 +25485,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 135
+                "rank": 137
             },
             "education": {
                 "size": 1.2,
@@ -36962,102 +25502,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 88
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 7.2,
-                "potential": 49,
-                "oppo": [
-                    "아프리카 뷰티 시장 성장",
-                    "이커머스 뷰티 판매",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "유통 인프라 부재",
-                    "소비력 제한"
-                ],
-                "rank": 110
-            },
-            "food": {
-                "size": 1.4,
-                "growth": 5,
-                "potential": 56,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "프랜차이즈 확대",
-                    "식품 가공업 발전"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "물류 비용",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 107
-            },
-            "logistics": {
-                "size": 0.9,
-                "growth": 5.8,
-                "potential": 59,
-                "oppo": [
-                    "창고업 현대화",
-                    "실시간 추적 시스템",
-                    "아프리카 내륙 물류"
-                ],
-                "risk": [
-                    "국경 통과 지연",
-                    "사이버 보안 리스크",
-                    "통관 지연"
-                ],
-                "rank": 108
-            },
-            "fashion": {
-                "size": 0.4,
-                "growth": 6.5,
-                "potential": 55,
-                "oppo": [
-                    "내수 패션 시장 성장",
-                    "온라인 패션 플랫폼",
-                    "의류 제조업 강세"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "품질 관리",
-                    "유통 한계"
-                ],
-                "rank": 108
-            },
-            "entertainment": {
-                "size": 0.5,
-                "growth": 7.4,
-                "potential": 44,
-                "oppo": [
-                    "놀리우드 성장",
-                    "모바일 엔터테인먼트",
-                    "미디어 디지털화"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "주의력 경쟁",
-                    "수익 모델 미성숙"
-                ],
-                "rank": 104
-            },
-            "construction": {
-                "size": 3.7,
-                "growth": 8.7,
-                "potential": 55,
-                "oppo": [
-                    "건설 테크 도입",
-                    "아프리카 인프라 개발",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "자금 조달 어려움",
-                    "자금 부족",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 87
             }
         },
         "gdp_growth_pct": 6.1,
@@ -37093,7 +25537,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 22
             },
             "manufacturing": {
                 "size": 143.0,
@@ -37160,9 +25604,9 @@ const COUNTRIES = {
                 "rank": 28
             },
             "agriculture": {
-                "size": 1,
+                "size": 16.4,
                 "growth": 3.0,
-                "potential": 78,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -37173,7 +25617,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 146
+                "rank": 28
             },
             "automotive": {
                 "size": 21.3,
@@ -37240,9 +25684,9 @@ const COUNTRIES = {
                 "rank": 23
             },
             "tourism": {
-                "size": 20.4,
+                "size": 10.9,
                 "growth": 5.4,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -37253,7 +25697,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 11
+                "rank": 28
             },
             "education": {
                 "size": 7.2,
@@ -37270,102 +25714,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 48
-            },
-            "beauty": {
-                "size": 6.3,
-                "growth": 4.1,
-                "potential": 81,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "인플루언서 마케팅",
-                    "아시안 뷰티 트렌드"
-                ],
-                "risk": [
-                    "시장 포화 경쟁",
-                    "온라인 가격 경쟁",
-                    "과잉 경쟁"
-                ],
-                "rank": 24
-            },
-            "food": {
-                "size": 25.5,
-                "growth": 3.1,
-                "potential": 70,
-                "oppo": [
-                    "프리미엄 식품 시장",
-                    "푸드테크 성장",
-                    "한식/일식 인기"
-                ],
-                "risk": [
-                    "소비 트렌드 변화",
-                    "배달 플랫폼 수수료",
-                    "원가 상승"
-                ],
-                "rank": 29
-            },
-            "logistics": {
-                "size": 100.2,
-                "growth": 2.8,
-                "potential": 83,
-                "oppo": [
-                    "콜드체인 확대",
-                    "글로벌 공급망 허브",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "플랫폼 의존",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 10
-            },
-            "fashion": {
-                "size": 8,
-                "growth": 3.5,
-                "potential": 79,
-                "oppo": [
-                    "지속가능 패션",
-                    "디자이너 브랜드",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "패스트패션 포화",
-                    "지속가능성 압박"
-                ],
-                "rank": 31
-            },
-            "entertainment": {
-                "size": 10.6,
-                "growth": 6.4,
-                "potential": 74,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "콘텐츠 IP 수출",
-                    "웹툰/웹소설 성장"
-                ],
-                "risk": [
-                    "콘텐츠 규제",
-                    "플랫폼 과포화",
-                    "저작권 분쟁"
-                ],
-                "rank": 28
-            },
-            "construction": {
-                "size": 75.1,
-                "growth": 2.5,
-                "potential": 73,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "건설 테크 도입",
-                    "스마트시티 개발"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "환경 규제",
-                    "인력 부족"
-                ],
-                "rank": 19
             }
         },
         "gdp_growth_pct": 4.4,
@@ -37468,9 +25816,9 @@ const COUNTRIES = {
                 "rank": 141
             },
             "agriculture": {
-                "size": 2.0,
+                "size": 1,
                 "growth": 3.4,
-                "potential": 58,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -37481,7 +25829,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 116
+                "rank": 141
             },
             "automotive": {
                 "size": 1,
@@ -37561,7 +25909,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 136
+                "rank": 138
             },
             "education": {
                 "size": 1,
@@ -37578,102 +25926,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 136
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.9,
-                "potential": 41,
-                "oppo": [
-                    "직접 판매 채널",
-                    "기초 화장품 수요",
-                    "미개척 시장"
-                ],
-                "risk": [
-                    "인프라 부족",
-                    "유통 채널 미비",
-                    "디지털 채널 부재"
-                ],
-                "rank": 140
-            },
-            "food": {
-                "size": 0.3,
-                "growth": 5.4,
-                "potential": 49,
-                "oppo": [
-                    "식량 안보 투자",
-                    "전통 유통 채널",
-                    "기초 식품 가공"
-                ],
-                "risk": [
-                    "기후 변화 영향",
-                    "물류 인프라 부재",
-                    "유통 비효율"
-                ],
-                "rank": 149
-            },
-            "logistics": {
-                "size": 0.2,
-                "growth": 5.8,
-                "potential": 39,
-                "oppo": [
-                    "기본 물류 인프라",
-                    "물류 인프라 개발",
-                    "아프리카 내륙 물류"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "도로망 미비",
-                    "운송 비용"
-                ],
-                "rank": 149
-            },
-            "fashion": {
-                "size": 0.1,
-                "growth": 8.8,
-                "potential": 49,
-                "oppo": [
-                    "의류 제조 기지",
-                    "전통 시장 유통",
-                    "전통 의류 현대화"
-                ],
-                "risk": [
-                    "오프라인 한계",
-                    "원자재 수급",
-                    "기술력 부족"
-                ],
-                "rank": 146
-            },
-            "entertainment": {
-                "size": 0.1,
-                "growth": 8.7,
-                "potential": 35,
-                "oppo": [
-                    "모바일 콘텐츠 수요",
-                    "모바일 미디어 성장",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "대역폭 부족",
-                    "디지털 콘텐츠 접근 제한",
-                    "기본 인프라 부족"
-                ],
-                "rank": 146
-            },
-            "construction": {
-                "size": 0.6,
-                "growth": 6.9,
-                "potential": 47,
-                "oppo": [
-                    "노동집약 건설",
-                    "전통 건설 방식",
-                    "도로/수도 건설"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "기술 도입 지연",
-                    "자본 부족"
-                ],
-                "rank": 142
             }
         },
         "gdp_growth_pct": 4.3,
@@ -37776,7 +26028,7 @@ const COUNTRIES = {
                 "rank": 106
             },
             "agriculture": {
-                "size": 1.6,
+                "size": 1.1,
                 "growth": 2.2,
                 "potential": 73,
                 "oppo": [
@@ -37789,7 +26041,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 122
+                "rank": 104
             },
             "automotive": {
                 "size": 1.1,
@@ -37869,7 +26121,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 137
+                "rank": 139
             },
             "education": {
                 "size": 1,
@@ -37886,102 +26138,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 137
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 5.5,
-                "potential": 59,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "중산층 소비 증가",
-                    "뷰티 소비 증가"
-                ],
-                "risk": [
-                    "수입 관세",
-                    "환율 변동성",
-                    "수입 의존도"
-                ],
-                "rank": 95
-            },
-            "food": {
-                "size": 1.5,
-                "growth": 3.9,
-                "potential": 62,
-                "oppo": [
-                    "가공식품 시장 성장",
-                    "농산물 수출 강국",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "경쟁 심화",
-                    "원자재 가격 변동",
-                    "규제 환경"
-                ],
-                "rank": 103
-            },
-            "logistics": {
-                "size": 1.3,
-                "growth": 6,
-                "potential": 67,
-                "oppo": [
-                    "이커머스 물류 성장",
-                    "실시간 추적 시스템",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "도로 인프라 노후",
-                    "사이버 보안 리스크",
-                    "경쟁 심화"
-                ],
-                "rank": 95
-            },
-            "fashion": {
-                "size": 0.5,
-                "growth": 6,
-                "potential": 61,
-                "oppo": [
-                    "로컬 브랜드 성장",
-                    "온라인 패션 플랫폼",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "수입 경쟁",
-                    "환율 리스크",
-                    "온라인 반품률"
-                ],
-                "rank": 99
-            },
-            "entertainment": {
-                "size": 0.5,
-                "growth": 6,
-                "potential": 69,
-                "oppo": [
-                    "OTT 시장 확대",
-                    "라틴 콘텐츠 시장",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "콘텐츠 제작비 상승",
-                    "광고 시장 제한"
-                ],
-                "rank": 100
-            },
-            "construction": {
-                "size": 1.5,
-                "growth": 4.9,
-                "potential": 71,
-                "oppo": [
-                    "교통 인프라 투자",
-                    "주택 부족 해소",
-                    "도시화 인프라 수요"
-                ],
-                "risk": [
-                    "부동산 거품 리스크",
-                    "자재비 상승",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 112
             }
         },
         "gdp_growth_pct": 2.6,
@@ -38097,7 +26253,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 147
+                "rank": 142
             },
             "automotive": {
                 "size": 1,
@@ -38177,7 +26333,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 138
+                "rank": 140
             },
             "education": {
                 "size": 1,
@@ -38192,102 +26348,6 @@ const COUNTRIES = {
                     "기본 인프라 부재",
                     "자본 극심한 부족",
                     "교육 시스템 미비"
-                ],
-                "rank": 138
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 9.9,
-                "potential": 46,
-                "oppo": [
-                    "스킨케어 수요 증가",
-                    "직접 판매 채널",
-                    "아프리카 뷰티 시장 성장"
-                ],
-                "risk": [
-                    "유통 채널 미비",
-                    "유통 인프라 부재",
-                    "인프라 부족"
-                ],
-                "rank": 141
-            },
-            "food": {
-                "size": 0.5,
-                "growth": 6.8,
-                "potential": 55,
-                "oppo": [
-                    "농업 현대화",
-                    "지역 시장 활성화",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "물류 인프라 부재",
-                    "유통 비효율",
-                    "식량 안보 불안"
-                ],
-                "rank": 146
-            },
-            "logistics": {
-                "size": 0.4,
-                "growth": 5.7,
-                "potential": 42,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "물류 시장 형성",
-                    "기초 인프라 구축"
-                ],
-                "risk": [
-                    "정치적 불안정",
-                    "추적 시스템 부재",
-                    "국경 통과 지연"
-                ],
-                "rank": 144
-            },
-            "fashion": {
-                "size": 0.1,
-                "growth": 6.1,
-                "potential": 40,
-                "oppo": [
-                    "전통 시장 유통",
-                    "저비용 생산 기반",
-                    "섬유 산업 잠재력"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "오프라인 한계",
-                    "마케팅 제한"
-                ],
-                "rank": 147
-            },
-            "entertainment": {
-                "size": 0.1,
-                "growth": 9.4,
-                "potential": 36,
-                "oppo": [
-                    "기본 엔터테인먼트",
-                    "방송 미디어 발전",
-                    "모바일 미디어 성장"
-                ],
-                "risk": [
-                    "대역폭 부족",
-                    "콘텐츠 접근성",
-                    "수익 모델 미성숙"
-                ],
-                "rank": 147
-            },
-            "construction": {
-                "size": 0.8,
-                "growth": 5.5,
-                "potential": 46,
-                "oppo": [
-                    "아프리카 인프라 개발",
-                    "전통 건설 방식",
-                    "도로/수도 건설"
-                ],
-                "risk": [
-                    "기술 도입 지연",
-                    "자금 부족",
-                    "자본 부족"
                 ],
                 "rank": 138
             }
@@ -38391,7 +26451,7 @@ const COUNTRIES = {
                 "rank": 74
             },
             "agriculture": {
-                "size": 2.9,
+                "size": 2.7,
                 "growth": 2.8,
                 "potential": 75,
                 "oppo": [
@@ -38404,7 +26464,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 103
+                "rank": 75
             },
             "automotive": {
                 "size": 3.5,
@@ -38471,7 +26531,7 @@ const COUNTRIES = {
                 "rank": 76
             },
             "tourism": {
-                "size": 1.8,
+                "size": 2.3,
                 "growth": 5.2,
                 "potential": 79,
                 "oppo": [
@@ -38484,7 +26544,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 64
+                "rank": 60
             },
             "education": {
                 "size": 1.8,
@@ -38501,102 +26561,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 78
-            },
-            "beauty": {
-                "size": 0.8,
-                "growth": 6.3,
-                "potential": 70,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "이커머스 뷰티 판매",
-                    "유럽 프리미엄 시장"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "시장 포화",
-                    "브랜드 경쟁 심화"
-                ],
-                "rank": 71
-            },
-            "food": {
-                "size": 4.6,
-                "growth": 4.2,
-                "potential": 61,
-                "oppo": [
-                    "지역 특산품 브랜드화",
-                    "가공식품 시장 성장",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "배달 플랫폼 수수료",
-                    "식품 안전 이슈"
-                ],
-                "rank": 69
-            },
-            "logistics": {
-                "size": 2.9,
-                "growth": 5.3,
-                "potential": 69,
-                "oppo": [
-                    "이커머스 물류 성장",
-                    "크로스보더 물류",
-                    "물류 인프라 투자"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "경쟁 심화",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 75
-            },
-            "fashion": {
-                "size": 1.4,
-                "growth": 5.1,
-                "potential": 57,
-                "oppo": [
-                    "로컬 브랜드 성장",
-                    "유럽 패션 수도",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "원자재 비용",
-                    "온라인 반품률"
-                ],
-                "rank": 66
-            },
-            "entertainment": {
-                "size": 1.6,
-                "growth": 7.7,
-                "potential": 67,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "OTT 시장 확대",
-                    "문화 콘텐츠 다양성"
-                ],
-                "risk": [
-                    "콘텐츠 제작비 상승",
-                    "주의력 경쟁",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 74
-            },
-            "construction": {
-                "size": 6.7,
-                "growth": 6.3,
-                "potential": 60,
-                "oppo": [
-                    "교통 인프라 투자",
-                    "BIM 기술 활용",
-                    "리노베이션 시장"
-                ],
-                "risk": [
-                    "부동산 거품 리스크",
-                    "환경 규제 강화",
-                    "자재비 상승"
-                ],
-                "rank": 73
             }
         },
         "gdp_growth_pct": 3.9,
@@ -38699,9 +26663,9 @@ const COUNTRIES = {
                 "rank": 59
             },
             "agriculture": {
-                "size": 2.2,
+                "size": 4.2,
                 "growth": 2.0,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -38712,7 +26676,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 113
+                "rank": 61
             },
             "automotive": {
                 "size": 5.5,
@@ -38779,9 +26743,9 @@ const COUNTRIES = {
                 "rank": 60
             },
             "tourism": {
-                "size": 1.7,
+                "size": 3.7,
                 "growth": 4.4,
-                "potential": 81,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -38792,7 +26756,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 68
+                "rank": 45
             },
             "education": {
                 "size": 3.9,
@@ -38809,102 +26773,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 59
-            },
-            "beauty": {
-                "size": 1.4,
-                "growth": 4.5,
-                "potential": 82,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "유럽 프리미엄 시장",
-                    "프리미엄 뷰티 시장"
-                ],
-                "risk": [
-                    "규제 강화",
-                    "엄격한 규제",
-                    "온라인 가격 경쟁"
-                ],
-                "rank": 56
-            },
-            "food": {
-                "size": 6.7,
-                "growth": 2.5,
-                "potential": 75,
-                "oppo": [
-                    "건강식품 트렌드",
-                    "푸드테크 성장",
-                    "유기농 수요 증가"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "소비 트렌드 변화",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 59
-            },
-            "logistics": {
-                "size": 6.7,
-                "growth": 3.7,
-                "potential": 76,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "콜드체인 확대",
-                    "디지털 물류 플랫폼"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "환경 규제",
-                    "자동화 투자 부담"
-                ],
-                "rank": 57
-            },
-            "fashion": {
-                "size": 1.9,
-                "growth": 3.2,
-                "potential": 77,
-                "oppo": [
-                    "유럽 패션 수도",
-                    "지속가능 패션",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "지속가능성 압박",
-                    "온라인 반품률",
-                    "패스트패션 비판"
-                ],
-                "rank": 59
-            },
-            "entertainment": {
-                "size": 2.9,
-                "growth": 6.1,
-                "potential": 78,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "문화 콘텐츠 다양성",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "저작권 분쟁",
-                    "콘텐츠 과잉 공급",
-                    "시장 분절"
-                ],
-                "rank": 58
-            },
-            "construction": {
-                "size": 4.4,
-                "growth": 2.3,
-                "potential": 68,
-                "oppo": [
-                    "그린빌딩 트렌드",
-                    "건설 테크 도입",
-                    "스마트시티 개발"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "인허가 절차",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 84
             }
         },
         "gdp_growth_pct": 1.9,
@@ -39007,9 +26875,9 @@ const COUNTRIES = {
                 "rank": 82
             },
             "agriculture": {
-                "size": 1.1,
+                "size": 2.2,
                 "growth": 1.9,
-                "potential": 76,
+                "potential": 77,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -39020,7 +26888,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 131
+                "rank": 86
             },
             "automotive": {
                 "size": 2.8,
@@ -39087,7 +26955,7 @@ const COUNTRIES = {
                 "rank": 85
             },
             "tourism": {
-                "size": 1.8,
+                "size": 1.9,
                 "growth": 4.3,
                 "potential": 81,
                 "oppo": [
@@ -39100,7 +26968,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 65
+                "rank": 66
             },
             "education": {
                 "size": 2.3,
@@ -39117,102 +26985,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 70
-            },
-            "beauty": {
-                "size": 0.7,
-                "growth": 5,
-                "potential": 78,
-                "oppo": [
-                    "클린 뷰티 트렌드",
-                    "안티에이징 수요 증가",
-                    "천연 화장품 수요"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "시장 포화 경쟁",
-                    "규제 강화"
-                ],
-                "rank": 74
-            },
-            "food": {
-                "size": 3.2,
-                "growth": 2.8,
-                "potential": 71,
-                "oppo": [
-                    "푸드테크 성장",
-                    "유럽 식품 규제 대응",
-                    "건강식품 트렌드"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "식품 안전 규제",
-                    "온라인 경쟁"
-                ],
-                "rank": 85
-            },
-            "logistics": {
-                "size": 3.4,
-                "growth": 3.8,
-                "potential": 76,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "첨단 물류 자동화",
-                    "콜드체인 확대"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "국경 통관",
-                    "플랫폼 의존"
-                ],
-                "rank": 68
-            },
-            "fashion": {
-                "size": 1,
-                "growth": 4.1,
-                "potential": 69,
-                "oppo": [
-                    "디자이너 브랜드",
-                    "지속가능 패션",
-                    "럭셔리 패션 시장"
-                ],
-                "risk": [
-                    "패스트패션 비판",
-                    "온라인 반품률",
-                    "인건비 상승"
-                ],
-                "rank": 80
-            },
-            "entertainment": {
-                "size": 1.6,
-                "growth": 5.9,
-                "potential": 70,
-                "oppo": [
-                    "디지털 콘텐츠 유통",
-                    "OTT 플랫폼 확대",
-                    "스트리밍 시장 성장"
-                ],
-                "risk": [
-                    "콘텐츠 과잉 공급",
-                    "플랫폼 과포화",
-                    "시장 분절"
-                ],
-                "rank": 75
-            },
-            "construction": {
-                "size": 2.1,
-                "growth": 2.5,
-                "potential": 65,
-                "oppo": [
-                    "인프라 현대화",
-                    "스마트시티 개발",
-                    "친환경 건축"
-                ],
-                "risk": [
-                    "인허가 절차",
-                    "디지털 전환 비용",
-                    "인건비 상승"
-                ],
-                "rank": 107
             }
         },
         "gdp_growth_pct": 1.7,
@@ -39235,7 +27007,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 30.9,
+                "size": 30.2,
                 "growth": 4.5,
                 "potential": 85,
                 "oppo": [
@@ -39315,9 +27087,9 @@ const COUNTRIES = {
                 "rank": 24
             },
             "agriculture": {
-                "size": 8.6,
+                "size": 18.1,
                 "growth": 1.5,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -39328,7 +27100,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 61
+                "rank": 26
             },
             "automotive": {
                 "size": 23.5,
@@ -39425,102 +27197,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 19
-            },
-            "beauty": {
-                "size": 6.3,
-                "growth": 3.9,
-                "potential": 73,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "이커머스 뷰티 판매",
-                    "클린 뷰티 트렌드"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "소비자 트렌드 변화",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 25
-            },
-            "food": {
-                "size": 23.4,
-                "growth": 3.7,
-                "potential": 75,
-                "oppo": [
-                    "유기농 수요 증가",
-                    "건강식품 트렌드",
-                    "온라인 푸드 배달"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "식품 안전 규제",
-                    "소비 트렌드 변화"
-                ],
-                "rank": 31
-            },
-            "logistics": {
-                "size": 23.9,
-                "growth": 4.2,
-                "potential": 68,
-                "oppo": [
-                    "라스트마일 혁신",
-                    "디지털 물류 플랫폼",
-                    "유럽 물류 허브"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "국경 통관",
-                    "인건비 상승"
-                ],
-                "rank": 29
-            },
-            "fashion": {
-                "size": 11.9,
-                "growth": 3.6,
-                "potential": 66,
-                "oppo": [
-                    "럭셔리 패션 시장",
-                    "디자이너 브랜드",
-                    "유럽 패션 수도"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "인건비 상승",
-                    "가격 투명성"
-                ],
-                "rank": 23
-            },
-            "entertainment": {
-                "size": 17.1,
-                "growth": 4.7,
-                "potential": 82,
-                "oppo": [
-                    "유럽 콘텐츠 시장",
-                    "콘텐츠 IP 수출",
-                    "게임 산업 확대"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "콘텐츠 과잉 공급",
-                    "주의력 경쟁"
-                ],
-                "rank": 22
-            },
-            "construction": {
-                "size": 18.7,
-                "growth": 2.4,
-                "potential": 74,
-                "oppo": [
-                    "스마트시티 개발",
-                    "그린빌딩 트렌드",
-                    "인프라 현대화"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "디지털 전환 비용",
-                    "인허가 절차"
-                ],
-                "rank": 40
             }
         },
         "gdp_growth_pct": 0.8,
@@ -39623,9 +27299,9 @@ const COUNTRIES = {
                 "rank": 143
             },
             "agriculture": {
-                "size": 10.2,
+                "size": 1,
                 "growth": 2.0,
-                "potential": 57,
+                "potential": 54,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -39636,7 +27312,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 55
+                "rank": 143
             },
             "automotive": {
                 "size": 1,
@@ -39716,7 +27392,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 139
+                "rank": 141
             },
             "education": {
                 "size": 1,
@@ -39733,102 +27409,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 139
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 6.1,
-                "potential": 43,
-                "oppo": [
-                    "기초 화장품 수요",
-                    "직접 판매 채널",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "소비력 극히 제한",
-                    "문화적 제약",
-                    "할랄 인증 필요"
-                ],
-                "rank": 142
-            },
-            "food": {
-                "size": 1.2,
-                "growth": 5,
-                "potential": 54,
-                "oppo": [
-                    "전통 유통 채널",
-                    "지역 시장 활성화",
-                    "농업 현대화"
-                ],
-                "risk": [
-                    "할랄 인증 요구",
-                    "기후 변화 영향",
-                    "식량 안보 불안"
-                ],
-                "rank": 112
-            },
-            "logistics": {
-                "size": 0.5,
-                "growth": 6.7,
-                "potential": 44,
-                "oppo": [
-                    "기초 인프라 구축",
-                    "운송 네트워크 개발",
-                    "운송 네트워크 확장"
-                ],
-                "risk": [
-                    "디지털 전환 지연",
-                    "지정학적 리스크",
-                    "운송 비용"
-                ],
-                "rank": 137
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 7.2,
-                "potential": 41,
-                "oppo": [
-                    "럭셔리 소비",
-                    "저비용 생산 기반",
-                    "모데스트 패션 시장"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "소비력 부족",
-                    "원자재 수급"
-                ],
-                "rank": 120
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 6.3,
-                "potential": 36,
-                "oppo": [
-                    "방송 미디어 발전",
-                    "아랍어 콘텐츠 수요",
-                    "기본 엔터테인먼트"
-                ],
-                "risk": [
-                    "소비력 제한",
-                    "콘텐츠 검열",
-                    "대역폭 부족"
-                ],
-                "rank": 138
-            },
-            "construction": {
-                "size": 0.7,
-                "growth": 8.3,
-                "potential": 44,
-                "oppo": [
-                    "노동집약 건설",
-                    "도로/수도 건설",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "정치적 불안정",
-                    "프로젝트 지연"
-                ],
-                "rank": 140
             }
         },
         "gdp_growth_pct": 0.7,
@@ -39931,9 +27511,9 @@ const COUNTRIES = {
                 "rank": 144
             },
             "agriculture": {
-                "size": 7.4,
+                "size": 1,
                 "growth": 3.4,
-                "potential": 59,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -39944,7 +27524,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 65
+                "rank": 144
             },
             "automotive": {
                 "size": 1,
@@ -40024,7 +27604,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 140
+                "rank": 142
             },
             "education": {
                 "size": 1,
@@ -40041,102 +27621,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 140
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 7.8,
-                "potential": 52,
-                "oppo": [
-                    "스킨케어 수요 증가",
-                    "미개척 시장",
-                    "직접 판매 채널"
-                ],
-                "risk": [
-                    "디지털 채널 부재",
-                    "소비력 극히 제한",
-                    "유통 인프라 부재"
-                ],
-                "rank": 120
-            },
-            "food": {
-                "size": 0.9,
-                "growth": 5.9,
-                "potential": 50,
-                "oppo": [
-                    "전통 유통 채널",
-                    "기초 식품 가공",
-                    "농업 현대화 기회"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "유통 비효율",
-                    "인프라 미비"
-                ],
-                "rank": 122
-            },
-            "logistics": {
-                "size": 0.6,
-                "growth": 8,
-                "potential": 36,
-                "oppo": [
-                    "아프리카 내륙 물류",
-                    "기본 물류 인프라",
-                    "물류 인프라 개발"
-                ],
-                "risk": [
-                    "운송 비용",
-                    "정치적 불안정",
-                    "도로망 미비"
-                ],
-                "rank": 125
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 7.2,
-                "potential": 49,
-                "oppo": [
-                    "도매 시장 성장",
-                    "저비용 생산 기반",
-                    "아프리카 패션 부상"
-                ],
-                "risk": [
-                    "원자재 수급",
-                    "소비력 부족",
-                    "기술력 부족"
-                ],
-                "rank": 125
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 6.3,
-                "potential": 33,
-                "oppo": [
-                    "라디오/TV 보급",
-                    "방송 미디어 발전",
-                    "모바일 콘텐츠 수요"
-                ],
-                "risk": [
-                    "수익 모델 미성숙",
-                    "디지털 콘텐츠 접근 제한",
-                    "소비력 제한"
-                ],
-                "rank": 125
-            },
-            "construction": {
-                "size": 1.4,
-                "growth": 5.6,
-                "potential": 56,
-                "oppo": [
-                    "도로/수도 건설",
-                    "기본 인프라 구축",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "자본 부족",
-                    "기술 인력 부재",
-                    "정치적 불안정"
-                ],
-                "rank": 116
             }
         },
         "gdp_growth_pct": 4.2,
@@ -40239,9 +27723,9 @@ const COUNTRIES = {
                 "rank": 145
             },
             "agriculture": {
-                "size": 2.3,
+                "size": 1,
                 "growth": 4.3,
-                "potential": 60,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -40252,7 +27736,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 111
+                "rank": 145
             },
             "automotive": {
                 "size": 1,
@@ -40332,7 +27816,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 141
+                "rank": 143
             },
             "education": {
                 "size": 1,
@@ -40349,102 +27833,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 141
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 8.9,
-                "potential": 46,
-                "oppo": [
-                    "미개척 시장",
-                    "아프리카 뷰티 시장 성장",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "유통 인프라 부재",
-                    "인프라 부족",
-                    "유통 채널 미비"
-                ],
-                "rank": 144
-            },
-            "food": {
-                "size": 0.5,
-                "growth": 7.1,
-                "potential": 45,
-                "oppo": [
-                    "기초 식품 가공",
-                    "식량 안보 투자",
-                    "전통 유통 채널"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "마케팅 제한",
-                    "인프라 미비"
-                ],
-                "rank": 147
-            },
-            "logistics": {
-                "size": 0.3,
-                "growth": 5.8,
-                "potential": 38,
-                "oppo": [
-                    "운송 네트워크 확장",
-                    "기본 물류 인프라",
-                    "운송 네트워크 개발"
-                ],
-                "risk": [
-                    "정치적 불안정",
-                    "디지털 전환 지연",
-                    "추적 시스템 부재"
-                ],
-                "rank": 147
-            },
-            "fashion": {
-                "size": 0.1,
-                "growth": 8.1,
-                "potential": 49,
-                "oppo": [
-                    "아프리카 패션 부상",
-                    "섬유 산업 잠재력",
-                    "의류 제조 기지"
-                ],
-                "risk": [
-                    "원자재 수급",
-                    "마케팅 제한",
-                    "유통 한계"
-                ],
-                "rank": 148
-            },
-            "entertainment": {
-                "size": 0.1,
-                "growth": 6.3,
-                "potential": 42,
-                "oppo": [
-                    "기본 엔터테인먼트",
-                    "모바일 미디어 성장",
-                    "라디오/TV 보급"
-                ],
-                "risk": [
-                    "인프라 부족",
-                    "대역폭 부족",
-                    "수익 모델 미성숙"
-                ],
-                "rank": 148
-            },
-            "construction": {
-                "size": 1.3,
-                "growth": 10.1,
-                "potential": 57,
-                "oppo": [
-                    "전통 건설 방식",
-                    "국제 개발 원조",
-                    "국제 개발 프로젝트"
-                ],
-                "risk": [
-                    "자금 부족",
-                    "기술 도입 지연",
-                    "기술 인력 부재"
-                ],
-                "rank": 124
             }
         },
         "gdp_growth_pct": 6.5,
@@ -40480,7 +27868,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 24
+                "rank": 23
             },
             "manufacturing": {
                 "size": 205.0,
@@ -40547,9 +27935,9 @@ const COUNTRIES = {
                 "rank": 31
             },
             "agriculture": {
-                "size": 45.9,
+                "size": 15.8,
                 "growth": 2.2,
-                "potential": 77,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -40560,7 +27948,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 18
+                "rank": 31
             },
             "automotive": {
                 "size": 20.5,
@@ -40627,9 +28015,9 @@ const COUNTRIES = {
                 "rank": 25
             },
             "tourism": {
-                "size": 15.4,
+                "size": 10.5,
                 "growth": 4.6,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -40640,7 +28028,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 17
+                "rank": 29
             },
             "education": {
                 "size": 8.0,
@@ -40657,102 +28045,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 44
-            },
-            "beauty": {
-                "size": 6.3,
-                "growth": 7,
-                "potential": 64,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "K-뷰티 수요 확대",
-                    "이커머스 뷰티 판매"
-                ],
-                "risk": [
-                    "트렌드 변화 빠름",
-                    "온라인 가격 경쟁",
-                    "품질 규제"
-                ],
-                "rank": 26
-            },
-            "food": {
-                "size": 40.7,
-                "growth": 4.3,
-                "potential": 65,
-                "oppo": [
-                    "식품 안전 의식 증가",
-                    "푸드테크 성장",
-                    "한식/일식 인기"
-                ],
-                "risk": [
-                    "식품 안전 이슈",
-                    "식품 안전 우려",
-                    "경쟁 심화"
-                ],
-                "rank": 23
-            },
-            "logistics": {
-                "size": 27.9,
-                "growth": 4.1,
-                "potential": 64,
-                "oppo": [
-                    "이커머스 물류 성장",
-                    "물류 인프라 투자",
-                    "글로벌 공급망 허브"
-                ],
-                "risk": [
-                    "항만 혼잡",
-                    "플랫폼 의존",
-                    "사이버 보안 리스크"
-                ],
-                "rank": 28
-            },
-            "fashion": {
-                "size": 9.9,
-                "growth": 6.3,
-                "potential": 63,
-                "oppo": [
-                    "패스트패션 성장",
-                    "SNS 패션 마케팅",
-                    "로컬 브랜드 성장"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "트렌드 변화",
-                    "가격 투명성"
-                ],
-                "rank": 26
-            },
-            "entertainment": {
-                "size": 12.9,
-                "growth": 7,
-                "potential": 69,
-                "oppo": [
-                    "웹툰/웹소설 성장",
-                    "한류 콘텐츠 수출",
-                    "게임 시장 성장"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "플랫폼 경쟁",
-                    "불법 복제"
-                ],
-                "rank": 23
-            },
-            "construction": {
-                "size": 50.4,
-                "growth": 5.8,
-                "potential": 64,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "주택 건설 확대",
-                    "메가시티 개발"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "부동산 과열 리스크",
-                    "디지털 전환 비용"
-                ],
-                "rank": 24
             }
         },
         "gdp_growth_pct": 2.5,
@@ -40855,9 +28147,9 @@ const COUNTRIES = {
                 "rank": 146
             },
             "agriculture": {
-                "size": 3.2,
+                "size": 1,
                 "growth": 5.1,
-                "potential": 74,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -40868,7 +28160,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 102
+                "rank": 146
             },
             "automotive": {
                 "size": 1,
@@ -40948,7 +28240,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 142
+                "rank": 144
             },
             "education": {
                 "size": 1,
@@ -40965,102 +28257,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 142
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 5.8,
-                "potential": 51,
-                "oppo": [
-                    "젊은 인구 수요",
-                    "직접 판매 채널",
-                    "뷰티 시장 초기 성장"
-                ],
-                "risk": [
-                    "위조품 문제",
-                    "엄격한 규제",
-                    "디지털 채널 부재"
-                ],
-                "rank": 143
-            },
-            "food": {
-                "size": 0.6,
-                "growth": 5.9,
-                "potential": 60,
-                "oppo": [
-                    "유럽 식품 규제 대응",
-                    "농산물 부가가치화",
-                    "식품 가공업 발전"
-                ],
-                "risk": [
-                    "유통 비효율",
-                    "콜드체인 부족",
-                    "높은 인건비"
-                ],
-                "rank": 143
-            },
-            "logistics": {
-                "size": 0.4,
-                "growth": 5.4,
-                "potential": 58,
-                "oppo": [
-                    "창고업 현대화",
-                    "물류 인프라 구축",
-                    "크로스보더 물류"
-                ],
-                "risk": [
-                    "도로 인프라 부족",
-                    "국경 통관",
-                    "통관 지연"
-                ],
-                "rank": 145
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 6,
-                "potential": 57,
-                "oppo": [
-                    "내수 패션 시장 성장",
-                    "도매 시장 성장",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "노동 환경 이슈",
-                    "품질 관리"
-                ],
-                "rank": 138
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 5.9,
-                "potential": 54,
-                "oppo": [
-                    "문화 콘텐츠 다양성",
-                    "방송 미디어 발전",
-                    "미디어 디지털화"
-                ],
-                "risk": [
-                    "제작 인프라 부족",
-                    "언어 장벽",
-                    "저작권 보호 미흡"
-                ],
-                "rank": 139
-            },
-            "construction": {
-                "size": 1.5,
-                "growth": 9.6,
-                "potential": 58,
-                "oppo": [
-                    "도시화 가속",
-                    "리노베이션 시장",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "관리 비효율",
-                    "기술 도입 지연",
-                    "기술력 부족"
-                ],
-                "rank": 115
             }
         },
         "gdp_growth_pct": 8.4,
@@ -41162,9 +28358,9 @@ const COUNTRIES = {
                 "rank": 87
             },
             "agriculture": {
-                "size": 6.3,
+                "size": 1.5,
                 "growth": 3.7,
-                "potential": 78,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -41175,7 +28371,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 72
+                "rank": 94
             },
             "automotive": {
                 "size": 2.0,
@@ -41255,7 +28451,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 75
+                "rank": 79
             },
             "education": {
                 "size": 1,
@@ -41272,102 +28468,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 143
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 7.1,
-                "potential": 65,
-                "oppo": [
-                    "오프라인 유통 기회",
-                    "천연 화장품 수요",
-                    "온라인 뷰티 성장"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "수입 의존도",
-                    "브랜드 경쟁 심화"
-                ],
-                "rank": 90
-            },
-            "food": {
-                "size": 2.6,
-                "growth": 4.1,
-                "potential": 70,
-                "oppo": [
-                    "식품 안전 의식 증가",
-                    "가공식품 시장 성장",
-                    "유럽 식품 규제 대응"
-                ],
-                "risk": [
-                    "식품 안전 이슈",
-                    "높은 인건비",
-                    "마케팅 제한"
-                ],
-                "rank": 88
-            },
-            "logistics": {
-                "size": 1.1,
-                "growth": 4.2,
-                "potential": 60,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "크로스보더 물류",
-                    "항만 현대화"
-                ],
-                "risk": [
-                    "규제 복잡성",
-                    "인프라 병목",
-                    "경쟁 심화"
-                ],
-                "rank": 105
-            },
-            "fashion": {
-                "size": 0.6,
-                "growth": 4.5,
-                "potential": 62,
-                "oppo": [
-                    "도매 시장 성장",
-                    "로컬 브랜드 성장",
-                    "온라인 패션 확대"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "마케팅 제한",
-                    "오프라인 한계"
-                ],
-                "rank": 95
-            },
-            "entertainment": {
-                "size": 0.5,
-                "growth": 6.3,
-                "potential": 57,
-                "oppo": [
-                    "게임 시장 성장",
-                    "모바일 콘텐츠",
-                    "문화 콘텐츠 다양성"
-                ],
-                "risk": [
-                    "시장 분절",
-                    "언어 장벽",
-                    "콘텐츠 제작비 상승"
-                ],
-                "rank": 105
-            },
-            "construction": {
-                "size": 5.2,
-                "growth": 7.9,
-                "potential": 68,
-                "oppo": [
-                    "도시화 인프라 수요",
-                    "친환경 건축",
-                    "교통 인프라 투자"
-                ],
-                "risk": [
-                    "인력 부족",
-                    "환경 규제 강화",
-                    "관리 비효율"
-                ],
-                "rank": 79
             }
         },
         "gdp_growth_pct": 6.3,
@@ -41481,7 +28581,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 148
+                "rank": 147
             },
             "automotive": {
                 "size": 1,
@@ -41561,7 +28661,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 143
+                "rank": 145
             },
             "education": {
                 "size": 1,
@@ -41578,102 +28678,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 144
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 4.9,
-                "potential": 72,
-                "oppo": [
-                    "프리미엄 뷰티 시장",
-                    "인플루언서 마케팅",
-                    "자연 원료 활용"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "소비자 트렌드 변화",
-                    "시장 포화 경쟁"
-                ],
-                "rank": 113
-            },
-            "food": {
-                "size": 1.2,
-                "growth": 3,
-                "potential": 71,
-                "oppo": [
-                    "식품 가공 산업",
-                    "농산물 수출 강국",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "소비 트렌드 변화",
-                    "식품 안전 규제",
-                    "규제 환경"
-                ],
-                "rank": 113
-            },
-            "logistics": {
-                "size": 0.7,
-                "growth": 2.9,
-                "potential": 74,
-                "oppo": [
-                    "실시간 추적 시스템",
-                    "농산물 물류",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "세관 절차",
-                    "환경 규제",
-                    "플랫폼 의존"
-                ],
-                "rank": 122
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 3.1,
-                "potential": 74,
-                "oppo": [
-                    "SNS 패션 마케팅",
-                    "온라인 패션 플랫폼",
-                    "라틴 패션 트렌드"
-                ],
-                "risk": [
-                    "수입 경쟁",
-                    "시장 포화",
-                    "지속가능성 압박"
-                ],
-                "rank": 121
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 6.5,
-                "potential": 80,
-                "oppo": [
-                    "라틴 콘텐츠 시장",
-                    "스페인어 콘텐츠",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "플랫폼 경쟁",
-                    "불법 복제"
-                ],
-                "rank": 114
-            },
-            "construction": {
-                "size": 1.1,
-                "growth": 3.4,
-                "potential": 71,
-                "oppo": [
-                    "건설 테크 도입",
-                    "주택 부족 해소",
-                    "그린빌딩 트렌드"
-                ],
-                "risk": [
-                    "정치적 불안정",
-                    "환경 규제",
-                    "디지털 전환 비용"
-                ],
-                "rank": 129
             }
         },
         "gdp_growth_pct": 2.5,
@@ -41775,9 +28779,9 @@ const COUNTRIES = {
                 "rank": 92
             },
             "agriculture": {
-                "size": 5.0,
+                "size": 1.5,
                 "growth": 2.3,
-                "potential": 69,
+                "potential": 67,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -41788,7 +28792,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 86
+                "rank": 95
             },
             "automotive": {
                 "size": 1.5,
@@ -41868,7 +28872,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 144
+                "rank": 146
             },
             "education": {
                 "size": 2.1,
@@ -41885,102 +28889,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 76
-            },
-            "beauty": {
-                "size": 0.3,
-                "growth": 6.9,
-                "potential": 55,
-                "oppo": [
-                    "인플루언서 마케팅",
-                    "뷰티 시장 초기 성장",
-                    "프리미엄 뷰티 수요"
-                ],
-                "risk": [
-                    "유통 인프라 부족",
-                    "위조품 문제",
-                    "문화적 제약"
-                ],
-                "rank": 100
-            },
-            "food": {
-                "size": 2.1,
-                "growth": 4.9,
-                "potential": 62,
-                "oppo": [
-                    "푸드테크 성장",
-                    "할랄 식품 시장",
-                    "식품 가공업 발전"
-                ],
-                "risk": [
-                    "위생 관리 어려움",
-                    "할랄 인증 요구",
-                    "배달 플랫폼 수수료"
-                ],
-                "rank": 97
-            },
-            "logistics": {
-                "size": 1.6,
-                "growth": 7.1,
-                "potential": 57,
-                "oppo": [
-                    "중계 무역 허브",
-                    "디지털 물류 플랫폼",
-                    "창고업 현대화"
-                ],
-                "risk": [
-                    "사이버 보안 리스크",
-                    "지정학적 리스크",
-                    "도로 인프라 부족"
-                ],
-                "rank": 94
-            },
-            "fashion": {
-                "size": 0.6,
-                "growth": 5.8,
-                "potential": 46,
-                "oppo": [
-                    "모데스트 패션 시장",
-                    "SNS 패션 마케팅",
-                    "OEM/ODM 기회"
-                ],
-                "risk": [
-                    "품질 관리",
-                    "문화적 제약",
-                    "저가 경쟁"
-                ],
-                "rank": 94
-            },
-            "entertainment": {
-                "size": 0.7,
-                "growth": 8,
-                "potential": 56,
-                "oppo": [
-                    "미디어 디지털화",
-                    "콘텐츠 소비 증가",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "저작권 보호 미흡",
-                    "플랫폼 과포화",
-                    "제작 인프라 부족"
-                ],
-                "rank": 96
-            },
-            "construction": {
-                "size": 1.4,
-                "growth": 7.4,
-                "potential": 56,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "주택 수요 증가",
-                    "도시화 가속"
-                ],
-                "risk": [
-                    "프로젝트 지연",
-                    "디지털 전환 비용",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 118
             }
         },
         "gdp_growth_pct": 1.6,
@@ -42083,9 +28991,9 @@ const COUNTRIES = {
                 "rank": 16
             },
             "agriculture": {
-                "size": 79.1,
+                "size": 40.8,
                 "growth": 2.5,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -42096,7 +29004,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 8
+                "rank": 17
             },
             "automotive": {
                 "size": 53.0,
@@ -42163,7 +29071,7 @@ const COUNTRIES = {
                 "rank": 17
             },
             "tourism": {
-                "size": 17.9,
+                "size": 35.3,
                 "growth": 4.9,
                 "potential": 82,
                 "oppo": [
@@ -42176,7 +29084,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 15
+                "rank": 8
             },
             "education": {
                 "size": 25.2,
@@ -42193,102 +29101,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 21
-            },
-            "beauty": {
-                "size": 12.3,
-                "growth": 6.8,
-                "potential": 58,
-                "oppo": [
-                    "천연 화장품 수요",
-                    "K-뷰티 수요 확대",
-                    "중산층 소비 증가"
-                ],
-                "risk": [
-                    "품질 규제",
-                    "온라인 가격 경쟁",
-                    "시장 포화"
-                ],
-                "rank": 19
-            },
-            "food": {
-                "size": 100.5,
-                "growth": 4.8,
-                "potential": 64,
-                "oppo": [
-                    "식품 안전 의식 증가",
-                    "외식 산업 확대",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "식품 안전 이슈",
-                    "배달 플랫폼 수수료",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 16
-            },
-            "logistics": {
-                "size": 62,
-                "growth": 5,
-                "potential": 64,
-                "oppo": [
-                    "유럽 물류 허브",
-                    "물류 인프라 투자",
-                    "항만 현대화"
-                ],
-                "risk": [
-                    "규제 복잡성",
-                    "국경 통관",
-                    "플랫폼 의존"
-                ],
-                "rank": 16
-            },
-            "fashion": {
-                "size": 32.7,
-                "growth": 5.4,
-                "potential": 74,
-                "oppo": [
-                    "온라인 패션 플랫폼",
-                    "SNS 패션 마케팅",
-                    "온라인 패션 확대"
-                ],
-                "risk": [
-                    "지속가능성 규제",
-                    "트렌드 변화",
-                    "가격 투명성"
-                ],
-                "rank": 13
-            },
-            "entertainment": {
-                "size": 25.3,
-                "growth": 6.8,
-                "potential": 69,
-                "oppo": [
-                    "OTT 시장 확대",
-                    "문화 콘텐츠 다양성",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "불법 복제",
-                    "언어 장벽"
-                ],
-                "rank": 18
-            },
-            "construction": {
-                "size": 182.8,
-                "growth": 4.5,
-                "potential": 73,
-                "oppo": [
-                    "리노베이션 시장",
-                    "도시화 인프라 수요",
-                    "BIM 기술 활용"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "디지털 전환 비용",
-                    "인력 부족"
-                ],
-                "rank": 7
             }
         },
         "gdp_growth_pct": 3.3,
@@ -42391,9 +29203,9 @@ const COUNTRIES = {
                 "rank": 83
             },
             "agriculture": {
-                "size": 18.4,
+                "size": 2.4,
                 "growth": 3.9,
-                "potential": 74,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -42404,7 +29216,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 38
+                "rank": 80
             },
             "automotive": {
                 "size": 2.4,
@@ -42471,9 +29283,9 @@ const COUNTRIES = {
                 "rank": 81
             },
             "tourism": {
-                "size": 2.6,
+                "size": 1.6,
                 "growth": 6.3,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -42484,7 +29296,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 49
+                "rank": 72
             },
             "education": {
                 "size": 1.5,
@@ -42501,102 +29313,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 82
-            },
-            "beauty": {
-                "size": 0.5,
-                "growth": 7.5,
-                "potential": 55,
-                "oppo": [
-                    "오프라인 유통 기회",
-                    "아프리카 뷰티 시장 성장",
-                    "성장하는 중산층"
-                ],
-                "risk": [
-                    "위조품 문제",
-                    "유통 인프라 부재",
-                    "마케팅 도달 제한"
-                ],
-                "rank": 81
-            },
-            "food": {
-                "size": 3.7,
-                "growth": 5.8,
-                "potential": 56,
-                "oppo": [
-                    "농업 현대화 기회",
-                    "지역 시장 활성화",
-                    "전통 유통 채널"
-                ],
-                "risk": [
-                    "마케팅 제한",
-                    "물류 인프라 부재",
-                    "물류 비용"
-                ],
-                "rank": 81
-            },
-            "logistics": {
-                "size": 2.2,
-                "growth": 5.2,
-                "potential": 47,
-                "oppo": [
-                    "물류 인프라 개발",
-                    "창고업 현대화",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "디지털 전환 지연",
-                    "통관 지연",
-                    "물류비 높음"
-                ],
-                "rank": 86
-            },
-            "fashion": {
-                "size": 0.7,
-                "growth": 6.2,
-                "potential": 52,
-                "oppo": [
-                    "전통 시장 유통",
-                    "아프리카 패션 부상",
-                    "도매 시장 성장"
-                ],
-                "risk": [
-                    "저가 경쟁",
-                    "수입 의존도",
-                    "유통 한계"
-                ],
-                "rank": 90
-            },
-            "entertainment": {
-                "size": 0.6,
-                "growth": 7.1,
-                "potential": 49,
-                "oppo": [
-                    "모바일 콘텐츠 수요",
-                    "콘텐츠 소비 증가",
-                    "놀리우드 성장"
-                ],
-                "risk": [
-                    "대역폭 부족",
-                    "저작권 보호 미흡",
-                    "수익 모델 한계"
-                ],
-                "rank": 99
-            },
-            "construction": {
-                "size": 7.3,
-                "growth": 9,
-                "potential": 52,
-                "oppo": [
-                    "국제 개발 프로젝트",
-                    "기초 인프라 건설",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "안전 관리",
-                    "기술 인력 부재",
-                    "관리 비효율"
-                ],
-                "rank": 66
             }
         },
         "gdp_growth_pct": 5.5,
@@ -42699,9 +29415,9 @@ const COUNTRIES = {
                 "rank": 89
             },
             "agriculture": {
-                "size": 13.3,
+                "size": 1.6,
                 "growth": 4.1,
-                "potential": 62,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -42712,7 +29428,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 46
+                "rank": 91
             },
             "automotive": {
                 "size": 1.6,
@@ -42779,7 +29495,7 @@ const COUNTRIES = {
                 "rank": 91
             },
             "tourism": {
-                "size": 1,
+                "size": 1.1,
                 "growth": 6.5,
                 "potential": 63,
                 "oppo": [
@@ -42792,7 +29508,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 145
+                "rank": 84
             },
             "education": {
                 "size": 1,
@@ -42809,102 +29525,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 145
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 7.4,
-                "potential": 45,
-                "oppo": [
-                    "스킨케어 수요 증가",
-                    "직접 판매 채널",
-                    "기초 화장품 수요"
-                ],
-                "risk": [
-                    "디지털 채널 부재",
-                    "소비력 부족",
-                    "소비력 극히 제한"
-                ],
-                "rank": 114
-            },
-            "food": {
-                "size": 2.3,
-                "growth": 7.4,
-                "potential": 50,
-                "oppo": [
-                    "농업 현대화",
-                    "기초 식품 가공",
-                    "전통 유통 채널"
-                ],
-                "risk": [
-                    "물류 인프라 부재",
-                    "식량 안보 불안",
-                    "기후 변화 영향"
-                ],
-                "rank": 92
-            },
-            "logistics": {
-                "size": 1.1,
-                "growth": 5.5,
-                "potential": 47,
-                "oppo": [
-                    "아프리카 내륙 물류",
-                    "물류 시장 형성",
-                    "운송 네트워크 확장"
-                ],
-                "risk": [
-                    "운송 비용",
-                    "추적 시스템 부재",
-                    "도로망 미비"
-                ],
-                "rank": 106
-            },
-            "fashion": {
-                "size": 0.5,
-                "growth": 7.2,
-                "potential": 39,
-                "oppo": [
-                    "도매 시장 성장",
-                    "아프리카 패션 부상",
-                    "섬유 산업 잠재력"
-                ],
-                "risk": [
-                    "원자재 수급",
-                    "수입 의존도",
-                    "소비력 부족"
-                ],
-                "rank": 103
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 9.3,
-                "potential": 39,
-                "oppo": [
-                    "놀리우드 성장",
-                    "기본 엔터테인먼트",
-                    "방송 미디어 발전"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "기본 인프라 부족",
-                    "인프라 부족"
-                ],
-                "rank": 115
-            },
-            "construction": {
-                "size": 5.8,
-                "growth": 10.7,
-                "potential": 43,
-                "oppo": [
-                    "도로/수도 건설",
-                    "아프리카 인프라 개발",
-                    "전통 건설 방식"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "기술 인력 부재",
-                    "정치적 불안정"
-                ],
-                "rank": 76
             }
         },
         "gdp_growth_pct": 6.1,
@@ -43007,9 +29627,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "agriculture": {
-                "size": 13.6,
+                "size": 5.7,
                 "growth": 2.4,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -43020,7 +29640,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 45
+                "rank": 56
             },
             "automotive": {
                 "size": 7.4,
@@ -43087,9 +29707,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "tourism": {
-                "size": 1.2,
+                "size": 5.0,
                 "growth": 4.8,
-                "potential": 78,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -43100,7 +29720,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 77
+                "rank": 42
             },
             "education": {
                 "size": 5.9,
@@ -43117,102 +29737,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 51
-            },
-            "beauty": {
-                "size": 1.4,
-                "growth": 4.8,
-                "potential": 67,
-                "oppo": [
-                    "K-뷰티 수요 확대",
-                    "천연 화장품 수요",
-                    "중산층 소비 증가"
-                ],
-                "risk": [
-                    "리뷰 리스크",
-                    "브랜드 경쟁 심화",
-                    "시장 포화"
-                ],
-                "rank": 57
-            },
-            "food": {
-                "size": 8.5,
-                "growth": 4.9,
-                "potential": 64,
-                "oppo": [
-                    "푸드테크 성장",
-                    "외식 산업 확대",
-                    "가공식품 시장 성장"
-                ],
-                "risk": [
-                    "높은 인건비",
-                    "배달 플랫폼 수수료",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 57
-            },
-            "logistics": {
-                "size": 5.8,
-                "growth": 5.6,
-                "potential": 58,
-                "oppo": [
-                    "디지털 물류 플랫폼",
-                    "물류 인프라 투자",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "인프라 병목",
-                    "플랫폼 의존",
-                    "환경 규제 강화"
-                ],
-                "rank": 58
-            },
-            "fashion": {
-                "size": 2.6,
-                "growth": 4.9,
-                "potential": 66,
-                "oppo": [
-                    "로컬 브랜드 성장",
-                    "하이엔드 브랜드",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "트렌드 변화",
-                    "원자재 비용"
-                ],
-                "rank": 55
-            },
-            "entertainment": {
-                "size": 3.7,
-                "growth": 7.4,
-                "potential": 55,
-                "oppo": [
-                    "게임 시장 성장",
-                    "문화 콘텐츠 다양성",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "콘텐츠 제작비 상승",
-                    "언어 장벽"
-                ],
-                "rank": 55
-            },
-            "construction": {
-                "size": 10.7,
-                "growth": 5.9,
-                "potential": 71,
-                "oppo": [
-                    "주택 건설 확대",
-                    "건설 테크 도입",
-                    "친환경 건축"
-                ],
-                "risk": [
-                    "환경 규제 강화",
-                    "인허가 절차",
-                    "자재비 상승"
-                ],
-                "rank": 54
             }
         },
         "gdp_growth_pct": 2.9,
@@ -43315,9 +29839,9 @@ const COUNTRIES = {
                 "rank": 84
             },
             "agriculture": {
-                "size": 5.2,
+                "size": 2.4,
                 "growth": 2.4,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -43328,7 +29852,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 85
+                "rank": 81
             },
             "automotive": {
                 "size": 2.4,
@@ -43395,7 +29919,7 @@ const COUNTRIES = {
                 "rank": 82
             },
             "tourism": {
-                "size": 1.1,
+                "size": 1.6,
                 "growth": 4.8,
                 "potential": 82,
                 "oppo": [
@@ -43408,7 +29932,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 82
+                "rank": 73
             },
             "education": {
                 "size": 2.3,
@@ -43425,102 +29949,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 71
-            },
-            "beauty": {
-                "size": 0.8,
-                "growth": 3.1,
-                "potential": 75,
-                "oppo": [
-                    "자연 원료 활용",
-                    "인플루언서 마케팅",
-                    "안티에이징 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화",
-                    "환율 변동성",
-                    "리뷰 리스크"
-                ],
-                "rank": 72
-            },
-            "food": {
-                "size": 3.5,
-                "growth": 2.3,
-                "potential": 69,
-                "oppo": [
-                    "농산물 수출 강국",
-                    "식품 가공 산업",
-                    "유기농 수요 증가"
-                ],
-                "risk": [
-                    "원가 상승",
-                    "식품 안전 규제",
-                    "소비 트렌드 변화"
-                ],
-                "rank": 82
-            },
-            "logistics": {
-                "size": 2.4,
-                "growth": 3.6,
-                "potential": 74,
-                "oppo": [
-                    "콜드체인 확대",
-                    "첨단 물류 자동화",
-                    "농산물 물류"
-                ],
-                "risk": [
-                    "세관 절차",
-                    "플랫폼 의존",
-                    "인건비 상승"
-                ],
-                "rank": 83
-            },
-            "fashion": {
-                "size": 1.1,
-                "growth": 3.4,
-                "potential": 71,
-                "oppo": [
-                    "럭셔리 패션 시장",
-                    "SNS 패션 마케팅",
-                    "섬유 원료 풍부"
-                ],
-                "risk": [
-                    "시장 포화",
-                    "온라인 반품률",
-                    "지속가능성 압박"
-                ],
-                "rank": 79
-            },
-            "entertainment": {
-                "size": 1.7,
-                "growth": 5.7,
-                "potential": 70,
-                "oppo": [
-                    "라틴 콘텐츠 시장",
-                    "OTT 플랫폼 확대",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "플랫폼 과포화",
-                    "광고 시장 제한",
-                    "플랫폼 경쟁"
-                ],
-                "rank": 72
-            },
-            "construction": {
-                "size": 5,
-                "growth": 2.1,
-                "potential": 65,
-                "oppo": [
-                    "건설 테크 도입",
-                    "인프라 현대화",
-                    "주택 부족 해소"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "원자재 가격 변동",
-                    "정치적 불안정"
-                ],
-                "rank": 80
             }
         },
         "gdp_growth_pct": 3.1,
@@ -43543,7 +29971,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 2783.9,
+                "size": 2587.6,
                 "growth": 5.3,
                 "potential": 93,
                 "oppo": [
@@ -43623,9 +30051,9 @@ const COUNTRIES = {
                 "rank": 1
             },
             "agriculture": {
-                "size": 275.9,
+                "size": 862.5,
                 "growth": 2.3,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -43636,7 +30064,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 3
+                "rank": 1
             },
             "automotive": {
                 "size": 862.5,
@@ -43703,9 +30131,9 @@ const COUNTRIES = {
                 "rank": 1
             },
             "tourism": {
-                "size": 143.8,
+                "size": 575.0,
                 "growth": 4.7,
-                "potential": 88,
+                "potential": 90,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -43716,7 +30144,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 2
+                "rank": 1
             },
             "education": {
                 "size": 935.0,
@@ -43733,102 +30161,6 @@ const COUNTRIES = {
                     "기술 패권 경쟁"
                 ],
                 "rank": 1
-            },
-            "beauty": {
-                "size": 1064.2,
-                "growth": 4.1,
-                "potential": 78,
-                "oppo": [
-                    "프리미엄 뷰티 시장",
-                    "클린 뷰티 트렌드",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "시장 포화 경쟁",
-                    "규제 강화",
-                    "리뷰 리스크"
-                ],
-                "rank": 1
-            },
-            "food": {
-                "size": 3741.6,
-                "growth": 2.3,
-                "potential": 83,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "푸드테크 성장",
-                    "건강식품 트렌드"
-                ],
-                "risk": [
-                    "배달 플랫폼 수수료",
-                    "소비 트렌드 변화",
-                    "원가 상승"
-                ],
-                "rank": 1
-            },
-            "logistics": {
-                "size": 1706.9,
-                "growth": 3.6,
-                "potential": 81,
-                "oppo": [
-                    "콜드체인 확대",
-                    "첨단 물류 자동화",
-                    "라스트마일 혁신"
-                ],
-                "risk": [
-                    "자동화 투자 부담",
-                    "플랫폼 의존",
-                    "인건비 상승"
-                ],
-                "rank": 1
-            },
-            "fashion": {
-                "size": 1368,
-                "growth": 3,
-                "potential": 87,
-                "oppo": [
-                    "럭셔리 패션 시장",
-                    "디자이너 브랜드",
-                    "온라인 패션 플랫폼"
-                ],
-                "risk": [
-                    "패스트패션 비판",
-                    "온라인 반품률",
-                    "가격 투명성"
-                ],
-                "rank": 1
-            },
-            "entertainment": {
-                "size": 2795.8,
-                "growth": 5.9,
-                "potential": 83,
-                "oppo": [
-                    "게임 산업 확대",
-                    "콘텐츠 IP 수출",
-                    "OTT 플랫폼 확대"
-                ],
-                "risk": [
-                    "플랫폼 경쟁",
-                    "콘텐츠 과잉 공급",
-                    "주의력 경쟁"
-                ],
-                "rank": 1
-            },
-            "construction": {
-                "size": 3396.7,
-                "growth": 2.9,
-                "potential": 89,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "인프라 현대화",
-                    "건설 테크 도입"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "환경 규제",
-                    "건설 테크 투자 부담"
-                ],
-                "rank": 2
             }
         },
         "gdp_growth_pct": 2.8,
@@ -43931,9 +30263,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "agriculture": {
-                "size": 21.1,
+                "size": 3.4,
                 "growth": 4.3,
-                "potential": 75,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -43944,7 +30276,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 36
+                "rank": 68
             },
             "automotive": {
                 "size": 4.5,
@@ -44011,9 +30343,9 @@ const COUNTRIES = {
                 "rank": 67
             },
             "tourism": {
-                "size": 1,
+                "size": 3.0,
                 "growth": 6.7,
-                "potential": 75,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -44024,7 +30356,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 146
+                "rank": 49
             },
             "education": {
                 "size": 3.8,
@@ -44041,102 +30373,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 60
-            },
-            "beauty": {
-                "size": 0.6,
-                "growth": 6.9,
-                "potential": 62,
-                "oppo": [
-                    "뷰티 시장 초기 성장",
-                    "성장하는 중산층",
-                    "인플루언서 마케팅"
-                ],
-                "risk": [
-                    "엄격한 규제",
-                    "리뷰 리스크",
-                    "소비력 제한"
-                ],
-                "rank": 76
-            },
-            "food": {
-                "size": 5.5,
-                "growth": 5.3,
-                "potential": 63,
-                "oppo": [
-                    "온라인 푸드 배달",
-                    "식품 가공업 발전",
-                    "푸드테크 성장"
-                ],
-                "risk": [
-                    "콜드체인 부족",
-                    "온라인 경쟁",
-                    "엄격한 식품 규제"
-                ],
-                "rank": 63
-            },
-            "logistics": {
-                "size": 3,
-                "growth": 4.8,
-                "potential": 52,
-                "oppo": [
-                    "크로스보더 물류",
-                    "무역 성장 기회",
-                    "유럽 물류 허브"
-                ],
-                "risk": [
-                    "플랫폼 의존",
-                    "도로 인프라 부족",
-                    "통관 지연"
-                ],
-                "rank": 71
-            },
-            "fashion": {
-                "size": 1.8,
-                "growth": 5.7,
-                "potential": 52,
-                "oppo": [
-                    "유럽 패션 수도",
-                    "OEM/ODM 기회",
-                    "하이엔드 브랜드"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "품질 관리",
-                    "저가 경쟁"
-                ],
-                "rank": 61
-            },
-            "entertainment": {
-                "size": 2.6,
-                "growth": 8.8,
-                "potential": 48,
-                "oppo": [
-                    "콘텐츠 소비 증가",
-                    "모바일 엔터테인먼트",
-                    "문화 콘텐츠 다양성"
-                ],
-                "risk": [
-                    "주의력 경쟁",
-                    "언어 장벽",
-                    "저작권 보호 미흡"
-                ],
-                "rank": 60
-            },
-            "construction": {
-                "size": 11.8,
-                "growth": 8,
-                "potential": 52,
-                "oppo": [
-                    "리노베이션 시장",
-                    "친환경 건축",
-                    "기초 인프라 건설"
-                ],
-                "risk": [
-                    "건설 테크 투자 부담",
-                    "안전 관리",
-                    "인허가 절차"
-                ],
-                "rank": 49
             }
         },
         "gdp_growth_pct": 6.5,
@@ -44252,7 +30488,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 98
+                "rank": 65
             },
             "automotive": {
                 "size": 3.6,
@@ -44332,7 +30568,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 53
+                "rank": 55
             },
             "education": {
                 "size": 1,
@@ -44349,102 +30585,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 146
-            },
-            "beauty": {
-                "size": 0.4,
-                "growth": 6.7,
-                "potential": 46,
-                "oppo": [
-                    "자연 원료 활용",
-                    "성장 잠재력 높음",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "마케팅 도달 제한",
-                    "디지털 채널 부재",
-                    "인프라 부족"
-                ],
-                "rank": 91
-            },
-            "food": {
-                "size": 5.2,
-                "growth": 5.4,
-                "potential": 50,
-                "oppo": [
-                    "전통 유통 채널",
-                    "식품 가공 산업",
-                    "농산물 수출 강국"
-                ],
-                "risk": [
-                    "식량 안보 불안",
-                    "규제 환경",
-                    "기후 변화 영향"
-                ],
-                "rank": 64
-            },
-            "logistics": {
-                "size": 2.4,
-                "growth": 6.8,
-                "potential": 46,
-                "oppo": [
-                    "기초 인프라 구축",
-                    "농산물 물류",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "운송 비용",
-                    "도로 인프라 노후",
-                    "정치적 불안정"
-                ],
-                "rank": 84
-            },
-            "fashion": {
-                "size": 1.4,
-                "growth": 6.1,
-                "potential": 50,
-                "oppo": [
-                    "전통 시장 유통",
-                    "섬유 산업 잠재력",
-                    "라틴 패션 트렌드"
-                ],
-                "risk": [
-                    "소비력 부족",
-                    "기술력 부족",
-                    "원자재 수급"
-                ],
-                "rank": 67
-            },
-            "entertainment": {
-                "size": 1,
-                "growth": 9.5,
-                "potential": 37,
-                "oppo": [
-                    "모바일 콘텐츠",
-                    "스페인어 콘텐츠",
-                    "모바일 미디어 성장"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "소비력 제한",
-                    "디지털 콘텐츠 접근 제한"
-                ],
-                "rank": 83
-            },
-            "construction": {
-                "size": 11,
-                "growth": 9.1,
-                "potential": 52,
-                "oppo": [
-                    "노동집약 건설",
-                    "국제 개발 원조",
-                    "도시 인프라 투자"
-                ],
-                "risk": [
-                    "기술 인력 부재",
-                    "자본 부족",
-                    "정치적 불안정"
-                ],
-                "rank": 53
             }
         },
         "gdp_growth_pct": 5.3,
@@ -44478,7 +30618,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 25
+                "rank": 24
             },
             "manufacturing": {
                 "size": 186.2,
@@ -44545,9 +30685,9 @@ const COUNTRIES = {
                 "rank": 32
             },
             "agriculture": {
-                "size": 56.5,
+                "size": 14.3,
                 "growth": 4.5,
-                "potential": 76,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -44558,7 +30698,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 12
+                "rank": 34
             },
             "automotive": {
                 "size": 18.6,
@@ -44625,9 +30765,9 @@ const COUNTRIES = {
                 "rank": 28
             },
             "tourism": {
-                "size": 3.2,
+                "size": 9.5,
                 "growth": 6.9,
-                "potential": 77,
+                "potential": 79,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -44638,7 +30778,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 44
+                "rank": 31
             },
             "education": {
                 "size": 8.3,
@@ -44655,102 +30795,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 41
-            },
-            "beauty": {
-                "size": 2.5,
-                "growth": 7,
-                "potential": 61,
-                "oppo": [
-                    "이커머스 뷰티 판매",
-                    "뷰티 시장 초기 성장",
-                    "젊은 인구 수요"
-                ],
-                "risk": [
-                    "위조품 문제",
-                    "유통 인프라 부족",
-                    "리뷰 리스크"
-                ],
-                "rank": 45
-            },
-            "food": {
-                "size": 36.9,
-                "growth": 5.1,
-                "potential": 58,
-                "oppo": [
-                    "농산물 부가가치화",
-                    "푸드테크 성장",
-                    "식품 가공업 발전"
-                ],
-                "risk": [
-                    "식품 안전 우려",
-                    "배달 플랫폼 수수료",
-                    "수입 규제"
-                ],
-                "rank": 24
-            },
-            "logistics": {
-                "size": 38.6,
-                "growth": 6.3,
-                "potential": 52,
-                "oppo": [
-                    "무역 성장 기회",
-                    "디지털 물류 플랫폼",
-                    "실시간 추적 시스템"
-                ],
-                "risk": [
-                    "항만 혼잡",
-                    "인건비 상승",
-                    "물류비 높음"
-                ],
-                "rank": 23
-            },
-            "fashion": {
-                "size": 11.8,
-                "growth": 6.6,
-                "potential": 56,
-                "oppo": [
-                    "의류 제조업 강세",
-                    "OEM/ODM 기회",
-                    "한류 패션 영향"
-                ],
-                "risk": [
-                    "온라인 반품률",
-                    "패스트패션 포화",
-                    "가격 투명성"
-                ],
-                "rank": 24
-            },
-            "entertainment": {
-                "size": 10,
-                "growth": 8.5,
-                "potential": 57,
-                "oppo": [
-                    "OTT 플랫폼 확대",
-                    "콘텐츠 소비 증가",
-                    "디지털 콘텐츠 유통"
-                ],
-                "risk": [
-                    "수익 모델 한계",
-                    "저작권 보호 미흡",
-                    "경쟁 과열"
-                ],
-                "rank": 29
-            },
-            "construction": {
-                "size": 112.2,
-                "growth": 9.9,
-                "potential": 65,
-                "oppo": [
-                    "인프라 수출",
-                    "건설 테크 도입",
-                    "주택 수요 증가"
-                ],
-                "risk": [
-                    "디지털 전환 비용",
-                    "부동산 과열 리스크",
-                    "자금 조달 어려움"
-                ],
-                "rank": 14
             }
         },
         "gdp_growth_pct": 7.1,
@@ -44853,9 +30897,9 @@ const COUNTRIES = {
                 "rank": 148
             },
             "agriculture": {
-                "size": 6.2,
+                "size": 1,
                 "growth": 2.0,
-                "potential": 56,
+                "potential": 54,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -44866,7 +30910,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 74
+                "rank": 148
             },
             "automotive": {
                 "size": 1,
@@ -44963,102 +31007,6 @@ const COUNTRIES = {
                     "교육 시스템 미비"
                 ],
                 "rank": 147
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 7.1,
-                "potential": 44,
-                "oppo": [
-                    "오프라인 유통 기회",
-                    "할랄 화장품 시장",
-                    "성장 잠재력 높음"
-                ],
-                "risk": [
-                    "소비력 극히 제한",
-                    "문화적 제약",
-                    "마케팅 도달 제한"
-                ],
-                "rank": 147
-            },
-            "food": {
-                "size": 0.9,
-                "growth": 4.7,
-                "potential": 50,
-                "oppo": [
-                    "지역 시장 활성화",
-                    "기초 식품 가공",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "수입 의존도",
-                    "유통 비효율",
-                    "할랄 인증 요구"
-                ],
-                "rank": 128
-            },
-            "logistics": {
-                "size": 0.5,
-                "growth": 6.5,
-                "potential": 36,
-                "oppo": [
-                    "운송 네트워크 확장",
-                    "물류 시장 형성",
-                    "기본 물류 인프라"
-                ],
-                "risk": [
-                    "정치적 불안정",
-                    "운송 비용",
-                    "물류 편중"
-                ],
-                "rank": 138
-            },
-            "fashion": {
-                "size": 0.2,
-                "growth": 8.3,
-                "potential": 50,
-                "oppo": [
-                    "도매 시장 성장",
-                    "전통 시장 유통",
-                    "저비용 생산 기반"
-                ],
-                "risk": [
-                    "원자재 수급",
-                    "오프라인 한계",
-                    "마케팅 제한"
-                ],
-                "rank": 141
-            },
-            "entertainment": {
-                "size": 0.2,
-                "growth": 9.2,
-                "potential": 38,
-                "oppo": [
-                    "라디오/TV 보급",
-                    "미디어 시장 개방",
-                    "아랍어 콘텐츠 수요"
-                ],
-                "risk": [
-                    "기본 인프라 부족",
-                    "소비력 제한",
-                    "콘텐츠 접근성"
-                ],
-                "rank": 141
-            },
-            "construction": {
-                "size": 0.6,
-                "growth": 8,
-                "potential": 46,
-                "oppo": [
-                    "노동집약 건설",
-                    "도시 개발 붐",
-                    "기본 인프라 구축"
-                ],
-                "risk": [
-                    "프로젝트 지연",
-                    "기술 인력 부재",
-                    "기술 도입 지연"
-                ],
-                "rank": 143
             }
         },
         "gdp_growth_pct": 0.8,
@@ -45160,7 +31108,7 @@ const COUNTRIES = {
                 "rank": 40
             },
             "agriculture": {
-                "size": 11.3,
+                "size": 12.0,
                 "growth": 1.4,
                 "potential": 74,
                 "oppo": [
@@ -45173,7 +31121,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 51
+                "rank": 39
             },
             "automotive": {
                 "size": 12.0,
@@ -45240,9 +31188,9 @@ const COUNTRIES = {
                 "rank": 39
             },
             "tourism": {
-                "size": 2.7,
+                "size": 8.0,
                 "growth": 3.8,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -45253,7 +31201,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 48
+                "rank": 33
             },
             "education": {
                 "size": 14.5,
@@ -45270,102 +31218,6 @@ const COUNTRIES = {
                     "규제 불확실성"
                 ],
                 "rank": 28
-            },
-            "beauty": {
-                "size": 3.3,
-                "growth": 5.8,
-                "potential": 61,
-                "oppo": [
-                    "중산층 소비 증가",
-                    "K-뷰티 수요 확대",
-                    "온라인 뷰티 성장"
-                ],
-                "risk": [
-                    "온라인 가격 경쟁",
-                    "유통 인프라 부재",
-                    "소비력 부족"
-                ],
-                "rank": 36
-            },
-            "food": {
-                "size": 16.8,
-                "growth": 4.7,
-                "potential": 68,
-                "oppo": [
-                    "외식 산업 확대",
-                    "식량 안보 투자",
-                    "가공식품 시장 성장"
-                ],
-                "risk": [
-                    "온라인 경쟁",
-                    "배달 플랫폼 수수료",
-                    "식량 불안정"
-                ],
-                "rank": 43
-            },
-            "logistics": {
-                "size": 10.9,
-                "growth": 5.6,
-                "potential": 66,
-                "oppo": [
-                    "항만 현대화",
-                    "실시간 추적 시스템",
-                    "물류 인프라 개발"
-                ],
-                "risk": [
-                    "국경 통과 지연",
-                    "사이버 보안 리스크",
-                    "인프라 병목"
-                ],
-                "rank": 38
-            },
-            "fashion": {
-                "size": 5.8,
-                "growth": 5.8,
-                "potential": 61,
-                "oppo": [
-                    "온라인 패션 확대",
-                    "온라인 패션 플랫폼",
-                    "패스트패션 성장"
-                ],
-                "risk": [
-                    "가격 투명성",
-                    "원자재 비용",
-                    "유통 한계"
-                ],
-                "rank": 39
-            },
-            "entertainment": {
-                "size": 5.8,
-                "growth": 6.4,
-                "potential": 65,
-                "oppo": [
-                    "게임 시장 성장",
-                    "OTT 시장 확대",
-                    "모바일 콘텐츠 수요"
-                ],
-                "risk": [
-                    "불법 복제",
-                    "수익 모델 미성숙",
-                    "콘텐츠 제작비 상승"
-                ],
-                "rank": 43
-            },
-            "construction": {
-                "size": 11,
-                "growth": 5.1,
-                "potential": 63,
-                "oppo": [
-                    "BIM 기술 활용",
-                    "건설 테크 도입",
-                    "국제 개발 프로젝트"
-                ],
-                "risk": [
-                    "자재비 상승",
-                    "건설 테크 투자 부담",
-                    "자금 부족"
-                ],
-                "rank": 52
             }
         },
         "gdp_growth_pct": 0.5,
@@ -45578,102 +31430,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 148
-            },
-            "beauty": {
-                "size": 0.1,
-                "growth": 7.4,
-                "potential": 59,
-                "oppo": [
-                    "뷰티 시장 초기 성장",
-                    "오프라인 유통 기회",
-                    "스킨케어 수요 증가"
-                ],
-                "risk": [
-                    "디지털 채널 부재",
-                    "유통 인프라 부족",
-                    "소비력 제한"
-                ],
-                "rank": 148
-            },
-            "food": {
-                "size": 1.1,
-                "growth": 5.7,
-                "potential": 60,
-                "oppo": [
-                    "식량 안보 투자",
-                    "식품 가공업 발전",
-                    "프랜차이즈 확대"
-                ],
-                "risk": [
-                    "위생 관리 어려움",
-                    "물류 인프라 부재",
-                    "마케팅 제한"
-                ],
-                "rank": 120
-            },
-            "logistics": {
-                "size": 0.8,
-                "growth": 6.7,
-                "potential": 53,
-                "oppo": [
-                    "기본 물류 인프라",
-                    "운송 네트워크 확장",
-                    "물류 인프라 구축"
-                ],
-                "risk": [
-                    "도로망 미비",
-                    "물류비 높음",
-                    "디지털 전환 지연"
-                ],
-                "rank": 115
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 6.1,
-                "potential": 54,
-                "oppo": [
-                    "의류 제조업 강세",
-                    "전통 시장 유통",
-                    "OEM/ODM 기회"
-                ],
-                "risk": [
-                    "노동 환경 이슈",
-                    "유통 한계",
-                    "마케팅 제한"
-                ],
-                "rank": 122
-            },
-            "entertainment": {
-                "size": 0.3,
-                "growth": 8.3,
-                "potential": 57,
-                "oppo": [
-                    "놀리우드 성장",
-                    "모바일 엔터테인먼트",
-                    "콘텐츠 소비 증가"
-                ],
-                "risk": [
-                    "수익 모델 한계",
-                    "수익 모델 미성숙",
-                    "디지털 콘텐츠 접근 제한"
-                ],
-                "rank": 123
-            },
-            "construction": {
-                "size": 1.7,
-                "growth": 7,
-                "potential": 57,
-                "oppo": [
-                    "도시화 가속",
-                    "주택 수요 증가",
-                    "노동집약 건설"
-                ],
-                "risk": [
-                    "자금 부족",
-                    "자금 조달 어려움",
-                    "기술 인력 부재"
-                ],
-                "rank": 110
             }
         },
         "gdp_growth_pct": 3.8,
@@ -45776,9 +31532,9 @@ const COUNTRIES = {
                 "rank": 102
             },
             "agriculture": {
-                "size": 3.6,
+                "size": 1.2,
                 "growth": 2.4,
-                "potential": 68,
+                "potential": 67,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -45789,7 +31545,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 99
+                "rank": 101
             },
             "automotive": {
                 "size": 1.2,
@@ -45886,102 +31642,6 @@ const COUNTRIES = {
                     "인재 부족"
                 ],
                 "rank": 149
-            },
-            "beauty": {
-                "size": 0.2,
-                "growth": 7.9,
-                "potential": 51,
-                "oppo": [
-                    "직접 판매 채널",
-                    "스킨케어 수요 증가",
-                    "오프라인 유통 기회"
-                ],
-                "risk": [
-                    "소비력 부족",
-                    "유통 인프라 부족",
-                    "유통 인프라 부재"
-                ],
-                "rank": 111
-            },
-            "food": {
-                "size": 2.1,
-                "growth": 6,
-                "potential": 57,
-                "oppo": [
-                    "농산물 부가가치화",
-                    "전통 유통 채널",
-                    "식량 안보 투자"
-                ],
-                "risk": [
-                    "식량 불안정",
-                    "물류 인프라 부재",
-                    "콜드체인 부족"
-                ],
-                "rank": 96
-            },
-            "logistics": {
-                "size": 0.9,
-                "growth": 7,
-                "potential": 53,
-                "oppo": [
-                    "창고업 현대화",
-                    "아프리카 내륙 물류",
-                    "물류 인프라 구축"
-                ],
-                "risk": [
-                    "국경 통과 지연",
-                    "물류비 높음",
-                    "디지털 전환 지연"
-                ],
-                "rank": 109
-            },
-            "fashion": {
-                "size": 0.3,
-                "growth": 7.2,
-                "potential": 57,
-                "oppo": [
-                    "OEM/ODM 기회",
-                    "아프리카 패션 부상",
-                    "전통 시장 유통"
-                ],
-                "risk": [
-                    "저가 경쟁",
-                    "마케팅 제한",
-                    "노동 환경 이슈"
-                ],
-                "rank": 119
-            },
-            "entertainment": {
-                "size": 0.4,
-                "growth": 8.2,
-                "potential": 47,
-                "oppo": [
-                    "모바일 엔터테인먼트",
-                    "모바일 콘텐츠",
-                    "모바일 콘텐츠 수요"
-                ],
-                "risk": [
-                    "디지털 콘텐츠 접근 제한",
-                    "수익 모델 한계",
-                    "제작 인프라 부족"
-                ],
-                "rank": 112
-            },
-            "construction": {
-                "size": 1.2,
-                "growth": 5.6,
-                "potential": 57,
-                "oppo": [
-                    "국제 개발 프로젝트",
-                    "노동집약 건설",
-                    "도시화 가속"
-                ],
-                "risk": [
-                    "관리 비효율",
-                    "기술 인력 부재",
-                    "기술 도입 지연"
-                ],
-                "rank": 127
             }
         },
         "gdp_growth_pct": 1.7,
@@ -46149,12 +31809,12 @@ const TRADE_ROUTES = [
 const TICKER_DATA = [
     {
         "label": "EUR/USD",
-        "value": "1.16",
+        "value": "1.15",
         "dir": "neutral"
     },
     {
         "label": "GBP/USD",
-        "value": "1.34",
+        "value": "1.33",
         "dir": "neutral"
     },
     {
@@ -46164,22 +31824,22 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/KRW",
-        "value": "1,483",
+        "value": "1,484",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.92",
+        "value": "6.91",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "91.87",
+        "value": "92.01",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.27",
+        "value": "5.25",
         "dir": "neutral"
     },
     {
@@ -46199,12 +31859,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,094",
+        "value": "26,148",
         "dir": "neutral"
     },
     {
         "label": "USD/AUD",
-        "value": "1.42",
+        "value": "1.43",
         "dir": "neutral"
     }
 ];
