@@ -1141,10 +1141,12 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
 핵심 원칙:
 1. 반드시 Google Search로 각 국가의 최신 GDP, 경제성장률, 인플레이션, 실업률, 인터넷보급률, 무역비중, 해당 산업 시장규모/성장률을 검색하세요
 2. 검색한 실제 데이터를 기반으로 수치 점수(0~100)를 산출하세요 — 임의 추정이 아닌 검색 결과에 근거해야 합니다
-3. 기업의 업종·규모·해외경험에 맞춘 구체적이고 실행 가능한 분석을 제공하세요
-4. 각 기회/리스크에는 구체적 수치, 연도, 출처를 포함하세요
-5. 모든 텍스트는 한국어로 작성하세요
-6. 응답은 반드시 순수 JSON만 출력하세요 (마크다운 코드블록이나 설명 텍스트 없이)`;
+3. ⚠️ 가장 중요: 각 국가별로 "이 회사"가 진출할 때의 구체적 제안 포인트를 작성하세요. 회사의 제품/서비스/강점을 해당 국가 시장 상황과 연결하여, 실제 실행 가능한 맞춤 전략을 제시하세요
+4. 각 국가의 현재 산업 현황(market_status)을 검색하여 시장규모, 성장률, 주요 경쟁사, 최근 트렌드를 포함하세요
+5. 리스크도 이 회사가 해당 국가에 진출할 때 직면할 구체적 리스크를 작성하세요 (일반적인 리스크가 아닌 회사 맞춤)
+6. 각 기회/리스크에는 구체적 수치, 연도, 출처를 포함하세요
+7. 모든 텍스트는 한국어로 작성하세요
+8. 응답은 반드시 순수 JSON만 출력하세요 (마크다운 코드블록이나 설명 텍스트 없이)`;
 
     const companyContext = profile.companyUrl || profile.companyDesc
         ? `\n- 회사 웹사이트: ${profile.companyUrl || '(없음)'}
@@ -1201,8 +1203,14 @@ ${top5Names}
         "trade_pct_gdp": 85,
         "industry_size_billion": 56, "industry_growth_pct": 8.5
       },
+      "market_status": "해당 국가의 관련 산업 현황 2~3문장 (시장규모, 성장률, 주요 플레이어, 최근 트렌드 등 검색 데이터 기반)",
+      "proposal_points": [
+        "이 회사의 구체적 제품/서비스/강점을 활용한 진출 제안 포인트1 (예: '쿠팡의 로켓배송 물류 노하우를 활용한 동남아 라스트마일 배송 시장 공략')",
+        "회사 맞춤 제안 포인트2",
+        "회사 맞춤 제안 포인트3"
+      ],
       "opportunities": ["최신 데이터 기반 기회1", "기회2", "기회3"],
-      "risks": ["최신 데이터 기반 리스크1", "리스크2", "리스크3"],
+      "risks": ["이 회사가 이 국가에 진출할 때 구체적 리스크1 (규제, 경쟁, 문화 등)", "리스크2", "리스크3"],
       "one_line_verdict": "한줄 총평"
     }
   ],
@@ -1228,8 +1236,8 @@ async function callGeminiAPI(results) {
 
     // 모델 체인: 2.5-pro(최고 성능) → 2.5-flash(폴백)
     const modelChain = [
-        { name: 'gemini-2.5-pro',   timeout: 60000, search: true },
-        { name: 'gemini-2.5-flash', timeout: 30000, search: true },
+        { name: 'gemini-2.5-pro',   timeout: 120000, search: true },
+        { name: 'gemini-2.5-flash', timeout: 90000, search: true },
     ];
 
     for (const { name: model, timeout, search: useSearch } of modelChain) {
@@ -1574,7 +1582,7 @@ function startAnalysis() {
                     try {
                         EA.aiData = await Promise.race([
                             EA.aiPromise,
-                            new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 60000))
+                            new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 180000))
                         ]);
                         if (EA.aiData) {
                             clearInterval(dotTimer);
@@ -1619,7 +1627,7 @@ function showExpansionReport() {
     const companyDesc = r.profile.companyDesc || '';
     const companyUrl = r.profile.companyUrl || '';
     html += `
-        <div class="exp-badge ${ai ? 'ai-badge' : ''}">${ai ? `✨ ${(ai._model||'GEMINI').toUpperCase()} · SEARCH GROUNDED` : 'AI EXPANSION REPORT'}</div>
+        <div class="exp-badge">AI EXPANSION REPORT</div>
         <div class="exp-title">해외진출 전략 보고서</div>
         <div class="exp-meta">${companyName} · ${indInfo?.name || ''} · ${r.date}</div>
         ${companyUrl ? `<div class="exp-company-url">🌐 <a href="${companyUrl}" target="_blank">${companyUrl}</a></div>` : ''}
@@ -1713,11 +1721,13 @@ function showExpansionReport() {
     }
     html += `</div></div><div class="exp-divider"></div>`;
 
-    // Accordion: Opportunities & Risks for each TOP 5
-    html += `<div class="exp-section-title">🚀 기회 vs ⚠️ 리스크</div>`;
+    // Accordion: 국가별 현황 + 제안 포인트 + 기회 + 리스크
+    html += `<div class="exp-section-title">📊 국가별 맞춤 분석</div>`;
     r.top5.forEach((t, i) => {
         const ind = t.industry;
         const aiC = ai?.countries?.find(c => c.rank === i + 1);
+        const marketStatus = aiC?.market_status || '';
+        const proposals = aiC?.proposal_points || [];
         const oppos = aiC?.opportunities || ind.oppo || [];
         const risks = aiC?.risks || ind.risk || [];
         const verdict = aiC?.one_line_verdict;
@@ -1732,9 +1742,15 @@ function showExpansionReport() {
                 <div class="exp-accordion-body">
                     <div class="exp-accordion-inner">
                         ${verdict ? `<div class="acc-verdict">${verdict}</div>` : ''}
-                        <div style="font:500 11px var(--font-body);color:var(--primary);margin-bottom:4px">기회</div>
+                        ${marketStatus ? `
+                        <div class="acc-section-label status-label">📍 시장 현황</div>
+                        <div class="acc-market-status">${marketStatus}</div>` : ''}
+                        ${proposals.length ? `
+                        <div class="acc-section-label proposal-label">💡 ${companyName} 맞춤 제안</div>
+                        ${proposals.map(p => `<div class="acc-proposal-item">${p}</div>`).join('')}` : ''}
+                        <div class="acc-section-label oppo-label">🚀 기회</div>
                         ${oppos.map(o => `<div class="acc-oppo-item">${o}</div>`).join('')}
-                        <div style="font:500 11px var(--font-body);color:var(--accent);margin-top:8px;margin-bottom:4px">리스크</div>
+                        <div class="acc-section-label risk-label">⚠️ 리스크</div>
                         ${risks.map(r => `<div class="acc-risk-item">${r}</div>`).join('')}
                         <div class="acc-mini-grid">
                             <div class="acc-mini-stat"><span class="acc-mini-val">${t.country.gdp >= 1000 ? (t.country.gdp/1000).toFixed(1)+'T' : t.country.gdp+'B'}</span><span class="acc-mini-label">GDP</span></div>
