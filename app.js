@@ -10,7 +10,7 @@ function setGeminiKey(key) {
 }
 
 // Google Sheet 웹훅 URL (Apps Script 배포 후 여기에 URL 입력)
-const SHEET_WEBHOOK_URL = '';
+const SHEET_WEBHOOK_URL = 'https://script.google.com/a/macros/grinda.ai/s/AKfycbyL60j8X5eYW65H5L5s5B_VcL8mznuDyusIotP2DjzZyuDyH9gku5bTsNnI5N_F1shP/exec';
 
 function sendToSheet(data) {
     if (!SHEET_WEBHOOK_URL) { console.log('[Sheet] 웹훅 URL 미설정 — 건너뜀'); return; }
