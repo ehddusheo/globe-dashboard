@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Industry Intelligence Platform</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260309b">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -30,6 +30,7 @@
                 <div class="stat-item"><span class="stat-value" data-target="104">0</span><span class="stat-label">TRILLION USD</span></div>
             </div>
             <div class="header-right">
+                <button id="api-key-btn" class="api-key-btn" title="API Key 설정">🔑</button>
                 <div class="live-dot"><span class="dot"></span>LIVE</div>
                 <div id="clock"></div>
             </div>
@@ -98,6 +99,24 @@
             <div id="expansion-content"></div>
         </aside>
 
+        <!-- API Key Modal -->
+        <div id="api-key-modal" class="api-key-modal hidden">
+            <div class="api-key-backdrop"></div>
+            <div class="api-key-dialog glass-panel">
+                <button class="close-btn" id="api-key-close">&times;</button>
+                <h2 class="api-key-title">🔑 Gemini API Key 설정</h2>
+                <p class="api-key-desc">Google AI Studio에서 발급받은 API Key를 입력하세요.<br>
+                    <a href="https://aistudio.google.com/apikey" target="_blank" class="api-key-link">→ Google AI Studio에서 키 발급받기</a>
+                </p>
+                <div class="api-key-input-wrap">
+                    <input type="password" id="api-key-input" class="api-key-input" placeholder="AIzaSy...">
+                    <button id="api-key-toggle" class="api-key-toggle">👁</button>
+                </div>
+                <div id="api-key-status" class="api-key-status"></div>
+                <button id="api-key-save" class="wizard-btn next api-key-save">저장 및 적용</button>
+            </div>
+        </div>
+
         <footer id="ticker">
             <div class="ticker-wrap">
                 <div class="ticker-content" id="ticker-content"></div>
@@ -108,6 +127,6 @@
     <script src="https://unpkg.com/globe.gl@2.27.2/dist/globe.gl.min.js"></script>
     <script src="https://unpkg.com/topojson-client@3"></script>
     <script src="data.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=20260309b"></script>
 </body>
 </html>

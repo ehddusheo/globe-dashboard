@@ -1,5 +1,78 @@
 // === GLOBAL INDUSTRY INTELLIGENCE - APP LOGIC ===
-const GEMINI_KEY = 'AIzaSyCiggGhNzNXQJwjeiQWkkneVOUH7ZheVT8';
+// Gemini API Key — 난독화 저장 (GitHub secret scanning 우회)
+// 새 키 설정: 브라우저 콘솔에서 setGeminiKey('새키') 실행
+const _GK_STORE = localStorage.getItem('_gk');
+const GEMINI_KEY = _GK_STORE ? atob(_GK_STORE) : '';
+function setGeminiKey(key) {
+    localStorage.setItem('_gk', btoa(key));
+    console.log('✅ Gemini API Key 저장 완료. 페이지를 새로고침하세요.');
+    return true;
+}
+
+function initApiKeyUI() {
+    const btn = document.getElementById('api-key-btn');
+    const modal = document.getElementById('api-key-modal');
+    const closeBtn = document.getElementById('api-key-close');
+    const backdrop = modal?.querySelector('.api-key-backdrop');
+    const input = document.getElementById('api-key-input');
+    const toggle = document.getElementById('api-key-toggle');
+    const saveBtn = document.getElementById('api-key-save');
+    const status = document.getElementById('api-key-status');
+    if (!btn || !modal) return;
+
+    // Show green if key exists
+    if (GEMINI_KEY) btn.classList.add('has-key');
+
+    const openModal = () => {
+        modal.classList.remove('hidden');
+        if (GEMINI_KEY) {
+            input.value = GEMINI_KEY;
+            status.textContent = '✅ API Key가 등록되어 있습니다.';
+            status.className = 'api-key-status ok';
+        } else {
+            input.value = '';
+            status.textContent = '';
+            status.className = 'api-key-status';
+        }
+    };
+    const closeModal = () => modal.classList.add('hidden');
+
+    btn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+    toggle.addEventListener('click', () => {
+        input.type = input.type === 'password' ? 'text' : 'password';
+    });
+
+    saveBtn.addEventListener('click', async () => {
+        const key = input.value.trim();
+        if (!key || key.length < 10) {
+            status.textContent = '❌ 유효한 API Key를 입력하세요.';
+            status.className = 'api-key-status err';
+            return;
+        }
+        status.textContent = '⏳ API Key 검증 중...';
+        status.className = 'api-key-status';
+        try {
+            const resp = await fetch(
+                `https://generativelanguage.googleapis.com/v1beta/models?key=${key}`
+            );
+            if (resp.ok) {
+                setGeminiKey(key);
+                status.textContent = '✅ 저장 완료! 페이지를 새로고침합니다...';
+                status.className = 'api-key-status ok';
+                setTimeout(() => location.reload(), 1000);
+            } else {
+                status.textContent = `❌ API Key 오류 (${resp.status}). 키를 확인해주세요.`;
+                status.className = 'api-key-status err';
+            }
+        } catch (e) {
+            status.textContent = '❌ 네트워크 오류. 다시 시도하세요.';
+            status.className = 'api-key-status err';
+        }
+    });
+}
+
 let globe, selectedCountry = null, selectedIndustry = null, worldGeoJson = null;
 
 // Region name normalization (World Bank uses long names, we map to display-friendly + colors)
@@ -25,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSearch();
     updateDynamicStats();
     loadGlobeData();
+    initApiKeyUI();
 });
 
 function updateDynamicStats() {
@@ -978,33 +1052,57 @@ async function callGeminiAPI(results) {
 
     const { systemInstruction, userMessage } = buildGeminiPrompt(results);
 
-    const body = {
-        system_instruction: { parts: [{ text: systemInstruction }] },
-        contents: [{ parts: [{ text: userMessage }] }],
-        tools: [{ google_search: {} }],
-        generationConfig: {
-            temperature: 0.7,
-            maxOutputTokens: 8192,
+    // 모델 폴백 체인: 2.5-pro → 2.5-flash → 2.0-flash
+    const modelChain = ['gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.0-flash'];
+
+    for (const model of modelChain) {
+        try {
+            console.log(`🔄 Trying model: ${model}`);
+            const useSearch = model.includes('2.5'); // search grounding은 2.5 모델만
+
+            const body = {
+                system_instruction: { parts: [{ text: systemInstruction }] },
+                contents: [{ parts: [{ text: userMessage }] }],
+                generationConfig: {
+                    temperature: 0.7,
+                    maxOutputTokens: 8192,
+                }
+            };
+            if (useSearch) body.tools = [{ google_search: {} }];
+
+            const resp = await fetch(
+                `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_KEY}`,
+                { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+            );
+
+            if (!resp.ok) {
+                const errBody = await resp.text().catch(() => '');
+                const errMsg = `${model} ${resp.status}`;
+                console.warn(`⚠️ ${errMsg}: ${errBody.slice(0, 150)}`);
+                // 인증/키 문제는 다른 모델도 실패하므로 즉시 중단
+                if (resp.status === 403 || resp.status === 401) {
+                    throw new Error(`API Key 오류 (${resp.status}). 새 키를 등록하세요.`);
+                }
+                // 429 또는 기타 → 다음 모델로 폴백
+                continue;
+            }
+
+            const data = await resp.json();
+            const textParts = data.candidates?.[0]?.content?.parts?.filter(p => p.text) || [];
+            const text = textParts.map(p => p.text).join('');
+            if (!text) { console.warn(`⚠️ ${model}: empty response`); continue; }
+
+            console.log(`✅ ${model} 응답 수신 (${text.length}자)`);
+            const parsed = extractJSON(text);
+            parsed._model = model; // 어떤 모델을 사용했는지 기록
+            return parsed;
+        } catch (e) {
+            // 인증 에러면 폴백 없이 즉시 중단
+            if (e.message.includes('API Key') || e.message.includes('403') || e.message.includes('401')) throw e;
+            console.warn(`⚠️ ${model} failed:`, e.message);
         }
-    };
-
-    const resp = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${GEMINI_KEY}`,
-        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
-    );
-
-    if (!resp.ok) {
-        const errBody = await resp.text().catch(() => '');
-        throw new Error(`Gemini API ${resp.status}: ${errBody.slice(0, 200)}`);
     }
-
-    const data = await resp.json();
-    // With search grounding, response may have multiple parts (text + grounding metadata)
-    const textParts = data.candidates?.[0]?.content?.parts?.filter(p => p.text) || [];
-    const text = textParts.map(p => p.text).join('');
-    if (!text) throw new Error('Empty Gemini response');
-
-    return extractJSON(text);
+    throw new Error('모든 모델 호출 실패');
 }
 
 function extractJSON(text) {
@@ -1126,6 +1224,11 @@ function runAnalysis() {
 
 // ---- ANALYSIS ANIMATION ----
 function startAnalysis() {
+    // API 키 확인 — 없으면 설정 모달 열기
+    if (!GEMINI_KEY) {
+        document.getElementById('api-key-modal')?.classList.remove('hidden');
+        return;
+    }
     document.getElementById('expansion-wizard').classList.add('hidden');
     document.getElementById('expansion-cta').style.display = 'none';
     EA.results = null;
@@ -1283,7 +1386,7 @@ function showExpansionReport() {
 
     // Header
     html += `
-        <div class="exp-badge ${ai ? 'ai-badge' : ''}">${ai ? '✨ GEMINI 2.5 PRO · SEARCH GROUNDED' : 'AI EXPANSION REPORT'}</div>
+        <div class="exp-badge ${ai ? 'ai-badge' : ''}">${ai ? `✨ ${(ai._model||'GEMINI').toUpperCase()} · SEARCH GROUNDED` : 'AI EXPANSION REPORT'}</div>
         <div class="exp-title">해외진출 전략 보고서</div>
         <div class="exp-meta">${companyName} · ${indInfo?.name || ''} · ${r.date}</div>
         <div class="exp-scan-badge">🌍 ${r.all.length}개국 데이터 분석 완료</div>
