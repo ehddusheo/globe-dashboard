@@ -878,90 +878,31 @@ function determineStrategy(profile, country) {
     return 'export';
 }
 
-// ---- GEMINI AI ----
-const GEMINI_RESPONSE_SCHEMA = {
-    type: "object",
-    properties: {
-        executive_summary: { type: "string" },
-        countries: {
-            type: "array",
-            items: {
-                type: "object",
-                properties: {
-                    rank: { type: "integer" },
-                    country_name: { type: "string" },
-                    opportunities: { type: "array", items: { type: "string" } },
-                    risks: { type: "array", items: { type: "string" } },
-                    one_line_verdict: { type: "string" }
-                },
-                required: ["rank", "country_name", "opportunities", "risks", "one_line_verdict"]
-            }
-        },
-        strategy: {
-            type: "object",
-            properties: {
-                reasoning: { type: "string" },
-                timeline: {
-                    type: "array",
-                    items: {
-                        type: "object",
-                        properties: {
-                            phase: { type: "string" },
-                            period: { type: "string" },
-                            actions: { type: "array", items: { type: "string" } }
-                        },
-                        required: ["phase", "period", "actions"]
-                    }
-                }
-            },
-            required: ["reasoning", "timeline"]
-        }
-    },
-    required: ["executive_summary", "countries", "strategy"]
-};
+// ---- GEMINI AI (2.5 Pro + Search Grounding) ----
 
 function buildGeminiPrompt(results) {
     const profile = results.profile;
     const indInfo = INDUSTRIES[profile.industry];
-    const top5Data = results.top5.map((t, i) => ({
-        rank: i + 1,
-        name: t.country.name,
-        nameEn: t.country.nameEn,
-        region: t.country.region,
-        income: t.country.income,
-        gdp_billion_usd: t.country.gdp,
-        population_million: t.country.pop,
-        gdp_growth_pct: t.country.gdp_growth_pct,
-        inflation_pct: t.country.inflation_pct,
-        unemployment_pct: t.country.unemployment_pct,
-        trade_pct_gdp: t.country.trade_pct_gdp,
-        internet_users_pct: t.country.internet_users_pct,
-        industry: {
-            name: indInfo.nameEn,
-            market_size_billion: t.industry.size,
-            growth_pct: t.industry.growth,
-            potential_score: t.industry.potential,
-            global_rank: t.industry.rank,
-        },
-        ces_score: t.ces,
-        dimension_scores: t.scores,
-        recommended_strategy: t.strategy,
-    }));
-
-    const systemInstruction = `당신은 한국 기업의 해외진출을 돕는 글로벌 시장 분석 전문가입니다.
-주어진 기업 프로필과 상위 5개 유망국가 데이터를 분석하여, 각 국가별 구체적이고 실행 가능한 기회요인과 리스크요인, 그리고 1위 국가에 대한 진출 전략을 JSON 형식으로 작성하세요.
-
-분석 원칙:
-- 해당 기업의 업종, 규모, 경험 수준에 맞는 구체적 조언을 제공하세요
-- 일반적인 내용이 아닌, 해당 국가와 업종에 특화된 분석을 제공하세요
-- 각 기회/리스크는 1~2문장으로 구체적 데이터나 트렌드를 포함하세요
-- 전략 추천은 기업 규모와 경험에 맞는 현실적인 방안이어야 합니다
-- 모든 텍스트는 한국어로 작성하세요`;
+    const top5Names = results.top5.map((t, i) =>
+        `${i+1}. ${t.country.flag} ${t.country.name} (${t.country.nameEn}) — 지역: ${t.country.region}`
+    ).join('\n');
 
     const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === profile.revenue)?.label || '미입력';
     const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === profile.employees)?.label || '미입력';
     const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === profile.experience)?.label || '처음';
     const priLabels = profile.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ');
+
+    const systemInstruction = `당신은 한국 기업의 해외진출을 돕는 글로벌 시장 분석 전문가입니다.
+Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와 산업 동향을 검색하고,
+실제 데이터에 기반한 정확한 수치와 분석을 JSON 형식으로 제공하세요.
+
+핵심 원칙:
+1. 반드시 Google Search로 각 국가의 최신 GDP, 경제성장률, 인플레이션, 실업률, 인터넷보급률, 무역비중, 해당 산업 시장규모/성장률을 검색하세요
+2. 검색한 실제 데이터를 기반으로 수치 점수(0~100)를 산출하세요 — 임의 추정이 아닌 검색 결과에 근거해야 합니다
+3. 기업의 업종·규모·해외경험에 맞춘 구체적이고 실행 가능한 분석을 제공하세요
+4. 각 기회/리스크에는 구체적 수치, 연도, 출처를 포함하세요
+5. 모든 텍스트는 한국어로 작성하세요
+6. 응답은 반드시 순수 JSON만 출력하세요 (마크다운 코드블록이나 설명 텍스트 없이)`;
 
     const userMessage = `## 기업 프로필
 - 회사명: ${profile.companyName || '(미입력)'}
@@ -969,13 +910,65 @@ function buildGeminiPrompt(results) {
 - 연 매출: ${revLabel}
 - 임직원: ${empLabel}
 - 해외경험: ${expLabel}
-- 우선순위: ${priLabels}
+- 우선순위: ${priLabels || '균등'}
 - 관심지역: ${profile.regions.includes('all') ? '전체' : profile.regions.join(', ')}
 
-## 상위 5개 유망국가 데이터
-${JSON.stringify(top5Data, null, 2)}
+## 분석 대상 국가 (유망순위)
+${top5Names}
 
-위 데이터를 바탕으로 각 국가별 기회 3개, 리스크 3개, 한줄평, 그리고 1위 국가에 대한 진출 전략(이유 + 3단계 타임라인)을 분석해주세요.`;
+## 요청사항
+위 5개 국가에 대해 Google Search로 최신 데이터를 검색하여 아래 JSON 구조로 분석해주세요.
+
+### 점수 산출 기준 (각 0~100):
+- marketSize: 해당 국가 ${indInfo?.nameEn || ''} 산업의 시장규모 (글로벌 상위 10% → 90+, 상위 30% → 70+)
+- growth: 해당 산업 연평균 성장률 (10%+ → 85+, 5~10% → 65~85, 0~5% → 40~65)
+- potential: 시장 성숙도, 진입장벽 낮음, 미개척 기회 종합평가
+- stability: 정치·경제 안정성 (GDP성장률 높음 + 인플레이션 낮음 + 실업률 낮음 = 높은 점수)
+- openness: 무역개방도 (무역/GDP 비율 80%+ → 80+), FTA, 외국인 투자환경
+- digital: 인터넷 보급률 기반 (90%+ → 90+, 70~90% → 70~85)
+- ces_score: 위 6개 점수의 가중평균. 우선순위 [${priLabels || '균등'}] 반영
+- risk_score: 리스크 종합 (0=매우 안전 ~ 100=매우 위험)
+- opportunity_score: 기회 종합 (0=매우 낮음 ~ 100=매우 높음)
+- recommended_strategy: "export" | "digital" | "fdi" | "partnership" 중 택1
+
+### 응답 JSON 구조 (이 구조 정확히 준수):
+{
+  "executive_summary": "3~5문장 전체 분석 요약. 검색한 최신 데이터 인용 포함",
+  "countries": [
+    {
+      "rank": 1,
+      "country_name": "국가명(한글)",
+      "ces_score": 75.5,
+      "dimension_scores": {
+        "marketSize": 85, "growth": 72, "potential": 78,
+        "stability": 65, "openness": 70, "digital": 88
+      },
+      "risk_score": 32,
+      "opportunity_score": 81,
+      "recommended_strategy": "digital",
+      "market_data": {
+        "gdp_billion_usd": 1234, "gdp_growth_pct": 3.2,
+        "population_million": 45, "inflation_pct": 2.5,
+        "unemployment_pct": 4.1, "internet_users_pct": 92,
+        "trade_pct_gdp": 85,
+        "industry_size_billion": 56, "industry_growth_pct": 8.5
+      },
+      "opportunities": ["최신 데이터 기반 기회1", "기회2", "기회3"],
+      "risks": ["최신 데이터 기반 리스크1", "리스크2", "리스크3"],
+      "one_line_verdict": "한줄 총평"
+    }
+  ],
+  "strategy": {
+    "reasoning": "1위 국가에 대한 진출 전략 근거 (2~3문장)",
+    "timeline": [
+      {"phase": "1단계", "period": "0-6개월", "actions": ["조치1", "조치2"]},
+      {"phase": "2단계", "period": "6-18개월", "actions": ["조치1", "조치2"]},
+      {"phase": "3단계", "period": "18-36개월", "actions": ["조치1", "조치2"]}
+    ]
+  }
+}
+
+countries 배열에 5개국 모두 포함해주세요. 모든 숫자 필드에 실제 검색 결과 기반 값을 넣어주세요.`;
 
     return { systemInstruction, userMessage };
 }
@@ -988,26 +981,107 @@ async function callGeminiAPI(results) {
     const body = {
         system_instruction: { parts: [{ text: systemInstruction }] },
         contents: [{ parts: [{ text: userMessage }] }],
+        tools: [{ google_search: {} }],
         generationConfig: {
-            response_mime_type: "application/json",
-            response_schema: GEMINI_RESPONSE_SCHEMA,
             temperature: 0.7,
-            maxOutputTokens: 4096,
+            maxOutputTokens: 8192,
         }
     };
 
     const resp = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${GEMINI_KEY}`,
         { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
     );
 
-    if (!resp.ok) throw new Error(`Gemini API ${resp.status}`);
+    if (!resp.ok) {
+        const errBody = await resp.text().catch(() => '');
+        throw new Error(`Gemini API ${resp.status}: ${errBody.slice(0, 200)}`);
+    }
 
     const data = await resp.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    // With search grounding, response may have multiple parts (text + grounding metadata)
+    const textParts = data.candidates?.[0]?.content?.parts?.filter(p => p.text) || [];
+    const text = textParts.map(p => p.text).join('');
     if (!text) throw new Error('Empty Gemini response');
 
-    return JSON.parse(text);
+    return extractJSON(text);
+}
+
+function extractJSON(text) {
+    // Try direct parse
+    try { return JSON.parse(text); } catch (e) {}
+    // Try extracting from ```json ... ``` blocks
+    const fenceMatch = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+    if (fenceMatch) {
+        try { return JSON.parse(fenceMatch[1].trim()); } catch (e) {}
+    }
+    // Try finding outermost { ... }
+    const first = text.indexOf('{');
+    const last = text.lastIndexOf('}');
+    if (first >= 0 && last > first) {
+        try { return JSON.parse(text.slice(first, last + 1)); } catch (e) {}
+    }
+    throw new Error('Failed to parse Gemini JSON response');
+}
+
+function mergeAIData(results, aiData) {
+    if (!aiData?.countries?.length) return;
+
+    results.top5.forEach((t, i) => {
+        const aiC = aiData.countries.find(c => c.rank === i + 1);
+        if (!aiC) return;
+
+        // Overlay CES score
+        if (typeof aiC.ces_score === 'number' && aiC.ces_score > 0) {
+            t.ces = Math.round(Math.max(0, Math.min(100, aiC.ces_score)) * 10) / 10;
+        }
+
+        // Overlay dimension scores
+        if (aiC.dimension_scores) {
+            Object.keys(t.scores).forEach(k => {
+                if (typeof aiC.dimension_scores[k] === 'number') {
+                    t.scores[k] = Math.max(0, Math.min(100, aiC.dimension_scores[k]));
+                }
+            });
+        }
+
+        // Overlay risk/opportunity scores
+        if (typeof aiC.risk_score === 'number') t.riskScore = Math.max(0, Math.min(100, aiC.risk_score));
+        if (typeof aiC.opportunity_score === 'number') t.opportunityScore = Math.max(0, Math.min(100, aiC.opportunity_score));
+
+        // Overlay strategy
+        if (['export','digital','fdi','partnership'].includes(aiC.recommended_strategy)) {
+            t.strategy = aiC.recommended_strategy;
+        }
+
+        // Overlay market data (shallow copy to avoid mutating global COUNTRIES)
+        if (aiC.market_data) {
+            const md = aiC.market_data;
+            t.country = { ...t.country };
+            t.industry = { ...t.industry };
+            if (typeof md.gdp_billion_usd === 'number') t.country.gdp = md.gdp_billion_usd;
+            if (typeof md.gdp_growth_pct === 'number') t.country.gdp_growth_pct = md.gdp_growth_pct;
+            if (typeof md.population_million === 'number') t.country.pop = md.population_million;
+            if (typeof md.inflation_pct === 'number') t.country.inflation_pct = md.inflation_pct;
+            if (typeof md.unemployment_pct === 'number') t.country.unemployment_pct = md.unemployment_pct;
+            if (typeof md.internet_users_pct === 'number') t.country.internet_users_pct = md.internet_users_pct;
+            if (typeof md.trade_pct_gdp === 'number') t.country.trade_pct_gdp = md.trade_pct_gdp;
+            if (typeof md.industry_size_billion === 'number') t.industry.size = md.industry_size_billion;
+            if (typeof md.industry_growth_pct === 'number') t.industry.growth = md.industry_growth_pct;
+        }
+
+        // Recalculate bubble size with updated industry data
+        t.bubbleSize = Math.max(8, Math.min(40, Math.log(Math.max(1, t.industry.size)) * 5));
+    });
+
+    // Re-sort top5 by AI CES scores
+    results.top5.sort((a, b) => b.ces - a.ces);
+
+    // Sync updated top5 items into top10
+    results.top5.forEach(t => {
+        const idx = results.top10.findIndex(x => x.id === t.id);
+        if (idx >= 0) results.top10[idx] = t;
+    });
 }
 
 function runAnalysis() {
@@ -1155,17 +1229,32 @@ function startAnalysis() {
                 }));
                 globe.labelsData(labels).labelText('text').labelColor('color').labelSize('size').labelDotRadius(0.3).labelAltitude(0.06);
 
-                // Final: await AI + show report
+                // Final: await AI + merge data + show report
                 setTimeout(async () => {
                     barEl.style.width = '100%';
                     if (EA.aiPromise) {
-                        statusEl.textContent = 'AI 분석 보고서 생성중...';
+                        statusEl.textContent = 'Gemini 2.5 Pro · 실시간 데이터 검색중...';
+                        let dotCount = 0;
+                        const dotTimer = setInterval(() => {
+                            dotCount = (dotCount + 1) % 4;
+                            statusEl.textContent = 'Gemini 2.5 Pro · 실시간 데이터 검색중' + '.'.repeat(dotCount);
+                        }, 600);
                         try {
                             EA.aiData = await Promise.race([
                                 EA.aiPromise,
-                                new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 15000))
+                                new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 50000))
                             ]);
-                        } catch (e) { console.warn('AI fallback:', e); EA.aiData = null; }
+                            if (EA.aiData) {
+                                clearInterval(dotTimer);
+                                statusEl.textContent = 'AI 데이터 병합중...';
+                                mergeAIData(EA.results, EA.aiData);
+                            }
+                        } catch (e) {
+                            console.warn('AI fallback:', e);
+                            EA.aiData = null;
+                        } finally {
+                            clearInterval(dotTimer);
+                        }
                     }
                     setTimeout(() => {
                         overlay.classList.add('hidden');
@@ -1194,7 +1283,7 @@ function showExpansionReport() {
 
     // Header
     html += `
-        <div class="exp-badge ${ai ? 'ai-badge' : ''}">${ai ? '✨ AI-POWERED REPORT' : 'AI EXPANSION REPORT'}</div>
+        <div class="exp-badge ${ai ? 'ai-badge' : ''}">${ai ? '✨ GEMINI 2.5 PRO · SEARCH GROUNDED' : 'AI EXPANSION REPORT'}</div>
         <div class="exp-title">해외진출 전략 보고서</div>
         <div class="exp-meta">${companyName} · ${indInfo?.name || ''} · ${r.date}</div>
         <div class="exp-scan-badge">🌍 ${r.all.length}개국 데이터 분석 완료</div>
