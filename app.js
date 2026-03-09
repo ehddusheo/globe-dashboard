@@ -874,9 +874,8 @@ employee_range 값: "u10" (10명 미만), "u50" (10~50명), "u100" (50~100명), 
 검색 결과를 기반으로 가장 정확한 정보를 입력하세요. 정확한 수치를 모르면 추정하세요.`;
 
     const modelChain = [
-        { name: 'gemini-2.0-flash', timeout: 15000, search: false },
-        { name: 'gemini-2.5-flash', timeout: 25000, search: true },
         { name: 'gemini-2.5-pro',   timeout: 30000, search: true },
+        { name: 'gemini-2.5-flash', timeout: 20000, search: true },
     ];
 
     let result = null;
@@ -1227,12 +1226,10 @@ async function callGeminiAPI(results) {
 
     const { systemInstruction, userMessage } = buildGeminiPrompt(results);
 
-    // 모델 폴백 체인: 2.0-flash(빠름) → 2.5-flash → 2.5-pro
-    // 안정성 우선 순서: 가장 빠른 모델부터 시도
+    // 모델 체인: 2.5-pro(최고 성능) → 2.5-flash(폴백)
     const modelChain = [
-        { name: 'gemini-2.0-flash', timeout: 20000, search: false },
+        { name: 'gemini-2.5-pro',   timeout: 60000, search: true },
         { name: 'gemini-2.5-flash', timeout: 30000, search: true },
-        { name: 'gemini-2.5-pro',   timeout: 45000, search: true },
     ];
 
     for (const { name: model, timeout, search: useSearch } of modelChain) {
