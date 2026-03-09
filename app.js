@@ -1,4 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE - APP LOGIC ===
+const GEMINI_KEY = 'AIzaSyCiggGhNzNXQJwjeiQWkkneVOUH7ZheVT8';
 let globe, selectedCountry = null, selectedIndustry = null, worldGeoJson = null;
 
 // Region name normalization (World Bank uses long names, we map to display-friendly + colors)
@@ -826,31 +827,7 @@ function renderStep3(el) {
             <div class="wz-summary-row"><span>우선순위</span><span class="wz-summary-val">${priLabels}</span></div>
             <div class="wz-summary-row"><span>관심 지역</span><span class="wz-summary-val">${regLabels}</span></div>
         </div>
-        <div class="wz-divider"></div>
-        <div class="wz-field">
-            <label class="wz-label">🔑 Gemini API Key (선택사항)</label>
-            <div class="wz-api-key-wrap">
-                <input type="password" class="wz-input wz-api-key" id="wz-api-key"
-                       placeholder="AI 맞춤 분석을 원하면 입력하세요"
-                       value="${localStorage.getItem('gemini_api_key') || ''}" autocomplete="off">
-                <button class="wz-api-toggle" id="wz-api-toggle" type="button">👁</button>
-            </div>
-            <div class="wz-api-hint">
-                <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a>에서
-                무료 발급 가능 · Key는 브라우저에만 저장됩니다
-            </div>
-        </div>
-        <div class="wz-analyze-sub">149개국 × ${Object.keys(INDUSTRIES).length}개 업종 데이터를 ${localStorage.getItem('gemini_api_key') ? 'Gemini AI가' : 'AI가'} 분석합니다</div>`;
-    // API key bindings
-    const apiInput = el.querySelector('#wz-api-key');
-    apiInput.addEventListener('input', e => {
-        const v = e.target.value.trim();
-        if (v) localStorage.setItem('gemini_api_key', v);
-        else localStorage.removeItem('gemini_api_key');
-    });
-    el.querySelector('#wz-api-toggle').addEventListener('click', () => {
-        apiInput.type = apiInput.type === 'password' ? 'text' : 'password';
-    });
+        <div class="wz-analyze-sub">Gemini AI가 149개국 × ${Object.keys(INDUSTRIES).length}개 업종 데이터를 분석합니다</div>`;
 }
 
 // ---- SCORING ALGORITHM ----
@@ -1004,8 +981,7 @@ ${JSON.stringify(top5Data, null, 2)}
 }
 
 async function callGeminiAPI(results) {
-    const apiKey = localStorage.getItem('gemini_api_key');
-    if (!apiKey) return null;
+    if (!GEMINI_KEY) return null;
 
     const { systemInstruction, userMessage } = buildGeminiPrompt(results);
 
@@ -1021,7 +997,7 @@ async function callGeminiAPI(results) {
     };
 
     const resp = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
         { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
     );
 
@@ -1343,6 +1319,41 @@ function showExpansionReport() {
             </div>`;
     });
 
+    // Rinda CTA
+    const aiOppos = ai?.countries?.find(c => c.rank === 1)?.opportunities || [];
+    const rindaUrl = `https://app.rinda.ai/?utm_source=Lead_Magnet&utm_medium=referral&utm_content=${top1.id}_${EA.profile.industry}`;
+    html += `
+        <div class="exp-rinda-cta">
+            <div class="rinda-cta-title">🚀 ${top1.country.name}에 해외 영업팀을 구축하세요</div>
+            <p class="rinda-cta-desc">AI가 추천한 최적 시장에 현지 영업팀을 배치하세요. 이메일 기반 해외 B2B 영업 자동화 플랫폼 린다가 도와드립니다.</p>
+            <button class="rinda-cta-btn" id="rinda-cta-btn">🌍 해외 영업팀 고용 문의하기</button>
+        </div>`;
+
+    // Rinda popup (hidden)
+    html += `
+        <div class="rinda-popup hidden" id="rinda-popup">
+            <div class="rinda-popup-backdrop"></div>
+            <div class="rinda-popup-modal">
+                <button class="close-btn rinda-popup-close">&times;</button>
+                <div class="rinda-popup-header">
+                    <span class="rinda-popup-flag">${top1.country.flag}</span>
+                    <div>
+                        <div class="rinda-popup-country">${top1.country.name}</div>
+                        <div class="rinda-popup-score">CES ${top1.ces.toFixed(1)}점 · AI 추천 1위</div>
+                    </div>
+                </div>
+                <div class="rinda-popup-body">
+                    <p class="rinda-popup-lead">AI 분석 결과, <strong>${top1.country.name}</strong>은(는) 귀사의 최적 해외 진출 시장입니다.</p>
+                    ${aiOppos.length ? `<ul class="rinda-popup-points">${aiOppos.slice(0,3).map(o => `<li>${o}</li>`).join('')}</ul>` : ''}
+                    <p class="rinda-popup-action">지금 바로 <strong>${top1.country.name}</strong> 현지 영업팀을 구축하고, 해외 매출을 만들어보세요.</p>
+                </div>
+                <a href="${rindaUrl}" target="_blank" rel="noopener" class="rinda-popup-cta-link" id="rinda-go">
+                    🚀 린다로 해외 영업 시작하기
+                </a>
+                <div class="rinda-popup-sub">이메일 기반 해외 B2B 영업 자동화 플랫폼</div>
+            </div>
+        </div>`;
+
     // Action buttons
     html += `
         <div class="exp-actions">
@@ -1490,6 +1501,16 @@ function bindReportInteractions(container) {
     // Redo button
     const redoBtn = container.querySelector('#exp-redo-btn');
     if (redoBtn) redoBtn.addEventListener('click', () => { closeExpansionReport(); setTimeout(openWizard, 300); });
+
+    // Rinda CTA → popup (move popup to body so fixed positioning works)
+    const rindaCta = container.querySelector('#rinda-cta-btn');
+    const rindaPopup = container.querySelector('#rinda-popup');
+    if (rindaCta && rindaPopup) {
+        document.body.appendChild(rindaPopup);
+        rindaCta.addEventListener('click', () => rindaPopup.classList.remove('hidden'));
+        rindaPopup.querySelector('.rinda-popup-backdrop').addEventListener('click', () => rindaPopup.classList.add('hidden'));
+        rindaPopup.querySelector('.rinda-popup-close').addEventListener('click', () => rindaPopup.classList.add('hidden'));
+    }
 
     // Animate radar polygons
     setTimeout(() => {
