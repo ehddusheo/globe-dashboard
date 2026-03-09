@@ -9,70 +9,6 @@ function setGeminiKey(key) {
     return true;
 }
 
-function initApiKeyUI() {
-    const btn = document.getElementById('api-key-btn');
-    const modal = document.getElementById('api-key-modal');
-    const closeBtn = document.getElementById('api-key-close');
-    const backdrop = modal?.querySelector('.api-key-backdrop');
-    const input = document.getElementById('api-key-input');
-    const toggle = document.getElementById('api-key-toggle');
-    const saveBtn = document.getElementById('api-key-save');
-    const status = document.getElementById('api-key-status');
-    if (!btn || !modal) return;
-
-    // Show green if key exists
-    if (GEMINI_KEY) btn.classList.add('has-key');
-
-    const openModal = () => {
-        modal.classList.remove('hidden');
-        if (GEMINI_KEY) {
-            input.value = GEMINI_KEY;
-            status.textContent = '✅ API Key가 등록되어 있습니다.';
-            status.className = 'api-key-status ok';
-        } else {
-            input.value = '';
-            status.textContent = '';
-            status.className = 'api-key-status';
-        }
-    };
-    const closeModal = () => modal.classList.add('hidden');
-
-    btn.addEventListener('click', openModal);
-    closeBtn.addEventListener('click', closeModal);
-    backdrop.addEventListener('click', closeModal);
-    toggle.addEventListener('click', () => {
-        input.type = input.type === 'password' ? 'text' : 'password';
-    });
-
-    saveBtn.addEventListener('click', async () => {
-        const key = input.value.trim();
-        if (!key || key.length < 10) {
-            status.textContent = '❌ 유효한 API Key를 입력하세요.';
-            status.className = 'api-key-status err';
-            return;
-        }
-        status.textContent = '⏳ API Key 검증 중...';
-        status.className = 'api-key-status';
-        try {
-            const resp = await fetch(
-                `https://generativelanguage.googleapis.com/v1beta/models?key=${key}`
-            );
-            if (resp.ok) {
-                setGeminiKey(key);
-                status.textContent = '✅ 저장 완료! 페이지를 새로고침합니다...';
-                status.className = 'api-key-status ok';
-                setTimeout(() => location.reload(), 1000);
-            } else {
-                status.textContent = `❌ API Key 오류 (${resp.status}). 키를 확인해주세요.`;
-                status.className = 'api-key-status err';
-            }
-        } catch (e) {
-            status.textContent = '❌ 네트워크 오류. 다시 시도하세요.';
-            status.className = 'api-key-status err';
-        }
-    });
-}
-
 let globe, selectedCountry = null, selectedIndustry = null, worldGeoJson = null;
 
 // Region name normalization (World Bank uses long names, we map to display-friendly + colors)
@@ -98,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initSearch();
     updateDynamicStats();
     loadGlobeData();
-    initApiKeyUI();
 });
 
 function updateDynamicStats() {

@@ -30,7 +30,6 @@
                 <div class="stat-item"><span class="stat-value" data-target="104">0</span><span class="stat-label">TRILLION USD</span></div>
             </div>
             <div class="header-right">
-                <button id="api-key-btn" class="api-key-btn" title="API Key 설정">🔑</button>
                 <div class="live-dot"><span class="dot"></span>LIVE</div>
                 <div id="clock"></div>
             </div>
@@ -100,23 +99,6 @@
         </aside>
 
         <!-- API Key Modal -->
-        <div id="api-key-modal" class="api-key-modal hidden">
-            <div class="api-key-backdrop"></div>
-            <div class="api-key-dialog glass-panel">
-                <button class="close-btn" id="api-key-close">&times;</button>
-                <h2 class="api-key-title">🔑 Gemini API Key 설정</h2>
-                <p class="api-key-desc">Google AI Studio에서 발급받은 API Key를 입력하세요.<br>
-                    <a href="https://aistudio.google.com/apikey" target="_blank" class="api-key-link">→ Google AI Studio에서 키 발급받기</a>
-                </p>
-                <div class="api-key-input-wrap">
-                    <input type="password" id="api-key-input" class="api-key-input" placeholder="AIzaSy...">
-                    <button id="api-key-toggle" class="api-key-toggle">👁</button>
-                </div>
-                <div id="api-key-status" class="api-key-status"></div>
-                <button id="api-key-save" class="wizard-btn next api-key-save">저장 및 적용</button>
-            </div>
-        </div>
-
         <footer id="ticker">
             <div class="ticker-wrap">
                 <div class="ticker-content" id="ticker-content"></div>
