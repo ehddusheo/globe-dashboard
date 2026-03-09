@@ -239,16 +239,7 @@ function initGlobe() {
     // Arcs
     updateArcs();
 
-    // Points for countries with data
-    const points = Object.entries(COUNTRIES).map(([id, c]) => ({
-        lat: c.lat, lng: c.lng, size: Math.max(0.1, Math.log10(Math.max(1, c.gdp)) * 0.08),
-        color: getRegionColor(c.region), id
-    }));
-    globe.pointsData(points)
-        .pointAltitude('size')
-        .pointColor('color')
-        .pointRadius(0.15)
-        .pointsMerge(false);
+    // Points disabled (뾰족한 막대 제거)
 
     // Adjust globe size and rotation
     globe.controls().autoRotate = true;
