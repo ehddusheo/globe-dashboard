@@ -911,22 +911,45 @@ function calculateCES(countryId, indKey, priorities) {
     const ind = c.industries[indKey];
     if (!ind) return null;
 
-    // Raw scores (0~100)
+    // 산업별 글로벌 랭크 → 점수 변환 (rank 1 = 98점, rank 50 = 65점, rank 100 = 32점, rank 149 = 2점)
+    const totalCountries = Object.keys(COUNTRIES).length;
+    const rankPct = ((ind.rank || totalCountries) - 1) / (totalCountries - 1); // 0(1위)~1(꼴찌)
+    const rankScore = Math.round(100 - rankPct * 98); // 100~2
+
+    // ---- 6대 차원 (산업 특화 비중 높임) ----
     const allSizes = Object.values(COUNTRIES).map(cc => cc.industries[indKey]?.size || 0).filter(s => s > 0);
     const maxLogSize = Math.log(Math.max(...allSizes) + 1);
+
+    // 시장규모: 산업별 규모 (로그 스케일)
     const marketSize = maxLogSize > 0 ? (Math.log((ind.size || 0.1) + 1) / maxLogSize) * 100 : 50;
-    const growth = Math.max(0, Math.min(100, 50 + (ind.growth || 0) * 5));
-    const potential = ind.potential || 50;
-    const stability = Math.max(0, Math.min(100, 50 + (c.gdp_growth_pct || 0) * 3 - (c.inflation_pct || 5) * 0.5 - (c.unemployment_pct || 8) * 0.5));
-    const openness = Math.min(100, (c.trade_pct_gdp || 50) / 2);
-    const digital = c.internet_users_pct || 30;
 
-    const scores = { marketSize, growth, potential, stability, openness, digital };
+    // 성장률: 산업 성장률 + 국가 GDP 성장률 혼합
+    const indGrowthScore = Math.max(0, Math.min(100, 50 + (ind.growth || 0) * 5));
+    const gdpGrowthScore = Math.max(0, Math.min(100, 50 + (c.gdp_growth_pct || 0) * 6));
+    const growth = indGrowthScore * 0.7 + gdpGrowthScore * 0.3;
 
-    // Weights
+    // 잠재력: 기본 잠재력 40% + 산업 랭킹 60% (핵심 차별화 요소)
+    const potential = (ind.potential || 50) * 0.4 + rankScore * 0.6;
+
+    // 안정성: 거시경제 지표 + 산업 성숙도
+    const macroStability = Math.max(0, Math.min(100, 50 + (c.gdp_growth_pct || 0) * 3 - (c.inflation_pct || 5) * 0.5 - (c.unemployment_pct || 8) * 0.5));
+    const stability = macroStability * 0.7 + Math.min(100, (ind.potential || 50)) * 0.3;
+
+    // 개방도: 무역비중 + 산업 랭킹 반영 (진입 용이성)
+    const tradeScore = Math.min(100, (c.trade_pct_gdp || 50) / 2);
+    const openness = tradeScore * 0.5 + rankScore * 0.5;
+
+    // 디지털: 인터넷 보급률 + 산업 특성
+    const baseDigital = c.internet_users_pct || 30;
+    const techBoost = ['tech', 'retail', 'telecom', 'education', 'finance'].includes(indKey) ? 10 : 0;
+    const digital = Math.min(100, baseDigital * 0.7 + rankScore * 0.3 + techBoost * (rankScore / 100));
+
+    const scores = { marketSize: Math.round(marketSize * 10) / 10, growth: Math.round(growth * 10) / 10, potential: Math.round(potential * 10) / 10, stability: Math.round(stability * 10) / 10, openness: Math.round(openness * 10) / 10, digital: Math.round(digital * 10) / 10 };
+
+    // 가중치: 우선순위 선택이 실질적 차이를 만들도록 보너스 증가
     let weights = { marketSize: 1/6, growth: 1/6, potential: 1/6, stability: 1/6, openness: 1/6, digital: 1/6 };
     if (priorities.length > 0) {
-        const bonuses = [0.10, 0.05, 0.02];
+        const bonuses = [0.25, 0.15, 0.08];
         priorities.forEach((p, i) => { if (weights[p] !== undefined) weights[p] += bonuses[i] || 0; });
         const wSum = Object.values(weights).reduce((a,b) => a+b, 0);
         Object.keys(weights).forEach(k => weights[k] /= wSum);
