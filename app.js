@@ -1052,13 +1052,17 @@ async function callGeminiAPI(results) {
 
     const { systemInstruction, userMessage } = buildGeminiPrompt(results);
 
-    // 모델 폴백 체인: 2.5-pro → 2.5-flash → 2.0-flash
-    const modelChain = ['gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.0-flash'];
+    // 모델 폴백 체인: 2.0-flash(빠름) → 2.5-flash → 2.5-pro
+    // 안정성 우선 순서: 가장 빠른 모델부터 시도
+    const modelChain = [
+        { name: 'gemini-2.0-flash', timeout: 20000, search: false },
+        { name: 'gemini-2.5-flash', timeout: 30000, search: true },
+        { name: 'gemini-2.5-pro',   timeout: 45000, search: true },
+    ];
 
-    for (const model of modelChain) {
+    for (const { name: model, timeout, search: useSearch } of modelChain) {
         try {
-            console.log(`🔄 Trying model: ${model}`);
-            const useSearch = model.includes('2.5'); // search grounding은 2.5 모델만
+            console.log(`🔄 Trying model: ${model} (timeout: ${timeout/1000}s, search: ${useSearch})`);
 
             const body = {
                 system_instruction: { parts: [{ text: systemInstruction }] },
@@ -1070,21 +1074,28 @@ async function callGeminiAPI(results) {
             };
             if (useSearch) body.tools = [{ google_search: {} }];
 
+            // 모델별 타임아웃: AbortController로 느린 모델 건너뛰기
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), timeout);
+
             const resp = await fetch(
                 `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_KEY}`,
-                { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+                {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(body),
+                    signal: controller.signal
+                }
             );
+            clearTimeout(timeoutId);
 
             if (!resp.ok) {
                 const errBody = await resp.text().catch(() => '');
-                const errMsg = `${model} ${resp.status}`;
-                console.warn(`⚠️ ${errMsg}: ${errBody.slice(0, 150)}`);
-                // 인증/키 문제는 다른 모델도 실패하므로 즉시 중단
+                console.warn(`⚠️ ${model} ${resp.status}: ${errBody.slice(0, 150)}`);
                 if (resp.status === 403 || resp.status === 401) {
                     throw new Error(`API Key 오류 (${resp.status}). 새 키를 등록하세요.`);
                 }
-                // 429 또는 기타 → 다음 모델로 폴백
-                continue;
+                continue; // 429 → 다음 모델
             }
 
             const data = await resp.json();
@@ -1093,11 +1104,15 @@ async function callGeminiAPI(results) {
             if (!text) { console.warn(`⚠️ ${model}: empty response`); continue; }
 
             console.log(`✅ ${model} 응답 수신 (${text.length}자)`);
+            console.log(`📋 응답 미리보기: ${text.slice(0, 200)}`);
             const parsed = extractJSON(text);
-            parsed._model = model; // 어떤 모델을 사용했는지 기록
+            parsed._model = model;
             return parsed;
         } catch (e) {
-            // 인증 에러면 폴백 없이 즉시 중단
+            if (e.name === 'AbortError') {
+                console.warn(`⏱️ ${model}: ${timeout/1000}s 타임아웃 → 다음 모델로`);
+                continue;
+            }
             if (e.message.includes('API Key') || e.message.includes('403') || e.message.includes('401')) throw e;
             console.warn(`⚠️ ${model} failed:`, e.message);
         }
@@ -1465,9 +1480,10 @@ function showExpansionReport() {
                 <div><div class="strategy-name">${strat.name}</div><div class="strategy-desc">${aiStrat?.reasoning || strat.desc}</div></div>
             </div>
             <div class="exp-timeline">`;
-    if (aiStrat?.timeline?.length > 0) {
+    if (Array.isArray(aiStrat?.timeline) && aiStrat.timeline.length > 0) {
         aiStrat.timeline.forEach(ph => {
-            html += `<div class="timeline-phase"><span class="phase-period">${ph.period}</span><span class="phase-action">${ph.actions.join('<br>')}</span></div>`;
+            const actions = Array.isArray(ph.actions) ? ph.actions.join('<br>') : (ph.actions || '');
+            html += `<div class="timeline-phase"><span class="phase-period">${ph.period || ph.phase || ''}</span><span class="phase-action">${actions}</span></div>`;
         });
     } else {
         html += `
