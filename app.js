@@ -9,6 +9,20 @@ function setGeminiKey(key) {
     return true;
 }
 
+// Google Sheet 웹훅 URL (Apps Script 배포 후 여기에 URL 입력)
+const SHEET_WEBHOOK_URL = '';
+
+function sendToSheet(data) {
+    if (!SHEET_WEBHOOK_URL) { console.log('[Sheet] 웹훅 URL 미설정 — 건너뜀'); return; }
+    fetch(SHEET_WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    }).then(() => console.log('[Sheet] ✅ 데이터 전송 완료'))
+      .catch(e => console.warn('[Sheet] 전송 실패:', e.message));
+}
+
 let globe, selectedCountry = null, selectedIndustry = null, worldGeoJson = null;
 
 // Region name normalization (World Bank uses long names, we map to display-friendly + colors)
@@ -1354,12 +1368,27 @@ function runAnalysis() {
 
 // ---- ANALYSIS ANIMATION ----
 function startAnalysis() {
-    // API 키 확인 — 없으면 설정 모달 열기
-    if (!GEMINI_KEY) {
-        document.getElementById('api-key-modal')?.classList.remove('hidden');
-        return;
-    }
     document.getElementById('expansion-wizard').classList.add('hidden');
+
+    // 시트에 리드 데이터 전송
+    const p = EA.profile;
+    const indName = INDUSTRIES[p.industry]?.name || p.industry;
+    const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === p.revenue)?.label || p.revenue;
+    const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === p.employees)?.label || p.employees;
+    const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === p.experience)?.label || p.experience;
+    const priLabels = p.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ');
+    const regLabels = p.regions.includes('all') ? '전체' : p.regions.join(', ');
+    sendToSheet({
+        companyName: p.companyName,
+        companyUrl: p.companyUrl,
+        industry: indName,
+        revenue: revLabel,
+        employees: empLabel,
+        experience: expLabel,
+        priorities: priLabels,
+        regions: regLabels,
+        timestamp: new Date().toLocaleString('ko-KR')
+    });
     document.getElementById('expansion-cta').style.display = 'none';
     EA.results = null;
     EA.aiData = null;
