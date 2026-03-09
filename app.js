@@ -246,19 +246,14 @@ function initGlobe() {
     globe.controls().autoRotateSpeed = 0.5;
     globe.controls().enableZoom = true;
 
-    // Show app after ~60s loading sequence
+    // Show app after ~4s loading sequence (짧고 빠르게)
     const loaderText = document.querySelector('.loader-text');
     const loaderSub2 = document.querySelector('.loader-sub');
     const steps = [
-        { t: 0,     title: 'GLOBAL DATABASE INITIALIZING',       sub: `Connecting to ${Object.keys(COUNTRIES).length} countries...` },
-        { t: 5000,  title: 'ECONOMIC DATA LOADING',              sub: 'GDP, growth rates, inflation data...' },
-        { t: 12000, title: 'INDUSTRY INTELLIGENCE SYNC',         sub: 'Scanning 12 industries × 149 countries...' },
-        { t: 20000, title: 'TRADE & OPENNESS INDEX',             sub: 'Importing trade volumes, FTA networks...' },
-        { t: 28000, title: 'DIGITAL INFRASTRUCTURE ANALYSIS',    sub: 'Internet penetration, tech adoption rates...' },
-        { t: 36000, title: 'RISK ASSESSMENT MATRIX',             sub: 'Political stability, regulatory environment...' },
-        { t: 44000, title: 'AI MODEL CALIBRATION',               sub: 'Gemini 2.5 Pro · Search Grounding ready...' },
-        { t: 52000, title: 'RENDERING GLOBE VISUALIZATION',      sub: 'Preparing 3D globe interface...' },
-        { t: 58000, title: 'SYSTEM READY',                       sub: 'All systems operational' },
+        { t: 0,    title: 'GLOBAL DATABASE INITIALIZING',  sub: `Connecting to ${Object.keys(COUNTRIES).length} countries...` },
+        { t: 1200, title: 'INDUSTRY DATA SYNC',            sub: 'Loading 12 industries × 149 countries...' },
+        { t: 2500, title: 'RENDERING GLOBE',               sub: 'Preparing 3D visualization...' },
+        { t: 3500, title: 'SYSTEM READY',                  sub: 'All systems operational' },
     ];
     steps.forEach(({ t, title, sub }) => {
         setTimeout(() => {
@@ -272,7 +267,7 @@ function initGlobe() {
         app.style.opacity = '1';
         app.style.transition = 'opacity 0.8s';
         animateCounters();
-    }, 60000);
+    }, 4000);
 
     // Handle resize
     window.addEventListener('resize', () => {
@@ -725,7 +720,7 @@ document.addEventListener('DOMContentLoaded', initExpansionAdvisor);
 function openWizard() {
     EA.mode = true;
     EA.step = 0;
-    EA.profile = { companyName: '', industry: '', revenue: '', employees: '', experience: 'none', priorities: [], regions: ['all'] };
+    EA.profile = { companyName: '', companyUrl: '', companyDesc: '', industry: '', revenue: '', employees: '', experience: 'none', priorities: [], regions: ['all'] };
     document.getElementById('expansion-wizard').classList.remove('hidden');
     document.getElementById('expansion-cta').style.display = 'none';
     renderWizardSteps();
@@ -785,6 +780,14 @@ function renderStep1(el) {
     el.innerHTML = `
         <div class="wz-title">기업 기본 정보</div>
         <div class="wz-field">
+            <label class="wz-label">🌐 회사 웹사이트</label>
+            <div class="wz-url-wrap">
+                <input type="url" class="wz-input wz-url-input" id="wz-url" placeholder="https://www.example.com" value="${EA.profile.companyUrl || ''}" autocomplete="off">
+                <button type="button" class="wz-url-btn" id="wz-url-lookup">🔍 AI 조회</button>
+            </div>
+            <div class="wz-url-status" id="wz-url-status"></div>
+        </div>
+        <div class="wz-field">
             <label class="wz-label">회사명</label>
             <input type="text" class="wz-input" id="wz-company" placeholder="예: 주식회사 테크원" value="${EA.profile.companyName}" autocomplete="off">
         </div>
@@ -825,6 +828,139 @@ function renderStep1(el) {
     el.querySelector('#wz-company').addEventListener('input', e => EA.profile.companyName = e.target.value);
     el.querySelector('#wz-revenue').addEventListener('change', e => EA.profile.revenue = e.target.value);
     el.querySelector('#wz-employees').addEventListener('change', e => EA.profile.employees = e.target.value);
+    el.querySelector('#wz-url').addEventListener('input', e => EA.profile.companyUrl = e.target.value);
+    // AI lookup button
+    el.querySelector('#wz-url-lookup').addEventListener('click', () => {
+        const url = el.querySelector('#wz-url').value.trim();
+        if (!url) { showUrlStatus('⚠️ URL을 입력해주세요.', 'err'); return; }
+        lookupCompany(url, el);
+    });
+}
+
+function showUrlStatus(msg, type) {
+    const statusEl = document.getElementById('wz-url-status');
+    if (!statusEl) return;
+    statusEl.textContent = msg;
+    statusEl.className = 'wz-url-status' + (type === 'ok' ? ' ok' : type === 'err' ? ' err' : ' loading');
+}
+
+async function lookupCompany(url, formEl) {
+    if (!GEMINI_KEY) { showUrlStatus('⚠️ API Key를 먼저 설정해주세요. (헤더 🔑 버튼)', 'err'); return; }
+
+    const lookupBtn = formEl.querySelector('#wz-url-lookup');
+    lookupBtn.disabled = true;
+    lookupBtn.textContent = '🔄 검색중...';
+    showUrlStatus('회사 정보 검색중...', 'loading');
+
+    const industryKeys = Object.entries(INDUSTRIES).map(([k, v]) => `"${k}": "${v.name} (${v.nameEn})"`).join(', ');
+
+    const prompt = `다음 회사 웹사이트를 Google Search로 검색하여 회사 정보를 JSON으로 반환하세요.
+URL: ${url}
+
+반드시 아래 JSON 형식만 출력하세요 (마크다운 코드블록 없이 순수 JSON):
+{
+  "company_name": "회사명 (한글)",
+  "industry_key": "아래 업종 키 중 가장 적합한 것 1개",
+  "revenue_range": "매출 규모에 맞는 값",
+  "employee_range": "임직원 수에 맞는 값",
+  "description": "회사 소개 1~2문장 (주요 제품/서비스, 강점 포함)"
+}
+
+업종 키 목록: {${industryKeys}}
+
+revenue_range 값: "u10" (10억 미만), "u50" (10~50억), "u100" (50~100억), "u500" (100~500억), "u1000" (500~1000억), "o1000" (1000억 이상)
+employee_range 값: "u10" (10명 미만), "u50" (10~50명), "u100" (50~100명), "u500" (100~500명), "u1000" (500~1000명), "o1000" (1000명 이상)
+
+검색 결과를 기반으로 가장 정확한 정보를 입력하세요. 정확한 수치를 모르면 추정하세요.`;
+
+    const modelChain = [
+        { name: 'gemini-2.0-flash', timeout: 15000, search: false },
+        { name: 'gemini-2.5-flash', timeout: 25000, search: true },
+        { name: 'gemini-2.5-pro',   timeout: 30000, search: true },
+    ];
+
+    let result = null;
+    for (const { name: model, timeout, search: useSearch } of modelChain) {
+        try {
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_KEY}`;
+            const body = {
+                contents: [{ parts: [{ text: prompt }] }],
+                generationConfig: { temperature: 0.2, maxOutputTokens: 1024 }
+            };
+            if (useSearch) body.tools = [{ google_search: {} }];
+
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), timeout);
+            const resp = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body),
+                signal: controller.signal
+            });
+            clearTimeout(timeoutId);
+
+            if (!resp.ok) { console.warn(`[Lookup] ${model}: HTTP ${resp.status}`); continue; }
+            const data = await resp.json();
+            // Search grounding can spread text across multiple parts
+            const parts = data?.candidates?.[0]?.content?.parts || [];
+            const text = parts.map(p => p.text || '').join('');
+            if (!text) { console.warn(`[Lookup] ${model}: empty response`); continue; }
+            console.log(`[Lookup] ${model} raw:`, text.substring(0, 300));
+
+            try {
+                result = extractJSON(text);
+            } catch (e) {
+                console.warn(`[Lookup] ${model}: JSON parse failed`, e.message);
+                continue;
+            }
+            if (result?.company_name) {
+                console.log(`[Lookup] ✅ ${model} success:`, result);
+                break;
+            }
+        } catch (e) {
+            console.warn(`[Lookup] ${model}: ${e.message}`);
+            continue;
+        }
+    }
+
+    lookupBtn.disabled = false;
+    lookupBtn.textContent = '🔍 AI 조회';
+
+    if (!result?.company_name) {
+        showUrlStatus('❌ 조회 실패 — 수동으로 입력해주세요.', 'err');
+        return;
+    }
+
+    // Auto-fill profile
+    EA.profile.companyName = result.company_name;
+    EA.profile.companyDesc = result.description || '';
+    if (result.industry_key && INDUSTRIES[result.industry_key]) EA.profile.industry = result.industry_key;
+    if (result.revenue_range) EA.profile.revenue = result.revenue_range;
+    if (result.employee_range) EA.profile.employees = result.employee_range;
+
+    // Update DOM
+    const companyInput = formEl.querySelector('#wz-company');
+    if (companyInput) companyInput.value = EA.profile.companyName;
+
+    const revenueSelect = formEl.querySelector('#wz-revenue');
+    if (revenueSelect && EA.profile.revenue) revenueSelect.value = EA.profile.revenue;
+
+    const employeeSelect = formEl.querySelector('#wz-employees');
+    if (employeeSelect && EA.profile.employees) employeeSelect.value = EA.profile.employees;
+
+    // Update industry grid selection
+    const indGrid = formEl.querySelector('#wz-industry-grid');
+    if (indGrid && EA.profile.industry) {
+        indGrid.querySelectorAll('.wz-ind-btn').forEach(b => b.classList.remove('selected'));
+        const idx = Object.keys(INDUSTRIES).indexOf(EA.profile.industry);
+        if (idx >= 0) indGrid.children[idx]?.classList.add('selected');
+    }
+
+    // Show success
+    const indName = INDUSTRIES[EA.profile.industry]?.name || '';
+    const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === EA.profile.revenue)?.label || '';
+    const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === EA.profile.employees)?.label || '';
+    showUrlStatus(`✅ ${result.company_name} · ${indName} · 매출 ${revLabel} · 직원 ${empLabel}`, 'ok');
 }
 
 function renderStep2(el) {
@@ -1011,8 +1147,14 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
 5. 모든 텍스트는 한국어로 작성하세요
 6. 응답은 반드시 순수 JSON만 출력하세요 (마크다운 코드블록이나 설명 텍스트 없이)`;
 
+    const companyContext = profile.companyUrl || profile.companyDesc
+        ? `\n- 회사 웹사이트: ${profile.companyUrl || '(없음)'}
+- 회사 소개: ${profile.companyDesc || '(없음)'}
+⚠️ 위 회사의 구체적 제품/서비스/강점을 반드시 고려하여 맞춤 진출 전략을 제시하세요.`
+        : '';
+
     const userMessage = `## 기업 프로필
-- 회사명: ${profile.companyName || '(미입력)'}
+- 회사명: ${profile.companyName || '(미입력)'}${companyContext}
 - 업종: ${indInfo?.name || ''} (${indInfo?.nameEn || ''})
 - 연 매출: ${revLabel}
 - 임직원: ${empLabel}
@@ -1305,7 +1447,7 @@ function startAnalysis() {
     globe.polygonAltitude(() => 0.005);
     globe.arcsData([]);
 
-    // Phase 2: Radar scan from Korea (2~5s)
+    // Phase 2: Radar scan from Korea (2~8s) — 느린 스캔 연출
     const korea = COUNTRIES[EA.KOREA_ID];
     const allIds = Object.keys(COUNTRIES).filter(id => id !== EA.KOREA_ID);
     let scanIdx = 0;
@@ -1319,35 +1461,61 @@ function startAnalysis() {
             rings.push({ lat: korea.lat, lng: korea.lng, maxR: 8, propagationSpeed: 3, repeatPeriod: 1200 });
             if (rings.length > 4) clearInterval(ringInterval);
             globe.ringsData([...rings]).ringColor(() => t => `rgba(0,240,255,${1-t})`).ringMaxRadius('maxR').ringPropagationSpeed('propagationSpeed').ringRepeatPeriod('repeatPeriod');
-        }, 600);
+        }, 800);
 
-        // Sequential country flash
+        // Sequential country flash (느리게: 100ms 간격)
         const scanTimer = setInterval(() => {
-            scanIdx += 3;
+            scanIdx += 2;
             if (scanIdx >= totalToScan) { scanIdx = totalToScan; clearInterval(scanTimer); }
-            const pct = (scanIdx / totalToScan * 60 + 10); // 10~70%
+            const pct = (scanIdx / totalToScan * 30 + 5); // 5~35%
             barEl.style.width = pct + '%';
             countEl.textContent = `${Math.min(scanIdx, totalToScan)} / ${totalToScan}`;
-            // Flash some countries with lighter color
             globe.polygonCapColor(feat => {
                 const idx2 = allIds.indexOf(feat.id);
                 if (idx2 >= 0 && idx2 < scanIdx) return 'rgba(0,240,255,0.12)';
                 return 'rgba(10,15,40,0.7)';
             });
-        }, 50);
+        }, 100);
 
-        // Phase 3: Run actual calculation + highlight TOP 5 (5~7s)
+        // Phase 3: Run actual calculation + highlight TOP 5 (~10s)
         setTimeout(() => {
             clearInterval(ringInterval);
             globe.ringsData([]);
             EA.results = runAnalysis();
-            // Fire Gemini API call in parallel with remaining animation
+            // Fire Gemini API call in parallel
             EA.aiPromise = callGeminiAPI(EA.results).catch(e => { console.warn('Gemini:', e); return null; });
-            statusEl.textContent = '유망 시장 선별 완료';
-            barEl.style.width = '85%';
 
+            statusEl.textContent = '산업별 경쟁력 지수 계산중...';
+            barEl.style.width = '40%';
+        }, 8000);
+
+        // Phase 3.5: 중간 메시지들 (~15s~25s)
+        setTimeout(() => {
+            statusEl.textContent = '무역 개방도 · FTA 네트워크 분석중...';
+            barEl.style.width = '48%';
+        }, 12000);
+
+        setTimeout(() => {
+            statusEl.textContent = '디지털 인프라 · 기술 성숙도 평가중...';
+            barEl.style.width = '55%';
+        }, 16000);
+
+        setTimeout(() => {
+            statusEl.textContent = '리스크 매트릭스 산출중...';
+            barEl.style.width = '62%';
+        }, 20000);
+
+        setTimeout(() => {
+            statusEl.textContent = '유망 시장 TOP 5 선별중...';
+            barEl.style.width = '70%';
+        }, 24000);
+
+        // Phase 4: Highlight TOP 5 + Arcs (~28s)
+        setTimeout(() => {
             const top5 = EA.results.top5;
-            // Highlight TOP 5
+            statusEl.textContent = '유망 시장 선별 완료';
+            barEl.style.width = '78%';
+
             globe.polygonCapColor(feat => {
                 const rank = top5.findIndex(t => t.id === feat.id);
                 if (rank === 0) return 'rgba(255,170,0,0.6)';
@@ -1361,10 +1529,10 @@ function startAnalysis() {
                 return 0.005;
             });
 
-            // Phase 4: Draw arcs from Korea to TOP 5 (7~8s)
+            // Draw arcs from Korea to TOP 5 (~32s)
             setTimeout(() => {
-                statusEl.textContent = '전략 보고서 생성중...';
-                barEl.style.width = '95%';
+                statusEl.textContent = 'AI 전략 분석 엔진 가동중...';
+                barEl.style.width = '85%';
                 const arcs = top5.map((t, i) => ({
                     startLat: korea.lat, startLng: korea.lng,
                     endLat: t.country.lat, endLng: t.country.lng,
@@ -1372,48 +1540,66 @@ function startAnalysis() {
                 }));
                 globe.arcsData(arcs).arcColor('color').arcAltitude(0.15).arcStroke(0.8).arcDashLength(0.4).arcDashGap(1).arcDashAnimateTime(1500);
 
-                // Labels
                 const labels = top5.map((t, i) => ({
                     lat: t.country.lat, lng: t.country.lng,
                     text: `#${i+1} ${t.country.flag} ${t.country.name}`,
                     color: i === 0 ? '#ffaa00' : '#00f0ff', size: i === 0 ? 1.0 : 0.8,
                 }));
                 globe.labelsData(labels).labelText('text').labelColor('color').labelSize('size').labelDotRadius(0.3).labelAltitude(0.06);
+            }, 4000);
 
-                // Final: await AI + merge data + show report
-                setTimeout(async () => {
-                    barEl.style.width = '100%';
-                    if (EA.aiPromise) {
-                        statusEl.textContent = 'Gemini 2.5 Pro · 실시간 데이터 검색중...';
-                        let dotCount = 0;
-                        const dotTimer = setInterval(() => {
-                            dotCount = (dotCount + 1) % 4;
-                            statusEl.textContent = 'Gemini 2.5 Pro · 실시간 데이터 검색중' + '.'.repeat(dotCount);
-                        }, 600);
-                        try {
-                            EA.aiData = await Promise.race([
-                                EA.aiPromise,
-                                new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 50000))
-                            ]);
-                            if (EA.aiData) {
-                                clearInterval(dotTimer);
-                                statusEl.textContent = 'AI 데이터 병합중...';
-                                mergeAIData(EA.results, EA.aiData);
-                            }
-                        } catch (e) {
-                            console.warn('AI fallback:', e);
-                            EA.aiData = null;
-                        } finally {
+            // Phase 5: AI 대기 + 추가 메시지 연출 (~36s~55s)
+            setTimeout(() => {
+                statusEl.textContent = 'Gemini AI · Google Search 기반 실시간 데이터 수집중...';
+                barEl.style.width = '88%';
+            }, 8000);
+
+            setTimeout(() => {
+                statusEl.textContent = '국가별 최신 경제지표 검증중...';
+                barEl.style.width = '91%';
+            }, 14000);
+
+            setTimeout(() => {
+                statusEl.textContent = '맞춤형 진출 전략 보고서 작성중...';
+                barEl.style.width = '94%';
+            }, 20000);
+
+            // Final: await AI + show report (~55s+)
+            setTimeout(async () => {
+                barEl.style.width = '97%';
+                if (EA.aiPromise) {
+                    statusEl.textContent = 'Gemini 2.5 Pro · 최종 분석 리포트 생성중...';
+                    let dotCount = 0;
+                    const dotTimer = setInterval(() => {
+                        dotCount = (dotCount + 1) % 4;
+                        statusEl.textContent = 'Gemini 2.5 Pro · 최종 분석 리포트 생성중' + '.'.repeat(dotCount);
+                    }, 600);
+                    try {
+                        EA.aiData = await Promise.race([
+                            EA.aiPromise,
+                            new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 60000))
+                        ]);
+                        if (EA.aiData) {
                             clearInterval(dotTimer);
+                            statusEl.textContent = 'AI 데이터 병합 및 검증중...';
+                            barEl.style.width = '99%';
+                            mergeAIData(EA.results, EA.aiData);
                         }
+                    } catch (e) {
+                        console.warn('AI fallback:', e);
+                        EA.aiData = null;
+                    } finally {
+                        clearInterval(dotTimer);
                     }
-                    setTimeout(() => {
-                        overlay.classList.add('hidden');
-                        showExpansionReport();
-                    }, 400);
-                }, 1200);
-            }, 1500);
-        }, 3000);
+                }
+                barEl.style.width = '100%';
+                statusEl.textContent = '분석 완료';
+                setTimeout(() => {
+                    overlay.classList.add('hidden');
+                    showExpansionReport();
+                }, 800);
+            }, 25000);
+        }, 28000);
     }, 2000);
 }
 
@@ -1433,10 +1619,14 @@ function showExpansionReport() {
     const ai = EA.aiData; // null if no AI response
 
     // Header
+    const companyDesc = r.profile.companyDesc || '';
+    const companyUrl = r.profile.companyUrl || '';
     html += `
         <div class="exp-badge ${ai ? 'ai-badge' : ''}">${ai ? `✨ ${(ai._model||'GEMINI').toUpperCase()} · SEARCH GROUNDED` : 'AI EXPANSION REPORT'}</div>
         <div class="exp-title">해외진출 전략 보고서</div>
         <div class="exp-meta">${companyName} · ${indInfo?.name || ''} · ${r.date}</div>
+        ${companyUrl ? `<div class="exp-company-url">🌐 <a href="${companyUrl}" target="_blank">${companyUrl}</a></div>` : ''}
+        ${companyDesc ? `<div class="exp-company-desc">${companyDesc}</div>` : ''}
         <div class="exp-scan-badge">🌍 ${r.all.length}개국 데이터 분석 완료</div>
         <div class="exp-divider"></div>`;
 

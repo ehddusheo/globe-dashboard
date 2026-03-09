@@ -28,7 +28,7 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
 .loader-text { font: 700 18px var(--font-title); color: var(--primary); letter-spacing: 4px; margin-bottom: 8px; }
 .loader-sub { font: 400 14px var(--font-body); color: rgba(208,216,255,0.5); letter-spacing: 2px; margin-bottom: 20px; }
 .loader-bar { width: 260px; height: 3px; background: rgba(0,240,255,0.1); border-radius: 3px; margin: 0 auto; overflow: hidden; }
-.loader-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--primary), var(--secondary)); animation: loadBar 60s ease-out forwards; }
+.loader-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--primary), var(--secondary)); animation: loadBar 3.5s ease-out forwards; }
 
 /* === HEADER === */
 #header {
@@ -590,6 +590,29 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
 .api-key-status.ok { color: var(--success); }
 .api-key-status.err { color: var(--accent); }
 .api-key-save { width: 100%; text-align: center; }
+
+/* URL Lookup */
+.wz-url-wrap { display: flex; gap: 8px; }
+.wz-url-input { flex: 1; }
+.wz-url-btn {
+    white-space: nowrap; padding: 8px 16px; border: 1px solid rgba(0,240,255,0.4);
+    background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(0,180,255,0.1));
+    color: var(--primary); font: 600 13px var(--font-body); border-radius: 8px; cursor: pointer;
+    transition: all 0.3s;
+}
+.wz-url-btn:hover:not(:disabled) { background: linear-gradient(135deg, rgba(0,240,255,0.3), rgba(0,180,255,0.2)); box-shadow: 0 0 12px rgba(0,240,255,0.3); }
+.wz-url-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.wz-url-status { font: 500 12px var(--font-body); margin-top: 6px; min-height: 18px; transition: color 0.3s; }
+.wz-url-status.ok { color: var(--success); }
+.wz-url-status.err { color: var(--accent); }
+.wz-url-status.loading { color: var(--primary); animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+/* Report company info */
+.exp-company-url { font: 400 12px var(--font-body); color: var(--primary); margin: 4px 0; }
+.exp-company-url a { color: var(--primary); text-decoration: none; }
+.exp-company-url a:hover { text-decoration: underline; }
+.exp-company-desc { font: 400 13px var(--font-body); color: var(--text); line-height: 1.5; margin: 6px 0 8px; padding: 8px 12px; background: rgba(0,240,255,0.05); border-left: 2px solid var(--primary); border-radius: 4px; }
 
 /* Animations */
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
