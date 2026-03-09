@@ -28,7 +28,7 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
 .loader-text { font: 700 18px var(--font-title); color: var(--primary); letter-spacing: 4px; margin-bottom: 8px; }
 .loader-sub { font: 400 14px var(--font-body); color: rgba(208,216,255,0.5); letter-spacing: 2px; margin-bottom: 20px; }
 .loader-bar { width: 260px; height: 3px; background: rgba(0,240,255,0.1); border-radius: 3px; margin: 0 auto; overflow: hidden; }
-.loader-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--primary), var(--secondary)); animation: loadBar 2.5s ease-in-out forwards; }
+.loader-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--primary), var(--secondary)); animation: loadBar 60s ease-out forwards; }
 
 /* === HEADER === */
 #header {

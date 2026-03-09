@@ -246,14 +246,33 @@ function initGlobe() {
     globe.controls().autoRotateSpeed = 0.5;
     globe.controls().enableZoom = true;
 
-    // Show app after loading
+    // Show app after ~60s loading sequence
+    const loaderText = document.querySelector('.loader-text');
+    const loaderSub2 = document.querySelector('.loader-sub');
+    const steps = [
+        { t: 0,     title: 'GLOBAL DATABASE INITIALIZING',       sub: `Connecting to ${Object.keys(COUNTRIES).length} countries...` },
+        { t: 5000,  title: 'ECONOMIC DATA LOADING',              sub: 'GDP, growth rates, inflation data...' },
+        { t: 12000, title: 'INDUSTRY INTELLIGENCE SYNC',         sub: 'Scanning 12 industries × 149 countries...' },
+        { t: 20000, title: 'TRADE & OPENNESS INDEX',             sub: 'Importing trade volumes, FTA networks...' },
+        { t: 28000, title: 'DIGITAL INFRASTRUCTURE ANALYSIS',    sub: 'Internet penetration, tech adoption rates...' },
+        { t: 36000, title: 'RISK ASSESSMENT MATRIX',             sub: 'Political stability, regulatory environment...' },
+        { t: 44000, title: 'AI MODEL CALIBRATION',               sub: 'Gemini 2.5 Pro · Search Grounding ready...' },
+        { t: 52000, title: 'RENDERING GLOBE VISUALIZATION',      sub: 'Preparing 3D globe interface...' },
+        { t: 58000, title: 'SYSTEM READY',                       sub: 'All systems operational' },
+    ];
+    steps.forEach(({ t, title, sub }) => {
+        setTimeout(() => {
+            if (loaderText) loaderText.textContent = title;
+            if (loaderSub2) loaderSub2.textContent = sub;
+        }, t);
+    });
     setTimeout(() => {
         document.getElementById('loading-screen').classList.add('fade-out');
         const app = document.getElementById('app');
         app.style.opacity = '1';
         app.style.transition = 'opacity 0.8s';
         animateCounters();
-    }, 2800);
+    }, 60000);
 
     // Handle resize
     window.addEventListener('resize', () => {
