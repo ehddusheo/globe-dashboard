@@ -2001,8 +2001,12 @@ async function downloadPDF() {
         }
 
         const content = document.getElementById('expansion-content');
+        const panel = document.getElementById('expansion-report');
         const companyName = EA.results?.profile?.companyName || 'Company';
         const dateStr = new Date().toISOString().slice(0, 10);
+
+        // Apply PDF mode (black-on-white)
+        content.classList.add('pdf-mode');
 
         // Open all accordions for PDF
         content.querySelectorAll('.exp-accordion-item').forEach(item => item.classList.add('open'));
@@ -2011,17 +2015,45 @@ async function downloadPDF() {
         const hideEls = content.querySelectorAll('.exp-actions, .exp-rinda-cta, #rinda-popup, .matrix-bubble');
         hideEls.forEach(el => el.style.display = 'none');
 
+        // Override inline SVG/style colors for PDF mode
+        content.querySelectorAll('.radar-poly').forEach(poly => {
+            poly.dataset.origStroke = poly.getAttribute('stroke');
+            poly.dataset.origFill = poly.getAttribute('fill');
+            poly.setAttribute('stroke', '#000');
+            poly.setAttribute('fill', 'rgba(0,0,0,0.06)');
+        });
+        content.querySelectorAll('.gauge-fill').forEach(circle => {
+            circle.dataset.origStroke = circle.getAttribute('stroke');
+            circle.setAttribute('stroke', '#000');
+        });
+        content.querySelectorAll('.dim-bar-fill').forEach(bar => {
+            bar.dataset.origBg = bar.style.background || bar.style.backgroundColor;
+            bar.style.background = '#000';
+        });
+
         const opt = {
             margin:       [10, 10, 10, 10],
             filename:     `${companyName}_해외진출전략_${dateStr}.pdf`,
             image:        { type: 'jpeg', quality: 0.95 },
-            html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#0a0a1a', logging: false },
+            html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', logging: false },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
             pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
         };
 
         await html2pdf().set(opt).from(content).save();
 
+        // Restore PDF mode overrides
+        content.classList.remove('pdf-mode');
+        content.querySelectorAll('.radar-poly').forEach(poly => {
+            if (poly.dataset.origStroke) poly.setAttribute('stroke', poly.dataset.origStroke);
+            if (poly.dataset.origFill) poly.setAttribute('fill', poly.dataset.origFill);
+        });
+        content.querySelectorAll('.gauge-fill').forEach(circle => {
+            if (circle.dataset.origStroke) circle.setAttribute('stroke', circle.dataset.origStroke);
+        });
+        content.querySelectorAll('.dim-bar-fill').forEach(bar => {
+            if (bar.dataset.origBg) bar.style.background = bar.dataset.origBg;
+        });
         // Restore hidden elements
         hideEls.forEach(el => el.style.display = '');
     } catch (e) {

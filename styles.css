@@ -713,3 +713,126 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
 
 /* Animations */
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* === PDF MODE: Black-on-white for clean print output === */
+.pdf-mode {
+    background: #ffffff !important;
+    border-left: none !important;
+    color: #000 !important;
+    backdrop-filter: none !important;
+}
+
+/* Text & headings */
+.pdf-mode .exp-badge { color: #000 !important; border-color: #000 !important; background: transparent !important; text-shadow: none !important; }
+.pdf-mode .exp-badge.ai-badge { color: #000 !important; border-color: #000 !important; background: transparent !important; text-shadow: none !important; }
+.pdf-mode .exp-title { color: #000 !important; }
+.pdf-mode .exp-meta { color: #555 !important; }
+.pdf-mode .exp-scan-badge { color: #555 !important; }
+.pdf-mode .exp-section-title { color: #000 !important; }
+.pdf-mode .exp-divider { background: #ccc !important; }
+
+/* Executive summary */
+.pdf-mode .exp-executive-summary { background: #f5f5f5 !important; border-color: #000 !important; }
+.pdf-mode .exp-summary-label { color: #000 !important; }
+.pdf-mode .exp-summary-text { color: #000 !important; }
+
+/* Top pick card */
+.pdf-mode .exp-top-pick { background: #f5f5f5 !important; border-color: #000 !important; }
+.pdf-mode .pick-rank { color: #000 !important; }
+.pdf-mode .pick-name { color: #000 !important; }
+.pdf-mode .pick-sub { color: #555 !important; }
+
+/* Score gauge */
+.pdf-mode .gauge-bg { stroke: #ddd !important; }
+.pdf-mode .gauge-fill { stroke: #000 !important; }
+.pdf-mode .gauge-text { fill: #000 !important; }
+.pdf-mode .gauge-label { fill: #555 !important; }
+
+/* Ranking list */
+.pdf-mode .exp-rank-item { border-color: #ccc !important; background: #fafafa !important; }
+.pdf-mode .exp-rank-item.active { border-color: #000 !important; background: #f0f0f0 !important; }
+.pdf-mode .rank-num { color: #000 !important; }
+.pdf-mode .rank-name { color: #000 !important; }
+.pdf-mode .rank-bar-wrap { background: #e0e0e0 !important; }
+.pdf-mode .rank-bar-fill { background: #000 !important; }
+.pdf-mode .rank-score { color: #000 !important; }
+
+/* Radar chart */
+.pdf-mode .radar-grid { stroke: #ddd !important; }
+.pdf-mode .radar-axis { stroke: #ccc !important; }
+.pdf-mode .radar-label { fill: #000 !important; }
+.pdf-mode .radar-poly { stroke: #000 !important; fill: rgba(0,0,0,0.06) !important; }
+.pdf-mode .radar-legend-item { color: #000 !important; }
+.pdf-mode .radar-legend-dot { background: #000 !important; }
+
+/* Bubble matrix */
+.pdf-mode .exp-matrix-wrap { border-color: #ccc !important; background: #fafafa !important; }
+.pdf-mode .matrix-axis-label { color: #555 !important; }
+.pdf-mode .matrix-quadrant { color: #aaa !important; }
+.pdf-mode .matrix-mid-x, .pdf-mode .matrix-mid-y { background: #ccc !important; }
+.pdf-mode .matrix-sweet { color: #000 !important; background: #e0e0e0 !important; }
+
+/* Strategy card */
+.pdf-mode .exp-strategy { border-color: #000 !important; background: #f5f5f5 !important; }
+.pdf-mode .strategy-name { color: #000 !important; }
+.pdf-mode .strategy-desc { color: #333 !important; }
+
+/* Timeline */
+.pdf-mode .timeline-phase { border-color: #ccc !important; }
+.pdf-mode .timeline-phase::after { color: #999 !important; }
+.pdf-mode .phase-period { color: #000 !important; }
+.pdf-mode .phase-action { color: #333 !important; }
+
+/* Accordion */
+.pdf-mode .exp-accordion-item { border-color: #ccc !important; }
+.pdf-mode .exp-accordion-head { background: transparent !important; }
+.pdf-mode .exp-accordion-head:hover { background: transparent !important; }
+.pdf-mode .exp-accordion-head .acc-name { color: #000 !important; }
+.pdf-mode .exp-accordion-head .acc-score { color: #000 !important; }
+.pdf-mode .exp-accordion-head .acc-arrow { color: #555 !important; }
+.pdf-mode .acc-rank-badge { background: #000 !important; color: #fff !important; }
+
+/* Accordion body content */
+.pdf-mode .acc-oppo-item, .pdf-mode .acc-risk-item { color: #000 !important; }
+.pdf-mode .acc-oppo-item::before { color: #000 !important; }
+.pdf-mode .acc-risk-item::before { color: #000 !important; }
+.pdf-mode .acc-mini-stat { background: #f5f5f5 !important; }
+.pdf-mode .acc-mini-val { color: #000 !important; }
+.pdf-mode .acc-mini-label { color: #555 !important; }
+
+/* Accordion verdict */
+.pdf-mode .acc-verdict { color: #000 !important; background: #f5f5f5 !important; border-color: #000 !important; border-left-color: #000 !important; }
+
+/* Section labels */
+.pdf-mode .acc-section-label { color: #000 !important; }
+.pdf-mode .status-label { color: #000 !important; }
+.pdf-mode .proposal-label { color: #000 !important; }
+.pdf-mode .oppo-label { color: #000 !important; }
+.pdf-mode .risk-label { color: #000 !important; }
+
+/* Market status */
+.pdf-mode .acc-market-status { color: #000 !important; background: #f5f5f5 !important; border-left-color: #000 !important; }
+
+/* Proposal items */
+.pdf-mode .acc-proposal-item { color: #000 !important; background: #f5f5f5 !important; border-left-color: #000 !important; }
+.pdf-mode .proposal-num { background: #e0e0e0 !important; color: #000 !important; }
+
+/* Key stats */
+.pdf-mode .acc-key-stat { background: #f5f5f5 !important; border-color: #ddd !important; }
+.pdf-mode .key-stat-val { color: #000 !important; }
+.pdf-mode .key-stat-label { color: #555 !important; }
+
+/* Data grid */
+.pdf-mode .acc-data-card { background: #f5f5f5 !important; border-color: #ddd !important; }
+.pdf-mode .data-card-val { color: #000 !important; }
+.pdf-mode .data-card-label { color: #555 !important; }
+
+/* Dimension bars */
+.pdf-mode .dim-bar-label { color: #333 !important; }
+.pdf-mode .dim-bar-track { background: #e0e0e0 !important; }
+.pdf-mode .dim-bar-fill { background: #000 !important; }
+.pdf-mode .dim-bar-val { color: #000 !important; }
+
+/* Company info */
+.pdf-mode .exp-company-url a { color: #000 !important; }
+.pdf-mode .exp-company-desc { color: #000 !important; background: #f5f5f5 !important; border-left-color: #000 !important; }
