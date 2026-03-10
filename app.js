@@ -1083,19 +1083,25 @@ function buildGeminiPrompt(results) {
     const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === profile.experience)?.label || '처음';
     const priLabels = profile.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ');
 
-    const systemInstruction = `당신은 한국 기업의 해외진출을 돕는 글로벌 시장 분석 전문가입니다.
-Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와 산업 동향을 검색하고,
-실제 데이터에 기반한 정확한 수치와 분석을 JSON 형식으로 제공하세요.
+    const systemInstruction = `당신은 KOTRA, McKinsey, BCG 수준의 글로벌 시장 분석 전문 컨설턴트입니다.
+Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와 산업 동향을 실제로 검색하고,
+검색된 실제 수치와 통계를 인용하여 데이터 기반 분석을 JSON 형식으로 제공하세요.
 
-핵심 원칙:
-1. 반드시 Google Search로 각 국가의 최신 GDP, 경제성장률, 인플레이션, 실업률, 인터넷보급률, 무역비중, 해당 산업 시장규모/성장률을 검색하세요
-2. 검색한 실제 데이터를 기반으로 수치 점수(0~100)를 산출하세요 — 임의 추정이 아닌 검색 결과에 근거해야 합니다
-3. ⚠️ 가장 중요: 각 국가별로 "이 회사"가 진출할 때의 구체적 제안 포인트를 작성하세요. 회사의 제품/서비스/강점을 해당 국가 시장 상황과 연결하여, 실제 실행 가능한 맞춤 전략을 제시하세요
-4. 각 국가의 현재 산업 현황(market_status)을 검색하여 시장규모, 성장률, 주요 경쟁사, 최근 트렌드를 포함하세요
-5. 리스크도 이 회사가 해당 국가에 진출할 때 직면할 구체적 리스크를 작성하세요 (일반적인 리스크가 아닌 회사 맞춤)
-6. 각 기회/리스크에는 구체적 수치, 연도, 출처를 포함하세요
-7. 모든 텍스트는 한국어로 작성하세요
-8. 응답은 반드시 순수 JSON만 출력하세요 (마크다운 코드블록이나 설명 텍스트 없이)`;
+⚠️ 절대 규칙:
+1. 모든 market_data 수치는 반드시 Google Search로 검색한 실제 통계여야 합니다 (World Bank, IMF, Statista, KOTRA 등)
+2. market_status에는 반드시 구체적 수치(시장규모 $XX억, 성장률 XX%, 점유율 등)와 출처명을 명시하세요
+3. executive_summary는 5문장 이상, 핵심 데이터 포인트 3개 이상 인용하여 작성하세요
+4. proposal_points(3개)에는 "왜 이 국가인지"를 데이터로 설득하세요:
+   - 구체적 수치 근거 (시장규모, 성장률, 소비자 수 등)
+   - 이 회사의 제품/서비스와 해당 시장의 수요 연결점
+   - 경쟁 환경 분석 (현지 경쟁사 이름, 시장 점유율)
+   - 실행 가능한 진입 액션 (구체적인 파트너사, 유통 채널, 규제 요건 등)
+5. opportunities(3개)에는 반드시 수치 + 연도 + 출처 포함 (예: "2025년 전자상거래 시장 $120억 돌파 예상 (Statista)")
+6. risks(3개)에는 해당 회사가 실제 직면할 구체적 장벽을 데이터와 함께 기술
+7. one_line_verdict는 핵심 수치 1개를 포함한 강력한 한줄 결론
+8. strategy.reasoning은 데이터 기반 3~4문장으로 "왜 이 전략인지" 논리적으로 설명
+9. strategy.timeline의 각 phase actions는 3개씩, 구체적이고 실행 가능한 액션 (기관명, 전시회명, 플랫폼명 등 포함)
+10. 모든 텍스트는 한국어로 작성, 응답은 반드시 순수 JSON만 출력 (마크다운 코드블록 없이)`;
 
     const companyContext = profile.companyUrl || profile.companyDesc
         ? `\n- 회사 웹사이트: ${profile.companyUrl || '(없음)'}
@@ -1152,23 +1158,29 @@ ${top5Names}
         "trade_pct_gdp": 85,
         "industry_size_billion": 56, "industry_growth_pct": 8.5
       },
-      "market_status": "해당 국가의 관련 산업 현황 2~3문장 (시장규모, 성장률, 주요 플레이어, 최근 트렌드 등 검색 데이터 기반)",
+      "market_status": "해당 국가 산업 현황 3~4문장: 반드시 시장규모($XX억), CAGR(XX%), 주요 기업(이름+점유율), 최신 트렌드를 포함. 출처명 1개 이상 명시",
+      "key_stats": {
+        "market_size_label": "$120억 (2025)",
+        "cagr_label": "12.3% (2024-2029)",
+        "top_player": "현지 1위 기업명 (점유율 XX%)",
+        "entry_barrier": "낮음|중간|높음"
+      },
       "proposal_points": [
-        "이 회사의 구체적 제품/서비스/강점을 활용한 진출 제안 포인트1 (예: '쿠팡의 로켓배송 물류 노하우를 활용한 동남아 라스트마일 배송 시장 공략')",
-        "회사 맞춤 제안 포인트2",
-        "회사 맞춤 제안 포인트3"
+        "데이터 근거 + 회사 강점 연결 + 실행 액션이 포함된 맞춤 제안1 (예: '인도네시아 물류 시장 $89억(2025, Ken Research) 규모에서 쿠팡의 풀필먼트 기술을 활용한 J&T Express 대비 차별화 전략 가능')",
+        "수치+근거 포함 맞춤 제안2",
+        "수치+근거 포함 맞춤 제안3"
       ],
-      "opportunities": ["최신 데이터 기반 기회1", "기회2", "기회3"],
-      "risks": ["이 회사가 이 국가에 진출할 때 구체적 리스크1 (규제, 경쟁, 문화 등)", "리스크2", "리스크3"],
-      "one_line_verdict": "한줄 총평"
+      "opportunities": ["반드시 수치+연도+출처 포함 기회1 (예: '2025년 시장 $120억 돌파 예상 (Statista)')", "기회2", "기회3"],
+      "risks": ["이 회사 맞춤 리스크1 — 구체적 규제/경쟁사/진입장벽을 데이터와 함께 기술", "리스크2", "리스크3"],
+      "one_line_verdict": "핵심 수치 1개 포함 강력한 결론 (예: '$89억 시장에서 연 15% 성장 중인 최적의 진출 타이밍')"
     }
   ],
   "strategy": {
-    "reasoning": "1위 국가에 대한 진출 전략 근거 (2~3문장)",
+    "reasoning": "1위 국가 진출 전략의 데이터 기반 근거 3~4문장 (시장 데이터, 경쟁 환경, 성공 가능성 수치 포함)",
     "timeline": [
-      {"phase": "1단계", "period": "0-6개월", "actions": ["조치1", "조치2"]},
-      {"phase": "2단계", "period": "6-18개월", "actions": ["조치1", "조치2"]},
-      {"phase": "3단계", "period": "18-36개월", "actions": ["조치1", "조치2"]}
+      {"phase": "1단계 시장조사·준비", "period": "0-6개월", "actions": ["구체적 기관/전시회/플랫폼명 포함 액션1", "액션2", "액션3"]},
+      {"phase": "2단계 시장진입·검증", "period": "6-18개월", "actions": ["구체적 채널/파트너/규제 대응 포함 액션1", "액션2", "액션3"]},
+      {"phase": "3단계 확장·안정화", "period": "18-36개월", "actions": ["구체적 확장 전략 포함 액션1", "액션2", "액션3"]}
     ]
   }
 }
@@ -1691,36 +1703,72 @@ function showExpansionReport() {
         const ind = t.industry;
         const aiC = ai?.countries?.find(c => c.rank === i + 1);
         const marketStatus = aiC?.market_status || '';
+        const keyStats = aiC?.key_stats || {};
         const proposals = aiC?.proposal_points || [];
         const oppos = aiC?.opportunities || ind.oppo || [];
         const risks = aiC?.risks || ind.risk || [];
         const verdict = aiC?.one_line_verdict;
+        const md = aiC?.market_data || {};
+        const dimScores = aiC?.dimension_scores || t.scores || {};
+        const strategyKey = aiC?.recommended_strategy || t.strategy;
+        const stratInfo = EA.STRATEGIES[strategyKey];
+
+        // 산업 데이터 카드
+        const hasKeyStats = keyStats.market_size_label || keyStats.cagr_label;
+        const hasMarketData = md.gdp_billion_usd || md.industry_size_billion;
+
         html += `
             <div class="exp-accordion-item ${i===0?'open':''}">
                 <div class="exp-accordion-head">
+                    <span class="acc-rank-badge">${i+1}</span>
                     <span class="acc-flag">${t.country.flag}</span>
                     <span class="acc-name">${t.country.name}</span>
-                    <span class="acc-score">${t.ces.toFixed(1)}</span>
+                    <span class="acc-strategy-badge" title="${stratInfo?.name || ''}">${stratInfo?.icon || '📊'}</span>
+                    <span class="acc-score">${(aiC?.ces_score || t.ces).toFixed(1)}</span>
                     <span class="acc-arrow">▼</span>
                 </div>
                 <div class="exp-accordion-body">
                     <div class="exp-accordion-inner">
-                        ${verdict ? `<div class="acc-verdict">${verdict}</div>` : ''}
+                        ${verdict ? `<div class="acc-verdict">"${verdict}"</div>` : ''}
+
+                        ${hasKeyStats ? `
+                        <div class="acc-key-stats">
+                            ${keyStats.market_size_label ? `<div class="acc-key-stat"><span class="key-stat-icon">💰</span><span class="key-stat-val">${keyStats.market_size_label}</span><span class="key-stat-label">산업 시장규모</span></div>` : ''}
+                            ${keyStats.cagr_label ? `<div class="acc-key-stat"><span class="key-stat-icon">📈</span><span class="key-stat-val">${keyStats.cagr_label}</span><span class="key-stat-label">연평균 성장률</span></div>` : ''}
+                            ${keyStats.top_player ? `<div class="acc-key-stat"><span class="key-stat-icon">🏢</span><span class="key-stat-val">${keyStats.top_player}</span><span class="key-stat-label">주요 경쟁사</span></div>` : ''}
+                            ${keyStats.entry_barrier ? `<div class="acc-key-stat"><span class="key-stat-icon">🚧</span><span class="key-stat-val">${keyStats.entry_barrier}</span><span class="key-stat-label">진입장벽</span></div>` : ''}
+                        </div>` : ''}
+
                         ${marketStatus ? `
                         <div class="acc-section-label status-label">📍 시장 현황</div>
                         <div class="acc-market-status">${marketStatus}</div>` : ''}
+
                         ${proposals.length ? `
                         <div class="acc-section-label proposal-label">💡 ${companyName} 맞춤 제안</div>
-                        ${proposals.map(p => `<div class="acc-proposal-item">${p}</div>`).join('')}` : ''}
+                        ${proposals.map((p, pi) => `<div class="acc-proposal-item"><span class="proposal-num">${pi+1}</span>${p}</div>`).join('')}` : ''}
+
                         <div class="acc-section-label oppo-label">🚀 기회</div>
-                        ${oppos.map(o => `<div class="acc-oppo-item">${o}</div>`).join('')}
+                        ${oppos.map(o => `<div class="acc-oppo-item">✦ ${o}</div>`).join('')}
+
                         <div class="acc-section-label risk-label">⚠️ 리스크</div>
-                        ${risks.map(r => `<div class="acc-risk-item">${r}</div>`).join('')}
-                        <div class="acc-mini-grid">
-                            <div class="acc-mini-stat"><span class="acc-mini-val">${t.country.gdp >= 1000 ? (t.country.gdp/1000).toFixed(1)+'T' : t.country.gdp+'B'}</span><span class="acc-mini-label">GDP</span></div>
-                            <div class="acc-mini-stat"><span class="acc-mini-val">${(t.country.gdp_growth_pct||0).toFixed(1)}%</span><span class="acc-mini-label">GDP성장률</span></div>
-                            <div class="acc-mini-stat"><span class="acc-mini-val">${(t.country.internet_users_pct||0).toFixed(0)}%</span><span class="acc-mini-label">인터넷보급</span></div>
-                            <div class="acc-mini-stat"><span class="acc-mini-val">${(t.country.trade_pct_gdp||0).toFixed(0)}%</span><span class="acc-mini-label">무역/GDP</span></div>
+                        ${risks.map(r => `<div class="acc-risk-item">▸ ${r}</div>`).join('')}
+
+                        <div class="acc-data-grid">
+                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.gdp_billion_usd ? (md.gdp_billion_usd >= 1000 ? (md.gdp_billion_usd/1000).toFixed(1)+'조$' : md.gdp_billion_usd+'억$') : (t.country.gdp >= 1000 ? (t.country.gdp/1000).toFixed(1)+'T' : t.country.gdp+'B')}</span><span class="data-card-label">GDP</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.gdp_growth_pct ? md.gdp_growth_pct+'%' : (t.country.gdp_growth_pct||0).toFixed(1)+'%'}</span><span class="data-card-label">GDP 성장률</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.population_million ? md.population_million+'M' : ''}</span><span class="data-card-label">인구</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.internet_users_pct ? md.internet_users_pct+'%' : (t.country.internet_users_pct||0).toFixed(0)+'%'}</span><span class="data-card-label">인터넷 보급률</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.industry_size_billion ? '$'+md.industry_size_billion+'B' : ''}</span><span class="data-card-label">산업 규모</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.industry_growth_pct ? md.industry_growth_pct+'%' : ''}</span><span class="data-card-label">산업 성장률</span></div>
+                        </div>
+
+                        <div class="acc-dim-bars">
+                            ${['marketSize','growth','potential','stability','openness','digital'].map(dim => {
+                                const val = dimScores[dim] || 0;
+                                const labels = {marketSize:'시장규모',growth:'성장률',potential:'잠재력',stability:'안정성',openness:'개방도',digital:'디지털'};
+                                const barColor = val >= 75 ? '#00ff88' : val >= 50 ? '#ffaa00' : '#ff3366';
+                                return `<div class="dim-bar-row"><span class="dim-bar-label">${labels[dim]}</span><div class="dim-bar-track"><div class="dim-bar-fill" style="width:${val}%;background:${barColor}"></div></div><span class="dim-bar-val">${val}</span></div>`;
+                            }).join('')}
                         </div>
                     </div>
                 </div>
@@ -1766,6 +1814,7 @@ function showExpansionReport() {
     html += `
         <div class="exp-actions">
             <button class="exp-btn" id="exp-back-btn">← 탐색기로 돌아가기</button>
+            <button class="exp-btn primary" id="exp-pdf-btn">📥 PDF 보고서 다운로드</button>
             <button class="exp-btn" id="exp-redo-btn">🔄 다시 분석</button>
         </div>`;
 
@@ -1910,6 +1959,10 @@ function bindReportInteractions(container) {
     const redoBtn = container.querySelector('#exp-redo-btn');
     if (redoBtn) redoBtn.addEventListener('click', () => { closeExpansionReport(); setTimeout(openWizard, 300); });
 
+    // PDF download
+    const pdfBtn = container.querySelector('#exp-pdf-btn');
+    if (pdfBtn) pdfBtn.addEventListener('click', downloadPDF);
+
     // Rinda CTA → popup (move popup to body so fixed positioning works)
     const rindaCta = container.querySelector('#rinda-cta-btn');
     const rindaPopup = container.querySelector('#rinda-popup');
@@ -1926,6 +1979,58 @@ function bindReportInteractions(container) {
             poly.style.strokeDashoffset = '0';
         });
     }, 300);
+}
+
+// ---- PDF DOWNLOAD ----
+async function downloadPDF() {
+    const btn = document.getElementById('exp-pdf-btn');
+    if (!btn) return;
+    btn.disabled = true;
+    btn.textContent = '⏳ PDF 생성 중...';
+
+    try {
+        // Dynamically load html2pdf if not loaded
+        if (!window.html2pdf) {
+            await new Promise((resolve, reject) => {
+                const s = document.createElement('script');
+                s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+                s.onload = resolve;
+                s.onerror = reject;
+                document.head.appendChild(s);
+            });
+        }
+
+        const content = document.getElementById('expansion-content');
+        const companyName = EA.results?.profile?.companyName || 'Company';
+        const dateStr = new Date().toISOString().slice(0, 10);
+
+        // Open all accordions for PDF
+        content.querySelectorAll('.exp-accordion-item').forEach(item => item.classList.add('open'));
+
+        // Hide interactive-only elements during PDF generation
+        const hideEls = content.querySelectorAll('.exp-actions, .exp-rinda-cta, #rinda-popup, .matrix-bubble');
+        hideEls.forEach(el => el.style.display = 'none');
+
+        const opt = {
+            margin:       [10, 10, 10, 10],
+            filename:     `${companyName}_해외진출전략_${dateStr}.pdf`,
+            image:        { type: 'jpeg', quality: 0.95 },
+            html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#0a0a1a', logging: false },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+        };
+
+        await html2pdf().set(opt).from(content).save();
+
+        // Restore hidden elements
+        hideEls.forEach(el => el.style.display = '');
+    } catch (e) {
+        console.error('[PDF] 생성 실패:', e);
+        alert('PDF 생성에 실패했습니다. 다시 시도해주세요.');
+    }
+
+    btn.disabled = false;
+    btn.textContent = '📥 PDF 보고서 다운로드';
 }
 
 function closeExpansionReport() {
