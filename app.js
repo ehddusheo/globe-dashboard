@@ -1069,14 +1069,100 @@ function determineStrategy(profile, country) {
     return 'export';
 }
 
+// ---- STATIC DATA ENRICHMENT FUNCTIONS ----
+
+function fmtSize(val) {
+    if (val >= 1000) return `$${(val/1000).toFixed(1)}T`;
+    if (val >= 1) return `$${val.toFixed(1)}B`;
+    return `$${(val*1000).toFixed(0)}M`;
+}
+function fmtPop(val) {
+    if (val >= 1000) return `${(val/1000).toFixed(2)}B`;
+    return `${val.toFixed(1)}M`;
+}
+
+function generateExecutiveSummary(results, indInfo, companyName) {
+    const t1 = results.top5[0], t2 = results.top5[1], t3 = results.top5[2];
+    const top3 = results.top5.slice(0,3).map(t => t.country.name).join(', ');
+    const n = results.all.length;
+    return `${n}개국 대상 ${indInfo.name} 산업 데이터 분석 결과, ${companyName}에 가장 적합한 해외 진출 시장은 ${top3} 순으로 선정되었습니다. `
+        + `1위 ${t1.country.name}은(는) ${fmtSize(t1.industry.size)} 규모의 시장에서 연 ${t1.industry.growth.toFixed(1)}% 성장 중이며, 종합 적합도(CES) ${t1.ces.toFixed(1)}점을 기록했습니다. `
+        + `GDP ${fmtSize(t1.country.gdp)}, 인터넷 보급률 ${(t1.country.internet_users_pct||0).toFixed(0)}%의 경제 환경이 진출 기반을 뒷받침합니다. `
+        + `2위 ${t2.country.name}(CES ${t2.ces.toFixed(1)})은(는) 산업규모 ${fmtSize(t2.industry.size)}·성장률 ${t2.industry.growth.toFixed(1)}%, `
+        + `3위 ${t3.country.name}(CES ${t3.ces.toFixed(1)})은(는) 산업규모 ${fmtSize(t3.industry.size)}·성장률 ${t3.industry.growth.toFixed(1)}%로 뒤를 이었습니다.`;
+}
+
+function generateMarketStatus(country, industry, indKey) {
+    const indInfo = INDUSTRIES[indKey];
+    let rankTier = industry.rank <= 5 ? `글로벌 TOP ${industry.rank}` : industry.rank <= 10 ? `글로벌 상위 10위권(${industry.rank}위)` : industry.rank <= 20 ? `글로벌 상위 20위권(${industry.rank}위)` : `글로벌 ${industry.rank}위`;
+    const gdpGrowthDesc = country.gdp_growth_pct >= 5 ? '고성장' : country.gdp_growth_pct >= 3 ? '안정적 성장' : country.gdp_growth_pct >= 0 ? '완만한 성장' : '경기 위축';
+    const netDesc = country.internet_users_pct >= 90 ? '디지털 인프라 최상위' : country.internet_users_pct >= 70 ? '디지털 기반 양호' : country.internet_users_pct >= 40 ? '디지털 전환 진행중' : '디지털 인프라 초기 단계';
+    return `${country.name}의 ${indInfo.name} 시장은 ${fmtSize(industry.size)} 규모(${rankTier})로, 연평균 ${industry.growth.toFixed(1)}% 성장 중입니다. `
+        + `국가 GDP ${fmtSize(country.gdp)}(${gdpGrowthDesc}, ${(country.gdp_growth_pct||0).toFixed(1)}%), 인구 ${fmtPop(country.pop)}, `
+        + `인터넷 보급률 ${(country.internet_users_pct||0).toFixed(0)}%로 ${netDesc}입니다. `
+        + `무역/GDP 비율 ${(country.trade_pct_gdp||0).toFixed(0)}%, 인플레이션 ${(country.inflation_pct||0).toFixed(1)}%, 실업률 ${(country.unemployment_pct||0).toFixed(1)}%.`;
+}
+
+function generateKeyStats(country, industry) {
+    let barrier;
+    if (country.income === 'High income' && industry.rank <= 10) barrier = '높음';
+    else if (country.income === 'High income' || industry.rank <= 20) barrier = '중간';
+    else barrier = '낮음';
+    return {
+        market_size_label: fmtSize(industry.size),
+        cagr_label: `${industry.growth.toFixed(1)}%`,
+        top_player: null,
+        entry_barrier: barrier
+    };
+}
+
+function generateProposalPoints(country, industry, indKey, profile, ces, scores) {
+    const indInfo = INDUSTRIES[indKey];
+    const cn = profile.companyName || '귀사';
+    return [
+        `${country.name} ${indInfo.name} 시장은 ${fmtSize(industry.size)} 규모(글로벌 ${industry.rank}위)로 연 ${industry.growth.toFixed(1)}% 성장 중이며, ${fmtPop(country.pop)} 인구 기반의 내수 시장에서 ${cn}의 제품/서비스에 대한 수요가 기대됩니다. 잠재력 점수 ${scores.potential.toFixed(0)}점.`,
+        `GDP 대비 무역 비중 ${(country.trade_pct_gdp||0).toFixed(0)}%, 인플레이션 ${(country.inflation_pct||0).toFixed(1)}%, 실업률 ${(country.unemployment_pct||0).toFixed(1)}%로 거시경제 안정성 지수 ${scores.stability.toFixed(0)}점 — ${cn}의 안정적인 시장 진입 환경을 제공합니다. 무역 개방도 점수 ${scores.openness.toFixed(0)}점.`,
+        `인터넷 보급률 ${(country.internet_users_pct||0).toFixed(0)}%, 디지털 인프라 점수 ${scores.digital.toFixed(0)}점으로 ${['tech','retail','telecom','education','finance'].includes(indKey) ? '디지털 기반 서비스 확산에 최적화된 환경' : '온라인 마케팅·유통 채널 활용이 가능한 수준'}이며, ${cn}의 해외 진출 종합 적합도(CES)는 ${ces.toFixed(1)}점입니다.`
+    ];
+}
+
+function generateVerdict(country, industry, indKey, ces) {
+    if (ces >= 70) return `${fmtSize(industry.size)} 규모 · 연 ${industry.growth.toFixed(1)}% 성장 · 글로벌 ${industry.rank}위의 고적합 시장 (CES ${ces.toFixed(1)})`;
+    if (ces >= 50) return `${fmtSize(industry.size)} 규모 · 성장률 ${industry.growth.toFixed(1)}%의 유망 시장 (CES ${ces.toFixed(1)})`;
+    return `잠재 시장규모 ${fmtSize(industry.size)} · 전략적 접근 필요 (CES ${ces.toFixed(1)})`;
+}
+
+function enrichOpportunities(oppos, country, industry, indKey) {
+    const indInfo = INDUSTRIES[indKey];
+    const extras = [
+        ` — ${country.name} ${indInfo.name} 시장 ${fmtSize(industry.size)}, 성장률 ${industry.growth.toFixed(1)}%`,
+        ` — GDP ${fmtSize(country.gdp)}, 인구 ${fmtPop(country.pop)} 규모의 내수 시장`,
+        ` — 인터넷 보급률 ${(country.internet_users_pct||0).toFixed(0)}%, 글로벌 산업순위 ${industry.rank}위`
+    ];
+    return oppos.map((o, i) => o + (extras[i] || ''));
+}
+
+function enrichRisks(risks, country) {
+    const extras = [
+        ` (인플레이션 ${(country.inflation_pct||0).toFixed(1)}%, 경제 불확실성 모니터링 필요)`,
+        ` (실업률 ${(country.unemployment_pct||0).toFixed(1)}%, 노동시장 리스크 존재)`,
+        ` (무역/GDP 비율 ${(country.trade_pct_gdp||0).toFixed(0)}%, 규제 환경 확인 필요)`
+    ];
+    return risks.map((r, i) => r + (extras[i] || ''));
+}
+
 // ---- GEMINI AI (2.5 Pro + Search Grounding) ----
 
 function buildGeminiPrompt(results) {
     const profile = results.profile;
     const indInfo = INDUSTRIES[profile.industry];
-    const top5Names = results.top5.map((t, i) =>
-        `${i+1}. ${t.country.flag} ${t.country.name} (${t.country.nameEn}) — 지역: ${t.country.region}`
-    ).join('\n');
+    const top5Names = results.top5.map((t, i) => {
+        const c = t.country, ind = t.industry;
+        return `${i+1}. ${c.flag} ${c.name} (${c.nameEn}) — 지역: ${c.region}`
+            + `\n   GDP: $${c.gdp}B, 성장률: ${(c.gdp_growth_pct||0).toFixed(1)}%, 인구: ${c.pop}M`
+            + `\n   인플레이션: ${(c.inflation_pct||0).toFixed(1)}%, 실업률: ${(c.unemployment_pct||0).toFixed(1)}%, 무역/GDP: ${(c.trade_pct_gdp||0).toFixed(0)}%, 인터넷: ${(c.internet_users_pct||0).toFixed(0)}%`
+            + `\n   ${indInfo.name} 산업: 규모 $${ind.size}B, CAGR ${ind.growth}%, 글로벌 ${ind.rank}위, CES: ${t.ces.toFixed(1)}`;
+    }).join('\n');
 
     const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === profile.revenue)?.label || '미입력';
     const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === profile.employees)?.label || '미입력';
@@ -1101,7 +1187,13 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
 7. one_line_verdict는 핵심 수치 1개를 포함한 강력한 한줄 결론
 8. strategy.reasoning은 데이터 기반 3~4문장으로 "왜 이 전략인지" 논리적으로 설명
 9. strategy.timeline의 각 phase actions는 3개씩, 구체적이고 실행 가능한 액션 (기관명, 전시회명, 플랫폼명 등 포함)
-10. 모든 텍스트는 한국어로 작성, 응답은 반드시 순수 JSON만 출력 (마크다운 코드블록 없이)`;
+10. 모든 텍스트는 한국어로 작성, 응답은 반드시 순수 JSON만 출력 (마크다운 코드블록 없이)
+
+### 좋은 market_status 예시:
+"미국의 기술 & IT 시장은 $2.6T 규모로 글로벌 1위이며, Gartner에 따르면 2025년 IT 지출은 전년 대비 9.3% 증가한 $5.6T에 달할 전망. AWS(32%), Azure(24%), GCP(12%)가 클라우드 시장을 주도하며, AI/ML 투자가 전체 IT 예산의 15% 이상을 차지."
+
+### 나쁜 예시 (절대 불가):
+"미국은 큰 IT 시장을 보유하고 있으며 성장하고 있습니다." ← 이런 추상적 서술은 거부됨. 반드시 구체적 수치+출처 포함.`;
 
     const companyContext = profile.companyUrl || profile.companyDesc
         ? `\n- 회사 웹사이트: ${profile.companyUrl || '(없음)'}
@@ -1118,8 +1210,10 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
 - 우선순위: ${priLabels || '균등'}
 - 관심지역: ${profile.regions.includes('all') ? '전체' : profile.regions.join(', ')}
 
-## 분석 대상 국가 (유망순위)
+## 분석 대상 국가 (유망순위 + DB 기본 수치)
 ${top5Names}
+
+⚠️ 위는 우리 DB의 기본 수치입니다. Google Search로 최신 데이터를 검색하여 업데이트/보완하고, 검색으로 발견한 추가 정보(경쟁사, 최신 트렌드, 규제 변화 등)를 반드시 반영하세요.
 
 ## 요청사항
 위 5개 국가에 대해 Google Search로 최신 데이터를 검색하여 아래 JSON 구조로 분석해주세요.
@@ -1209,8 +1303,8 @@ async function callGeminiAPI(results) {
                 system_instruction: { parts: [{ text: systemInstruction }] },
                 contents: [{ parts: [{ text: userMessage }] }],
                 generationConfig: {
-                    temperature: 0.7,
-                    maxOutputTokens: 8192,
+                    temperature: 0.4,
+                    maxOutputTokens: 16384,
                 }
             };
             if (useSearch) body.tools = [{ google_search: {} }];
@@ -1622,14 +1716,13 @@ function showExpansionReport() {
             </div>
         </div>`;
 
-    // Executive summary (AI only)
-    if (ai?.executive_summary) {
-        html += `
+    // Executive summary (AI with static fallback)
+    const execSummary = ai?.executive_summary || generateExecutiveSummary(r, indInfo, companyName);
+    html += `
         <div class="exp-executive-summary">
-            <div class="exp-summary-label">AI 분석 요약</div>
-            <p class="exp-summary-text">${ai.executive_summary}</p>
+            <div class="exp-summary-label">${ai?.executive_summary ? 'AI 분석 요약' : '데이터 기반 분석 요약'}</div>
+            <p class="exp-summary-text">${execSummary}</p>
         </div>`;
-    }
 
     // Gauge
     const gaugeR = 40, gaugeC = 2 * Math.PI * gaugeR;
@@ -1702,20 +1795,17 @@ function showExpansionReport() {
     r.top5.forEach((t, i) => {
         const ind = t.industry;
         const aiC = ai?.countries?.find(c => c.rank === i + 1);
-        const marketStatus = aiC?.market_status || '';
-        const keyStats = aiC?.key_stats || {};
-        const proposals = aiC?.proposal_points || [];
-        const oppos = aiC?.opportunities || ind.oppo || [];
-        const risks = aiC?.risks || ind.risk || [];
-        const verdict = aiC?.one_line_verdict;
+        const indKey = r.profile.industry;
+        const marketStatus = aiC?.market_status || generateMarketStatus(t.country, ind, indKey);
+        const keyStats = aiC?.key_stats || generateKeyStats(t.country, ind);
+        const proposals = aiC?.proposal_points?.length ? aiC.proposal_points : generateProposalPoints(t.country, ind, indKey, r.profile, t.ces, t.scores);
+        const oppos = aiC?.opportunities?.length ? aiC.opportunities : enrichOpportunities(ind.oppo || [], t.country, ind, indKey);
+        const risks = aiC?.risks?.length ? aiC.risks : enrichRisks(ind.risk || [], t.country);
+        const verdict = aiC?.one_line_verdict || generateVerdict(t.country, ind, indKey, t.ces);
         const md = aiC?.market_data || {};
         const dimScores = aiC?.dimension_scores || t.scores || {};
         const strategyKey = aiC?.recommended_strategy || t.strategy;
         const stratInfo = EA.STRATEGIES[strategyKey];
-
-        // 산업 데이터 카드
-        const hasKeyStats = keyStats.market_size_label || keyStats.cagr_label;
-        const hasMarketData = md.gdp_billion_usd || md.industry_size_billion;
 
         html += `
             <div class="exp-accordion-item ${i===0?'open':''}">
@@ -1729,23 +1819,20 @@ function showExpansionReport() {
                 </div>
                 <div class="exp-accordion-body">
                     <div class="exp-accordion-inner">
-                        ${verdict ? `<div class="acc-verdict">"${verdict}"</div>` : ''}
+                        <div class="acc-verdict">"${verdict}"</div>
 
-                        ${hasKeyStats ? `
                         <div class="acc-key-stats">
                             ${keyStats.market_size_label ? `<div class="acc-key-stat"><span class="key-stat-icon">💰</span><span class="key-stat-val">${keyStats.market_size_label}</span><span class="key-stat-label">산업 시장규모</span></div>` : ''}
                             ${keyStats.cagr_label ? `<div class="acc-key-stat"><span class="key-stat-icon">📈</span><span class="key-stat-val">${keyStats.cagr_label}</span><span class="key-stat-label">연평균 성장률</span></div>` : ''}
                             ${keyStats.top_player ? `<div class="acc-key-stat"><span class="key-stat-icon">🏢</span><span class="key-stat-val">${keyStats.top_player}</span><span class="key-stat-label">주요 경쟁사</span></div>` : ''}
                             ${keyStats.entry_barrier ? `<div class="acc-key-stat"><span class="key-stat-icon">🚧</span><span class="key-stat-val">${keyStats.entry_barrier}</span><span class="key-stat-label">진입장벽</span></div>` : ''}
-                        </div>` : ''}
+                        </div>
 
-                        ${marketStatus ? `
                         <div class="acc-section-label status-label">📍 시장 현황</div>
-                        <div class="acc-market-status">${marketStatus}</div>` : ''}
+                        <div class="acc-market-status">${marketStatus}</div>
 
-                        ${proposals.length ? `
                         <div class="acc-section-label proposal-label">💡 ${companyName} 맞춤 제안</div>
-                        ${proposals.map((p, pi) => `<div class="acc-proposal-item"><span class="proposal-num">${pi+1}</span>${p}</div>`).join('')}` : ''}
+                        ${proposals.map((p, pi) => `<div class="acc-proposal-item"><span class="proposal-num">${pi+1}</span>${p}</div>`).join('')}
 
                         <div class="acc-section-label oppo-label">🚀 기회</div>
                         ${oppos.map(o => `<div class="acc-oppo-item">✦ ${o}</div>`).join('')}
@@ -1754,12 +1841,12 @@ function showExpansionReport() {
                         ${risks.map(r => `<div class="acc-risk-item">▸ ${r}</div>`).join('')}
 
                         <div class="acc-data-grid">
-                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.gdp_billion_usd ? (md.gdp_billion_usd >= 1000 ? (md.gdp_billion_usd/1000).toFixed(1)+'조$' : md.gdp_billion_usd+'억$') : (t.country.gdp >= 1000 ? (t.country.gdp/1000).toFixed(1)+'T' : t.country.gdp+'B')}</span><span class="data-card-label">GDP</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.gdp_growth_pct ? md.gdp_growth_pct+'%' : (t.country.gdp_growth_pct||0).toFixed(1)+'%'}</span><span class="data-card-label">GDP 성장률</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.population_million ? md.population_million+'M' : ''}</span><span class="data-card-label">인구</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.internet_users_pct ? md.internet_users_pct+'%' : (t.country.internet_users_pct||0).toFixed(0)+'%'}</span><span class="data-card-label">인터넷 보급률</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.industry_size_billion ? '$'+md.industry_size_billion+'B' : ''}</span><span class="data-card-label">산업 규모</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${hasMarketData && md.industry_growth_pct ? md.industry_growth_pct+'%' : ''}</span><span class="data-card-label">산업 성장률</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${fmtSize(md.gdp_billion_usd || t.country.gdp)}</span><span class="data-card-label">GDP</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${(md.gdp_growth_pct || t.country.gdp_growth_pct || 0).toFixed(1)}%</span><span class="data-card-label">GDP 성장률</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${fmtPop(md.population_million || t.country.pop)}</span><span class="data-card-label">인구</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${(md.internet_users_pct || t.country.internet_users_pct || 0).toFixed(0)}%</span><span class="data-card-label">인터넷 보급률</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${fmtSize(md.industry_size_billion || ind.size)}</span><span class="data-card-label">산업 규모</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${(md.industry_growth_pct || ind.growth || 0).toFixed(1)}%</span><span class="data-card-label">산업 성장률</span></div>
                         </div>
 
                         <div class="acc-dim-bars">
