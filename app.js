@@ -876,8 +876,8 @@ employee_range 값: "u10" (10명 이하), "u50" (11~50명), "u200" (51~200명), 
 ⚠️ 모든 필드를 Google Search 결과 기반으로 상세하게 작성하세요. 추상적 서술 금지 — 구체적 제품명, 수치, 사실 중심으로.`;
 
     const modelChain = [
-        { name: 'gemini-2.5-pro',   timeout: 45000, search: true },
-        { name: 'gemini-2.5-flash', timeout: 30000, search: true },
+        { name: 'gemini-2.5-pro',   timeout: 90000, search: true },
+        { name: 'gemini-2.5-flash', timeout: 60000, search: true },
     ];
 
     let result = null;
@@ -1482,8 +1482,8 @@ async function callGeminiAPI(results) {
 
     // 모델 체인: 2.5-pro(최고 성능) → 2.5-flash(폴백)
     const modelChain = [
-        { name: 'gemini-2.5-pro',   timeout: 120000, search: true },
-        { name: 'gemini-2.5-flash', timeout: 90000, search: true },
+        { name: 'gemini-2.5-pro',   timeout: 240000, search: true },
+        { name: 'gemini-2.5-flash', timeout: 180000, search: true },
     ];
 
     for (const { name: model, timeout, search: useSearch } of modelChain) {
