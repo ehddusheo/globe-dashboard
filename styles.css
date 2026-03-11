@@ -210,6 +210,40 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
     #right-panel { position: fixed; right: 0; top: 56px; bottom: 36px; width: 340px; }
 }
 
+/* ---- MOBILE (< 768px) ---- */
+@media (max-width: 768px) {
+    body { overflow: auto; height: auto; }
+    #header { position: sticky; top: 0; flex-wrap: wrap; height: auto; padding: 8px 12px; gap: 4px; }
+    .header-stats { gap: 8px; }
+    .stat-item { gap: 0; }
+    .stat-value { font-size: 14px; }
+    .stat-label { font-size: 7px; }
+    .header-right { display: none; }
+    h1 { font-size: 12px !important; }
+
+    #main-content { flex-direction: column; position: static; top: auto; bottom: auto; overflow: visible; }
+    #left-panel { display: none; }
+    #right-panel { display: none; }
+    #globe-container { width: 100%; height: 50vh; min-height: 280px; position: relative; }
+
+    .expansion-cta-btn { bottom: 16px; right: 12px; padding: 10px 16px; font-size: 12px; }
+    .expansion-panel {
+        position: fixed; left: 0; right: 0; top: 0; bottom: 0;
+        width: 100% !important; border-left: none; z-index: 200;
+        padding: 16px;
+    }
+    .expansion-panel.expanded { padding: 16px; }
+    .panel-expand-btn { display: none; }
+    .wizard-modal { width: 100%; max-width: 100vw; padding: 20px; border-radius: 12px; }
+    .wizard-content { min-height: auto; }
+
+    .welcome-modal { width: 92vw; padding: 28px 20px; }
+    .welcome-title { font-size: 18px; }
+    .welcome-features { flex-direction: column; align-items: center; }
+
+    #ticker { position: static; }
+}
+
 /* ============================================================
    EXPANSION ADVISOR — CTA, WIZARD, OVERLAY, REPORT
    ============================================================ */

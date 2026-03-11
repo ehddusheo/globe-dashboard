@@ -198,13 +198,15 @@ function initGlobe() {
     const container = document.getElementById('globe-container');
     const w = container.clientWidth;
     const h = container.clientHeight;
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+
     globe = Globe()
         .width(w)
         .height(h)
         .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-        .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
-        .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
-        .showAtmosphere(true)
+        .bumpImageUrl(isMobile ? null : '//unpkg.com/three-globe/example/img/earth-topology.png')
+        .backgroundImageUrl(isMobile ? null : '//unpkg.com/three-globe/example/img/night-sky.png')
+        .showAtmosphere(!isMobile)
         .atmosphereColor('#3a228a')
         .atmosphereAltitude(0.18)
         .polygonsData(worldGeoJson.features)
@@ -231,8 +233,13 @@ function initGlobe() {
 
     // Adjust globe size and rotation
     globe.controls().autoRotate = true;
-    globe.controls().autoRotateSpeed = 0.5;
+    globe.controls().autoRotateSpeed = isMobile ? 0.3 : 0.5;
     globe.controls().enableZoom = true;
+
+    // Mobile: lower renderer resolution for performance
+    if (isMobile && globe.renderer) {
+        globe.renderer().setPixelRatio(1);
+    }
 
     // Show app after ~4s loading sequence (짧고 빠르게)
     const loaderText = document.querySelector('.loader-text');
@@ -2537,7 +2544,29 @@ async function downloadPDF() {
             pagebreak:    { mode: ['css', 'legacy'] }
         };
 
-        await html2pdf().set(opt).from(content).save();
+        // Use outputPdf to handle mobile WebView (Threads, Instagram, etc.)
+        const isMobileWebView = /FBAN|FBAV|Instagram|Threads|Line|KAKAOTALK|NAVER/i.test(navigator.userAgent);
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobileWebView || (isMobile && !navigator.canShare)) {
+            // WebView/mobile: generate blob and open in new tab
+            const pdfBlob = await html2pdf().set(opt).from(content).outputPdf('blob');
+            const blobUrl = URL.createObjectURL(pdfBlob);
+            // Try opening in new tab first
+            const opened = window.open(blobUrl, '_blank');
+            if (!opened) {
+                // Fallback: create download link and click
+                const a = document.createElement('a');
+                a.href = blobUrl;
+                a.download = opt.filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+            setTimeout(() => URL.revokeObjectURL(blobUrl), 60000);
+        } else {
+            await html2pdf().set(opt).from(content).save();
+        }
 
         // Remove all spacers after PDF generation
         spacers.forEach(s => s.remove());
