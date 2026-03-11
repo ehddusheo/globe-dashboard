@@ -12,30 +12,63 @@
 // 5. 배포 → URL 복사 → app.js의 SHEET_WEBHOOK_URL에 붙여넣기
 // =====================================================
 
+var MAX_FIELD_LENGTH = 500;
+
+function truncate(val) {
+  if (!val) return '';
+  return String(val).substring(0, MAX_FIELD_LENGTH);
+}
+
 function doPost(e) {
   try {
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     var data = JSON.parse(e.postData.contents);
 
-    // 헤더 순서: 회사명, 회사링크, 대표업종, 연매출, 임직원수, 해외사업경험, 우선순위, 관심지역
-    var row = [
-      data.companyName || '',
-      data.companyUrl || '',
-      data.industry || '',
-      data.revenue || '',
-      data.employees || '',
-      data.experience || '',
-      data.priorities || '',
-      data.regions || '',
-    ];
+    // --- Security Checks ---
+    // 1. Honeypot: bots tend to fill all fields
+    if (data._hp !== undefined && data._hp !== '') {
+      return ContentService
+        .createTextOutput(JSON.stringify({ status: 'rejected' }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
 
-    // 추가 컬럼이 있으면 (TOP5, CES 등)
-    if (data.top1) row.push(data.top1);
-    if (data.top5) row.push(data.top5);
-    if (data.cesScore) row.push(data.cesScore);
-    if (data.timestamp) row.push(data.timestamp);
+    // 2. Timestamp validation: reject stale requests (>5 min)
+    if (data._ts) {
+      var age = Date.now() - Number(data._ts);
+      if (age < 0 || age > 300000) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ status: 'rejected', reason: 'stale' }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+    }
 
-    sheet.appendRow(row);
+    // 3. Required field check
+    if (!data.companyName || !String(data.companyName).trim()) {
+      return ContentService
+        .createTextOutput(JSON.stringify({ status: 'rejected', reason: 'missing_company' }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // --- Append to Sheet ---
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    sheet.appendRow([
+      truncate(data.timestamp),
+      truncate(data.companyName),
+      truncate(data.companyUrl),
+      truncate(data.industry),
+      truncate(data.revenue),
+      truncate(data.employees),
+      truncate(data.experience),
+      truncate(data.priorities),
+      truncate(data.regions),
+      truncate(data.companyDesc),
+      truncate(data.products_services),
+      truncate(data.business_model),
+      truncate(data.key_strengths),
+      truncate(data.recent_news),
+      truncate(data.target_markets),
+      truncate(data.tech_stack),
+      truncate(data.export_experience)
+    ]);
 
     return ContentService
       .createTextOutput(JSON.stringify({ status: 'ok' }))
@@ -43,7 +76,7 @@ function doPost(e) {
 
   } catch (err) {
     return ContentService
-      .createTextOutput(JSON.stringify({ status: 'error', message: err.toString() }))
+      .createTextOutput(JSON.stringify({ status: 'error' }))
       .setMimeType(ContentService.MimeType.JSON);
   }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com https://cdnjs.cloudflare.com 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://generativelanguage.googleapis.com https://script.google.com https://unpkg.com; img-src 'self' data: blob:;">
     <title>Global Industry Intelligence Platform</title>
     <link rel="stylesheet" href="styles.css?v=20260310a">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -106,8 +107,8 @@
         </footer>
     </div>
 
-    <script src="https://unpkg.com/globe.gl@2.27.2/dist/globe.gl.min.js"></script>
-    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="https://unpkg.com/globe.gl@2.27.2/dist/globe.gl.min.js" integrity="sha384-F9OHjeWeuxp9JN/3Cc7QfqhpL4d2MXpYRH6eym5Id1g6450ZI+BcXgMoqMPQhjxs" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
     <script src="data.js?v=20260309b"></script>
     <script src="app.js?v=20260310a"></script>
 </body>

@@ -9,18 +9,57 @@ function setGeminiKey(key) {
     return true;
 }
 
+// === Security Utilities ===
+const DEBUG = false;
+
+function escHTML(str) {
+    if (str == null) return '';
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function safeUrl(url) {
+    if (!url) return '';
+    const s = String(url).trim();
+    return /^https?:\/\//i.test(s) ? escHTML(s) : '';
+}
+
+function isValidUrl(url) {
+    try { const u = new URL(url); return u.protocol === 'http:' || u.protocol === 'https:'; }
+    catch { return false; }
+}
+
+function createRateLimiter(minIntervalMs) {
+    let lastCall = 0;
+    return function() {
+        const now = Date.now();
+        if (now - lastCall < minIntervalMs) return false;
+        lastCall = now;
+        return true;
+    };
+}
+const _rlLookup   = createRateLimiter(30000);
+const _rlAnalysis  = createRateLimiter(60000);
+const _rlSheet     = createRateLimiter(10000);
+
+function sanitizeFilename(name) {
+    if (!name) return 'Company';
+    return String(name).replace(/[<>:"/\\|?*\x00-\x1f]/g, '').trim().substring(0, 100) || 'Company';
+}
+
 // Google Sheet 웹훅 URL (Apps Script 배포 후 여기에 URL 입력)
 const SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbyroQxKWqJ8jDvvtAPwcOoAtGiEqLdkbCqHgwm8Wev-DQx0L7EnNgUDNI7K08Qpzfo3/exec';
 
 function sendToSheet(data) {
-    if (!SHEET_WEBHOOK_URL) { console.log('[Sheet] 웹훅 URL 미설정 — 건너뜀'); return; }
+    if (!SHEET_WEBHOOK_URL) return;
+    if (!_rlSheet()) return;
+    data._ts = Date.now();
+    data._hp = '';
     fetch(SHEET_WEBHOOK_URL, {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
-    }).then(() => console.log('[Sheet] ✅ 데이터 전송 완료'))
-      .catch(e => console.warn('[Sheet] 전송 실패:', e.message));
+    }).catch(() => {});
 }
 
 let globe, selectedCountry = null, selectedIndustry = null, worldGeoJson = null;
@@ -731,14 +770,14 @@ function renderStep1(el) {
         <div class="wz-field">
             <label class="wz-label">🌐 회사 웹사이트</label>
             <div class="wz-url-wrap">
-                <input type="url" class="wz-input wz-url-input" id="wz-url" placeholder="https://www.example.com" value="${EA.profile.companyUrl || ''}" autocomplete="off">
+                <input type="url" class="wz-input wz-url-input" id="wz-url" placeholder="https://www.example.com" value="${escHTML(EA.profile.companyUrl || '')}" maxlength="2048" autocomplete="off">
                 <button type="button" class="wz-url-btn" id="wz-url-lookup">🔍 AI 조회</button>
             </div>
             <div class="wz-url-status" id="wz-url-status"></div>
         </div>
         <div class="wz-field">
             <label class="wz-label">회사명</label>
-            <input type="text" class="wz-input" id="wz-company" placeholder="예: 주식회사 테크원" value="${EA.profile.companyName}" autocomplete="off">
+            <input type="text" class="wz-input" id="wz-company" placeholder="예: 주식회사 테크원" value="${escHTML(EA.profile.companyName)}" maxlength="200" autocomplete="off">
         </div>
         <div class="wz-field">
             <label class="wz-label">대표 업종 *</label>
@@ -782,6 +821,7 @@ function renderStep1(el) {
     el.querySelector('#wz-url-lookup').addEventListener('click', () => {
         const url = el.querySelector('#wz-url').value.trim();
         if (!url) { showUrlStatus('⚠️ URL을 입력해주세요.', 'err'); return; }
+        if (!isValidUrl(url)) { showUrlStatus('⚠️ 올바른 URL 형식이 아닙니다. (https://example.com)', 'err'); return; }
         lookupCompany(url, el);
     });
 }
@@ -795,6 +835,7 @@ function showUrlStatus(msg, type) {
 
 async function lookupCompany(url, formEl) {
     if (!GEMINI_KEY) { showUrlStatus('⚠️ API Key를 먼저 설정해주세요. (헤더 🔑 버튼)', 'err'); return; }
+    if (!_rlLookup()) { showUrlStatus('⏳ 잠시 후 다시 시도해주세요. (30초 대기)', 'err'); return; }
 
     const lookupBtn = formEl.querySelector('#wz-url-lookup');
     lookupBtn.disabled = true;
@@ -863,7 +904,7 @@ employee_range 값: "u10" (10명 이하), "u50" (11~50명), "u200" (51~200명), 
             const parts = data?.candidates?.[0]?.content?.parts || [];
             const text = parts.map(p => p.text || '').join('');
             if (!text) { console.warn(`[Lookup] ${model}: empty response`); continue; }
-            console.log(`[Lookup] ${model} raw:`, text.substring(0, 300));
+            if (DEBUG) console.log(`[Lookup] ${model} raw:`, text.substring(0, 300));
 
             try {
                 result = extractJSON(text);
@@ -872,7 +913,7 @@ employee_range 값: "u10" (10명 이하), "u50" (11~50명), "u200" (51~200명), 
                 continue;
             }
             if (result?.company_name) {
-                console.log(`[Lookup] ✅ ${model} success:`, result);
+                if (DEBUG) console.log(`[Lookup] ✅ ${model} success:`, result);
                 break;
             }
         } catch (e) {
@@ -1017,7 +1058,7 @@ function renderStep3(el) {
     el.innerHTML = `
         <div class="wz-title">분석 준비 완료</div>
         <div class="wz-summary">
-            <div class="wz-summary-row"><span>회사명</span><span class="wz-summary-val">${EA.profile.companyName || '(미입력)'}</span></div>
+            <div class="wz-summary-row"><span>회사명</span><span class="wz-summary-val">${escHTML(EA.profile.companyName || '(미입력)')}</span></div>
             <div class="wz-summary-row"><span>업종</span><span class="wz-summary-val">${indName}</span></div>
             <div class="wz-summary-row"><span>연 매출</span><span class="wz-summary-val">${revLabel}</span></div>
             <div class="wz-summary-row"><span>임직원</span><span class="wz-summary-val">${empLabel}</span></div>
@@ -1350,7 +1391,7 @@ async function callGeminiAPI(results) {
 
     for (const { name: model, timeout, search: useSearch } of modelChain) {
         try {
-            console.log(`🔄 Trying model: ${model} (timeout: ${timeout/1000}s, search: ${useSearch})`);
+            if (DEBUG) console.log(`🔄 Trying model: ${model} (timeout: ${timeout/1000}s, search: ${useSearch})`);
 
             const body = {
                 system_instruction: { parts: [{ text: systemInstruction }] },
@@ -1379,7 +1420,7 @@ async function callGeminiAPI(results) {
 
             if (!resp.ok) {
                 const errBody = await resp.text().catch(() => '');
-                console.warn(`⚠️ ${model} ${resp.status}: ${errBody.slice(0, 150)}`);
+                console.warn(`⚠️ ${model} HTTP ${resp.status}`);
                 if (resp.status === 403 || resp.status === 401) {
                     throw new Error(`API Key 오류 (${resp.status}). 새 키를 등록하세요.`);
                 }
@@ -1391,8 +1432,8 @@ async function callGeminiAPI(results) {
             const text = textParts.map(p => p.text).join('');
             if (!text) { console.warn(`⚠️ ${model}: empty response`); continue; }
 
-            console.log(`✅ ${model} 응답 수신 (${text.length}자)`);
-            console.log(`📋 응답 미리보기: ${text.slice(0, 200)}`);
+            if (DEBUG) console.log(`✅ ${model} 응답 수신 (${text.length}자)`);
+            if (DEBUG) console.log(`📋 응답 미리보기: ${text.slice(0, 200)}`);
             const parsed = extractJSON(text);
             parsed._model = model;
             return parsed;
@@ -1527,6 +1568,7 @@ function runAnalysis() {
 
 // ---- ANALYSIS ANIMATION ----
 function startAnalysis() {
+    if (!_rlAnalysis()) { alert('⏳ 잠시 후 다시 시도해주세요. (60초 대기)'); return; }
     document.getElementById('expansion-wizard').classList.add('hidden');
 
     // 시트에 리드 데이터 전송
@@ -1762,18 +1804,18 @@ function showExpansionReport() {
     html += `
         <div class="exp-badge">AI EXPANSION REPORT</div>
         <div class="exp-title">해외진출 전략 보고서</div>
-        <div class="exp-meta">${companyName} · ${indInfo?.name || ''} · ${r.date}</div>
-        ${companyUrl ? `<div class="exp-company-url">🌐 <a href="${companyUrl}" target="_blank">${companyUrl}</a></div>` : ''}`;
+        <div class="exp-meta">${escHTML(companyName)} · ${escHTML(indInfo?.name || '')} · ${escHTML(r.date)}</div>
+        ${companyUrl ? `<div class="exp-company-url">🌐 <a href="${safeUrl(companyUrl)}" target="_blank" rel="noopener">${escHTML(companyUrl)}</a></div>` : ''}`;
 
     // Company Intel Card (Phase 5)
     const intelItems = [];
-    if (intel.products_services) intelItems.push({icon: '📦', label: '주요 제품/서비스', value: intel.products_services});
-    if (intel.business_model) intelItems.push({icon: '💼', label: '비즈니스 모델', value: intel.business_model});
-    if (intel.key_strengths) intelItems.push({icon: '💪', label: '핵심 강점', value: intel.key_strengths});
-    if (intel.target_markets) intelItems.push({icon: '🎯', label: '타겟 시장', value: intel.target_markets});
-    if (intel.tech_stack) intelItems.push({icon: '⚙️', label: '기술 스택', value: intel.tech_stack});
-    if (intel.recent_news) intelItems.push({icon: '📰', label: '최근 동향', value: intel.recent_news});
-    if (intel.export_experience && intel.export_experience !== '정보 없음') intelItems.push({icon: '🌏', label: '해외 경험', value: intel.export_experience});
+    if (intel.products_services) intelItems.push({icon: '📦', label: '주요 제품/서비스', value: escHTML(intel.products_services)});
+    if (intel.business_model) intelItems.push({icon: '💼', label: '비즈니스 모델', value: escHTML(intel.business_model)});
+    if (intel.key_strengths) intelItems.push({icon: '💪', label: '핵심 강점', value: escHTML(intel.key_strengths)});
+    if (intel.target_markets) intelItems.push({icon: '🎯', label: '타겟 시장', value: escHTML(intel.target_markets)});
+    if (intel.tech_stack) intelItems.push({icon: '⚙️', label: '기술 스택', value: escHTML(intel.tech_stack)});
+    if (intel.recent_news) intelItems.push({icon: '📰', label: '최근 동향', value: escHTML(intel.recent_news)});
+    if (intel.export_experience && intel.export_experience !== '정보 없음') intelItems.push({icon: '🌏', label: '해외 경험', value: escHTML(intel.export_experience)});
 
     if (intelItems.length > 0) {
         html += `<div class="exp-company-intel">
@@ -1781,7 +1823,7 @@ function showExpansionReport() {
             ${intelItems.map(it => `<div class="intel-item"><span class="intel-icon">${it.icon}</span><span class="intel-label">${it.label}</span><span class="intel-value">${it.value}</span></div>`).join('')}
         </div>`;
     } else if (companyDesc) {
-        html += `<div class="exp-company-desc">${companyDesc}</div>`;
+        html += `<div class="exp-company-desc">${escHTML(companyDesc)}</div>`;
     }
 
     html += `
@@ -1804,7 +1846,7 @@ function showExpansionReport() {
     html += `
         <div class="exp-executive-summary">
             <div class="exp-summary-label">${ai?.executive_summary ? 'AI 분석 요약' : '데이터 기반 분석 요약'}</div>
-            <p class="exp-summary-text">${execSummary}</p>
+            <p class="exp-summary-text">${escHTML(execSummary)}</p>
         </div>`;
 
     // Gauge
@@ -1857,13 +1899,13 @@ function showExpansionReport() {
         <div class="exp-strategy">
             <div class="strategy-head">
                 <span class="strategy-icon">${strat.icon}</span>
-                <div><div class="strategy-name">${strat.name}</div><div class="strategy-desc">${aiStrat?.reasoning || strat.desc}</div></div>
+                <div><div class="strategy-name">${escHTML(strat.name)}</div><div class="strategy-desc">${escHTML(aiStrat?.reasoning || strat.desc)}</div></div>
             </div>
             <div class="exp-timeline">`;
     if (Array.isArray(aiStrat?.timeline) && aiStrat.timeline.length > 0) {
         aiStrat.timeline.forEach(ph => {
-            const actions = Array.isArray(ph.actions) ? ph.actions.join('<br>') : (ph.actions || '');
-            html += `<div class="timeline-phase"><span class="phase-period">${ph.period || ph.phase || ''}</span><span class="phase-action">${actions}</span></div>`;
+            const actions = Array.isArray(ph.actions) ? ph.actions.map(a => escHTML(a)).join('<br>') : escHTML(ph.actions || '');
+            html += `<div class="timeline-phase"><span class="phase-period">${escHTML(ph.period || ph.phase || '')}</span><span class="phase-action">${actions}</span></div>`;
         });
     } else {
         html += `
@@ -1902,26 +1944,26 @@ function showExpansionReport() {
                 </div>
                 <div class="exp-accordion-body">
                     <div class="exp-accordion-inner">
-                        <div class="acc-verdict">"${verdict}"</div>
+                        <div class="acc-verdict">"${escHTML(verdict)}"</div>
 
                         <div class="acc-key-stats">
-                            ${keyStats.market_size_label ? `<div class="acc-key-stat"><span class="key-stat-icon">💰</span><span class="key-stat-val">${keyStats.market_size_label}</span><span class="key-stat-label">산업 시장규모</span></div>` : ''}
-                            ${keyStats.cagr_label ? `<div class="acc-key-stat"><span class="key-stat-icon">📈</span><span class="key-stat-val">${keyStats.cagr_label}</span><span class="key-stat-label">연평균 성장률</span></div>` : ''}
-                            ${keyStats.top_player ? `<div class="acc-key-stat"><span class="key-stat-icon">🏢</span><span class="key-stat-val">${keyStats.top_player}</span><span class="key-stat-label">주요 경쟁사</span></div>` : ''}
-                            ${keyStats.entry_barrier ? `<div class="acc-key-stat"><span class="key-stat-icon">🚧</span><span class="key-stat-val">${keyStats.entry_barrier}</span><span class="key-stat-label">진입장벽</span></div>` : ''}
+                            ${keyStats.market_size_label ? `<div class="acc-key-stat"><span class="key-stat-icon">💰</span><span class="key-stat-val">${escHTML(keyStats.market_size_label)}</span><span class="key-stat-label">산업 시장규모</span></div>` : ''}
+                            ${keyStats.cagr_label ? `<div class="acc-key-stat"><span class="key-stat-icon">📈</span><span class="key-stat-val">${escHTML(keyStats.cagr_label)}</span><span class="key-stat-label">연평균 성장률</span></div>` : ''}
+                            ${keyStats.top_player ? `<div class="acc-key-stat"><span class="key-stat-icon">🏢</span><span class="key-stat-val">${escHTML(keyStats.top_player)}</span><span class="key-stat-label">주요 경쟁사</span></div>` : ''}
+                            ${keyStats.entry_barrier ? `<div class="acc-key-stat"><span class="key-stat-icon">🚧</span><span class="key-stat-val">${escHTML(keyStats.entry_barrier)}</span><span class="key-stat-label">진입장벽</span></div>` : ''}
                         </div>
 
                         <div class="acc-section-label status-label">📍 시장 현황</div>
-                        <div class="acc-market-status">${marketStatus}</div>
+                        <div class="acc-market-status">${escHTML(marketStatus)}</div>
 
-                        <div class="acc-section-label proposal-label">💡 ${companyName} 맞춤 제안</div>
-                        ${proposals.map((p, pi) => `<div class="acc-proposal-item"><span class="proposal-num">${pi+1}</span>${p}</div>`).join('')}
+                        <div class="acc-section-label proposal-label">💡 ${escHTML(companyName)} 맞춤 제안</div>
+                        ${proposals.map((p, pi) => `<div class="acc-proposal-item"><span class="proposal-num">${pi+1}</span>${escHTML(p)}</div>`).join('')}
 
                         <div class="acc-section-label oppo-label">🚀 기회</div>
-                        ${oppos.map(o => `<div class="acc-oppo-item">✦ ${o}</div>`).join('')}
+                        ${oppos.map(o => `<div class="acc-oppo-item">✦ ${escHTML(o)}</div>`).join('')}
 
                         <div class="acc-section-label risk-label">⚠️ 리스크</div>
-                        ${risks.map(r => `<div class="acc-risk-item">▸ ${r}</div>`).join('')}
+                        ${risks.map(r => `<div class="acc-risk-item">▸ ${escHTML(r)}</div>`).join('')}
 
                         <div class="acc-data-grid">
                             <div class="acc-data-card"><span class="data-card-val">${fmtSize(md.gdp_billion_usd || t.country.gdp)}</span><span class="data-card-label">GDP</span></div>
@@ -1970,7 +2012,7 @@ function showExpansionReport() {
                 </div>
                 <div class="rinda-popup-body">
                     <p class="rinda-popup-lead">AI 분석 결과, <strong>${top1.country.name}</strong>은(는) 귀사의 최적 해외 진출 시장입니다.</p>
-                    ${aiOppos.length ? `<ul class="rinda-popup-points">${aiOppos.slice(0,3).map(o => `<li>${o}</li>`).join('')}</ul>` : ''}
+                    ${aiOppos.length ? `<ul class="rinda-popup-points">${aiOppos.slice(0,3).map(o => `<li>${escHTML(o)}</li>`).join('')}</ul>` : ''}
                     <p class="rinda-popup-action">지금 바로 <strong>${top1.country.name}</strong> 현지 영업팀을 구축하고, 해외 매출을 만들어보세요.</p>
                 </div>
                 <a href="${rindaUrl}" target="_blank" rel="noopener" class="rinda-popup-cta-link" id="rinda-go">
@@ -2191,6 +2233,8 @@ async function downloadPDF() {
             await new Promise((resolve, reject) => {
                 const s = document.createElement('script');
                 s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+                s.integrity = 'sha384-Yv5O+t3uE3hunW8uyrbpPW3iw6/5/Y7HitWJBLgqfMoA36NogMmy+8wWZMpn3HWc';
+                s.crossOrigin = 'anonymous';
                 s.onload = resolve;
                 s.onerror = reject;
                 document.head.appendChild(s);
@@ -2230,7 +2274,7 @@ async function downloadPDF() {
 
         const opt = {
             margin:       [10, 10, 10, 10],
-            filename:     `${companyName}_해외진출전략_${dateStr}.pdf`,
+            filename:     `${sanitizeFilename(companyName)}_해외진출전략_${dateStr}.pdf`,
             image:        { type: 'jpeg', quality: 0.95 },
             html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', logging: false },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
