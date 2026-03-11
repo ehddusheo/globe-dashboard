@@ -1222,6 +1222,60 @@ function enrichRisks(risks, country) {
     return risks.map((r, i) => r + (extras[i] || ''));
 }
 
+function generateImportTrends(country, industry, indKey) {
+    const indInfo = INDUSTRIES[indKey];
+    const tradePct = country.trade_pct_gdp || 50;
+    const estImport = (country.gdp * (tradePct / 100) * 0.5 * (industry.size / (country.gdp || 1))).toFixed(1);
+    const growthDir = industry.growth >= 5 ? '빠르게 증가' : industry.growth >= 2 ? '꾸준히 증가' : '완만한 증가';
+    const yoyEst = ((industry.growth || 0) + (country.gdp_growth_pct || 0) * 0.5).toFixed(1);
+    return {
+        import_volume: `$${estImport}B (추정)`,
+        growth_rate: `+${yoyEst}% (추정)`,
+        major_sources: `주요 교역국 기준 (무역/GDP ${tradePct.toFixed(0)}%)`,
+        trend_summary: `${country.name}의 ${indInfo.name} 관련 수입은 GDP 대비 무역 비중 ${tradePct.toFixed(0)}%를 기반으로 ${growthDir} 추세입니다. 산업 성장률 ${industry.growth.toFixed(1)}%와 경제 성장률 ${(country.gdp_growth_pct||0).toFixed(1)}%가 수입 수요를 견인하고 있습니다.`
+    };
+}
+
+function generateCompetitionLandscape(country, industry, indKey) {
+    const rank = industry.rank || 100;
+    const potential = industry.potential || 50;
+    let intensity, concentration, gap;
+    if (rank <= 10) {
+        intensity = '레드오션';
+        concentration = '상위 5사 60~80%';
+        gap = `글로벌 ${rank}위 시장으로 경쟁이 치열하나, 한국 기업의 기술력과 가격 경쟁력으로 틈새 공략 가능`;
+    } else if (rank <= 30) {
+        intensity = '중간';
+        concentration = '상위 5사 40~60%';
+        gap = `성장 중인 시장(글로벌 ${rank}위)으로 선점 기회 존재. 현지 기업 대비 품질 차별화 전략 유효`;
+    } else {
+        intensity = '블루오션';
+        concentration = '상위 5사 30% 미만';
+        gap = `시장 초기 단계(글로벌 ${rank}위)로 선점 효과 극대화 가능. 진입장벽 낮고 경쟁사 부재`;
+    }
+    return {
+        intensity,
+        top_players: [],
+        concentration,
+        foreign_presence: `외국 기업 진출은 ${rank <= 20 ? '활발한 편' : '아직 제한적'}이며, 시장 잠재력 점수 ${potential}점 기준으로 ${potential >= 70 ? '높은 진출 매력도' : '선별적 진출 권장'}.`,
+        gap_for_korean: gap
+    };
+}
+
+function generateProductFit(country, industry, indKey, profile, ces, scores) {
+    const indInfo = INDUSTRIES[indKey];
+    const cn = profile.companyName || '귀사';
+    const fitScore = Math.round(((scores?.potential || 50) * 0.4 + (scores?.growth || 50) * 0.3 + (scores?.openness || 50) * 0.3));
+    const digitalReady = (country.internet_users_pct || 0) >= 70;
+    return {
+        fit_score: fitScore,
+        local_needs: `${country.name}의 ${indInfo.name} 시장은 ${fmtSize(industry.size)} 규모(글로벌 ${industry.rank}위)이며, 인구 ${fmtPop(country.pop)} 기반의 내수 시장에서 ${industry.growth >= 5 ? '빠른 성장에 따른 공급 부족' : '기존 서비스 고도화 수요'}이 핵심 니즈입니다.`,
+        why_our_product: `${cn}의 제품/서비스는 ${scores?.potential >= 70 ? '높은 시장 잠재력' : '성장 가능성 있는 시장'} 환경에서 ${digitalReady ? '디지털 인프라(인터넷 보급률 ' + (country.internet_users_pct||0).toFixed(0) + '%)를 활용한 효율적 시장 진입이 가능' : '오프라인 중심 유통 전략이 필요'}합니다. CES ${ces.toFixed(1)}점의 종합 적합도를 기록했습니다.`,
+        entry_scenario: `1차 타겟: ${country.name} ${indInfo.name} 분야 ${country.income === 'High income' ? '프리미엄' : '가성비'} 시장 → 유통: ${digitalReady ? '온라인 B2B/B2C 플랫폼 + 현지 유통 파트너' : '현지 유통 파트너 및 에이전트 네트워크'} → 가격: ${country.income === 'High income' ? '글로벌 평균 대비 동등 또는 프리미엄 포지셔닝' : '현지 시장 대비 15~30% 가격 우위 전략'} → 차별화: 한국 기술력 기반 품질 + ${scores?.digital >= 70 ? '디지털 서비스 통합' : '현지화된 고객 지원'}`,
+        first_year_target: `${country.name} 시장 진출 1년차 ${indInfo.name} 분야 매출 ${fmtSize(industry.size * 0.001)} 달성 목표 (시장점유율 0.1% 기준)`
+    };
+}
+
 // ---- GEMINI AI (2.5 Pro + Search Grounding) ----
 
 function buildGeminiPrompt(results) {
@@ -1265,6 +1319,23 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
     - 해당 국가 소비자/기업의 관련 니즈 및 트렌드 검색
     - proposal_points에 이 회사의 구체적 제품이 해당 국가에서 어떻게 매출을 만들 수 있는지 근거 제시
 11. 모든 텍스트는 한국어로 작성, 응답은 반드시 순수 JSON만 출력 (마크다운 코드블록 없이)
+12. import_trends 분석: 각 국가별로 해당 산업의 수입 동향을 Google Search로 조사하세요:
+    - 최근 3년간 수입 규모 변화 추이 (수치+출처)
+    - 수입 증가율 (YoY %)
+    - 주요 수입 상대국 상위 3개국 (한국 포함 여부 반드시 확인)
+    - 수입 증가의 배경/원인 분석
+13. competition_landscape 분석: 각 국가별 경쟁 환경을 구체적으로 분석하세요:
+    - 현지 주요 경쟁사 3개 (이름, 시장 점유율, 핵심 강점)
+    - 외국 기업 진출 현황 (한국 기업 포함)
+    - 시장 집중도 (상위 5개사 점유율 합계 %)
+    - 경쟁 강도 평가: "블루오션" / "중간" / "레드오션"
+    - 한국 기업이 차별화할 수 있는 구체적 틈새 시장
+14. product_fit 분석: 이 회사의 구체적 제품/서비스가 해당 국가에서 통할 수 있는 이유를 분석:
+    - 현지 소비자/기업의 관련 니즈와 페인포인트
+    - 이 회사 제품의 현지 적합성 (기술적 우위, 가격 경쟁력, 품질 차별화)
+    - 구체적 진입 시나리오: 타겟 고객군 → 유통 채널 → 가격 전략 → 차별화 포인트
+    - 첫 1년 예상 목표 (매출 규모 또는 고객 수)
+    - fit_score (0~100): 제품-시장 적합도 종합 점수
 
 ### 좋은 market_status 예시:
 "미국의 기술 & IT 시장은 $2.6T 규모로 글로벌 1위이며, Gartner에 따르면 2025년 IT 지출은 전년 대비 9.3% 증가한 $5.6T에 달할 전망. AWS(32%), Azure(24%), GCP(12%)가 클라우드 시장을 주도하며, AI/ML 투자가 전체 IT 예산의 15% 이상을 차지."
@@ -1360,7 +1431,31 @@ ${top5Names}
       ],
       "opportunities": ["반드시 수치+연도+출처 포함 기회1 (예: '2025년 시장 $120억 돌파 예상 (Statista)')", "기회2", "기회3"],
       "risks": ["이 회사 맞춤 리스크1 — 구체적 규제/경쟁사/진입장벽을 데이터와 함께 기술", "리스크2", "리스크3"],
-      "one_line_verdict": "핵심 수치 1개 포함 강력한 결론 (예: '$89억 시장에서 연 15% 성장 중인 최적의 진출 타이밍')"
+      "one_line_verdict": "핵심 수치 1개 포함 강력한 결론 (예: '$89억 시장에서 연 15% 성장 중인 최적의 진출 타이밍')",
+      "import_trends": {
+        "import_volume": "해당 산업 수입 규모 (예: '$45억 (2025, UN Comtrade)')",
+        "growth_rate": "수입 증가율 (예: '+12.3% YoY')",
+        "major_sources": "주요 수입국 (예: '중국(35%), 미국(20%), 한국(8%)')",
+        "trend_summary": "2~3문장: 수입 증가 추이, 원인, 한국 제품 수입 비중/가능성"
+      },
+      "competition_landscape": {
+        "intensity": "블루오션|중간|레드오션",
+        "top_players": [
+          {"name": "1위 기업명", "share": "XX%", "note": "핵심 강점 한줄"},
+          {"name": "2위 기업명", "share": "XX%", "note": "핵심 강점 한줄"},
+          {"name": "3위 기업명", "share": "XX%", "note": "핵심 강점 한줄"}
+        ],
+        "concentration": "상위 5사 합계 XX%",
+        "foreign_presence": "외국 기업 진출 현황 1~2문장",
+        "gap_for_korean": "한국 기업이 공략 가능한 구체적 틈새 1~2문장"
+      },
+      "product_fit": {
+        "fit_score": 75,
+        "local_needs": "현지 수요/페인포인트 2~3문장",
+        "why_our_product": "이 회사 제품이 왜 통하는지 2~3문장 (기술/가격/품질 측면)",
+        "entry_scenario": "구체적 진입 시나리오 3~4문장 (타겟 고객군 → 유통 채널 → 가격 전략 → 차별화 포인트)",
+        "first_year_target": "첫 1년 예상 목표 1문장 (매출 또는 고객 수)"
+      }
     }
   ],
   "strategy": {
@@ -1927,6 +2022,9 @@ function showExpansionReport() {
         const oppos = aiC?.opportunities?.length ? aiC.opportunities : enrichOpportunities(ind.oppo || [], t.country, ind, indKey);
         const risks = aiC?.risks?.length ? aiC.risks : enrichRisks(ind.risk || [], t.country);
         const verdict = aiC?.one_line_verdict || generateVerdict(t.country, ind, indKey, t.ces);
+        const importTr = aiC?.import_trends || generateImportTrends(t.country, ind, indKey);
+        const compLand = aiC?.competition_landscape || generateCompetitionLandscape(t.country, ind, indKey);
+        const prodFit = aiC?.product_fit || generateProductFit(t.country, ind, indKey, r.profile, t.ces, t.scores);
         const md = aiC?.market_data || {};
         const dimScores = aiC?.dimension_scores || t.scores || {};
         const strategyKey = aiC?.recommended_strategy || t.strategy;
@@ -1955,6 +2053,38 @@ function showExpansionReport() {
 
                         <div class="acc-section-label status-label">📍 시장 현황</div>
                         <div class="acc-market-status">${escHTML(marketStatus)}</div>
+
+                        <div class="acc-section-label import-label">📦 수입 동향 분석</div>
+                        <div class="acc-import-trends">
+                            <div class="import-stats-row">
+                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.import_volume || '-')}</span><span class="import-stat-label">수입 규모</span></div>
+                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.growth_rate || '-')}</span><span class="import-stat-label">수입 증가율</span></div>
+                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.major_sources || '-')}</span><span class="import-stat-label">주요 수입국</span></div>
+                            </div>
+                            <div class="import-summary">${escHTML(importTr.trend_summary || '')}</div>
+                        </div>
+
+                        <div class="acc-section-label competition-label">🏆 경쟁 환경</div>
+                        <div class="acc-competition">
+                            <div class="competition-header">
+                                <span class="competition-badge ${compLand.intensity === '블루오션' ? 'blue' : compLand.intensity === '레드오션' ? 'red' : 'mid'}">${escHTML(compLand.intensity || '중간')}</span>
+                                <span class="competition-conc">${escHTML(compLand.concentration || '')}</span>
+                            </div>
+                            ${Array.isArray(compLand.top_players) && compLand.top_players.length > 0 ? `<div class="competition-players">${compLand.top_players.map((p, pi) => `<div class="player-row"><span class="player-rank">${pi+1}</span><span class="player-name">${escHTML(p.name || '')}</span><span class="player-share">${escHTML(p.share || '')}</span><span class="player-note">${escHTML(p.note || '')}</span></div>`).join('')}</div>` : ''}
+                            ${compLand.foreign_presence ? `<div class="competition-foreign">${escHTML(compLand.foreign_presence)}</div>` : ''}
+                            ${compLand.gap_for_korean ? `<div class="competition-gap">🎯 ${escHTML(compLand.gap_for_korean)}</div>` : ''}
+                        </div>
+
+                        <div class="acc-section-label fit-label">🎯 우리 제품 적합도</div>
+                        <div class="acc-product-fit">
+                            <div class="fit-score-row"><div class="fit-score-track"><div class="fit-score-bar" style="width:${prodFit.fit_score || 0}%;background:${(prodFit.fit_score||0) >= 70 ? '#00ff88' : (prodFit.fit_score||0) >= 50 ? '#ffaa00' : '#ff3366'}"><span class="fit-score-text">적합도 ${prodFit.fit_score || 0}점</span></div></div></div>
+                            <div class="fit-detail">
+                                ${prodFit.local_needs ? `<div class="fit-item"><span class="fit-icon">📋</span><div><strong>현지 수요:</strong> ${escHTML(prodFit.local_needs)}</div></div>` : ''}
+                                ${prodFit.why_our_product ? `<div class="fit-item"><span class="fit-icon">✅</span><div><strong>왜 통하는가:</strong> ${escHTML(prodFit.why_our_product)}</div></div>` : ''}
+                                ${prodFit.entry_scenario ? `<div class="fit-item"><span class="fit-icon">🗺️</span><div><strong>진입 시나리오:</strong> ${escHTML(prodFit.entry_scenario)}</div></div>` : ''}
+                                ${prodFit.first_year_target ? `<div class="fit-item"><span class="fit-icon">📊</span><div><strong>1년차 목표:</strong> ${escHTML(prodFit.first_year_target)}</div></div>` : ''}
+                            </div>
+                        </div>
 
                         <div class="acc-section-label proposal-label">💡 ${escHTML(companyName)} 맞춤 제안</div>
                         ${proposals.map((p, pi) => `<div class="acc-proposal-item"><span class="proposal-num">${pi+1}</span>${escHTML(p)}</div>`).join('')}
