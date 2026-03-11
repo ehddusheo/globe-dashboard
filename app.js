@@ -2380,12 +2380,23 @@ async function downloadPDF() {
 
         // Apply PDF mode (black-on-white)
         content.classList.add('pdf-mode');
+        panel.classList.add('pdf-capture');
 
-        // Expand content width for A4-friendly PDF
-        const origWidth = panel.style.width;
-        const origMaxW = panel.style.maxWidth;
+        // Save & override panel positioning for centered capture
+        const origStyles = {
+            width: panel.style.width, maxWidth: panel.style.maxWidth,
+            position: panel.style.position, right: panel.style.right,
+            left: panel.style.left, top: panel.style.top, bottom: panel.style.bottom,
+            padding: panel.style.padding, background: panel.style.background,
+            borderLeft: panel.style.borderLeft, backdropFilter: panel.style.backdropFilter,
+        };
+        panel.style.position = 'static';
         panel.style.width = '700px';
         panel.style.maxWidth = '700px';
+        panel.style.padding = '20px';
+        panel.style.background = '#ffffff';
+        panel.style.borderLeft = 'none';
+        panel.style.backdropFilter = 'none';
 
         // Open all accordions for PDF
         content.querySelectorAll('.exp-accordion-item').forEach(item => item.classList.add('open'));
@@ -2410,11 +2421,25 @@ async function downloadPDF() {
             bar.style.background = '#000';
         });
 
+        // Ensure element is scrolled to top for clean capture
+        panel.scrollTop = 0;
+
         const opt = {
-            margin:       [15, 12, 15, 12],
+            margin:       [15, 15, 15, 15],
             filename:     `${sanitizeFilename(companyName)}_해외진출전략_${dateStr}.pdf`,
             image:        { type: 'jpeg', quality: 0.92 },
-            html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', logging: false, width: 700, windowWidth: 700 },
+            html2canvas:  {
+                scale: 2,
+                useCORS: true,
+                backgroundColor: '#ffffff',
+                logging: false,
+                width: 700,
+                windowWidth: 700,
+                x: 0,
+                y: 0,
+                scrollX: 0,
+                scrollY: 0,
+            },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
             pagebreak:    { mode: ['css', 'legacy'], avoid: ['.acc-key-stats', '.acc-verdict', '.exp-strategy', '.exp-executive-summary'] }
         };
@@ -2422,8 +2447,8 @@ async function downloadPDF() {
         await html2pdf().set(opt).from(content).save();
 
         // Restore PDF mode overrides
-        panel.style.width = origWidth;
-        panel.style.maxWidth = origMaxW;
+        panel.classList.remove('pdf-capture');
+        Object.assign(panel.style, origStyles);
         content.classList.remove('pdf-mode');
         content.querySelectorAll('.radar-poly').forEach(poly => {
             if (poly.dataset.origStroke) poly.setAttribute('stroke', poly.dataset.origStroke);
