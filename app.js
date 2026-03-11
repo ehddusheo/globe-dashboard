@@ -669,7 +669,7 @@ document.addEventListener('DOMContentLoaded', initExpansionAdvisor);
 function openWizard() {
     EA.mode = true;
     EA.step = 0;
-    EA.profile = { companyName: '', companyUrl: '', companyDesc: '', industry: '', revenue: '', employees: '', experience: 'none', priorities: [], regions: ['all'] };
+    EA.profile = { companyName: '', companyUrl: '', companyDesc: '', companyIntel: null, industry: '', revenue: '', employees: '', experience: 'none', priorities: [], regions: ['all'] };
     document.getElementById('expansion-wizard').classList.remove('hidden');
     document.getElementById('expansion-cta').style.display = 'none';
     renderWizardSteps();
@@ -803,8 +803,11 @@ async function lookupCompany(url, formEl) {
 
     const industryKeys = Object.entries(INDUSTRIES).map(([k, v]) => `"${k}": "${v.name} (${v.nameEn})"`).join(', ');
 
-    const prompt = `다음 회사 웹사이트를 Google Search로 검색하여 회사 정보를 JSON으로 반환하세요.
+    const prompt = `다음 회사 웹사이트를 Google Search로 심층 검색하여 회사 정보를 JSON으로 반환하세요.
 URL: ${url}
+
+⚠️ 반드시 Google Search를 활용하여 이 회사에 대해 최대한 많은 정보를 수집하세요.
+웹사이트 내용, 뉴스 기사, 기업 정보 사이트 등을 통해 정확하고 상세한 데이터를 확보하세요.
 
 반드시 아래 JSON 형식만 출력하세요 (마크다운 코드블록 없이 순수 JSON):
 {
@@ -812,19 +815,26 @@ URL: ${url}
   "industry_key": "아래 업종 키 중 가장 적합한 것 1개",
   "revenue_range": "매출 규모에 맞는 값",
   "employee_range": "임직원 수에 맞는 값",
-  "description": "회사 소개 1~2문장 (주요 제품/서비스, 강점 포함)"
+  "description": "회사 소개 2~3문장 (주요 사업 영역, 핵심 경쟁력, 시장 포지션 포함)",
+  "products_services": "주요 제품/서비스 3~5가지를 각각 한줄씩 상세 설명 (예: 'AI 기반 품질검사 솔루션 — 제조 라인의 불량률을 0.1% 이하로 감소')",
+  "business_model": "비즈니스 모델 상세 (B2B/B2C, 수익구조, 주요 고객군, 가격 체계 등)",
+  "key_strengths": "핵심 강점/경쟁우위 3~5가지 (기술력, 특허, 시장점유율, 인증, 수상 등 구체적으로)",
+  "recent_news": "최근 6개월 이내 주요 뉴스/동향 2~3가지 (투자유치, 신제품, 파트너십, 수상 등 — 날짜 포함)",
+  "target_markets": "현재 주요 타겟 시장/고객층 상세 (산업군, 기업 규모, 지역 등)",
+  "tech_stack": "핵심 기술/기술스택 (보유 특허, 핵심 기술, R&D 역량 등 — 해당 없으면 빈 문자열)",
+  "export_experience": "해외 수출/진출 경험 (진출 국가, 해외 매출 비중, 해외 파트너 등 — 정보 없으면 '정보 없음')"
 }
 
 업종 키 목록: {${industryKeys}}
 
-revenue_range 값: "u10" (10억 미만), "u50" (10~50억), "u100" (50~100억), "u500" (100~500억), "u1000" (500~1000억), "o1000" (1000억 이상)
-employee_range 값: "u10" (10명 미만), "u50" (10~50명), "u100" (50~100명), "u500" (100~500명), "u1000" (500~1000명), "o1000" (1000명 이상)
+revenue_range 값: "u10" (10억 미만), "u50" (10~50억), "u200" (50~200억), "u1000" (200~1000억), "o1000" (1000억 이상)
+employee_range 값: "u10" (10명 이하), "u50" (11~50명), "u200" (51~200명), "u1000" (201~1000명), "o1000" (1000명 이상)
 
-검색 결과를 기반으로 가장 정확한 정보를 입력하세요. 정확한 수치를 모르면 추정하세요.`;
+⚠️ 모든 필드를 Google Search 결과 기반으로 상세하게 작성하세요. 추상적 서술 금지 — 구체적 제품명, 수치, 사실 중심으로.`;
 
     const modelChain = [
-        { name: 'gemini-2.5-pro',   timeout: 30000, search: true },
-        { name: 'gemini-2.5-flash', timeout: 20000, search: true },
+        { name: 'gemini-2.5-pro',   timeout: 45000, search: true },
+        { name: 'gemini-2.5-flash', timeout: 30000, search: true },
     ];
 
     let result = null;
@@ -833,7 +843,7 @@ employee_range 값: "u10" (10명 미만), "u50" (10~50명), "u100" (50~100명), 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_KEY}`;
             const body = {
                 contents: [{ parts: [{ text: prompt }] }],
-                generationConfig: { temperature: 0.2, maxOutputTokens: 1024 }
+                generationConfig: { temperature: 0.2, maxOutputTokens: 4096 }
             };
             if (useSearch) body.tools = [{ google_search: {} }];
 
@@ -881,10 +891,30 @@ employee_range 값: "u10" (10명 미만), "u50" (10~50명), "u100" (50~100명), 
 
     // Auto-fill profile
     EA.profile.companyName = result.company_name;
-    EA.profile.companyDesc = result.description || '';
     if (result.industry_key && INDUSTRIES[result.industry_key]) EA.profile.industry = result.industry_key;
     if (result.revenue_range) EA.profile.revenue = result.revenue_range;
     if (result.employee_range) EA.profile.employees = result.employee_range;
+
+    // Store enriched company intelligence
+    EA.profile.companyIntel = {
+        products_services: result.products_services || '',
+        business_model: result.business_model || '',
+        key_strengths: result.key_strengths || '',
+        recent_news: result.recent_news || '',
+        target_markets: result.target_markets || '',
+        tech_stack: result.tech_stack || '',
+        export_experience: result.export_experience || ''
+    };
+
+    // Build rich companyDesc from all data
+    const descParts = [result.description || ''];
+    if (result.products_services) descParts.push(`주요 제품/서비스: ${result.products_services}`);
+    if (result.business_model) descParts.push(`비즈니스 모델: ${result.business_model}`);
+    if (result.key_strengths) descParts.push(`핵심 강점: ${result.key_strengths}`);
+    if (result.target_markets) descParts.push(`타겟 시장: ${result.target_markets}`);
+    if (result.tech_stack) descParts.push(`기술스택: ${result.tech_stack}`);
+    if (result.export_experience && result.export_experience !== '정보 없음') descParts.push(`해외경험: ${result.export_experience}`);
+    EA.profile.companyDesc = descParts.join('\n');
 
     // Update DOM
     const companyInput = formEl.querySelector('#wz-company');
@@ -1187,7 +1217,13 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
 7. one_line_verdict는 핵심 수치 1개를 포함한 강력한 한줄 결론
 8. strategy.reasoning은 데이터 기반 3~4문장으로 "왜 이 전략인지" 논리적으로 설명
 9. strategy.timeline의 각 phase actions는 3개씩, 구체적이고 실행 가능한 액션 (기관명, 전시회명, 플랫폼명 등 포함)
-10. 모든 텍스트는 한국어로 작성, 응답은 반드시 순수 JSON만 출력 (마크다운 코드블록 없이)
+10. Google Search로 해당 회사의 제품/서비스가 각 대상 국가에서 어떤 비즈니스를 펼칠 수 있는지 구체적으로 검색하세요:
+    - 해당 국가에서 이 회사 제품/서비스의 수요, 유사 경쟁사, 유통 채널을 검색
+    - 관련 규제/인증 요건 검색 (CE, FDA, HALAL, KC 등)
+    - 잠재 파트너사, 바이어, 유통 플랫폼, 전시회 검색
+    - 해당 국가 소비자/기업의 관련 니즈 및 트렌드 검색
+    - proposal_points에 이 회사의 구체적 제품이 해당 국가에서 어떻게 매출을 만들 수 있는지 근거 제시
+11. 모든 텍스트는 한국어로 작성, 응답은 반드시 순수 JSON만 출력 (마크다운 코드블록 없이)
 
 ### 좋은 market_status 예시:
 "미국의 기술 & IT 시장은 $2.6T 규모로 글로벌 1위이며, Gartner에 따르면 2025년 IT 지출은 전년 대비 9.3% 증가한 $5.6T에 달할 전망. AWS(32%), Azure(24%), GCP(12%)가 클라우드 시장을 주도하며, AI/ML 투자가 전체 IT 예산의 15% 이상을 차지."
@@ -1195,11 +1231,28 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
 ### 나쁜 예시 (절대 불가):
 "미국은 큰 IT 시장을 보유하고 있으며 성장하고 있습니다." ← 이런 추상적 서술은 거부됨. 반드시 구체적 수치+출처 포함.`;
 
-    const companyContext = profile.companyUrl || profile.companyDesc
-        ? `\n- 회사 웹사이트: ${profile.companyUrl || '(없음)'}
-- 회사 소개: ${profile.companyDesc || '(없음)'}
-⚠️ 위 회사의 구체적 제품/서비스/강점을 반드시 고려하여 맞춤 진출 전략을 제시하세요.`
-        : '';
+    // Build rich company context from companyIntel
+    const intel = profile.companyIntel;
+    let companyContext = '';
+    if (profile.companyUrl || profile.companyDesc || intel) {
+        companyContext = `\n### 회사 상세 정보`;
+        if (profile.companyUrl) companyContext += `\n- 웹사이트: ${profile.companyUrl}`;
+        if (profile.companyDesc) companyContext += `\n- 회사 소개: ${profile.companyDesc.split('\n')[0]}`;
+        if (intel) {
+            if (intel.products_services) companyContext += `\n- 주요 제품/서비스: ${intel.products_services}`;
+            if (intel.business_model) companyContext += `\n- 비즈니스 모델: ${intel.business_model}`;
+            if (intel.key_strengths) companyContext += `\n- 핵심 강점/경쟁우위: ${intel.key_strengths}`;
+            if (intel.recent_news) companyContext += `\n- 최근 동향: ${intel.recent_news}`;
+            if (intel.target_markets) companyContext += `\n- 현재 타겟 시장: ${intel.target_markets}`;
+            if (intel.tech_stack) companyContext += `\n- 기술스택: ${intel.tech_stack}`;
+            if (intel.export_experience && intel.export_experience !== '정보 없음') companyContext += `\n- 해외 수출/진출 경험: ${intel.export_experience}`;
+        }
+        companyContext += `\n\n⚠️ 핵심 지시: 위 회사의 구체적 제품/서비스/강점을 반드시 고려하여 아래 분석을 수행하세요:
+1. 각 국가별로 이 회사의 제품/서비스가 어떤 비즈니스를 펼칠 수 있는지 구체적으로 분석
+2. Google Search로 각 국가에서 이 회사 제품과 관련된 시장 기회, 경쟁사, 유통 채널을 검색
+3. proposal_points에는 이 회사의 구체적 제품이 해당 국가에서 어떻게 성공할 수 있는지 데이터 근거 제시
+4. 이 회사의 기술력/강점과 각 국가 시장의 수요를 연결하는 맞춤 분석 제공`;
+    }
 
     const userMessage = `## 기업 프로필
 - 회사명: ${profile.companyName || '(미입력)'}${companyContext}
@@ -1484,6 +1537,7 @@ function startAnalysis() {
     const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === p.experience)?.label || p.experience;
     const priLabels = p.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ');
     const regLabels = p.regions.includes('all') ? '전체' : p.regions.join(', ');
+    const intel = p.companyIntel || {};
     sendToSheet({
         companyName: p.companyName,
         companyUrl: p.companyUrl,
@@ -1493,6 +1547,14 @@ function startAnalysis() {
         experience: expLabel,
         priorities: priLabels,
         regions: regLabels,
+        companyDesc: (p.companyDesc || '').split('\n')[0],
+        products_services: intel.products_services || '',
+        business_model: intel.business_model || '',
+        key_strengths: intel.key_strengths || '',
+        recent_news: intel.recent_news || '',
+        target_markets: intel.target_markets || '',
+        tech_stack: intel.tech_stack || '',
+        export_experience: intel.export_experience || '',
         timestamp: new Date().toLocaleString('ko-KR')
     });
     document.getElementById('expansion-cta').style.display = 'none';
@@ -1696,12 +1758,33 @@ function showExpansionReport() {
     // Header
     const companyDesc = r.profile.companyDesc || '';
     const companyUrl = r.profile.companyUrl || '';
+    const intel = r.profile.companyIntel || {};
     html += `
         <div class="exp-badge">AI EXPANSION REPORT</div>
         <div class="exp-title">해외진출 전략 보고서</div>
         <div class="exp-meta">${companyName} · ${indInfo?.name || ''} · ${r.date}</div>
-        ${companyUrl ? `<div class="exp-company-url">🌐 <a href="${companyUrl}" target="_blank">${companyUrl}</a></div>` : ''}
-        ${companyDesc ? `<div class="exp-company-desc">${companyDesc}</div>` : ''}
+        ${companyUrl ? `<div class="exp-company-url">🌐 <a href="${companyUrl}" target="_blank">${companyUrl}</a></div>` : ''}`;
+
+    // Company Intel Card (Phase 5)
+    const intelItems = [];
+    if (intel.products_services) intelItems.push({icon: '📦', label: '주요 제품/서비스', value: intel.products_services});
+    if (intel.business_model) intelItems.push({icon: '💼', label: '비즈니스 모델', value: intel.business_model});
+    if (intel.key_strengths) intelItems.push({icon: '💪', label: '핵심 강점', value: intel.key_strengths});
+    if (intel.target_markets) intelItems.push({icon: '🎯', label: '타겟 시장', value: intel.target_markets});
+    if (intel.tech_stack) intelItems.push({icon: '⚙️', label: '기술 스택', value: intel.tech_stack});
+    if (intel.recent_news) intelItems.push({icon: '📰', label: '최근 동향', value: intel.recent_news});
+    if (intel.export_experience && intel.export_experience !== '정보 없음') intelItems.push({icon: '🌏', label: '해외 경험', value: intel.export_experience});
+
+    if (intelItems.length > 0) {
+        html += `<div class="exp-company-intel">
+            <div class="intel-header">🏢 회사 인텔리전스</div>
+            ${intelItems.map(it => `<div class="intel-item"><span class="intel-icon">${it.icon}</span><span class="intel-label">${it.label}</span><span class="intel-value">${it.value}</span></div>`).join('')}
+        </div>`;
+    } else if (companyDesc) {
+        html += `<div class="exp-company-desc">${companyDesc}</div>`;
+    }
+
+    html += `
         <div class="exp-scan-badge">🌍 ${r.all.length}개국 데이터 분석 완료</div>
         <div class="exp-divider"></div>`;
 
@@ -1897,6 +1980,22 @@ function showExpansionReport() {
             </div>
         </div>`;
 
+    // PDF Download Popup (Phase 6)
+    html += `
+        <div class="pdf-popup hidden" id="pdf-popup">
+            <div class="pdf-popup-backdrop"></div>
+            <div class="pdf-popup-modal">
+                <button class="close-btn pdf-popup-close">&times;</button>
+                <div class="pdf-popup-title">📥 보고서 다운로드</div>
+                <div class="pdf-popup-desc">AI가 분석한 해외진출 전략 보고서를 PDF로 저장하거나,<br>전문 해외영업팀의 지원을 받아보세요.</div>
+                <div class="pdf-popup-actions">
+                    <button class="pdf-popup-btn download" id="pdf-download-now">📥 PDF 바로 다운로드</button>
+                    <a href="${rindaUrl}" target="_blank" rel="noopener" class="pdf-popup-btn rinda" id="pdf-rinda-go">🚀 해외영업팀 지원받기</a>
+                </div>
+                <div class="pdf-popup-sub">린다(Rinda) · 이메일 기반 해외 B2B 영업 자동화 플랫폼</div>
+            </div>
+        </div>`;
+
     // Action buttons
     html += `
         <div class="exp-actions">
@@ -2046,9 +2145,20 @@ function bindReportInteractions(container) {
     const redoBtn = container.querySelector('#exp-redo-btn');
     if (redoBtn) redoBtn.addEventListener('click', () => { closeExpansionReport(); setTimeout(openWizard, 300); });
 
-    // PDF download
+    // PDF download → show popup instead of direct download
     const pdfBtn = container.querySelector('#exp-pdf-btn');
-    if (pdfBtn) pdfBtn.addEventListener('click', downloadPDF);
+    const pdfPopup = container.querySelector('#pdf-popup');
+    if (pdfBtn && pdfPopup) {
+        document.body.appendChild(pdfPopup);
+        pdfBtn.addEventListener('click', () => pdfPopup.classList.remove('hidden'));
+        pdfPopup.querySelector('.pdf-popup-backdrop').addEventListener('click', () => pdfPopup.classList.add('hidden'));
+        pdfPopup.querySelector('.pdf-popup-close').addEventListener('click', () => pdfPopup.classList.add('hidden'));
+        const pdfDownloadNow = pdfPopup.querySelector('#pdf-download-now');
+        if (pdfDownloadNow) pdfDownloadNow.addEventListener('click', () => {
+            pdfPopup.classList.add('hidden');
+            downloadPDF();
+        });
+    }
 
     // Rinda CTA → popup (move popup to body so fixed positioning works)
     const rindaCta = container.querySelector('#rinda-cta-btn');
