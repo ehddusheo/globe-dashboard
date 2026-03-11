@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ehddusheo.github.io/globe-dashboard/sitemap.xml
