@@ -862,6 +862,38 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
     box-sizing: border-box !important;
     max-width: 100% !important;
 }
+/* Prevent page-break inside key sections */
+.pdf-mode .acc-key-stats,
+.pdf-mode .acc-verdict,
+.pdf-mode .acc-market-status,
+.pdf-mode .acc-import-trends,
+.pdf-mode .acc-competition,
+.pdf-mode .acc-product-fit,
+.pdf-mode .acc-proposal-item,
+.pdf-mode .acc-data-grid,
+.pdf-mode .acc-dim-bars,
+.pdf-mode .exp-executive-summary,
+.pdf-mode .exp-top-pick,
+.pdf-mode .exp-strategy,
+.pdf-mode .exp-gauge,
+.pdf-mode .exp-rank-list,
+.pdf-mode .fit-item,
+.pdf-mode .import-stats-row,
+.pdf-mode .competition-players,
+.pdf-mode .timeline-phase {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+}
+/* Force page-break before each country accordion for clean separation */
+.pdf-mode .exp-accordion-item {
+    page-break-before: auto !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+}
+.pdf-mode .exp-section-title {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+}
 .pdf-mode .exp-accordion-inner,
 .pdf-mode .acc-proposal-item,
 .pdf-mode .acc-market-status,

@@ -2441,7 +2441,14 @@ async function downloadPDF() {
                 scrollY: 0,
             },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak:    { mode: ['css', 'legacy'], avoid: ['.acc-key-stats', '.acc-verdict', '.exp-strategy', '.exp-executive-summary'] }
+            pagebreak:    { mode: ['css', 'legacy'], avoid: [
+                '.acc-key-stats', '.acc-verdict', '.exp-strategy', '.exp-executive-summary',
+                '.acc-market-status', '.acc-import-trends', '.acc-competition', '.acc-product-fit',
+                '.acc-proposal-item', '.acc-data-grid', '.acc-dim-bars',
+                '.exp-top-pick', '.exp-gauge', '.import-stat', '.player-row',
+                '.fit-item', '.fit-score-row', '.timeline-phase',
+                '.exp-rank-list', '.competition-players'
+            ] }
         };
 
         await html2pdf().set(opt).from(content).save();
