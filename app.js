@@ -737,7 +737,21 @@ function wizardPrev() {
 function wizardNext() {
     if (EA.step === 2) { startAnalysis(); return; }
     // Validation
-    if (EA.step === 0 && !EA.profile.industry) { flashField('.wz-ind-grid'); return; }
+    if (EA.step === 0) {
+        if (!EA.profile.companyIntel) {
+            // URL not looked up yet
+            const urlInput = document.getElementById('wz-url');
+            if (!urlInput || !urlInput.value.trim()) {
+                showUrlStatus('⚠️ 회사 웹사이트를 입력해주세요.', 'err');
+                flashField('#wz-url');
+            } else {
+                showUrlStatus('⚠️ AI 조회 버튼을 눌러 기업정보를 확인해주세요.', 'err');
+                flashField('#wz-url-lookup');
+            }
+            return;
+        }
+        if (!EA.profile.industry) { flashField('.wz-ind-grid'); return; }
+    }
     if (EA.step === 1 && EA.profile.priorities.length < 1) { flashField('.wz-chips'); return; }
     EA.step++;
     renderWizardSteps();
