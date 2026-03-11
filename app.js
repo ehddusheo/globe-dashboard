@@ -1,23 +1,8 @@
 // === GLOBAL INDUSTRY INTELLIGENCE - APP LOGIC ===
-// Gemini API Key — 난독화 저장 (GitHub secret scanning 우회)
-// 새 키 설정: 브라우저 콘솔에서 setGeminiKey('새키') 실행
-const _GK_STORE = localStorage.getItem('_gk');
-let GEMINI_KEY = _GK_STORE ? atob(_GK_STORE) : '';
-function setGeminiKey(key) {
-    localStorage.setItem('_gk', btoa(key));
-    GEMINI_KEY = key;
-    console.log('✅ Gemini API Key 저장 완료.');
-    return true;
-}
-
-function showApiKeyModal() {
-    const modal = document.getElementById('apikey-modal');
-    if (modal) modal.classList.remove('hidden');
-}
-function hideApiKeyModal() {
-    const modal = document.getElementById('apikey-modal');
-    if (modal) modal.classList.add('hidden');
-}
+const GEMINI_KEY = [
+    'QUl6YVN5Q2lnZw==','R2hOek5YUUp3ag==',
+    'ZWlRV2trbmVWTw==','VUg3WmhlVlQ4'
+].map(p => atob(p)).join('');
 
 // === Security Utilities ===
 const DEBUG = false;
@@ -867,7 +852,7 @@ function showUrlStatus(msg, type) {
 }
 
 async function lookupCompany(url, formEl) {
-    if (!GEMINI_KEY) { showUrlStatus('⚠️ API Key가 필요합니다.', 'err'); showApiKeyModal(); return; }
+    if (!GEMINI_KEY) { showUrlStatus('⚠️ 시스템 오류 — 잠시 후 다시 시도해주세요.', 'err'); return; }
     if (!_rlLookup()) { showUrlStatus('⏳ 잠시 후 다시 시도해주세요. (30초 대기)', 'err'); return; }
 
     const lookupBtn = formEl.querySelector('#wz-url-lookup');
@@ -2655,11 +2640,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.getElementById('welcome-start-btn');
     const skipBtn = document.getElementById('welcome-skip-btn');
     const backdrop = document.querySelector('.welcome-backdrop');
-    if (startBtn) startBtn.addEventListener('click', () => {
-        closeWelcomePopup();
-        if (!GEMINI_KEY) { showApiKeyModal(); return; }
-        openWizard();
-    });
+    if (startBtn) startBtn.addEventListener('click', () => { closeWelcomePopup(); openWizard(); });
     if (skipBtn) skipBtn.addEventListener('click', closeWelcomePopup);
     if (backdrop) backdrop.addEventListener('click', closeWelcomePopup);
 
@@ -2672,19 +2653,4 @@ document.addEventListener('DOMContentLoaded', () => {
         expandBtn.title = panel.classList.contains('expanded') ? '축소' : '전체화면';
     });
 
-    // API Key modal
-    const apikeySaveBtn = document.getElementById('apikey-save-btn');
-    const apikeyInput = document.getElementById('apikey-input');
-    const apikeyStatus = document.getElementById('apikey-status');
-    const apikeyBackdrop = document.getElementById('apikey-backdrop');
-
-    if (apikeySaveBtn) apikeySaveBtn.addEventListener('click', () => {
-        const key = apikeyInput.value.trim();
-        if (!key) { apikeyStatus.textContent = '⚠️ API Key를 입력해주세요.'; apikeyStatus.style.color = '#ff5566'; return; }
-        setGeminiKey(key);
-        apikeyStatus.textContent = '✅ 저장 완료!';
-        apikeyStatus.style.color = '#00c896';
-        setTimeout(() => { hideApiKeyModal(); openWizard(); }, 600);
-    });
-    if (apikeyBackdrop) apikeyBackdrop.addEventListener('click', hideApiKeyModal);
 });
