@@ -234,6 +234,37 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
 }
 @keyframes rotateBorder { to { transform: rotate(360deg); } }
 
+/* --- Welcome Popup --- */
+.welcome-popup { position: fixed; inset: 0; z-index: 250; display: flex; align-items: center; justify-content: center; }
+.welcome-popup.hidden { display: none; }
+.welcome-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); }
+.welcome-modal {
+    position: relative; width: 440px; max-width: 90vw; padding: 40px 36px; border-radius: 20px; z-index: 1;
+    background: rgba(8,12,35,0.96); border: 1px solid rgba(0,240,255,0.15);
+    box-shadow: 0 20px 80px rgba(0,0,0,0.7), 0 0 60px rgba(0,240,255,0.08);
+    text-align: center; animation: fadeInUp 0.5s ease;
+}
+.welcome-icon { font-size: 48px; margin-bottom: 12px; }
+.welcome-title { font: 700 22px var(--font-body); color: var(--text-bright); margin-bottom: 8px; }
+.welcome-desc { font: 400 14px var(--font-body); color: var(--text-dim); line-height: 1.6; margin-bottom: 20px; }
+.welcome-features { display: flex; gap: 12px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
+.welcome-feat {
+    padding: 8px 14px; border-radius: 8px; font: 500 12px var(--font-body); color: var(--primary);
+    background: rgba(0,240,255,0.06); border: 1px solid rgba(0,240,255,0.1);
+}
+.welcome-cta {
+    display: block; width: 100%; padding: 14px; border: none; border-radius: 12px; cursor: pointer;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #000; font: 700 16px var(--font-body); transition: all 0.3s;
+}
+.welcome-cta:hover { filter: brightness(1.15); transform: translateY(-1px); box-shadow: 0 4px 20px rgba(0,240,255,0.3); }
+.welcome-skip {
+    display: block; width: 100%; margin-top: 10px; padding: 10px; border: none;
+    background: transparent; color: var(--text-dim); font: 400 13px var(--font-body);
+    cursor: pointer; transition: color 0.2s;
+}
+.welcome-skip:hover { color: var(--text); }
+
 /* --- Wizard Modal --- */
 .expansion-wizard { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; }
 .expansion-wizard.hidden { display: none; }
@@ -361,8 +392,24 @@ body { background: var(--bg-dark); color: var(--text); font-family: var(--font-b
     animation: slideInRight 0.5s ease;
     background: rgba(8,12,35,0.94); backdrop-filter: blur(24px);
     border-left: 1px solid rgba(0,240,255,0.1);
+    transition: width 0.4s ease, left 0.4s ease;
 }
 .expansion-panel.hidden { display: none; }
+.expansion-panel.expanded {
+    width: 100%; left: 0; border-left: none;
+    padding: 24px 10%; animation: none;
+}
+.expansion-panel-controls {
+    position: sticky; top: 0; z-index: 5; display: flex; justify-content: flex-end; gap: 8px;
+    padding: 0 0 12px; margin: -4px -4px 0;
+}
+.panel-expand-btn {
+    width: 32px; height: 32px; border: 1px solid rgba(0,240,255,0.2); border-radius: 6px;
+    background: rgba(0,240,255,0.06); color: var(--primary); font-size: 16px;
+    cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;
+}
+.panel-expand-btn:hover { background: rgba(0,240,255,0.15); }
+.expansion-panel-controls .close-btn { position: static; }
 
 /* Report header */
 .exp-badge { display: inline-block; padding: 3px 10px; border-radius: 4px; font: 600 10px var(--font-title); color: var(--primary); letter-spacing: 2px; border: 1px solid rgba(0,240,255,0.2); margin-bottom: 8px; }

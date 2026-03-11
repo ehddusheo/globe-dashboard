@@ -95,9 +95,29 @@
 
         <!-- Expansion Report Panel -->
         <aside id="expansion-report" class="glass-panel expansion-panel hidden">
-            <button class="close-btn" id="close-expansion">&times;</button>
+            <div class="expansion-panel-controls">
+                <button class="panel-expand-btn" id="expand-panel-btn" title="전체화면">⛶</button>
+                <button class="close-btn" id="close-expansion">&times;</button>
+            </div>
             <div id="expansion-content"></div>
         </aside>
+
+        <!-- Welcome Popup -->
+        <div id="welcome-popup" class="welcome-popup hidden">
+            <div class="welcome-backdrop"></div>
+            <div class="welcome-modal glass-panel">
+                <div class="welcome-icon">🌍</div>
+                <div class="welcome-title">AI 해외진출 전략 보고서</div>
+                <div class="welcome-desc">149개국 × 12개 산업 데이터를 AI가 분석하여<br>귀사에 최적화된 해외진출 전략을 제안합니다.</div>
+                <div class="welcome-features">
+                    <div class="welcome-feat">📦 수입 증가국 분석</div>
+                    <div class="welcome-feat">🏆 경쟁 환경 진단</div>
+                    <div class="welcome-feat">🎯 제품-시장 적합도</div>
+                </div>
+                <button class="welcome-cta" id="welcome-start-btn">🚀 무료 보고서 생성하기</button>
+                <button class="welcome-skip" id="welcome-skip-btn">나중에 할게요</button>
+            </div>
+        </div>
 
         <!-- API Key Modal -->
         <footer id="ticker">

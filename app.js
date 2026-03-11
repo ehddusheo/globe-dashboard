@@ -255,6 +255,8 @@ function initGlobe() {
         app.style.opacity = '1';
         app.style.transition = 'opacity 0.8s';
         animateCounters();
+        // Show welcome popup after load
+        setTimeout(() => showWelcomePopup(), 800);
     }, 4000);
 
     // Handle resize
@@ -2124,7 +2126,7 @@ function showExpansionReport() {
         <div class="exp-rinda-cta">
             <div class="rinda-cta-title">🚀 ${top1.country.name}에 해외 영업팀을 구축하세요</div>
             <p class="rinda-cta-desc">AI가 추천한 최적 시장에 현지 영업팀을 배치하세요. 이메일 기반 해외 B2B 영업 자동화 플랫폼 린다가 도와드립니다.</p>
-            <button class="rinda-cta-btn" id="rinda-cta-btn">🌍 해외 영업팀 고용 문의하기</button>
+            <button class="rinda-cta-btn" id="rinda-cta-btn">🌍 해외영업 자동화</button>
         </div>`;
 
     // Rinda popup (hidden)
@@ -2445,10 +2447,13 @@ async function downloadPDF() {
 }
 
 function closeExpansionReport() {
-    document.getElementById('expansion-report').classList.add('hidden');
+    const panel = document.getElementById('expansion-report');
+    panel.classList.remove('expanded');
+    panel.classList.add('hidden');
     document.getElementById('expansion-cta').style.display = '';
     document.getElementById('left-panel').style.opacity = '1';
     document.getElementById('left-panel').style.pointerEvents = '';
+    document.getElementById('expand-panel-btn').textContent = '⛶';
     EA.mode = false;
 
     // Restore globe
@@ -2459,3 +2464,33 @@ function closeExpansionReport() {
     updateArcs(selectedCountry || undefined);
     globe.controls().autoRotate = true;
 }
+
+// ---- WELCOME POPUP ----
+function showWelcomePopup() {
+    const popup = document.getElementById('welcome-popup');
+    if (!popup) return;
+    popup.classList.remove('hidden');
+}
+
+function closeWelcomePopup() {
+    const popup = document.getElementById('welcome-popup');
+    if (popup) popup.classList.add('hidden');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const startBtn = document.getElementById('welcome-start-btn');
+    const skipBtn = document.getElementById('welcome-skip-btn');
+    const backdrop = document.querySelector('.welcome-backdrop');
+    if (startBtn) startBtn.addEventListener('click', () => { closeWelcomePopup(); openWizard(); });
+    if (skipBtn) skipBtn.addEventListener('click', closeWelcomePopup);
+    if (backdrop) backdrop.addEventListener('click', closeWelcomePopup);
+
+    // Expand/collapse report panel
+    const expandBtn = document.getElementById('expand-panel-btn');
+    if (expandBtn) expandBtn.addEventListener('click', () => {
+        const panel = document.getElementById('expansion-report');
+        panel.classList.toggle('expanded');
+        expandBtn.textContent = panel.classList.contains('expanded') ? '⛶' : '⛶';
+        expandBtn.title = panel.classList.contains('expanded') ? '축소' : '전체화면';
+    });
+});
