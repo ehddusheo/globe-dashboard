@@ -1,7 +1,7 @@
 // === GLOBAL INDUSTRY INTELLIGENCE - APP LOGIC ===
 const GEMINI_KEY = [
-    'QUl6YVN5Q2lnZw==','R2hOek5YUUp3ag==',
-    'ZWlRV2trbmVWTw==','VUg3WmhlVlQ4'
+    'QUl6YVN5Q2RwVw==','NjBHT0lBQzZrdA==',
+    'YjJqV1dFS3JuZQ==','VVZDd0pXVkVB'
 ].map(p => atob(p)).join('');
 
 // === Security Utilities ===
