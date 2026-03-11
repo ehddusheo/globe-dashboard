@@ -2424,6 +2424,65 @@ async function downloadPDF() {
         // Ensure element is scrolled to top for clean capture
         panel.scrollTop = 0;
 
+        // ---- PAGE-BREAK SPACER LOGIC ----
+        // html2pdf renders one tall image then slices into pages.
+        // We calculate page boundaries and insert spacers to push split elements to the next page.
+        const PAGE_HEIGHT_MM = 297;
+        const MARGIN_TOP_MM = 15;
+        const MARGIN_BOT_MM = 15;
+        const CONTENT_HEIGHT_MM = PAGE_HEIGHT_MM - MARGIN_TOP_MM - MARGIN_BOT_MM;
+        // px per mm: 700px content width maps to (210 - 15 - 15) = 180mm
+        const PX_PER_MM = 700 / 180;
+        const PAGE_CONTENT_PX = CONTENT_HEIGHT_MM * PX_PER_MM;
+
+        // Collect all "atomic" blocks that should not be split
+        const atomicSelectors = [
+            '.acc-key-stats', '.acc-verdict', '.acc-market-status',
+            '.acc-import-trends', '.acc-competition', '.acc-product-fit',
+            '.acc-proposal-item', '.acc-data-grid', '.acc-dim-bars',
+            '.exp-executive-summary', '.exp-top-pick', '.exp-gauge',
+            '.exp-strategy', '.exp-rank-list', '.fit-item',
+            '.import-stats-row', '.import-summary', '.competition-players',
+            '.competition-gap', '.timeline-phase',
+            '.exp-accordion-head', '.acc-section-label',
+            '.exp-section-title', '.exp-divider',
+            '.exp-company-intel', '.exp-company-desc'
+        ];
+        const spacers = [];
+
+        // Run multiple passes — inserting a spacer shifts elements below,
+        // which may cause NEW overlaps with page boundaries.
+        for (let pass = 0; pass < 3; pass++) {
+            const blocks = content.querySelectorAll(atomicSelectors.join(','));
+            const contentTop = content.getBoundingClientRect().top;
+            let inserted = 0;
+
+            blocks.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const elTop = rect.top - contentTop;
+                const elBottom = rect.bottom - contentTop;
+                const elHeight = rect.height;
+
+                if (elHeight < 5) return;
+
+                const pageOfTop = Math.floor(elTop / PAGE_CONTENT_PX);
+                const pageEnd = (pageOfTop + 1) * PAGE_CONTENT_PX;
+
+                // Element crosses page boundary and can fit on one page
+                if (elBottom > pageEnd + 2 && elTop < pageEnd - 2 && elHeight < PAGE_CONTENT_PX * 0.85) {
+                    const spacerHeight = pageEnd - elTop + 8;
+                    const spacer = document.createElement('div');
+                    spacer.className = 'pdf-spacer';
+                    spacer.style.cssText = `height:${spacerHeight}px;width:100%;background:#ffffff;flex-shrink:0;`;
+                    el.parentNode.insertBefore(spacer, el);
+                    spacers.push(spacer);
+                    inserted++;
+                }
+            });
+
+            if (inserted === 0) break; // No more overlaps found
+        }
+
         const opt = {
             margin:       [15, 15, 15, 15],
             filename:     `${sanitizeFilename(companyName)}_해외진출전략_${dateStr}.pdf`,
@@ -2441,17 +2500,13 @@ async function downloadPDF() {
                 scrollY: 0,
             },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak:    { mode: ['css', 'legacy'], avoid: [
-                '.acc-key-stats', '.acc-verdict', '.exp-strategy', '.exp-executive-summary',
-                '.acc-market-status', '.acc-import-trends', '.acc-competition', '.acc-product-fit',
-                '.acc-proposal-item', '.acc-data-grid', '.acc-dim-bars',
-                '.exp-top-pick', '.exp-gauge', '.import-stat', '.player-row',
-                '.fit-item', '.fit-score-row', '.timeline-phase',
-                '.exp-rank-list', '.competition-players'
-            ] }
+            pagebreak:    { mode: ['css', 'legacy'] }
         };
 
         await html2pdf().set(opt).from(content).save();
+
+        // Remove spacers after PDF is done
+        spacers.forEach(s => s.remove());
 
         // Restore PDF mode overrides
         panel.classList.remove('pdf-capture');
