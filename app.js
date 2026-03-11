@@ -2249,11 +2249,17 @@ async function downloadPDF() {
         // Apply PDF mode (black-on-white)
         content.classList.add('pdf-mode');
 
+        // Expand content width for A4-friendly PDF
+        const origWidth = panel.style.width;
+        const origMaxW = panel.style.maxWidth;
+        panel.style.width = '700px';
+        panel.style.maxWidth = '700px';
+
         // Open all accordions for PDF
         content.querySelectorAll('.exp-accordion-item').forEach(item => item.classList.add('open'));
 
         // Hide interactive-only elements during PDF generation
-        const hideEls = content.querySelectorAll('.exp-actions, .exp-rinda-cta, #rinda-popup, .matrix-bubble');
+        const hideEls = content.querySelectorAll('.exp-actions, .exp-rinda-cta, #rinda-popup, #pdf-popup, .matrix-bubble');
         hideEls.forEach(el => el.style.display = 'none');
 
         // Override inline SVG/style colors for PDF mode
@@ -2273,17 +2279,19 @@ async function downloadPDF() {
         });
 
         const opt = {
-            margin:       [10, 10, 10, 10],
+            margin:       [15, 12, 15, 12],
             filename:     `${sanitizeFilename(companyName)}_해외진출전략_${dateStr}.pdf`,
-            image:        { type: 'jpeg', quality: 0.95 },
-            html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', logging: false },
+            image:        { type: 'jpeg', quality: 0.92 },
+            html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', logging: false, width: 700, windowWidth: 700 },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+            pagebreak:    { mode: ['css', 'legacy'], avoid: ['.acc-key-stats', '.acc-verdict', '.exp-strategy', '.exp-executive-summary'] }
         };
 
         await html2pdf().set(opt).from(content).save();
 
         // Restore PDF mode overrides
+        panel.style.width = origWidth;
+        panel.style.maxWidth = origMaxW;
         content.classList.remove('pdf-mode');
         content.querySelectorAll('.radar-poly').forEach(poly => {
             if (poly.dataset.origStroke) poly.setAttribute('stroke', poly.dataset.origStroke);
