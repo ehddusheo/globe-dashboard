@@ -2424,64 +2424,98 @@ async function downloadPDF() {
         // Ensure element is scrolled to top for clean capture
         panel.scrollTop = 0;
 
-        // ---- PAGE-BREAK SPACER LOGIC ----
-        // html2pdf renders one tall image then slices into pages.
-        // We calculate page boundaries and insert spacers to push split elements to the next page.
-        const PAGE_HEIGHT_MM = 297;
-        const MARGIN_TOP_MM = 15;
-        const MARGIN_BOT_MM = 15;
-        const CONTENT_HEIGHT_MM = PAGE_HEIGHT_MM - MARGIN_TOP_MM - MARGIN_BOT_MM;
-        // px per mm: 700px content width maps to (210 - 15 - 15) = 180mm
-        const PX_PER_MM = 700 / 180;
-        const PAGE_CONTENT_PX = CONTENT_HEIGHT_MM * PX_PER_MM;
+        // ---- ROBUST PAGE-BREAK PREVENTION ----
+        // html2pdf = html2canvas (one tall image) → slice into A4 pages
+        // We must insert spacers at exact page boundary positions.
+        //
+        // Step 1: Measure actual page height by doing a test render
+        // A4: 210×297mm, margins 15mm each → content area 180×267mm
+        // html2canvas renders at width=700px → 700px = 180mm
+        // So 1px = 180/700 mm = 0.2571mm
+        // Page content height = 267mm / 0.2571mm = 1038.9px
+        const PAGE_H = (297 - 15 - 15) * (700 / (210 - 15 - 15)); // ≈ 1038.9 px
 
-        // Collect all "atomic" blocks that should not be split
+        // Force reflow so getBoundingClientRect reflects pdf-mode
+        void content.offsetHeight;
+        await new Promise(r => setTimeout(r, 50));
+
+        // All block-level sections that must not be split across pages
         const atomicSelectors = [
             '.acc-key-stats', '.acc-verdict', '.acc-market-status',
             '.acc-import-trends', '.acc-competition', '.acc-product-fit',
             '.acc-proposal-item', '.acc-data-grid', '.acc-dim-bars',
             '.exp-executive-summary', '.exp-top-pick', '.exp-gauge',
-            '.exp-strategy', '.exp-rank-list', '.fit-item',
-            '.import-stats-row', '.import-summary', '.competition-players',
-            '.competition-gap', '.timeline-phase',
-            '.exp-accordion-head', '.acc-section-label',
-            '.exp-section-title', '.exp-divider',
-            '.exp-company-intel', '.exp-company-desc'
+            '.exp-strategy', '.exp-rank-list',
+            '.fit-item', '.fit-score-row', '.fit-detail',
+            '.import-stats-row', '.import-summary',
+            '.competition-players', '.competition-gap', '.competition-header',
+            '.timeline-phase',
+            '.exp-company-intel', '.exp-company-desc',
+            '.acc-section-label', '.exp-section-title',
+            '.acc-oppo-item', '.acc-risk-item',
+            '.exp-divider'
         ];
         const spacers = [];
 
-        // Run multiple passes — inserting a spacer shifts elements below,
-        // which may cause NEW overlaps with page boundaries.
-        for (let pass = 0; pass < 3; pass++) {
+        // Multiple passes: inserting spacers shifts everything below
+        for (let pass = 0; pass < 5; pass++) {
             const blocks = content.querySelectorAll(atomicSelectors.join(','));
-            const contentTop = content.getBoundingClientRect().top;
+            const cTop = content.getBoundingClientRect().top;
             let inserted = 0;
 
-            blocks.forEach(el => {
+            for (const el of blocks) {
+                // Skip already-processed or hidden elements
+                if (el.offsetHeight < 2 || el.style.display === 'none') continue;
+
                 const rect = el.getBoundingClientRect();
-                const elTop = rect.top - contentTop;
-                const elBottom = rect.bottom - contentTop;
-                const elHeight = rect.height;
+                const top = rect.top - cTop;
+                const bot = rect.bottom - cTop;
+                const h = rect.height;
 
-                if (elHeight < 5) return;
+                // Which page boundary could this element cross?
+                const page = Math.floor(top / PAGE_H);
+                const pageCut = (page + 1) * PAGE_H;
 
-                const pageOfTop = Math.floor(elTop / PAGE_CONTENT_PX);
-                const pageEnd = (pageOfTop + 1) * PAGE_CONTENT_PX;
-
-                // Element crosses page boundary and can fit on one page
-                if (elBottom > pageEnd + 2 && elTop < pageEnd - 2 && elHeight < PAGE_CONTENT_PX * 0.85) {
-                    const spacerHeight = pageEnd - elTop + 8;
+                // Does element straddle the page cut?
+                if (top < pageCut && bot > pageCut + 1 && h < PAGE_H * 0.8) {
+                    // Push element to next page
+                    const gap = pageCut - top + 4;
                     const spacer = document.createElement('div');
                     spacer.className = 'pdf-spacer';
-                    spacer.style.cssText = `height:${spacerHeight}px;width:100%;background:#ffffff;flex-shrink:0;`;
+                    spacer.style.cssText = `height:${gap}px;width:100%;background:#fff;`;
                     el.parentNode.insertBefore(spacer, el);
                     spacers.push(spacer);
                     inserted++;
                 }
-            });
+            }
 
-            if (inserted === 0) break; // No more overlaps found
+            // Reflow after each pass
+            void content.offsetHeight;
+            if (inserted === 0) break;
         }
+
+        // Also: insert forced page-break before each country accordion
+        // so countries never bleed into each other
+        const accordions = content.querySelectorAll('.exp-accordion-item');
+        accordions.forEach((acc, i) => {
+            if (i === 0) return; // skip first
+            const cTop2 = content.getBoundingClientRect().top;
+            const accTop = acc.getBoundingClientRect().top - cTop2;
+            const page = Math.floor(accTop / PAGE_H);
+            const pageCut = (page + 1) * PAGE_H;
+            const distToNextPage = pageCut - accTop;
+            // If less than 200px left on current page, push to next
+            if (distToNextPage < 200 && distToNextPage > 0) {
+                const spacer = document.createElement('div');
+                spacer.className = 'pdf-spacer';
+                spacer.style.cssText = `height:${distToNextPage + 4}px;width:100%;background:#fff;`;
+                acc.parentNode.insertBefore(spacer, acc);
+                spacers.push(spacer);
+            }
+        });
+
+        // Final reflow
+        void content.offsetHeight;
 
         const opt = {
             margin:       [15, 15, 15, 15],
@@ -2505,7 +2539,7 @@ async function downloadPDF() {
 
         await html2pdf().set(opt).from(content).save();
 
-        // Remove spacers after PDF is done
+        // Remove all spacers after PDF generation
         spacers.forEach(s => s.remove());
 
         // Restore PDF mode overrides
