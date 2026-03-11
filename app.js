@@ -2,11 +2,21 @@
 // Gemini API Key — 난독화 저장 (GitHub secret scanning 우회)
 // 새 키 설정: 브라우저 콘솔에서 setGeminiKey('새키') 실행
 const _GK_STORE = localStorage.getItem('_gk');
-const GEMINI_KEY = _GK_STORE ? atob(_GK_STORE) : '';
+let GEMINI_KEY = _GK_STORE ? atob(_GK_STORE) : '';
 function setGeminiKey(key) {
     localStorage.setItem('_gk', btoa(key));
-    console.log('✅ Gemini API Key 저장 완료. 페이지를 새로고침하세요.');
+    GEMINI_KEY = key;
+    console.log('✅ Gemini API Key 저장 완료.');
     return true;
+}
+
+function showApiKeyModal() {
+    const modal = document.getElementById('apikey-modal');
+    if (modal) modal.classList.remove('hidden');
+}
+function hideApiKeyModal() {
+    const modal = document.getElementById('apikey-modal');
+    if (modal) modal.classList.add('hidden');
 }
 
 // === Security Utilities ===
@@ -857,7 +867,7 @@ function showUrlStatus(msg, type) {
 }
 
 async function lookupCompany(url, formEl) {
-    if (!GEMINI_KEY) { showUrlStatus('⚠️ API Key를 먼저 설정해주세요. (헤더 🔑 버튼)', 'err'); return; }
+    if (!GEMINI_KEY) { showUrlStatus('⚠️ API Key가 필요합니다.', 'err'); showApiKeyModal(); return; }
     if (!_rlLookup()) { showUrlStatus('⏳ 잠시 후 다시 시도해주세요. (30초 대기)', 'err'); return; }
 
     const lookupBtn = formEl.querySelector('#wz-url-lookup');
@@ -2645,7 +2655,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.getElementById('welcome-start-btn');
     const skipBtn = document.getElementById('welcome-skip-btn');
     const backdrop = document.querySelector('.welcome-backdrop');
-    if (startBtn) startBtn.addEventListener('click', () => { closeWelcomePopup(); openWizard(); });
+    if (startBtn) startBtn.addEventListener('click', () => {
+        closeWelcomePopup();
+        if (!GEMINI_KEY) { showApiKeyModal(); return; }
+        openWizard();
+    });
     if (skipBtn) skipBtn.addEventListener('click', closeWelcomePopup);
     if (backdrop) backdrop.addEventListener('click', closeWelcomePopup);
 
@@ -2657,4 +2671,20 @@ document.addEventListener('DOMContentLoaded', () => {
         expandBtn.textContent = panel.classList.contains('expanded') ? '⛶' : '⛶';
         expandBtn.title = panel.classList.contains('expanded') ? '축소' : '전체화면';
     });
+
+    // API Key modal
+    const apikeySaveBtn = document.getElementById('apikey-save-btn');
+    const apikeyInput = document.getElementById('apikey-input');
+    const apikeyStatus = document.getElementById('apikey-status');
+    const apikeyBackdrop = document.getElementById('apikey-backdrop');
+
+    if (apikeySaveBtn) apikeySaveBtn.addEventListener('click', () => {
+        const key = apikeyInput.value.trim();
+        if (!key) { apikeyStatus.textContent = '⚠️ API Key를 입력해주세요.'; apikeyStatus.style.color = '#ff5566'; return; }
+        setGeminiKey(key);
+        apikeyStatus.textContent = '✅ 저장 완료!';
+        apikeyStatus.style.color = '#00c896';
+        setTimeout(() => { hideApiKeyModal(); openWizard(); }, 600);
+    });
+    if (apikeyBackdrop) apikeyBackdrop.addEventListener('click', hideApiKeyModal);
 });
