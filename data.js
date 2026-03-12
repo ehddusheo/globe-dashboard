@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-03-11 21:38:15
+// Auto-generated: 2026-03-12 21:37:22
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -741,7 +741,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 33
+                "rank": 32
             },
             "manufacturing": {
                 "size": 51.8,
@@ -953,7 +953,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 28
+                "rank": 27
             },
             "manufacturing": {
                 "size": 96.9,
@@ -2013,7 +2013,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 27
+                "rank": 26
             },
             "manufacturing": {
                 "size": 84.5,
@@ -2649,7 +2649,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 32
+                "rank": 31
             },
             "manufacturing": {
                 "size": 98.5,
@@ -4557,7 +4557,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 6
             },
             "manufacturing": {
                 "size": 186.9,
@@ -4769,7 +4769,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 20
             },
             "manufacturing": {
                 "size": 182.3,
@@ -9431,7 +9431,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 8
             },
             "manufacturing": {
                 "size": 332.6,
@@ -9855,7 +9855,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 8
+                "rank": 7
             },
             "manufacturing": {
                 "size": 323.8,
@@ -12822,7 +12822,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 31
+                "rank": 29
             },
             "manufacturing": {
                 "size": 198.1,
@@ -13657,9 +13657,9 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 48.8,
+                "size": 27.0,
                 "growth": 4.5,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13670,7 +13670,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 33
             },
             "manufacturing": {
                 "size": 60.1,
@@ -14504,7 +14504,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 308.6,
+                "size": 302.1,
                 "growth": 4.2,
                 "potential": 88,
                 "oppo": [
@@ -15564,9 +15564,9 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 219.9,
+                "size": 140.7,
                 "growth": 5.0,
-                "potential": 89,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15577,7 +15577,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 9
             },
             "manufacturing": {
                 "size": 798.7,
@@ -20239,7 +20239,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 29
+                "rank": 28
             },
             "manufacturing": {
                 "size": 152.0,
@@ -22994,7 +22994,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 26
+                "rank": 25
             },
             "manufacturing": {
                 "size": 115.8,
@@ -23417,7 +23417,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 21
             },
             "manufacturing": {
                 "size": 162.3,
@@ -25537,7 +25537,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 22
             },
             "manufacturing": {
                 "size": 143.0,
@@ -27007,7 +27007,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 30.9,
+                "size": 30.2,
                 "growth": 4.5,
                 "potential": 85,
                 "oppo": [
@@ -27868,7 +27868,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 24
+                "rank": 23
             },
             "manufacturing": {
                 "size": 205.0,
@@ -29971,7 +29971,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 2783.9,
+                "size": 2587.6,
                 "growth": 5.3,
                 "potential": 93,
                 "oppo": [
@@ -30618,7 +30618,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 25
+                "rank": 24
             },
             "manufacturing": {
                 "size": 186.2,
@@ -31819,12 +31819,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/JPY",
-        "value": "158",
+        "value": "159",
         "dir": "neutral"
     },
     {
         "label": "USD/KRW",
-        "value": "1,473",
+        "value": "1,476",
         "dir": "neutral"
     },
     {
@@ -31834,12 +31834,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/INR",
-        "value": "92.04",
+        "value": "92.20",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.17",
+        "value": "5.16",
         "dir": "neutral"
     },
     {
@@ -31859,7 +31859,7 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,154",
+        "value": "26,129",
         "dir": "neutral"
     },
     {
