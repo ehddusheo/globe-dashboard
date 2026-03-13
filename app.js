@@ -4,6 +4,189 @@ const GEMINI_KEY = [
     'YjJqV1dFS3JuZQ==','VVZDd0pXVkVB'
 ].map(p => atob(p)).join('');
 
+// === i18n System ===
+const LANG = { current: localStorage.getItem('lang') || (navigator.language.startsWith('ko') ? 'ko' : 'en') };
+const I18N = {
+ko: {
+selectCountry:'\u{1F50D} 국가 선택', selectIndustry:'\u{1F4BC} 업종 선택', searchPlaceholder:'국가 검색...', selectCountryPlaceholder:'-- 국가를 선택하세요 --',
+navGlobe:'Globe', navSearch:'검색', navAnalysis:'분석', navData:'데이터', ctaAnalysis:'AI 수출전략 분석',
+welcomeTitle:'AI 해외진출 전략 보고서', welcomeDesc:'149개국 × 12개 산업 데이터를 AI가 분석하여<br>귀사에 최적화된 해외진출 전략을 제안합니다.',
+welcomeFeat1:'수입 증가국 분석', welcomeFeat2:'경쟁 환경 진단', welcomeFeat3:'제품-시장 적합도',
+welcomeCta:'\u{1F680} 무료 보고서 생성하기', welcomeSkip:'나중에 할게요',
+gdp:'GDP', population:'인구', region:'지역', incomeLevel:'소득수준', gdpGrowth:'GDP 성장률', inflation:'물가상승률',
+unemployment:'실업률', tradeGdp:'무역/GDP', internet:'인터넷 보급', renewableEnergy:'재생에너지',
+industryData:'산업 데이터', selectIndustryHint:'업종을 선택하면 상세 분석을 볼 수 있습니다', overview:'개요',
+marketSize:'시장 규모', annualGrowth:'연간 성장률', globalRank:'글로벌 순위', potentialScore:'잠재력 점수', potentialIndex:'잠재력 지수',
+industryOverview:'📋 산업 개요', macroIndicators:'🏛️ 거시경제 지표', keyOpportunities:'\u{1F680} 주요 기회',
+riskFactors:'⚠️ 리스크 요인', industryComparison:'📊 업종 비교',
+wizardStep1Title:'기업 기본 정보', wizardStep2Title:'수출 전략 설정', wizardStep3Title:'분석 준비 완료',
+companyWebsite:'\u{1F310} 회사 웹사이트', aiLookup:'\u{1F50D} AI 조회', companyName:'회사명',
+companyNamePlaceholder:'예: 주식회사 테크원', mainIndustry:'대표 업종 *', annualRevenue:'연 매출', employees:'임직원 수', select:'선택',
+exportExperience:'해외사업 경험', priorities:'우선순위 (최대 3개 선택) *', interestedRegions:'관심 지역',
+prevBtn:'← 이전', nextBtn:'다음 →', startAnalysis:'\u{1F50D} AI 분석 시작',
+revU10:'10억 미만', revU50:'10억 ~ 50억', revU200:'50억 ~ 200억', revU1000:'200억 ~ 1,000억', revO1000:'1,000억 이상',
+empU10:'10명 이하', empU50:'11 ~ 50명', empU200:'51 ~ 200명', empU1000:'201 ~ 1,000명', empO1000:'1,000명 이상',
+expNone:'처음', expNoneDesc:'해외사업 경험 없음', expSome:'일부 경험', expSomeDesc:'1~2개국 수출/진출',
+expMany:'다수 경험', expManyDesc:'3개국 이상 진출',
+priMarketSize:'시장규모', priGrowth:'성장률', priPotential:'잠재력', priStability:'경제안정성', priOpenness:'무역개방도', priDigital:'디지털인프라',
+regAll:'전체', regEastAsia:'동아시아', regEurope:'유럽', regNorthAmerica:'북미', regLatinAmerica:'남미', regMiddleEast:'중동', regSouthAsia:'남아시아', regAfrica:'아프리카',
+step1Label:'기업정보', step2Label:'전략설정', step3Label:'확인',
+analysisConnecting:'글로벌 데이터베이스 연결중...', analysisScanning:'149개국 시장 데이터 스캔중...',
+analysisCompetitiveness:'산업별 경쟁력 지수 계산중...', analysisTrade:'무역 개방도 · FTA 네트워크 분석중...',
+analysisDigital:'디지털 인프라 · 기술 성숙도 평가중...', analysisRisk:'리스크 매트릭스 산출중...',
+analysisTop5:'유망 시장 TOP 5 선별중...', analysisTop5Done:'유망 시장 선별 완료',
+analysisAIEngine:'AI 전략 분석 엔진 가동중...',
+analysisAI:'Gemini AI · Google Search 기반 실시간 데이터 수집중...', analysisVerify:'국가별 최신 경제지표 검증중...',
+analysisReport:'맞춤형 진출 전략 보고서 작성중...', analysisFinal:'Gemini 2.5 Pro · 최종 분석 리포트 생성중',
+analysisMerge:'AI 데이터 병합 및 검증중...', analysisDone:'분석 완료', analysisWait:'⏳ 잠시 후 다시 시도해주세요. (60초 대기)',
+reportTitle:'해외진출 전략 보고서', reportBadge:'AI EXPANSION REPORT', scanBadge:'개국 데이터 분석 완료',
+companyIntel:'🏢 회사 인텔리전스', executiveSummary:'AI 분석 요약', staticSummary:'데이터 기반 분석 요약',
+totalScore:'종합점수', top5Title:'🏆 추천 시장 TOP 5', radarTitle:'📊 상위 3개국 비교',
+matrixTitle:'⚖️ 리스크-기회 매트릭스', strategyTitle:'🎯 추천 진출 전략',
+countryAnalysis:'📊 국가별 맞춤 분석', marketStatus:'📍 시장 현황', importTrends:'📦 수입 동향 분석',
+competition:'🏆 경쟁 환경', productFit:'🎯 우리 제품 적합도', customProposal:'💡 맞춤 제안',
+opportunities:'\u{1F680} 기회', risks:'⚠️ 리스크',
+industryMarketSize:'산업 시장규모', cagr:'연평균 성장률', topCompetitor:'주요 경쟁사', entryBarrier:'진입장벽',
+importVolume:'수입 규모', importGrowthRate:'수입 증가율', majorImportSources:'주요 수입국',
+fitScoreLabel:'적합도', localNeeds:'현지 수요', whyOurProduct:'왜 통하는가', entryScenario:'진입 시나리오', firstYearTarget:'1년차 목표',
+gdpLabel:'GDP', gdpGrowthLabel:'GDP 성장률', populationLabel:'인구', internetLabel:'인터넷 보급률',
+industrySizeLabel:'산업 규모', industryGrowthLabel:'산업 성장률',
+dimMarketSize:'시장규모', dimGrowth:'성장률', dimPotential:'잠재력', dimStability:'안정성', dimOpenness:'개방도', dimDigital:'디지털',
+backToExplorer:'← 탐색기로 돌아가기', downloadPdf:'📥 PDF 보고서 다운로드', reAnalyze:'🔄 다시 분석',
+pdfTitle:'📥 보고서 다운로드', pdfDownload:'📥 PDF 바로 다운로드', pdfRinda:'\u{1F680} 해외영업팀 지원받기',
+pdfGenerating:'⏳ PDF 생성 중...', pdfFailed:'PDF 생성에 실패했습니다. 다시 시도해주세요.',
+noResults:'분석 결과가 없습니다.',
+stratExport:'수출 & 이커머스', stratExportDesc:'현지 유통망·온라인 플랫폼을 통한 제품 수출 중심 전략',
+stratPartnership:'현지 파트너십', stratPartnershipDesc:'합작투자·현지 파트너를 통한 시장 진입 전략',
+stratFdi:'직접투자 (현지법인)', stratFdiDesc:'현지 법인 설립을 통한 본격 시장 공략 전략',
+stratDigital:'디지털 퍼스트', stratDigitalDesc:'SaaS·앱·디지털 서비스 중심의 원격 진출 전략',
+regulatoryOverview:'📜 규제/컴플라이언스', entryCostEstimate:'💵 시장 진입 비용',
+culturalFit:'🤝 문화적 적합성', supplyChain:'🚚 공급망 분석',
+cmdPlaceholder:'국가, 산업, /analyze, /top, /compare 입력...',
+lookupSearching:'회사 정보 검색중...', lookupFail:'❌ 조회 실패 — 수동으로 입력해주세요.',
+lookupUrlRequired:'⚠️ URL을 입력해주세요.', lookupInvalidUrl:'⚠️ 올바른 URL 형식이 아닙니다. (https://example.com)',
+lookupSystemError:'⚠️ 시스템 오류 — 잠시 후 다시 시도해주세요.', lookupRateLimit:'⏳ 잠시 후 다시 시도해주세요. (30초 대기)',
+lookupAiLabel:'\u{1F50D} AI 조회', lookupSearchingLabel:'🔄 검색중...',
+confirmCompany:'회사명', confirmIndustry:'업종', confirmRevenue:'연 매출', confirmEmployees:'임직원',
+confirmExperience:'해외 경험', confirmPriorities:'우선순위', confirmRegions:'관심 지역',
+notSelected:'미선택', notEntered:'(미입력)', analyzeSubtext:'Gemini AI가 149개국 데이터를 분석합니다',
+barrierHigh:'높음', barrierMid:'중간', barrierLow:'낮음',
+blueOcean:'블루오션', midCompetition:'중간', redOcean:'레드오션',
+countrySelected:'국가 선택됨', industrySelected:'산업 선택됨', analysisStarted:'AI 분석 시작', analysisComplete:'분석 완료',
+rindaCta:'해외 영업팀을 구축하세요', rindaCtaDesc:'AI가 추천한 최적 시장에 현지 영업팀을 배치하세요.',
+rindaCtaBtn:'\u{1F30D} 해외영업 자동화', rindaPopupCta:'\u{1F680} 린다로 해외 영업 시작하기',
+},
+en: {
+selectCountry:'\u{1F50D} Select Country', selectIndustry:'\u{1F4BC} Select Industry', searchPlaceholder:'Search country...',
+selectCountryPlaceholder:'-- Select a country --',
+navGlobe:'Globe', navSearch:'Search', navAnalysis:'Analysis', navData:'Data', ctaAnalysis:'AI Export Strategy',
+welcomeTitle:'AI Export Strategy Report', welcomeDesc:'AI analyzes 149 countries × 12 industries<br>to suggest optimal export strategies for your company.',
+welcomeFeat1:'Import Trend Analysis', welcomeFeat2:'Competition Diagnostics', welcomeFeat3:'Product-Market Fit',
+welcomeCta:'\u{1F680} Generate Free Report', welcomeSkip:'Maybe later',
+gdp:'GDP', population:'Population', region:'Region', incomeLevel:'Income Level', gdpGrowth:'GDP Growth',
+inflation:'Inflation', unemployment:'Unemployment', tradeGdp:'Trade/GDP', internet:'Internet', renewableEnergy:'Renewable',
+industryData:'Industries', selectIndustryHint:'Select an industry for detailed analysis', overview:'Overview',
+marketSize:'Market Size', annualGrowth:'Annual Growth', globalRank:'Global Rank', potentialScore:'Potential', potentialIndex:'Potential Index',
+industryOverview:'📋 Industry Overview', macroIndicators:'🏛️ Macro Indicators', keyOpportunities:'\u{1F680} Opportunities',
+riskFactors:'⚠️ Risk Factors', industryComparison:'📊 Industry Comparison',
+wizardStep1Title:'Company Profile', wizardStep2Title:'Strategy Settings', wizardStep3Title:'Ready to Analyze',
+companyWebsite:'\u{1F310} Company Website', aiLookup:'\u{1F50D} AI Lookup', companyName:'Company Name',
+companyNamePlaceholder:'e.g. TechOne Corp.', mainIndustry:'Primary Industry *', annualRevenue:'Annual Revenue',
+employees:'Employees', select:'Select',
+exportExperience:'Export Experience', priorities:'Priorities (max 3) *', interestedRegions:'Target Regions',
+prevBtn:'← Previous', nextBtn:'Next →', startAnalysis:'\u{1F50D} Start AI Analysis',
+revU10:'Under $1M', revU50:'$1M-$5M', revU200:'$5M-$20M', revU1000:'$20M-$100M', revO1000:'Over $100M',
+empU10:'1-10', empU50:'11-50', empU200:'51-200', empU1000:'201-1,000', empO1000:'1,000+',
+expNone:'None', expNoneDesc:'No overseas experience', expSome:'Some', expSomeDesc:'Exported to 1-2 countries',
+expMany:'Extensive', expManyDesc:'Present in 3+ countries',
+priMarketSize:'Market Size', priGrowth:'Growth', priPotential:'Potential', priStability:'Stability', priOpenness:'Openness', priDigital:'Digital',
+regAll:'All', regEastAsia:'East Asia', regEurope:'Europe', regNorthAmerica:'N. America', regLatinAmerica:'Latin America',
+regMiddleEast:'Middle East', regSouthAsia:'S. Asia', regAfrica:'Africa',
+step1Label:'Company', step2Label:'Strategy', step3Label:'Confirm',
+analysisConnecting:'Connecting to global database...', analysisScanning:'Scanning 149 country markets...',
+analysisCompetitiveness:'Calculating competitiveness index...', analysisTrade:'Analyzing trade & FTA networks...',
+analysisDigital:'Evaluating digital infrastructure...', analysisRisk:'Computing risk matrix...',
+analysisTop5:'Selecting TOP 5 markets...', analysisTop5Done:'TOP 5 markets selected',
+analysisAIEngine:'AI strategy engine activating...',
+analysisAI:'Gemini AI collecting real-time data...', analysisVerify:'Verifying latest indicators...',
+analysisReport:'Generating strategy report...', analysisFinal:'Gemini 2.5 Pro generating final report',
+analysisMerge:'Merging & validating AI data...', analysisDone:'Analysis Complete', analysisWait:'⏳ Please wait 60 seconds.',
+reportTitle:'Export Strategy Report', reportBadge:'AI EXPANSION REPORT', scanBadge:'countries analyzed',
+companyIntel:'🏢 Company Intelligence', executiveSummary:'AI Analysis Summary', staticSummary:'Data-Driven Summary',
+totalScore:'Total Score', top5Title:'🏆 Recommended Markets TOP 5', radarTitle:'📊 Top 3 Comparison',
+matrixTitle:'⚖️ Risk-Opportunity Matrix', strategyTitle:'🎯 Recommended Entry Strategy',
+countryAnalysis:'📊 Country Analysis', marketStatus:'📍 Market Status', importTrends:'📦 Import Trends',
+competition:'🏆 Competition', productFit:'🎯 Product-Market Fit', customProposal:'💡 Custom Proposals',
+opportunities:'\u{1F680} Opportunities', risks:'⚠️ Risks',
+industryMarketSize:'Industry Size', cagr:'CAGR', topCompetitor:'Top Competitor', entryBarrier:'Entry Barrier',
+importVolume:'Import Volume', importGrowthRate:'Import Growth', majorImportSources:'Major Sources',
+fitScoreLabel:'Fit Score', localNeeds:'Local Needs', whyOurProduct:'Why It Works', entryScenario:'Entry Scenario', firstYearTarget:'Year 1 Target',
+gdpLabel:'GDP', gdpGrowthLabel:'GDP Growth', populationLabel:'Population', internetLabel:'Internet Users',
+industrySizeLabel:'Industry Size', industryGrowthLabel:'Industry Growth',
+dimMarketSize:'Market Size', dimGrowth:'Growth', dimPotential:'Potential', dimStability:'Stability', dimOpenness:'Openness', dimDigital:'Digital',
+backToExplorer:'← Back to Explorer', downloadPdf:'📥 Download PDF', reAnalyze:'🔄 Re-analyze',
+pdfTitle:'📥 Download Report', pdfDownload:'📥 Download PDF Now', pdfRinda:'\u{1F680} Get Export Team',
+pdfGenerating:'⏳ Generating PDF...', pdfFailed:'PDF generation failed.',
+noResults:'No results available.',
+stratExport:'Export & E-commerce', stratExportDesc:'Product export via local distribution & online platforms',
+stratPartnership:'Local Partnership', stratPartnershipDesc:'Market entry through JV & local partners',
+stratFdi:'Foreign Direct Investment', stratFdiDesc:'Establishing local subsidiaries',
+stratDigital:'Digital First', stratDigitalDesc:'Remote entry via SaaS, apps & digital services',
+regulatoryOverview:'📜 Regulatory Overview', entryCostEstimate:'💵 Entry Cost Estimate',
+culturalFit:'🤝 Cultural Fit', supplyChain:'🚚 Supply Chain',
+cmdPlaceholder:'Country, industry, /analyze, /top, /compare...',
+lookupSearching:'Searching company info...', lookupFail:'❌ Lookup failed — enter manually.',
+lookupUrlRequired:'⚠️ Please enter a URL.', lookupInvalidUrl:'⚠️ Invalid URL format.',
+lookupSystemError:'⚠️ System error — try again later.', lookupRateLimit:'⏳ Wait 30 seconds.',
+lookupAiLabel:'\u{1F50D} AI Lookup', lookupSearchingLabel:'🔄 Searching...',
+confirmCompany:'Company', confirmIndustry:'Industry', confirmRevenue:'Revenue', confirmEmployees:'Employees',
+confirmExperience:'Export Exp.', confirmPriorities:'Priorities', confirmRegions:'Regions',
+notSelected:'Not selected', notEntered:'(Not entered)', analyzeSubtext:'Gemini AI will analyze 149 countries',
+barrierHigh:'High', barrierMid:'Medium', barrierLow:'Low',
+blueOcean:'Blue Ocean', midCompetition:'Medium', redOcean:'Red Ocean',
+countrySelected:'Country Selected', industrySelected:'Industry Selected', analysisStarted:'AI Analysis Started', analysisComplete:'Analysis Complete',
+rindaCta:'Build your overseas sales team', rindaCtaDesc:'Deploy a local sales team in your AI-recommended market.',
+rindaCtaBtn:'\u{1F30D} Automate Export Sales', rindaPopupCta:'\u{1F680} Start with Rinda',
+}
+};
+function t(key) { return I18N[LANG.current]?.[key] || I18N['en']?.[key] || key; }
+function countryName(c) { return LANG.current === 'en' ? (c.nameEn || c.name) : c.name; }
+function industryName(ind) { return LANG.current === 'en' ? (ind.nameEn || ind.name) : ind.name; }
+
+function setLang(lang) {
+    LANG.current = lang;
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
+    const btn = document.getElementById('lang-toggle');
+    if (btn) btn.textContent = lang === 'ko' ? 'EN' : 'KO';
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (I18N[lang]?.[key]) {
+            if (el.tagName === 'INPUT') el.placeholder = I18N[lang][key];
+            else el.innerHTML = I18N[lang][key];
+        }
+    });
+    if (typeof initIndustryGrid === 'function') {
+        const grid = document.getElementById('industry-grid');
+        if (grid) { grid.innerHTML = ''; initIndustryGrid(); }
+    }
+    if (typeof initCountrySelect === 'function') {
+        const sel = document.getElementById('country-select');
+        if (sel) {
+            sel.innerHTML = `<option value="">${t('selectCountryPlaceholder')}</option>`;
+            initCountrySelect();
+            if (selectedCountry) sel.value = selectedCountry;
+        }
+    }
+    const searchInput = document.getElementById('country-search');
+    if (searchInput) searchInput.placeholder = t('searchPlaceholder');
+    const cmdInput = document.getElementById('cmd-input');
+    if (cmdInput) cmdInput.placeholder = t('cmdPlaceholder');
+    if (selectedCountry && COUNTRIES[selectedCountry]) showQuickStats(COUNTRIES[selectedCountry]);
+    if (selectedCountry && selectedIndustry) showDataPanel();
+}
+
+
 // === Security Utilities ===
 const DEBUG = false;
 
@@ -58,6 +241,7 @@ function sendToSheet(data) {
 }
 
 let globe, selectedCountry = null, selectedIndustry = null, worldGeoJson = null;
+let isMobile = false;
 
 // Region name normalization (World Bank uses long names, we map to display-friendly + colors)
 function normalizeRegion(region) {
@@ -75,11 +259,16 @@ function normalizeRegion(region) {
 
 // ---- INITIALIZATION ----
 document.addEventListener('DOMContentLoaded', () => {
+    isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+    setLang(LANG.current);
     initTicker();
     initClock();
     initIndustryGrid();
     initCountrySelect();
     initSearch();
+    initMobileNav();
+    initCommandCenter();
+    updateHUDMetrics();
     updateDynamicStats();
     loadGlobeData();
 });
@@ -421,17 +610,17 @@ function showQuickStats(c) {
     }
 
     qs.innerHTML = `
-        <div class="section-title" style="margin-top:12px">${c.flag} ${c.name} \uAC1C\uC694</div>
-        <div class="qs-item"><span>GDP</span><span>${gdpStr}</span></div>
-        <div class="qs-item"><span>\uC778\uAD6C</span><span>${popStr}</span></div>
-        <div class="qs-item"><span>\uC9C0\uC5ED</span><span style="font-size:11px">${shortRegionLabel(c.region)}</span></div>
-        <div class="qs-item"><span>\uC18C\uB4DD\uC218\uC900</span><span style="font-size:11px">${c.income || 'N/A'}</span></div>
+        <div class="section-title" style="margin-top:12px">${c.flag} ${countryName(c)} — ${t('overview')}</div>
+        <div class="qs-item"><span>${t('gdp')}</span><span>${gdpStr}</span></div>
+        <div class="qs-item"><span>${t('population')}</span><span>${popStr}</span></div>
+        <div class="qs-item"><span>${t('region')}</span><span style="font-size:11px">${shortRegionLabel(c.region)}</span></div>
+        <div class="qs-item"><span>${t('incomeLevel')}</span><span style="font-size:11px">${c.income || 'N/A'}</span></div>
         ${extraRows}
         <div class="qs-item" style="border-top:1px solid rgba(0,240,255,0.1);padding-top:8px;margin-top:4px">
-            <span>\uC0B0\uC5C5 \uB370\uC774\uD130</span><span>${Object.keys(c.industries).length}\uAC1C</span>
+            <span>${t('industryData')}</span><span>${Object.keys(c.industries).length}</span>
         </div>
         <div style="margin-top:12px;font:400 12px var(--font-body);color:rgba(208,216,255,0.4);text-align:center">
-            \uC5C5\uC885\uC744 \uC120\uD0DD\uD558\uBA74 \uC0C1\uC138 \uBD84\uC11D\uC744 \uBCFC \uC218 \uC788\uC2B5\uB2C8\uB2E4
+            ${t('selectIndustryHint')}
         </div>
     `;
 }
@@ -463,12 +652,12 @@ function showDataPanel() {
     // Build macro indicators section
     let macroHtml = '';
     const macroItems = [];
-    if (c.gdp_growth_pct !== undefined) macroItems.push({ label: 'GDP \uC131\uC7A5\uB960', value: `${c.gdp_growth_pct.toFixed(1)}%`, good: c.gdp_growth_pct >= 2 });
-    if (c.inflation_pct !== undefined) macroItems.push({ label: '\uBB3C\uAC00\uC0C1\uC2B9\uB960', value: `${c.inflation_pct.toFixed(1)}%`, good: c.inflation_pct <= 4 });
-    if (c.unemployment_pct !== undefined) macroItems.push({ label: '\uC2E4\uC5C5\uB960', value: `${c.unemployment_pct.toFixed(1)}%`, good: c.unemployment_pct <= 6 });
-    if (c.trade_pct_gdp !== undefined) macroItems.push({ label: '\uBB34\uC5ED/GDP', value: `${c.trade_pct_gdp.toFixed(1)}%`, good: true });
+    if (c.gdp_growth_pct !== undefined) macroItems.push({ label: t('gdpGrowth'), value: `${c.gdp_growth_pct.toFixed(1)}%`, good: c.gdp_growth_pct >= 2 });
+    if (c.inflation_pct !== undefined) macroItems.push({ label: t('inflation'), value: `${c.inflation_pct.toFixed(1)}%`, good: c.inflation_pct <= 4 });
+    if (c.unemployment_pct !== undefined) macroItems.push({ label: t('unemployment'), value: `${c.unemployment_pct.toFixed(1)}%`, good: c.unemployment_pct <= 6 });
+    if (c.trade_pct_gdp !== undefined) macroItems.push({ label: t('tradeGdp'), value: `${c.trade_pct_gdp.toFixed(1)}%`, good: true });
     if (c.internet_users_pct !== undefined) macroItems.push({ label: '\uC778\uD130\uB137 \uBCF4\uAE09\uB960', value: `${c.internet_users_pct.toFixed(1)}%`, good: c.internet_users_pct >= 50 });
-    if (c.renewable_energy_pct !== undefined) macroItems.push({ label: '\uC7AC\uC0DD\uC5D0\uB108\uC9C0', value: `${c.renewable_energy_pct.toFixed(1)}%`, good: c.renewable_energy_pct >= 20 });
+    if (c.renewable_energy_pct !== undefined) macroItems.push({ label: t('renewableEnergy'), value: `${c.renewable_energy_pct.toFixed(1)}%`, good: c.renewable_energy_pct >= 20 });
 
     if (macroItems.length > 0) {
         macroHtml = `
@@ -649,51 +838,44 @@ const EA = {
     KOREA_ID: '410',
 
     // Revenue options
-    REVENUE_OPTIONS: [
-        { value: 'u10', label: '10억 미만' },
-        { value: 'u50', label: '10억 ~ 50억' },
-        { value: 'u200', label: '50억 ~ 200억' },
-        { value: 'u1000', label: '200억 ~ 1,000억' },
-        { value: 'o1000', label: '1,000억 이상' },
-    ],
-    EMPLOYEE_OPTIONS: [
-        { value: 'u10', label: '10명 이하' },
-        { value: 'u50', label: '11 ~ 50명' },
-        { value: 'u200', label: '51 ~ 200명' },
-        { value: 'u1000', label: '201 ~ 1,000명' },
-        { value: 'o1000', label: '1,000명 이상' },
-    ],
-    EXPERIENCE_OPTIONS: [
-        { value: 'none', label: '처음', desc: '해외사업 경험 없음' },
-        { value: 'some', label: '일부 경험', desc: '1~2개국 수출/진출' },
-        { value: 'many', label: '다수 경험', desc: '3개국 이상 진출' },
-    ],
-    PRIORITY_OPTIONS: [
-        { value: 'marketSize', label: '시장규모' },
-        { value: 'growth', label: '성장률' },
-        { value: 'potential', label: '잠재력' },
-        { value: 'stability', label: '경제안정성' },
-        { value: 'openness', label: '무역개방도' },
-        { value: 'digital', label: '디지털인프라' },
-    ],
-    REGION_OPTIONS: [
-        { value: 'all', label: '전체' },
-        { value: 'East Asia & Pacific', label: '동아시아' },
-        { value: 'Europe & Central Asia', label: '유럽' },
-        { value: 'North America', label: '북미' },
-        { value: 'Latin America & Caribbean', label: '남미' },
-        { value: 'Middle East & North Africa', label: '중동' },
-        { value: 'South Asia', label: '남아시아' },
-        { value: 'Sub-Saharan Africa', label: '아프리카' },
-    ],
+    get REVENUE_OPTIONS() { return [
+        { value: 'u10', label: t('revU10') }, { value: 'u50', label: t('revU50') },
+        { value: 'u200', label: t('revU200') }, { value: 'u1000', label: t('revU1000') },
+        { value: 'o1000', label: t('revO1000') },
+    ];},
+    get EMPLOYEE_OPTIONS() { return [
+        { value: 'u10', label: t('empU10') }, { value: 'u50', label: t('empU50') },
+        { value: 'u200', label: t('empU200') }, { value: 'u1000', label: t('empU1000') },
+        { value: 'o1000', label: t('empO1000') },
+    ];},
+    get EXPERIENCE_OPTIONS() { return [
+        { value: 'none', label: t('expNone'), desc: t('expNoneDesc') },
+        { value: 'some', label: t('expSome'), desc: t('expSomeDesc') },
+        { value: 'many', label: t('expMany'), desc: t('expManyDesc') },
+    ];},
+    get PRIORITY_OPTIONS() { return [
+        { value: 'marketSize', label: t('priMarketSize') }, { value: 'growth', label: t('priGrowth') },
+        { value: 'potential', label: t('priPotential') }, { value: 'stability', label: t('priStability') },
+        { value: 'openness', label: t('priOpenness') }, { value: 'digital', label: t('priDigital') },
+    ];},
+    get REGION_OPTIONS() { return [
+        { value: 'all', label: t('regAll') },
+        { value: 'East Asia & Pacific', label: t('regEastAsia') },
+        { value: 'Europe & Central Asia', label: t('regEurope') },
+        { value: 'North America', label: t('regNorthAmerica') },
+        { value: 'Latin America & Caribbean', label: t('regLatinAmerica') },
+        { value: 'Middle East & North Africa', label: t('regMiddleEast') },
+        { value: 'South Asia', label: t('regSouthAsia') },
+        { value: 'Sub-Saharan Africa', label: t('regAfrica') },
+    ];},
 
     // Strategy definitions
-    STRATEGIES: {
-        export: { icon: '🌐', name: '수출 & 이커머스', desc: '현지 유통망·온라인 플랫폼을 통한 제품 수출 중심 전략' },
-        partnership: { icon: '🤝', name: '현지 파트너십', desc: '합작투자·현지 파트너를 통한 시장 진입 전략' },
-        fdi: { icon: '🏢', name: '직접투자 (현지법인)', desc: '현지 법인 설립을 통한 본격 시장 공략 전략' },
-        digital: { icon: '📱', name: '디지털 퍼스트', desc: 'SaaS·앱·디지털 서비스 중심의 원격 진출 전략' },
-    },
+    get STRATEGIES() { return {
+        export: { icon: '🌐', name: t('stratExport'), desc: t('stratExportDesc') },
+        partnership: { icon: '🤝', name: t('stratPartnership'), desc: t('stratPartnershipDesc') },
+        fdi: { icon: '🏢', name: t('stratFdi'), desc: t('stratFdiDesc') },
+        digital: { icon: '📱', name: t('stratDigital'), desc: t('stratDigitalDesc') },
+    };},
 };
 
 // ---- INIT ADVISOR ----
@@ -761,7 +943,7 @@ function flashField(sel) {
 }
 
 function renderWizardSteps() {
-    const labels = ['기업정보', '전략설정', '확인'];
+    const labels = [t('step1Label'), t('step2Label'), t('step3Label')];
     const container = document.getElementById('wizard-steps');
     container.innerHTML = labels.map((l, i) => {
         const cls = i < EA.step ? 'completed' : i === EA.step ? 'active' : '';
@@ -771,7 +953,7 @@ function renderWizardSteps() {
     // Nav buttons
     document.getElementById('wizard-prev').classList.toggle('hidden', EA.step === 0);
     const nextBtn = document.getElementById('wizard-next');
-    nextBtn.textContent = EA.step === 2 ? '🔍 AI 분석 시작' : '다음 →';
+    nextBtn.textContent = EA.step === 2 ? t('startAnalysis') : t('nextBtn');
     if (EA.step === 2) { nextBtn.style.maxWidth = '100%'; } else { nextBtn.style.maxWidth = '200px'; }
 }
 
@@ -784,35 +966,35 @@ function renderWizardContent() {
 
 function renderStep1(el) {
     el.innerHTML = `
-        <div class="wz-title">기업 기본 정보</div>
+        <div class="wz-title">${t("wizardStep1Title")}</div>
         <div class="wz-field">
-            <label class="wz-label">🌐 회사 웹사이트</label>
+            <label class="wz-label">${t("companyWebsite")}</label>
             <div class="wz-url-wrap">
                 <input type="url" class="wz-input wz-url-input" id="wz-url" placeholder="https://www.example.com" value="${escHTML(EA.profile.companyUrl || '')}" maxlength="2048" autocomplete="off">
-                <button type="button" class="wz-url-btn" id="wz-url-lookup">🔍 AI 조회</button>
+                <button type="button" class="wz-url-btn" id="wz-url-lookup">${t("aiLookup")}</button>
             </div>
             <div class="wz-url-status" id="wz-url-status"></div>
         </div>
         <div class="wz-field">
-            <label class="wz-label">회사명</label>
-            <input type="text" class="wz-input" id="wz-company" placeholder="예: 주식회사 테크원" value="${escHTML(EA.profile.companyName)}" maxlength="200" autocomplete="off">
+            <label class="wz-label">${t("companyName")}</label>
+            <input type="text" class="wz-input" id="wz-company" placeholder="${t('companyNamePlaceholder')}" value="${escHTML(EA.profile.companyName)}" maxlength="200" autocomplete="off">
         </div>
         <div class="wz-field">
-            <label class="wz-label">대표 업종 *</label>
+            <label class="wz-label">${t("mainIndustry")}</label>
             <div class="wz-ind-grid" id="wz-industry-grid"></div>
         </div>
         <div class="wz-field" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
             <div>
-                <label class="wz-label">연 매출</label>
+                <label class="wz-label">${t("annualRevenue")}</label>
                 <select class="wz-input wz-select" id="wz-revenue">
-                    <option value="">선택</option>
+                    <option value="">${t("select")}</option>
                     ${EA.REVENUE_OPTIONS.map(o => `<option value="${o.value}" ${EA.profile.revenue===o.value?'selected':''}>${o.label}</option>`).join('')}
                 </select>
             </div>
             <div>
-                <label class="wz-label">임직원 수</label>
+                <label class="wz-label">${t("employees")}</label>
                 <select class="wz-input wz-select" id="wz-employees">
-                    <option value="">선택</option>
+                    <option value="">${t("select")}</option>
                     ${EA.EMPLOYEE_OPTIONS.map(o => `<option value="${o.value}" ${EA.profile.employees===o.value?'selected':''}>${o.label}</option>`).join('')}
                 </select>
             </div>
@@ -858,7 +1040,7 @@ async function lookupCompany(url, formEl) {
     const lookupBtn = formEl.querySelector('#wz-url-lookup');
     lookupBtn.disabled = true;
     lookupBtn.textContent = '🔄 검색중...';
-    showUrlStatus('회사 정보 검색중...', 'loading');
+    showUrlStatus(t('lookupSearching'), 'loading');
 
     const industryKeys = Object.entries(INDUSTRIES).map(([k, v]) => `"${k}": "${v.name} (${v.nameEn})"`).join(', ');
 
@@ -994,7 +1176,7 @@ employee_range 값: "u10" (10명 이하), "u50" (11~50명), "u200" (51~200명), 
     }
 
     // Show success
-    const indName = INDUSTRIES[EA.profile.industry]?.name || '';
+    const indName = EA.profile.industry ? industryName(INDUSTRIES[EA.profile.industry]) : '';
     const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === EA.profile.revenue)?.label || '';
     const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === EA.profile.employees)?.label || '';
     showUrlStatus(`✅ ${result.company_name} · ${indName} · 매출 ${revLabel} · 직원 ${empLabel}`, 'ok');
@@ -1002,17 +1184,17 @@ employee_range 값: "u10" (10명 이하), "u50" (11~50명), "u200" (51~200명), 
 
 function renderStep2(el) {
     el.innerHTML = `
-        <div class="wz-title">수출 전략 설정</div>
+        <div class="wz-title">${t("wizardStep2Title")}</div>
         <div class="wz-field">
-            <label class="wz-label">해외사업 경험</label>
+            <label class="wz-label">${t("exportExperience")}</label>
             <div class="wz-radio-group" id="wz-exp-group"></div>
         </div>
         <div class="wz-field">
-            <label class="wz-label">우선순위 (최대 3개 선택) *</label>
+            <label class="wz-label">${t("priorities")}</label>
             <div class="wz-chips" id="wz-priority-chips"></div>
         </div>
         <div class="wz-field">
-            <label class="wz-label">관심 지역</label>
+            <label class="wz-label">${t("interestedRegions")}</label>
             <div class="wz-chips" id="wz-region-chips"></div>
         </div>`;
     // Experience radio
@@ -1066,25 +1248,25 @@ function renderStep2(el) {
 }
 
 function renderStep3(el) {
-    const indName = INDUSTRIES[EA.profile.industry]?.name || '미선택';
-    const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === EA.profile.revenue)?.label || '미선택';
-    const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === EA.profile.employees)?.label || '미선택';
-    const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === EA.profile.experience)?.label || '처음';
-    const priLabels = EA.profile.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ') || '미선택';
+    const indName = EA.profile.industry ? industryName(INDUSTRIES[EA.profile.industry]) : t('notSelected');
+    const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === EA.profile.revenue)?.label || t('notSelected');
+    const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === EA.profile.employees)?.label || t('notSelected');
+    const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === EA.profile.experience)?.label || t('expNone');
+    const priLabels = EA.profile.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ') || t('notSelected');
     const regLabels = EA.profile.regions.includes('all') ? '전체' : EA.profile.regions.map(v => EA.REGION_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ');
 
     el.innerHTML = `
-        <div class="wz-title">분석 준비 완료</div>
+        <div class="wz-title">${t("wizardStep3Title")}</div>
         <div class="wz-summary">
-            <div class="wz-summary-row"><span>회사명</span><span class="wz-summary-val">${escHTML(EA.profile.companyName || '(미입력)')}</span></div>
-            <div class="wz-summary-row"><span>업종</span><span class="wz-summary-val">${indName}</span></div>
-            <div class="wz-summary-row"><span>연 매출</span><span class="wz-summary-val">${revLabel}</span></div>
-            <div class="wz-summary-row"><span>임직원</span><span class="wz-summary-val">${empLabel}</span></div>
-            <div class="wz-summary-row"><span>해외 경험</span><span class="wz-summary-val">${expLabel}</span></div>
-            <div class="wz-summary-row"><span>우선순위</span><span class="wz-summary-val">${priLabels}</span></div>
-            <div class="wz-summary-row"><span>관심 지역</span><span class="wz-summary-val">${regLabels}</span></div>
+            <div class="wz-summary-row"><span>${t("confirmCompany")}</span><span class="wz-summary-val">${escHTML(EA.profile.companyName || t('notEntered'))}</span></div>
+            <div class="wz-summary-row"><span>${t("confirmIndustry")}</span><span class="wz-summary-val">${indName}</span></div>
+            <div class="wz-summary-row"><span>${t("confirmRevenue")}</span><span class="wz-summary-val">${revLabel}</span></div>
+            <div class="wz-summary-row"><span>${t("confirmEmployees")}</span><span class="wz-summary-val">${empLabel}</span></div>
+            <div class="wz-summary-row"><span>${t("confirmExperience")}</span><span class="wz-summary-val">${expLabel}</span></div>
+            <div class="wz-summary-row"><span>${t("confirmPriorities")}</span><span class="wz-summary-val">${priLabels}</span></div>
+            <div class="wz-summary-row"><span>${t("confirmRegions")}</span><span class="wz-summary-val">${regLabels}</span></div>
         </div>
-        <div class="wz-analyze-sub">Gemini AI가 149개국 × ${Object.keys(INDUSTRIES).length}개 업종 데이터를 분석합니다</div>`;
+        <div class="wz-analyze-sub">${t('analyzeSubtext')}</div>`;
 }
 
 // ---- SCORING ALGORITHM ----
@@ -1307,9 +1489,9 @@ function buildGeminiPrompt(results) {
             + `\n   ${indInfo.name} 산업: 규모 $${ind.size}B, CAGR ${ind.growth}%, 글로벌 ${ind.rank}위, CES: ${t.ces.toFixed(1)}`;
     }).join('\n');
 
-    const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === profile.revenue)?.label || '미입력';
-    const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === profile.employees)?.label || '미입력';
-    const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === profile.experience)?.label || '처음';
+    const revLabel = EA.REVENUE_OPTIONS.find(o => o.value === profile.revenue)?.label || t('notEntered');
+    const empLabel = EA.EMPLOYEE_OPTIONS.find(o => o.value === profile.employees)?.label || t('notEntered');
+    const expLabel = EA.EXPERIENCE_OPTIONS.find(o => o.value === profile.experience)?.label || t('expNone');
     const priLabels = profile.priorities.map(v => EA.PRIORITY_OPTIONS.find(o => o.value === v)?.label).filter(Boolean).join(', ');
 
     const systemInstruction = `당신은 KOTRA, McKinsey, BCG 수준의 글로벌 시장 분석 전문 컨설턴트입니다.
@@ -1354,6 +1536,26 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
     - 구체적 진입 시나리오: 타겟 고객군 → 유통 채널 → 가격 전략 → 차별화 포인트
     - 첫 1년 예상 목표 (매출 규모 또는 고객 수)
     - fit_score (0~100): 제품-시장 적합도 종합 점수
+15. regulatory_overview: 규제/컴플라이언스 분석:
+    - 주요 인허가 요건 (필수 인증, 라이선스 등)
+    - 관세율 범위 및 FTA 혜택 여부
+    - 외국인 투자 규제 또는 인센티브
+    - 규제 리스크 점수 (0~100, 높을수록 규제 복잡)
+16. entry_cost_estimate: 시장 진입 비용 추정:
+    - 법인 설립 비용 (대략적 범위)
+    - 초기 투자금 추정
+    - 인력 채용 비용 (현지 평균 임금 기반)
+    - 월 운영 비용 추정
+17. cultural_fit: 문화적 적합성 분석:
+    - 비즈니스 문화 특징 (의사결정 방식, 커뮤니케이션 스타일)
+    - 한국 기업 성공 사례 (검색 기반)
+    - 현지화 필요도 (높음/중간/낮음)
+    - 문화 적합성 점수 (0~100)
+18. supply_chain: 공급망 분석:
+    - 물류 인프라 수준 (항만, 공항, 도로)
+    - 한국→해당국 주요 물류 경로 및 리드타임
+    - 물류 비용 추정 (컨테이너당 대략적 비용)
+    - 공급망 안정성 점수 (0~100)
 
 ### 좋은 market_status 예시:
 "미국의 기술 & IT 시장은 $2.6T 규모로 글로벌 1위이며, Gartner에 따르면 2025년 IT 지출은 전년 대비 9.3% 증가한 $5.6T에 달할 전망. AWS(32%), Azure(24%), GCP(12%)가 클라우드 시장을 주도하며, AI/ML 투자가 전체 IT 예산의 15% 이상을 차지."
@@ -1385,8 +1587,8 @@ Google Search를 반드시 활용하여 각 국가의 최신 경제 데이터와
     }
 
     const userMessage = `## 기업 프로필
-- 회사명: ${profile.companyName || '(미입력)'}${companyContext}
-- 업종: ${indInfo?.name || ''} (${indInfo?.nameEn || ''})
+- 회사명: ${profile.companyName || t('notEntered')}${companyContext}
+- 업종: ${industryName(indInfo) || ''} (${indInfo?.nameEn || ''})
 - 연 매출: ${revLabel}
 - 임직원: ${empLabel}
 - 해외경험: ${expLabel}
@@ -1473,6 +1675,31 @@ ${top5Names}
         "why_our_product": "이 회사 제품이 왜 통하는지 2~3문장 (기술/가격/품질 측면)",
         "entry_scenario": "구체적 진입 시나리오 3~4문장 (타겟 고객군 → 유통 채널 → 가격 전략 → 차별화 포인트)",
         "first_year_target": "첫 1년 예상 목표 1문장 (매출 또는 고객 수)"
+      },
+      "regulatory_overview": {
+        "key_requirements": "주요 인허가 요건 2~3문장 (필수 인증, 라이선스 등)",
+        "tariff_fta": "관세율 범위 및 FTA 혜택 1~2문장",
+        "investment_rules": "외국인 투자 규제/인센티브 1~2문장",
+        "risk_score": 45
+      },
+      "entry_cost_estimate": {
+        "setup_cost": "법인 설립 비용 범위 (예: '$5,000~$15,000')",
+        "initial_investment": "초기 투자금 추정 범위",
+        "hiring_cost": "현지 인력 채용 비용 (평균 월급 기반)",
+        "monthly_operation": "월 운영 비용 추정",
+        "total_first_year": "첫해 총 예상 비용 범위"
+      },
+      "cultural_fit": {
+        "business_culture": "비즈니스 문화 특징 2~3문장",
+        "korean_success_cases": "한국 기업 성공 사례 1~2문장",
+        "localization_need": "높음|중간|낮음",
+        "fit_score": 70
+      },
+      "supply_chain": {
+        "logistics_infra": "물류 인프라 수준 2~3문장",
+        "route_leadtime": "한국→해당국 주요 경로 + 리드타임",
+        "shipping_cost": "컨테이너당 대략적 비용",
+        "stability_score": 65
       }
     }
   ],
@@ -1730,7 +1957,7 @@ function startAnalysis() {
     const countEl = document.getElementById('analysis-count');
 
     // Phase 1: Zoom out + darken (0~2s)
-    statusEl.textContent = '글로벌 데이터베이스 연결중...';
+    statusEl.textContent = t('analysisConnecting');
     barEl.style.width = '0%';
     countEl.textContent = '0 / 149';
     globe.controls().autoRotate = false;
@@ -1746,7 +1973,7 @@ function startAnalysis() {
     const totalToScan = allIds.length;
 
     setTimeout(() => {
-        statusEl.textContent = '149개국 시장 데이터 스캔중...';
+        statusEl.textContent = t('analysisScanning');
         // Add radar rings
         const rings = [];
         let ringInterval = setInterval(() => {
@@ -1805,7 +2032,7 @@ function startAnalysis() {
         // Phase 4: Highlight TOP 5 + Arcs (~28s)
         setTimeout(() => {
             const top5 = EA.results.top5;
-            statusEl.textContent = '유망 시장 선별 완료';
+            statusEl.textContent = t('analysisTop5Done');
             barEl.style.width = '78%';
 
             globe.polygonCapColor(feat => {
@@ -1823,7 +2050,7 @@ function startAnalysis() {
 
             // Draw arcs from Korea to TOP 5 (~32s)
             setTimeout(() => {
-                statusEl.textContent = 'AI 전략 분석 엔진 가동중...';
+                statusEl.textContent = t('analysisAIEngine');
                 barEl.style.width = '85%';
                 const arcs = top5.map((t, i) => ({
                     startLat: korea.lat, startLng: korea.lng,
@@ -1842,17 +2069,17 @@ function startAnalysis() {
 
             // Phase 5: AI 대기 + 추가 메시지 연출 (~36s~55s)
             setTimeout(() => {
-                statusEl.textContent = 'Gemini AI · Google Search 기반 실시간 데이터 수집중...';
+                statusEl.textContent = t('analysisAI');
                 barEl.style.width = '88%';
             }, 8000);
 
             setTimeout(() => {
-                statusEl.textContent = '국가별 최신 경제지표 검증중...';
+                statusEl.textContent = t('analysisVerify');
                 barEl.style.width = '91%';
             }, 14000);
 
             setTimeout(() => {
-                statusEl.textContent = '맞춤형 진출 전략 보고서 작성중...';
+                statusEl.textContent = t('analysisReport');
                 barEl.style.width = '94%';
             }, 20000);
 
@@ -1860,11 +2087,11 @@ function startAnalysis() {
             setTimeout(async () => {
                 barEl.style.width = '97%';
                 if (EA.aiPromise) {
-                    statusEl.textContent = 'Gemini 2.5 Pro · 최종 분석 리포트 생성중...';
+                    statusEl.textContent = t('analysisFinal') + '...';
                     let dotCount = 0;
                     const dotTimer = setInterval(() => {
                         dotCount = (dotCount + 1) % 4;
-                        statusEl.textContent = 'Gemini 2.5 Pro · 최종 분석 리포트 생성중' + '.'.repeat(dotCount);
+                        statusEl.textContent = t('analysisFinal') + '.'.repeat(dotCount);
                     }, 600);
                     try {
                         EA.aiData = await Promise.race([
@@ -1873,7 +2100,7 @@ function startAnalysis() {
                         ]);
                         if (EA.aiData) {
                             clearInterval(dotTimer);
-                            statusEl.textContent = 'AI 데이터 병합 및 검증중...';
+                            statusEl.textContent = t('analysisMerge');
                             barEl.style.width = '99%';
                             mergeAIData(EA.results, EA.aiData);
                         }
@@ -1885,7 +2112,7 @@ function startAnalysis() {
                     }
                 }
                 barEl.style.width = '100%';
-                statusEl.textContent = '분석 완료';
+                statusEl.textContent = t('analysisDone');
                 setTimeout(() => {
                     overlay.classList.add('hidden');
                     showExpansionReport();
@@ -1904,7 +2131,7 @@ function showExpansionReport() {
 
     const top1 = r.top5[0];
     const indInfo = INDUSTRIES[r.profile.industry];
-    const companyName = r.profile.companyName || '귀사';
+    const companyName = r.profile.companyName || (LANG.current === 'en' ? 'Your Company' : '귀사');
 
     let html = '';
 
@@ -1915,24 +2142,24 @@ function showExpansionReport() {
     const companyUrl = r.profile.companyUrl || '';
     const intel = r.profile.companyIntel || {};
     html += `
-        <div class="exp-badge">AI EXPANSION REPORT</div>
-        <div class="exp-title">해외진출 전략 보고서</div>
-        <div class="exp-meta">${escHTML(companyName)} · ${escHTML(indInfo?.name || '')} · ${escHTML(r.date)}</div>
+        <div class="exp-badge">${t('reportBadge')}</div>
+        <div class="exp-title">${t('reportTitle')}</div>
+        <div class="exp-meta">${escHTML(companyName)} · ${escHTML(industryName(indInfo) || '')} · ${escHTML(r.date)}</div>
         ${companyUrl ? `<div class="exp-company-url">🌐 <a href="${safeUrl(companyUrl)}" target="_blank" rel="noopener">${escHTML(companyUrl)}</a></div>` : ''}`;
 
     // Company Intel Card (Phase 5)
     const intelItems = [];
-    if (intel.products_services) intelItems.push({icon: '📦', label: '주요 제품/서비스', value: escHTML(intel.products_services)});
-    if (intel.business_model) intelItems.push({icon: '💼', label: '비즈니스 모델', value: escHTML(intel.business_model)});
-    if (intel.key_strengths) intelItems.push({icon: '💪', label: '핵심 강점', value: escHTML(intel.key_strengths)});
-    if (intel.target_markets) intelItems.push({icon: '🎯', label: '타겟 시장', value: escHTML(intel.target_markets)});
-    if (intel.tech_stack) intelItems.push({icon: '⚙️', label: '기술 스택', value: escHTML(intel.tech_stack)});
-    if (intel.recent_news) intelItems.push({icon: '📰', label: '최근 동향', value: escHTML(intel.recent_news)});
-    if (intel.export_experience && intel.export_experience !== '정보 없음') intelItems.push({icon: '🌏', label: '해외 경험', value: escHTML(intel.export_experience)});
+    if (intel.products_services) intelItems.push({icon: '📦', label: LANG.current==='en'?'Products/Services':'주요 제품/서비스', value: escHTML(intel.products_services)});
+    if (intel.business_model) intelItems.push({icon: '💼', label: LANG.current==='en'?'Business Model':'비즈니스 모델', value: escHTML(intel.business_model)});
+    if (intel.key_strengths) intelItems.push({icon: '💪', label: LANG.current==='en'?'Key Strengths':'핵심 강점', value: escHTML(intel.key_strengths)});
+    if (intel.target_markets) intelItems.push({icon: '🎯', label: LANG.current==='en'?'Target Markets':'타겟 시장', value: escHTML(intel.target_markets)});
+    if (intel.tech_stack) intelItems.push({icon: '⚙️', label: LANG.current==='en'?'Tech Stack':'기술 스택', value: escHTML(intel.tech_stack)});
+    if (intel.recent_news) intelItems.push({icon: '📰', label: LANG.current==='en'?'Recent News':'최근 동향', value: escHTML(intel.recent_news)});
+    if (intel.export_experience && intel.export_experience !== '정보 없음') intelItems.push({icon: '🌏', label: LANG.current==='en'?'Export Experience':'해외 경험', value: escHTML(intel.export_experience)});
 
     if (intelItems.length > 0) {
         html += `<div class="exp-company-intel">
-            <div class="intel-header">🏢 회사 인텔리전스</div>
+            <div class="intel-header">${t('companyIntel')}</div>
             ${intelItems.map(it => `<div class="intel-item"><span class="intel-icon">${it.icon}</span><span class="intel-label">${it.label}</span><span class="intel-value">${it.value}</span></div>`).join('')}
         </div>`;
     } else if (companyDesc) {
@@ -1940,7 +2167,7 @@ function showExpansionReport() {
     }
 
     html += `
-        <div class="exp-scan-badge">🌍 ${r.all.length}개국 데이터 분석 완료</div>
+        <div class="exp-scan-badge">🌍 ${r.all.length} ${t('scanBadge')}</div>
         <div class="exp-divider"></div>`;
 
     // Top pick
@@ -1949,8 +2176,8 @@ function showExpansionReport() {
             <span class="pick-rank">#1</span>
             <span class="pick-flag">${top1.country.flag}</span>
             <div class="pick-info">
-                <span class="pick-name">${top1.country.name}</span>
-                <span class="pick-sub">${shortRegionLabel(top1.country.region)} · ${top1.country.nameEn}</span>
+                <span class="pick-name">${countryName(top1.country)}</span>
+                <span class="pick-sub">${shortRegionLabel(top1.country.region)} · ${LANG.current === 'en' ? top1.country.name : top1.country.nameEn}</span>
             </div>
         </div>`;
 
@@ -1958,7 +2185,7 @@ function showExpansionReport() {
     const execSummary = ai?.executive_summary || generateExecutiveSummary(r, indInfo, companyName);
     html += `
         <div class="exp-executive-summary">
-            <div class="exp-summary-label">${ai?.executive_summary ? 'AI 분석 요약' : '데이터 기반 분석 요약'}</div>
+            <div class="exp-summary-label">${ai?.executive_summary ? t('executiveSummary') : t('staticSummary')}</div>
             <p class="exp-summary-text">${escHTML(execSummary)}</p>
         </div>`;
 
@@ -1974,13 +2201,13 @@ function showExpansionReport() {
                     stroke-dasharray="${gaugeC}" stroke-dashoffset="${gaugeC}" transform="rotate(-90 50 50)"
                     data-target="${gaugeC * (1 - gaugePct)}"/>
                 <text class="gauge-text" x="50" y="47" data-target="${top1.ces.toFixed(1)}">0</text>
-                <text class="gauge-label" x="50" y="62">종합점수</text>
+                <text class="gauge-label" x="50" y="62">${t('totalScore')}</text>
             </svg>
         </div>
         <div class="exp-divider"></div>`;
 
     // TOP 5 Ranking
-    html += `<div class="exp-section-title">🏆 추천 시장 TOP 5</div><div class="exp-rank-list">`;
+    html += `<div class="exp-section-title">${t('top5Title')}</div><div class="exp-rank-list">`;
     r.top5.forEach((t, i) => {
         const medals = ['🥇','🥈','🥉','4','5'];
         html += `
@@ -1988,7 +2215,7 @@ function showExpansionReport() {
                 <span class="rank-num">${medals[i]}</span>
                 <span class="rank-flag">${t.country.flag}</span>
                 <div class="rank-info">
-                    <div class="rank-name">${t.country.name}</div>
+                    <div class="rank-name">${countryName(t.country)}</div>
                     <div class="rank-bar-wrap"><div class="rank-bar-fill" data-width="${t.ces}"></div></div>
                 </div>
                 <span class="rank-score">${t.ces.toFixed(1)}</span>
@@ -2008,7 +2235,7 @@ function showExpansionReport() {
     const strat = EA.STRATEGIES[top1.strategy];
     const aiStrat = ai?.strategy;
     html += `
-        <div class="exp-section-title">🎯 추천 진출 전략 (${top1.country.name})</div>
+        <div class="exp-section-title">${t('strategyTitle')} (${countryName(top1.country)})</div>
         <div class="exp-strategy">
             <div class="strategy-head">
                 <span class="strategy-icon">${strat.icon}</span>
@@ -2022,14 +2249,14 @@ function showExpansionReport() {
         });
     } else {
         html += `
-                <div class="timeline-phase"><span class="phase-period">0-6개월</span><span class="phase-action">시장조사<br>파트너 탐색</span></div>
-                <div class="timeline-phase"><span class="phase-period">6-18개월</span><span class="phase-action">시장 진입<br>초기 매출</span></div>
-                <div class="timeline-phase"><span class="phase-period">18-36개월</span><span class="phase-action">거점 확장<br>현지화</span></div>`;
+                <div class="timeline-phase"><span class="phase-period">0-6${LANG.current==='en'?' mo':'개월'}</span><span class="phase-action">${LANG.current==='en'?'Market Research<br>Partner Search':'시장조사<br>파트너 탐색'}</span></div>
+                <div class="timeline-phase"><span class="phase-period">6-18${LANG.current==='en'?' mo':'개월'}</span><span class="phase-action">${LANG.current==='en'?'Market Entry<br>Initial Sales':'시장 진입<br>초기 매출'}</span></div>
+                <div class="timeline-phase"><span class="phase-period">18-36${LANG.current==='en'?' mo':'개월'}</span><span class="phase-action">${LANG.current==='en'?'Expansion<br>Localization':'거점 확장<br>현지화'}</span></div>`;
     }
     html += `</div></div><div class="exp-divider"></div>`;
 
     // Accordion: 국가별 현황 + 제안 포인트 + 기회 + 리스크
-    html += `<div class="exp-section-title">📊 국가별 맞춤 분석</div>`;
+    html += `<div class="exp-section-title">${t('countryAnalysis')}</div>`;
     r.top5.forEach((t, i) => {
         const ind = t.industry;
         const aiC = ai?.countries?.find(c => c.rank === i + 1);
@@ -2043,6 +2270,10 @@ function showExpansionReport() {
         const importTr = aiC?.import_trends || generateImportTrends(t.country, ind, indKey);
         const compLand = aiC?.competition_landscape || generateCompetitionLandscape(t.country, ind, indKey);
         const prodFit = aiC?.product_fit || generateProductFit(t.country, ind, indKey, r.profile, t.ces, t.scores);
+        const regOverview = aiC?.regulatory_overview || null;
+        const entryCost = aiC?.entry_cost_estimate || null;
+        const cultFit = aiC?.cultural_fit || null;
+        const supplyChain = aiC?.supply_chain || null;
         const md = aiC?.market_data || {};
         const dimScores = aiC?.dimension_scores || t.scores || {};
         const strategyKey = aiC?.recommended_strategy || t.strategy;
@@ -2053,7 +2284,7 @@ function showExpansionReport() {
                 <div class="exp-accordion-head">
                     <span class="acc-rank-badge">${i+1}</span>
                     <span class="acc-flag">${t.country.flag}</span>
-                    <span class="acc-name">${t.country.name}</span>
+                    <span class="acc-name">${countryName(t.country)}</span>
                     <span class="acc-strategy-badge" title="${stratInfo?.name || ''}">${stratInfo?.icon || '📊'}</span>
                     <span class="acc-score">${(aiC?.ces_score || t.ces).toFixed(1)}</span>
                     <span class="acc-arrow">▼</span>
@@ -2063,26 +2294,26 @@ function showExpansionReport() {
                         <div class="acc-verdict">"${escHTML(verdict)}"</div>
 
                         <div class="acc-key-stats">
-                            ${keyStats.market_size_label ? `<div class="acc-key-stat"><span class="key-stat-icon">💰</span><span class="key-stat-val">${escHTML(keyStats.market_size_label)}</span><span class="key-stat-label">산업 시장규모</span></div>` : ''}
-                            ${keyStats.cagr_label ? `<div class="acc-key-stat"><span class="key-stat-icon">📈</span><span class="key-stat-val">${escHTML(keyStats.cagr_label)}</span><span class="key-stat-label">연평균 성장률</span></div>` : ''}
-                            ${keyStats.top_player ? `<div class="acc-key-stat"><span class="key-stat-icon">🏢</span><span class="key-stat-val">${escHTML(keyStats.top_player)}</span><span class="key-stat-label">주요 경쟁사</span></div>` : ''}
-                            ${keyStats.entry_barrier ? `<div class="acc-key-stat"><span class="key-stat-icon">🚧</span><span class="key-stat-val">${escHTML(keyStats.entry_barrier)}</span><span class="key-stat-label">진입장벽</span></div>` : ''}
+                            ${keyStats.market_size_label ? `<div class="acc-key-stat"><span class="key-stat-icon">💰</span><span class="key-stat-val">${escHTML(keyStats.market_size_label)}</span><span class="key-stat-label">${t('industryMarketSize')}</span></div>` : ''}
+                            ${keyStats.cagr_label ? `<div class="acc-key-stat"><span class="key-stat-icon">📈</span><span class="key-stat-val">${escHTML(keyStats.cagr_label)}</span><span class="key-stat-label">${t('cagr')}</span></div>` : ''}
+                            ${keyStats.top_player ? `<div class="acc-key-stat"><span class="key-stat-icon">🏢</span><span class="key-stat-val">${escHTML(keyStats.top_player)}</span><span class="key-stat-label">${t('topCompetitor')}</span></div>` : ''}
+                            ${keyStats.entry_barrier ? `<div class="acc-key-stat"><span class="key-stat-icon">🚧</span><span class="key-stat-val">${escHTML(keyStats.entry_barrier)}</span><span class="key-stat-label">${t('entryBarrier')}</span></div>` : ''}
                         </div>
 
-                        <div class="acc-section-label status-label">📍 시장 현황</div>
+                        <div class="acc-section-label status-label">${t('marketStatus')}</div>
                         <div class="acc-market-status">${escHTML(marketStatus)}</div>
 
-                        <div class="acc-section-label import-label">📦 수입 동향 분석</div>
+                        <div class="acc-section-label import-label">${t('importTrends')}</div>
                         <div class="acc-import-trends">
                             <div class="import-stats-row">
-                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.import_volume || '-')}</span><span class="import-stat-label">수입 규모</span></div>
-                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.growth_rate || '-')}</span><span class="import-stat-label">수입 증가율</span></div>
-                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.major_sources || '-')}</span><span class="import-stat-label">주요 수입국</span></div>
+                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.import_volume || '-')}</span><span class="import-stat-label">${t('importVolume')}</span></div>
+                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.growth_rate || '-')}</span><span class="import-stat-label">${t('importGrowthRate')}</span></div>
+                                <div class="import-stat"><span class="import-stat-val">${escHTML(importTr.major_sources || '-')}</span><span class="import-stat-label">${t('majorImportSources')}</span></div>
                             </div>
                             <div class="import-summary">${escHTML(importTr.trend_summary || '')}</div>
                         </div>
 
-                        <div class="acc-section-label competition-label">🏆 경쟁 환경</div>
+                        <div class="acc-section-label competition-label">${t('competition')}</div>
                         <div class="acc-competition">
                             <div class="competition-header">
                                 <span class="competition-badge ${compLand.intensity === '블루오션' ? 'blue' : compLand.intensity === '레드오션' ? 'red' : 'mid'}">${escHTML(compLand.intensity || '중간')}</span>
@@ -2093,39 +2324,75 @@ function showExpansionReport() {
                             ${compLand.gap_for_korean ? `<div class="competition-gap">🎯 ${escHTML(compLand.gap_for_korean)}</div>` : ''}
                         </div>
 
-                        <div class="acc-section-label fit-label">🎯 우리 제품 적합도</div>
+                        <div class="acc-section-label fit-label">${t('productFit')}</div>
                         <div class="acc-product-fit">
-                            <div class="fit-score-row"><div class="fit-score-track"><div class="fit-score-bar" style="width:${prodFit.fit_score || 0}%;background:${(prodFit.fit_score||0) >= 70 ? '#00ff88' : (prodFit.fit_score||0) >= 50 ? '#ffaa00' : '#ff3366'}"><span class="fit-score-text">적합도 ${prodFit.fit_score || 0}점</span></div></div></div>
+                            <div class="fit-score-row"><div class="fit-score-track"><div class="fit-score-bar" style="width:${prodFit.fit_score || 0}%;background:${(prodFit.fit_score||0) >= 70 ? '#00ff88' : (prodFit.fit_score||0) >= 50 ? '#ffaa00' : '#ff3366'}"><span class="fit-score-text">${t('fitScoreLabel')} ${prodFit.fit_score || 0}</span></div></div></div>
                             <div class="fit-detail">
-                                ${prodFit.local_needs ? `<div class="fit-item"><span class="fit-icon">📋</span><div><strong>현지 수요:</strong> ${escHTML(prodFit.local_needs)}</div></div>` : ''}
-                                ${prodFit.why_our_product ? `<div class="fit-item"><span class="fit-icon">✅</span><div><strong>왜 통하는가:</strong> ${escHTML(prodFit.why_our_product)}</div></div>` : ''}
-                                ${prodFit.entry_scenario ? `<div class="fit-item"><span class="fit-icon">🗺️</span><div><strong>진입 시나리오:</strong> ${escHTML(prodFit.entry_scenario)}</div></div>` : ''}
-                                ${prodFit.first_year_target ? `<div class="fit-item"><span class="fit-icon">📊</span><div><strong>1년차 목표:</strong> ${escHTML(prodFit.first_year_target)}</div></div>` : ''}
+                                ${prodFit.local_needs ? `<div class="fit-item"><span class="fit-icon">📋</span><div><strong>${t('localNeeds')}:</strong> ${escHTML(prodFit.local_needs)}</div></div>` : ''}
+                                ${prodFit.why_our_product ? `<div class="fit-item"><span class="fit-icon">✅</span><div><strong>${t('whyOurProduct')}:</strong> ${escHTML(prodFit.why_our_product)}</div></div>` : ''}
+                                ${prodFit.entry_scenario ? `<div class="fit-item"><span class="fit-icon">🗺️</span><div><strong>${t('entryScenario')}:</strong> ${escHTML(prodFit.entry_scenario)}</div></div>` : ''}
+                                ${prodFit.first_year_target ? `<div class="fit-item"><span class="fit-icon">🎯</span><div><strong>${t('firstYearTarget')}:</strong> ${escHTML(prodFit.first_year_target)}</div></div>` : ''}
                             </div>
                         </div>
 
-                        <div class="acc-section-label proposal-label">💡 ${escHTML(companyName)} 맞춤 제안</div>
+
+                        \${regOverview ? \`<div class="acc-section-label regulatory-label">\${t('regulatoryOverview')}</div>
+                        <div class="acc-new-section">
+                            <div class="new-section-score"><span>\${LANG.current==='en'?'Regulatory Complexity':'규제 복잡도'}</span><div class="score-bar-track"><div class="score-bar-fill" style="width:\${regOverview.risk_score||0}%;background:\${(regOverview.risk_score||0)>=70?'#ff3366':(regOverview.risk_score||0)>=40?'#ffaa00':'#00ff88'}"></div></div><span>\${regOverview.risk_score||0}/100</span></div>
+                            \${regOverview.key_requirements ? \`<div class="new-section-item">📋 \${escHTML(regOverview.key_requirements)}</div>\` : ''}
+                            \${regOverview.tariff_fta ? \`<div class="new-section-item">📦 \${escHTML(regOverview.tariff_fta)}</div>\` : ''}
+                            \${regOverview.investment_rules ? \`<div class="new-section-item">💼 \${escHTML(regOverview.investment_rules)}</div>\` : ''}
+                        </div>\` : ''}
+
+                        \${entryCost ? \`<div class="acc-section-label cost-label">\${t('entryCostEstimate')}</div>
+                        <div class="acc-new-section">
+                            <div class="cost-grid">
+                                \${entryCost.setup_cost ? \`<div class="cost-card"><span class="cost-card-icon">🏢</span><span class="cost-card-label">\${LANG.current==='en'?'Setup':'설립비'}</span><span class="cost-card-val">\${escHTML(entryCost.setup_cost)}</span></div>\` : ''}
+                                \${entryCost.initial_investment ? \`<div class="cost-card"><span class="cost-card-icon">💰</span><span class="cost-card-label">\${LANG.current==='en'?'Investment':'투자금'}</span><span class="cost-card-val">\${escHTML(entryCost.initial_investment)}</span></div>\` : ''}
+                                \${entryCost.hiring_cost ? \`<div class="cost-card"><span class="cost-card-icon">👥</span><span class="cost-card-label">\${LANG.current==='en'?'Hiring':'채용비'}</span><span class="cost-card-val">\${escHTML(entryCost.hiring_cost)}</span></div>\` : ''}
+                                \${entryCost.monthly_operation ? \`<div class="cost-card"><span class="cost-card-icon">📊</span><span class="cost-card-label">\${LANG.current==='en'?'Monthly':'월운영'}</span><span class="cost-card-val">\${escHTML(entryCost.monthly_operation)}</span></div>\` : ''}
+                            </div>
+                            \${entryCost.total_first_year ? \`<div class="cost-total-row">📌 \${LANG.current==='en'?'Est. 1st Year Total':'첫해 총비용'}: <strong>\${escHTML(entryCost.total_first_year)}</strong></div>\` : ''}
+                        </div>\` : ''}
+
+                        \${cultFit ? \`<div class="acc-section-label cultural-label">\${t('culturalFit')}</div>
+                        <div class="acc-new-section">
+                            <div class="new-section-score"><span>\${LANG.current==='en'?'Cultural Fit':'문화적합성'}</span><div class="score-bar-track"><div class="score-bar-fill" style="width:\${cultFit.fit_score||0}%;background:\${(cultFit.fit_score||0)>=70?'#00ff88':(cultFit.fit_score||0)>=50?'#ffaa00':'#ff3366'}"></div></div><span>\${cultFit.fit_score||0}/100</span></div>
+                            \${cultFit.localization_need ? \`<div class="new-section-badge">\${LANG.current==='en'?'Localization':'현지화'}: <strong>\${escHTML(cultFit.localization_need)}</strong></div>\` : ''}
+                            \${cultFit.business_culture ? \`<div class="new-section-item">🤝 \${escHTML(cultFit.business_culture)}</div>\` : ''}
+                            \${cultFit.korean_success_cases ? \`<div class="new-section-item">🇰🇷 \${escHTML(cultFit.korean_success_cases)}</div>\` : ''}
+                        </div>\` : ''}
+
+                        \${supplyChain ? \`<div class="acc-section-label supply-label">\${t('supplyChain')}</div>
+                        <div class="acc-new-section">
+                            <div class="new-section-score"><span>\${LANG.current==='en'?'Stability':'안정성'}</span><div class="score-bar-track"><div class="score-bar-fill" style="width:\${supplyChain.stability_score||0}%;background:\${(supplyChain.stability_score||0)>=70?'#00ff88':(supplyChain.stability_score||0)>=50?'#ffaa00':'#ff3366'}"></div></div><span>\${supplyChain.stability_score||0}/100</span></div>
+                            \${supplyChain.logistics_infra ? \`<div class="new-section-item">🏗️ \${escHTML(supplyChain.logistics_infra)}</div>\` : ''}
+                            \${supplyChain.route_leadtime ? \`<div class="new-section-item">🚢 \${escHTML(supplyChain.route_leadtime)}</div>\` : ''}
+                            \${supplyChain.shipping_cost ? \`<div class="new-section-item">💵 \${escHTML(supplyChain.shipping_cost)}</div>\` : ''}
+                        </div>\` : ''}
+
+                                                <div class="acc-section-label proposal-label">${t('customProposal')} — ${escHTML(companyName)}</div>
                         ${proposals.map((p, pi) => `<div class="acc-proposal-item"><span class="proposal-num">${pi+1}</span>${escHTML(p)}</div>`).join('')}
 
-                        <div class="acc-section-label oppo-label">🚀 기회</div>
+                        <div class="acc-section-label oppo-label">${t('opportunities')}</div>
                         ${oppos.map(o => `<div class="acc-oppo-item">✦ ${escHTML(o)}</div>`).join('')}
 
-                        <div class="acc-section-label risk-label">⚠️ 리스크</div>
+                        <div class="acc-section-label risk-label">${t('risks')}</div>
                         ${risks.map(r => `<div class="acc-risk-item">▸ ${escHTML(r)}</div>`).join('')}
 
                         <div class="acc-data-grid">
-                            <div class="acc-data-card"><span class="data-card-val">${fmtSize(md.gdp_billion_usd || t.country.gdp)}</span><span class="data-card-label">GDP</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${(md.gdp_growth_pct || t.country.gdp_growth_pct || 0).toFixed(1)}%</span><span class="data-card-label">GDP 성장률</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${fmtPop(md.population_million || t.country.pop)}</span><span class="data-card-label">인구</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${(md.internet_users_pct || t.country.internet_users_pct || 0).toFixed(0)}%</span><span class="data-card-label">인터넷 보급률</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${fmtSize(md.industry_size_billion || ind.size)}</span><span class="data-card-label">산업 규모</span></div>
-                            <div class="acc-data-card"><span class="data-card-val">${(md.industry_growth_pct || ind.growth || 0).toFixed(1)}%</span><span class="data-card-label">산업 성장률</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${fmtSize(md.gdp_billion_usd || t.country.gdp)}</span><span class="data-card-label">${t('gdpLabel')}</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${(md.gdp_growth_pct || t.country.gdp_growth_pct || 0).toFixed(1)}%</span><span class="data-card-label">${t('gdpGrowthLabel')}</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${fmtPop(md.population_million || t.country.pop)}</span><span class="data-card-label">${t('populationLabel')}</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${(md.internet_users_pct || t.country.internet_users_pct || 0).toFixed(0)}%</span><span class="data-card-label">${t('internetLabel')}</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${fmtSize(md.industry_size_billion || ind.size)}</span><span class="data-card-label">${t('industrySizeLabel')}</span></div>
+                            <div class="acc-data-card"><span class="data-card-val">${(md.industry_growth_pct || ind.growth || 0).toFixed(1)}%</span><span class="data-card-label">${t('industryGrowthLabel')}</span></div>
                         </div>
 
                         <div class="acc-dim-bars">
                             ${['marketSize','growth','potential','stability','openness','digital'].map(dim => {
                                 const val = dimScores[dim] || 0;
-                                const labels = {marketSize:'시장규모',growth:'성장률',potential:'잠재력',stability:'안정성',openness:'개방도',digital:'디지털'};
+                                const labels = {marketSize:t('dimMarketSize'),growth:t('dimGrowth'),potential:t('dimPotential'),stability:t('dimStability'),openness:t('dimOpenness'),digital:t('dimDigital')};
                                 const barColor = val >= 75 ? '#00ff88' : val >= 50 ? '#ffaa00' : '#ff3366';
                                 return `<div class="dim-bar-row"><span class="dim-bar-label">${labels[dim]}</span><div class="dim-bar-track"><div class="dim-bar-fill" style="width:${val}%;background:${barColor}"></div></div><span class="dim-bar-val">${val}</span></div>`;
                             }).join('')}
@@ -2140,9 +2407,9 @@ function showExpansionReport() {
     const rindaUrl = `https://app.rinda.ai/?utm_source=Lead_Magnet&utm_medium=referral&utm_content=${top1.id}_${EA.profile.industry}`;
     html += `
         <div class="exp-rinda-cta">
-            <div class="rinda-cta-title">🚀 ${top1.country.name}에 해외 영업팀을 구축하세요</div>
-            <p class="rinda-cta-desc">AI가 추천한 최적 시장에 현지 영업팀을 배치하세요. 이메일 기반 해외 B2B 영업 자동화 플랫폼 린다가 도와드립니다.</p>
-            <button class="rinda-cta-btn" id="rinda-cta-btn">🌍 해외영업 자동화</button>
+            <div class="rinda-cta-title">🚀 ${countryName(top1.country)} — ${t('rindaCta')}</div>
+            <p class="rinda-cta-desc">${t('rindaCtaDesc')}</p>
+            <button class="rinda-cta-btn" id="rinda-cta-btn">${t('rindaCtaBtn')}</button>
         </div>`;
 
     // Rinda popup (hidden)
@@ -2154,19 +2421,19 @@ function showExpansionReport() {
                 <div class="rinda-popup-header">
                     <span class="rinda-popup-flag">${top1.country.flag}</span>
                     <div>
-                        <div class="rinda-popup-country">${top1.country.name}</div>
-                        <div class="rinda-popup-score">CES ${top1.ces.toFixed(1)}점 · AI 추천 1위</div>
+                        <div class="rinda-popup-country">${countryName(top1.country)}</div>
+                        <div class="rinda-popup-score">CES ${top1.ces.toFixed(1)} · ${LANG.current==='en'?'AI #1':'AI 추천 1위'}</div>
                     </div>
                 </div>
                 <div class="rinda-popup-body">
-                    <p class="rinda-popup-lead">AI 분석 결과, <strong>${top1.country.name}</strong>은(는) 귀사의 최적 해외 진출 시장입니다.</p>
+                    <p class="rinda-popup-lead">${LANG.current==='en'?`Based on AI analysis, <strong>${countryName(top1.country)}</strong> is your optimal market.`:`AI 분석 결과, <strong>${countryName(top1.country)}</strong>은(는) 귀사의 최적 해외 진출 시장입니다.`}</p>
                     ${aiOppos.length ? `<ul class="rinda-popup-points">${aiOppos.slice(0,3).map(o => `<li>${escHTML(o)}</li>`).join('')}</ul>` : ''}
-                    <p class="rinda-popup-action">지금 바로 <strong>${top1.country.name}</strong> 현지 영업팀을 구축하고, 해외 매출을 만들어보세요.</p>
+                    <p class="rinda-popup-action">${LANG.current==='en'?`Build a local sales team in <strong>${countryName(top1.country)}</strong> now.`:`지금 바로 <strong>${countryName(top1.country)}</strong> 현지 영업팀을 구축하고, 해외 매출을 만들어보세요.`}</p>
                 </div>
                 <a href="${rindaUrl}" target="_blank" rel="noopener" class="rinda-popup-cta-link" id="rinda-go">
-                    🚀 린다로 해외 영업 시작하기
+                    ${t('rindaPopupCta')}
                 </a>
-                <div class="rinda-popup-sub">이메일 기반 해외 B2B 영업 자동화 플랫폼</div>
+                <div class="rinda-popup-sub">${LANG.current==='en'?'Email-based B2B sales automation':'이메일 기반 해외 B2B 영업 자동화 플랫폼'}</div>
             </div>
         </div>`;
 
@@ -2176,22 +2443,22 @@ function showExpansionReport() {
             <div class="pdf-popup-backdrop"></div>
             <div class="pdf-popup-modal">
                 <button class="close-btn pdf-popup-close">&times;</button>
-                <div class="pdf-popup-title">📥 보고서 다운로드</div>
-                <div class="pdf-popup-desc">AI가 분석한 해외진출 전략 보고서를 PDF로 저장하거나,<br>전문 해외영업팀의 지원을 받아보세요.</div>
+                <div class="pdf-popup-title">${t('pdfTitle')}</div>
+                <div class="pdf-popup-desc">${LANG.current==='en'?'Save the AI export strategy report as PDF.':'AI가 분석한 해외진출 전략 보고서를 PDF로 저장하거나,<br>전문 해외영업팀의 지원을 받아보세요.'}</div>
                 <div class="pdf-popup-actions">
-                    <button class="pdf-popup-btn download" id="pdf-download-now">📥 PDF 바로 다운로드</button>
-                    <a href="${rindaUrl}" target="_blank" rel="noopener" class="pdf-popup-btn rinda" id="pdf-rinda-go">🚀 해외영업팀 지원받기</a>
+                    <button class="pdf-popup-btn download" id="pdf-download-now">${t('pdfDownload')}</button>
+                    <a href="${rindaUrl}" target="_blank" rel="noopener" class="pdf-popup-btn rinda" id="pdf-rinda-go">${t('pdfRinda')}</a>
                 </div>
-                <div class="pdf-popup-sub">린다(Rinda) · 이메일 기반 해외 B2B 영업 자동화 플랫폼</div>
+                <div class="pdf-popup-sub">${LANG.current==='en'?'Rinda · Email-based B2B sales automation':'린다(Rinda) · 이메일 기반 해외 B2B 영업 자동화 플랫폼'}</div>
             </div>
         </div>`;
 
     // Action buttons
     html += `
         <div class="exp-actions">
-            <button class="exp-btn" id="exp-back-btn">← 탐색기로 돌아가기</button>
-            <button class="exp-btn primary" id="exp-pdf-btn">📥 PDF 보고서 다운로드</button>
-            <button class="exp-btn" id="exp-redo-btn">🔄 다시 분석</button>
+            <button class="exp-btn" id="exp-back-btn">${t('backToExplorer')}</button>
+            <button class="exp-btn primary" id="exp-pdf-btn">${t('downloadPdf')}</button>
+            <button class="exp-btn" id="exp-redo-btn">${t('reAnalyze')}</button>
         </div>`;
 
     content.innerHTML = html;
@@ -2227,12 +2494,12 @@ function animateNumber(el, target, duration) {
 // ---- RADAR CHART SVG ----
 function renderRadarChart(top3) {
     const axes = ['marketSize','growth','potential','stability','openness','digital'];
-    const axisLabels = ['시장규모','성장률','잠재력','안정성','개방도','디지털'];
+    const axisLabels = [t('dimMarketSize'),t('dimGrowth'),t('dimPotential'),t('dimStability'),t('dimOpenness'),t('dimDigital')];
     const colors = ['#ffaa00','#00f0ff','#7b2fff'];
     const cx = 120, cy = 120, maxR = 80;
     const angleStep = (2 * Math.PI) / axes.length;
 
-    let svg = `<div class="exp-section-title">📊 상위 3개국 비교</div><div class="exp-radar-wrap"><svg class="radar-svg" viewBox="0 0 240 240">`;
+    let svg = `<div class="exp-section-title">${t('radarTitle')}</div><div class="exp-radar-wrap"><svg class="radar-svg" viewBox="0 0 240 240">`;
 
     // Grid circles
     [0.25, 0.5, 0.75, 1].forEach(r => {
@@ -2269,7 +2536,7 @@ function renderRadarChart(top3) {
     // Legend
     svg += `<div class="radar-legend">`;
     top3.forEach((t, i) => {
-        svg += `<div class="radar-legend-item"><span class="radar-legend-dot" style="background:${colors[i]}"></span>${t.country.flag} ${t.country.name}</div>`;
+        svg += `<div class="radar-legend-item"><span class="radar-legend-dot" style="background:${colors[i]}"></span>${t.country.flag} ${countryName(t.country)}</div>`;
     });
     svg += `</div>`;
 
@@ -2278,11 +2545,11 @@ function renderRadarChart(top3) {
 
 // ---- BUBBLE MATRIX ----
 function renderBubbleMatrix(top10) {
-    let html = `<div class="exp-section-title">⚖️ 리스크-기회 매트릭스</div><div class="exp-matrix-wrap">`;
+    let html = `<div class="exp-section-title">${t('matrixTitle')}</div><div class="exp-matrix-wrap">`;
     html += `<div class="matrix-mid-x"></div><div class="matrix-mid-y"></div>`;
-    html += `<div class="matrix-axis-label" style="bottom:2px;left:50%;transform:translateX(-50%)">기회 →</div>`;
-    html += `<div class="matrix-axis-label" style="left:2px;top:50%;transform:translateY(-50%) rotate(-90deg)">← 리스크</div>`;
-    html += `<div class="matrix-quadrant" style="right:8px;top:4px">고위험/고수익</div>`;
+    html += `<div class="matrix-axis-label" style="bottom:2px;left:50%;transform:translateX(-50%)">${LANG.current==='en'?'Opportunity →':'기회 →'}</div>`;
+    html += `<div class="matrix-axis-label" style="left:2px;top:50%;transform:translateY(-50%) rotate(-90deg)">${LANG.current==='en'?'← Risk':'← 리스크'}</div>`;
+    html += `<div class="matrix-quadrant" style="right:8px;top:4px">${LANG.current==='en'?'High Risk/High Return':'고위험/고수익'}</div>`;
     html += `<div class="matrix-sweet" style="right:4px;bottom:4px">SWEET SPOT ★</div>`;
 
     // Normalize to spread bubbles across the full chart
@@ -2298,7 +2565,7 @@ function renderBubbleMatrix(top10) {
         const y = 90 - ((t.riskScore - riskMin) / riskRange) * 80; // 10~90%, inverted
         const size = Math.max(18, Math.min(36, t.bubbleSize));
         const color = i === 0 ? '#ffaa00' : i < 3 ? '#00f0ff' : '#7b2fff';
-        html += `<div class="matrix-bubble" style="left:${x}%;top:${y}%;width:${size}px;height:${size}px;background:${color}22;border-color:${color}" title="${t.country.name}: 기회${t.opportunityScore.toFixed(0)} / 리스크${t.riskScore.toFixed(0)}">${t.country.flag}</div>`;
+        html += `<div class="matrix-bubble" style="left:${x}%;top:${y}%;width:${size}px;height:${size}px;background:${color}22;border-color:${color}" title="${countryName(t.country)}: ${LANG.current==='en'?'Opp':'기회'}${t.opportunityScore.toFixed(0)} / ${LANG.current==='en'?'Risk':'리스크'}${t.riskScore.toFixed(0)}">${t.country.flag}</div>`;
     });
 
     html += `</div>`;
@@ -2373,7 +2640,7 @@ async function downloadPDF() {
     const btn = document.getElementById('exp-pdf-btn');
     if (!btn) return;
     btn.disabled = true;
-    btn.textContent = '⏳ PDF 생성 중...';
+    btn.textContent = t('pdfGenerating');
 
     try {
         // Dynamically load html2pdf if not loaded
@@ -2597,12 +2864,12 @@ async function downloadPDF() {
         // Restore hidden elements
         hideEls.forEach(el => el.style.display = '');
     } catch (e) {
-        console.error('[PDF] 생성 실패:', e);
-        alert('PDF 생성에 실패했습니다. 다시 시도해주세요.');
+        console.error('[PDF] generation failed:', e);
+        alert(t('pdfFailed'));
     }
 
     btn.disabled = false;
-    btn.textContent = '📥 PDF 보고서 다운로드';
+    btn.textContent = t('downloadPdf');
 }
 
 function closeExpansionReport() {
@@ -2650,7 +2917,263 @@ document.addEventListener('DOMContentLoaded', () => {
         const panel = document.getElementById('expansion-report');
         panel.classList.toggle('expanded');
         expandBtn.textContent = panel.classList.contains('expanded') ? '⛶' : '⛶';
-        expandBtn.title = panel.classList.contains('expanded') ? '축소' : '전체화면';
+        expandBtn.title = panel.classList.contains('expanded') ? (LANG.current==='en'?'Collapse':'축소') : (LANG.current==='en'?'Fullscreen':'전체화면');
     });
 
 });
+
+
+// === Mobile Navigation ===
+function initMobileNav() {
+    const nav = document.getElementById('mobile-nav');
+    if (!nav) return;
+    const btns = nav.querySelectorAll('.mobile-nav-btn');
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            handleMobileTab(btn.dataset.tab);
+        });
+    });
+    const ua = navigator.userAgent || '';
+    if (isMobile) {
+        document.body.classList.add('is-mobile');
+        nav.classList.add('visible');
+    }
+    window.addEventListener('resize', () => {
+        const wasMobile = isMobile;
+        isMobile = window.innerWidth < 768;
+        if (isMobile && !wasMobile) {
+            document.body.classList.add('is-mobile');
+            nav.classList.add('visible');
+        } else if (!isMobile && wasMobile) {
+            document.body.classList.remove('is-mobile');
+            nav.classList.remove('visible');
+            document.getElementById('left-panel')?.classList.remove('mobile-hidden');
+            document.getElementById('right-panel')?.classList.remove('mobile-active');
+            document.getElementById('globe-container')?.classList.remove('mobile-hidden');
+        }
+    });
+}
+
+function handleMobileTab(tab) {
+    const leftPanel = document.getElementById('left-panel');
+    const rightPanel = document.getElementById('right-panel');
+    const globeContainer = document.getElementById('globe-container');
+    const hudOverlay = document.getElementById('hud-overlay');
+    const expansionCta = document.getElementById('expansion-cta');
+
+    leftPanel?.classList.add('mobile-hidden');
+    rightPanel?.classList.add('mobile-hidden');
+    globeContainer?.classList.add('mobile-hidden');
+    if (hudOverlay) hudOverlay.style.display = 'none';
+    if (expansionCta) expansionCta.style.display = 'none';
+
+    switch(tab) {
+        case 'globe':
+            globeContainer?.classList.remove('mobile-hidden');
+            if (hudOverlay) hudOverlay.style.display = '';
+            break;
+        case 'search':
+            leftPanel?.classList.remove('mobile-hidden');
+            leftPanel?.classList.add('mobile-active');
+            break;
+        case 'analysis':
+            if (expansionCta) expansionCta.style.display = '';
+            const report = document.getElementById('expansion-report');
+            if (report && !report.classList.contains('hidden')) {
+                report.classList.add('mobile-active');
+            } else {
+                globeContainer?.classList.remove('mobile-hidden');
+                if (expansionCta) {
+                    expansionCta.style.display = 'block';
+                    expansionCta.style.position = 'relative';
+                    expansionCta.style.margin = '20px auto';
+                }
+            }
+            break;
+        case 'data':
+            rightPanel?.classList.remove('mobile-hidden');
+            rightPanel?.classList.remove('hidden');
+            rightPanel?.classList.add('mobile-active');
+            break;
+    }
+    if (tab === 'globe' && typeof globe !== 'undefined' && globe) {
+        setTimeout(() => globe.width(window.innerWidth).height(window.innerHeight - 112), 100);
+    }
+}
+
+// === Command Center ===
+function initCommandCenter() {
+    const input = document.getElementById('cmd-input');
+    const sugBox = document.getElementById('cmd-suggestions');
+    if (!input || !sugBox) return;
+
+    input.setAttribute('placeholder', LANG.current === 'en' ? 'Search country or type /command...' : '국가 검색 또는 /명령어 입력...');
+
+    input.addEventListener('input', () => {
+        const val = input.value.trim();
+        if (!val) { sugBox.innerHTML = ''; sugBox.style.display = 'none'; return; }
+        if (val.startsWith('/')) {
+            showCommandSuggestions(val, sugBox, input);
+        } else {
+            showSearchSuggestions(val, sugBox, input);
+        }
+    });
+
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            const val = input.value.trim();
+            if (val.startsWith('/')) {
+                executeCommand(val);
+            } else {
+                const countries = Object.values(COUNTRIES);
+                const match = countries.find(c =>
+                    c.name.toLowerCase().includes(val.toLowerCase()) ||
+                    (c.nameEn && c.nameEn.toLowerCase().includes(val.toLowerCase()))
+                );
+                if (match) selectCountryById(match.id);
+            }
+            input.value = '';
+            sugBox.innerHTML = '';
+            sugBox.style.display = 'none';
+        }
+        if (e.key === 'Escape') {
+            input.value = '';
+            sugBox.innerHTML = '';
+            sugBox.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === '/' && document.activeElement !== input && !document.activeElement.closest('.wizard-modal') && !document.activeElement.closest('input') && !document.activeElement.closest('select')) {
+            e.preventDefault();
+            input.focus();
+        }
+    });
+}
+
+function showSearchSuggestions(query, sugBox, input) {
+    const countries = Object.values(COUNTRIES);
+    const q = query.toLowerCase();
+    const matches = countries.filter(c =>
+        c.name.toLowerCase().includes(q) ||
+        (c.nameEn && c.nameEn.toLowerCase().includes(q))
+    ).slice(0, 8);
+
+    if (!matches.length) { sugBox.innerHTML = ''; sugBox.style.display = 'none'; return; }
+    sugBox.style.display = 'block';
+    sugBox.innerHTML = matches.map(c => {
+        const name = countryName(c);
+        const flag = c.flag || '';
+        return `<div class="cmd-suggestion" data-cid="${c.id}">${flag} ${escHTML(name)} <span style="opacity:0.5;font-size:0.85em">${c.region||''}</span></div>`;
+    }).join('');
+    sugBox.querySelectorAll('.cmd-suggestion').forEach(el => {
+        el.addEventListener('click', () => {
+            selectCountryById(el.dataset.cid);
+            input.value = '';
+            sugBox.innerHTML = '';
+            sugBox.style.display = 'none';
+        });
+    });
+}
+
+function showCommandSuggestions(val, sugBox, input) {
+    const cmds = [
+        { cmd: '/analyze', desc: LANG.current === 'en' ? 'Start AI analysis wizard' : 'AI 분석 위저드 시작', icon: '🚀' },
+        { cmd: '/top', desc: LANG.current === 'en' ? 'Show top countries for industry' : '산업별 상위 국가 표시', icon: '🏆' },
+        { cmd: '/compare', desc: LANG.current === 'en' ? 'Compare two countries' : '두 국가 비교', icon: '⚖️' },
+        { cmd: '/lang', desc: LANG.current === 'en' ? 'Toggle language (KO/EN)' : '언어 전환 (한/영)', icon: '🌐' },
+    ];
+    const q = val.toLowerCase();
+    const matches = cmds.filter(c => c.cmd.startsWith(q));
+    if (!matches.length) { sugBox.innerHTML = ''; sugBox.style.display = 'none'; return; }
+    sugBox.style.display = 'block';
+    sugBox.innerHTML = matches.map(c =>
+        `<div class="cmd-suggestion" data-cmd="${c.cmd}">${c.icon} <strong>${c.cmd}</strong> <span style="opacity:0.6">${c.desc}</span></div>`
+    ).join('');
+    sugBox.querySelectorAll('.cmd-suggestion').forEach(el => {
+        el.addEventListener('click', () => {
+            input.value = el.dataset.cmd + ' ';
+            input.focus();
+            sugBox.innerHTML = '';
+            sugBox.style.display = 'none';
+        });
+    });
+}
+
+function executeCommand(val) {
+    const parts = val.split(/\s+/);
+    const cmd = parts[0].toLowerCase();
+    const args = parts.slice(1).join(' ');
+
+    switch(cmd) {
+        case '/analyze':
+            showHUDAlert(t('analysisStarted'), 'info');
+            document.getElementById('expansion-cta')?.click();
+            break;
+        case '/top': {
+            const indKey = args.toLowerCase();
+            const ind = Object.entries(INDUSTRIES).find(([k, v]) =>
+                k.toLowerCase().includes(indKey) ||
+                v.name.toLowerCase().includes(indKey) ||
+                (v.nameEn && v.nameEn.toLowerCase().includes(indKey))
+            );
+            if (ind) {
+                const [key] = ind;
+                const industryBtn = document.querySelector(`[data-industry="${key}"]`);
+                if (industryBtn) industryBtn.click();
+                showHUDAlert(`${LANG.current === 'en' ? 'Showing top countries for' : '상위 국가 표시:'} ${industryName(ind[1])}`, 'info');
+            } else {
+                showHUDAlert(LANG.current === 'en' ? 'Industry not found. Try: /top electronics' : '산업을 찾을 수 없습니다. 예: /top 전자', 'warning');
+            }
+            break;
+        }
+        case '/compare':
+            showHUDAlert(LANG.current === 'en' ? 'Compare: select two countries on the globe' : '비교: 지구본에서 두 국가를 선택하세요', 'info');
+            break;
+        case '/lang':
+            setLang(LANG.current === 'ko' ? 'en' : 'ko');
+            showHUDAlert(LANG.current === 'en' ? 'Language: English' : '언어: 한국어', 'info');
+            break;
+        default:
+            showHUDAlert(LANG.current === 'en' ? 'Unknown command. Try /analyze, /top, /compare, /lang' : '알 수 없는 명령어. /analyze, /top, /compare, /lang', 'warning');
+    }
+}
+
+// === HUD Alerts & Metrics ===
+function showHUDAlert(msg, type) {
+    const container = document.getElementById('hud-alerts');
+    if (!container) return;
+    const alert = document.createElement('div');
+    alert.className = `hud-alert hud-alert-${type || 'info'}`;
+    const icon = type === 'warning' ? '⚠️' : type === 'success' ? '✅' : '🔵';
+    alert.innerHTML = `<span class="hud-alert-icon">${icon}</span><span class="hud-alert-text">${escHTML(msg)}</span>`;
+    container.appendChild(alert);
+    setTimeout(() => { alert.style.opacity = '0'; setTimeout(() => alert.remove(), 300); }, 4000);
+}
+
+function updateHUDMetrics() {
+    const metricsEl = document.getElementById('hud-metrics');
+    if (!metricsEl) return;
+    const countryCount = Object.keys(COUNTRIES).length;
+    const industryCount = Object.keys(INDUSTRIES).length;
+    const selCountry = selectedCountry ? countryName(selectedCountry) : (LANG.current === 'en' ? 'None' : '없음');
+    const selIndustry = selectedIndustry ? industryName(INDUSTRIES[selectedIndustry]) : (LANG.current === 'en' ? 'None' : '없음');
+    metricsEl.innerHTML = `
+        <div class="hud-metric"><span class="hud-metric-label">COUNTRIES</span><span class="hud-metric-value">${countryCount}</span></div>
+        <div class="hud-metric"><span class="hud-metric-label">INDUSTRIES</span><span class="hud-metric-value">${industryCount}</span></div>
+        <div class="hud-metric"><span class="hud-metric-label">${LANG.current === 'en' ? 'SELECTED' : '선택'}</span><span class="hud-metric-value" style="font-size:0.8em">${escHTML(selCountry)}</span></div>
+        <div class="hud-metric"><span class="hud-metric-label">${LANG.current === 'en' ? 'INDUSTRY' : '산업'}</span><span class="hud-metric-value" style="font-size:0.8em">${escHTML(selIndustry)}</span></div>
+    `;
+}
+
+function selectCountryById(cid) {
+    const c = COUNTRIES[cid];
+    if (!c) return;
+    const sel = document.getElementById('country-select');
+    if (sel) { sel.value = cid; sel.dispatchEvent(new Event('change')); }
+    showHUDAlert(`${countryName(c)} ${t('countrySelected')}`, 'success');
+    updateHUDMetrics();
+}
