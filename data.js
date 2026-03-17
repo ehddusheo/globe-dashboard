@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-03-16 21:44:22
+// Auto-generated: 2026-03-17 21:43:40
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -924,7 +924,6 @@ const COUNTRIES = {
         "inflation_pct": 1.7,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 199.0,
-        "internet_users_pct": 100,
         "renewable_energy_pct": 1
     },
     "032": {
@@ -4952,7 +4951,6 @@ const COUNTRIES = {
         "inflation_pct": 1.1,
         "unemployment_pct": 4.3,
         "trade_pct_gdp": 134.1,
-        "internet_users_pct": 97.3,
         "renewable_energy_pct": 27.7
     },
     "152": {
@@ -8766,7 +8764,6 @@ const COUNTRIES = {
         "inflation_pct": 2.8,
         "unemployment_pct": 11.4,
         "trade_pct_gdp": 70.0,
-        "internet_users_pct": 95.8,
         "renewable_energy_pct": 19
     },
     "233": {
@@ -10038,7 +10035,6 @@ const COUNTRIES = {
         "inflation_pct": 3.3,
         "unemployment_pct": 4.4,
         "trade_pct_gdp": 62.8,
-        "internet_users_pct": 96.3,
         "renewable_energy_pct": 12.2
     },
     "268": {
@@ -13853,7 +13849,6 @@ const COUNTRIES = {
         "inflation_pct": 3.1,
         "unemployment_pct": 3.6,
         "trade_pct_gdp": 54.5,
-        "internet_users_pct": 88.2,
         "renewable_energy_pct": 6.2
     },
     "380": {
@@ -14065,7 +14060,6 @@ const COUNTRIES = {
         "inflation_pct": 1.0,
         "unemployment_pct": 6.5,
         "trade_pct_gdp": 62.8,
-        "internet_users_pct": 89.2,
         "renewable_energy_pct": 17.5
     },
     "388": {
@@ -14276,7 +14270,6 @@ const COUNTRIES = {
         "gdp_growth_pct": -0.5,
         "inflation_pct": 5.4,
         "unemployment_pct": 3.2,
-        "internet_users_pct": 89.5,
         "renewable_energy_pct": 10.5
     },
     "400": {
@@ -14488,7 +14481,6 @@ const COUNTRIES = {
         "inflation_pct": 1.6,
         "unemployment_pct": 16.7,
         "trade_pct_gdp": 99.7,
-        "internet_users_pct": 92.5,
         "renewable_energy_pct": 11.5
     },
     "392": {
@@ -14700,7 +14692,6 @@ const COUNTRIES = {
         "inflation_pct": 2.7,
         "unemployment_pct": 2.5,
         "trade_pct_gdp": 46.4,
-        "internet_users_pct": 87.0,
         "renewable_energy_pct": 8.8
     },
     "398": {
@@ -14912,7 +14903,6 @@ const COUNTRIES = {
         "inflation_pct": 8.8,
         "unemployment_pct": 4.8,
         "trade_pct_gdp": 57.2,
-        "internet_users_pct": 93.4,
         "renewable_energy_pct": 2
     },
     "404": {
@@ -15124,7 +15114,6 @@ const COUNTRIES = {
         "inflation_pct": 4.5,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 40.2,
-        "internet_users_pct": 35.0,
         "renewable_energy_pct": 67.7
     },
     "417": {
@@ -15336,7 +15325,6 @@ const COUNTRIES = {
         "inflation_pct": 10.8,
         "unemployment_pct": 3.5,
         "trade_pct_gdp": 127.7,
-        "internet_users_pct": 88.5,
         "renewable_energy_pct": 27.6
     },
     "116": {
@@ -15760,7 +15748,6 @@ const COUNTRIES = {
         "inflation_pct": 2.3,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 84.6,
-        "internet_users_pct": 97.9,
         "renewable_energy_pct": 3.6
     },
     "414": {
@@ -15972,7 +15959,6 @@ const COUNTRIES = {
         "inflation_pct": 2.9,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 96.1,
-        "internet_users_pct": 99.7,
         "renewable_energy_pct": 0.1
     },
     "418": {
@@ -16183,7 +16169,6 @@ const COUNTRIES = {
         "gdp_growth_pct": 4.1,
         "inflation_pct": 23.1,
         "unemployment_pct": 1.2,
-        "internet_users_pct": 63.6,
         "renewable_energy_pct": 49.2
     },
     "422": {
@@ -16395,7 +16380,6 @@ const COUNTRIES = {
         "inflation_pct": 45.2,
         "unemployment_pct": 11.0,
         "trade_pct_gdp": 104.2,
-        "internet_users_pct": 83.5,
         "renewable_energy_pct": 6.8
     },
     "434": {
@@ -16607,7 +16591,6 @@ const COUNTRIES = {
         "inflation_pct": 2.1,
         "unemployment_pct": 19.1,
         "trade_pct_gdp": 128.8,
-        "internet_users_pct": 88.5,
         "renewable_energy_pct": 3.1
     },
     "144": {
@@ -16819,7 +16802,6 @@ const COUNTRIES = {
         "inflation_pct": -0.4,
         "unemployment_pct": 4.2,
         "trade_pct_gdp": 42.4,
-        "internet_users_pct": 51.2,
         "renewable_energy_pct": 48.8
     },
     "440": {
@@ -17031,7 +17013,6 @@ const COUNTRIES = {
         "inflation_pct": 0.7,
         "unemployment_pct": 6.9,
         "trade_pct_gdp": 143.0,
-        "internet_users_pct": 88.5,
         "renewable_energy_pct": 33.2
     },
     "442": {
@@ -17243,7 +17224,6 @@ const COUNTRIES = {
         "inflation_pct": 2.1,
         "unemployment_pct": 6.4,
         "trade_pct_gdp": 351.3,
-        "internet_users_pct": 98.8,
         "renewable_energy_pct": 20.5
     },
     "428": {
@@ -17455,7 +17435,6 @@ const COUNTRIES = {
         "inflation_pct": 1.3,
         "unemployment_pct": 6.9,
         "trade_pct_gdp": 132.3,
-        "internet_users_pct": 92.7,
         "renewable_energy_pct": 44
     },
     "504": {
@@ -17667,7 +17646,6 @@ const COUNTRIES = {
         "inflation_pct": 1.0,
         "unemployment_pct": 9.1,
         "trade_pct_gdp": 92.2,
-        "internet_users_pct": 91,
         "renewable_energy_pct": 10.9
     },
     "498": {
@@ -17879,7 +17857,6 @@ const COUNTRIES = {
         "inflation_pct": 4.7,
         "unemployment_pct": 1.4,
         "trade_pct_gdp": 88.7,
-        "internet_users_pct": 80.2,
         "renewable_energy_pct": 21.4
     },
     "450": {
@@ -18091,7 +18068,6 @@ const COUNTRIES = {
         "inflation_pct": 9.9,
         "unemployment_pct": 3.1,
         "trade_pct_gdp": 55.0,
-        "internet_users_pct": 20.4,
         "renewable_energy_pct": 83.1
     },
     "484": {
@@ -18303,7 +18279,6 @@ const COUNTRIES = {
         "inflation_pct": 4.7,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 74.6,
-        "internet_users_pct": 81.2,
         "renewable_energy_pct": 13
     },
     "807": {
@@ -18515,7 +18490,6 @@ const COUNTRIES = {
         "inflation_pct": 3.5,
         "unemployment_pct": 12.3,
         "trade_pct_gdp": 136.3,
-        "internet_users_pct": 87.2,
         "renewable_energy_pct": 19.5
     },
     "466": {
@@ -18727,7 +18701,6 @@ const COUNTRIES = {
         "inflation_pct": 3.2,
         "unemployment_pct": 2.9,
         "trade_pct_gdp": 49.9,
-        "internet_users_pct": 35.1,
         "renewable_energy_pct": 71.1
     },
     "104": {
@@ -18938,7 +18911,6 @@ const COUNTRIES = {
         "gdp_growth_pct": -1.0,
         "inflation_pct": 8.8,
         "unemployment_pct": 2.9,
-        "internet_users_pct": 58.5,
         "renewable_energy_pct": 62.9
     },
     "499": {
@@ -19150,7 +19122,6 @@ const COUNTRIES = {
         "inflation_pct": 3.3,
         "unemployment_pct": 13.2,
         "trade_pct_gdp": 109.9,
-        "internet_users_pct": 88.9,
         "renewable_energy_pct": 39.6
     },
     "496": {
@@ -19362,7 +19333,6 @@ const COUNTRIES = {
         "inflation_pct": 6.2,
         "unemployment_pct": 5.2,
         "trade_pct_gdp": 138.4,
-        "internet_users_pct": 83.0,
         "renewable_energy_pct": 3
     },
     "508": {
@@ -19574,7 +19544,6 @@ const COUNTRIES = {
         "inflation_pct": 4.1,
         "unemployment_pct": 6.7,
         "trade_pct_gdp": 95.7,
-        "internet_users_pct": 19.8,
         "renewable_energy_pct": 76.9
     },
     "478": {
@@ -19786,7 +19755,6 @@ const COUNTRIES = {
         "inflation_pct": 2.5,
         "unemployment_pct": 10.3,
         "trade_pct_gdp": 93.6,
-        "internet_users_pct": 37.4,
         "renewable_energy_pct": 19.6
     },
     "480": {
@@ -19998,7 +19966,6 @@ const COUNTRIES = {
         "inflation_pct": 3.6,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 145.4,
-        "internet_users_pct": 79.5,
         "renewable_energy_pct": 8.6
     },
     "454": {
@@ -20210,7 +20177,6 @@ const COUNTRIES = {
         "inflation_pct": 32.2,
         "unemployment_pct": 5.1,
         "trade_pct_gdp": 42.4,
-        "internet_users_pct": 18.0,
         "renewable_energy_pct": 62.9
     },
     "458": {
@@ -20422,7 +20388,6 @@ const COUNTRIES = {
         "inflation_pct": 1.8,
         "unemployment_pct": 3.8,
         "trade_pct_gdp": 137.4,
-        "internet_users_pct": 98.0,
         "renewable_energy_pct": 7.5
     },
     "516": {
@@ -20634,7 +20599,6 @@ const COUNTRIES = {
         "inflation_pct": 4.2,
         "unemployment_pct": 19.2,
         "trade_pct_gdp": 109.6,
-        "internet_users_pct": 64.4,
         "renewable_energy_pct": 30
     },
     "562": {
@@ -20846,7 +20810,6 @@ const COUNTRIES = {
         "inflation_pct": 9.1,
         "unemployment_pct": 0.4,
         "trade_pct_gdp": 50.0,
-        "internet_users_pct": 23.2,
         "renewable_energy_pct": 79.6
     },
     "566": {
@@ -21057,7 +21020,6 @@ const COUNTRIES = {
         "gdp_growth_pct": 4.1,
         "inflation_pct": 33.2,
         "unemployment_pct": 3.0,
-        "internet_users_pct": 39.2,
         "renewable_energy_pct": 80.3
     },
     "558": {
@@ -21269,7 +21231,6 @@ const COUNTRIES = {
         "inflation_pct": 4.6,
         "unemployment_pct": 5.0,
         "trade_pct_gdp": 98.5,
-        "internet_users_pct": 58.2,
         "renewable_energy_pct": 50.4
     },
     "528": {
@@ -21481,7 +21442,6 @@ const COUNTRIES = {
         "inflation_pct": 3.3,
         "unemployment_pct": 3.7,
         "trade_pct_gdp": 153.8,
-        "internet_users_pct": 97.0,
         "renewable_energy_pct": 12.2
     },
     "578": {
@@ -21693,7 +21653,6 @@ const COUNTRIES = {
         "inflation_pct": 3.1,
         "unemployment_pct": 4,
         "trade_pct_gdp": 81.4,
-        "internet_users_pct": 99,
         "renewable_energy_pct": 61.4
     },
     "524": {
@@ -21905,7 +21864,6 @@ const COUNTRIES = {
         "inflation_pct": 4.7,
         "unemployment_pct": 10.5,
         "trade_pct_gdp": 40.5,
-        "internet_users_pct": 55.8,
         "renewable_energy_pct": 73.7
     },
     "554": {
@@ -22117,7 +22075,6 @@ const COUNTRIES = {
         "inflation_pct": 2.9,
         "unemployment_pct": 4.7,
         "trade_pct_gdp": 51.2,
-        "internet_users_pct": 96.2,
         "renewable_energy_pct": 28.9
     },
     "512": {
@@ -22329,7 +22286,6 @@ const COUNTRIES = {
         "inflation_pct": 0.6,
         "unemployment_pct": 3.2,
         "trade_pct_gdp": 114.9,
-        "internet_users_pct": 95.3,
         "renewable_energy_pct": 0.1
     },
     "586": {
@@ -22541,7 +22497,6 @@ const COUNTRIES = {
         "inflation_pct": 12.6,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 27.6,
-        "internet_users_pct": 27.4,
         "renewable_energy_pct": 41.6
     },
     "591": {
@@ -22753,7 +22708,6 @@ const COUNTRIES = {
         "inflation_pct": 0.7,
         "unemployment_pct": 8.5,
         "trade_pct_gdp": 83.7,
-        "internet_users_pct": 68.5,
         "renewable_energy_pct": 28
     },
     "604": {
@@ -22965,7 +22919,6 @@ const COUNTRIES = {
         "inflation_pct": 2.0,
         "unemployment_pct": 5.2,
         "trade_pct_gdp": 51.5,
-        "internet_users_pct": 82.0,
         "renewable_energy_pct": 30.6
     },
     "608": {
@@ -23177,7 +23130,6 @@ const COUNTRIES = {
         "inflation_pct": 3.2,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 65.9,
-        "internet_users_pct": 83.8,
         "renewable_energy_pct": 28
     },
     "598": {
@@ -23388,7 +23340,6 @@ const COUNTRIES = {
         "gdp_growth_pct": 3.8,
         "inflation_pct": 0.6,
         "unemployment_pct": 2.6,
-        "internet_users_pct": 24.1,
         "renewable_energy_pct": 54.6
     },
     "616": {
@@ -23600,7 +23551,6 @@ const COUNTRIES = {
         "inflation_pct": 3.8,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 100.4,
-        "internet_users_pct": 88.6,
         "renewable_energy_pct": 15.2
     },
     "620": {
@@ -23812,7 +23762,6 @@ const COUNTRIES = {
         "inflation_pct": 2.4,
         "unemployment_pct": 6.5,
         "trade_pct_gdp": 89.7,
-        "internet_users_pct": 88.5,
         "renewable_energy_pct": 32.3
     },
     "600": {
@@ -24024,7 +23973,6 @@ const COUNTRIES = {
         "inflation_pct": 3.8,
         "unemployment_pct": 5.7,
         "trade_pct_gdp": 76.8,
-        "internet_users_pct": 81.6,
         "renewable_energy_pct": 58.8
     },
     "634": {
@@ -24236,7 +24184,6 @@ const COUNTRIES = {
         "inflation_pct": 1.3,
         "unemployment_pct": 0.1,
         "trade_pct_gdp": 100.2,
-        "internet_users_pct": 99.7,
         "renewable_energy_pct": 0
     },
     "642": {
@@ -24448,7 +24395,6 @@ const COUNTRIES = {
         "inflation_pct": 5.7,
         "unemployment_pct": 5.4,
         "trade_pct_gdp": 77.2,
-        "internet_users_pct": 91.3,
         "renewable_energy_pct": 23.6
     },
     "643": {
@@ -24660,7 +24606,6 @@ const COUNTRIES = {
         "inflation_pct": 8.4,
         "unemployment_pct": 2.4,
         "trade_pct_gdp": 39.5,
-        "internet_users_pct": 94.4,
         "renewable_energy_pct": 3.5
     },
     "646": {
@@ -24872,7 +24817,6 @@ const COUNTRIES = {
         "inflation_pct": 1.8,
         "unemployment_pct": 11.3,
         "trade_pct_gdp": 70.0,
-        "internet_users_pct": 34.2,
         "renewable_energy_pct": 79.9
     },
     "682": {
@@ -25084,7 +25028,6 @@ const COUNTRIES = {
         "inflation_pct": 1.7,
         "unemployment_pct": 3.5,
         "trade_pct_gdp": 54.7,
-        "internet_users_pct": 100,
         "renewable_energy_pct": 0.1
     },
     "729": {
@@ -25296,7 +25239,6 @@ const COUNTRIES = {
         "inflation_pct": 138.8,
         "unemployment_pct": 7.5,
         "trade_pct_gdp": 2.0,
-        "internet_users_pct": 26.4,
         "renewable_energy_pct": 61
     },
     "686": {
@@ -25508,7 +25450,6 @@ const COUNTRIES = {
         "inflation_pct": 0.8,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 68.1,
-        "internet_users_pct": 60.6,
         "renewable_energy_pct": 35.4
     },
     "702": {
@@ -25720,7 +25661,6 @@ const COUNTRIES = {
         "inflation_pct": 2.4,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 322.4,
-        "internet_users_pct": 94.4,
         "renewable_energy_pct": 1.1
     },
     "694": {
@@ -25932,7 +25872,6 @@ const COUNTRIES = {
         "inflation_pct": 28.6,
         "unemployment_pct": 3.1,
         "trade_pct_gdp": 40.5,
-        "internet_users_pct": 20.6,
         "renewable_energy_pct": 71.6
     },
     "222": {
@@ -26355,7 +26294,6 @@ const COUNTRIES = {
         "gdp_growth_pct": 4.1,
         "unemployment_pct": 18.9,
         "trade_pct_gdp": 130.3,
-        "internet_users_pct": 27.6,
         "renewable_energy_pct": 95.4
     },
     "688": {
@@ -26567,7 +26505,6 @@ const COUNTRIES = {
         "inflation_pct": 4.7,
         "unemployment_pct": 7.2,
         "trade_pct_gdp": 111.7,
-        "internet_users_pct": 87.7,
         "renewable_energy_pct": 27.2
     },
     "703": {
@@ -26779,7 +26716,6 @@ const COUNTRIES = {
         "inflation_pct": 2.8,
         "unemployment_pct": 5.3,
         "trade_pct_gdp": 171.2,
-        "internet_users_pct": 89.8,
         "renewable_energy_pct": 17.9
     },
     "705": {
@@ -26991,7 +26927,6 @@ const COUNTRIES = {
         "inflation_pct": 2.0,
         "unemployment_pct": 3.7,
         "trade_pct_gdp": 155.7,
-        "internet_users_pct": 90.8,
         "renewable_energy_pct": 23.4
     },
     "752": {
@@ -27203,7 +27138,6 @@ const COUNTRIES = {
         "inflation_pct": 2.8,
         "unemployment_pct": 8.4,
         "trade_pct_gdp": 105.9,
-        "internet_users_pct": 95.5,
         "renewable_energy_pct": 57.9
     },
     "760": {
@@ -27415,7 +27349,6 @@ const COUNTRIES = {
         "inflation_pct": 13.4,
         "unemployment_pct": 13.4,
         "trade_pct_gdp": 35.6,
-        "internet_users_pct": 34.6,
         "renewable_energy_pct": 1.1
     },
     "148": {
@@ -27839,7 +27772,6 @@ const COUNTRIES = {
         "inflation_pct": 2.9,
         "unemployment_pct": 1.9,
         "trade_pct_gdp": 61.6,
-        "internet_users_pct": 37.0,
         "renewable_energy_pct": 75.1
     },
     "764": {
@@ -28051,7 +27983,6 @@ const COUNTRIES = {
         "inflation_pct": 1.4,
         "unemployment_pct": 0.8,
         "trade_pct_gdp": 136.7,
-        "internet_users_pct": 90.9,
         "renewable_energy_pct": 19
     },
     "762": {
@@ -28262,7 +28193,6 @@ const COUNTRIES = {
         "gdp_growth_pct": 8.4,
         "unemployment_pct": 7.0,
         "trade_pct_gdp": 65.6,
-        "internet_users_pct": 56.8,
         "renewable_energy_pct": 34.9
     },
     "795": {
@@ -28683,7 +28613,6 @@ const COUNTRIES = {
         "gdp_growth_pct": 2.5,
         "inflation_pct": 0.5,
         "unemployment_pct": 3.3,
-        "internet_users_pct": 84.7,
         "renewable_energy_pct": 0.5
     },
     "788": {
@@ -28895,7 +28824,6 @@ const COUNTRIES = {
         "inflation_pct": 7.2,
         "unemployment_pct": 15.3,
         "trade_pct_gdp": 106.3,
-        "internet_users_pct": 72.4,
         "renewable_energy_pct": 11.6
     },
     "792": {
@@ -29107,7 +29035,6 @@ const COUNTRIES = {
         "inflation_pct": 58.5,
         "unemployment_pct": 8.8,
         "trade_pct_gdp": 54.6,
-        "internet_users_pct": 87.3,
         "renewable_energy_pct": 12
     },
     "834": {
@@ -29319,7 +29246,6 @@ const COUNTRIES = {
         "inflation_pct": 3.1,
         "unemployment_pct": 1.6,
         "trade_pct_gdp": 41.5,
-        "internet_users_pct": 29.1,
         "renewable_energy_pct": 78.3
     },
     "800": {
@@ -29531,7 +29457,6 @@ const COUNTRIES = {
         "inflation_pct": 3.3,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 42.7,
-        "internet_users_pct": 8.9,
         "renewable_energy_pct": 90.9
     },
     "804": {
@@ -29743,7 +29668,6 @@ const COUNTRIES = {
         "inflation_pct": 6.5,
         "unemployment_pct": 9.8,
         "trade_pct_gdp": 77.8,
-        "internet_users_pct": 82.4,
         "renewable_energy_pct": 8.9
     },
     "858": {
@@ -29955,7 +29879,6 @@ const COUNTRIES = {
         "inflation_pct": 4.8,
         "unemployment_pct": 8.2,
         "trade_pct_gdp": 52.5,
-        "internet_users_pct": 92.0,
         "renewable_energy_pct": 57.8
     },
     "840": {
@@ -30167,7 +30090,6 @@ const COUNTRIES = {
         "inflation_pct": 2.9,
         "unemployment_pct": 4.0,
         "trade_pct_gdp": 25.4,
-        "internet_users_pct": 93.1,
         "renewable_energy_pct": 10.9
     },
     "860": {
@@ -30379,7 +30301,6 @@ const COUNTRIES = {
         "inflation_pct": 9.6,
         "unemployment_pct": 4.4,
         "trade_pct_gdp": 60.7,
-        "internet_users_pct": 89.0,
         "renewable_energy_pct": 1
     },
     "862": {
@@ -30801,7 +30722,6 @@ const COUNTRIES = {
         "inflation_pct": 3.6,
         "unemployment_pct": 1.6,
         "trade_pct_gdp": 173.9,
-        "internet_users_pct": 84.2,
         "renewable_energy_pct": 24.2
     },
     "887": {
@@ -31012,7 +30932,6 @@ const COUNTRIES = {
         "gdp_growth_pct": 0.8,
         "unemployment_pct": 17.0,
         "trade_pct_gdp": 56.1,
-        "internet_users_pct": 13.8,
         "renewable_energy_pct": 3.7
     },
     "710": {
@@ -31224,7 +31143,6 @@ const COUNTRIES = {
         "inflation_pct": 4.4,
         "unemployment_pct": 32.3,
         "trade_pct_gdp": 61.6,
-        "internet_users_pct": 75.7,
         "renewable_energy_pct": 9.7
     },
     "894": {
@@ -31436,7 +31354,6 @@ const COUNTRIES = {
         "inflation_pct": 15.0,
         "unemployment_pct": 5.9,
         "trade_pct_gdp": 62.5,
-        "internet_users_pct": 33,
         "renewable_energy_pct": 83
     },
     "716": {
@@ -31648,7 +31565,6 @@ const COUNTRIES = {
         "inflation_pct": 104.7,
         "unemployment_pct": 9.4,
         "trade_pct_gdp": 41.5,
-        "internet_users_pct": 38.4,
         "renewable_energy_pct": 82.4
     }
 };
@@ -31809,37 +31725,37 @@ const TRADE_ROUTES = [
 const TICKER_DATA = [
     {
         "label": "EUR/USD",
-        "value": "1.14",
+        "value": "1.15",
         "dir": "neutral"
     },
     {
         "label": "GBP/USD",
-        "value": "1.32",
+        "value": "1.33",
         "dir": "neutral"
     },
     {
         "label": "USD/JPY",
-        "value": "160",
+        "value": "159",
         "dir": "neutral"
     },
     {
         "label": "USD/KRW",
-        "value": "1,497",
+        "value": "1,491",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.91",
+        "value": "6.90",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "92.70",
+        "value": "92.40",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.27",
+        "value": "5.26",
         "dir": "neutral"
     },
     {
@@ -31859,12 +31775,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,159",
+        "value": "26,200",
         "dir": "neutral"
     },
     {
         "label": "USD/AUD",
-        "value": "1.43",
+        "value": "1.42",
         "dir": "neutral"
     }
 ];
