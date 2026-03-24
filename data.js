@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-03-23 21:41:23
+// Auto-generated: 2026-03-24 21:43:26
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -87,7 +87,7 @@ const COUNTRIES = {
         "lat": 34.5228,
         "lng": 69.1761,
         "gdp": 17.2,
-        "pop": 42.6,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
@@ -265,7 +265,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 83
+                "rank": 94
             },
             "education": {
                 "size": 1,
@@ -299,7 +299,7 @@ const COUNTRIES = {
         "lat": -8.81155,
         "lng": 13.242,
         "gdp": 101.0,
-        "pop": 37.9,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -464,9 +464,9 @@ const COUNTRIES = {
                 "rank": 70
             },
             "tourism": {
-                "size": 1,
+                "size": 2.0,
                 "growth": 5.9,
-                "potential": 74,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -477,7 +477,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 84
+                "rank": 74
             },
             "education": {
                 "size": 1.5,
@@ -511,7 +511,7 @@ const COUNTRIES = {
         "lat": 41.3317,
         "lng": 19.8172,
         "gdp": 27.0,
-        "pop": 2.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -676,9 +676,9 @@ const COUNTRIES = {
                 "rank": 93
             },
             "tourism": {
-                "size": 1.6,
+                "size": 1,
                 "growth": 5.2,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -689,7 +689,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 69
+                "rank": 95
             },
             "education": {
                 "size": 1,
@@ -723,7 +723,7 @@ const COUNTRIES = {
         "lat": 24.4764,
         "lng": 54.3705,
         "gdp": 552.3,
-        "pop": 11.0,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -888,9 +888,9 @@ const COUNTRIES = {
                 "rank": 30
             },
             "tourism": {
-                "size": 24.6,
+                "size": 11.0,
                 "growth": 5.2,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -901,7 +901,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 10
+                "rank": 28
             },
             "education": {
                 "size": 12.9,
@@ -935,7 +935,7 @@ const COUNTRIES = {
         "lat": -34.6118,
         "lng": -58.4173,
         "gdp": 638.4,
-        "pop": 45.7,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -1100,9 +1100,9 @@ const COUNTRIES = {
                 "rank": 24
             },
             "tourism": {
-                "size": 3.2,
+                "size": 12.8,
                 "growth": 3.6,
-                "potential": 77,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -1113,7 +1113,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 43
+                "rank": 26
             },
             "education": {
                 "size": 22.6,
@@ -1147,7 +1147,7 @@ const COUNTRIES = {
         "lat": 40.1596,
         "lng": 44.509,
         "gdp": 26.0,
-        "pop": 3.0,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -1325,7 +1325,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 85
+                "rank": 96
             },
             "education": {
                 "size": 1,
@@ -1359,7 +1359,7 @@ const COUNTRIES = {
         "lat": -35.282,
         "lng": 149.129,
         "gdp": 1757.0,
-        "pop": 27.2,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -1524,9 +1524,9 @@ const COUNTRIES = {
                 "rank": 13
             },
             "tourism": {
-                "size": 26.2,
+                "size": 35.1,
                 "growth": 4.1,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -1537,7 +1537,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 16
             },
             "education": {
                 "size": 53.3,
@@ -1571,7 +1571,7 @@ const COUNTRIES = {
         "lat": 48.2201,
         "lng": 16.3798,
         "gdp": 534.8,
-        "pop": 9.2,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -1736,7 +1736,7 @@ const COUNTRIES = {
                 "rank": 32
             },
             "tourism": {
-                "size": 20.0,
+                "size": 13.9,
                 "growth": 3.6,
                 "potential": 83,
                 "oppo": [
@@ -1749,7 +1749,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 13
+                "rank": 25
             },
             "education": {
                 "size": 16.9,
@@ -1783,7 +1783,7 @@ const COUNTRIES = {
         "lat": 40.3834,
         "lng": 49.8932,
         "gdp": 74.3,
-        "pop": 10.2,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -1948,9 +1948,9 @@ const COUNTRIES = {
                 "rank": 83
             },
             "tourism": {
-                "size": 1,
+                "size": 1.9,
                 "growth": 5.2,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -1961,7 +1961,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 86
+                "rank": 77
             },
             "education": {
                 "size": 1.6,
@@ -1995,7 +1995,7 @@ const COUNTRIES = {
         "lat": 50.8371,
         "lng": 4.36761,
         "gdp": 671.4,
-        "pop": 11.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -2160,9 +2160,9 @@ const COUNTRIES = {
                 "rank": 22
             },
             "tourism": {
-                "size": 9.7,
+                "size": 17.5,
                 "growth": 4.0,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -2173,7 +2173,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 29
+                "rank": 22
             },
             "education": {
                 "size": 25.3,
@@ -2207,7 +2207,7 @@ const COUNTRIES = {
         "lat": 6.4779,
         "lng": 2.6323,
         "gdp": 21.5,
-        "pop": 14.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -2385,7 +2385,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 87
+                "rank": 97
             },
             "education": {
                 "size": 1,
@@ -2419,7 +2419,7 @@ const COUNTRIES = {
         "lat": 12.3605,
         "lng": -1.53395,
         "gdp": 23.1,
-        "pop": 23.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -2597,7 +2597,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 88
+                "rank": 98
             },
             "education": {
                 "size": 1,
@@ -2631,7 +2631,7 @@ const COUNTRIES = {
         "lat": 23.7055,
         "lng": 90.4113,
         "gdp": 450.1,
-        "pop": 173.6,
+        "pop": 0,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -2796,9 +2796,9 @@ const COUNTRIES = {
                 "rank": 36
             },
             "tourism": {
-                "size": 2.3,
+                "size": 9.0,
                 "growth": 5.8,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -2809,7 +2809,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 54
+                "rank": 37
             },
             "education": {
                 "size": 6.6,
@@ -2843,7 +2843,7 @@ const COUNTRIES = {
         "lat": 42.7105,
         "lng": 23.3238,
         "gdp": 113.3,
-        "pop": 6.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -3008,7 +3008,7 @@ const COUNTRIES = {
                 "rank": 65
             },
             "tourism": {
-                "size": 2.3,
+                "size": 2.9,
                 "growth": 5.0,
                 "potential": 83,
                 "oppo": [
@@ -3021,7 +3021,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 55
+                "rank": 62
             },
             "education": {
                 "size": 3.1,
@@ -3055,7 +3055,7 @@ const COUNTRIES = {
         "lat": 26.1921,
         "lng": 50.5354,
         "gdp": 47.1,
-        "pop": 1.6,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -3233,7 +3233,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 89
+                "rank": 99
             },
             "education": {
                 "size": 1,
@@ -3267,7 +3267,7 @@ const COUNTRIES = {
         "lat": 43.8607,
         "lng": 18.4214,
         "gdp": 29.6,
-        "pop": 3.2,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -3445,7 +3445,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 90
+                "rank": 100
             },
             "education": {
                 "size": 1,
@@ -3479,7 +3479,7 @@ const COUNTRIES = {
         "lat": 53.9678,
         "lng": 27.5766,
         "gdp": 76.0,
-        "pop": 9.1,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -3644,9 +3644,9 @@ const COUNTRIES = {
                 "rank": 84
             },
             "tourism": {
-                "size": 1,
+                "size": 2.0,
                 "growth": 5.2,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -3657,7 +3657,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 91
+                "rank": 75
             },
             "education": {
                 "size": 2.3,
@@ -3691,7 +3691,7 @@ const COUNTRIES = {
         "lat": -13.9908,
         "lng": -66.1936,
         "gdp": 54.9,
-        "pop": 12.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -3856,7 +3856,7 @@ const COUNTRIES = {
                 "rank": 87
             },
             "tourism": {
-                "size": 1,
+                "size": 1.1,
                 "growth": 4.1,
                 "potential": 70,
                 "oppo": [
@@ -3869,7 +3869,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 92
+                "rank": 88
             },
             "education": {
                 "size": 2.7,
@@ -3903,7 +3903,7 @@ const COUNTRIES = {
         "lat": -15.7801,
         "lng": -47.9292,
         "gdp": 2185.8,
-        "pop": 212.0,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -4068,9 +4068,9 @@ const COUNTRIES = {
                 "rank": 11
             },
             "tourism": {
-                "size": 10.9,
+                "size": 43.7,
                 "growth": 5.0,
-                "potential": 81,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -4081,7 +4081,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 27
+                "rank": 12
             },
             "education": {
                 "size": 73.7,
@@ -4115,7 +4115,7 @@ const COUNTRIES = {
         "lat": 4.94199,
         "lng": 114.946,
         "gdp": 15.3,
-        "pop": 0.5,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -4293,7 +4293,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 93
+                "rank": 101
             },
             "education": {
                 "size": 1,
@@ -4327,7 +4327,7 @@ const COUNTRIES = {
         "lat": -24.6544,
         "lng": 25.9201,
         "gdp": 19.4,
-        "pop": 2.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -4505,7 +4505,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 94
+                "rank": 102
             },
             "education": {
                 "size": 1,
@@ -4539,7 +4539,7 @@ const COUNTRIES = {
         "lat": 45.4215,
         "lng": -75.6919,
         "gdp": 2243.6,
-        "pop": 41.3,
+        "pop": 0,
         "region": "North America",
         "income": "High income",
         "industries": {
@@ -4717,7 +4717,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 10
             },
             "education": {
                 "size": 65.7,
@@ -4751,7 +4751,7 @@ const COUNTRIES = {
         "lat": 46.948,
         "lng": 7.44821,
         "gdp": 936.6,
-        "pop": 9.0,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -4916,7 +4916,7 @@ const COUNTRIES = {
                 "rank": 20
             },
             "tourism": {
-                "size": 13.0,
+                "size": 24.4,
                 "growth": 4.1,
                 "potential": 84,
                 "oppo": [
@@ -4929,7 +4929,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 20
             },
             "education": {
                 "size": 27.7,
@@ -4963,7 +4963,7 @@ const COUNTRIES = {
         "lat": -33.475,
         "lng": -70.6475,
         "gdp": 330.3,
-        "pop": 19.8,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -5128,9 +5128,9 @@ const COUNTRIES = {
                 "rank": 44
             },
             "tourism": {
-                "size": 1.7,
+                "size": 6.6,
                 "growth": 4.7,
-                "potential": 82,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -5141,7 +5141,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 66
+                "rank": 48
             },
             "education": {
                 "size": 9.7,
@@ -5175,7 +5175,7 @@ const COUNTRIES = {
         "lat": 40.0495,
         "lng": 116.286,
         "gdp": 18743.8,
-        "pop": 1409.0,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -5353,7 +5353,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 1
+                "rank": 2
             },
             "education": {
                 "size": 450.0,
@@ -5387,7 +5387,7 @@ const COUNTRIES = {
         "lat": 5.332,
         "lng": -4.0305,
         "gdp": 87.1,
-        "pop": 31.9,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -5552,9 +5552,9 @@ const COUNTRIES = {
                 "rank": 77
             },
             "tourism": {
-                "size": 1,
+                "size": 1.7,
                 "growth": 6.5,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -5565,7 +5565,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 95
+                "rank": 80
             },
             "education": {
                 "size": 1.8,
@@ -5599,7 +5599,7 @@ const COUNTRIES = {
         "lat": 3.8721,
         "lng": 11.5174,
         "gdp": 53.3,
-        "pop": 29.1,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -5764,7 +5764,7 @@ const COUNTRIES = {
                 "rank": 88
             },
             "tourism": {
-                "size": 1,
+                "size": 1.1,
                 "growth": 5.5,
                 "potential": 73,
                 "oppo": [
@@ -5777,7 +5777,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 96
+                "rank": 89
             },
             "education": {
                 "size": 1,
@@ -5811,7 +5811,7 @@ const COUNTRIES = {
         "lat": -4.325,
         "lng": 15.3222,
         "gdp": 71.0,
-        "pop": 109.3,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -5976,9 +5976,9 @@ const COUNTRIES = {
                 "rank": 86
             },
             "tourism": {
-                "size": 1,
+                "size": 1.4,
                 "growth": 6.6,
-                "potential": 63,
+                "potential": 64,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -5989,7 +5989,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 97
+                "rank": 86
             },
             "education": {
                 "size": 1.2,
@@ -6022,7 +6022,7 @@ const COUNTRIES = {
         "lat": -4.2767,
         "lng": 15.2662,
         "gdp": 15.7,
-        "pop": 6.3,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -6200,7 +6200,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 98
+                "rank": 103
             },
             "education": {
                 "size": 1,
@@ -6234,7 +6234,7 @@ const COUNTRIES = {
         "lat": 4.60987,
         "lng": -74.082,
         "gdp": 418.8,
-        "pop": 52.9,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -6399,9 +6399,9 @@ const COUNTRIES = {
                 "rank": 38
             },
             "tourism": {
-                "size": 2.1,
+                "size": 8.4,
                 "growth": 4.2,
-                "potential": 77,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -6412,7 +6412,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 59
+                "rank": 39
             },
             "education": {
                 "size": 13.2,
@@ -6446,7 +6446,7 @@ const COUNTRIES = {
         "lat": 9.63701,
         "lng": -84.0089,
         "gdp": 95.4,
-        "pop": 5.1,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -6611,7 +6611,7 @@ const COUNTRIES = {
                 "rank": 72
             },
             "tourism": {
-                "size": 1.5,
+                "size": 1.9,
                 "growth": 5.3,
                 "potential": 83,
                 "oppo": [
@@ -6624,7 +6624,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 70
+                "rank": 78
             },
             "education": {
                 "size": 3.6,
@@ -6658,7 +6658,7 @@ const COUNTRIES = {
         "lat": 23.1333,
         "lng": -82.3667,
         "gdp": 107.4,
-        "pop": 11.0,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -6823,9 +6823,9 @@ const COUNTRIES = {
                 "rank": 68
             },
             "tourism": {
-                "size": 1.2,
+                "size": 2.1,
                 "growth": 3.6,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -6836,7 +6836,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 76
+                "rank": 72
             },
             "education": {
                 "size": 5.4,
@@ -6869,7 +6869,7 @@ const COUNTRIES = {
         "lat": 35.1676,
         "lng": 33.3736,
         "gdp": 37.6,
-        "pop": 1.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -7047,7 +7047,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 99
+                "rank": 104
             },
             "education": {
                 "size": 1.1,
@@ -7081,7 +7081,7 @@ const COUNTRIES = {
         "lat": 50.0878,
         "lng": 14.4205,
         "gdp": 347.0,
-        "pop": 10.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -7246,9 +7246,9 @@ const COUNTRIES = {
                 "rank": 43
             },
             "tourism": {
-                "size": 5.1,
+                "size": 9.0,
                 "growth": 4.1,
-                "potential": 82,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -7259,7 +7259,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 39
+                "rank": 38
             },
             "education": {
                 "size": 9.0,
@@ -7293,7 +7293,7 @@ const COUNTRIES = {
         "lat": 52.5235,
         "lng": 13.4115,
         "gdp": 4685.6,
-        "pop": 83.5,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -7458,7 +7458,7 @@ const COUNTRIES = {
                 "rank": 4
             },
             "tourism": {
-                "size": 75.9,
+                "size": 121.8,
                 "growth": 3.6,
                 "potential": 85,
                 "oppo": [
@@ -7471,7 +7471,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 4
+                "rank": 3
             },
             "education": {
                 "size": 147.3,
@@ -7505,7 +7505,7 @@ const COUNTRIES = {
         "lat": 55.6763,
         "lng": 12.5681,
         "gdp": 424.5,
-        "pop": 6.0,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -7670,7 +7670,7 @@ const COUNTRIES = {
                 "rank": 37
             },
             "tourism": {
-                "size": 11.8,
+                "size": 11.0,
                 "growth": 5.0,
                 "potential": 85,
                 "oppo": [
@@ -7683,7 +7683,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 29
             },
             "education": {
                 "size": 16.2,
@@ -7717,7 +7717,7 @@ const COUNTRIES = {
         "lat": 18.479,
         "lng": -69.8908,
         "gdp": 124.3,
-        "pop": 11.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -7882,9 +7882,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "tourism": {
-                "size": 7.6,
+                "size": 2.5,
                 "growth": 5.6,
-                "potential": 82,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -7895,7 +7895,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 31
+                "rank": 63
             },
             "education": {
                 "size": 2.8,
@@ -7929,7 +7929,7 @@ const COUNTRIES = {
         "lat": 36.7397,
         "lng": 3.05097,
         "gdp": 269.3,
-        "pop": 46.8,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -8094,9 +8094,9 @@ const COUNTRIES = {
                 "rank": 51
             },
             "tourism": {
-                "size": 1.3,
+                "size": 5.4,
                 "growth": 5.1,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -8107,7 +8107,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 73
+                "rank": 52
             },
             "education": {
                 "size": 9.1,
@@ -8141,7 +8141,7 @@ const COUNTRIES = {
         "lat": -0.229498,
         "lng": -78.5243,
         "gdp": 124.7,
-        "pop": 18.1,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -8306,9 +8306,9 @@ const COUNTRIES = {
                 "rank": 62
             },
             "tourism": {
-                "size": 1,
+                "size": 2.5,
                 "growth": 3.6,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -8319,7 +8319,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 100
+                "rank": 64
             },
             "education": {
                 "size": 2.9,
@@ -8353,7 +8353,7 @@ const COUNTRIES = {
         "lat": 30.0982,
         "lng": 31.2461,
         "gdp": 389.1,
-        "pop": 116.5,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -8518,9 +8518,9 @@ const COUNTRIES = {
                 "rank": 40
             },
             "tourism": {
-                "size": 4.9,
+                "size": 7.8,
                 "growth": 5.1,
-                "potential": 74,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -8531,7 +8531,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 40
+                "rank": 43
             },
             "education": {
                 "size": 7.8,
@@ -8565,7 +8565,7 @@ const COUNTRIES = {
         "lat": 40.4167,
         "lng": -3.70327,
         "gdp": 1725.7,
-        "pop": 48.8,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -8743,7 +8743,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 11
             },
             "education": {
                 "size": 47.5,
@@ -8777,7 +8777,7 @@ const COUNTRIES = {
         "lat": 59.4392,
         "lng": 24.7586,
         "gdp": 43.1,
-        "pop": 1.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -8955,7 +8955,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 78
+                "rank": 90
             },
             "education": {
                 "size": 1.3,
@@ -8989,7 +8989,7 @@ const COUNTRIES = {
         "lat": 9.02274,
         "lng": 38.7468,
         "gdp": 149.7,
-        "pop": 132.1,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Not classified",
         "industries": {
@@ -9154,9 +9154,9 @@ const COUNTRIES = {
                 "rank": 59
             },
             "tourism": {
-                "size": 2.3,
+                "size": 3.0,
                 "growth": 6.6,
-                "potential": 64,
+                "potential": 65,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -9167,7 +9167,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 56
+                "rank": 60
             },
             "education": {
                 "size": 2.1,
@@ -9201,7 +9201,7 @@ const COUNTRIES = {
         "lat": 60.1608,
         "lng": 24.9525,
         "gdp": 298.7,
-        "pop": 5.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -9366,9 +9366,9 @@ const COUNTRIES = {
                 "rank": 47
             },
             "tourism": {
-                "size": 2.3,
+                "size": 7.8,
                 "growth": 3.8,
-                "potential": 81,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9379,7 +9379,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 57
+                "rank": 44
             },
             "education": {
                 "size": 11.4,
@@ -9413,7 +9413,7 @@ const COUNTRIES = {
         "lat": 48.8566,
         "lng": 2.35097,
         "gdp": 3160.4,
-        "pop": 68.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -9578,9 +9578,9 @@ const COUNTRIES = {
                 "rank": 7
             },
             "tourism": {
-                "size": 46.7,
+                "size": 82.2,
                 "growth": 4.1,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9625,7 +9625,7 @@ const COUNTRIES = {
         "lat": 0.38832,
         "lng": 9.45162,
         "gdp": 20.9,
-        "pop": 2.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -9803,7 +9803,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 101
+                "rank": 105
             },
             "education": {
                 "size": 1,
@@ -9837,7 +9837,7 @@ const COUNTRIES = {
         "lat": 51.5002,
         "lng": -0.126236,
         "gdp": 3686.0,
-        "pop": 69.2,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -10015,7 +10015,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 3
+                "rank": 4
             },
             "education": {
                 "size": 130.6,
@@ -10049,7 +10049,7 @@ const COUNTRIES = {
         "lat": 41.71,
         "lng": 44.793,
         "gdp": 34.2,
-        "pop": 3.7,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -10227,7 +10227,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 102
+                "rank": 106
             },
             "education": {
                 "size": 1,
@@ -10261,7 +10261,7 @@ const COUNTRIES = {
         "lat": 5.57045,
         "lng": -0.20795,
         "gdp": 82.3,
-        "pop": 34.4,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -10426,7 +10426,7 @@ const COUNTRIES = {
                 "rank": 80
             },
             "tourism": {
-                "size": 1,
+                "size": 1.6,
                 "growth": 6.3,
                 "potential": 75,
                 "oppo": [
@@ -10439,7 +10439,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 103
+                "rank": 82
             },
             "education": {
                 "size": 1.4,
@@ -10473,7 +10473,7 @@ const COUNTRIES = {
         "lat": 9.51667,
         "lng": -13.7,
         "gdp": 25.0,
-        "pop": 14.8,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -10651,7 +10651,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 104
+                "rank": 107
             },
             "education": {
                 "size": 1,
@@ -10685,7 +10685,7 @@ const COUNTRIES = {
         "lat": 3.7523,
         "lng": 8.7741,
         "gdp": 12.8,
-        "pop": 1.9,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -10863,7 +10863,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 105
+                "rank": 108
             },
             "education": {
                 "size": 1,
@@ -10897,7 +10897,7 @@ const COUNTRIES = {
         "lat": 37.9792,
         "lng": 23.7166,
         "gdp": 256.2,
-        "pop": 10.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -11062,9 +11062,9 @@ const COUNTRIES = {
                 "rank": 52
             },
             "tourism": {
-                "size": 8.1,
+                "size": 6.7,
                 "growth": 4.4,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -11075,7 +11075,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 30
+                "rank": 47
             },
             "education": {
                 "size": 5.2,
@@ -11109,7 +11109,7 @@ const COUNTRIES = {
         "lat": 14.6248,
         "lng": -90.5328,
         "gdp": 113.2,
-        "pop": 18.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -11274,9 +11274,9 @@ const COUNTRIES = {
                 "rank": 66
             },
             "tourism": {
-                "size": 1,
+                "size": 2.3,
                 "growth": 5.1,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -11287,7 +11287,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 106
+                "rank": 69
             },
             "education": {
                 "size": 2.1,
@@ -11321,7 +11321,7 @@ const COUNTRIES = {
         "lat": 6.80461,
         "lng": -58.1548,
         "gdp": 24.7,
-        "pop": 0.8,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -11499,7 +11499,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 107
+                "rank": 109
             },
             "education": {
                 "size": 1,
@@ -11532,7 +11532,7 @@ const COUNTRIES = {
         "lat": 15.1333,
         "lng": -87.4667,
         "gdp": 37.1,
-        "pop": 10.8,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -11710,7 +11710,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 108
+                "rank": 110
             },
             "education": {
                 "size": 1,
@@ -11744,7 +11744,7 @@ const COUNTRIES = {
         "lat": 45.8069,
         "lng": 15.9614,
         "gdp": 93.0,
-        "pop": 3.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -11909,9 +11909,9 @@ const COUNTRIES = {
                 "rank": 73
             },
             "tourism": {
-                "size": 7.3,
+                "size": 2.4,
                 "growth": 5.1,
-                "potential": 85,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -11922,7 +11922,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 32
+                "rank": 65
             },
             "education": {
                 "size": 2.3,
@@ -11956,7 +11956,7 @@ const COUNTRIES = {
         "lat": 18.5392,
         "lng": -72.3288,
         "gdp": 25.2,
-        "pop": 11.8,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -12134,7 +12134,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 109
+                "rank": 111
             },
             "education": {
                 "size": 1,
@@ -12168,7 +12168,7 @@ const COUNTRIES = {
         "lat": 47.4984,
         "lng": 19.0408,
         "gdp": 222.7,
-        "pop": 9.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -12333,7 +12333,7 @@ const COUNTRIES = {
                 "rank": 54
             },
             "tourism": {
-                "size": 5.5,
+                "size": 5.8,
                 "growth": 3.8,
                 "potential": 82,
                 "oppo": [
@@ -12346,7 +12346,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 36
+                "rank": 49
             },
             "education": {
                 "size": 5.1,
@@ -12380,7 +12380,7 @@ const COUNTRIES = {
         "lat": -6.19752,
         "lng": 106.83,
         "gdp": 1396.3,
-        "pop": 283.5,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -12545,9 +12545,9 @@ const COUNTRIES = {
                 "rank": 16
             },
             "tourism": {
-                "size": 7.0,
+                "size": 27.9,
                 "growth": 5.6,
-                "potential": 82,
+                "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -12558,7 +12558,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 33
+                "rank": 18
             },
             "education": {
                 "size": 10.7,
@@ -12592,7 +12592,7 @@ const COUNTRIES = {
         "lat": 28.6353,
         "lng": 77.225,
         "gdp": 3909.9,
-        "pop": 1450.9,
+        "pop": 0,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -12757,9 +12757,9 @@ const COUNTRIES = {
                 "rank": 5
             },
             "tourism": {
-                "size": 19.5,
+                "size": 78.2,
                 "growth": 6.7,
-                "potential": 79,
+                "potential": 81,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -12770,7 +12770,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 14
+                "rank": 7
             },
             "education": {
                 "size": 115.4,
@@ -12804,7 +12804,7 @@ const COUNTRIES = {
         "lat": 53.3441,
         "lng": -6.26749,
         "gdp": 609.2,
-        "pop": 5.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -12969,9 +12969,9 @@ const COUNTRIES = {
                 "rank": 26
             },
             "tourism": {
-                "size": 5.4,
+                "size": 15.8,
                 "growth": 4.6,
-                "potential": 83,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -12982,7 +12982,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 37
+                "rank": 23
             },
             "education": {
                 "size": 10.6,
@@ -13016,7 +13016,7 @@ const COUNTRIES = {
         "lat": 35.6878,
         "lng": 51.4447,
         "gdp": 475.3,
-        "pop": 91.6,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -13181,9 +13181,9 @@ const COUNTRIES = {
                 "rank": 35
             },
             "tourism": {
-                "size": 5.3,
+                "size": 9.5,
                 "growth": 5.1,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -13194,7 +13194,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 38
+                "rank": 34
             },
             "education": {
                 "size": 8.1,
@@ -13228,7 +13228,7 @@ const COUNTRIES = {
         "lat": 33.3302,
         "lng": 44.394,
         "gdp": 279.6,
-        "pop": 46.0,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -13393,9 +13393,9 @@ const COUNTRIES = {
                 "rank": 50
             },
             "tourism": {
-                "size": 1.4,
+                "size": 5.6,
                 "growth": 3.6,
-                "potential": 76,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -13406,7 +13406,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 71
+                "rank": 51
             },
             "education": {
                 "size": 5.6,
@@ -13440,7 +13440,7 @@ const COUNTRIES = {
         "lat": 64.1353,
         "lng": -21.8952,
         "gdp": 33.3,
-        "pop": 0.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -13618,7 +13618,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 110
+                "rank": 112
             },
             "education": {
                 "size": 1.5,
@@ -13652,7 +13652,7 @@ const COUNTRIES = {
         "lat": 31.7717,
         "lng": 35.2035,
         "gdp": 540.4,
-        "pop": 10.0,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -13817,9 +13817,9 @@ const COUNTRIES = {
                 "rank": 31
             },
             "tourism": {
-                "size": 2.7,
+                "size": 10.8,
                 "growth": 3.9,
-                "potential": 81,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13830,7 +13830,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 47
+                "rank": 31
             },
             "education": {
                 "size": 19.2,
@@ -13864,7 +13864,7 @@ const COUNTRIES = {
         "lat": 41.8955,
         "lng": 12.4823,
         "gdp": 2380.8,
-        "pop": 59.0,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -14029,9 +14029,9 @@ const COUNTRIES = {
                 "rank": 8
             },
             "tourism": {
-                "size": 26.6,
+                "size": 61.9,
                 "growth": 3.9,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14076,7 +14076,7 @@ const COUNTRIES = {
         "lat": 17.9927,
         "lng": -76.792,
         "gdp": 22.0,
-        "pop": 2.8,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -14254,7 +14254,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 111
+                "rank": 113
             },
             "education": {
                 "size": 1,
@@ -14287,7 +14287,7 @@ const COUNTRIES = {
         "lat": 31.9497,
         "lng": 35.9263,
         "gdp": 53.4,
-        "pop": 11.6,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -14452,9 +14452,9 @@ const COUNTRIES = {
                 "rank": 89
             },
             "tourism": {
-                "size": 1.7,
+                "size": 1.1,
                 "growth": 5.1,
-                "potential": 73,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14465,7 +14465,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 67
+                "rank": 91
             },
             "education": {
                 "size": 1.1,
@@ -14499,7 +14499,7 @@ const COUNTRIES = {
         "lat": 35.67,
         "lng": 139.77,
         "gdp": 4027.6,
-        "pop": 124.0,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -14664,9 +14664,9 @@ const COUNTRIES = {
                 "rank": 3
             },
             "tourism": {
-                "size": 20.1,
+                "size": 80.6,
                 "growth": 3.6,
-                "potential": 83,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14677,7 +14677,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 12
+                "rank": 6
             },
             "education": {
                 "size": 80.6,
@@ -14711,7 +14711,7 @@ const COUNTRIES = {
         "lat": 51.1879,
         "lng": 71.4382,
         "gdp": 291.5,
-        "pop": 20.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -14876,9 +14876,9 @@ const COUNTRIES = {
                 "rank": 48
             },
             "tourism": {
-                "size": 1.9,
+                "size": 7.6,
                 "growth": 5.6,
-                "potential": 80,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14889,7 +14889,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 60
+                "rank": 45
             },
             "education": {
                 "size": 8.5,
@@ -14923,7 +14923,7 @@ const COUNTRIES = {
         "lat": -1.27975,
         "lng": 36.8126,
         "gdp": 120.3,
-        "pop": 56.4,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -15088,7 +15088,7 @@ const COUNTRIES = {
                 "rank": 63
             },
             "tourism": {
-                "size": 1.8,
+                "size": 2.4,
                 "growth": 6.0,
                 "potential": 75,
                 "oppo": [
@@ -15101,7 +15101,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 62
+                "rank": 66
             },
             "education": {
                 "size": 2.9,
@@ -15135,7 +15135,7 @@ const COUNTRIES = {
         "lat": 42.8851,
         "lng": 74.6057,
         "gdp": 17.5,
-        "pop": 7.2,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -15313,7 +15313,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 112
+                "rank": 114
             },
             "education": {
                 "size": 1,
@@ -15347,7 +15347,7 @@ const COUNTRIES = {
         "lat": 11.5556,
         "lng": 104.874,
         "gdp": 46.4,
-        "pop": 17.6,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -15512,7 +15512,7 @@ const COUNTRIES = {
                 "rank": 90
             },
             "tourism": {
-                "size": 1.1,
+                "size": 1,
                 "growth": 6.5,
                 "potential": 75,
                 "oppo": [
@@ -15525,7 +15525,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 79
+                "rank": 115
             },
             "education": {
                 "size": 1,
@@ -15559,7 +15559,7 @@ const COUNTRIES = {
         "lat": 37.5323,
         "lng": 126.957,
         "gdp": 1875.4,
-        "pop": 51.8,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -15724,9 +15724,9 @@ const COUNTRIES = {
                 "rank": 9
             },
             "tourism": {
-                "size": 11.8,
+                "size": 37.5,
                 "growth": 4.4,
-                "potential": 84,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15737,7 +15737,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 24
+                "rank": 13
             },
             "education": {
                 "size": 65.4,
@@ -15771,7 +15771,7 @@ const COUNTRIES = {
         "lat": 29.3721,
         "lng": 47.9824,
         "gdp": 160.2,
-        "pop": 4.9,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -15936,9 +15936,9 @@ const COUNTRIES = {
                 "rank": 57
             },
             "tourism": {
-                "size": 1,
+                "size": 3.2,
                 "growth": 3.6,
-                "potential": 79,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15949,7 +15949,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 113
+                "rank": 58
             },
             "education": {
                 "size": 6.2,
@@ -15983,7 +15983,7 @@ const COUNTRIES = {
         "lat": 18.5826,
         "lng": 102.177,
         "gdp": 16.5,
-        "pop": 7.8,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -16161,7 +16161,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 114
+                "rank": 116
             },
             "education": {
                 "size": 1,
@@ -16194,7 +16194,7 @@ const COUNTRIES = {
         "lat": 33.8872,
         "lng": 35.5134,
         "gdp": 20.1,
-        "pop": 5.8,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -16359,9 +16359,9 @@ const COUNTRIES = {
                 "rank": 115
             },
             "tourism": {
-                "size": 2.4,
+                "size": 1,
                 "growth": 4.1,
-                "potential": 71,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16372,7 +16372,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 52
+                "rank": 117
             },
             "education": {
                 "size": 1,
@@ -16406,7 +16406,7 @@ const COUNTRIES = {
         "lat": 32.8578,
         "lng": 13.1072,
         "gdp": 48.5,
-        "pop": 7.4,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -16584,7 +16584,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 115
+                "rank": 118
             },
             "education": {
                 "size": 1,
@@ -16618,7 +16618,7 @@ const COUNTRIES = {
         "lat": 6.92148,
         "lng": 79.8528,
         "gdp": 99.0,
-        "pop": 21.9,
+        "pop": 0,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -16783,9 +16783,9 @@ const COUNTRIES = {
                 "rank": 71
             },
             "tourism": {
-                "size": 1.1,
+                "size": 2.0,
                 "growth": 6.1,
-                "potential": 74,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16796,7 +16796,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 80
+                "rank": 76
             },
             "education": {
                 "size": 1.3,
@@ -16830,7 +16830,7 @@ const COUNTRIES = {
         "lat": 54.6896,
         "lng": 25.2799,
         "gdp": 84.9,
-        "pop": 2.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17008,7 +17008,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 58
+                "rank": 71
             },
             "education": {
                 "size": 2.2,
@@ -17042,7 +17042,7 @@ const COUNTRIES = {
         "lat": 49.61,
         "lng": 6.1296,
         "gdp": 93.3,
-        "pop": 0.7,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17207,9 +17207,9 @@ const COUNTRIES = {
                 "rank": 74
             },
             "tourism": {
-                "size": 5.8,
+                "size": 2.4,
                 "growth": 3.7,
-                "potential": 82,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17220,7 +17220,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 35
+                "rank": 67
             },
             "education": {
                 "size": 2.1,
@@ -17254,7 +17254,7 @@ const COUNTRIES = {
         "lat": 56.9465,
         "lng": 24.1048,
         "gdp": 43.7,
-        "pop": 1.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17432,7 +17432,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 81
+                "rank": 92
             },
             "education": {
                 "size": 1.1,
@@ -17466,7 +17466,7 @@ const COUNTRIES = {
         "lat": 33.9905,
         "lng": -6.8704,
         "gdp": 160.6,
-        "pop": 38.1,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -17631,7 +17631,7 @@ const COUNTRIES = {
                 "rank": 58
             },
             "tourism": {
-                "size": 4.5,
+                "size": 3.2,
                 "growth": 5.6,
                 "potential": 75,
                 "oppo": [
@@ -17644,7 +17644,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 41
+                "rank": 59
             },
             "education": {
                 "size": 5.8,
@@ -17678,7 +17678,7 @@ const COUNTRIES = {
         "lat": 47.0167,
         "lng": 28.8497,
         "gdp": 18.2,
-        "pop": 2.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -17856,7 +17856,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 116
+                "rank": 119
             },
             "education": {
                 "size": 1,
@@ -17890,7 +17890,7 @@ const COUNTRIES = {
         "lat": -20.4667,
         "lng": 45.7167,
         "gdp": 17.4,
-        "pop": 32.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -18068,7 +18068,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 117
+                "rank": 120
             },
             "education": {
                 "size": 1,
@@ -18102,7 +18102,7 @@ const COUNTRIES = {
         "lat": 19.427,
         "lng": -99.1276,
         "gdp": 1856.4,
-        "pop": 130.9,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -18267,9 +18267,9 @@ const COUNTRIES = {
                 "rank": 14
             },
             "tourism": {
-                "size": 11.4,
+                "size": 37.1,
                 "growth": 4.2,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18280,7 +18280,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 25
+                "rank": 14
             },
             "education": {
                 "size": 45.3,
@@ -18314,7 +18314,7 @@ const COUNTRIES = {
         "lat": 42.0024,
         "lng": 21.4361,
         "gdp": 17.0,
-        "pop": 1.8,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -18492,7 +18492,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 118
+                "rank": 121
             },
             "education": {
                 "size": 1,
@@ -18526,7 +18526,7 @@ const COUNTRIES = {
         "lat": 13.5667,
         "lng": -7.50034,
         "gdp": 26.8,
-        "pop": 24.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -18704,7 +18704,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 119
+                "rank": 122
             },
             "education": {
                 "size": 1,
@@ -18738,7 +18738,7 @@ const COUNTRIES = {
         "lat": 21.914,
         "lng": 95.9562,
         "gdp": 74.1,
-        "pop": 54.5,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -18903,7 +18903,7 @@ const COUNTRIES = {
                 "rank": 75
             },
             "tourism": {
-                "size": 2.5,
+                "size": 1.5,
                 "growth": 4.1,
                 "potential": 71,
                 "oppo": [
@@ -18916,7 +18916,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 50
+                "rank": 85
             },
             "education": {
                 "size": 1,
@@ -18949,7 +18949,7 @@ const COUNTRIES = {
         "lat": 42.4602,
         "lng": 19.2595,
         "gdp": 8.3,
-        "pop": 0.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -19127,7 +19127,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 120
+                "rank": 123
             },
             "education": {
                 "size": 1,
@@ -19161,7 +19161,7 @@ const COUNTRIES = {
         "lat": 47.9129,
         "lng": 106.937,
         "gdp": 23.8,
-        "pop": 3.5,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -19339,7 +19339,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 121
+                "rank": 124
             },
             "education": {
                 "size": 1,
@@ -19373,7 +19373,7 @@ const COUNTRIES = {
         "lat": -25.9664,
         "lng": 32.5713,
         "gdp": 22.7,
-        "pop": 34.6,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -19551,7 +19551,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 122
+                "rank": 125
             },
             "education": {
                 "size": 1,
@@ -19585,7 +19585,7 @@ const COUNTRIES = {
         "lat": 18.2367,
         "lng": -15.9824,
         "gdp": 10.9,
-        "pop": 5.2,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -19763,7 +19763,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 123
+                "rank": 126
             },
             "education": {
                 "size": 1,
@@ -19797,7 +19797,7 @@ const COUNTRIES = {
         "lat": -20.1605,
         "lng": 57.4977,
         "gdp": 14.9,
-        "pop": 1.2,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -19975,7 +19975,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 124
+                "rank": 127
             },
             "education": {
                 "size": 1,
@@ -20009,7 +20009,7 @@ const COUNTRIES = {
         "lat": -13.9899,
         "lng": 33.7703,
         "gdp": 11.3,
-        "pop": 21.7,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -20187,7 +20187,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 125
+                "rank": 128
             },
             "education": {
                 "size": 1,
@@ -20221,7 +20221,7 @@ const COUNTRIES = {
         "lat": 3.12433,
         "lng": 101.684,
         "gdp": 422.2,
-        "pop": 35.6,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -20386,9 +20386,9 @@ const COUNTRIES = {
                 "rank": 33
             },
             "tourism": {
-                "size": 3.4,
+                "size": 8.4,
                 "growth": 5.6,
-                "potential": 81,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20399,7 +20399,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 42
+                "rank": 40
             },
             "education": {
                 "size": 8.9,
@@ -20433,7 +20433,7 @@ const COUNTRIES = {
         "lat": -22.5648,
         "lng": 17.0931,
         "gdp": 13.4,
-        "pop": 3.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -20611,7 +20611,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 126
+                "rank": 129
             },
             "education": {
                 "size": 1,
@@ -20645,7 +20645,7 @@ const COUNTRIES = {
         "lat": 13.514,
         "lng": 2.1073,
         "gdp": 19.9,
-        "pop": 27.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -20823,7 +20823,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 127
+                "rank": 130
             },
             "education": {
                 "size": 1,
@@ -20857,7 +20857,7 @@ const COUNTRIES = {
         "lat": 9.05804,
         "lng": 7.48906,
         "gdp": 252.3,
-        "pop": 232.7,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -21022,9 +21022,9 @@ const COUNTRIES = {
                 "rank": 53
             },
             "tourism": {
-                "size": 1.3,
+                "size": 5.0,
                 "growth": 5.7,
-                "potential": 74,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21035,7 +21035,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 74
+                "rank": 54
             },
             "education": {
                 "size": 1,
@@ -21068,7 +21068,7 @@ const COUNTRIES = {
         "lat": 12.1475,
         "lng": -86.2734,
         "gdp": 19.7,
-        "pop": 6.9,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -21246,7 +21246,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 128
+                "rank": 131
             },
             "education": {
                 "size": 1,
@@ -21280,7 +21280,7 @@ const COUNTRIES = {
         "lat": 52.3738,
         "lng": 4.89095,
         "gdp": 1214.9,
-        "pop": 18.0,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -21445,9 +21445,9 @@ const COUNTRIES = {
                 "rank": 19
             },
             "tourism": {
-                "size": 14.2,
+                "size": 31.6,
                 "growth": 4.0,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21458,7 +21458,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 19
+                "rank": 17
             },
             "education": {
                 "size": 37.8,
@@ -21492,7 +21492,7 @@ const COUNTRIES = {
         "lat": 59.9138,
         "lng": 10.7387,
         "gdp": 483.6,
-        "pop": 5.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -21657,9 +21657,9 @@ const COUNTRIES = {
                 "rank": 34
             },
             "tourism": {
-                "size": 3.1,
+                "size": 12.6,
                 "growth": 4.4,
-                "potential": 82,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21670,7 +21670,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 45
+                "rank": 27
             },
             "education": {
                 "size": 15.8,
@@ -21704,7 +21704,7 @@ const COUNTRIES = {
         "lat": 27.6939,
         "lng": 85.3157,
         "gdp": 42.9,
-        "pop": 29.7,
+        "pop": 0,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -21882,7 +21882,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 129
+                "rank": 132
             },
             "education": {
                 "size": 1.1,
@@ -21916,7 +21916,7 @@ const COUNTRIES = {
         "lat": -41.2865,
         "lng": 174.776,
         "gdp": 260.2,
-        "pop": 5.3,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -22081,9 +22081,9 @@ const COUNTRIES = {
                 "rank": 46
             },
             "tourism": {
-                "size": 11.0,
+                "size": 5.2,
                 "growth": 4.1,
-                "potential": 83,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22094,7 +22094,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 53
             },
             "education": {
                 "size": 8.2,
@@ -22128,7 +22128,7 @@ const COUNTRIES = {
         "lat": 23.6105,
         "lng": 58.5874,
         "gdp": 107.1,
-        "pop": 5.3,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -22293,9 +22293,9 @@ const COUNTRIES = {
                 "rank": 69
             },
             "tourism": {
-                "size": 1,
+                "size": 2.1,
                 "growth": 4.3,
-                "potential": 81,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22306,7 +22306,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 130
+                "rank": 73
             },
             "education": {
                 "size": 2.8,
@@ -22340,7 +22340,7 @@ const COUNTRIES = {
         "lat": 30.5167,
         "lng": 72.8,
         "gdp": 371.6,
-        "pop": 251.3,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -22505,9 +22505,9 @@ const COUNTRIES = {
                 "rank": 42
             },
             "tourism": {
-                "size": 1.9,
+                "size": 7.4,
                 "growth": 5.3,
-                "potential": 73,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -22518,7 +22518,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 61
+                "rank": 46
             },
             "education": {
                 "size": 4.3,
@@ -22552,7 +22552,7 @@ const COUNTRIES = {
         "lat": 8.99427,
         "lng": -79.5188,
         "gdp": 86.5,
-        "pop": 4.5,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -22717,7 +22717,7 @@ const COUNTRIES = {
                 "rank": 79
             },
             "tourism": {
-                "size": 1.8,
+                "size": 1.7,
                 "growth": 4.7,
                 "potential": 82,
                 "oppo": [
@@ -22730,7 +22730,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 63
+                "rank": 81
             },
             "education": {
                 "size": 1.3,
@@ -22764,7 +22764,7 @@ const COUNTRIES = {
         "lat": -12.0931,
         "lng": -77.0465,
         "gdp": 289.2,
-        "pop": 34.2,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -22929,9 +22929,9 @@ const COUNTRIES = {
                 "rank": 49
             },
             "tourism": {
-                "size": 1.4,
+                "size": 5.8,
                 "growth": 4.9,
-                "potential": 78,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22942,7 +22942,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 72
+                "rank": 50
             },
             "education": {
                 "size": 7.3,
@@ -22976,7 +22976,7 @@ const COUNTRIES = {
         "lat": 14.5515,
         "lng": 121.035,
         "gdp": 461.6,
-        "pop": 115.8,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -23141,9 +23141,9 @@ const COUNTRIES = {
                 "rank": 29
             },
             "tourism": {
-                "size": 2.8,
+                "size": 9.2,
                 "growth": 6.4,
-                "potential": 76,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23154,7 +23154,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 46
+                "rank": 36
             },
             "education": {
                 "size": 10.9,
@@ -23188,7 +23188,7 @@ const COUNTRIES = {
         "lat": -9.47357,
         "lng": 147.194,
         "gdp": 31.8,
-        "pop": 10.6,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -23366,7 +23366,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 131
+                "rank": 133
             },
             "education": {
                 "size": 1,
@@ -23399,7 +23399,7 @@ const COUNTRIES = {
         "lat": 52.26,
         "lng": 21.02,
         "gdp": 917.8,
-        "pop": 36.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -23564,9 +23564,9 @@ const COUNTRIES = {
                 "rank": 21
             },
             "tourism": {
-                "size": 10.9,
+                "size": 23.9,
                 "growth": 4.8,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23577,7 +23577,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 28
+                "rank": 21
             },
             "education": {
                 "size": 23.8,
@@ -23611,7 +23611,7 @@ const COUNTRIES = {
         "lat": 38.7072,
         "lng": -9.13552,
         "gdp": 313.3,
-        "pop": 10.7,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -23776,7 +23776,7 @@ const COUNTRIES = {
                 "rank": 45
             },
             "tourism": {
-                "size": 13.7,
+                "size": 8.1,
                 "growth": 4.5,
                 "potential": 84,
                 "oppo": [
@@ -23789,7 +23789,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 41
             },
             "education": {
                 "size": 8.6,
@@ -23823,7 +23823,7 @@ const COUNTRIES = {
         "lat": -25.3005,
         "lng": -57.6362,
         "gdp": 44.5,
-        "pop": 6.9,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -24001,7 +24001,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 132
+                "rank": 134
             },
             "education": {
                 "size": 1,
@@ -24035,7 +24035,7 @@ const COUNTRIES = {
         "lat": 25.2948,
         "lng": 51.5082,
         "gdp": 219.2,
-        "pop": 2.9,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -24200,9 +24200,9 @@ const COUNTRIES = {
                 "rank": 55
             },
             "tourism": {
-                "size": 14.3,
+                "size": 4.4,
                 "growth": 4.5,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24213,7 +24213,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 18
+                "rank": 56
             },
             "education": {
                 "size": 4.3,
@@ -24247,7 +24247,7 @@ const COUNTRIES = {
         "lat": 44.4479,
         "lng": 26.0979,
         "gdp": 382.6,
-        "pop": 19.1,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -24412,9 +24412,9 @@ const COUNTRIES = {
                 "rank": 41
             },
             "tourism": {
-                "size": 2.5,
+                "size": 9.9,
                 "growth": 4.0,
-                "potential": 81,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24425,7 +24425,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 51
+                "rank": 33
             },
             "education": {
                 "size": 7.5,
@@ -24459,7 +24459,7 @@ const COUNTRIES = {
         "lat": 55.7558,
         "lng": 37.6176,
         "gdp": 2173.8,
-        "pop": 143.5,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -24624,9 +24624,9 @@ const COUNTRIES = {
                 "rank": 12
             },
             "tourism": {
-                "size": 14.1,
+                "size": 56.5,
                 "growth": 5.3,
-                "potential": 86,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24637,7 +24637,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 9
             },
             "education": {
                 "size": 54.3,
@@ -24671,7 +24671,7 @@ const COUNTRIES = {
         "lat": -1.95325,
         "lng": 30.0587,
         "gdp": 14.3,
-        "pop": 14.3,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -24849,7 +24849,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 133
+                "rank": 135
             },
             "education": {
                 "size": 1,
@@ -24883,7 +24883,7 @@ const COUNTRIES = {
         "lat": 24.6748,
         "lng": 46.6977,
         "gdp": 1239.8,
-        "pop": 35.3,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -25048,9 +25048,9 @@ const COUNTRIES = {
                 "rank": 18
             },
             "tourism": {
-                "size": 6.2,
+                "size": 24.8,
                 "growth": 4.4,
-                "potential": 83,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -25061,7 +25061,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 34
+                "rank": 19
             },
             "education": {
                 "size": 38.0,
@@ -25095,7 +25095,7 @@ const COUNTRIES = {
         "lat": 15.5932,
         "lng": 32.5363,
         "gdp": 49.7,
-        "pop": 50.4,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -25273,7 +25273,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 134
+                "rank": 136
             },
             "education": {
                 "size": 1,
@@ -25307,7 +25307,7 @@ const COUNTRIES = {
         "lat": 14.7247,
         "lng": -17.4734,
         "gdp": 32.8,
-        "pop": 18.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -25485,7 +25485,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 135
+                "rank": 137
             },
             "education": {
                 "size": 1.2,
@@ -25519,7 +25519,7 @@ const COUNTRIES = {
         "lat": 1.28941,
         "lng": 103.85,
         "gdp": 547.4,
-        "pop": 6.0,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -25684,9 +25684,9 @@ const COUNTRIES = {
                 "rank": 23
             },
             "tourism": {
-                "size": 20.4,
+                "size": 10.9,
                 "growth": 5.4,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -25697,7 +25697,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 11
+                "rank": 30
             },
             "education": {
                 "size": 7.2,
@@ -25731,7 +25731,7 @@ const COUNTRIES = {
         "lat": 8.4821,
         "lng": -13.2134,
         "gdp": 7.0,
-        "pop": 8.6,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -25909,7 +25909,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 136
+                "rank": 138
             },
             "education": {
                 "size": 1,
@@ -25943,7 +25943,7 @@ const COUNTRIES = {
         "lat": 13.7034,
         "lng": -89.2073,
         "gdp": 35.4,
-        "pop": 6.3,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -26121,7 +26121,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 137
+                "rank": 139
             },
             "education": {
                 "size": 1,
@@ -26155,7 +26155,7 @@ const COUNTRIES = {
         "lat": 2.07515,
         "lng": 45.3254,
         "gdp": 12.0,
-        "pop": 19.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -26333,7 +26333,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 138
+                "rank": 140
             },
             "education": {
                 "size": 1,
@@ -26366,7 +26366,7 @@ const COUNTRIES = {
         "lat": 44.8024,
         "lng": 20.4656,
         "gdp": 90.1,
-        "pop": 6.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -26531,7 +26531,7 @@ const COUNTRIES = {
                 "rank": 76
             },
             "tourism": {
-                "size": 1.8,
+                "size": 2.3,
                 "growth": 5.2,
                 "potential": 79,
                 "oppo": [
@@ -26544,7 +26544,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 64
+                "rank": 70
             },
             "education": {
                 "size": 1.8,
@@ -26578,7 +26578,7 @@ const COUNTRIES = {
         "lat": 48.1484,
         "lng": 17.1073,
         "gdp": 140.9,
-        "pop": 5.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -26743,9 +26743,9 @@ const COUNTRIES = {
                 "rank": 60
             },
             "tourism": {
-                "size": 1.7,
+                "size": 3.7,
                 "growth": 4.4,
-                "potential": 81,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26756,7 +26756,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 68
+                "rank": 57
             },
             "education": {
                 "size": 3.9,
@@ -26790,7 +26790,7 @@ const COUNTRIES = {
         "lat": 46.0546,
         "lng": 14.5044,
         "gdp": 73.0,
-        "pop": 2.1,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -26955,7 +26955,7 @@ const COUNTRIES = {
                 "rank": 85
             },
             "tourism": {
-                "size": 1.8,
+                "size": 1.9,
                 "growth": 4.3,
                 "potential": 81,
                 "oppo": [
@@ -26968,7 +26968,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 65
+                "rank": 79
             },
             "education": {
                 "size": 2.3,
@@ -27002,7 +27002,7 @@ const COUNTRIES = {
         "lat": 59.3327,
         "lng": 18.0645,
         "gdp": 603.7,
-        "pop": 10.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -27180,7 +27180,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 16
+                "rank": 24
             },
             "education": {
                 "size": 26.5,
@@ -27214,7 +27214,7 @@ const COUNTRIES = {
         "lat": 33.5146,
         "lng": 36.3119,
         "gdp": 23.6,
-        "pop": 24.7,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
@@ -27392,7 +27392,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 139
+                "rank": 141
             },
             "education": {
                 "size": 1,
@@ -27426,7 +27426,7 @@ const COUNTRIES = {
         "lat": 12.1048,
         "lng": 15.0445,
         "gdp": 19.5,
-        "pop": 20.3,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -27604,7 +27604,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 140
+                "rank": 142
             },
             "education": {
                 "size": 1,
@@ -27638,7 +27638,7 @@ const COUNTRIES = {
         "lat": 6.1228,
         "lng": 1.2255,
         "gdp": 10.7,
-        "pop": 9.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -27816,7 +27816,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 141
+                "rank": 143
             },
             "education": {
                 "size": 1,
@@ -27850,7 +27850,7 @@ const COUNTRIES = {
         "lat": 13.7308,
         "lng": 100.521,
         "gdp": 526.5,
-        "pop": 71.7,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -28015,9 +28015,9 @@ const COUNTRIES = {
                 "rank": 25
             },
             "tourism": {
-                "size": 15.4,
+                "size": 10.5,
                 "growth": 4.6,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28028,7 +28028,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 17
+                "rank": 32
             },
             "education": {
                 "size": 8.0,
@@ -28062,7 +28062,7 @@ const COUNTRIES = {
         "lat": 38.5878,
         "lng": 68.7864,
         "gdp": 14.2,
-        "pop": 10.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -28240,7 +28240,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 142
+                "rank": 144
             },
             "education": {
                 "size": 1,
@@ -28273,7 +28273,7 @@ const COUNTRIES = {
         "lat": 37.9509,
         "lng": 58.3794,
         "gdp": 51.4,
-        "pop": 7.5,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -28451,7 +28451,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 75
+                "rank": 87
             },
             "education": {
                 "size": 1,
@@ -28483,7 +28483,7 @@ const COUNTRIES = {
         "lat": 10.6596,
         "lng": -61.4789,
         "gdp": 25.6,
-        "pop": 1.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -28661,7 +28661,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 143
+                "rank": 145
             },
             "education": {
                 "size": 1,
@@ -28694,7 +28694,7 @@ const COUNTRIES = {
         "lat": 36.7899,
         "lng": 10.21,
         "gdp": 51.3,
-        "pop": 12.3,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -28872,7 +28872,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 144
+                "rank": 146
             },
             "education": {
                 "size": 2.1,
@@ -28906,7 +28906,7 @@ const COUNTRIES = {
         "lat": 39.7153,
         "lng": 32.3606,
         "gdp": 1359.1,
-        "pop": 85.5,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -29071,7 +29071,7 @@ const COUNTRIES = {
                 "rank": 17
             },
             "tourism": {
-                "size": 17.9,
+                "size": 35.3,
                 "growth": 4.9,
                 "potential": 82,
                 "oppo": [
@@ -29118,7 +29118,7 @@ const COUNTRIES = {
         "lat": -6.17486,
         "lng": 35.7382,
         "gdp": 78.8,
-        "pop": 68.6,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -29283,9 +29283,9 @@ const COUNTRIES = {
                 "rank": 81
             },
             "tourism": {
-                "size": 2.6,
+                "size": 1.6,
                 "growth": 6.3,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29296,7 +29296,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 49
+                "rank": 83
             },
             "education": {
                 "size": 1.5,
@@ -29330,7 +29330,7 @@ const COUNTRIES = {
         "lat": 0.314269,
         "lng": 32.5729,
         "gdp": 53.9,
-        "pop": 50.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -29495,7 +29495,7 @@ const COUNTRIES = {
                 "rank": 91
             },
             "tourism": {
-                "size": 1,
+                "size": 1.1,
                 "growth": 6.5,
                 "potential": 63,
                 "oppo": [
@@ -29508,7 +29508,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 145
+                "rank": 93
             },
             "education": {
                 "size": 1,
@@ -29542,7 +29542,7 @@ const COUNTRIES = {
         "lat": 50.4536,
         "lng": 30.5038,
         "gdp": 190.7,
-        "pop": 37.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -29707,9 +29707,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "tourism": {
-                "size": 1.2,
+                "size": 5.0,
                 "growth": 4.8,
-                "potential": 78,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -29720,7 +29720,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 77
+                "rank": 55
             },
             "education": {
                 "size": 5.9,
@@ -29754,7 +29754,7 @@ const COUNTRIES = {
         "lat": -34.8941,
         "lng": -56.0675,
         "gdp": 81.0,
-        "pop": 3.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -29919,7 +29919,7 @@ const COUNTRIES = {
                 "rank": 82
             },
             "tourism": {
-                "size": 1.1,
+                "size": 1.6,
                 "growth": 4.8,
                 "potential": 82,
                 "oppo": [
@@ -29932,7 +29932,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 82
+                "rank": 84
             },
             "education": {
                 "size": 2.3,
@@ -29966,7 +29966,7 @@ const COUNTRIES = {
         "lat": 38.8895,
         "lng": -77.032,
         "gdp": 28751.0,
-        "pop": 340.1,
+        "pop": 0,
         "region": "North America",
         "income": "High income",
         "industries": {
@@ -30131,9 +30131,9 @@ const COUNTRIES = {
                 "rank": 1
             },
             "tourism": {
-                "size": 143.8,
+                "size": 575.0,
                 "growth": 4.7,
-                "potential": 88,
+                "potential": 90,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -30144,7 +30144,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 2
+                "rank": 1
             },
             "education": {
                 "size": 935.0,
@@ -30178,7 +30178,7 @@ const COUNTRIES = {
         "lat": 41.3052,
         "lng": 69.269,
         "gdp": 115.0,
-        "pop": 36.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -30343,9 +30343,9 @@ const COUNTRIES = {
                 "rank": 67
             },
             "tourism": {
-                "size": 1,
+                "size": 3.0,
                 "growth": 6.7,
-                "potential": 75,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30356,7 +30356,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 146
+                "rank": 61
             },
             "education": {
                 "size": 3.8,
@@ -30390,7 +30390,7 @@ const COUNTRIES = {
         "lat": 9.08165,
         "lng": -69.8371,
         "gdp": 119.8,
-        "pop": 28.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Not classified",
         "industries": {
@@ -30568,7 +30568,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 53
+                "rank": 68
             },
             "education": {
                 "size": 1,
@@ -30600,7 +30600,7 @@ const COUNTRIES = {
         "lat": 21.0069,
         "lng": 105.825,
         "gdp": 476.4,
-        "pop": 101.0,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -30765,9 +30765,9 @@ const COUNTRIES = {
                 "rank": 28
             },
             "tourism": {
-                "size": 3.2,
+                "size": 9.5,
                 "growth": 6.9,
-                "potential": 77,
+                "potential": 79,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30778,7 +30778,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 44
+                "rank": 35
             },
             "education": {
                 "size": 8.3,
@@ -30812,7 +30812,7 @@ const COUNTRIES = {
         "lat": 15.352,
         "lng": 44.2075,
         "gdp": 21.6,
-        "pop": 40.6,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
@@ -31023,7 +31023,7 @@ const COUNTRIES = {
         "lat": -25.746,
         "lng": 28.1871,
         "gdp": 401.1,
-        "pop": 64.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -31188,9 +31188,9 @@ const COUNTRIES = {
                 "rank": 39
             },
             "tourism": {
-                "size": 2.7,
+                "size": 8.0,
                 "growth": 3.8,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -31201,7 +31201,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 48
+                "rank": 42
             },
             "education": {
                 "size": 14.5,
@@ -31235,7 +31235,7 @@ const COUNTRIES = {
         "lat": -15.3982,
         "lng": 28.2937,
         "gdp": 25.3,
-        "pop": 21.3,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -31447,7 +31447,7 @@ const COUNTRIES = {
         "lat": -17.8312,
         "lng": 31.0672,
         "gdp": 41.5,
-        "pop": 16.6,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -31814,7 +31814,7 @@ const TICKER_DATA = [
     },
     {
         "label": "GBP/USD",
-        "value": "1.33",
+        "value": "1.34",
         "dir": "neutral"
     },
     {
@@ -31824,22 +31824,22 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/KRW",
-        "value": "1,501",
+        "value": "1,488",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.91",
+        "value": "6.90",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "93.87",
+        "value": "93.46",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.29",
+        "value": "5.26",
         "dir": "neutral"
     },
     {
@@ -31859,12 +31859,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,169",
+        "value": "26,276",
         "dir": "neutral"
     },
     {
         "label": "USD/AUD",
-        "value": "1.42",
+        "value": "1.43",
         "dir": "neutral"
     }
 ];
