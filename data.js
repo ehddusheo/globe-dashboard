@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-03-25 21:43:33
+// Auto-generated: 2026-03-26 21:36:47
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -31824,22 +31824,22 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/KRW",
-        "value": "1,498",
+        "value": "1,502",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.90",
+        "value": "6.91",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "94.05",
+        "value": "94.03",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.25",
+        "value": "5.23",
         "dir": "neutral"
     },
     {
@@ -31859,12 +31859,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,204",
+        "value": "26,232",
         "dir": "neutral"
     },
     {
         "label": "USD/AUD",
-        "value": "1.43",
+        "value": "1.44",
         "dir": "neutral"
     }
 ];
