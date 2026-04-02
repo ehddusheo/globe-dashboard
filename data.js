@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-04-01 21:46:08
+// Auto-generated: 2026-04-02 21:42:14
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -31809,12 +31809,12 @@ const TRADE_ROUTES = [
 const TICKER_DATA = [
     {
         "label": "EUR/USD",
-        "value": "1.15",
+        "value": "1.16",
         "dir": "neutral"
     },
     {
         "label": "GBP/USD",
-        "value": "1.32",
+        "value": "1.33",
         "dir": "neutral"
     },
     {
@@ -31824,27 +31824,27 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/KRW",
-        "value": "1,517",
+        "value": "1,510",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.90",
+        "value": "6.89",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "93.86",
+        "value": "93.55",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.22",
+        "value": "5.16",
         "dir": "neutral"
     },
     {
         "label": "USD/SGD",
-        "value": "1.29",
+        "value": "1.28",
         "dir": "neutral"
     },
     {
@@ -31859,12 +31859,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,196",
+        "value": "26,213",
         "dir": "neutral"
     },
     {
         "label": "USD/AUD",
-        "value": "1.45",
+        "value": "1.44",
         "dir": "neutral"
     }
 ];
