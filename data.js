@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-04-07 21:44:55
+// Auto-generated: 2026-04-08 21:50:27
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -153,7 +153,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 95
+                "rank": 88
             },
             "energy": {
                 "size": 1,
@@ -281,14 +281,14 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 93
+                "rank": 94
             }
         },
         "gdp_growth_pct": 2.3,
         "inflation_pct": -6.6,
         "unemployment_pct": 13.7,
         "trade_pct_gdp": 67.6,
-        "internet_users_pct": 17.7,
+        "internet_users_pct": 16.1,
         "renewable_energy_pct": 20
     },
     "024": {
@@ -365,7 +365,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 96
+                "rank": 89
             },
             "energy": {
                 "size": 4.0,
@@ -493,14 +493,14 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 80
+                "rank": 81
             }
         },
         "gdp_growth_pct": 4.4,
         "inflation_pct": 28.2,
         "unemployment_pct": 14.0,
         "trade_pct_gdp": 50.8,
-        "internet_users_pct": 44.8,
+        "internet_users_pct": 40.7,
         "renewable_energy_pct": 52.9
     },
     "008": {
@@ -577,7 +577,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 108
+                "rank": 103
             },
             "energy": {
                 "size": 1.2,
@@ -705,14 +705,14 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 94
+                "rank": 95
             }
         },
         "gdp_growth_pct": 4.0,
         "inflation_pct": 2.2,
         "unemployment_pct": 10.7,
         "trade_pct_gdp": 79.5,
-        "internet_users_pct": 83.1,
+        "internet_users_pct": 85.9,
         "renewable_energy_pct": 41.9
     },
     "784": {
@@ -776,7 +776,7 @@ const COUNTRIES = {
                 "rank": 28
             },
             "healthcare": {
-                "size": 22.0,
+                "size": 22.1,
                 "growth": 5.2,
                 "potential": 86,
                 "oppo": [
@@ -789,7 +789,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 37
+                "rank": 27
             },
             "energy": {
                 "size": 22.1,
@@ -917,11 +917,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 30
+                "rank": 31
             }
         },
         "gdp_growth_pct": 4.0,
-        "inflation_pct": 1.7,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 199.0,
         "internet_users_pct": 100,
@@ -953,7 +952,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 28
+                "rank": 29
             },
             "manufacturing": {
                 "size": 96.9,
@@ -1001,7 +1000,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 22
+                "rank": 19
             },
             "energy": {
                 "size": 25.5,
@@ -1116,7 +1115,7 @@ const COUNTRIES = {
                 "rank": 43
             },
             "education": {
-                "size": 22.6,
+                "size": 19.2,
                 "growth": 3.0,
                 "potential": 78,
                 "oppo": [
@@ -1213,7 +1212,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 100
+                "rank": 95
             },
             "energy": {
                 "size": 1.1,
@@ -1341,14 +1340,14 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 95
+                "rank": 96
             }
         },
         "gdp_growth_pct": 5.9,
         "inflation_pct": 0.3,
         "unemployment_pct": 12.4,
         "trade_pct_gdp": 150.1,
-        "internet_users_pct": 80.0,
+        "internet_users_pct": 81.3,
         "renewable_energy_pct": 9.1
     },
     "036": {
@@ -1425,7 +1424,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 10
+                "rank": 7
             },
             "energy": {
                 "size": 70.3,
@@ -1560,7 +1559,7 @@ const COUNTRIES = {
         "inflation_pct": 3.2,
         "unemployment_pct": 3.9,
         "trade_pct_gdp": 47.1,
-        "internet_users_pct": 97.1,
+        "internet_users_pct": 96.1,
         "renewable_energy_pct": 12.3
     },
     "040": {
@@ -1637,7 +1636,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 20
             },
             "energy": {
                 "size": 23.5,
@@ -1849,7 +1848,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 88
+                "rank": 85
             },
             "energy": {
                 "size": 3.3,
@@ -1977,14 +1976,14 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 79
+                "rank": 80
             }
         },
         "gdp_growth_pct": 4.1,
         "inflation_pct": 2.2,
         "unemployment_pct": 5.6,
         "trade_pct_gdp": 82.7,
-        "internet_users_pct": 89,
+        "internet_users_pct": 90.4,
         "renewable_energy_pct": 1.3
     },
     "056": {
@@ -2000,7 +1999,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 34.3,
+                "size": 33.6,
                 "growth": 4.6,
                 "potential": 86,
                 "oppo": [
@@ -2061,7 +2060,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 19
+                "rank": 16
             },
             "energy": {
                 "size": 29.5,
@@ -2273,7 +2272,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 119
+                "rank": 114
             },
             "energy": {
                 "size": 1,
@@ -2401,14 +2400,14 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 96
+                "rank": 97
             }
         },
         "gdp_growth_pct": 7.5,
         "inflation_pct": 1.2,
         "unemployment_pct": 1.6,
         "trade_pct_gdp": 40.6,
-        "internet_users_pct": 32.2,
+        "internet_users_pct": 34.0,
         "renewable_energy_pct": 54.5
     },
     "854": {
@@ -2472,7 +2471,7 @@ const COUNTRIES = {
                 "rank": 120
             },
             "healthcare": {
-                "size": 1.4,
+                "size": 1,
                 "growth": 6.0,
                 "potential": 62,
                 "oppo": [
@@ -2485,7 +2484,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 112
+                "rank": 115
             },
             "energy": {
                 "size": 1,
@@ -2613,14 +2612,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 97
+                "rank": 98
             }
         },
         "gdp_growth_pct": 4.8,
-        "inflation_pct": 4.2,
         "unemployment_pct": 3.4,
         "trade_pct_gdp": 60.5,
-        "internet_users_pct": 17.0,
+        "internet_users_pct": 28.3,
         "renewable_energy_pct": 71.4
     },
     "050": {
@@ -2697,7 +2695,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 56
+                "rank": 55
             },
             "energy": {
                 "size": 18.0,
@@ -2832,7 +2830,7 @@ const COUNTRIES = {
         "inflation_pct": 10.5,
         "unemployment_pct": 3.6,
         "trade_pct_gdp": 26.8,
-        "internet_users_pct": 44.5,
+        "internet_users_pct": 53.4,
         "renewable_energy_pct": 25
     },
     "100": {
@@ -2896,9 +2894,9 @@ const COUNTRIES = {
                 "rank": 62
             },
             "healthcare": {
-                "size": 7.2,
+                "size": 4.5,
                 "growth": 5.0,
-                "potential": 85,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -2909,7 +2907,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 60
+                "rank": 66
             },
             "energy": {
                 "size": 5.0,
@@ -3037,11 +3035,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 62
+                "rank": 61
             }
         },
         "gdp_growth_pct": 3.4,
-        "inflation_pct": 2.4,
         "unemployment_pct": 4.2,
         "trade_pct_gdp": 110.2,
         "internet_users_pct": 82.4,
@@ -3121,7 +3118,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 109
+                "rank": 104
             },
             "energy": {
                 "size": 1.9,
@@ -3249,7 +3246,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 98
+                "rank": 99
             }
         },
         "gdp_growth_pct": 2.6,
@@ -3320,9 +3317,9 @@ const COUNTRIES = {
                 "rank": 106
             },
             "healthcare": {
-                "size": 2.1,
+                "size": 1.2,
                 "growth": 4.8,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -3333,7 +3330,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 97
+                "rank": 112
             },
             "energy": {
                 "size": 1.3,
@@ -3461,11 +3458,10 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 99
+                "rank": 100
             }
         },
         "gdp_growth_pct": 3.0,
-        "inflation_pct": 1.7,
         "unemployment_pct": 10.7,
         "trade_pct_gdp": 95.2,
         "internet_users_pct": 86.1,
@@ -3545,7 +3541,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 74
+                "rank": 68
             },
             "energy": {
                 "size": 3.3,
@@ -3673,7 +3669,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 68
+                "rank": 69
             }
         },
         "gdp_growth_pct": 4.0,
@@ -3744,9 +3740,9 @@ const COUNTRIES = {
                 "rank": 88
             },
             "healthcare": {
-                "size": 3.0,
+                "size": 2.2,
                 "growth": 4.1,
-                "potential": 72,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -3757,7 +3753,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 80
+                "rank": 86
             },
             "energy": {
                 "size": 2.2,
@@ -3872,7 +3868,7 @@ const COUNTRIES = {
                 "rank": 92
             },
             "education": {
-                "size": 2.7,
+                "size": 2.5,
                 "growth": 3.5,
                 "potential": 70,
                 "oppo": [
@@ -3889,10 +3885,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -1.1,
-        "inflation_pct": 5.1,
         "unemployment_pct": 3.3,
         "trade_pct_gdp": 47.0,
-        "internet_users_pct": 70.2,
+        "internet_users_pct": 79.7,
         "renewable_energy_pct": 12.8
     },
     "076": {
@@ -3956,9 +3951,9 @@ const COUNTRIES = {
                 "rank": 11
             },
             "healthcare": {
-                "size": 170.2,
+                "size": 87.4,
                 "growth": 5.0,
-                "potential": 85,
+                "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -3969,7 +3964,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 8
+                "rank": 11
             },
             "energy": {
                 "size": 87.4,
@@ -4101,7 +4096,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.4,
-        "inflation_pct": 4.4,
         "unemployment_pct": 6.8,
         "trade_pct_gdp": 35.6,
         "internet_users_pct": 84.5,
@@ -4181,7 +4175,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 120
+                "rank": 116
             },
             "energy": {
                 "size": 1,
@@ -4309,14 +4303,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 100
+                "rank": 101
             }
         },
         "gdp_growth_pct": 4.1,
-        "inflation_pct": -0.4,
         "unemployment_pct": 5.2,
         "trade_pct_gdp": 132.6,
-        "internet_users_pct": 99.0,
+        "internet_users_pct": 96.3,
         "renewable_energy_pct": 0
     },
     "072": {
@@ -4393,7 +4386,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 121
+                "rank": 117
             },
             "energy": {
                 "size": 1,
@@ -4521,14 +4514,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 101
+                "rank": 102
             }
         },
         "gdp_growth_pct": -3.0,
-        "inflation_pct": 2.8,
         "unemployment_pct": 23.8,
         "trade_pct_gdp": 71.1,
-        "internet_users_pct": 81.4,
+        "internet_users_pct": 57.5,
         "renewable_energy_pct": 27.4
     },
     "124": {
@@ -4592,9 +4584,9 @@ const COUNTRIES = {
                 "rank": 8
             },
             "healthcare": {
-                "size": 324.8,
+                "size": 143.6,
                 "growth": 4.2,
-                "potential": 88,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4605,7 +4597,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 8
             },
             "energy": {
                 "size": 89.7,
@@ -4720,7 +4712,7 @@ const COUNTRIES = {
                 "rank": 6
             },
             "education": {
-                "size": 65.7,
+                "size": 65.2,
                 "growth": 3.6,
                 "potential": 85,
                 "oppo": [
@@ -4737,10 +4729,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.6,
-        "inflation_pct": 2.4,
         "unemployment_pct": 6.4,
         "trade_pct_gdp": 65.1,
-        "internet_users_pct": 94.0,
+        "internet_users_pct": 94.4,
         "renewable_energy_pct": 23.8
     },
     "756": {
@@ -4804,9 +4795,9 @@ const COUNTRIES = {
                 "rank": 20
             },
             "healthcare": {
-                "size": 87.6,
+                "size": 37.5,
                 "growth": 4.1,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4817,7 +4808,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 16
+                "rank": 23
             },
             "energy": {
                 "size": 41.2,
@@ -4932,7 +4923,7 @@ const COUNTRIES = {
                 "rank": 22
             },
             "education": {
-                "size": 27.7,
+                "size": 27.3,
                 "growth": 3.5,
                 "potential": 83,
                 "oppo": [
@@ -4949,7 +4940,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.3,
-        "inflation_pct": 1.1,
         "unemployment_pct": 4.3,
         "trade_pct_gdp": 134.1,
         "internet_users_pct": 97.3,
@@ -5016,9 +5006,9 @@ const COUNTRIES = {
                 "rank": 47
             },
             "healthcare": {
-                "size": 27.8,
+                "size": 13.2,
                 "growth": 4.7,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -5029,7 +5019,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 31
+                "rank": 43
             },
             "energy": {
                 "size": 13.2,
@@ -5157,14 +5147,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 35
+                "rank": 36
             }
         },
         "gdp_growth_pct": 2.6,
-        "inflation_pct": 4.3,
         "unemployment_pct": 8.7,
         "trade_pct_gdp": 63.9,
-        "internet_users_pct": 94.5,
+        "internet_users_pct": 95.6,
         "renewable_energy_pct": 24.2
     },
     "156": {
@@ -5228,7 +5217,7 @@ const COUNTRIES = {
                 "rank": 2
             },
             "healthcare": {
-                "size": 891.3,
+                "size": 749.8,
                 "growth": 5.6,
                 "potential": 88,
                 "oppo": [
@@ -5356,7 +5345,7 @@ const COUNTRIES = {
                 "rank": 1
             },
             "education": {
-                "size": 450.0,
+                "size": 438.3,
                 "growth": 5.0,
                 "potential": 86,
                 "oppo": [
@@ -5373,7 +5362,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.0,
-        "inflation_pct": 0.2,
         "unemployment_pct": 4.6,
         "trade_pct_gdp": 37.2,
         "internet_users_pct": 92,
@@ -5440,9 +5428,9 @@ const COUNTRIES = {
                 "rank": 79
             },
             "healthcare": {
-                "size": 2.4,
+                "size": 3.5,
                 "growth": 6.5,
-                "potential": 76,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -5453,7 +5441,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 90
+                "rank": 76
             },
             "energy": {
                 "size": 3.5,
@@ -5568,7 +5556,7 @@ const COUNTRIES = {
                 "rank": 95
             },
             "education": {
-                "size": 1.8,
+                "size": 1.9,
                 "growth": 5.9,
                 "potential": 75,
                 "oppo": [
@@ -5581,14 +5569,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 77
+                "rank": 78
             }
         },
         "gdp_growth_pct": 6.0,
-        "inflation_pct": 3.5,
         "unemployment_pct": 2.3,
         "trade_pct_gdp": 51.3,
-        "internet_users_pct": 40.7,
+        "internet_users_pct": 41.4,
         "renewable_energy_pct": 58.2
     },
     "120": {
@@ -5652,7 +5639,7 @@ const COUNTRIES = {
                 "rank": 90
             },
             "healthcare": {
-                "size": 1.9,
+                "size": 2.1,
                 "growth": 5.5,
                 "potential": 74,
                 "oppo": [
@@ -5665,7 +5652,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 101
+                "rank": 90
             },
             "energy": {
                 "size": 2.1,
@@ -5793,14 +5780,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 102
+                "rank": 103
             }
         },
         "gdp_growth_pct": 3.5,
-        "inflation_pct": 4.5,
         "unemployment_pct": 3.6,
         "trade_pct_gdp": 34.4,
-        "internet_users_pct": 41.9,
+        "internet_users_pct": 46.3,
         "renewable_energy_pct": 79.2
     },
     "180": {
@@ -5864,9 +5850,9 @@ const COUNTRIES = {
                 "rank": 86
             },
             "healthcare": {
-                "size": 2.1,
+                "size": 2.8,
                 "growth": 6.6,
-                "potential": 64,
+                "potential": 65,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -5877,7 +5863,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 98
+                "rank": 84
             },
             "energy": {
                 "size": 2.8,
@@ -6005,13 +5991,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 87
+                "rank": 89
             }
         },
         "gdp_growth_pct": 6.1,
         "unemployment_pct": 4.4,
         "trade_pct_gdp": 100.6,
-        "internet_users_pct": 30.5,
+        "internet_users_pct": 19.7,
         "renewable_energy_pct": 96.3
     },
     "178": {
@@ -6088,7 +6074,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 122
+                "rank": 118
             },
             "energy": {
                 "size": 1,
@@ -6216,14 +6202,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 103
+                "rank": 104
             }
         },
         "gdp_growth_pct": 2.6,
-        "inflation_pct": 3.1,
         "unemployment_pct": 19.9,
         "trade_pct_gdp": 93.2,
-        "internet_users_pct": 38.4,
+        "internet_users_pct": 47.3,
         "renewable_energy_pct": 71.4
     },
     "170": {
@@ -6287,9 +6272,9 @@ const COUNTRIES = {
                 "rank": 39
             },
             "healthcare": {
-                "size": 27.3,
+                "size": 16.8,
                 "growth": 4.2,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -6300,7 +6285,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 32
+                "rank": 37
             },
             "energy": {
                 "size": 16.8,
@@ -6428,14 +6413,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 29
+                "rank": 30
             }
         },
         "gdp_growth_pct": 1.6,
-        "inflation_pct": 6.6,
         "unemployment_pct": 9.6,
         "trade_pct_gdp": 37.0,
-        "internet_users_pct": 77.3,
+        "internet_users_pct": 79.3,
         "renewable_energy_pct": 29.7
     },
     "188": {
@@ -6499,9 +6483,9 @@ const COUNTRIES = {
                 "rank": 76
             },
             "healthcare": {
-                "size": 5.2,
+                "size": 3.8,
                 "growth": 5.3,
-                "potential": 85,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -6512,7 +6496,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 69
+                "rank": 72
             },
             "energy": {
                 "size": 3.8,
@@ -6627,7 +6611,7 @@ const COUNTRIES = {
                 "rank": 70
             },
             "education": {
-                "size": 3.6,
+                "size": 3.0,
                 "growth": 4.7,
                 "potential": 83,
                 "oppo": [
@@ -6640,14 +6624,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 61
+                "rank": 62
             }
         },
         "gdp_growth_pct": 4.3,
-        "inflation_pct": -0.4,
         "unemployment_pct": 6.9,
         "trade_pct_gdp": 71.3,
-        "internet_users_pct": 85.4,
+        "internet_users_pct": 87.2,
         "renewable_energy_pct": 34.2
     },
     "192": {
@@ -6711,9 +6694,9 @@ const COUNTRIES = {
                 "rank": 71
             },
             "healthcare": {
-                "size": 8.1,
+                "size": 4.3,
                 "growth": 3.6,
-                "potential": 78,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -6724,7 +6707,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 55
+                "rank": 69
             },
             "energy": {
                 "size": 4.3,
@@ -6858,7 +6841,7 @@ const COUNTRIES = {
         "gdp_growth_pct": -1.1,
         "unemployment_pct": 1.8,
         "trade_pct_gdp": 124.9,
-        "internet_users_pct": 71.3,
+        "internet_users_pct": 70.5,
         "renewable_energy_pct": 20.9
     },
     "196": {
@@ -6922,9 +6905,9 @@ const COUNTRIES = {
                 "rank": 98
             },
             "healthcare": {
-                "size": 2.4,
+                "size": 1.5,
                 "growth": 5.2,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -6935,7 +6918,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 91
+                "rank": 105
             },
             "energy": {
                 "size": 1.7,
@@ -7063,14 +7046,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 89
+                "rank": 91
             }
         },
         "gdp_growth_pct": 3.9,
-        "inflation_pct": 1.8,
         "unemployment_pct": 4.9,
         "trade_pct_gdp": 190.4,
-        "internet_users_pct": 91.2,
+        "internet_users_pct": 89.6,
         "renewable_energy_pct": 15.6
     },
     "203": {
@@ -7134,7 +7116,7 @@ const COUNTRIES = {
                 "rank": 40
             },
             "healthcare": {
-                "size": 23.6,
+                "size": 13.9,
                 "growth": 4.1,
                 "potential": 84,
                 "oppo": [
@@ -7147,7 +7129,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 35
+                "rank": 42
             },
             "energy": {
                 "size": 15.3,
@@ -7279,7 +7261,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.2,
-        "inflation_pct": 2.4,
         "unemployment_pct": 2.6,
         "trade_pct_gdp": 131.5,
         "internet_users_pct": 87.7,
@@ -7346,9 +7327,9 @@ const COUNTRIES = {
                 "rank": 3
             },
             "healthcare": {
-                "size": 459.8,
+                "size": 187.4,
                 "growth": 3.6,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -7491,7 +7472,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -0.5,
-        "inflation_pct": 2.3,
         "unemployment_pct": 3.4,
         "trade_pct_gdp": 79.1,
         "internet_users_pct": 93.5,
@@ -7558,9 +7538,9 @@ const COUNTRIES = {
                 "rank": 32
             },
             "healthcare": {
-                "size": 31.9,
+                "size": 17.0,
                 "growth": 5.0,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -7571,7 +7551,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 27
+                "rank": 35
             },
             "energy": {
                 "size": 18.7,
@@ -7703,7 +7683,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.5,
-        "inflation_pct": 1.4,
         "unemployment_pct": 5.4,
         "trade_pct_gdp": 131.8,
         "internet_users_pct": 99.8,
@@ -7770,7 +7749,7 @@ const COUNTRIES = {
                 "rank": 63
             },
             "healthcare": {
-                "size": 4.6,
+                "size": 5.0,
                 "growth": 5.6,
                 "potential": 81,
                 "oppo": [
@@ -7783,7 +7762,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 71
+                "rank": 61
             },
             "energy": {
                 "size": 5.0,
@@ -7911,11 +7890,10 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 65
+                "rank": 64
             }
         },
         "gdp_growth_pct": 5.0,
-        "inflation_pct": 3.3,
         "unemployment_pct": 5.3,
         "trade_pct_gdp": 51.8,
         "internet_users_pct": 91.0,
@@ -7995,7 +7973,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 51
+                "rank": 52
             },
             "energy": {
                 "size": 10.8,
@@ -8110,7 +8088,7 @@ const COUNTRIES = {
                 "rank": 73
             },
             "education": {
-                "size": 9.1,
+                "size": 14.5,
                 "growth": 4.5,
                 "potential": 80,
                 "oppo": [
@@ -8123,14 +8101,14 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 36
+                "rank": 28
             }
         },
         "gdp_growth_pct": 3.7,
         "inflation_pct": 4.0,
         "unemployment_pct": 11.7,
         "trade_pct_gdp": 40.1,
-        "internet_users_pct": 76.9,
+        "internet_users_pct": 77.4,
         "renewable_energy_pct": 0.1
     },
     "218": {
@@ -8194,9 +8172,9 @@ const COUNTRIES = {
                 "rank": 64
             },
             "healthcare": {
-                "size": 7.5,
+                "size": 5.0,
                 "growth": 3.6,
-                "potential": 78,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -8207,7 +8185,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 58
+                "rank": 62
             },
             "energy": {
                 "size": 5.0,
@@ -8322,7 +8300,7 @@ const COUNTRIES = {
                 "rank": 100
             },
             "education": {
-                "size": 2.9,
+                "size": 2.8,
                 "growth": 3.0,
                 "potential": 75,
                 "oppo": [
@@ -8335,11 +8313,10 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 63
+                "rank": 65
             }
         },
         "gdp_growth_pct": -2.0,
-        "inflation_pct": 1.5,
         "unemployment_pct": 3.5,
         "trade_pct_gdp": 57.2,
         "internet_users_pct": 77.2,
@@ -8406,7 +8383,7 @@ const COUNTRIES = {
                 "rank": 42
             },
             "healthcare": {
-                "size": 15.2,
+                "size": 15.6,
                 "growth": 5.1,
                 "potential": 76,
                 "oppo": [
@@ -8419,7 +8396,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 45
+                "rank": 39
             },
             "energy": {
                 "size": 15.6,
@@ -8551,10 +8528,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.4,
-        "inflation_pct": 28.3,
         "unemployment_pct": 6.8,
         "trade_pct_gdp": 39.6,
-        "internet_users_pct": 72.7,
+        "internet_users_pct": 74.6,
         "renewable_energy_pct": 6.1
     },
     "724": {
@@ -8618,7 +8594,7 @@ const COUNTRIES = {
                 "rank": 12
             },
             "healthcare": {
-                "size": 127.3,
+                "size": 69.0,
                 "growth": 5.0,
                 "potential": 88,
                 "oppo": [
@@ -8631,7 +8607,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 12
+                "rank": 15
             },
             "energy": {
                 "size": 75.9,
@@ -8763,7 +8739,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.5,
-        "inflation_pct": 2.8,
         "unemployment_pct": 11.4,
         "trade_pct_gdp": 70.0,
         "internet_users_pct": 95.8,
@@ -8830,7 +8805,7 @@ const COUNTRIES = {
                 "rank": 93
             },
             "healthcare": {
-                "size": 2.7,
+                "size": 1.7,
                 "growth": 3.6,
                 "potential": 80,
                 "oppo": [
@@ -8843,7 +8818,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 85
+                "rank": 99
             },
             "energy": {
                 "size": 1.9,
@@ -8971,11 +8946,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 84
+                "rank": 85
             }
         },
         "gdp_growth_pct": -0.1,
-        "inflation_pct": 3.5,
         "unemployment_pct": 7.6,
         "trade_pct_gdp": 151.0,
         "internet_users_pct": 92.2,
@@ -9042,9 +9016,9 @@ const COUNTRIES = {
                 "rank": 60
             },
             "healthcare": {
-                "size": 3.4,
+                "size": 6.0,
                 "growth": 6.6,
-                "potential": 65,
+                "potential": 66,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -9055,7 +9029,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 77
+                "rank": 59
             },
             "energy": {
                 "size": 6.0,
@@ -9183,14 +9157,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 73
+                "rank": 74
             }
         },
         "gdp_growth_pct": 7.6,
-        "inflation_pct": 21.0,
         "unemployment_pct": 3.4,
         "trade_pct_gdp": 17.4,
-        "internet_users_pct": 16.7,
+        "internet_users_pct": 21.9,
         "renewable_energy_pct": 90.6
     },
     "246": {
@@ -9254,9 +9227,9 @@ const COUNTRIES = {
                 "rank": 45
             },
             "healthcare": {
-                "size": 25.0,
+                "size": 11.9,
                 "growth": 3.8,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9267,7 +9240,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 34
+                "rank": 45
             },
             "energy": {
                 "size": 13.1,
@@ -9395,14 +9368,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 31
+                "rank": 32
             }
         },
         "gdp_growth_pct": 0.4,
-        "inflation_pct": 1.6,
         "unemployment_pct": 8.4,
         "trade_pct_gdp": 83.5,
-        "internet_users_pct": 93.5,
+        "internet_users_pct": 93.7,
         "renewable_energy_pct": 50.2
     },
     "250": {
@@ -9466,9 +9438,9 @@ const COUNTRIES = {
                 "rank": 7
             },
             "healthcare": {
-                "size": 291.6,
+                "size": 126.4,
                 "growth": 4.1,
-                "potential": 88,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9479,7 +9451,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 9
             },
             "energy": {
                 "size": 139.1,
@@ -9611,7 +9583,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.2,
-        "inflation_pct": 2.0,
         "unemployment_pct": 7.4,
         "trade_pct_gdp": 68.1,
         "internet_users_pct": 88.7,
@@ -9691,7 +9662,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 123
+                "rank": 119
             },
             "energy": {
                 "size": 1,
@@ -9819,14 +9790,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 104
+                "rank": 105
             }
         },
         "gdp_growth_pct": 3.4,
-        "inflation_pct": 1.2,
         "unemployment_pct": 20.1,
         "trade_pct_gdp": 92.0,
-        "internet_users_pct": 71.9,
+        "internet_users_pct": 68.7,
         "renewable_energy_pct": 91.3
     },
     "826": {
@@ -9890,9 +9860,9 @@ const COUNTRIES = {
                 "rank": 4
             },
             "healthcare": {
-                "size": 328.3,
+                "size": 147.4,
                 "growth": 4.1,
-                "potential": 88,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9903,7 +9873,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 5
+                "rank": 6
             },
             "energy": {
                 "size": 162.2,
@@ -10035,10 +10005,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.1,
-        "inflation_pct": 3.3,
         "unemployment_pct": 4.4,
         "trade_pct_gdp": 62.8,
-        "internet_users_pct": 96.3,
+        "internet_users_pct": 95.5,
         "renewable_energy_pct": 12.2
     },
     "268": {
@@ -10102,9 +10071,9 @@ const COUNTRIES = {
                 "rank": 102
             },
             "healthcare": {
-                "size": 1.9,
+                "size": 1.4,
                 "growth": 7.5,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -10115,7 +10084,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 102
+                "rank": 107
             },
             "energy": {
                 "size": 1.5,
@@ -10243,14 +10212,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 105
+                "rank": 106
             }
         },
         "gdp_growth_pct": 9.7,
-        "inflation_pct": 1.1,
         "unemployment_pct": 11.6,
         "trade_pct_gdp": 103.5,
-        "internet_users_pct": 81.9,
+        "internet_users_pct": 83.8,
         "renewable_energy_pct": 25.2
     },
     "288": {
@@ -10314,9 +10282,9 @@ const COUNTRIES = {
                 "rank": 82
             },
             "healthcare": {
-                "size": 1.9,
+                "size": 3.3,
                 "growth": 6.3,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -10327,7 +10295,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 103
+                "rank": 79
             },
             "energy": {
                 "size": 3.3,
@@ -10455,14 +10423,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 83
+                "rank": 84
             }
         },
         "gdp_growth_pct": 5.6,
-        "inflation_pct": 22.8,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 69.8,
-        "internet_users_pct": 69.9,
+        "internet_users_pct": 72.2,
         "renewable_energy_pct": 39
     },
     "324": {
@@ -10539,7 +10506,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 124
+                "rank": 120
             },
             "energy": {
                 "size": 1,
@@ -10667,14 +10634,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 106
+                "rank": 107
             }
         },
         "gdp_growth_pct": 5.4,
-        "inflation_pct": 8.1,
         "unemployment_pct": 5.1,
         "trade_pct_gdp": 97.8,
-        "internet_users_pct": 26.5,
+        "internet_users_pct": 33.3,
         "renewable_energy_pct": 66.6
     },
     "226": {
@@ -10751,7 +10717,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 125
+                "rank": 121
             },
             "energy": {
                 "size": 1,
@@ -10879,14 +10845,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 107
+                "rank": 108
             }
         },
         "gdp_growth_pct": 0.9,
-        "inflation_pct": 2.9,
         "unemployment_pct": 8.3,
         "trade_pct_gdp": 60.5,
-        "internet_users_pct": 60.4,
+        "internet_users_pct": 63.3,
         "renewable_energy_pct": 4.2
     },
     "300": {
@@ -10950,9 +10915,9 @@ const COUNTRIES = {
                 "rank": 48
             },
             "healthcare": {
-                "size": 17.2,
+                "size": 10.2,
                 "growth": 4.4,
-                "potential": 85,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -10963,7 +10928,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 44
+                "rank": 50
             },
             "energy": {
                 "size": 11.3,
@@ -11095,7 +11060,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.1,
-        "inflation_pct": 2.7,
         "unemployment_pct": 10.0,
         "trade_pct_gdp": 89.8,
         "internet_users_pct": 86.3,
@@ -11162,9 +11126,9 @@ const COUNTRIES = {
                 "rank": 67
             },
             "healthcare": {
-                "size": 6.2,
+                "size": 4.5,
                 "growth": 5.1,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -11175,7 +11139,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 62
+                "rank": 67
             },
             "energy": {
                 "size": 4.5,
@@ -11303,14 +11267,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 74
+                "rank": 75
             }
         },
         "gdp_growth_pct": 3.7,
-        "inflation_pct": 2.9,
         "unemployment_pct": 2.6,
         "trade_pct_gdp": 47.3,
-        "internet_users_pct": 56.1,
+        "internet_users_pct": 60.2,
         "renewable_energy_pct": 62.1
     },
     "328": {
@@ -11387,7 +11350,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 126
+                "rank": 122
             },
             "energy": {
                 "size": 1,
@@ -11515,13 +11478,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 108
+                "rank": 109
             }
         },
         "gdp_growth_pct": 43.8,
-        "inflation_pct": 2.9,
         "unemployment_pct": 11.9,
-        "internet_users_pct": 81.7,
+        "internet_users_pct": 83.0,
         "renewable_energy_pct": 12.1
     },
     "340": {
@@ -11585,7 +11547,7 @@ const COUNTRIES = {
                 "rank": 105
             },
             "healthcare": {
-                "size": 2.3,
+                "size": 1.5,
                 "growth": 5.5,
                 "potential": 74,
                 "oppo": [
@@ -11598,7 +11560,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 93
+                "rank": 106
             },
             "energy": {
                 "size": 1.5,
@@ -11726,14 +11688,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 109
+                "rank": 110
             }
         },
         "gdp_growth_pct": 3.6,
-        "inflation_pct": 4.6,
         "unemployment_pct": 4.9,
         "trade_pct_gdp": 91.1,
-        "internet_users_pct": 58.3,
+        "internet_users_pct": 58.6,
         "renewable_energy_pct": 45.9
     },
     "191": {
@@ -11797,7 +11758,7 @@ const COUNTRIES = {
                 "rank": 68
             },
             "healthcare": {
-                "size": 5.3,
+                "size": 3.7,
                 "growth": 5.1,
                 "potential": 84,
                 "oppo": [
@@ -11810,7 +11771,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 68
+                "rank": 73
             },
             "energy": {
                 "size": 4.1,
@@ -11938,11 +11899,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 69
+                "rank": 70
             }
         },
         "gdp_growth_pct": 3.8,
-        "inflation_pct": 3.0,
         "unemployment_pct": 5,
         "trade_pct_gdp": 104.9,
         "internet_users_pct": 83.6,
@@ -12022,7 +11982,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 127
+                "rank": 123
             },
             "energy": {
                 "size": 1,
@@ -12150,14 +12110,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 110
+                "rank": 111
             }
         },
         "gdp_growth_pct": -4.2,
-        "inflation_pct": 26.9,
         "unemployment_pct": 14.6,
         "trade_pct_gdp": 22.2,
-        "internet_users_pct": 39.3,
+        "internet_users_pct": 47.9,
         "renewable_energy_pct": 76.7
     },
     "348": {
@@ -12221,9 +12180,9 @@ const COUNTRIES = {
                 "rank": 52
             },
             "healthcare": {
-                "size": 11.3,
+                "size": 8.9,
                 "growth": 3.8,
-                "potential": 83,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -12234,7 +12193,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 50
+                "rank": 53
             },
             "energy": {
                 "size": 9.8,
@@ -12366,7 +12325,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 0.6,
-        "inflation_pct": 3.7,
         "unemployment_pct": 4.5,
         "trade_pct_gdp": 146.5,
         "internet_users_pct": 93.8,
@@ -12433,7 +12391,7 @@ const COUNTRIES = {
                 "rank": 18
             },
             "healthcare": {
-                "size": 30.2,
+                "size": 55.9,
                 "growth": 5.6,
                 "potential": 84,
                 "oppo": [
@@ -12446,7 +12404,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 29
+                "rank": 17
             },
             "energy": {
                 "size": 55.9,
@@ -12574,11 +12532,10 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 33
+                "rank": 34
             }
         },
         "gdp_growth_pct": 5.0,
-        "inflation_pct": 2.2,
         "unemployment_pct": 3.3,
         "trade_pct_gdp": 42.6,
         "internet_users_pct": 72.8,
@@ -12645,9 +12602,9 @@ const COUNTRIES = {
                 "rank": 6
             },
             "healthcare": {
-                "size": 104.5,
+                "size": 156.4,
                 "growth": 6.7,
-                "potential": 81,
+                "potential": 82,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -12658,7 +12615,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 14
+                "rank": 5
             },
             "energy": {
                 "size": 156.4,
@@ -12790,10 +12747,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 6.5,
-        "inflation_pct": 5.0,
         "unemployment_pct": 4.2,
         "trade_pct_gdp": 44.6,
-        "internet_users_pct": 55.9,
+        "internet_users_pct": 64.9,
         "renewable_energy_pct": 34.9
     },
     "372": {
@@ -12857,9 +12813,9 @@ const COUNTRIES = {
                 "rank": 23
             },
             "healthcare": {
-                "size": 33.4,
+                "size": 24.4,
                 "growth": 4.6,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -12870,7 +12826,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 25
             },
             "energy": {
                 "size": 26.8,
@@ -12998,14 +12954,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 34
+                "rank": 35
             }
         },
         "gdp_growth_pct": 2.6,
-        "inflation_pct": 2.1,
         "unemployment_pct": 4.3,
         "trade_pct_gdp": 246.2,
-        "internet_users_pct": 96.5,
+        "internet_users_pct": 97.2,
         "renewable_energy_pct": 12.7
     },
     "364": {
@@ -13069,7 +13024,7 @@ const COUNTRIES = {
                 "rank": 33
             },
             "healthcare": {
-                "size": 22.9,
+                "size": 19.0,
                 "growth": 5.1,
                 "potential": 82,
                 "oppo": [
@@ -13082,7 +13037,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 36
+                "rank": 33
             },
             "energy": {
                 "size": 19.0,
@@ -13210,14 +13165,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 43
+                "rank": 42
             }
         },
         "gdp_growth_pct": 3.7,
-        "inflation_pct": 32.5,
         "unemployment_pct": 8.1,
         "trade_pct_gdp": 52.1,
-        "internet_users_pct": 79.6,
+        "internet_users_pct": 85.3,
         "renewable_energy_pct": 0.9
     },
     "368": {
@@ -13281,7 +13235,7 @@ const COUNTRIES = {
                 "rank": 50
             },
             "healthcare": {
-                "size": 12.4,
+                "size": 11.2,
                 "growth": 3.6,
                 "potential": 78,
                 "oppo": [
@@ -13294,7 +13248,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 49
+                "rank": 48
             },
             "energy": {
                 "size": 11.2,
@@ -13426,10 +13380,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -1.5,
-        "inflation_pct": -12.3,
         "unemployment_pct": 15.3,
         "trade_pct_gdp": 70.7,
-        "internet_users_pct": 81.7,
+        "internet_users_pct": 81.5,
         "renewable_energy_pct": 1.1
     },
     "352": {
@@ -13493,7 +13446,7 @@ const COUNTRIES = {
                 "rank": 104
             },
             "healthcare": {
-                "size": 2.4,
+                "size": 1.3,
                 "growth": 3.6,
                 "potential": 80,
                 "oppo": [
@@ -13506,7 +13459,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 92
+                "rank": 109
             },
             "energy": {
                 "size": 1.5,
@@ -13634,14 +13587,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 81
+                "rank": 82
             }
         },
         "gdp_growth_pct": -1.0,
-        "inflation_pct": 5.9,
         "unemployment_pct": 3.6,
         "trade_pct_gdp": 86.0,
-        "internet_users_pct": 99.8,
+        "internet_users_pct": 98.2,
         "renewable_energy_pct": 82.4
     },
     "376": {
@@ -13657,7 +13609,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 48.8,
+                "size": 51.4,
                 "growth": 4.5,
                 "potential": 86,
                 "oppo": [
@@ -13705,7 +13657,7 @@ const COUNTRIES = {
                 "rank": 30
             },
             "healthcare": {
-                "size": 30.7,
+                "size": 21.6,
                 "growth": 3.9,
                 "potential": 84,
                 "oppo": [
@@ -13718,7 +13670,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 28
+                "rank": 29
             },
             "energy": {
                 "size": 21.6,
@@ -13850,7 +13802,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 0.9,
-        "inflation_pct": 3.1,
         "unemployment_pct": 3.6,
         "trade_pct_gdp": 54.5,
         "internet_users_pct": 88.2,
@@ -13917,7 +13868,7 @@ const COUNTRIES = {
                 "rank": 9
             },
             "healthcare": {
-                "size": 160.8,
+                "size": 95.2,
                 "growth": 3.9,
                 "potential": 86,
                 "oppo": [
@@ -13930,7 +13881,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 10
             },
             "energy": {
                 "size": 104.8,
@@ -14062,7 +14013,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 0.7,
-        "inflation_pct": 1.0,
         "unemployment_pct": 6.5,
         "trade_pct_gdp": 62.8,
         "internet_users_pct": 89.2,
@@ -14129,9 +14079,9 @@ const COUNTRIES = {
                 "rank": 124
             },
             "healthcare": {
-                "size": 1.3,
+                "size": 1,
                 "growth": 3.6,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14142,7 +14092,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 113
+                "rank": 124
             },
             "energy": {
                 "size": 1,
@@ -14270,13 +14220,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 111
+                "rank": 112
             }
         },
         "gdp_growth_pct": -0.5,
-        "inflation_pct": 5.4,
         "unemployment_pct": 3.2,
-        "internet_users_pct": 89.5,
+        "internet_users_pct": 90.1,
         "renewable_energy_pct": 10.5
     },
     "400": {
@@ -14340,9 +14289,9 @@ const COUNTRIES = {
                 "rank": 91
             },
             "healthcare": {
-                "size": 3.3,
+                "size": 2.1,
                 "growth": 5.1,
-                "potential": 74,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14353,7 +14302,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 78
+                "rank": 91
             },
             "energy": {
                 "size": 2.1,
@@ -14468,7 +14417,7 @@ const COUNTRIES = {
                 "rank": 67
             },
             "education": {
-                "size": 1.1,
+                "size": 1,
                 "growth": 4.5,
                 "potential": 71,
                 "oppo": [
@@ -14481,14 +14430,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 90
+                "rank": 113
             }
         },
         "gdp_growth_pct": 2.5,
-        "inflation_pct": 1.6,
         "unemployment_pct": 16.7,
         "trade_pct_gdp": 99.7,
-        "internet_users_pct": 92.5,
+        "internet_users_pct": 95.6,
         "renewable_energy_pct": 11.5
     },
     "392": {
@@ -14504,7 +14452,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 308.6,
+                "size": 311.8,
                 "growth": 4.2,
                 "potential": 88,
                 "oppo": [
@@ -14552,9 +14500,9 @@ const COUNTRIES = {
                 "rank": 5
             },
             "healthcare": {
-                "size": 346.0,
+                "size": 161.1,
                 "growth": 3.6,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14697,10 +14645,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 0.1,
-        "inflation_pct": 2.7,
         "unemployment_pct": 2.5,
         "trade_pct_gdp": 46.4,
-        "internet_users_pct": 87.0,
+        "internet_users_pct": 85.5,
         "renewable_energy_pct": 8.8
     },
     "398": {
@@ -14764,7 +14711,7 @@ const COUNTRIES = {
                 "rank": 46
             },
             "healthcare": {
-                "size": 8.8,
+                "size": 11.7,
                 "growth": 5.6,
                 "potential": 82,
                 "oppo": [
@@ -14777,7 +14724,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 52
+                "rank": 46
             },
             "energy": {
                 "size": 12.8,
@@ -14909,7 +14856,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.0,
-        "inflation_pct": 8.8,
         "unemployment_pct": 4.8,
         "trade_pct_gdp": 57.2,
         "internet_users_pct": 93.4,
@@ -14976,7 +14922,7 @@ const COUNTRIES = {
                 "rank": 65
             },
             "healthcare": {
-                "size": 4.2,
+                "size": 4.8,
                 "growth": 6.0,
                 "potential": 76,
                 "oppo": [
@@ -14989,7 +14935,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 75
+                "rank": 63
             },
             "energy": {
                 "size": 4.8,
@@ -15117,11 +15063,10 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 64
+                "rank": 63
             }
         },
         "gdp_growth_pct": 4.7,
-        "inflation_pct": 4.5,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 40.2,
         "internet_users_pct": 35.0,
@@ -15201,7 +15146,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 128
+                "rank": 125
             },
             "energy": {
                 "size": 1,
@@ -15329,14 +15274,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 112
+                "rank": 114
             }
         },
         "gdp_growth_pct": 9.0,
-        "inflation_pct": 10.8,
         "unemployment_pct": 3.5,
         "trade_pct_gdp": 127.7,
-        "internet_users_pct": 88.5,
+        "internet_users_pct": 92.0,
         "renewable_energy_pct": 27.6
     },
     "116": {
@@ -15400,7 +15344,7 @@ const COUNTRIES = {
                 "rank": 99
             },
             "healthcare": {
-                "size": 1.7,
+                "size": 1.9,
                 "growth": 6.5,
                 "potential": 76,
                 "oppo": [
@@ -15413,7 +15357,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 106
+                "rank": 96
             },
             "energy": {
                 "size": 1.9,
@@ -15541,14 +15485,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 113
+                "rank": 115
             }
         },
         "gdp_growth_pct": 6.0,
-        "inflation_pct": 0.8,
         "unemployment_pct": 0.3,
         "trade_pct_gdp": 143.4,
-        "internet_users_pct": 60.7,
+        "internet_users_pct": 68.5,
         "renewable_energy_pct": 52.4
     },
     "410": {
@@ -15564,7 +15507,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 219.9,
+                "size": 208.6,
                 "growth": 5.0,
                 "potential": 89,
                 "oppo": [
@@ -15612,9 +15555,9 @@ const COUNTRIES = {
                 "rank": 13
             },
             "healthcare": {
-                "size": 130.2,
+                "size": 75.0,
                 "growth": 4.4,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15625,7 +15568,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 11
+                "rank": 13
             },
             "energy": {
                 "size": 75.0,
@@ -15740,7 +15683,7 @@ const COUNTRIES = {
                 "rank": 24
             },
             "education": {
-                "size": 65.4,
+                "size": 60.9,
                 "growth": 3.8,
                 "potential": 85,
                 "oppo": [
@@ -15757,7 +15700,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.0,
-        "inflation_pct": 2.3,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 84.6,
         "internet_users_pct": 97.9,
@@ -15837,7 +15779,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 61
+                "rank": 57
             },
             "energy": {
                 "size": 6.4,
@@ -15969,7 +15911,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -2.6,
-        "inflation_pct": 2.9,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 96.1,
         "internet_users_pct": 99.7,
@@ -16049,7 +15990,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 129
+                "rank": 126
             },
             "energy": {
                 "size": 1,
@@ -16177,13 +16118,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 114
+                "rank": 116
             }
         },
         "gdp_growth_pct": 4.1,
-        "inflation_pct": 23.1,
         "unemployment_pct": 1.2,
-        "internet_users_pct": 63.6,
+        "internet_users_pct": 65.6,
         "renewable_energy_pct": 49.2
     },
     "422": {
@@ -16260,7 +16200,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 130
+                "rank": 127
             },
             "energy": {
                 "size": 1,
@@ -16388,14 +16328,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 115
+                "rank": 117
             }
         },
         "gdp_growth_pct": -0.8,
-        "inflation_pct": 45.2,
         "unemployment_pct": 11.0,
         "trade_pct_gdp": 104.2,
-        "internet_users_pct": 83.5,
+        "internet_users_pct": 80.6,
         "renewable_energy_pct": 6.8
     },
     "434": {
@@ -16459,7 +16398,7 @@ const COUNTRIES = {
                 "rank": 96
             },
             "healthcare": {
-                "size": 3.0,
+                "size": 1.9,
                 "growth": 4.4,
                 "potential": 78,
                 "oppo": [
@@ -16472,7 +16411,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 81
+                "rank": 97
             },
             "energy": {
                 "size": 1.9,
@@ -16600,14 +16539,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 116
+                "rank": 118
             }
         },
         "gdp_growth_pct": 1.9,
-        "inflation_pct": 2.1,
         "unemployment_pct": 19.1,
         "trade_pct_gdp": 128.8,
-        "internet_users_pct": 88.5,
+        "internet_users_pct": 82.0,
         "renewable_energy_pct": 3.1
     },
     "144": {
@@ -16671,7 +16609,7 @@ const COUNTRIES = {
                 "rank": 75
             },
             "healthcare": {
-                "size": 2.9,
+                "size": 4.0,
                 "growth": 6.1,
                 "potential": 76,
                 "oppo": [
@@ -16684,7 +16622,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 84
+                "rank": 71
             },
             "energy": {
                 "size": 4.0,
@@ -16812,14 +16750,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 85
+                "rank": 86
             }
         },
         "gdp_growth_pct": 5.0,
-        "inflation_pct": -0.4,
         "unemployment_pct": 4.2,
         "trade_pct_gdp": 42.4,
-        "internet_users_pct": 51.2,
+        "internet_users_pct": 54.6,
         "renewable_energy_pct": 48.8
     },
     "440": {
@@ -16883,9 +16820,9 @@ const COUNTRIES = {
                 "rank": 74
             },
             "healthcare": {
-                "size": 5.2,
+                "size": 3.4,
                 "growth": 4.7,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -16896,7 +16833,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 70
+                "rank": 78
             },
             "energy": {
                 "size": 3.7,
@@ -17024,14 +16961,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 72
+                "rank": 73
             }
         },
         "gdp_growth_pct": 2.8,
-        "inflation_pct": 0.7,
         "unemployment_pct": 6.9,
         "trade_pct_gdp": 143.0,
-        "internet_users_pct": 88.5,
+        "internet_users_pct": 89.2,
         "renewable_energy_pct": 33.2
     },
     "442": {
@@ -17095,7 +17031,7 @@ const COUNTRIES = {
                 "rank": 69
             },
             "healthcare": {
-                "size": 4.4,
+                "size": 3.7,
                 "growth": 3.7,
                 "potential": 81,
                 "oppo": [
@@ -17108,7 +17044,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 72
+                "rank": 74
             },
             "energy": {
                 "size": 4.1,
@@ -17236,11 +17172,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 75
+                "rank": 76
             }
         },
         "gdp_growth_pct": 0.4,
-        "inflation_pct": 2.1,
         "unemployment_pct": 6.4,
         "trade_pct_gdp": 351.3,
         "internet_users_pct": 98.8,
@@ -17307,7 +17242,7 @@ const COUNTRIES = {
                 "rank": 92
             },
             "healthcare": {
-                "size": 2.5,
+                "size": 1.7,
                 "growth": 3.6,
                 "potential": 80,
                 "oppo": [
@@ -17320,7 +17255,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 89
+                "rank": 100
             },
             "energy": {
                 "size": 1.9,
@@ -17448,11 +17383,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 91
+                "rank": 92
             }
         },
         "gdp_growth_pct": -0.0,
-        "inflation_pct": 1.3,
         "unemployment_pct": 6.9,
         "trade_pct_gdp": 132.3,
         "internet_users_pct": 92.7,
@@ -17519,7 +17453,7 @@ const COUNTRIES = {
                 "rank": 59
             },
             "healthcare": {
-                "size": 7.8,
+                "size": 6.4,
                 "growth": 5.6,
                 "potential": 76,
                 "oppo": [
@@ -17532,7 +17466,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 57
+                "rank": 58
             },
             "energy": {
                 "size": 6.4,
@@ -17664,10 +17598,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.8,
-        "inflation_pct": 1.0,
         "unemployment_pct": 9.1,
         "trade_pct_gdp": 92.2,
-        "internet_users_pct": 91,
+        "internet_users_pct": 91.2,
         "renewable_energy_pct": 10.9
     },
     "498": {
@@ -17744,7 +17677,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 131
+                "rank": 128
             },
             "energy": {
                 "size": 1,
@@ -17872,14 +17805,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 117
+                "rank": 119
             }
         },
         "gdp_growth_pct": 0.1,
-        "inflation_pct": 4.7,
         "unemployment_pct": 1.4,
         "trade_pct_gdp": 88.7,
-        "internet_users_pct": 80.2,
+        "internet_users_pct": 77.4,
         "renewable_energy_pct": 21.4
     },
     "450": {
@@ -17956,7 +17888,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 132
+                "rank": 129
             },
             "energy": {
                 "size": 1,
@@ -18084,14 +18016,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 118
+                "rank": 120
             }
         },
         "gdp_growth_pct": 4.2,
-        "inflation_pct": 9.9,
         "unemployment_pct": 3.1,
         "trade_pct_gdp": 55.0,
-        "internet_users_pct": 20.4,
+        "internet_users_pct": 18.7,
         "renewable_energy_pct": 83.1
     },
     "484": {
@@ -18155,7 +18086,7 @@ const COUNTRIES = {
                 "rank": 14
             },
             "healthcare": {
-                "size": 81.7,
+                "size": 74.3,
                 "growth": 4.2,
                 "potential": 82,
                 "oppo": [
@@ -18168,7 +18099,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 17
+                "rank": 14
             },
             "energy": {
                 "size": 74.3,
@@ -18283,7 +18214,7 @@ const COUNTRIES = {
                 "rank": 25
             },
             "education": {
-                "size": 45.3,
+                "size": 45.2,
                 "growth": 3.6,
                 "potential": 80,
                 "oppo": [
@@ -18300,10 +18231,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.4,
-        "inflation_pct": 4.7,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 74.6,
-        "internet_users_pct": 81.2,
+        "internet_users_pct": 83.1,
         "renewable_energy_pct": 13
     },
     "807": {
@@ -18380,7 +18310,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 133
+                "rank": 130
             },
             "energy": {
                 "size": 1,
@@ -18508,14 +18438,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 119
+                "rank": 121
             }
         },
         "gdp_growth_pct": 3.0,
-        "inflation_pct": 3.5,
         "unemployment_pct": 12.3,
         "trade_pct_gdp": 136.3,
-        "internet_users_pct": 87.2,
+        "internet_users_pct": 93.6,
         "renewable_energy_pct": 19.5
     },
     "466": {
@@ -18579,7 +18508,7 @@ const COUNTRIES = {
                 "rank": 112
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.1,
                 "growth": 6.1,
                 "potential": 62,
                 "oppo": [
@@ -18592,7 +18521,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 134
+                "rank": 113
             },
             "energy": {
                 "size": 1.1,
@@ -18720,14 +18649,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 120
+                "rank": 122
             }
         },
         "gdp_growth_pct": 5.0,
-        "inflation_pct": 3.2,
         "unemployment_pct": 2.9,
         "trade_pct_gdp": 49.9,
-        "internet_users_pct": 35.1,
+        "internet_users_pct": 36.8,
         "renewable_energy_pct": 71.1
     },
     "104": {
@@ -18791,9 +18719,9 @@ const COUNTRIES = {
                 "rank": 85
             },
             "healthcare": {
-                "size": 2.6,
+                "size": 3.0,
                 "growth": 4.1,
-                "potential": 71,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18804,7 +18732,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 86
+                "rank": 82
             },
             "energy": {
                 "size": 3.0,
@@ -18932,13 +18860,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 121
+                "rank": 123
             }
         },
         "gdp_growth_pct": -1.0,
-        "inflation_pct": 8.8,
         "unemployment_pct": 2.9,
-        "internet_users_pct": 58.5,
+        "internet_users_pct": 45.4,
         "renewable_energy_pct": 62.9
     },
     "499": {
@@ -19015,7 +18942,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 135
+                "rank": 131
             },
             "energy": {
                 "size": 1,
@@ -19143,11 +19070,10 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 122
+                "rank": 124
             }
         },
         "gdp_growth_pct": 3.2,
-        "inflation_pct": 3.3,
         "unemployment_pct": 13.2,
         "trade_pct_gdp": 109.9,
         "internet_users_pct": 88.9,
@@ -19214,7 +19140,7 @@ const COUNTRIES = {
                 "rank": 118
             },
             "healthcare": {
-                "size": 1.2,
+                "size": 1,
                 "growth": 5.6,
                 "potential": 79,
                 "oppo": [
@@ -19227,7 +19153,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 115
+                "rank": 132
             },
             "energy": {
                 "size": 1,
@@ -19355,14 +19281,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 123
+                "rank": 125
             }
         },
         "gdp_growth_pct": 5.1,
-        "inflation_pct": 6.2,
         "unemployment_pct": 5.2,
         "trade_pct_gdp": 138.4,
-        "internet_users_pct": 83.0,
+        "internet_users_pct": 85.1,
         "renewable_energy_pct": 3
     },
     "508": {
@@ -19426,9 +19351,9 @@ const COUNTRIES = {
                 "rank": 121
             },
             "healthcare": {
-                "size": 1.5,
+                "size": 1,
                 "growth": 5.0,
-                "potential": 61,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19439,7 +19364,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 110
+                "rank": 133
             },
             "energy": {
                 "size": 1,
@@ -19567,14 +19492,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 124
+                "rank": 126
             }
         },
         "gdp_growth_pct": 2.1,
-        "inflation_pct": 4.1,
         "unemployment_pct": 6.7,
         "trade_pct_gdp": 95.7,
-        "internet_users_pct": 19.8,
+        "internet_users_pct": 20.5,
         "renewable_energy_pct": 76.9
     },
     "478": {
@@ -19651,7 +19575,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 136
+                "rank": 134
             },
             "energy": {
                 "size": 1,
@@ -19779,14 +19703,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 125
+                "rank": 127
             }
         },
         "gdp_growth_pct": 6.3,
-        "inflation_pct": 2.5,
         "unemployment_pct": 10.3,
         "trade_pct_gdp": 93.6,
-        "internet_users_pct": 37.4,
+        "internet_users_pct": 45.8,
         "renewable_energy_pct": 19.6
     },
     "480": {
@@ -19863,7 +19786,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 137
+                "rank": 135
             },
             "energy": {
                 "size": 1,
@@ -19991,14 +19914,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 126
+                "rank": 128
             }
         },
         "gdp_growth_pct": 4.9,
-        "inflation_pct": 3.6,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 145.4,
-        "internet_users_pct": 79.5,
+        "internet_users_pct": 73.3,
         "renewable_energy_pct": 8.6
     },
     "454": {
@@ -20075,7 +19997,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 138
+                "rank": 136
             },
             "energy": {
                 "size": 1,
@@ -20203,14 +20125,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 127
+                "rank": 129
             }
         },
         "gdp_growth_pct": 1.7,
-        "inflation_pct": 32.2,
         "unemployment_pct": 5.1,
         "trade_pct_gdp": 42.4,
-        "internet_users_pct": 18.0,
+        "internet_users_pct": 19.0,
         "renewable_energy_pct": 62.9
     },
     "458": {
@@ -20239,7 +20160,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 29
+                "rank": 30
             },
             "manufacturing": {
                 "size": 152.0,
@@ -20274,7 +20195,7 @@ const COUNTRIES = {
                 "rank": 38
             },
             "healthcare": {
-                "size": 13.4,
+                "size": 16.9,
                 "growth": 5.6,
                 "potential": 83,
                 "oppo": [
@@ -20287,7 +20208,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 46
+                "rank": 36
             },
             "energy": {
                 "size": 16.9,
@@ -20419,7 +20340,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.1,
-        "inflation_pct": 1.8,
         "unemployment_pct": 3.8,
         "trade_pct_gdp": 137.4,
         "internet_users_pct": 98.0,
@@ -20499,7 +20419,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 139
+                "rank": 137
             },
             "energy": {
                 "size": 1,
@@ -20627,14 +20547,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 128
+                "rank": 130
             }
         },
         "gdp_growth_pct": 3.7,
-        "inflation_pct": 4.2,
         "unemployment_pct": 19.2,
         "trade_pct_gdp": 109.6,
-        "internet_users_pct": 64.4,
+        "internet_users_pct": 64.9,
         "renewable_energy_pct": 30
     },
     "562": {
@@ -20711,7 +20630,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 140
+                "rank": 138
             },
             "energy": {
                 "size": 1,
@@ -20839,14 +20758,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 129
+                "rank": 131
             }
         },
         "gdp_growth_pct": 10.3,
-        "inflation_pct": 9.1,
         "unemployment_pct": 0.4,
         "trade_pct_gdp": 50.0,
-        "internet_users_pct": 23.2,
+        "internet_users_pct": 15.6,
         "renewable_energy_pct": 79.6
     },
     "566": {
@@ -20910,7 +20828,7 @@ const COUNTRIES = {
                 "rank": 54
             },
             "healthcare": {
-                "size": 8.5,
+                "size": 10.1,
                 "growth": 5.7,
                 "potential": 76,
                 "oppo": [
@@ -20923,7 +20841,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 53
+                "rank": 51
             },
             "energy": {
                 "size": 10.1,
@@ -21051,13 +20969,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 130
+                "rank": 132
             }
         },
         "gdp_growth_pct": 4.1,
-        "inflation_pct": 33.2,
         "unemployment_pct": 3.0,
-        "internet_users_pct": 39.2,
+        "internet_users_pct": 41.2,
         "renewable_energy_pct": 80.3
     },
     "558": {
@@ -21121,7 +21038,7 @@ const COUNTRIES = {
                 "rank": 132
             },
             "healthcare": {
-                "size": 1.3,
+                "size": 1,
                 "growth": 5.5,
                 "potential": 73,
                 "oppo": [
@@ -21134,7 +21051,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 114
+                "rank": 139
             },
             "energy": {
                 "size": 1,
@@ -21262,14 +21179,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 131
+                "rank": 133
             }
         },
         "gdp_growth_pct": 3.6,
-        "inflation_pct": 4.6,
         "unemployment_pct": 5.0,
         "trade_pct_gdp": 98.5,
-        "internet_users_pct": 58.2,
+        "internet_users_pct": 61.4,
         "renewable_energy_pct": 50.4
     },
     "528": {
@@ -21333,9 +21249,9 @@ const COUNTRIES = {
                 "rank": 17
             },
             "healthcare": {
-                "size": 97.2,
+                "size": 48.6,
                 "growth": 4.0,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21346,7 +21262,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 15
+                "rank": 22
             },
             "energy": {
                 "size": 53.5,
@@ -21474,11 +21390,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 17
+                "rank": 16
             }
         },
         "gdp_growth_pct": 1.1,
-        "inflation_pct": 3.3,
         "unemployment_pct": 3.7,
         "trade_pct_gdp": 153.8,
         "internet_users_pct": 97.0,
@@ -21545,7 +21460,7 @@ const COUNTRIES = {
                 "rank": 27
             },
             "healthcare": {
-                "size": 36.5,
+                "size": 19.3,
                 "growth": 4.4,
                 "potential": 85,
                 "oppo": [
@@ -21558,7 +21473,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 25
+                "rank": 31
             },
             "energy": {
                 "size": 21.3,
@@ -21690,7 +21605,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.1,
-        "inflation_pct": 3.1,
         "unemployment_pct": 4,
         "trade_pct_gdp": 81.4,
         "internet_users_pct": 99,
@@ -21757,7 +21671,7 @@ const COUNTRIES = {
                 "rank": 101
             },
             "healthcare": {
-                "size": 2.1,
+                "size": 1.7,
                 "growth": 5.6,
                 "potential": 74,
                 "oppo": [
@@ -21770,7 +21684,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 99
+                "rank": 101
             },
             "energy": {
                 "size": 1.7,
@@ -21898,14 +21812,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 92
+                "rank": 93
             }
         },
         "gdp_growth_pct": 3.7,
-        "inflation_pct": 4.7,
         "unemployment_pct": 10.5,
         "trade_pct_gdp": 40.5,
-        "internet_users_pct": 55.8,
+        "internet_users_pct": 46.3,
         "renewable_energy_pct": 73.7
     },
     "554": {
@@ -21969,9 +21882,9 @@ const COUNTRIES = {
                 "rank": 53
             },
             "healthcare": {
-                "size": 20.9,
+                "size": 10.4,
                 "growth": 4.1,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21982,7 +21895,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 38
+                "rank": 49
             },
             "energy": {
                 "size": 10.4,
@@ -22097,7 +22010,7 @@ const COUNTRIES = {
                 "rank": 26
             },
             "education": {
-                "size": 8.2,
+                "size": 8.1,
                 "growth": 3.5,
                 "potential": 82,
                 "oppo": [
@@ -22110,14 +22023,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 42
+                "rank": 43
             }
         },
         "gdp_growth_pct": 1.3,
-        "inflation_pct": 2.9,
         "unemployment_pct": 4.7,
         "trade_pct_gdp": 51.2,
-        "internet_users_pct": 96.2,
+        "internet_users_pct": 93.5,
         "renewable_energy_pct": 28.9
     },
     "512": {
@@ -22181,9 +22093,9 @@ const COUNTRIES = {
                 "rank": 72
             },
             "healthcare": {
-                "size": 3.0,
+                "size": 4.3,
                 "growth": 4.3,
-                "potential": 82,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22194,7 +22106,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 82
+                "rank": 70
             },
             "energy": {
                 "size": 4.3,
@@ -22326,7 +22238,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.6,
-        "inflation_pct": 0.6,
         "unemployment_pct": 3.2,
         "trade_pct_gdp": 114.9,
         "internet_users_pct": 95.3,
@@ -22393,9 +22304,9 @@ const COUNTRIES = {
                 "rank": 44
             },
             "healthcare": {
-                "size": 7.5,
+                "size": 14.9,
                 "growth": 5.3,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -22406,7 +22317,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 59
+                "rank": 41
             },
             "energy": {
                 "size": 14.9,
@@ -22538,10 +22449,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.0,
-        "inflation_pct": 12.6,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 27.6,
-        "internet_users_pct": 27.4,
+        "internet_users_pct": 57.3,
         "renewable_energy_pct": 41.6
     },
     "591": {
@@ -22605,9 +22515,9 @@ const COUNTRIES = {
                 "rank": 80
             },
             "healthcare": {
-                "size": 5.8,
+                "size": 3.5,
                 "growth": 4.7,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22618,7 +22528,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 64
+                "rank": 77
             },
             "energy": {
                 "size": 3.5,
@@ -22746,14 +22656,13 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 86
+                "rank": 87
             }
         },
         "gdp_growth_pct": 2.7,
-        "inflation_pct": 0.7,
         "unemployment_pct": 8.5,
         "trade_pct_gdp": 83.7,
-        "internet_users_pct": 68.5,
+        "internet_users_pct": 72.8,
         "renewable_energy_pct": 28
     },
     "604": {
@@ -22817,7 +22726,7 @@ const COUNTRIES = {
                 "rank": 49
             },
             "healthcare": {
-                "size": 13.0,
+                "size": 11.6,
                 "growth": 4.9,
                 "potential": 81,
                 "oppo": [
@@ -22945,7 +22854,7 @@ const COUNTRIES = {
                 "rank": 72
             },
             "education": {
-                "size": 7.3,
+                "size": 7.6,
                 "growth": 4.3,
                 "potential": 79,
                 "oppo": [
@@ -22958,11 +22867,10 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 47
+                "rank": 46
             }
         },
         "gdp_growth_pct": 3.3,
-        "inflation_pct": 2.0,
         "unemployment_pct": 5.2,
         "trade_pct_gdp": 51.5,
         "internet_users_pct": 82.0,
@@ -23029,7 +22937,7 @@ const COUNTRIES = {
                 "rank": 35
             },
             "healthcare": {
-                "size": 18.8,
+                "size": 18.5,
                 "growth": 6.4,
                 "potential": 79,
                 "oppo": [
@@ -23042,7 +22950,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 41
+                "rank": 34
             },
             "energy": {
                 "size": 18.5,
@@ -23170,14 +23078,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 32
+                "rank": 33
             }
         },
         "gdp_growth_pct": 5.7,
-        "inflation_pct": 3.2,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 65.9,
-        "internet_users_pct": 83.8,
+        "internet_users_pct": 67.3,
         "renewable_energy_pct": 28
     },
     "598": {
@@ -23241,9 +23148,9 @@ const COUNTRIES = {
                 "rank": 111
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.3,
                 "growth": 5.6,
-                "potential": 73,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23254,7 +23161,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 141
+                "rank": 110
             },
             "energy": {
                 "size": 1.3,
@@ -23382,13 +23289,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 132
+                "rank": 134
             }
         },
         "gdp_growth_pct": 3.8,
-        "inflation_pct": 0.6,
         "unemployment_pct": 2.6,
-        "internet_users_pct": 24.1,
+        "internet_users_pct": 18.8,
         "renewable_energy_pct": 54.6
     },
     "616": {
@@ -23452,9 +23358,9 @@ const COUNTRIES = {
                 "rank": 21
             },
             "healthcare": {
-                "size": 59.2,
+                "size": 36.7,
                 "growth": 4.8,
-                "potential": 87,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23465,7 +23371,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 18
+                "rank": 24
             },
             "energy": {
                 "size": 40.4,
@@ -23597,7 +23503,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.0,
-        "inflation_pct": 3.8,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 100.4,
         "internet_users_pct": 88.6,
@@ -23664,9 +23569,9 @@ const COUNTRIES = {
                 "rank": 43
             },
             "healthcare": {
-                "size": 25.7,
+                "size": 12.5,
                 "growth": 4.5,
-                "potential": 85,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23677,7 +23582,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 33
+                "rank": 44
             },
             "energy": {
                 "size": 13.8,
@@ -23809,7 +23714,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.1,
-        "inflation_pct": 2.4,
         "unemployment_pct": 6.5,
         "trade_pct_gdp": 89.7,
         "internet_users_pct": 88.5,
@@ -23876,9 +23780,9 @@ const COUNTRIES = {
                 "rank": 100
             },
             "healthcare": {
-                "size": 3.0,
+                "size": 1.8,
                 "growth": 5.3,
-                "potential": 80,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23889,7 +23793,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 83
+                "rank": 98
             },
             "energy": {
                 "size": 1.8,
@@ -24017,11 +23921,10 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 133
+                "rank": 135
             }
         },
         "gdp_growth_pct": 4.2,
-        "inflation_pct": 3.8,
         "unemployment_pct": 5.7,
         "trade_pct_gdp": 76.8,
         "internet_users_pct": 81.6,
@@ -24088,9 +23991,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "healthcare": {
-                "size": 4.4,
+                "size": 8.8,
                 "growth": 4.5,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24101,7 +24004,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 73
+                "rank": 54
             },
             "energy": {
                 "size": 8.8,
@@ -24233,10 +24136,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.4,
-        "inflation_pct": 1.3,
         "unemployment_pct": 0.1,
         "trade_pct_gdp": 100.2,
-        "internet_users_pct": 99.7,
+        "internet_users_pct": 98.1,
         "renewable_energy_pct": 0
     },
     "642": {
@@ -24300,7 +24202,7 @@ const COUNTRIES = {
                 "rank": 36
             },
             "healthcare": {
-                "size": 17.5,
+                "size": 15.3,
                 "growth": 4.0,
                 "potential": 84,
                 "oppo": [
@@ -24313,7 +24215,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 42
+                "rank": 40
             },
             "energy": {
                 "size": 16.8,
@@ -24441,11 +24343,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 46
+                "rank": 47
             }
         },
         "gdp_growth_pct": 0.9,
-        "inflation_pct": 5.7,
         "unemployment_pct": 5.4,
         "trade_pct_gdp": 77.2,
         "internet_users_pct": 91.3,
@@ -24512,9 +24413,9 @@ const COUNTRIES = {
                 "rank": 10
             },
             "healthcare": {
-                "size": 122.5,
+                "size": 87.0,
                 "growth": 5.3,
-                "potential": 89,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24525,7 +24426,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 13
+                "rank": 12
             },
             "energy": {
                 "size": 95.6,
@@ -24657,7 +24558,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 4.3,
-        "inflation_pct": 8.4,
         "unemployment_pct": 2.4,
         "trade_pct_gdp": 39.5,
         "internet_users_pct": 94.4,
@@ -24737,7 +24637,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 142
+                "rank": 140
             },
             "energy": {
                 "size": 1,
@@ -24865,14 +24765,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 134
+                "rank": 136
             }
         },
         "gdp_growth_pct": 8.9,
-        "inflation_pct": 1.8,
         "unemployment_pct": 11.3,
         "trade_pct_gdp": 70.0,
-        "internet_users_pct": 34.2,
+        "internet_users_pct": 31.7,
         "renewable_energy_pct": 79.9
     },
     "682": {
@@ -24936,7 +24835,7 @@ const COUNTRIES = {
                 "rank": 19
             },
             "healthcare": {
-                "size": 56.4,
+                "size": 49.6,
                 "growth": 4.4,
                 "potential": 86,
                 "oppo": [
@@ -24949,7 +24848,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 21
             },
             "energy": {
                 "size": 49.6,
@@ -25064,7 +24963,7 @@ const COUNTRIES = {
                 "rank": 34
             },
             "education": {
-                "size": 38.0,
+                "size": 33.3,
                 "growth": 3.8,
                 "potential": 84,
                 "oppo": [
@@ -25077,11 +24976,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 16
+                "rank": 17
             }
         },
         "gdp_growth_pct": 2.0,
-        "inflation_pct": 1.7,
         "unemployment_pct": 3.5,
         "trade_pct_gdp": 54.7,
         "internet_users_pct": 100,
@@ -25148,9 +25046,9 @@ const COUNTRIES = {
                 "rank": 95
             },
             "healthcare": {
-                "size": 1.1,
+                "size": 2.0,
                 "growth": 4.1,
-                "potential": 58,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25161,7 +25059,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 117
+                "rank": 94
             },
             "energy": {
                 "size": 2.0,
@@ -25289,14 +25187,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 135
+                "rank": 137
             }
         },
         "gdp_growth_pct": -14.0,
-        "inflation_pct": 138.8,
         "unemployment_pct": 7.5,
         "trade_pct_gdp": 2.0,
-        "internet_users_pct": 26.4,
         "renewable_energy_pct": 61
     },
     "686": {
@@ -25360,7 +25256,7 @@ const COUNTRIES = {
                 "rank": 109
             },
             "healthcare": {
-                "size": 1.1,
+                "size": 1.3,
                 "growth": 6.5,
                 "potential": 75,
                 "oppo": [
@@ -25373,7 +25269,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 118
+                "rank": 111
             },
             "energy": {
                 "size": 1.3,
@@ -25501,14 +25397,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 88
+                "rank": 90
             }
         },
         "gdp_growth_pct": 6.1,
-        "inflation_pct": 0.8,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 68.1,
-        "internet_users_pct": 60.6,
+        "internet_users_pct": 60.1,
         "renewable_energy_pct": 35.4
     },
     "702": {
@@ -25572,7 +25467,7 @@ const COUNTRIES = {
                 "rank": 29
             },
             "healthcare": {
-                "size": 19.7,
+                "size": 21.9,
                 "growth": 5.4,
                 "potential": 87,
                 "oppo": [
@@ -25585,7 +25480,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 39
+                "rank": 28
             },
             "energy": {
                 "size": 21.9,
@@ -25717,7 +25612,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 4.4,
-        "inflation_pct": 2.4,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 322.4,
         "internet_users_pct": 94.4,
@@ -25797,7 +25691,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 143
+                "rank": 141
             },
             "energy": {
                 "size": 1,
@@ -25925,14 +25819,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 136
+                "rank": 138
             }
         },
         "gdp_growth_pct": 4.3,
-        "inflation_pct": 28.6,
         "unemployment_pct": 3.1,
         "trade_pct_gdp": 40.5,
-        "internet_users_pct": 20.6,
+        "internet_users_pct": 25.1,
         "renewable_energy_pct": 71.6
     },
     "222": {
@@ -25996,7 +25889,7 @@ const COUNTRIES = {
                 "rank": 107
             },
             "healthcare": {
-                "size": 2.6,
+                "size": 1.4,
                 "growth": 4.6,
                 "potential": 78,
                 "oppo": [
@@ -26009,7 +25902,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 87
+                "rank": 108
             },
             "energy": {
                 "size": 1.4,
@@ -26137,14 +26030,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 137
+                "rank": 139
             }
         },
         "gdp_growth_pct": 2.6,
-        "inflation_pct": 0.9,
         "unemployment_pct": 3.3,
         "trade_pct_gdp": 84.7,
-        "internet_users_pct": 67.7,
+        "internet_users_pct": 66.5,
         "renewable_energy_pct": 21.9
     },
     "706": {
@@ -26221,7 +26113,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 144
+                "rank": 142
             },
             "energy": {
                 "size": 1,
@@ -26349,13 +26241,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 138
+                "rank": 140
             }
         },
         "gdp_growth_pct": 4.1,
         "unemployment_pct": 18.9,
         "trade_pct_gdp": 130.3,
-        "internet_users_pct": 27.6,
+        "internet_users_pct": 27.9,
         "renewable_energy_pct": 95.4
     },
     "688": {
@@ -26419,9 +26311,9 @@ const COUNTRIES = {
                 "rank": 70
             },
             "healthcare": {
-                "size": 5.8,
+                "size": 3.6,
                 "growth": 5.2,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26432,7 +26324,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 65
+                "rank": 75
             },
             "energy": {
                 "size": 4.0,
@@ -26560,11 +26452,10 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 78
+                "rank": 79
             }
         },
         "gdp_growth_pct": 3.9,
-        "inflation_pct": 4.7,
         "unemployment_pct": 7.2,
         "trade_pct_gdp": 111.7,
         "internet_users_pct": 87.7,
@@ -26631,9 +26522,9 @@ const COUNTRIES = {
                 "rank": 57
             },
             "healthcare": {
-                "size": 8.3,
+                "size": 5.6,
                 "growth": 4.4,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26644,7 +26535,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 54
+                "rank": 60
             },
             "energy": {
                 "size": 6.2,
@@ -26776,7 +26667,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.9,
-        "inflation_pct": 2.8,
         "unemployment_pct": 5.3,
         "trade_pct_gdp": 171.2,
         "internet_users_pct": 89.8,
@@ -26843,9 +26733,9 @@ const COUNTRIES = {
                 "rank": 81
             },
             "healthcare": {
-                "size": 5.8,
+                "size": 2.9,
                 "growth": 4.3,
-                "potential": 83,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26856,7 +26746,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 66
+                "rank": 83
             },
             "energy": {
                 "size": 3.2,
@@ -26984,11 +26874,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 70
+                "rank": 71
             }
         },
         "gdp_growth_pct": 1.7,
-        "inflation_pct": 2.0,
         "unemployment_pct": 3.7,
         "trade_pct_gdp": 155.7,
         "internet_users_pct": 90.8,
@@ -27007,9 +26896,9 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 30.9,
+                "size": 32.6,
                 "growth": 4.5,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -27020,7 +26909,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 30
+                "rank": 28
             },
             "manufacturing": {
                 "size": 86.4,
@@ -27055,9 +26944,9 @@ const COUNTRIES = {
                 "rank": 24
             },
             "healthcare": {
-                "size": 54.2,
+                "size": 24.1,
                 "growth": 3.9,
-                "potential": 85,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -27068,7 +26957,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 26
             },
             "energy": {
                 "size": 26.6,
@@ -27200,7 +27089,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 0.8,
-        "inflation_pct": 2.8,
         "unemployment_pct": 8.4,
         "trade_pct_gdp": 105.9,
         "internet_users_pct": 95.5,
@@ -27280,7 +27168,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 145
+                "rank": 143
             },
             "energy": {
                 "size": 1,
@@ -27408,14 +27296,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 139
+                "rank": 141
             }
         },
         "gdp_growth_pct": 0.7,
-        "inflation_pct": 13.4,
         "unemployment_pct": 13.4,
         "trade_pct_gdp": 35.6,
-        "internet_users_pct": 34.6,
+        "internet_users_pct": 33.8,
         "renewable_energy_pct": 1.1
     },
     "148": {
@@ -27492,7 +27379,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 146
+                "rank": 144
             },
             "energy": {
                 "size": 1,
@@ -27620,14 +27507,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 140
+                "rank": 142
             }
         },
         "gdp_growth_pct": 4.2,
-        "inflation_pct": 8.9,
         "unemployment_pct": 1.1,
         "trade_pct_gdp": 47.9,
-        "internet_users_pct": 13.2,
+        "internet_users_pct": 12.6,
         "renewable_energy_pct": 70
     },
     "768": {
@@ -27704,7 +27590,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 147
+                "rank": 145
             },
             "energy": {
                 "size": 1,
@@ -27832,14 +27718,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 141
+                "rank": 143
             }
         },
         "gdp_growth_pct": 6.5,
-        "inflation_pct": 2.9,
         "unemployment_pct": 1.9,
         "trade_pct_gdp": 61.6,
-        "internet_users_pct": 37.0,
+        "internet_users_pct": 39.5,
         "renewable_energy_pct": 75.1
     },
     "764": {
@@ -27903,7 +27788,7 @@ const COUNTRIES = {
                 "rank": 31
             },
             "healthcare": {
-                "size": 19.1,
+                "size": 21.1,
                 "growth": 4.6,
                 "potential": 81,
                 "oppo": [
@@ -27916,7 +27801,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 40
+                "rank": 30
             },
             "energy": {
                 "size": 21.1,
@@ -28048,7 +27933,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.5,
-        "inflation_pct": 1.4,
         "unemployment_pct": 0.8,
         "trade_pct_gdp": 136.7,
         "internet_users_pct": 90.9,
@@ -28128,7 +28012,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 148
+                "rank": 146
             },
             "energy": {
                 "size": 1,
@@ -28256,13 +28140,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 142
+                "rank": 144
             }
         },
         "gdp_growth_pct": 8.4,
         "unemployment_pct": 7.0,
         "trade_pct_gdp": 65.6,
-        "internet_users_pct": 56.8,
+        "internet_users_pct": 55.8,
         "renewable_energy_pct": 34.9
     },
     "795": {
@@ -28326,7 +28210,7 @@ const COUNTRIES = {
                 "rank": 87
             },
             "healthcare": {
-                "size": 2.3,
+                "size": 2.1,
                 "growth": 6.1,
                 "potential": 81,
                 "oppo": [
@@ -28339,7 +28223,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 94
+                "rank": 92
             },
             "energy": {
                 "size": 2.3,
@@ -28454,7 +28338,7 @@ const COUNTRIES = {
                 "rank": 75
             },
             "education": {
-                "size": 1,
+                "size": 1.3,
                 "growth": 5.5,
                 "potential": 79,
                 "oppo": [
@@ -28467,7 +28351,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 143
+                "rank": 88
             }
         },
         "gdp_growth_pct": 6.3,
@@ -28536,9 +28420,9 @@ const COUNTRIES = {
                 "rank": 115
             },
             "healthcare": {
-                "size": 1.5,
+                "size": 1,
                 "growth": 4.6,
-                "potential": 82,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -28549,7 +28433,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 111
+                "rank": 147
             },
             "energy": {
                 "size": 1,
@@ -28677,13 +28561,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 144
+                "rank": 145
             }
         },
         "gdp_growth_pct": 2.5,
-        "inflation_pct": 0.5,
         "unemployment_pct": 3.3,
-        "internet_users_pct": 84.7,
+        "internet_users_pct": 82.2,
         "renewable_energy_pct": 0.5
     },
     "788": {
@@ -28747,9 +28630,9 @@ const COUNTRIES = {
                 "rank": 94
             },
             "healthcare": {
-                "size": 3.3,
+                "size": 2.1,
                 "growth": 4.7,
-                "potential": 73,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28760,7 +28643,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 79
+                "rank": 93
             },
             "energy": {
                 "size": 2.1,
@@ -28888,14 +28771,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 76
+                "rank": 77
             }
         },
         "gdp_growth_pct": 1.6,
-        "inflation_pct": 7.2,
         "unemployment_pct": 15.3,
         "trade_pct_gdp": 106.3,
-        "internet_users_pct": 72.4,
+        "internet_users_pct": 76.5,
         "renewable_energy_pct": 11.6
     },
     "792": {
@@ -28959,7 +28841,7 @@ const COUNTRIES = {
                 "rank": 16
             },
             "healthcare": {
-                "size": 46.5,
+                "size": 54.4,
                 "growth": 4.9,
                 "potential": 83,
                 "oppo": [
@@ -28972,7 +28854,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 24
+                "rank": 18
             },
             "energy": {
                 "size": 59.8,
@@ -29104,7 +28986,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.3,
-        "inflation_pct": 58.5,
         "unemployment_pct": 8.8,
         "trade_pct_gdp": 54.6,
         "internet_users_pct": 87.3,
@@ -29171,9 +29052,9 @@ const COUNTRIES = {
                 "rank": 84
             },
             "healthcare": {
-                "size": 1.9,
+                "size": 3.2,
                 "growth": 6.3,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29184,7 +29065,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 104
+                "rank": 80
             },
             "energy": {
                 "size": 3.2,
@@ -29312,14 +29193,13 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 82
+                "rank": 83
             }
         },
         "gdp_growth_pct": 5.5,
-        "inflation_pct": 3.1,
         "unemployment_pct": 1.6,
         "trade_pct_gdp": 41.5,
-        "internet_users_pct": 29.1,
+        "internet_users_pct": 31.2,
         "renewable_energy_pct": 78.3
     },
     "800": {
@@ -29383,7 +29263,7 @@ const COUNTRIES = {
                 "rank": 89
             },
             "healthcare": {
-                "size": 1.8,
+                "size": 2.2,
                 "growth": 6.5,
                 "potential": 64,
                 "oppo": [
@@ -29396,7 +29276,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 105
+                "rank": 87
             },
             "energy": {
                 "size": 2.2,
@@ -29524,11 +29404,10 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 145
+                "rank": 146
             }
         },
         "gdp_growth_pct": 6.1,
-        "inflation_pct": 3.3,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 42.7,
         "internet_users_pct": 8.9,
@@ -29595,9 +29474,9 @@ const COUNTRIES = {
                 "rank": 55
             },
             "healthcare": {
-                "size": 12.5,
+                "size": 7.6,
                 "growth": 4.8,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -29608,7 +29487,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 48
+                "rank": 56
             },
             "energy": {
                 "size": 8.4,
@@ -29740,10 +29619,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.9,
-        "inflation_pct": 6.5,
         "unemployment_pct": 9.8,
         "trade_pct_gdp": 77.8,
-        "internet_users_pct": 82.4,
+        "internet_users_pct": 82.5,
         "renewable_energy_pct": 8.9
     },
     "858": {
@@ -29807,9 +29685,9 @@ const COUNTRIES = {
                 "rank": 83
             },
             "healthcare": {
-                "size": 5.8,
+                "size": 3.2,
                 "growth": 4.8,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29820,7 +29698,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 67
+                "rank": 81
             },
             "energy": {
                 "size": 3.2,
@@ -29948,11 +29826,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 71
+                "rank": 72
             }
         },
         "gdp_growth_pct": 3.1,
-        "inflation_pct": 4.8,
         "unemployment_pct": 8.2,
         "trade_pct_gdp": 52.5,
         "internet_users_pct": 92.0,
@@ -29971,7 +29848,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 2783.9,
+                "size": 2676.0,
                 "growth": 5.3,
                 "potential": 93,
                 "oppo": [
@@ -30019,9 +29896,9 @@ const COUNTRIES = {
                 "rank": 1
             },
             "healthcare": {
-                "size": 6143.7,
+                "size": 1840.1,
                 "growth": 4.7,
-                "potential": 93,
+                "potential": 91,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -30164,10 +30041,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.8,
-        "inflation_pct": 2.9,
         "unemployment_pct": 4.0,
         "trade_pct_gdp": 25.4,
-        "internet_users_pct": 93.1,
+        "internet_users_pct": 94.7,
         "renewable_energy_pct": 10.9
     },
     "860": {
@@ -30231,9 +30107,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "healthcare": {
-                "size": 6.2,
+                "size": 4.6,
                 "growth": 6.7,
-                "potential": 78,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30244,7 +30120,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 63
+                "rank": 65
             },
             "energy": {
                 "size": 5.1,
@@ -30376,10 +30252,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 6.5,
-        "inflation_pct": 9.6,
         "unemployment_pct": 4.4,
         "trade_pct_gdp": 60.7,
-        "internet_users_pct": 89.0,
+        "internet_users_pct": 89.5,
         "renewable_energy_pct": 1
     },
     "862": {
@@ -30443,7 +30318,7 @@ const COUNTRIES = {
                 "rank": 66
             },
             "healthcare": {
-                "size": 3.6,
+                "size": 4.8,
                 "growth": 5.7,
                 "potential": 63,
                 "oppo": [
@@ -30456,7 +30331,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 76
+                "rank": 64
             },
             "energy": {
                 "size": 4.8,
@@ -30571,9 +30446,9 @@ const COUNTRIES = {
                 "rank": 53
             },
             "education": {
-                "size": 1,
+                "size": 2.4,
                 "growth": 5.1,
-                "potential": 60,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30584,12 +30459,13 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 146
+                "rank": 68
             }
         },
         "gdp_growth_pct": 5.3,
         "unemployment_pct": 5.3,
         "trade_pct_gdp": 26.1,
+        "internet_users_pct": 76.7,
         "renewable_energy_pct": 33.7
     },
     "704": {
@@ -30653,7 +30529,7 @@ const COUNTRIES = {
                 "rank": 34
             },
             "healthcare": {
-                "size": 17.4,
+                "size": 19.1,
                 "growth": 6.9,
                 "potential": 80,
                 "oppo": [
@@ -30666,7 +30542,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 43
+                "rank": 32
             },
             "energy": {
                 "size": 19.1,
@@ -30798,7 +30674,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 7.1,
-        "inflation_pct": 3.6,
         "unemployment_pct": 1.6,
         "trade_pct_gdp": 173.9,
         "internet_users_pct": 84.2,
@@ -30865,7 +30740,7 @@ const COUNTRIES = {
                 "rank": 127
             },
             "healthcare": {
-                "size": 1.7,
+                "size": 1,
                 "growth": 4.4,
                 "potential": 59,
                 "oppo": [
@@ -30878,7 +30753,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 107
+                "rank": 148
             },
             "energy": {
                 "size": 1,
@@ -31012,7 +30887,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 0.8,
         "unemployment_pct": 17.0,
         "trade_pct_gdp": 56.1,
-        "internet_users_pct": 13.8,
+        "internet_users_pct": 17.5,
         "renewable_energy_pct": 3.7
     },
     "710": {
@@ -31076,9 +30951,9 @@ const COUNTRIES = {
                 "rank": 41
             },
             "healthcare": {
-                "size": 28.6,
+                "size": 16.0,
                 "growth": 3.8,
-                "potential": 80,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -31089,7 +30964,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 30
+                "rank": 38
             },
             "energy": {
                 "size": 16.0,
@@ -31217,14 +31092,13 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 28
+                "rank": 29
             }
         },
         "gdp_growth_pct": 0.5,
-        "inflation_pct": 4.4,
         "unemployment_pct": 32.3,
         "trade_pct_gdp": 61.6,
-        "internet_users_pct": 75.7,
+        "internet_users_pct": 78.4,
         "renewable_energy_pct": 9.7
     },
     "894": {
@@ -31288,7 +31162,7 @@ const COUNTRIES = {
                 "rank": 116
             },
             "healthcare": {
-                "size": 1.2,
+                "size": 1,
                 "growth": 5.6,
                 "potential": 73,
                 "oppo": [
@@ -31301,7 +31175,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 116
+                "rank": 149
             },
             "energy": {
                 "size": 1,
@@ -31433,10 +31307,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.8,
-        "inflation_pct": 15.0,
         "unemployment_pct": 5.9,
         "trade_pct_gdp": 62.5,
-        "internet_users_pct": 33,
+        "internet_users_pct": 17.1,
         "renewable_energy_pct": 83
     },
     "716": {
@@ -31500,7 +31373,7 @@ const COUNTRIES = {
                 "rank": 103
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.7,
                 "growth": 4.8,
                 "potential": 72,
                 "oppo": [
@@ -31513,7 +31386,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 149
+                "rank": 102
             },
             "energy": {
                 "size": 1.7,
@@ -31645,10 +31518,9 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.7,
-        "inflation_pct": 104.7,
         "unemployment_pct": 9.4,
         "trade_pct_gdp": 41.5,
-        "internet_users_pct": 38.4,
+        "internet_users_pct": 41.6,
         "renewable_energy_pct": 82.4
     }
 };
@@ -31809,32 +31681,32 @@ const TRADE_ROUTES = [
 const TICKER_DATA = [
     {
         "label": "EUR/USD",
-        "value": "1.15",
+        "value": "1.16",
         "dir": "neutral"
     },
     {
         "label": "GBP/USD",
-        "value": "1.32",
+        "value": "1.33",
         "dir": "neutral"
     },
     {
         "label": "USD/JPY",
-        "value": "160",
+        "value": "159",
         "dir": "neutral"
     },
     {
         "label": "USD/KRW",
-        "value": "1,507",
+        "value": "1,496",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.89",
+        "value": "6.87",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "93.31",
+        "value": "93.16",
         "dir": "neutral"
     },
     {
@@ -31844,7 +31716,7 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/SGD",
-        "value": "1.29",
+        "value": "1.28",
         "dir": "neutral"
     },
     {
@@ -31859,12 +31731,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,214",
+        "value": "26,239",
         "dir": "neutral"
     },
     {
         "label": "USD/AUD",
-        "value": "1.45",
+        "value": "1.43",
         "dir": "neutral"
     }
 ];
