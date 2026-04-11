@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-04-10 21:44:32
+// Auto-generated: 2026-04-11 21:42:30
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -121,7 +121,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 139
+                "rank": 143
             },
             "finance": {
                 "size": 1.2,
@@ -333,7 +333,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 86
+                "rank": 85
             },
             "finance": {
                 "size": 7.1,
@@ -545,7 +545,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 128
+                "rank": 134
             },
             "finance": {
                 "size": 2.3,
@@ -577,7 +577,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 108
+                "rank": 109
             },
             "energy": {
                 "size": 1.2,
@@ -741,12 +741,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 33
+                "rank": 32
             },
             "manufacturing": {
-                "size": 51.8,
+                "size": 66.3,
                 "growth": 3.1,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -757,7 +757,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 39
+                "rank": 36
             },
             "finance": {
                 "size": 38.7,
@@ -776,7 +776,7 @@ const COUNTRIES = {
                 "rank": 28
             },
             "healthcare": {
-                "size": 22.0,
+                "size": 22.1,
                 "growth": 5.2,
                 "potential": 86,
                 "oppo": [
@@ -789,7 +789,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 37
+                "rank": 36
             },
             "energy": {
                 "size": 22.1,
@@ -953,7 +953,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 29
+                "rank": 27
             },
             "manufacturing": {
                 "size": 96.9,
@@ -969,7 +969,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 30
+                "rank": 27
             },
             "finance": {
                 "size": 44.7,
@@ -1001,7 +1001,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 22
+                "rank": 20
             },
             "energy": {
                 "size": 25.5,
@@ -1181,7 +1181,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 112
+                "rank": 118
             },
             "finance": {
                 "size": 2.2,
@@ -1213,7 +1213,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 100
+                "rank": 103
             },
             "energy": {
                 "size": 1.1,
@@ -1393,7 +1393,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 24
+                "rank": 19
             },
             "finance": {
                 "size": 123.0,
@@ -1605,7 +1605,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 31
+                "rank": 29
             },
             "finance": {
                 "size": 44.9,
@@ -1637,7 +1637,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 21
             },
             "energy": {
                 "size": 23.5,
@@ -1817,7 +1817,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 101
+                "rank": 105
             },
             "finance": {
                 "size": 6.2,
@@ -2013,7 +2013,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 27
+                "rank": 26
             },
             "manufacturing": {
                 "size": 84.5,
@@ -2029,7 +2029,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 33
+                "rank": 31
             },
             "finance": {
                 "size": 56.4,
@@ -2061,7 +2061,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 19
+                "rank": 18
             },
             "energy": {
                 "size": 29.5,
@@ -2241,7 +2241,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 122
+                "rank": 129
             },
             "finance": {
                 "size": 1.5,
@@ -2273,7 +2273,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 119
+                "rank": 117
             },
             "energy": {
                 "size": 1,
@@ -2453,7 +2453,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 123
+                "rank": 130
             },
             "finance": {
                 "size": 1.6,
@@ -2649,7 +2649,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 32
+                "rank": 31
             },
             "manufacturing": {
                 "size": 98.5,
@@ -2665,7 +2665,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 28
+                "rank": 25
             },
             "finance": {
                 "size": 31.5,
@@ -2697,7 +2697,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 56
+                "rank": 54
             },
             "energy": {
                 "size": 18.0,
@@ -2877,7 +2877,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 67
+                "rank": 65
             },
             "finance": {
                 "size": 9.5,
@@ -2909,7 +2909,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 60
+                "rank": 59
             },
             "energy": {
                 "size": 5.0,
@@ -3089,7 +3089,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 80
+                "rank": 83
             },
             "finance": {
                 "size": 3.3,
@@ -3121,7 +3121,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 109
+                "rank": 110
             },
             "energy": {
                 "size": 1.9,
@@ -3301,7 +3301,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 104
+                "rank": 107
             },
             "finance": {
                 "size": 2.5,
@@ -3513,7 +3513,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 62
+                "rank": 60
             },
             "finance": {
                 "size": 6.4,
@@ -3545,7 +3545,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 74
+                "rank": 72
             },
             "energy": {
                 "size": 3.3,
@@ -3725,7 +3725,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 88
+                "rank": 86
             },
             "finance": {
                 "size": 3.8,
@@ -3937,7 +3937,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 13
+                "rank": 12
             },
             "finance": {
                 "size": 153.0,
@@ -3969,7 +3969,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 8
+                "rank": 7
             },
             "energy": {
                 "size": 87.4,
@@ -4149,7 +4149,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 116
+                "rank": 121
             },
             "finance": {
                 "size": 1.1,
@@ -4181,7 +4181,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 120
+                "rank": 118
             },
             "energy": {
                 "size": 1,
@@ -4361,7 +4361,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 143
+                "rank": 146
             },
             "finance": {
                 "size": 1.4,
@@ -4393,7 +4393,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 121
+                "rank": 119
             },
             "energy": {
                 "size": 1,
@@ -4557,7 +4557,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 6
             },
             "manufacturing": {
                 "size": 186.9,
@@ -4573,7 +4573,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 19
+                "rank": 16
             },
             "finance": {
                 "size": 235.6,
@@ -4605,7 +4605,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 5
             },
             "energy": {
                 "size": 89.7,
@@ -4769,12 +4769,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 20
             },
             "manufacturing": {
-                "size": 182.3,
+                "size": 123.6,
                 "growth": 2.0,
-                "potential": 83,
+                "potential": 82,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -4804,9 +4804,9 @@ const COUNTRIES = {
                 "rank": 20
             },
             "healthcare": {
-                "size": 87.6,
+                "size": 37.5,
                 "growth": 4.1,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4817,7 +4817,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 16
+                "rank": 23
             },
             "energy": {
                 "size": 41.2,
@@ -4997,7 +4997,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 50
+                "rank": 51
             },
             "finance": {
                 "size": 23.1,
@@ -5029,7 +5029,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 31
+                "rank": 29
             },
             "energy": {
                 "size": 13.2,
@@ -5421,7 +5421,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 75
+                "rank": 76
             },
             "finance": {
                 "size": 6.1,
@@ -5633,7 +5633,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 89
+                "rank": 87
             },
             "finance": {
                 "size": 3.7,
@@ -5665,7 +5665,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 101
+                "rank": 104
             },
             "energy": {
                 "size": 2.1,
@@ -5845,7 +5845,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 95
+                "rank": 96
             },
             "finance": {
                 "size": 5.0,
@@ -6056,7 +6056,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 126
+                "rank": 133
             },
             "finance": {
                 "size": 1.1,
@@ -6088,7 +6088,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 122
+                "rank": 120
             },
             "energy": {
                 "size": 1,
@@ -6268,7 +6268,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 43
+                "rank": 45
             },
             "finance": {
                 "size": 29.3,
@@ -6300,7 +6300,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 32
+                "rank": 30
             },
             "energy": {
                 "size": 16.8,
@@ -6480,7 +6480,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 72
+                "rank": 70
             },
             "finance": {
                 "size": 6.7,
@@ -6512,7 +6512,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 69
+                "rank": 65
             },
             "energy": {
                 "size": 3.8,
@@ -6692,7 +6692,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 73
+                "rank": 74
             },
             "finance": {
                 "size": 7.5,
@@ -6724,7 +6724,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 55
+                "rank": 53
             },
             "energy": {
                 "size": 4.3,
@@ -6903,7 +6903,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 130
+                "rank": 136
             },
             "finance": {
                 "size": 3.2,
@@ -7147,7 +7147,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 35
+                "rank": 34
             },
             "energy": {
                 "size": 15.3,
@@ -7327,7 +7327,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 4
+                "rank": 3
             },
             "finance": {
                 "size": 393.6,
@@ -7539,7 +7539,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 34
+                "rank": 32
             },
             "finance": {
                 "size": 35.7,
@@ -7571,7 +7571,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 27
+                "rank": 26
             },
             "energy": {
                 "size": 18.7,
@@ -7751,7 +7751,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 65
+                "rank": 62
             },
             "finance": {
                 "size": 8.7,
@@ -7783,7 +7783,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 71
+                "rank": 68
             },
             "energy": {
                 "size": 5.0,
@@ -7963,7 +7963,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 52
+                "rank": 53
             },
             "finance": {
                 "size": 18.9,
@@ -7995,7 +7995,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 51
+                "rank": 50
             },
             "energy": {
                 "size": 10.8,
@@ -8175,7 +8175,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 63
+                "rank": 61
             },
             "finance": {
                 "size": 8.7,
@@ -8207,7 +8207,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 58
+                "rank": 57
             },
             "energy": {
                 "size": 5.0,
@@ -8387,7 +8387,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 38
+                "rank": 39
             },
             "finance": {
                 "size": 27.2,
@@ -8586,7 +8586,7 @@ const COUNTRIES = {
                 "rank": 16
             },
             "manufacturing": {
-                "size": 205.9,
+                "size": 227.8,
                 "growth": 2.9,
                 "potential": 85,
                 "oppo": [
@@ -8599,7 +8599,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 15
+                "rank": 13
             },
             "finance": {
                 "size": 145.0,
@@ -8618,7 +8618,7 @@ const COUNTRIES = {
                 "rank": 12
             },
             "healthcare": {
-                "size": 127.3,
+                "size": 69.0,
                 "growth": 5.0,
                 "potential": 88,
                 "oppo": [
@@ -8631,7 +8631,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 12
+                "rank": 16
             },
             "energy": {
                 "size": 75.9,
@@ -8811,7 +8811,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 98
+                "rank": 101
             },
             "finance": {
                 "size": 3.6,
@@ -9023,7 +9023,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 90
+                "rank": 89
             },
             "finance": {
                 "size": 10.5,
@@ -9055,7 +9055,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 77
+                "rank": 76
             },
             "energy": {
                 "size": 6.0,
@@ -9235,7 +9235,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 42
+                "rank": 43
             },
             "finance": {
                 "size": 25.1,
@@ -9267,7 +9267,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 34
+                "rank": 32
             },
             "energy": {
                 "size": 13.1,
@@ -9431,7 +9431,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 8
             },
             "manufacturing": {
                 "size": 332.6,
@@ -9447,7 +9447,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 10
+                "rank": 9
             },
             "finance": {
                 "size": 265.5,
@@ -9479,7 +9479,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 6
             },
             "energy": {
                 "size": 139.1,
@@ -9659,7 +9659,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 105
+                "rank": 108
             },
             "finance": {
                 "size": 1.5,
@@ -9691,7 +9691,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 123
+                "rank": 121
             },
             "energy": {
                 "size": 1,
@@ -9855,10 +9855,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 8
+                "rank": 7
             },
             "manufacturing": {
-                "size": 323.8,
+                "size": 486.6,
                 "growth": 2.0,
                 "potential": 84,
                 "oppo": [
@@ -9871,7 +9871,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 11
+                "rank": 6
             },
             "finance": {
                 "size": 309.6,
@@ -9890,9 +9890,9 @@ const COUNTRIES = {
                 "rank": 4
             },
             "healthcare": {
-                "size": 328.3,
+                "size": 147.4,
                 "growth": 4.1,
-                "potential": 88,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9903,7 +9903,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 5
+                "rank": 9
             },
             "energy": {
                 "size": 162.2,
@@ -10083,7 +10083,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 108
+                "rank": 110
             },
             "finance": {
                 "size": 2.9,
@@ -10115,7 +10115,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 102
+                "rank": 105
             },
             "energy": {
                 "size": 1.5,
@@ -10295,7 +10295,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 83
+                "rank": 84
             },
             "finance": {
                 "size": 5.8,
@@ -10327,7 +10327,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 103
+                "rank": 106
             },
             "energy": {
                 "size": 3.3,
@@ -10507,7 +10507,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 109
+                "rank": 111
             },
             "finance": {
                 "size": 1.8,
@@ -10539,7 +10539,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 124
+                "rank": 122
             },
             "energy": {
                 "size": 1,
@@ -10719,7 +10719,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 110
+                "rank": 112
             },
             "finance": {
                 "size": 1,
@@ -10751,7 +10751,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 125
+                "rank": 123
             },
             "energy": {
                 "size": 1,
@@ -10931,7 +10931,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 53
+                "rank": 54
             },
             "finance": {
                 "size": 21.5,
@@ -10963,7 +10963,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 44
+                "rank": 43
             },
             "energy": {
                 "size": 11.3,
@@ -11143,7 +11143,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 66
+                "rank": 63
             },
             "finance": {
                 "size": 7.9,
@@ -11175,7 +11175,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 62
+                "rank": 61
             },
             "energy": {
                 "size": 4.5,
@@ -11355,7 +11355,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 144
+                "rank": 148
             },
             "finance": {
                 "size": 1.7,
@@ -11387,7 +11387,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 126
+                "rank": 124
             },
             "energy": {
                 "size": 1,
@@ -11566,7 +11566,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 97
+                "rank": 99
             },
             "finance": {
                 "size": 2.6,
@@ -11778,7 +11778,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 76
+                "rank": 78
             },
             "finance": {
                 "size": 7.8,
@@ -11810,7 +11810,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 68
+                "rank": 64
             },
             "energy": {
                 "size": 4.1,
@@ -11990,7 +11990,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 91
+                "rank": 90
             },
             "finance": {
                 "size": 1.8,
@@ -12022,7 +12022,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 127
+                "rank": 125
             },
             "energy": {
                 "size": 1,
@@ -12202,7 +12202,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 46
+                "rank": 47
             },
             "finance": {
                 "size": 18.7,
@@ -12234,7 +12234,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 50
+                "rank": 49
             },
             "energy": {
                 "size": 9.8,
@@ -12446,7 +12446,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 29
+                "rank": 28
             },
             "energy": {
                 "size": 55.9,
@@ -12626,7 +12626,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 6
+                "rank": 5
             },
             "finance": {
                 "size": 273.7,
@@ -12658,7 +12658,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 14
+                "rank": 13
             },
             "energy": {
                 "size": 156.4,
@@ -12822,7 +12822,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 31
+                "rank": 29
             },
             "manufacturing": {
                 "size": 198.1,
@@ -12838,7 +12838,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 17
+                "rank": 15
             },
             "finance": {
                 "size": 51.2,
@@ -12870,7 +12870,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 25
             },
             "energy": {
                 "size": 26.8,
@@ -13050,7 +13050,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 29
+                "rank": 26
             },
             "finance": {
                 "size": 33.3,
@@ -13082,7 +13082,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 36
+                "rank": 35
             },
             "energy": {
                 "size": 19.0,
@@ -13262,7 +13262,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 74
+                "rank": 75
             },
             "finance": {
                 "size": 19.6,
@@ -13294,7 +13294,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 49
+                "rank": 48
             },
             "energy": {
                 "size": 11.2,
@@ -13474,7 +13474,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 111
+                "rank": 115
             },
             "finance": {
                 "size": 2.8,
@@ -13657,9 +13657,9 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 51.4,
+                "size": 27.0,
                 "growth": 4.5,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13670,10 +13670,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 33
             },
             "manufacturing": {
-                "size": 60.1,
+                "size": 64.8,
                 "growth": 1.8,
                 "potential": 81,
                 "oppo": [
@@ -13686,7 +13686,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 36
+                "rank": 37
             },
             "finance": {
                 "size": 37.8,
@@ -13718,7 +13718,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 28
+                "rank": 27
             },
             "energy": {
                 "size": 21.6,
@@ -13885,7 +13885,7 @@ const COUNTRIES = {
                 "rank": 11
             },
             "manufacturing": {
-                "size": 388.2,
+                "size": 314.3,
                 "growth": 1.8,
                 "potential": 83,
                 "oppo": [
@@ -13898,7 +13898,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 8
+                "rank": 10
             },
             "finance": {
                 "size": 200.0,
@@ -13930,7 +13930,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 8
             },
             "energy": {
                 "size": 104.8,
@@ -14097,7 +14097,7 @@ const COUNTRIES = {
                 "rank": 124
             },
             "manufacturing": {
-                "size": 1.7,
+                "size": 2.6,
                 "growth": 1.5,
                 "potential": 72,
                 "oppo": [
@@ -14110,7 +14110,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 131
+                "rank": 122
             },
             "finance": {
                 "size": 1.5,
@@ -14308,9 +14308,9 @@ const COUNTRIES = {
                 "rank": 91
             },
             "manufacturing": {
-                "size": 9.5,
+                "size": 6.4,
                 "growth": 3.0,
-                "potential": 71,
+                "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -14321,7 +14321,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 79
+                "rank": 92
             },
             "finance": {
                 "size": 3.7,
@@ -14353,7 +14353,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 78
+                "rank": 77
             },
             "energy": {
                 "size": 2.1,
@@ -14504,7 +14504,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 311.8,
+                "size": 302.1,
                 "growth": 4.2,
                 "potential": 88,
                 "oppo": [
@@ -14520,7 +14520,7 @@ const COUNTRIES = {
                 "rank": 3
             },
             "manufacturing": {
-                "size": 1326.3,
+                "size": 773.3,
                 "growth": 1.5,
                 "potential": 84,
                 "oppo": [
@@ -14533,7 +14533,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 3
+                "rank": 4
             },
             "finance": {
                 "size": 281.9,
@@ -14732,7 +14732,7 @@ const COUNTRIES = {
                 "rank": 48
             },
             "manufacturing": {
-                "size": 39.7,
+                "size": 38.5,
                 "growth": 3.5,
                 "potential": 80,
                 "oppo": [
@@ -14745,7 +14745,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 45
+                "rank": 48
             },
             "finance": {
                 "size": 24.5,
@@ -14777,7 +14777,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 52
+                "rank": 51
             },
             "energy": {
                 "size": 12.8,
@@ -14944,7 +14944,7 @@ const COUNTRIES = {
                 "rank": 64
             },
             "manufacturing": {
-                "size": 8.7,
+                "size": 14.4,
                 "growth": 3.9,
                 "potential": 73,
                 "oppo": [
@@ -14957,7 +14957,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 81
+                "rank": 66
             },
             "finance": {
                 "size": 8.4,
@@ -14989,7 +14989,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 75
+                "rank": 73
             },
             "energy": {
                 "size": 4.8,
@@ -15156,7 +15156,7 @@ const COUNTRIES = {
                 "rank": 132
             },
             "manufacturing": {
-                "size": 2.4,
+                "size": 2.3,
                 "growth": 5.6,
                 "potential": 74,
                 "oppo": [
@@ -15169,7 +15169,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 118
+                "rank": 128
             },
             "finance": {
                 "size": 1.5,
@@ -15201,7 +15201,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 128
+                "rank": 126
             },
             "energy": {
                 "size": 1,
@@ -15381,7 +15381,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 58
+                "rank": 56
             },
             "finance": {
                 "size": 3.2,
@@ -15413,7 +15413,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 106
+                "rank": 107
             },
             "energy": {
                 "size": 1.9,
@@ -15564,9 +15564,9 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 208.6,
+                "size": 140.7,
                 "growth": 5.0,
-                "potential": 89,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15577,12 +15577,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 9
             },
             "manufacturing": {
-                "size": 798.7,
+                "size": 360.1,
                 "growth": 2.3,
-                "potential": 85,
+                "potential": 84,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -15593,7 +15593,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 5
+                "rank": 8
             },
             "finance": {
                 "size": 131.3,
@@ -15792,9 +15792,9 @@ const COUNTRIES = {
                 "rank": 57
             },
             "manufacturing": {
-                "size": 12.8,
+                "size": 19.2,
                 "growth": 1.5,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -15805,7 +15805,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 70
+                "rank": 58
             },
             "finance": {
                 "size": 11.2,
@@ -15837,7 +15837,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 61
+                "rank": 60
             },
             "energy": {
                 "size": 6.4,
@@ -16004,7 +16004,7 @@ const COUNTRIES = {
                 "rank": 120
             },
             "manufacturing": {
-                "size": 2.4,
+                "size": 3.2,
                 "growth": 3.7,
                 "potential": 71,
                 "oppo": [
@@ -16017,7 +16017,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 119
+                "rank": 113
             },
             "finance": {
                 "size": 1.2,
@@ -16049,7 +16049,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 129
+                "rank": 127
             },
             "energy": {
                 "size": 1,
@@ -16215,9 +16215,9 @@ const COUNTRIES = {
                 "rank": 133
             },
             "manufacturing": {
-                "size": 1,
+                "size": 2.4,
                 "growth": 2.0,
-                "potential": 66,
+                "potential": 67,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -16228,7 +16228,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 145
+                "rank": 124
             },
             "finance": {
                 "size": 1.4,
@@ -16260,7 +16260,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 130
+                "rank": 128
             },
             "energy": {
                 "size": 1,
@@ -16440,7 +16440,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 96
+                "rank": 97
             },
             "finance": {
                 "size": 3.4,
@@ -16639,9 +16639,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "manufacturing": {
-                "size": 17.4,
+                "size": 11.9,
                 "growth": 4.0,
-                "potential": 74,
+                "potential": 73,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -16652,7 +16652,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 61
+                "rank": 72
             },
             "finance": {
                 "size": 6.9,
@@ -16671,7 +16671,7 @@ const COUNTRIES = {
                 "rank": 75
             },
             "healthcare": {
-                "size": 2.9,
+                "size": 4.0,
                 "growth": 6.1,
                 "potential": 76,
                 "oppo": [
@@ -16684,7 +16684,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 84
+                "rank": 74
             },
             "energy": {
                 "size": 4.0,
@@ -16851,9 +16851,9 @@ const COUNTRIES = {
                 "rank": 79
             },
             "manufacturing": {
-                "size": 13.1,
+                "size": 11.2,
                 "growth": 2.6,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -16864,7 +16864,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 69
+                "rank": 77
             },
             "finance": {
                 "size": 7.1,
@@ -16896,7 +16896,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 70
+                "rank": 66
             },
             "energy": {
                 "size": 3.7,
@@ -17063,9 +17063,9 @@ const COUNTRIES = {
                 "rank": 75
             },
             "manufacturing": {
-                "size": 4.1,
+                "size": 12.3,
                 "growth": 1.6,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -17076,7 +17076,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 106
+                "rank": 71
             },
             "finance": {
                 "size": 7.8,
@@ -17108,7 +17108,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 72
+                "rank": 70
             },
             "energy": {
                 "size": 4.1,
@@ -17275,7 +17275,7 @@ const COUNTRIES = {
                 "rank": 100
             },
             "manufacturing": {
-                "size": 4.8,
+                "size": 5.8,
                 "growth": 1.5,
                 "potential": 77,
                 "oppo": [
@@ -17288,7 +17288,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 99
+                "rank": 98
             },
             "finance": {
                 "size": 3.7,
@@ -17487,7 +17487,7 @@ const COUNTRIES = {
                 "rank": 58
             },
             "manufacturing": {
-                "size": 24.5,
+                "size": 19.3,
                 "growth": 3.5,
                 "potential": 73,
                 "oppo": [
@@ -17500,7 +17500,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 56
+                "rank": 57
             },
             "finance": {
                 "size": 11.2,
@@ -17532,7 +17532,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 57
+                "rank": 55
             },
             "energy": {
                 "size": 6.4,
@@ -17699,7 +17699,7 @@ const COUNTRIES = {
                 "rank": 134
             },
             "manufacturing": {
-                "size": 1.5,
+                "size": 2.4,
                 "growth": 1.5,
                 "potential": 72,
                 "oppo": [
@@ -17712,7 +17712,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 133
+                "rank": 125
             },
             "finance": {
                 "size": 1.5,
@@ -17744,7 +17744,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 131
+                "rank": 129
             },
             "energy": {
                 "size": 1,
@@ -17911,7 +17911,7 @@ const COUNTRIES = {
                 "rank": 135
             },
             "manufacturing": {
-                "size": 2.2,
+                "size": 2.1,
                 "growth": 3.7,
                 "potential": 58,
                 "oppo": [
@@ -17924,7 +17924,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 124
+                "rank": 132
             },
             "finance": {
                 "size": 1.2,
@@ -17956,7 +17956,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 132
+                "rank": 130
             },
             "energy": {
                 "size": 1,
@@ -18123,9 +18123,9 @@ const COUNTRIES = {
                 "rank": 15
             },
             "manufacturing": {
-                "size": 367.6,
+                "size": 222.8,
                 "growth": 2.1,
-                "potential": 80,
+                "potential": 79,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -18136,7 +18136,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 9
+                "rank": 14
             },
             "finance": {
                 "size": 129.9,
@@ -18168,7 +18168,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 17
+                "rank": 15
             },
             "energy": {
                 "size": 74.3,
@@ -18335,9 +18335,9 @@ const COUNTRIES = {
                 "rank": 136
             },
             "manufacturing": {
-                "size": 2.7,
+                "size": 2.2,
                 "growth": 2.7,
-                "potential": 75,
+                "potential": 74,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -18348,7 +18348,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 114
+                "rank": 131
             },
             "finance": {
                 "size": 1.4,
@@ -18380,7 +18380,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 133
+                "rank": 131
             },
             "energy": {
                 "size": 1,
@@ -18547,9 +18547,9 @@ const COUNTRIES = {
                 "rank": 114
             },
             "manufacturing": {
-                "size": 2.0,
+                "size": 3.2,
                 "growth": 4.0,
-                "potential": 59,
+                "potential": 60,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -18560,7 +18560,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 127
+                "rank": 114
             },
             "finance": {
                 "size": 1.9,
@@ -18592,7 +18592,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 134
+                "rank": 132
             },
             "energy": {
                 "size": 1.1,
@@ -18759,9 +18759,9 @@ const COUNTRIES = {
                 "rank": 69
             },
             "manufacturing": {
-                "size": 26.7,
+                "size": 14.2,
                 "growth": 2.0,
-                "potential": 70,
+                "potential": 69,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -18772,7 +18772,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 51
+                "rank": 68
             },
             "finance": {
                 "size": 5.2,
@@ -18970,7 +18970,7 @@ const COUNTRIES = {
                 "rank": 137
             },
             "manufacturing": {
-                "size": 1,
+                "size": 1.1,
                 "growth": 2.8,
                 "potential": 74,
                 "oppo": [
@@ -18983,7 +18983,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 146
+                "rank": 147
             },
             "finance": {
                 "size": 1,
@@ -19015,7 +19015,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 135
+                "rank": 133
             },
             "energy": {
                 "size": 1,
@@ -19182,9 +19182,9 @@ const COUNTRIES = {
                 "rank": 105
             },
             "manufacturing": {
-                "size": 2.1,
+                "size": 4.6,
                 "growth": 3.5,
-                "potential": 76,
+                "potential": 77,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -19195,7 +19195,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 125
+                "rank": 104
             },
             "finance": {
                 "size": 1.7,
@@ -19227,7 +19227,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 115
+                "rank": 116
             },
             "energy": {
                 "size": 1,
@@ -19394,9 +19394,9 @@ const COUNTRIES = {
                 "rank": 125
             },
             "manufacturing": {
-                "size": 1.5,
+                "size": 2.7,
                 "growth": 2.9,
-                "potential": 56,
+                "potential": 57,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -19407,7 +19407,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 134
+                "rank": 120
             },
             "finance": {
                 "size": 1.6,
@@ -19439,7 +19439,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 110
+                "rank": 111
             },
             "energy": {
                 "size": 1,
@@ -19606,7 +19606,7 @@ const COUNTRIES = {
                 "rank": 138
             },
             "manufacturing": {
-                "size": 1,
+                "size": 1.3,
                 "growth": 4.5,
                 "potential": 71,
                 "oppo": [
@@ -19619,7 +19619,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 147
+                "rank": 144
             },
             "finance": {
                 "size": 1,
@@ -19651,7 +19651,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 136
+                "rank": 134
             },
             "energy": {
                 "size": 1,
@@ -19818,7 +19818,7 @@ const COUNTRIES = {
                 "rank": 139
             },
             "manufacturing": {
-                "size": 1.7,
+                "size": 1.8,
                 "growth": 3.5,
                 "potential": 76,
                 "oppo": [
@@ -19831,7 +19831,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 132
+                "rank": 137
             },
             "finance": {
                 "size": 1,
@@ -19863,7 +19863,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 137
+                "rank": 135
             },
             "energy": {
                 "size": 1,
@@ -20030,7 +20030,7 @@ const COUNTRIES = {
                 "rank": 140
             },
             "manufacturing": {
-                "size": 1.2,
+                "size": 1.4,
                 "growth": 2.7,
                 "potential": 56,
                 "oppo": [
@@ -20043,7 +20043,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 141
+                "rank": 140
             },
             "finance": {
                 "size": 1,
@@ -20075,7 +20075,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 138
+                "rank": 136
             },
             "energy": {
                 "size": 1,
@@ -20239,12 +20239,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 30
+                "rank": 28
             },
             "manufacturing": {
-                "size": 152.0,
+                "size": 81.1,
                 "growth": 3.5,
-                "potential": 82,
+                "potential": 81,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -20255,7 +20255,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 23
+                "rank": 33
             },
             "finance": {
                 "size": 29.6,
@@ -20454,9 +20454,9 @@ const COUNTRIES = {
                 "rank": 141
             },
             "manufacturing": {
-                "size": 1.4,
+                "size": 1.6,
                 "growth": 3.5,
-                "potential": 69,
+                "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -20467,7 +20467,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 135
+                "rank": 139
             },
             "finance": {
                 "size": 1,
@@ -20499,7 +20499,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 139
+                "rank": 137
             },
             "energy": {
                 "size": 1,
@@ -20666,7 +20666,7 @@ const COUNTRIES = {
                 "rank": 142
             },
             "manufacturing": {
-                "size": 1.4,
+                "size": 2.4,
                 "growth": 6.1,
                 "potential": 63,
                 "oppo": [
@@ -20679,7 +20679,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 136
+                "rank": 126
             },
             "finance": {
                 "size": 1.4,
@@ -20711,7 +20711,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 140
+                "rank": 138
             },
             "energy": {
                 "size": 1,
@@ -20878,9 +20878,9 @@ const COUNTRIES = {
                 "rank": 53
             },
             "manufacturing": {
-                "size": 21.8,
+                "size": 30.3,
                 "growth": 3.6,
-                "potential": 73,
+                "potential": 74,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -20891,7 +20891,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 57
+                "rank": 50
             },
             "finance": {
                 "size": 17.7,
@@ -20923,7 +20923,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 53
+                "rank": 52
             },
             "energy": {
                 "size": 10.1,
@@ -21089,7 +21089,7 @@ const COUNTRIES = {
                 "rank": 143
             },
             "manufacturing": {
-                "size": 2.7,
+                "size": 2.4,
                 "growth": 3.4,
                 "potential": 70,
                 "oppo": [
@@ -21102,7 +21102,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 115
+                "rank": 127
             },
             "finance": {
                 "size": 1.4,
@@ -21301,7 +21301,7 @@ const COUNTRIES = {
                 "rank": 19
             },
             "manufacturing": {
-                "size": 134.6,
+                "size": 160.4,
                 "growth": 1.9,
                 "potential": 82,
                 "oppo": [
@@ -21314,7 +21314,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 26
+                "rank": 18
             },
             "finance": {
                 "size": 102.1,
@@ -21346,7 +21346,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 15
+                "rank": 14
             },
             "energy": {
                 "size": 53.5,
@@ -21513,9 +21513,9 @@ const COUNTRIES = {
                 "rank": 35
             },
             "manufacturing": {
-                "size": 32.8,
+                "size": 63.8,
                 "growth": 2.3,
-                "potential": 81,
+                "potential": 82,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -21526,7 +21526,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 49
+                "rank": 38
             },
             "finance": {
                 "size": 40.6,
@@ -21558,7 +21558,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 25
+                "rank": 24
             },
             "energy": {
                 "size": 21.3,
@@ -21725,9 +21725,9 @@ const COUNTRIES = {
                 "rank": 88
             },
             "manufacturing": {
-                "size": 1.9,
+                "size": 5.1,
                 "growth": 3.5,
-                "potential": 70,
+                "potential": 71,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -21738,7 +21738,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 129
+                "rank": 102
             },
             "finance": {
                 "size": 3.0,
@@ -21937,7 +21937,7 @@ const COUNTRIES = {
                 "rank": 41
             },
             "manufacturing": {
-                "size": 37.1,
+                "size": 50.0,
                 "growth": 2.0,
                 "potential": 81,
                 "oppo": [
@@ -21950,7 +21950,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 47
+                "rank": 41
             },
             "finance": {
                 "size": 18.2,
@@ -21982,7 +21982,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 38
+                "rank": 39
             },
             "energy": {
                 "size": 10.4,
@@ -22149,9 +22149,9 @@ const COUNTRIES = {
                 "rank": 71
             },
             "manufacturing": {
-                "size": 10.7,
+                "size": 12.9,
                 "growth": 2.2,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -22162,7 +22162,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 77
+                "rank": 69
             },
             "finance": {
                 "size": 7.5,
@@ -22361,7 +22361,7 @@ const COUNTRIES = {
                 "rank": 43
             },
             "manufacturing": {
-                "size": 48.9,
+                "size": 44.6,
                 "growth": 3.2,
                 "potential": 73,
                 "oppo": [
@@ -22374,7 +22374,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 41
+                "rank": 44
             },
             "finance": {
                 "size": 26.0,
@@ -22406,7 +22406,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 59
+                "rank": 58
             },
             "energy": {
                 "size": 14.9,
@@ -22573,9 +22573,9 @@ const COUNTRIES = {
                 "rank": 78
             },
             "manufacturing": {
-                "size": 4.3,
+                "size": 10.4,
                 "growth": 2.6,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -22586,7 +22586,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 102
+                "rank": 79
             },
             "finance": {
                 "size": 6.1,
@@ -22618,7 +22618,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 64
+                "rank": 62
             },
             "energy": {
                 "size": 3.5,
@@ -22785,7 +22785,7 @@ const COUNTRIES = {
                 "rank": 49
             },
             "manufacturing": {
-                "size": 35.0,
+                "size": 34.7,
                 "growth": 2.8,
                 "potential": 78,
                 "oppo": [
@@ -22798,7 +22798,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 48
+                "rank": 49
             },
             "finance": {
                 "size": 20.2,
@@ -22994,12 +22994,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 26
+                "rank": 25
             },
             "manufacturing": {
-                "size": 115.8,
+                "size": 88.6,
                 "growth": 4.3,
-                "potential": 77,
+                "potential": 76,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -23010,7 +23010,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 27
+                "rank": 30
             },
             "finance": {
                 "size": 32.3,
@@ -23209,9 +23209,9 @@ const COUNTRIES = {
                 "rank": 98
             },
             "manufacturing": {
-                "size": 1,
+                "size": 6.1,
                 "growth": 3.5,
-                "potential": 69,
+                "potential": 71,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -23222,7 +23222,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 148
+                "rank": 94
             },
             "finance": {
                 "size": 2.2,
@@ -23254,7 +23254,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 141
+                "rank": 139
             },
             "energy": {
                 "size": 1.3,
@@ -23417,10 +23417,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 21
             },
             "manufacturing": {
-                "size": 162.3,
+                "size": 121.1,
                 "growth": 2.7,
                 "potential": 84,
                 "oppo": [
@@ -23465,7 +23465,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 18
+                "rank": 17
             },
             "energy": {
                 "size": 40.4,
@@ -23632,7 +23632,7 @@ const COUNTRIES = {
                 "rank": 46
             },
             "manufacturing": {
-                "size": 40.5,
+                "size": 41.4,
                 "growth": 2.4,
                 "potential": 82,
                 "oppo": [
@@ -23645,7 +23645,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 44
+                "rank": 46
             },
             "finance": {
                 "size": 26.3,
@@ -23677,7 +23677,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 33
+                "rank": 31
             },
             "energy": {
                 "size": 13.8,
@@ -23844,7 +23844,7 @@ const COUNTRIES = {
                 "rank": 101
             },
             "manufacturing": {
-                "size": 8.5,
+                "size": 5.3,
                 "growth": 3.2,
                 "potential": 77,
                 "oppo": [
@@ -23857,7 +23857,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 82
+                "rank": 100
             },
             "finance": {
                 "size": 3.1,
@@ -24056,7 +24056,7 @@ const COUNTRIES = {
                 "rank": 55
             },
             "manufacturing": {
-                "size": 17.7,
+                "size": 26.3,
                 "growth": 2.4,
                 "potential": 81,
                 "oppo": [
@@ -24069,7 +24069,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 59
+                "rank": 52
             },
             "finance": {
                 "size": 15.3,
@@ -24101,7 +24101,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 73
+                "rank": 71
             },
             "energy": {
                 "size": 8.8,
@@ -24268,7 +24268,7 @@ const COUNTRIES = {
                 "rank": 42
             },
             "manufacturing": {
-                "size": 55.5,
+                "size": 50.5,
                 "growth": 1.9,
                 "potential": 81,
                 "oppo": [
@@ -24281,7 +24281,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 37
+                "rank": 40
             },
             "finance": {
                 "size": 32.1,
@@ -24480,7 +24480,7 @@ const COUNTRIES = {
                 "rank": 13
             },
             "manufacturing": {
-                "size": 316.9,
+                "size": 286.9,
                 "growth": 3.2,
                 "potential": 86,
                 "oppo": [
@@ -24493,7 +24493,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 12
+                "rank": 11
             },
             "finance": {
                 "size": 182.6,
@@ -24525,7 +24525,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 13
+                "rank": 12
             },
             "energy": {
                 "size": 95.6,
@@ -24692,7 +24692,7 @@ const COUNTRIES = {
                 "rank": 144
             },
             "manufacturing": {
-                "size": 1.3,
+                "size": 1.7,
                 "growth": 5.6,
                 "potential": 62,
                 "oppo": [
@@ -24705,7 +24705,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 140
+                "rank": 138
             },
             "finance": {
                 "size": 1,
@@ -24737,7 +24737,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 142
+                "rank": 140
             },
             "energy": {
                 "size": 1,
@@ -24904,7 +24904,7 @@ const COUNTRIES = {
                 "rank": 18
             },
             "manufacturing": {
-                "size": 194.9,
+                "size": 148.8,
                 "growth": 2.3,
                 "potential": 83,
                 "oppo": [
@@ -24917,7 +24917,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 18
+                "rank": 20
             },
             "finance": {
                 "size": 86.8,
@@ -24936,7 +24936,7 @@ const COUNTRIES = {
                 "rank": 19
             },
             "healthcare": {
-                "size": 56.4,
+                "size": 49.6,
                 "growth": 4.4,
                 "potential": 86,
                 "oppo": [
@@ -24949,7 +24949,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 22
             },
             "energy": {
                 "size": 49.6,
@@ -25129,7 +25129,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 94
+                "rank": 95
             },
             "finance": {
                 "size": 3.5,
@@ -25148,9 +25148,9 @@ const COUNTRIES = {
                 "rank": 95
             },
             "healthcare": {
-                "size": 1.1,
+                "size": 2.0,
                 "growth": 4.1,
-                "potential": 58,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25161,7 +25161,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 117
+                "rank": 102
             },
             "energy": {
                 "size": 2.0,
@@ -25327,7 +25327,7 @@ const COUNTRIES = {
                 "rank": 109
             },
             "manufacturing": {
-                "size": 4.5,
+                "size": 3.9,
                 "growth": 4.4,
                 "potential": 73,
                 "oppo": [
@@ -25340,7 +25340,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 100
+                "rank": 109
             },
             "finance": {
                 "size": 2.3,
@@ -25359,7 +25359,7 @@ const COUNTRIES = {
                 "rank": 109
             },
             "healthcare": {
-                "size": 1.1,
+                "size": 1.3,
                 "growth": 6.5,
                 "potential": 75,
                 "oppo": [
@@ -25372,7 +25372,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 118
+                "rank": 115
             },
             "energy": {
                 "size": 1.3,
@@ -25536,10 +25536,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 22
             },
             "manufacturing": {
-                "size": 143.0,
+                "size": 105.1,
                 "growth": 3.3,
                 "potential": 85,
                 "oppo": [
@@ -25552,7 +25552,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 25
+                "rank": 23
             },
             "finance": {
                 "size": 38.3,
@@ -25571,7 +25571,7 @@ const COUNTRIES = {
                 "rank": 29
             },
             "healthcare": {
-                "size": 19.7,
+                "size": 21.9,
                 "growth": 5.4,
                 "potential": 87,
                 "oppo": [
@@ -25584,7 +25584,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 39
+                "rank": 37
             },
             "energy": {
                 "size": 21.9,
@@ -25796,7 +25796,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 143
+                "rank": 141
             },
             "energy": {
                 "size": 1,
@@ -25976,7 +25976,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 103
+                "rank": 106
             },
             "finance": {
                 "size": 2.5,
@@ -26188,7 +26188,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 137
+                "rank": 141
             },
             "finance": {
                 "size": 1,
@@ -26220,7 +26220,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 144
+                "rank": 142
             },
             "energy": {
                 "size": 1,
@@ -26386,9 +26386,9 @@ const COUNTRIES = {
                 "rank": 76
             },
             "manufacturing": {
-                "size": 12.6,
+                "size": 11.9,
                 "growth": 3.1,
-                "potential": 78,
+                "potential": 77,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -26399,7 +26399,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 71
+                "rank": 73
             },
             "finance": {
                 "size": 7.6,
@@ -26418,9 +26418,9 @@ const COUNTRIES = {
                 "rank": 70
             },
             "healthcare": {
-                "size": 5.8,
+                "size": 3.6,
                 "growth": 5.2,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26431,7 +26431,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 65
+                "rank": 75
             },
             "energy": {
                 "size": 4.0,
@@ -26598,9 +26598,9 @@ const COUNTRIES = {
                 "rank": 60
             },
             "manufacturing": {
-                "size": 25.3,
+                "size": 18.6,
                 "growth": 2.3,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -26611,7 +26611,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 55
+                "rank": 59
             },
             "finance": {
                 "size": 11.8,
@@ -26630,9 +26630,9 @@ const COUNTRIES = {
                 "rank": 57
             },
             "healthcare": {
-                "size": 8.3,
+                "size": 5.6,
                 "growth": 4.4,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26643,7 +26643,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 54
+                "rank": 63
             },
             "energy": {
                 "size": 6.2,
@@ -26810,9 +26810,9 @@ const COUNTRIES = {
                 "rank": 85
             },
             "manufacturing": {
-                "size": 15.6,
+                "size": 9.6,
                 "growth": 2.2,
-                "potential": 80,
+                "potential": 79,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -26823,7 +26823,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 64
+                "rank": 81
             },
             "finance": {
                 "size": 6.1,
@@ -26842,9 +26842,9 @@ const COUNTRIES = {
                 "rank": 81
             },
             "healthcare": {
-                "size": 5.8,
+                "size": 2.9,
                 "growth": 4.3,
-                "potential": 83,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26855,7 +26855,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 66
+                "rank": 84
             },
             "energy": {
                 "size": 3.2,
@@ -27006,9 +27006,9 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 32.6,
+                "size": 30.2,
                 "growth": 4.5,
-                "potential": 86,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -27019,10 +27019,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 28
+                "rank": 30
             },
             "manufacturing": {
-                "size": 86.4,
+                "size": 79.7,
                 "growth": 1.8,
                 "potential": 81,
                 "oppo": [
@@ -27035,7 +27035,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 32
+                "rank": 34
             },
             "finance": {
                 "size": 50.7,
@@ -27054,9 +27054,9 @@ const COUNTRIES = {
                 "rank": 24
             },
             "healthcare": {
-                "size": 54.2,
+                "size": 24.1,
                 "growth": 3.9,
-                "potential": 85,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -27067,7 +27067,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 33
             },
             "energy": {
                 "size": 26.6,
@@ -27247,7 +27247,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 113
+                "rank": 119
             },
             "finance": {
                 "size": 1.7,
@@ -27279,7 +27279,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 145
+                "rank": 143
             },
             "energy": {
                 "size": 1,
@@ -27459,7 +27459,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 138
+                "rank": 142
             },
             "finance": {
                 "size": 1.4,
@@ -27491,7 +27491,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 146
+                "rank": 144
             },
             "energy": {
                 "size": 1,
@@ -27658,9 +27658,9 @@ const COUNTRIES = {
                 "rank": 148
             },
             "manufacturing": {
-                "size": 1.2,
+                "size": 1.3,
                 "growth": 4.6,
-                "potential": 59,
+                "potential": 60,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -27671,7 +27671,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 142
+                "rank": 145
             },
             "finance": {
                 "size": 1,
@@ -27703,7 +27703,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 147
+                "rank": 145
             },
             "energy": {
                 "size": 1,
@@ -27867,12 +27867,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 24
+                "rank": 23
             },
             "manufacturing": {
-                "size": 205.0,
+                "size": 101.1,
                 "growth": 2.5,
-                "potential": 80,
+                "potential": 79,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -27883,7 +27883,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 16
+                "rank": 24
             },
             "finance": {
                 "size": 36.9,
@@ -27902,7 +27902,7 @@ const COUNTRIES = {
                 "rank": 31
             },
             "healthcare": {
-                "size": 19.1,
+                "size": 21.1,
                 "growth": 4.6,
                 "potential": 81,
                 "oppo": [
@@ -27915,7 +27915,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 40
+                "rank": 38
             },
             "energy": {
                 "size": 21.1,
@@ -28082,7 +28082,7 @@ const COUNTRIES = {
                 "rank": 149
             },
             "manufacturing": {
-                "size": 2.3,
+                "size": 1.9,
                 "growth": 5.4,
                 "potential": 74,
                 "oppo": [
@@ -28095,7 +28095,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 120
+                "rank": 135
             },
             "finance": {
                 "size": 1.2,
@@ -28127,7 +28127,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 148
+                "rank": 146
             },
             "energy": {
                 "size": 1,
@@ -28293,9 +28293,9 @@ const COUNTRIES = {
                 "rank": 93
             },
             "manufacturing": {
-                "size": 10.2,
+                "size": 6.8,
                 "growth": 4.0,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -28306,7 +28306,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 78
+                "rank": 88
             },
             "finance": {
                 "size": 4.3,
@@ -28325,7 +28325,7 @@ const COUNTRIES = {
                 "rank": 87
             },
             "healthcare": {
-                "size": 2.3,
+                "size": 2.1,
                 "growth": 6.1,
                 "potential": 81,
                 "oppo": [
@@ -28338,7 +28338,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 94
+                "rank": 100
             },
             "energy": {
                 "size": 2.3,
@@ -28503,9 +28503,9 @@ const COUNTRIES = {
                 "rank": 115
             },
             "manufacturing": {
-                "size": 3.7,
+                "size": 3.1,
                 "growth": 2.5,
-                "potential": 79,
+                "potential": 78,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -28516,7 +28516,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 107
+                "rank": 116
             },
             "finance": {
                 "size": 1.8,
@@ -28535,9 +28535,9 @@ const COUNTRIES = {
                 "rank": 115
             },
             "healthcare": {
-                "size": 1.5,
+                "size": 1,
                 "growth": 4.6,
-                "potential": 82,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -28548,7 +28548,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 111
+                "rank": 147
             },
             "energy": {
                 "size": 1,
@@ -28714,7 +28714,7 @@ const COUNTRIES = {
                 "rank": 94
             },
             "manufacturing": {
-                "size": 7.6,
+                "size": 6.2,
                 "growth": 2.6,
                 "potential": 70,
                 "oppo": [
@@ -28727,7 +28727,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 87
+                "rank": 93
             },
             "finance": {
                 "size": 3.6,
@@ -28746,9 +28746,9 @@ const COUNTRIES = {
                 "rank": 94
             },
             "healthcare": {
-                "size": 3.3,
+                "size": 2.1,
                 "growth": 4.7,
-                "potential": 73,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28759,7 +28759,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 79
+                "rank": 101
             },
             "energy": {
                 "size": 2.1,
@@ -28926,9 +28926,9 @@ const COUNTRIES = {
                 "rank": 17
             },
             "manufacturing": {
-                "size": 251.8,
+                "size": 179.4,
                 "growth": 2.8,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -28939,7 +28939,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 14
+                "rank": 17
             },
             "finance": {
                 "size": 114.2,
@@ -28958,7 +28958,7 @@ const COUNTRIES = {
                 "rank": 16
             },
             "healthcare": {
-                "size": 46.5,
+                "size": 54.4,
                 "growth": 4.9,
                 "potential": 83,
                 "oppo": [
@@ -28971,7 +28971,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 24
+                "rank": 19
             },
             "energy": {
                 "size": 59.8,
@@ -29138,7 +29138,7 @@ const COUNTRIES = {
                 "rank": 82
             },
             "manufacturing": {
-                "size": 6.4,
+                "size": 9.5,
                 "growth": 4.2,
                 "potential": 73,
                 "oppo": [
@@ -29151,7 +29151,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 93
+                "rank": 82
             },
             "finance": {
                 "size": 5.5,
@@ -29170,9 +29170,9 @@ const COUNTRIES = {
                 "rank": 84
             },
             "healthcare": {
-                "size": 1.9,
+                "size": 3.2,
                 "growth": 6.3,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29183,7 +29183,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 104
+                "rank": 78
             },
             "energy": {
                 "size": 3.2,
@@ -29350,9 +29350,9 @@ const COUNTRIES = {
                 "rank": 92
             },
             "manufacturing": {
-                "size": 8.1,
+                "size": 6.5,
                 "growth": 4.4,
-                "potential": 62,
+                "potential": 61,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -29363,7 +29363,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 84
+                "rank": 91
             },
             "finance": {
                 "size": 3.8,
@@ -29382,7 +29382,7 @@ const COUNTRIES = {
                 "rank": 89
             },
             "healthcare": {
-                "size": 1.8,
+                "size": 2.2,
                 "growth": 6.5,
                 "potential": 64,
                 "oppo": [
@@ -29395,7 +29395,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 105
+                "rank": 94
             },
             "energy": {
                 "size": 2.2,
@@ -29562,9 +29562,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "manufacturing": {
-                "size": 17.6,
+                "size": 25.2,
                 "growth": 2.7,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -29575,7 +29575,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 60
+                "rank": 55
             },
             "finance": {
                 "size": 16.0,
@@ -29594,9 +29594,9 @@ const COUNTRIES = {
                 "rank": 55
             },
             "healthcare": {
-                "size": 12.5,
+                "size": 7.6,
                 "growth": 4.8,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -29607,7 +29607,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 48
+                "rank": 56
             },
             "energy": {
                 "size": 8.4,
@@ -29774,7 +29774,7 @@ const COUNTRIES = {
                 "rank": 81
             },
             "manufacturing": {
-                "size": 7.8,
+                "size": 9.7,
                 "growth": 2.7,
                 "potential": 80,
                 "oppo": [
@@ -29787,7 +29787,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 85
+                "rank": 80
             },
             "finance": {
                 "size": 5.7,
@@ -29806,9 +29806,9 @@ const COUNTRIES = {
                 "rank": 83
             },
             "healthcare": {
-                "size": 5.8,
+                "size": 3.2,
                 "growth": 4.8,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29819,7 +29819,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 67
+                "rank": 79
             },
             "energy": {
                 "size": 3.2,
@@ -29970,7 +29970,7 @@ const COUNTRIES = {
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 2676.0,
+                "size": 2587.6,
                 "growth": 5.3,
                 "potential": 93,
                 "oppo": [
@@ -29986,7 +29986,7 @@ const COUNTRIES = {
                 "rank": 1
             },
             "manufacturing": {
-                "size": 2771.4,
+                "size": 3105.1,
                 "growth": 2.6,
                 "potential": 88,
                 "oppo": [
@@ -30018,9 +30018,9 @@ const COUNTRIES = {
                 "rank": 1
             },
             "healthcare": {
-                "size": 6143.7,
+                "size": 1840.1,
                 "growth": 4.7,
-                "potential": 93,
+                "potential": 91,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -30198,7 +30198,7 @@ const COUNTRIES = {
                 "rank": 66
             },
             "manufacturing": {
-                "size": 25.5,
+                "size": 15.2,
                 "growth": 4.6,
                 "potential": 75,
                 "oppo": [
@@ -30211,7 +30211,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 54
+                "rank": 64
             },
             "finance": {
                 "size": 9.7,
@@ -30230,9 +30230,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "healthcare": {
-                "size": 6.2,
+                "size": 4.6,
                 "growth": 6.7,
-                "potential": 78,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30243,7 +30243,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 63
+                "rank": 69
             },
             "energy": {
                 "size": 5.1,
@@ -30423,7 +30423,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 68
+                "rank": 67
             },
             "finance": {
                 "size": 8.4,
@@ -30442,7 +30442,7 @@ const COUNTRIES = {
                 "rank": 66
             },
             "healthcare": {
-                "size": 3.6,
+                "size": 4.8,
                 "growth": 5.7,
                 "potential": 63,
                 "oppo": [
@@ -30455,7 +30455,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 76
+                "rank": 67
             },
             "energy": {
                 "size": 4.8,
@@ -30618,12 +30618,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 25
+                "rank": 24
             },
             "manufacturing": {
-                "size": 186.2,
+                "size": 91.5,
                 "growth": 4.8,
-                "potential": 78,
+                "potential": 77,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -30634,7 +30634,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 20
+                "rank": 28
             },
             "finance": {
                 "size": 33.3,
@@ -30653,7 +30653,7 @@ const COUNTRIES = {
                 "rank": 34
             },
             "healthcare": {
-                "size": 17.4,
+                "size": 19.1,
                 "growth": 6.9,
                 "potential": 80,
                 "oppo": [
@@ -30666,7 +30666,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 43
+                "rank": 40
             },
             "energy": {
                 "size": 19.1,
@@ -30846,7 +30846,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 117
+                "rank": 123
             },
             "finance": {
                 "size": 1.5,
@@ -30865,7 +30865,7 @@ const COUNTRIES = {
                 "rank": 127
             },
             "healthcare": {
-                "size": 1.7,
+                "size": 1,
                 "growth": 4.4,
                 "potential": 59,
                 "oppo": [
@@ -30878,7 +30878,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 107
+                "rank": 148
             },
             "energy": {
                 "size": 1,
@@ -31044,9 +31044,9 @@ const COUNTRIES = {
                 "rank": 39
             },
             "manufacturing": {
-                "size": 51.3,
+                "size": 48.1,
                 "growth": 1.7,
-                "potential": 77,
+                "potential": 76,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -31057,7 +31057,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 40
+                "rank": 42
             },
             "finance": {
                 "size": 28.1,
@@ -31076,9 +31076,9 @@ const COUNTRIES = {
                 "rank": 41
             },
             "healthcare": {
-                "size": 28.6,
+                "size": 16.0,
                 "growth": 3.8,
-                "potential": 80,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -31089,7 +31089,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 30
+                "rank": 44
             },
             "energy": {
                 "size": 16.0,
@@ -31256,7 +31256,7 @@ const COUNTRIES = {
                 "rank": 116
             },
             "manufacturing": {
-                "size": 2.3,
+                "size": 3.0,
                 "growth": 3.5,
                 "potential": 70,
                 "oppo": [
@@ -31269,7 +31269,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 121
+                "rank": 117
             },
             "finance": {
                 "size": 1.8,
@@ -31288,7 +31288,7 @@ const COUNTRIES = {
                 "rank": 116
             },
             "healthcare": {
-                "size": 1.2,
+                "size": 1,
                 "growth": 5.6,
                 "potential": 73,
                 "oppo": [
@@ -31301,7 +31301,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 116
+                "rank": 149
             },
             "energy": {
                 "size": 1,
@@ -31468,9 +31468,9 @@ const COUNTRIES = {
                 "rank": 102
             },
             "manufacturing": {
-                "size": 6.5,
+                "size": 5.0,
                 "growth": 2.7,
-                "potential": 70,
+                "potential": 69,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -31481,7 +31481,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 92
+                "rank": 103
             },
             "finance": {
                 "size": 2.9,
@@ -31500,7 +31500,7 @@ const COUNTRIES = {
                 "rank": 103
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.7,
                 "growth": 4.8,
                 "potential": 72,
                 "oppo": [
@@ -31513,7 +31513,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 149
+                "rank": 108
             },
             "energy": {
                 "size": 1.7,
@@ -31824,22 +31824,22 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/KRW",
-        "value": "1,477",
+        "value": "1,483",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.85",
+        "value": "6.84",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "92.81",
+        "value": "92.96",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.08",
+        "value": "5.04",
         "dir": "neutral"
     },
     {
@@ -31859,12 +31859,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,232",
+        "value": "26,289",
         "dir": "neutral"
     },
     {
         "label": "USD/AUD",
-        "value": "1.42",
+        "value": "1.41",
         "dir": "neutral"
     }
 ];
