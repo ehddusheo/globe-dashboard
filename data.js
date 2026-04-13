@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-04-12 21:45:43
+// Auto-generated: 2026-04-13 21:55:48
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -723,7 +723,7 @@ const COUNTRIES = {
         "lat": 24.4764,
         "lng": 54.3705,
         "gdp": 552.3,
-        "pop": 0,
+        "pop": 11.0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -741,7 +741,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 32
+                "rank": 33
             },
             "manufacturing": {
                 "size": 51.8,
@@ -924,6 +924,7 @@ const COUNTRIES = {
         "inflation_pct": 1.7,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 199.0,
+        "internet_users_pct": 100,
         "renewable_energy_pct": 1
     },
     "032": {
@@ -952,7 +953,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 27
+                "rank": 29
             },
             "manufacturing": {
                 "size": 96.9,
@@ -2012,7 +2013,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 27
             },
             "manufacturing": {
                 "size": 84.5,
@@ -2648,7 +2649,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 31
+                "rank": 32
             },
             "manufacturing": {
                 "size": 98.5,
@@ -4556,7 +4557,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 7
             },
             "manufacturing": {
                 "size": 186.9,
@@ -4750,7 +4751,7 @@ const COUNTRIES = {
         "lat": 46.948,
         "lng": 7.44821,
         "gdp": 936.6,
-        "pop": 0,
+        "pop": 9.0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -4768,7 +4769,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 21
             },
             "manufacturing": {
                 "size": 182.3,
@@ -4951,6 +4952,7 @@ const COUNTRIES = {
         "inflation_pct": 1.1,
         "unemployment_pct": 4.3,
         "trade_pct_gdp": 134.1,
+        "internet_users_pct": 97.3,
         "renewable_energy_pct": 27.7
     },
     "152": {
@@ -8563,7 +8565,7 @@ const COUNTRIES = {
         "lat": 40.4167,
         "lng": -3.70327,
         "gdp": 1725.7,
-        "pop": 0,
+        "pop": 48.8,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -8764,6 +8766,7 @@ const COUNTRIES = {
         "inflation_pct": 2.8,
         "unemployment_pct": 11.4,
         "trade_pct_gdp": 70.0,
+        "internet_users_pct": 95.8,
         "renewable_energy_pct": 19
     },
     "233": {
@@ -9428,7 +9431,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 8
+                "rank": 9
             },
             "manufacturing": {
                 "size": 332.6,
@@ -9834,7 +9837,7 @@ const COUNTRIES = {
         "lat": 51.5002,
         "lng": -0.126236,
         "gdp": 3686.0,
-        "pop": 0,
+        "pop": 69.2,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -9852,7 +9855,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 8
             },
             "manufacturing": {
                 "size": 323.8,
@@ -10035,6 +10038,7 @@ const COUNTRIES = {
         "inflation_pct": 3.3,
         "unemployment_pct": 4.4,
         "trade_pct_gdp": 62.8,
+        "internet_users_pct": 95.5,
         "renewable_energy_pct": 12.2
     },
     "268": {
@@ -12818,7 +12822,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 29
+                "rank": 31
             },
             "manufacturing": {
                 "size": 198.1,
@@ -13648,14 +13652,14 @@ const COUNTRIES = {
         "lat": 31.7717,
         "lng": 35.2035,
         "gdp": 540.4,
-        "pop": 0,
+        "pop": 10.0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 27.0,
+                "size": 51.4,
                 "growth": 4.5,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13666,7 +13670,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 33
+                "rank": 20
             },
             "manufacturing": {
                 "size": 60.1,
@@ -13849,6 +13853,7 @@ const COUNTRIES = {
         "inflation_pct": 3.1,
         "unemployment_pct": 3.6,
         "trade_pct_gdp": 54.5,
+        "internet_users_pct": 88.2,
         "renewable_energy_pct": 6.2
     },
     "380": {
@@ -13859,7 +13864,7 @@ const COUNTRIES = {
         "lat": 41.8955,
         "lng": 12.4823,
         "gdp": 2380.8,
-        "pop": 0,
+        "pop": 59.0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -14060,6 +14065,7 @@ const COUNTRIES = {
         "inflation_pct": 1.0,
         "unemployment_pct": 6.5,
         "trade_pct_gdp": 62.8,
+        "internet_users_pct": 89.2,
         "renewable_energy_pct": 17.5
     },
     "388": {
@@ -14070,7 +14076,7 @@ const COUNTRIES = {
         "lat": 17.9927,
         "lng": -76.792,
         "gdp": 22.0,
-        "pop": 0,
+        "pop": 2.8,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -14270,6 +14276,7 @@ const COUNTRIES = {
         "gdp_growth_pct": -0.5,
         "inflation_pct": 5.4,
         "unemployment_pct": 3.2,
+        "internet_users_pct": 90.1,
         "renewable_energy_pct": 10.5
     },
     "400": {
@@ -14280,7 +14287,7 @@ const COUNTRIES = {
         "lat": 31.9497,
         "lng": 35.9263,
         "gdp": 53.4,
-        "pop": 0,
+        "pop": 11.6,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -14481,6 +14488,7 @@ const COUNTRIES = {
         "inflation_pct": 1.6,
         "unemployment_pct": 16.7,
         "trade_pct_gdp": 99.7,
+        "internet_users_pct": 95.6,
         "renewable_energy_pct": 11.5
     },
     "392": {
@@ -14491,12 +14499,12 @@ const COUNTRIES = {
         "lat": 35.67,
         "lng": 139.77,
         "gdp": 4027.6,
-        "pop": 0,
+        "pop": 124.0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 302.1,
+                "size": 311.8,
                 "growth": 4.2,
                 "potential": 88,
                 "oppo": [
@@ -14692,6 +14700,7 @@ const COUNTRIES = {
         "inflation_pct": 2.7,
         "unemployment_pct": 2.5,
         "trade_pct_gdp": 46.4,
+        "internet_users_pct": 85.5,
         "renewable_energy_pct": 8.8
     },
     "398": {
@@ -14702,7 +14711,7 @@ const COUNTRIES = {
         "lat": 51.1879,
         "lng": 71.4382,
         "gdp": 291.5,
-        "pop": 0,
+        "pop": 20.6,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -14903,6 +14912,7 @@ const COUNTRIES = {
         "inflation_pct": 8.7,
         "unemployment_pct": 4.8,
         "trade_pct_gdp": 57.2,
+        "internet_users_pct": 93.4,
         "renewable_energy_pct": 2
     },
     "404": {
@@ -14913,7 +14923,7 @@ const COUNTRIES = {
         "lat": -1.27975,
         "lng": 36.8126,
         "gdp": 120.3,
-        "pop": 0,
+        "pop": 56.4,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -15114,6 +15124,7 @@ const COUNTRIES = {
         "inflation_pct": 4.5,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 40.2,
+        "internet_users_pct": 35.0,
         "renewable_energy_pct": 67.7
     },
     "417": {
@@ -15124,7 +15135,7 @@ const COUNTRIES = {
         "lat": 42.8851,
         "lng": 74.6057,
         "gdp": 17.5,
-        "pop": 0,
+        "pop": 7.2,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -15325,6 +15336,7 @@ const COUNTRIES = {
         "inflation_pct": 5.0,
         "unemployment_pct": 3.5,
         "trade_pct_gdp": 127.7,
+        "internet_users_pct": 92.0,
         "renewable_energy_pct": 27.6
     },
     "116": {
@@ -15547,14 +15559,14 @@ const COUNTRIES = {
         "lat": 37.5323,
         "lng": 126.957,
         "gdp": 1875.4,
-        "pop": 0,
+        "pop": 51.8,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 140.7,
+                "size": 208.6,
                 "growth": 5.0,
-                "potential": 88,
+                "potential": 89,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15565,7 +15577,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 6
             },
             "manufacturing": {
                 "size": 798.7,
@@ -15748,6 +15760,7 @@ const COUNTRIES = {
         "inflation_pct": 2.3,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 84.6,
+        "internet_users_pct": 97.9,
         "renewable_energy_pct": 3.6
     },
     "414": {
@@ -15758,7 +15771,7 @@ const COUNTRIES = {
         "lat": 29.3721,
         "lng": 47.9824,
         "gdp": 160.2,
-        "pop": 0,
+        "pop": 4.9,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -15959,6 +15972,7 @@ const COUNTRIES = {
         "inflation_pct": 2.9,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 96.1,
+        "internet_users_pct": 99.7,
         "renewable_energy_pct": 0.1
     },
     "418": {
@@ -15969,7 +15983,7 @@ const COUNTRIES = {
         "lat": 18.5826,
         "lng": 102.177,
         "gdp": 16.5,
-        "pop": 0,
+        "pop": 7.8,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -16169,6 +16183,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 4.1,
         "inflation_pct": 23.1,
         "unemployment_pct": 1.2,
+        "internet_users_pct": 65.6,
         "renewable_energy_pct": 49.2
     },
     "422": {
@@ -16179,7 +16194,7 @@ const COUNTRIES = {
         "lat": 33.8872,
         "lng": 35.5134,
         "gdp": 20.1,
-        "pop": 0,
+        "pop": 5.8,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -16380,6 +16395,7 @@ const COUNTRIES = {
         "inflation_pct": 45.2,
         "unemployment_pct": 11.0,
         "trade_pct_gdp": 104.2,
+        "internet_users_pct": 80.6,
         "renewable_energy_pct": 6.8
     },
     "434": {
@@ -16390,7 +16406,7 @@ const COUNTRIES = {
         "lat": 32.8578,
         "lng": 13.1072,
         "gdp": 48.5,
-        "pop": 0,
+        "pop": 7.4,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -16591,6 +16607,7 @@ const COUNTRIES = {
         "inflation_pct": 2.1,
         "unemployment_pct": 19.1,
         "trade_pct_gdp": 128.8,
+        "internet_users_pct": 82.0,
         "renewable_energy_pct": 3.1
     },
     "144": {
@@ -16601,7 +16618,7 @@ const COUNTRIES = {
         "lat": 6.92148,
         "lng": 79.8528,
         "gdp": 99.0,
-        "pop": 0,
+        "pop": 21.9,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -16802,6 +16819,7 @@ const COUNTRIES = {
         "inflation_pct": -0.4,
         "unemployment_pct": 4.2,
         "trade_pct_gdp": 42.4,
+        "internet_users_pct": 54.6,
         "renewable_energy_pct": 48.8
     },
     "440": {
@@ -16812,7 +16830,7 @@ const COUNTRIES = {
         "lat": 54.6896,
         "lng": 25.2799,
         "gdp": 84.9,
-        "pop": 0,
+        "pop": 2.9,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17013,6 +17031,7 @@ const COUNTRIES = {
         "inflation_pct": 0.7,
         "unemployment_pct": 6.9,
         "trade_pct_gdp": 143.0,
+        "internet_users_pct": 89.2,
         "renewable_energy_pct": 33.2
     },
     "442": {
@@ -17023,7 +17042,7 @@ const COUNTRIES = {
         "lat": 49.61,
         "lng": 6.1296,
         "gdp": 93.3,
-        "pop": 0,
+        "pop": 0.7,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17224,6 +17243,7 @@ const COUNTRIES = {
         "inflation_pct": 2.1,
         "unemployment_pct": 6.4,
         "trade_pct_gdp": 351.3,
+        "internet_users_pct": 98.8,
         "renewable_energy_pct": 20.5
     },
     "428": {
@@ -17234,7 +17254,7 @@ const COUNTRIES = {
         "lat": 56.9465,
         "lng": 24.1048,
         "gdp": 43.7,
-        "pop": 0,
+        "pop": 1.9,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17435,6 +17455,7 @@ const COUNTRIES = {
         "inflation_pct": 1.3,
         "unemployment_pct": 6.9,
         "trade_pct_gdp": 132.3,
+        "internet_users_pct": 92.7,
         "renewable_energy_pct": 44
     },
     "504": {
@@ -17445,7 +17466,7 @@ const COUNTRIES = {
         "lat": 33.9905,
         "lng": -6.8704,
         "gdp": 160.6,
-        "pop": 0,
+        "pop": 38.1,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -17646,6 +17667,7 @@ const COUNTRIES = {
         "inflation_pct": 1.0,
         "unemployment_pct": 9.1,
         "trade_pct_gdp": 92.2,
+        "internet_users_pct": 91.2,
         "renewable_energy_pct": 10.9
     },
     "498": {
@@ -17656,7 +17678,7 @@ const COUNTRIES = {
         "lat": 47.0167,
         "lng": 28.8497,
         "gdp": 18.2,
-        "pop": 0,
+        "pop": 2.4,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -17857,6 +17879,7 @@ const COUNTRIES = {
         "inflation_pct": 4.7,
         "unemployment_pct": 1.4,
         "trade_pct_gdp": 88.7,
+        "internet_users_pct": 77.4,
         "renewable_energy_pct": 21.4
     },
     "450": {
@@ -17867,7 +17890,7 @@ const COUNTRIES = {
         "lat": -20.4667,
         "lng": 45.7167,
         "gdp": 17.4,
-        "pop": 0,
+        "pop": 32.0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -18068,6 +18091,7 @@ const COUNTRIES = {
         "inflation_pct": 7.6,
         "unemployment_pct": 3.1,
         "trade_pct_gdp": 55.0,
+        "internet_users_pct": 18.7,
         "renewable_energy_pct": 83.1
     },
     "484": {
@@ -18078,7 +18102,7 @@ const COUNTRIES = {
         "lat": 19.427,
         "lng": -99.1276,
         "gdp": 1856.4,
-        "pop": 0,
+        "pop": 130.9,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -18279,6 +18303,7 @@ const COUNTRIES = {
         "inflation_pct": 4.7,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 74.6,
+        "internet_users_pct": 83.1,
         "renewable_energy_pct": 13
     },
     "807": {
@@ -18289,7 +18314,7 @@ const COUNTRIES = {
         "lat": 42.0024,
         "lng": 21.4361,
         "gdp": 17.0,
-        "pop": 0,
+        "pop": 1.8,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -18490,6 +18515,7 @@ const COUNTRIES = {
         "inflation_pct": 3.5,
         "unemployment_pct": 12.3,
         "trade_pct_gdp": 136.3,
+        "internet_users_pct": 93.6,
         "renewable_energy_pct": 19.5
     },
     "466": {
@@ -18500,7 +18526,7 @@ const COUNTRIES = {
         "lat": 13.5667,
         "lng": -7.50034,
         "gdp": 26.8,
-        "pop": 0,
+        "pop": 24.5,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -18701,6 +18727,7 @@ const COUNTRIES = {
         "inflation_pct": 3.2,
         "unemployment_pct": 2.9,
         "trade_pct_gdp": 49.9,
+        "internet_users_pct": 36.8,
         "renewable_energy_pct": 71.1
     },
     "104": {
@@ -18711,7 +18738,7 @@ const COUNTRIES = {
         "lat": 21.914,
         "lng": 95.9562,
         "gdp": 74.1,
-        "pop": 0,
+        "pop": 54.5,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -18911,6 +18938,7 @@ const COUNTRIES = {
         "gdp_growth_pct": -1.0,
         "inflation_pct": 8.8,
         "unemployment_pct": 2.9,
+        "internet_users_pct": 45.4,
         "renewable_energy_pct": 62.9
     },
     "499": {
@@ -18921,7 +18949,7 @@ const COUNTRIES = {
         "lat": 42.4602,
         "lng": 19.2595,
         "gdp": 8.3,
-        "pop": 0,
+        "pop": 0.6,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -19122,6 +19150,7 @@ const COUNTRIES = {
         "inflation_pct": 3.3,
         "unemployment_pct": 13.2,
         "trade_pct_gdp": 109.9,
+        "internet_users_pct": 88.9,
         "renewable_energy_pct": 39.6
     },
     "496": {
@@ -19132,7 +19161,7 @@ const COUNTRIES = {
         "lat": 47.9129,
         "lng": 106.937,
         "gdp": 23.8,
-        "pop": 0,
+        "pop": 3.5,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -19333,6 +19362,7 @@ const COUNTRIES = {
         "inflation_pct": 6.2,
         "unemployment_pct": 5.2,
         "trade_pct_gdp": 138.4,
+        "internet_users_pct": 85.1,
         "renewable_energy_pct": 3
     },
     "508": {
@@ -19343,7 +19373,7 @@ const COUNTRIES = {
         "lat": -25.9664,
         "lng": 32.5713,
         "gdp": 22.7,
-        "pop": 0,
+        "pop": 34.6,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -19544,6 +19574,7 @@ const COUNTRIES = {
         "inflation_pct": 4.1,
         "unemployment_pct": 6.7,
         "trade_pct_gdp": 95.7,
+        "internet_users_pct": 20.5,
         "renewable_energy_pct": 76.9
     },
     "478": {
@@ -19554,7 +19585,7 @@ const COUNTRIES = {
         "lat": 18.2367,
         "lng": -15.9824,
         "gdp": 10.9,
-        "pop": 0,
+        "pop": 5.2,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -19755,6 +19786,7 @@ const COUNTRIES = {
         "inflation_pct": 2.5,
         "unemployment_pct": 10.3,
         "trade_pct_gdp": 93.6,
+        "internet_users_pct": 45.8,
         "renewable_energy_pct": 19.6
     },
     "480": {
@@ -19765,7 +19797,7 @@ const COUNTRIES = {
         "lat": -20.1605,
         "lng": 57.4977,
         "gdp": 14.9,
-        "pop": 0,
+        "pop": 1.2,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -19966,6 +19998,7 @@ const COUNTRIES = {
         "inflation_pct": 3.6,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 145.4,
+        "internet_users_pct": 73.3,
         "renewable_energy_pct": 8.6
     },
     "454": {
@@ -19976,7 +20009,7 @@ const COUNTRIES = {
         "lat": -13.9899,
         "lng": 33.7703,
         "gdp": 11.3,
-        "pop": 0,
+        "pop": 21.7,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -20177,6 +20210,7 @@ const COUNTRIES = {
         "inflation_pct": 32.2,
         "unemployment_pct": 5.1,
         "trade_pct_gdp": 42.4,
+        "internet_users_pct": 19.0,
         "renewable_energy_pct": 62.9
     },
     "458": {
@@ -20187,7 +20221,7 @@ const COUNTRIES = {
         "lat": 3.12433,
         "lng": 101.684,
         "gdp": 422.2,
-        "pop": 0,
+        "pop": 35.6,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -20205,7 +20239,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 28
+                "rank": 30
             },
             "manufacturing": {
                 "size": 152.0,
@@ -20388,6 +20422,7 @@ const COUNTRIES = {
         "inflation_pct": 1.8,
         "unemployment_pct": 3.8,
         "trade_pct_gdp": 137.4,
+        "internet_users_pct": 98.0,
         "renewable_energy_pct": 7.5
     },
     "516": {
@@ -20398,7 +20433,7 @@ const COUNTRIES = {
         "lat": -22.5648,
         "lng": 17.0931,
         "gdp": 13.4,
-        "pop": 0,
+        "pop": 3.0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -20599,6 +20634,7 @@ const COUNTRIES = {
         "inflation_pct": 4.2,
         "unemployment_pct": 19.2,
         "trade_pct_gdp": 109.6,
+        "internet_users_pct": 64.9,
         "renewable_energy_pct": 30
     },
     "562": {
@@ -20609,7 +20645,7 @@ const COUNTRIES = {
         "lat": 13.514,
         "lng": 2.1073,
         "gdp": 19.9,
-        "pop": 0,
+        "pop": 27.0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -20810,6 +20846,7 @@ const COUNTRIES = {
         "inflation_pct": 9.1,
         "unemployment_pct": 0.4,
         "trade_pct_gdp": 50.0,
+        "internet_users_pct": 15.6,
         "renewable_energy_pct": 79.6
     },
     "566": {
@@ -20820,7 +20857,7 @@ const COUNTRIES = {
         "lat": 9.05804,
         "lng": 7.48906,
         "gdp": 252.3,
-        "pop": 0,
+        "pop": 232.7,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -21020,6 +21057,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 4.1,
         "inflation_pct": 33.2,
         "unemployment_pct": 3.0,
+        "internet_users_pct": 41.2,
         "renewable_energy_pct": 80.3
     },
     "558": {
@@ -21030,7 +21068,7 @@ const COUNTRIES = {
         "lat": 12.1475,
         "lng": -86.2734,
         "gdp": 19.7,
-        "pop": 0,
+        "pop": 6.9,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -21231,6 +21269,7 @@ const COUNTRIES = {
         "inflation_pct": 4.6,
         "unemployment_pct": 5.0,
         "trade_pct_gdp": 98.5,
+        "internet_users_pct": 61.4,
         "renewable_energy_pct": 50.4
     },
     "528": {
@@ -21241,7 +21280,7 @@ const COUNTRIES = {
         "lat": 52.3738,
         "lng": 4.89095,
         "gdp": 1214.9,
-        "pop": 0,
+        "pop": 18.0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -21442,6 +21481,7 @@ const COUNTRIES = {
         "inflation_pct": 3.3,
         "unemployment_pct": 3.7,
         "trade_pct_gdp": 153.8,
+        "internet_users_pct": 97.0,
         "renewable_energy_pct": 12.2
     },
     "578": {
@@ -21452,7 +21492,7 @@ const COUNTRIES = {
         "lat": 59.9138,
         "lng": 10.7387,
         "gdp": 483.6,
-        "pop": 0,
+        "pop": 5.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -21653,6 +21693,7 @@ const COUNTRIES = {
         "inflation_pct": 3.1,
         "unemployment_pct": 4,
         "trade_pct_gdp": 81.4,
+        "internet_users_pct": 99,
         "renewable_energy_pct": 61.4
     },
     "524": {
@@ -21663,7 +21704,7 @@ const COUNTRIES = {
         "lat": 27.6939,
         "lng": 85.3157,
         "gdp": 42.9,
-        "pop": 0,
+        "pop": 29.7,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -21864,6 +21905,7 @@ const COUNTRIES = {
         "inflation_pct": 4.7,
         "unemployment_pct": 10.5,
         "trade_pct_gdp": 40.5,
+        "internet_users_pct": 46.3,
         "renewable_energy_pct": 73.7
     },
     "554": {
@@ -21874,7 +21916,7 @@ const COUNTRIES = {
         "lat": -41.2865,
         "lng": 174.776,
         "gdp": 260.2,
-        "pop": 0,
+        "pop": 5.3,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -22075,6 +22117,7 @@ const COUNTRIES = {
         "inflation_pct": 2.9,
         "unemployment_pct": 4.7,
         "trade_pct_gdp": 51.2,
+        "internet_users_pct": 93.5,
         "renewable_energy_pct": 28.9
     },
     "512": {
@@ -22085,7 +22128,7 @@ const COUNTRIES = {
         "lat": 23.6105,
         "lng": 58.5874,
         "gdp": 107.1,
-        "pop": 0,
+        "pop": 5.3,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -22286,6 +22329,7 @@ const COUNTRIES = {
         "inflation_pct": 0.6,
         "unemployment_pct": 3.2,
         "trade_pct_gdp": 114.9,
+        "internet_users_pct": 95.3,
         "renewable_energy_pct": 0.1
     },
     "586": {
@@ -22296,7 +22340,7 @@ const COUNTRIES = {
         "lat": 30.5167,
         "lng": 72.8,
         "gdp": 371.6,
-        "pop": 0,
+        "pop": 251.3,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -22497,6 +22541,7 @@ const COUNTRIES = {
         "inflation_pct": 12.6,
         "unemployment_pct": 5.5,
         "trade_pct_gdp": 27.6,
+        "internet_users_pct": 57.3,
         "renewable_energy_pct": 41.6
     },
     "591": {
@@ -22507,7 +22552,7 @@ const COUNTRIES = {
         "lat": 8.99427,
         "lng": -79.5188,
         "gdp": 86.5,
-        "pop": 0,
+        "pop": 4.5,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -22708,6 +22753,7 @@ const COUNTRIES = {
         "inflation_pct": 0.7,
         "unemployment_pct": 8.5,
         "trade_pct_gdp": 83.7,
+        "internet_users_pct": 72.8,
         "renewable_energy_pct": 28
     },
     "604": {
@@ -22718,7 +22764,7 @@ const COUNTRIES = {
         "lat": -12.0931,
         "lng": -77.0465,
         "gdp": 289.2,
-        "pop": 0,
+        "pop": 34.2,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -22919,6 +22965,7 @@ const COUNTRIES = {
         "inflation_pct": 2.0,
         "unemployment_pct": 5.2,
         "trade_pct_gdp": 51.5,
+        "internet_users_pct": 82.0,
         "renewable_energy_pct": 30.6
     },
     "608": {
@@ -22929,7 +22976,7 @@ const COUNTRIES = {
         "lat": 14.5515,
         "lng": 121.035,
         "gdp": 461.6,
-        "pop": 0,
+        "pop": 115.8,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -22947,7 +22994,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 25
+                "rank": 26
             },
             "manufacturing": {
                 "size": 115.8,
@@ -23130,6 +23177,7 @@ const COUNTRIES = {
         "inflation_pct": 3.2,
         "unemployment_pct": 2.2,
         "trade_pct_gdp": 65.9,
+        "internet_users_pct": 67.3,
         "renewable_energy_pct": 28
     },
     "598": {
@@ -23140,7 +23188,7 @@ const COUNTRIES = {
         "lat": -9.47357,
         "lng": 147.194,
         "gdp": 31.8,
-        "pop": 0,
+        "pop": 10.6,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -23340,6 +23388,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 3.8,
         "inflation_pct": 0.6,
         "unemployment_pct": 2.6,
+        "internet_users_pct": 18.8,
         "renewable_energy_pct": 54.6
     },
     "616": {
@@ -23350,7 +23399,7 @@ const COUNTRIES = {
         "lat": 52.26,
         "lng": 21.02,
         "gdp": 917.8,
-        "pop": 0,
+        "pop": 36.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -23368,7 +23417,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 22
             },
             "manufacturing": {
                 "size": 162.3,
@@ -23551,6 +23600,7 @@ const COUNTRIES = {
         "inflation_pct": 3.8,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 100.4,
+        "internet_users_pct": 88.6,
         "renewable_energy_pct": 15.2
     },
     "620": {
@@ -23561,7 +23611,7 @@ const COUNTRIES = {
         "lat": 38.7072,
         "lng": -9.13552,
         "gdp": 313.3,
-        "pop": 0,
+        "pop": 10.7,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -23762,6 +23812,7 @@ const COUNTRIES = {
         "inflation_pct": 2.4,
         "unemployment_pct": 6.5,
         "trade_pct_gdp": 89.7,
+        "internet_users_pct": 88.5,
         "renewable_energy_pct": 32.3
     },
     "600": {
@@ -23772,7 +23823,7 @@ const COUNTRIES = {
         "lat": -25.3005,
         "lng": -57.6362,
         "gdp": 44.5,
-        "pop": 0,
+        "pop": 6.9,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -23973,6 +24024,7 @@ const COUNTRIES = {
         "inflation_pct": 3.8,
         "unemployment_pct": 5.7,
         "trade_pct_gdp": 76.8,
+        "internet_users_pct": 81.6,
         "renewable_energy_pct": 58.8
     },
     "634": {
@@ -23983,7 +24035,7 @@ const COUNTRIES = {
         "lat": 25.2948,
         "lng": 51.5082,
         "gdp": 219.2,
-        "pop": 0,
+        "pop": 2.9,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -24184,6 +24236,7 @@ const COUNTRIES = {
         "inflation_pct": 1.3,
         "unemployment_pct": 0.1,
         "trade_pct_gdp": 100.2,
+        "internet_users_pct": 98.1,
         "renewable_energy_pct": 0
     },
     "642": {
@@ -24194,7 +24247,7 @@ const COUNTRIES = {
         "lat": 44.4479,
         "lng": 26.0979,
         "gdp": 382.6,
-        "pop": 0,
+        "pop": 19.1,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -24395,6 +24448,7 @@ const COUNTRIES = {
         "inflation_pct": 5.7,
         "unemployment_pct": 5.4,
         "trade_pct_gdp": 77.2,
+        "internet_users_pct": 91.3,
         "renewable_energy_pct": 23.6
     },
     "643": {
@@ -24405,7 +24459,7 @@ const COUNTRIES = {
         "lat": 55.7558,
         "lng": 37.6176,
         "gdp": 2173.8,
-        "pop": 0,
+        "pop": 143.5,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -24606,6 +24660,7 @@ const COUNTRIES = {
         "inflation_pct": 8.4,
         "unemployment_pct": 2.4,
         "trade_pct_gdp": 39.5,
+        "internet_users_pct": 94.4,
         "renewable_energy_pct": 3.5
     },
     "646": {
@@ -24616,7 +24671,7 @@ const COUNTRIES = {
         "lat": -1.95325,
         "lng": 30.0587,
         "gdp": 14.3,
-        "pop": 0,
+        "pop": 14.3,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -24817,6 +24872,7 @@ const COUNTRIES = {
         "inflation_pct": 1.8,
         "unemployment_pct": 11.3,
         "trade_pct_gdp": 70.0,
+        "internet_users_pct": 31.7,
         "renewable_energy_pct": 79.9
     },
     "682": {
@@ -24827,7 +24883,7 @@ const COUNTRIES = {
         "lat": 24.6748,
         "lng": 46.6977,
         "gdp": 1239.8,
-        "pop": 0,
+        "pop": 35.3,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -25028,6 +25084,7 @@ const COUNTRIES = {
         "inflation_pct": 1.7,
         "unemployment_pct": 3.5,
         "trade_pct_gdp": 54.7,
+        "internet_users_pct": 100,
         "renewable_energy_pct": 0.1
     },
     "729": {
@@ -25038,7 +25095,7 @@ const COUNTRIES = {
         "lat": 15.5932,
         "lng": 32.5363,
         "gdp": 49.7,
-        "pop": 0,
+        "pop": 50.4,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -25249,7 +25306,7 @@ const COUNTRIES = {
         "lat": 14.7247,
         "lng": -17.4734,
         "gdp": 32.8,
-        "pop": 0,
+        "pop": 18.5,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -25450,6 +25507,7 @@ const COUNTRIES = {
         "inflation_pct": 0.8,
         "unemployment_pct": 2.8,
         "trade_pct_gdp": 68.1,
+        "internet_users_pct": 60.1,
         "renewable_energy_pct": 35.4
     },
     "702": {
@@ -25460,7 +25518,7 @@ const COUNTRIES = {
         "lat": 1.28941,
         "lng": 103.85,
         "gdp": 547.4,
-        "pop": 0,
+        "pop": 6.0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -25478,7 +25536,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 23
             },
             "manufacturing": {
                 "size": 143.0,
@@ -25661,6 +25719,7 @@ const COUNTRIES = {
         "inflation_pct": 2.4,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 322.4,
+        "internet_users_pct": 94.4,
         "renewable_energy_pct": 1.1
     },
     "694": {
@@ -25671,7 +25730,7 @@ const COUNTRIES = {
         "lat": 8.4821,
         "lng": -13.2134,
         "gdp": 7.0,
-        "pop": 0,
+        "pop": 8.6,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -25872,6 +25931,7 @@ const COUNTRIES = {
         "inflation_pct": 28.6,
         "unemployment_pct": 3.1,
         "trade_pct_gdp": 40.5,
+        "internet_users_pct": 25.1,
         "renewable_energy_pct": 71.6
     },
     "222": {
@@ -26094,7 +26154,7 @@ const COUNTRIES = {
         "lat": 2.07515,
         "lng": 45.3254,
         "gdp": 12.0,
-        "pop": 0,
+        "pop": 19.0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -26294,6 +26354,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 4.1,
         "unemployment_pct": 18.9,
         "trade_pct_gdp": 130.3,
+        "internet_users_pct": 27.9,
         "renewable_energy_pct": 95.4
     },
     "688": {
@@ -26304,7 +26365,7 @@ const COUNTRIES = {
         "lat": 44.8024,
         "lng": 20.4656,
         "gdp": 90.1,
-        "pop": 0,
+        "pop": 6.6,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -26505,6 +26566,7 @@ const COUNTRIES = {
         "inflation_pct": 4.7,
         "unemployment_pct": 7.2,
         "trade_pct_gdp": 111.7,
+        "internet_users_pct": 87.7,
         "renewable_energy_pct": 27.2
     },
     "703": {
@@ -26515,7 +26577,7 @@ const COUNTRIES = {
         "lat": 48.1484,
         "lng": 17.1073,
         "gdp": 140.9,
-        "pop": 0,
+        "pop": 5.4,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -26716,6 +26778,7 @@ const COUNTRIES = {
         "inflation_pct": 2.8,
         "unemployment_pct": 5.3,
         "trade_pct_gdp": 171.2,
+        "internet_users_pct": 89.8,
         "renewable_energy_pct": 17.9
     },
     "705": {
@@ -26726,7 +26789,7 @@ const COUNTRIES = {
         "lat": 46.0546,
         "lng": 14.5044,
         "gdp": 73.0,
-        "pop": 0,
+        "pop": 2.1,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -26927,6 +26990,7 @@ const COUNTRIES = {
         "inflation_pct": 2.0,
         "unemployment_pct": 3.7,
         "trade_pct_gdp": 155.7,
+        "internet_users_pct": 90.8,
         "renewable_energy_pct": 23.4
     },
     "752": {
@@ -26937,14 +27001,14 @@ const COUNTRIES = {
         "lat": 59.3327,
         "lng": 18.0645,
         "gdp": 603.7,
-        "pop": 0,
+        "pop": 10.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 30.2,
+                "size": 32.6,
                 "growth": 4.5,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26955,7 +27019,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 30
+                "rank": 28
             },
             "manufacturing": {
                 "size": 86.4,
@@ -27138,6 +27202,7 @@ const COUNTRIES = {
         "inflation_pct": 2.8,
         "unemployment_pct": 8.4,
         "trade_pct_gdp": 105.9,
+        "internet_users_pct": 95.5,
         "renewable_energy_pct": 57.9
     },
     "760": {
@@ -27148,7 +27213,7 @@ const COUNTRIES = {
         "lat": 33.5146,
         "lng": 36.3119,
         "gdp": 23.6,
-        "pop": 0,
+        "pop": 24.7,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
@@ -27349,6 +27414,7 @@ const COUNTRIES = {
         "inflation_pct": 13.4,
         "unemployment_pct": 13.4,
         "trade_pct_gdp": 35.6,
+        "internet_users_pct": 33.8,
         "renewable_energy_pct": 1.1
     },
     "148": {
@@ -27571,7 +27637,7 @@ const COUNTRIES = {
         "lat": 6.1228,
         "lng": 1.2255,
         "gdp": 10.7,
-        "pop": 0,
+        "pop": 9.5,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -27772,6 +27838,7 @@ const COUNTRIES = {
         "inflation_pct": 2.9,
         "unemployment_pct": 1.9,
         "trade_pct_gdp": 61.6,
+        "internet_users_pct": 39.5,
         "renewable_energy_pct": 75.1
     },
     "764": {
@@ -27782,7 +27849,7 @@ const COUNTRIES = {
         "lat": 13.7308,
         "lng": 100.521,
         "gdp": 526.5,
-        "pop": 0,
+        "pop": 71.7,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -27800,7 +27867,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 23
+                "rank": 24
             },
             "manufacturing": {
                 "size": 205.0,
@@ -27983,6 +28050,7 @@ const COUNTRIES = {
         "inflation_pct": 1.4,
         "unemployment_pct": 0.8,
         "trade_pct_gdp": 136.7,
+        "internet_users_pct": 90.9,
         "renewable_energy_pct": 19
     },
     "762": {
@@ -27993,7 +28061,7 @@ const COUNTRIES = {
         "lat": 38.5878,
         "lng": 68.7864,
         "gdp": 14.2,
-        "pop": 0,
+        "pop": 10.6,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -28193,6 +28261,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 8.4,
         "unemployment_pct": 7.0,
         "trade_pct_gdp": 65.6,
+        "internet_users_pct": 55.8,
         "renewable_energy_pct": 34.9
     },
     "795": {
@@ -28203,7 +28272,7 @@ const COUNTRIES = {
         "lat": 37.9509,
         "lng": 58.3794,
         "gdp": 51.4,
-        "pop": 0,
+        "pop": 7.5,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -28413,7 +28482,7 @@ const COUNTRIES = {
         "lat": 10.6596,
         "lng": -61.4789,
         "gdp": 25.6,
-        "pop": 0,
+        "pop": 1.4,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -28613,6 +28682,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 2.5,
         "inflation_pct": 0.5,
         "unemployment_pct": 3.3,
+        "internet_users_pct": 82.2,
         "renewable_energy_pct": 0.5
     },
     "788": {
@@ -28623,7 +28693,7 @@ const COUNTRIES = {
         "lat": 36.7899,
         "lng": 10.21,
         "gdp": 51.3,
-        "pop": 0,
+        "pop": 12.3,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -28824,6 +28894,7 @@ const COUNTRIES = {
         "inflation_pct": 7.2,
         "unemployment_pct": 15.3,
         "trade_pct_gdp": 106.3,
+        "internet_users_pct": 76.5,
         "renewable_energy_pct": 11.6
     },
     "792": {
@@ -28834,7 +28905,7 @@ const COUNTRIES = {
         "lat": 39.7153,
         "lng": 32.3606,
         "gdp": 1359.1,
-        "pop": 0,
+        "pop": 85.5,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -29035,6 +29106,7 @@ const COUNTRIES = {
         "inflation_pct": 58.5,
         "unemployment_pct": 8.8,
         "trade_pct_gdp": 54.6,
+        "internet_users_pct": 87.3,
         "renewable_energy_pct": 12
     },
     "834": {
@@ -29045,7 +29117,7 @@ const COUNTRIES = {
         "lat": -6.17486,
         "lng": 35.7382,
         "gdp": 78.8,
-        "pop": 0,
+        "pop": 68.6,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -29246,6 +29318,7 @@ const COUNTRIES = {
         "inflation_pct": 3.1,
         "unemployment_pct": 1.6,
         "trade_pct_gdp": 41.5,
+        "internet_users_pct": 31.2,
         "renewable_energy_pct": 78.3
     },
     "800": {
@@ -29256,7 +29329,7 @@ const COUNTRIES = {
         "lat": 0.314269,
         "lng": 32.5729,
         "gdp": 53.9,
-        "pop": 0,
+        "pop": 50.0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -29457,6 +29530,7 @@ const COUNTRIES = {
         "inflation_pct": 3.3,
         "unemployment_pct": 2.7,
         "trade_pct_gdp": 42.7,
+        "internet_users_pct": 8.9,
         "renewable_energy_pct": 90.9
     },
     "804": {
@@ -29467,7 +29541,7 @@ const COUNTRIES = {
         "lat": 50.4536,
         "lng": 30.5038,
         "gdp": 190.7,
-        "pop": 0,
+        "pop": 37.9,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -29668,6 +29742,7 @@ const COUNTRIES = {
         "inflation_pct": 6.5,
         "unemployment_pct": 9.8,
         "trade_pct_gdp": 77.8,
+        "internet_users_pct": 82.5,
         "renewable_energy_pct": 8.9
     },
     "858": {
@@ -29678,7 +29753,7 @@ const COUNTRIES = {
         "lat": -34.8941,
         "lng": -56.0675,
         "gdp": 81.0,
-        "pop": 0,
+        "pop": 3.4,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -29879,6 +29954,7 @@ const COUNTRIES = {
         "inflation_pct": 4.8,
         "unemployment_pct": 8.2,
         "trade_pct_gdp": 52.5,
+        "internet_users_pct": 92.0,
         "renewable_energy_pct": 57.8
     },
     "840": {
@@ -29889,12 +29965,12 @@ const COUNTRIES = {
         "lat": 38.8895,
         "lng": -77.032,
         "gdp": 28751.0,
-        "pop": 0,
+        "pop": 340.1,
         "region": "North America",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 2587.6,
+                "size": 2676.0,
                 "growth": 5.3,
                 "potential": 93,
                 "oppo": [
@@ -30090,6 +30166,7 @@ const COUNTRIES = {
         "inflation_pct": 2.9,
         "unemployment_pct": 4.0,
         "trade_pct_gdp": 25.4,
+        "internet_users_pct": 94.7,
         "renewable_energy_pct": 10.9
     },
     "860": {
@@ -30100,7 +30177,7 @@ const COUNTRIES = {
         "lat": 41.3052,
         "lng": 69.269,
         "gdp": 115.0,
-        "pop": 0,
+        "pop": 36.4,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -30301,6 +30378,7 @@ const COUNTRIES = {
         "inflation_pct": 9.6,
         "unemployment_pct": 4.4,
         "trade_pct_gdp": 60.7,
+        "internet_users_pct": 89.5,
         "renewable_energy_pct": 1
     },
     "862": {
@@ -30311,7 +30389,7 @@ const COUNTRIES = {
         "lat": 9.08165,
         "lng": -69.8371,
         "gdp": 119.8,
-        "pop": 0,
+        "pop": 28.4,
         "region": "Latin America & Caribbean ",
         "income": "Not classified",
         "industries": {
@@ -30511,6 +30589,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 5.3,
         "unemployment_pct": 5.3,
         "trade_pct_gdp": 26.1,
+        "internet_users_pct": 76.7,
         "renewable_energy_pct": 33.7
     },
     "704": {
@@ -30521,7 +30600,7 @@ const COUNTRIES = {
         "lat": 21.0069,
         "lng": 105.825,
         "gdp": 476.4,
-        "pop": 0,
+        "pop": 101.0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -30539,7 +30618,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 24
+                "rank": 25
             },
             "manufacturing": {
                 "size": 186.2,
@@ -30722,6 +30801,7 @@ const COUNTRIES = {
         "inflation_pct": 3.6,
         "unemployment_pct": 1.6,
         "trade_pct_gdp": 173.9,
+        "internet_users_pct": 84.2,
         "renewable_energy_pct": 24.2
     },
     "887": {
@@ -30732,7 +30812,7 @@ const COUNTRIES = {
         "lat": 15.352,
         "lng": 44.2075,
         "gdp": 21.6,
-        "pop": 0,
+        "pop": 40.6,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
@@ -30932,6 +31012,7 @@ const COUNTRIES = {
         "gdp_growth_pct": 0.8,
         "unemployment_pct": 17.0,
         "trade_pct_gdp": 56.1,
+        "internet_users_pct": 17.5,
         "renewable_energy_pct": 3.7
     },
     "710": {
@@ -30942,7 +31023,7 @@ const COUNTRIES = {
         "lat": -25.746,
         "lng": 28.1871,
         "gdp": 401.1,
-        "pop": 0,
+        "pop": 64.0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -31143,6 +31224,7 @@ const COUNTRIES = {
         "inflation_pct": 4.4,
         "unemployment_pct": 32.3,
         "trade_pct_gdp": 61.6,
+        "internet_users_pct": 78.4,
         "renewable_energy_pct": 9.7
     },
     "894": {
@@ -31153,7 +31235,7 @@ const COUNTRIES = {
         "lat": -15.3982,
         "lng": 28.2937,
         "gdp": 25.3,
-        "pop": 0,
+        "pop": 21.3,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -31354,6 +31436,7 @@ const COUNTRIES = {
         "inflation_pct": 15.0,
         "unemployment_pct": 5.9,
         "trade_pct_gdp": 62.5,
+        "internet_users_pct": 17.1,
         "renewable_energy_pct": 83
     },
     "716": {
@@ -31364,7 +31447,7 @@ const COUNTRIES = {
         "lat": -17.8312,
         "lng": 31.0672,
         "gdp": 41.5,
-        "pop": 0,
+        "pop": 16.6,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -31565,6 +31648,7 @@ const COUNTRIES = {
         "inflation_pct": 104.7,
         "unemployment_pct": 9.4,
         "trade_pct_gdp": 41.5,
+        "internet_users_pct": 41.6,
         "renewable_energy_pct": 82.4
     }
 };
@@ -31735,32 +31819,32 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/JPY",
-        "value": "159",
+        "value": "160",
         "dir": "neutral"
     },
     {
         "label": "USD/KRW",
-        "value": "1,483",
+        "value": "1,486",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.85",
+        "value": "6.84",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "92.88",
+        "value": "93.18",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.05",
+        "value": "5.02",
         "dir": "neutral"
     },
     {
         "label": "USD/SGD",
-        "value": "1.27",
+        "value": "1.28",
         "dir": "neutral"
     },
     {
@@ -31775,7 +31859,7 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,254",
+        "value": "26,195",
         "dir": "neutral"
     },
     {
