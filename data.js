@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-04-16 21:53:26
+// Auto-generated: 2026-04-17 21:47:10
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -140,9 +140,9 @@ const COUNTRIES = {
                 "rank": 134
             },
             "healthcare": {
-                "size": 1,
+                "size": 2.1,
                 "growth": 5.0,
-                "potential": 60,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -153,7 +153,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 112
+                "rank": 95
             },
             "energy": {
                 "size": 1,
@@ -352,9 +352,9 @@ const COUNTRIES = {
                 "rank": 73
             },
             "healthcare": {
-                "size": 4.0,
+                "size": 2.1,
                 "growth": 5.9,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -365,7 +365,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 70
+                "rank": 96
             },
             "energy": {
                 "size": 4.0,
@@ -564,7 +564,7 @@ const COUNTRIES = {
                 "rank": 108
             },
             "healthcare": {
-                "size": 1.1,
+                "size": 1.5,
                 "growth": 5.2,
                 "potential": 79,
                 "oppo": [
@@ -577,7 +577,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 110
+                "rank": 108
             },
             "energy": {
                 "size": 1.2,
@@ -776,7 +776,7 @@ const COUNTRIES = {
                 "rank": 28
             },
             "healthcare": {
-                "size": 22.1,
+                "size": 22.0,
                 "growth": 5.2,
                 "potential": 86,
                 "oppo": [
@@ -789,7 +789,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 37
             },
             "energy": {
                 "size": 22.1,
@@ -988,9 +988,9 @@ const COUNTRIES = {
                 "rank": 26
             },
             "healthcare": {
-                "size": 25.5,
+                "size": 52.4,
                 "growth": 3.6,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -1001,7 +1001,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 23
+                "rank": 22
             },
             "energy": {
                 "size": 25.5,
@@ -1200,9 +1200,9 @@ const COUNTRIES = {
                 "rank": 110
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.9,
                 "growth": 6.0,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -1213,7 +1213,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 113
+                "rank": 100
             },
             "energy": {
                 "size": 1.1,
@@ -1412,9 +1412,9 @@ const COUNTRIES = {
                 "rank": 15
             },
             "healthcare": {
-                "size": 70.3,
+                "size": 146.2,
                 "growth": 4.1,
-                "potential": 86,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -1425,7 +1425,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 14
+                "rank": 10
             },
             "energy": {
                 "size": 70.3,
@@ -1624,9 +1624,9 @@ const COUNTRIES = {
                 "rank": 25
             },
             "healthcare": {
-                "size": 21.4,
+                "size": 50.6,
                 "growth": 3.6,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -1637,7 +1637,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 29
+                "rank": 23
             },
             "energy": {
                 "size": 23.5,
@@ -1836,7 +1836,7 @@ const COUNTRIES = {
                 "rank": 78
             },
             "healthcare": {
-                "size": 3.0,
+                "size": 2.5,
                 "growth": 5.2,
                 "potential": 80,
                 "oppo": [
@@ -1849,7 +1849,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 82
+                "rank": 88
             },
             "energy": {
                 "size": 3.3,
@@ -2048,9 +2048,9 @@ const COUNTRIES = {
                 "rank": 22
             },
             "healthcare": {
-                "size": 26.9,
+                "size": 58.0,
                 "growth": 4.0,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -2061,7 +2061,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 19
             },
             "energy": {
                 "size": 29.5,
@@ -2273,7 +2273,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 114
+                "rank": 119
             },
             "energy": {
                 "size": 1,
@@ -2472,7 +2472,7 @@ const COUNTRIES = {
                 "rank": 120
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.4,
                 "growth": 6.0,
                 "potential": 62,
                 "oppo": [
@@ -2485,7 +2485,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 115
+                "rank": 112
             },
             "energy": {
                 "size": 1,
@@ -2684,9 +2684,9 @@ const COUNTRIES = {
                 "rank": 37
             },
             "healthcare": {
-                "size": 18.0,
+                "size": 7.8,
                 "growth": 5.8,
-                "potential": 77,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -2697,7 +2697,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 35
+                "rank": 56
             },
             "energy": {
                 "size": 18.0,
@@ -2896,9 +2896,9 @@ const COUNTRIES = {
                 "rank": 62
             },
             "healthcare": {
-                "size": 4.5,
+                "size": 7.2,
                 "growth": 5.0,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -2909,7 +2909,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 66
+                "rank": 60
             },
             "energy": {
                 "size": 5.0,
@@ -3108,7 +3108,7 @@ const COUNTRIES = {
                 "rank": 97
             },
             "healthcare": {
-                "size": 1.9,
+                "size": 1.5,
                 "growth": 4.6,
                 "potential": 82,
                 "oppo": [
@@ -3121,7 +3121,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 94
+                "rank": 109
             },
             "energy": {
                 "size": 1.9,
@@ -3320,9 +3320,9 @@ const COUNTRIES = {
                 "rank": 106
             },
             "healthcare": {
-                "size": 1.2,
+                "size": 2.1,
                 "growth": 4.8,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -3333,7 +3333,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 109
+                "rank": 97
             },
             "energy": {
                 "size": 1.3,
@@ -3532,7 +3532,7 @@ const COUNTRIES = {
                 "rank": 77
             },
             "healthcare": {
-                "size": 3.0,
+                "size": 4.3,
                 "growth": 5.2,
                 "potential": 80,
                 "oppo": [
@@ -3545,7 +3545,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 83
+                "rank": 74
             },
             "energy": {
                 "size": 3.3,
@@ -3744,9 +3744,9 @@ const COUNTRIES = {
                 "rank": 88
             },
             "healthcare": {
-                "size": 2.2,
+                "size": 3.0,
                 "growth": 4.1,
-                "potential": 71,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -3757,7 +3757,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 87
+                "rank": 80
             },
             "energy": {
                 "size": 2.2,
@@ -3956,9 +3956,9 @@ const COUNTRIES = {
                 "rank": 11
             },
             "healthcare": {
-                "size": 87.4,
+                "size": 170.2,
                 "growth": 5.0,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -3969,7 +3969,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 10
+                "rank": 8
             },
             "energy": {
                 "size": 87.4,
@@ -4181,7 +4181,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 116
+                "rank": 120
             },
             "energy": {
                 "size": 1,
@@ -4393,7 +4393,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 117
+                "rank": 121
             },
             "energy": {
                 "size": 1,
@@ -4592,9 +4592,9 @@ const COUNTRIES = {
                 "rank": 8
             },
             "healthcare": {
-                "size": 143.6,
+                "size": 324.8,
                 "growth": 4.2,
-                "potential": 87,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4605,7 +4605,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 6
             },
             "energy": {
                 "size": 89.7,
@@ -4804,9 +4804,9 @@ const COUNTRIES = {
                 "rank": 20
             },
             "healthcare": {
-                "size": 37.5,
+                "size": 87.6,
                 "growth": 4.1,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4817,7 +4817,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 16
             },
             "energy": {
                 "size": 41.2,
@@ -5016,9 +5016,9 @@ const COUNTRIES = {
                 "rank": 47
             },
             "healthcare": {
-                "size": 13.2,
+                "size": 27.8,
                 "growth": 4.7,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -5029,7 +5029,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 44
+                "rank": 31
             },
             "energy": {
                 "size": 13.2,
@@ -5228,7 +5228,7 @@ const COUNTRIES = {
                 "rank": 2
             },
             "healthcare": {
-                "size": 749.8,
+                "size": 891.3,
                 "growth": 5.6,
                 "potential": 88,
                 "oppo": [
@@ -5440,9 +5440,9 @@ const COUNTRIES = {
                 "rank": 79
             },
             "healthcare": {
-                "size": 3.5,
+                "size": 2.4,
                 "growth": 6.5,
-                "potential": 77,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -5453,7 +5453,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 76
+                "rank": 90
             },
             "energy": {
                 "size": 3.5,
@@ -5652,7 +5652,7 @@ const COUNTRIES = {
                 "rank": 90
             },
             "healthcare": {
-                "size": 2.1,
+                "size": 1.9,
                 "growth": 5.5,
                 "potential": 74,
                 "oppo": [
@@ -5665,7 +5665,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 89
+                "rank": 101
             },
             "energy": {
                 "size": 2.1,
@@ -5864,9 +5864,9 @@ const COUNTRIES = {
                 "rank": 86
             },
             "healthcare": {
-                "size": 2.8,
+                "size": 2.1,
                 "growth": 6.6,
-                "potential": 65,
+                "potential": 64,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -5877,7 +5877,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 86
+                "rank": 98
             },
             "energy": {
                 "size": 2.8,
@@ -6088,7 +6088,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 118
+                "rank": 122
             },
             "energy": {
                 "size": 1,
@@ -6287,9 +6287,9 @@ const COUNTRIES = {
                 "rank": 39
             },
             "healthcare": {
-                "size": 16.8,
+                "size": 27.3,
                 "growth": 4.2,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -6300,7 +6300,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 38
+                "rank": 32
             },
             "energy": {
                 "size": 16.8,
@@ -6499,9 +6499,9 @@ const COUNTRIES = {
                 "rank": 76
             },
             "healthcare": {
-                "size": 3.8,
+                "size": 5.2,
                 "growth": 5.3,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -6512,7 +6512,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 72
+                "rank": 69
             },
             "energy": {
                 "size": 3.8,
@@ -6711,9 +6711,9 @@ const COUNTRIES = {
                 "rank": 71
             },
             "healthcare": {
-                "size": 4.3,
+                "size": 8.1,
                 "growth": 3.6,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -6724,7 +6724,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 68
+                "rank": 55
             },
             "energy": {
                 "size": 4.3,
@@ -6922,9 +6922,9 @@ const COUNTRIES = {
                 "rank": 98
             },
             "healthcare": {
-                "size": 1.5,
+                "size": 2.4,
                 "growth": 5.2,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -6935,7 +6935,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 102
+                "rank": 91
             },
             "energy": {
                 "size": 1.7,
@@ -7134,7 +7134,7 @@ const COUNTRIES = {
                 "rank": 40
             },
             "healthcare": {
-                "size": 13.9,
+                "size": 23.6,
                 "growth": 4.1,
                 "potential": 84,
                 "oppo": [
@@ -7147,7 +7147,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 43
+                "rank": 35
             },
             "energy": {
                 "size": 15.3,
@@ -7346,9 +7346,9 @@ const COUNTRIES = {
                 "rank": 3
             },
             "healthcare": {
-                "size": 187.4,
+                "size": 459.8,
                 "growth": 3.6,
-                "potential": 86,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -7558,9 +7558,9 @@ const COUNTRIES = {
                 "rank": 32
             },
             "healthcare": {
-                "size": 17.0,
+                "size": 31.9,
                 "growth": 5.0,
-                "potential": 86,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -7571,7 +7571,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 36
+                "rank": 27
             },
             "energy": {
                 "size": 18.7,
@@ -7770,7 +7770,7 @@ const COUNTRIES = {
                 "rank": 63
             },
             "healthcare": {
-                "size": 5.0,
+                "size": 4.6,
                 "growth": 5.6,
                 "potential": 81,
                 "oppo": [
@@ -7783,7 +7783,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 61
+                "rank": 71
             },
             "energy": {
                 "size": 5.0,
@@ -7982,7 +7982,7 @@ const COUNTRIES = {
                 "rank": 51
             },
             "healthcare": {
-                "size": 10.8,
+                "size": 9.4,
                 "growth": 5.1,
                 "potential": 81,
                 "oppo": [
@@ -7995,7 +7995,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 50
+                "rank": 51
             },
             "energy": {
                 "size": 10.8,
@@ -8194,9 +8194,9 @@ const COUNTRIES = {
                 "rank": 64
             },
             "healthcare": {
-                "size": 5.0,
+                "size": 7.5,
                 "growth": 3.6,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -8207,7 +8207,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 62
+                "rank": 58
             },
             "energy": {
                 "size": 5.0,
@@ -8406,7 +8406,7 @@ const COUNTRIES = {
                 "rank": 42
             },
             "healthcare": {
-                "size": 15.6,
+                "size": 15.2,
                 "growth": 5.1,
                 "potential": 76,
                 "oppo": [
@@ -8419,7 +8419,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 40
+                "rank": 45
             },
             "energy": {
                 "size": 15.6,
@@ -8618,7 +8618,7 @@ const COUNTRIES = {
                 "rank": 12
             },
             "healthcare": {
-                "size": 69.0,
+                "size": 127.3,
                 "growth": 5.0,
                 "potential": 88,
                 "oppo": [
@@ -8631,7 +8631,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 15
+                "rank": 12
             },
             "energy": {
                 "size": 75.9,
@@ -8830,7 +8830,7 @@ const COUNTRIES = {
                 "rank": 93
             },
             "healthcare": {
-                "size": 1.7,
+                "size": 2.7,
                 "growth": 3.6,
                 "potential": 80,
                 "oppo": [
@@ -8843,7 +8843,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 98
+                "rank": 85
             },
             "energy": {
                 "size": 1.9,
@@ -9042,9 +9042,9 @@ const COUNTRIES = {
                 "rank": 60
             },
             "healthcare": {
-                "size": 6.0,
+                "size": 3.4,
                 "growth": 6.6,
-                "potential": 66,
+                "potential": 65,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -9055,7 +9055,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 59
+                "rank": 77
             },
             "energy": {
                 "size": 6.0,
@@ -9254,9 +9254,9 @@ const COUNTRIES = {
                 "rank": 45
             },
             "healthcare": {
-                "size": 11.9,
+                "size": 25.0,
                 "growth": 3.8,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9267,7 +9267,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 46
+                "rank": 34
             },
             "energy": {
                 "size": 13.1,
@@ -9466,9 +9466,9 @@ const COUNTRIES = {
                 "rank": 7
             },
             "healthcare": {
-                "size": 126.4,
+                "size": 291.6,
                 "growth": 4.1,
-                "potential": 87,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9479,7 +9479,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 8
+                "rank": 7
             },
             "energy": {
                 "size": 139.1,
@@ -9691,7 +9691,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 119
+                "rank": 123
             },
             "energy": {
                 "size": 1,
@@ -9890,9 +9890,9 @@ const COUNTRIES = {
                 "rank": 4
             },
             "healthcare": {
-                "size": 147.4,
+                "size": 328.3,
                 "growth": 4.1,
-                "potential": 87,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9903,7 +9903,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 5
             },
             "energy": {
                 "size": 162.2,
@@ -10102,9 +10102,9 @@ const COUNTRIES = {
                 "rank": 102
             },
             "healthcare": {
-                "size": 1.4,
+                "size": 1.9,
                 "growth": 7.5,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -10115,7 +10115,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 104
+                "rank": 102
             },
             "energy": {
                 "size": 1.5,
@@ -10314,9 +10314,9 @@ const COUNTRIES = {
                 "rank": 82
             },
             "healthcare": {
-                "size": 3.3,
+                "size": 1.9,
                 "growth": 6.3,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -10327,7 +10327,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 79
+                "rank": 103
             },
             "energy": {
                 "size": 3.3,
@@ -10539,7 +10539,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 120
+                "rank": 124
             },
             "energy": {
                 "size": 1,
@@ -10751,7 +10751,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 121
+                "rank": 125
             },
             "energy": {
                 "size": 1,
@@ -10950,9 +10950,9 @@ const COUNTRIES = {
                 "rank": 48
             },
             "healthcare": {
-                "size": 10.2,
+                "size": 17.2,
                 "growth": 4.4,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -10963,7 +10963,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 52
+                "rank": 44
             },
             "energy": {
                 "size": 11.3,
@@ -11162,9 +11162,9 @@ const COUNTRIES = {
                 "rank": 67
             },
             "healthcare": {
-                "size": 4.5,
+                "size": 6.2,
                 "growth": 5.1,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -11175,7 +11175,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 67
+                "rank": 62
             },
             "energy": {
                 "size": 4.5,
@@ -11387,7 +11387,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 122
+                "rank": 126
             },
             "energy": {
                 "size": 1,
@@ -11585,7 +11585,7 @@ const COUNTRIES = {
                 "rank": 105
             },
             "healthcare": {
-                "size": 1.5,
+                "size": 2.3,
                 "growth": 5.5,
                 "potential": 74,
                 "oppo": [
@@ -11598,7 +11598,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 103
+                "rank": 93
             },
             "energy": {
                 "size": 1.5,
@@ -11797,7 +11797,7 @@ const COUNTRIES = {
                 "rank": 68
             },
             "healthcare": {
-                "size": 3.7,
+                "size": 5.3,
                 "growth": 5.1,
                 "potential": 84,
                 "oppo": [
@@ -11810,7 +11810,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 73
+                "rank": 68
             },
             "energy": {
                 "size": 4.1,
@@ -12022,7 +12022,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 123
+                "rank": 127
             },
             "energy": {
                 "size": 1,
@@ -12221,9 +12221,9 @@ const COUNTRIES = {
                 "rank": 52
             },
             "healthcare": {
-                "size": 8.9,
+                "size": 11.3,
                 "growth": 3.8,
-                "potential": 82,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -12234,7 +12234,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 54
+                "rank": 50
             },
             "energy": {
                 "size": 9.8,
@@ -12433,7 +12433,7 @@ const COUNTRIES = {
                 "rank": 18
             },
             "healthcare": {
-                "size": 55.9,
+                "size": 30.2,
                 "growth": 5.6,
                 "potential": 84,
                 "oppo": [
@@ -12446,7 +12446,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 16
+                "rank": 29
             },
             "energy": {
                 "size": 55.9,
@@ -12645,9 +12645,9 @@ const COUNTRIES = {
                 "rank": 6
             },
             "healthcare": {
-                "size": 156.4,
+                "size": 104.5,
                 "growth": 6.7,
-                "potential": 82,
+                "potential": 81,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -12658,7 +12658,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 5
+                "rank": 14
             },
             "energy": {
                 "size": 156.4,
@@ -12857,9 +12857,9 @@ const COUNTRIES = {
                 "rank": 23
             },
             "healthcare": {
-                "size": 24.4,
+                "size": 33.4,
                 "growth": 4.6,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -12870,7 +12870,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 24
+                "rank": 26
             },
             "energy": {
                 "size": 26.8,
@@ -13069,7 +13069,7 @@ const COUNTRIES = {
                 "rank": 33
             },
             "healthcare": {
-                "size": 19.0,
+                "size": 22.9,
                 "growth": 5.1,
                 "potential": 82,
                 "oppo": [
@@ -13082,7 +13082,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 33
+                "rank": 36
             },
             "energy": {
                 "size": 19.0,
@@ -13281,7 +13281,7 @@ const COUNTRIES = {
                 "rank": 50
             },
             "healthcare": {
-                "size": 11.2,
+                "size": 12.4,
                 "growth": 3.6,
                 "potential": 78,
                 "oppo": [
@@ -13493,7 +13493,7 @@ const COUNTRIES = {
                 "rank": 104
             },
             "healthcare": {
-                "size": 1.3,
+                "size": 2.4,
                 "growth": 3.6,
                 "potential": 80,
                 "oppo": [
@@ -13506,7 +13506,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 106
+                "rank": 92
             },
             "energy": {
                 "size": 1.5,
@@ -13705,7 +13705,7 @@ const COUNTRIES = {
                 "rank": 30
             },
             "healthcare": {
-                "size": 21.6,
+                "size": 30.7,
                 "growth": 3.9,
                 "potential": 84,
                 "oppo": [
@@ -13917,7 +13917,7 @@ const COUNTRIES = {
                 "rank": 9
             },
             "healthcare": {
-                "size": 95.2,
+                "size": 160.8,
                 "growth": 3.9,
                 "potential": 86,
                 "oppo": [
@@ -14129,9 +14129,9 @@ const COUNTRIES = {
                 "rank": 124
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.3,
                 "growth": 3.6,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14142,7 +14142,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 124
+                "rank": 113
             },
             "energy": {
                 "size": 1,
@@ -14340,9 +14340,9 @@ const COUNTRIES = {
                 "rank": 91
             },
             "healthcare": {
-                "size": 2.1,
+                "size": 3.3,
                 "growth": 5.1,
-                "potential": 73,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14353,7 +14353,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 90
+                "rank": 78
             },
             "energy": {
                 "size": 2.1,
@@ -14552,9 +14552,9 @@ const COUNTRIES = {
                 "rank": 5
             },
             "healthcare": {
-                "size": 161.1,
+                "size": 346.0,
                 "growth": 3.6,
-                "potential": 86,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14764,7 +14764,7 @@ const COUNTRIES = {
                 "rank": 46
             },
             "healthcare": {
-                "size": 11.7,
+                "size": 8.8,
                 "growth": 5.6,
                 "potential": 82,
                 "oppo": [
@@ -14777,7 +14777,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 47
+                "rank": 52
             },
             "energy": {
                 "size": 12.8,
@@ -14976,7 +14976,7 @@ const COUNTRIES = {
                 "rank": 65
             },
             "healthcare": {
-                "size": 4.8,
+                "size": 4.2,
                 "growth": 6.0,
                 "potential": 76,
                 "oppo": [
@@ -14989,7 +14989,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 63
+                "rank": 75
             },
             "energy": {
                 "size": 4.8,
@@ -15201,7 +15201,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 125
+                "rank": 128
             },
             "energy": {
                 "size": 1,
@@ -15400,7 +15400,7 @@ const COUNTRIES = {
                 "rank": 99
             },
             "healthcare": {
-                "size": 1.9,
+                "size": 1.7,
                 "growth": 6.5,
                 "potential": 76,
                 "oppo": [
@@ -15413,7 +15413,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 95
+                "rank": 106
             },
             "energy": {
                 "size": 1.9,
@@ -15612,9 +15612,9 @@ const COUNTRIES = {
                 "rank": 13
             },
             "healthcare": {
-                "size": 75.0,
+                "size": 130.2,
                 "growth": 4.4,
-                "potential": 86,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15625,7 +15625,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 12
+                "rank": 11
             },
             "energy": {
                 "size": 75.0,
@@ -15837,7 +15837,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 57
+                "rank": 61
             },
             "energy": {
                 "size": 6.4,
@@ -16049,7 +16049,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 126
+                "rank": 129
             },
             "energy": {
                 "size": 1,
@@ -16260,7 +16260,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 127
+                "rank": 130
             },
             "energy": {
                 "size": 1,
@@ -16459,7 +16459,7 @@ const COUNTRIES = {
                 "rank": 96
             },
             "healthcare": {
-                "size": 1.9,
+                "size": 3.0,
                 "growth": 4.4,
                 "potential": 78,
                 "oppo": [
@@ -16472,7 +16472,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 96
+                "rank": 81
             },
             "energy": {
                 "size": 1.9,
@@ -16671,7 +16671,7 @@ const COUNTRIES = {
                 "rank": 75
             },
             "healthcare": {
-                "size": 4.0,
+                "size": 2.9,
                 "growth": 6.1,
                 "potential": 76,
                 "oppo": [
@@ -16684,7 +16684,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 71
+                "rank": 84
             },
             "energy": {
                 "size": 4.0,
@@ -16883,9 +16883,9 @@ const COUNTRIES = {
                 "rank": 74
             },
             "healthcare": {
-                "size": 3.4,
+                "size": 5.2,
                 "growth": 4.7,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -16896,7 +16896,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 78
+                "rank": 70
             },
             "energy": {
                 "size": 3.7,
@@ -17095,7 +17095,7 @@ const COUNTRIES = {
                 "rank": 69
             },
             "healthcare": {
-                "size": 3.7,
+                "size": 4.4,
                 "growth": 3.7,
                 "potential": 81,
                 "oppo": [
@@ -17108,7 +17108,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 74
+                "rank": 72
             },
             "energy": {
                 "size": 4.1,
@@ -17307,7 +17307,7 @@ const COUNTRIES = {
                 "rank": 92
             },
             "healthcare": {
-                "size": 1.7,
+                "size": 2.5,
                 "growth": 3.6,
                 "potential": 80,
                 "oppo": [
@@ -17320,7 +17320,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 99
+                "rank": 89
             },
             "energy": {
                 "size": 1.9,
@@ -17519,7 +17519,7 @@ const COUNTRIES = {
                 "rank": 59
             },
             "healthcare": {
-                "size": 6.4,
+                "size": 7.8,
                 "growth": 5.6,
                 "potential": 76,
                 "oppo": [
@@ -17532,7 +17532,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 58
+                "rank": 57
             },
             "energy": {
                 "size": 6.4,
@@ -17744,7 +17744,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 128
+                "rank": 131
             },
             "energy": {
                 "size": 1,
@@ -17956,7 +17956,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 129
+                "rank": 132
             },
             "energy": {
                 "size": 1,
@@ -18155,7 +18155,7 @@ const COUNTRIES = {
                 "rank": 14
             },
             "healthcare": {
-                "size": 74.3,
+                "size": 81.7,
                 "growth": 4.2,
                 "potential": 82,
                 "oppo": [
@@ -18168,7 +18168,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 13
+                "rank": 17
             },
             "energy": {
                 "size": 74.3,
@@ -18380,7 +18380,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 130
+                "rank": 133
             },
             "energy": {
                 "size": 1,
@@ -18579,7 +18579,7 @@ const COUNTRIES = {
                 "rank": 112
             },
             "healthcare": {
-                "size": 1.1,
+                "size": 1,
                 "growth": 6.1,
                 "potential": 62,
                 "oppo": [
@@ -18592,7 +18592,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 111
+                "rank": 134
             },
             "energy": {
                 "size": 1.1,
@@ -18791,9 +18791,9 @@ const COUNTRIES = {
                 "rank": 85
             },
             "healthcare": {
-                "size": 3.0,
+                "size": 2.6,
                 "growth": 4.1,
-                "potential": 72,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18804,7 +18804,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 84
+                "rank": 86
             },
             "energy": {
                 "size": 3.0,
@@ -19015,7 +19015,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 131
+                "rank": 135
             },
             "energy": {
                 "size": 1,
@@ -19214,7 +19214,7 @@ const COUNTRIES = {
                 "rank": 118
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.2,
                 "growth": 5.6,
                 "potential": 79,
                 "oppo": [
@@ -19227,7 +19227,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 132
+                "rank": 115
             },
             "energy": {
                 "size": 1,
@@ -19426,9 +19426,9 @@ const COUNTRIES = {
                 "rank": 121
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.5,
                 "growth": 5.0,
-                "potential": 60,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19439,7 +19439,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 133
+                "rank": 110
             },
             "energy": {
                 "size": 1,
@@ -19651,7 +19651,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 134
+                "rank": 136
             },
             "energy": {
                 "size": 1,
@@ -19863,7 +19863,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 135
+                "rank": 137
             },
             "energy": {
                 "size": 1,
@@ -20075,7 +20075,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 136
+                "rank": 138
             },
             "energy": {
                 "size": 1,
@@ -20274,7 +20274,7 @@ const COUNTRIES = {
                 "rank": 38
             },
             "healthcare": {
-                "size": 16.9,
+                "size": 13.4,
                 "growth": 5.6,
                 "potential": 83,
                 "oppo": [
@@ -20287,7 +20287,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 37
+                "rank": 46
             },
             "energy": {
                 "size": 16.9,
@@ -20499,7 +20499,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 137
+                "rank": 139
             },
             "energy": {
                 "size": 1,
@@ -20711,7 +20711,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 138
+                "rank": 140
             },
             "energy": {
                 "size": 1,
@@ -20910,7 +20910,7 @@ const COUNTRIES = {
                 "rank": 54
             },
             "healthcare": {
-                "size": 10.1,
+                "size": 8.5,
                 "growth": 5.7,
                 "potential": 76,
                 "oppo": [
@@ -21121,7 +21121,7 @@ const COUNTRIES = {
                 "rank": 132
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.3,
                 "growth": 5.5,
                 "potential": 73,
                 "oppo": [
@@ -21134,7 +21134,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 139
+                "rank": 114
             },
             "energy": {
                 "size": 1,
@@ -21333,9 +21333,9 @@ const COUNTRIES = {
                 "rank": 17
             },
             "healthcare": {
-                "size": 48.6,
+                "size": 97.2,
                 "growth": 4.0,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21346,7 +21346,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 19
+                "rank": 15
             },
             "energy": {
                 "size": 53.5,
@@ -21545,7 +21545,7 @@ const COUNTRIES = {
                 "rank": 27
             },
             "healthcare": {
-                "size": 19.3,
+                "size": 36.5,
                 "growth": 4.4,
                 "potential": 85,
                 "oppo": [
@@ -21558,7 +21558,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 31
+                "rank": 25
             },
             "energy": {
                 "size": 21.3,
@@ -21757,7 +21757,7 @@ const COUNTRIES = {
                 "rank": 101
             },
             "healthcare": {
-                "size": 1.7,
+                "size": 2.1,
                 "growth": 5.6,
                 "potential": 74,
                 "oppo": [
@@ -21770,7 +21770,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 100
+                "rank": 99
             },
             "energy": {
                 "size": 1.7,
@@ -21969,9 +21969,9 @@ const COUNTRIES = {
                 "rank": 53
             },
             "healthcare": {
-                "size": 10.4,
+                "size": 20.9,
                 "growth": 4.1,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21982,7 +21982,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 51
+                "rank": 38
             },
             "energy": {
                 "size": 10.4,
@@ -22181,9 +22181,9 @@ const COUNTRIES = {
                 "rank": 72
             },
             "healthcare": {
-                "size": 4.3,
+                "size": 3.0,
                 "growth": 4.3,
-                "potential": 83,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22194,7 +22194,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 69
+                "rank": 82
             },
             "energy": {
                 "size": 4.3,
@@ -22393,9 +22393,9 @@ const COUNTRIES = {
                 "rank": 44
             },
             "healthcare": {
-                "size": 14.9,
+                "size": 7.5,
                 "growth": 5.3,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -22406,7 +22406,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 42
+                "rank": 59
             },
             "energy": {
                 "size": 14.9,
@@ -22605,9 +22605,9 @@ const COUNTRIES = {
                 "rank": 80
             },
             "healthcare": {
-                "size": 3.5,
+                "size": 5.8,
                 "growth": 4.7,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22618,7 +22618,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 77
+                "rank": 64
             },
             "energy": {
                 "size": 3.5,
@@ -22817,7 +22817,7 @@ const COUNTRIES = {
                 "rank": 49
             },
             "healthcare": {
-                "size": 11.6,
+                "size": 13.0,
                 "growth": 4.9,
                 "potential": 81,
                 "oppo": [
@@ -22830,7 +22830,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 48
+                "rank": 47
             },
             "energy": {
                 "size": 11.6,
@@ -23029,7 +23029,7 @@ const COUNTRIES = {
                 "rank": 35
             },
             "healthcare": {
-                "size": 18.5,
+                "size": 18.8,
                 "growth": 6.4,
                 "potential": 79,
                 "oppo": [
@@ -23042,7 +23042,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 34
+                "rank": 41
             },
             "energy": {
                 "size": 18.5,
@@ -23241,9 +23241,9 @@ const COUNTRIES = {
                 "rank": 111
             },
             "healthcare": {
-                "size": 1.3,
+                "size": 1,
                 "growth": 5.6,
-                "potential": 74,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23254,7 +23254,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 107
+                "rank": 141
             },
             "energy": {
                 "size": 1.3,
@@ -23452,9 +23452,9 @@ const COUNTRIES = {
                 "rank": 21
             },
             "healthcare": {
-                "size": 36.7,
+                "size": 59.2,
                 "growth": 4.8,
-                "potential": 86,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23465,7 +23465,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 18
             },
             "energy": {
                 "size": 40.4,
@@ -23664,9 +23664,9 @@ const COUNTRIES = {
                 "rank": 43
             },
             "healthcare": {
-                "size": 12.5,
+                "size": 25.7,
                 "growth": 4.5,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23677,7 +23677,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 45
+                "rank": 33
             },
             "energy": {
                 "size": 13.8,
@@ -23876,9 +23876,9 @@ const COUNTRIES = {
                 "rank": 100
             },
             "healthcare": {
-                "size": 1.8,
+                "size": 3.0,
                 "growth": 5.3,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23889,7 +23889,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 97
+                "rank": 83
             },
             "energy": {
                 "size": 1.8,
@@ -24088,9 +24088,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "healthcare": {
-                "size": 8.8,
+                "size": 4.4,
                 "growth": 4.5,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24101,7 +24101,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 55
+                "rank": 73
             },
             "energy": {
                 "size": 8.8,
@@ -24300,7 +24300,7 @@ const COUNTRIES = {
                 "rank": 36
             },
             "healthcare": {
-                "size": 15.3,
+                "size": 17.5,
                 "growth": 4.0,
                 "potential": 84,
                 "oppo": [
@@ -24313,7 +24313,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 41
+                "rank": 42
             },
             "energy": {
                 "size": 16.8,
@@ -24512,9 +24512,9 @@ const COUNTRIES = {
                 "rank": 10
             },
             "healthcare": {
-                "size": 87.0,
+                "size": 122.5,
                 "growth": 5.3,
-                "potential": 88,
+                "potential": 89,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24525,7 +24525,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 11
+                "rank": 13
             },
             "energy": {
                 "size": 95.6,
@@ -24737,7 +24737,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 140
+                "rank": 142
             },
             "energy": {
                 "size": 1,
@@ -24936,7 +24936,7 @@ const COUNTRIES = {
                 "rank": 19
             },
             "healthcare": {
-                "size": 49.6,
+                "size": 56.4,
                 "growth": 4.4,
                 "potential": 86,
                 "oppo": [
@@ -24949,7 +24949,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 18
+                "rank": 20
             },
             "energy": {
                 "size": 49.6,
@@ -25148,9 +25148,9 @@ const COUNTRIES = {
                 "rank": 95
             },
             "healthcare": {
-                "size": 2.0,
+                "size": 1.1,
                 "growth": 4.1,
-                "potential": 59,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25161,7 +25161,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 93
+                "rank": 117
             },
             "energy": {
                 "size": 2.0,
@@ -25359,7 +25359,7 @@ const COUNTRIES = {
                 "rank": 109
             },
             "healthcare": {
-                "size": 1.3,
+                "size": 1.1,
                 "growth": 6.5,
                 "potential": 75,
                 "oppo": [
@@ -25372,7 +25372,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 108
+                "rank": 118
             },
             "energy": {
                 "size": 1.3,
@@ -25571,7 +25571,7 @@ const COUNTRIES = {
                 "rank": 29
             },
             "healthcare": {
-                "size": 21.9,
+                "size": 19.7,
                 "growth": 5.4,
                 "potential": 87,
                 "oppo": [
@@ -25584,7 +25584,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 27
+                "rank": 39
             },
             "energy": {
                 "size": 21.9,
@@ -25796,7 +25796,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 141
+                "rank": 143
             },
             "energy": {
                 "size": 1,
@@ -25995,7 +25995,7 @@ const COUNTRIES = {
                 "rank": 107
             },
             "healthcare": {
-                "size": 1.4,
+                "size": 2.6,
                 "growth": 4.6,
                 "potential": 78,
                 "oppo": [
@@ -26008,7 +26008,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 105
+                "rank": 87
             },
             "energy": {
                 "size": 1.4,
@@ -26220,7 +26220,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 142
+                "rank": 144
             },
             "energy": {
                 "size": 1,
@@ -26418,9 +26418,9 @@ const COUNTRIES = {
                 "rank": 70
             },
             "healthcare": {
-                "size": 3.6,
+                "size": 5.8,
                 "growth": 5.2,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26431,7 +26431,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 75
+                "rank": 65
             },
             "energy": {
                 "size": 4.0,
@@ -26630,9 +26630,9 @@ const COUNTRIES = {
                 "rank": 57
             },
             "healthcare": {
-                "size": 5.6,
+                "size": 8.3,
                 "growth": 4.4,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26643,7 +26643,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 60
+                "rank": 54
             },
             "energy": {
                 "size": 6.2,
@@ -26842,9 +26842,9 @@ const COUNTRIES = {
                 "rank": 81
             },
             "healthcare": {
-                "size": 2.9,
+                "size": 5.8,
                 "growth": 4.3,
-                "potential": 82,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26855,7 +26855,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 85
+                "rank": 66
             },
             "energy": {
                 "size": 3.2,
@@ -27054,9 +27054,9 @@ const COUNTRIES = {
                 "rank": 24
             },
             "healthcare": {
-                "size": 24.1,
+                "size": 54.2,
                 "growth": 3.9,
-                "potential": 84,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -27067,7 +27067,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 25
+                "rank": 21
             },
             "energy": {
                 "size": 26.6,
@@ -27279,7 +27279,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 143
+                "rank": 145
             },
             "energy": {
                 "size": 1,
@@ -27491,7 +27491,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 144
+                "rank": 146
             },
             "energy": {
                 "size": 1,
@@ -27703,7 +27703,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 145
+                "rank": 147
             },
             "energy": {
                 "size": 1,
@@ -27902,7 +27902,7 @@ const COUNTRIES = {
                 "rank": 31
             },
             "healthcare": {
-                "size": 21.1,
+                "size": 19.1,
                 "growth": 4.6,
                 "potential": 81,
                 "oppo": [
@@ -27915,7 +27915,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 30
+                "rank": 40
             },
             "energy": {
                 "size": 21.1,
@@ -28127,7 +28127,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 146
+                "rank": 148
             },
             "energy": {
                 "size": 1,
@@ -28325,7 +28325,7 @@ const COUNTRIES = {
                 "rank": 87
             },
             "healthcare": {
-                "size": 2.1,
+                "size": 2.3,
                 "growth": 6.1,
                 "potential": 81,
                 "oppo": [
@@ -28338,7 +28338,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 91
+                "rank": 94
             },
             "energy": {
                 "size": 2.3,
@@ -28535,9 +28535,9 @@ const COUNTRIES = {
                 "rank": 115
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.5,
                 "growth": 4.6,
-                "potential": 81,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -28548,7 +28548,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 147
+                "rank": 111
             },
             "energy": {
                 "size": 1,
@@ -28746,9 +28746,9 @@ const COUNTRIES = {
                 "rank": 94
             },
             "healthcare": {
-                "size": 2.1,
+                "size": 3.3,
                 "growth": 4.7,
-                "potential": 72,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28759,7 +28759,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 92
+                "rank": 79
             },
             "energy": {
                 "size": 2.1,
@@ -28958,7 +28958,7 @@ const COUNTRIES = {
                 "rank": 16
             },
             "healthcare": {
-                "size": 54.4,
+                "size": 46.5,
                 "growth": 4.9,
                 "potential": 83,
                 "oppo": [
@@ -28971,7 +28971,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 17
+                "rank": 24
             },
             "energy": {
                 "size": 59.8,
@@ -29170,9 +29170,9 @@ const COUNTRIES = {
                 "rank": 84
             },
             "healthcare": {
-                "size": 3.2,
+                "size": 1.9,
                 "growth": 6.3,
-                "potential": 76,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29183,7 +29183,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 80
+                "rank": 104
             },
             "energy": {
                 "size": 3.2,
@@ -29382,7 +29382,7 @@ const COUNTRIES = {
                 "rank": 89
             },
             "healthcare": {
-                "size": 2.2,
+                "size": 1.8,
                 "growth": 6.5,
                 "potential": 64,
                 "oppo": [
@@ -29395,7 +29395,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 88
+                "rank": 105
             },
             "energy": {
                 "size": 2.2,
@@ -29594,9 +29594,9 @@ const COUNTRIES = {
                 "rank": 55
             },
             "healthcare": {
-                "size": 7.6,
+                "size": 12.5,
                 "growth": 4.8,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -29607,7 +29607,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 56
+                "rank": 48
             },
             "energy": {
                 "size": 8.4,
@@ -29806,9 +29806,9 @@ const COUNTRIES = {
                 "rank": 83
             },
             "healthcare": {
-                "size": 3.2,
+                "size": 5.8,
                 "growth": 4.8,
-                "potential": 83,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29819,7 +29819,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 81
+                "rank": 67
             },
             "energy": {
                 "size": 3.2,
@@ -30018,9 +30018,9 @@ const COUNTRIES = {
                 "rank": 1
             },
             "healthcare": {
-                "size": 1840.1,
+                "size": 6143.7,
                 "growth": 4.7,
-                "potential": 91,
+                "potential": 93,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -30230,9 +30230,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "healthcare": {
-                "size": 4.6,
+                "size": 6.2,
                 "growth": 6.7,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30243,7 +30243,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 65
+                "rank": 63
             },
             "energy": {
                 "size": 5.1,
@@ -30442,7 +30442,7 @@ const COUNTRIES = {
                 "rank": 66
             },
             "healthcare": {
-                "size": 4.8,
+                "size": 3.6,
                 "growth": 5.7,
                 "potential": 63,
                 "oppo": [
@@ -30455,7 +30455,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 64
+                "rank": 76
             },
             "energy": {
                 "size": 4.8,
@@ -30653,7 +30653,7 @@ const COUNTRIES = {
                 "rank": 34
             },
             "healthcare": {
-                "size": 19.1,
+                "size": 17.4,
                 "growth": 6.9,
                 "potential": 80,
                 "oppo": [
@@ -30666,7 +30666,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 32
+                "rank": 43
             },
             "energy": {
                 "size": 19.1,
@@ -30865,7 +30865,7 @@ const COUNTRIES = {
                 "rank": 127
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.7,
                 "growth": 4.4,
                 "potential": 59,
                 "oppo": [
@@ -30878,7 +30878,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 148
+                "rank": 107
             },
             "energy": {
                 "size": 1,
@@ -31076,9 +31076,9 @@ const COUNTRIES = {
                 "rank": 41
             },
             "healthcare": {
-                "size": 16.0,
+                "size": 28.6,
                 "growth": 3.8,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -31089,7 +31089,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 39
+                "rank": 30
             },
             "energy": {
                 "size": 16.0,
@@ -31288,7 +31288,7 @@ const COUNTRIES = {
                 "rank": 116
             },
             "healthcare": {
-                "size": 1,
+                "size": 1.2,
                 "growth": 5.6,
                 "potential": 73,
                 "oppo": [
@@ -31301,7 +31301,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 149
+                "rank": 116
             },
             "energy": {
                 "size": 1,
@@ -31500,7 +31500,7 @@ const COUNTRIES = {
                 "rank": 103
             },
             "healthcare": {
-                "size": 1.7,
+                "size": 1,
                 "growth": 4.8,
                 "potential": 72,
                 "oppo": [
@@ -31513,7 +31513,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 101
+                "rank": 149
             },
             "energy": {
                 "size": 1.7,
@@ -31814,7 +31814,7 @@ const TICKER_DATA = [
     },
     {
         "label": "GBP/USD",
-        "value": "1.36",
+        "value": "1.35",
         "dir": "neutral"
     },
     {
@@ -31824,17 +31824,17 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/KRW",
-        "value": "1,475",
+        "value": "1,478",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.83",
+        "value": "6.84",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "93.44",
+        "value": "93.25",
         "dir": "neutral"
     },
     {
@@ -31859,7 +31859,7 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,240",
+        "value": "26,248",
         "dir": "neutral"
     },
     {
