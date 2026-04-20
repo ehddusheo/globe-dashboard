@@ -49,7 +49,7 @@
         "inLanguage": ["ko", "en"]
     }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260310a">
+    <link rel="stylesheet" href="styles.css?v=20260311a">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -75,6 +75,7 @@
                 <div class="stat-item"><span class="stat-value" data-target="104">0</span><span class="stat-label">TRILLION USD</span></div>
             </div>
             <div class="header-right">
+                <button id="lang-toggle" class="lang-toggle-btn" title="Toggle Language">EN</button>
                 <div class="live-dot"><span class="dot"></span>LIVE</div>
                 <div id="clock"></div>
             </div>
@@ -83,7 +84,7 @@
         <main id="main-content">
             <aside id="left-panel" class="glass-panel">
                 <div class="panel-section">
-                    <h2 class="section-title">&#128269; 국가 선택</h2>
+                    <h2 class="section-title" data-i18n="selectCountry">&#128269; 국가 선택</h2>
                     <input type="text" id="country-search" class="search-input" placeholder="국가 검색..." autocomplete="off">
                     <div id="search-results" class="search-results"></div>
                     <select id="country-select" class="styled-select">
@@ -91,13 +92,34 @@
                     </select>
                 </div>
                 <div class="panel-section">
-                    <h2 class="section-title">&#128188; 업종 선택</h2>
+                    <h2 class="section-title" data-i18n="selectIndustry">&#128188; 업종 선택</h2>
                     <div id="industry-grid" class="industry-grid"></div>
                 </div>
                 <div id="quick-stats" class="quick-stats"></div>
             </aside>
 
-            <div id="globe-container"></div>
+            <div id="globe-container">
+                <!-- HUD Overlay -->
+                <div id="hud-overlay" class="hud-overlay">
+                    <div class="hud-top-left">
+                        <div class="hud-status">
+                            <span class="hud-status-dot"></span>
+                            <span class="hud-status-text">SYSTEM ONLINE</span>
+                        </div>
+                        <div class="hud-alerts" id="hud-alerts"></div>
+                    </div>
+                    <div class="hud-top-right">
+                        <div class="hud-metrics" id="hud-metrics"></div>
+                    </div>
+                    <div class="hud-bottom-center">
+                        <div class="cmd-input-wrap">
+                            <span class="cmd-prompt">&gt;</span>
+                            <input type="text" id="cmd-input" class="cmd-input" placeholder="Search country or type /command..." autocomplete="off">
+                            <div id="cmd-suggestions" class="cmd-suggestions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <aside id="right-panel" class="glass-panel hidden">
                 <button id="close-panel" class="close-btn">&times;</button>
@@ -108,7 +130,7 @@
         <!-- Expansion Advisor CTA -->
         <button id="expansion-cta" class="expansion-cta-btn">
             <span class="cta-icon">🚀</span>
-            <span class="cta-text">AI 수출전략 분석</span>
+            <span class="cta-text" data-i18n="ctaAnalysis">AI 수출전략 분석</span>
             <span class="cta-glow"></span>
         </button>
 
@@ -120,8 +142,8 @@
                 <div class="wizard-steps" id="wizard-steps"></div>
                 <div class="wizard-content" id="wizard-content"></div>
                 <div class="wizard-nav">
-                    <button class="wizard-btn prev hidden" id="wizard-prev">← 이전</button>
-                    <button class="wizard-btn next" id="wizard-next">다음 →</button>
+                    <button class="wizard-btn prev hidden" id="wizard-prev" data-i18n="prevBtn">← 이전</button>
+                    <button class="wizard-btn next" id="wizard-next" data-i18n="nextBtn">다음 →</button>
                 </div>
             </div>
         </div>
@@ -129,7 +151,9 @@
         <!-- Analysis Overlay -->
         <div id="analysis-overlay" class="analysis-overlay hidden">
             <div class="analysis-hud">
+                <div class="analysis-agent-badge">🤖 AI AGENT ACTIVATED</div>
                 <div class="analysis-status" id="analysis-status">글로벌 데이터베이스 연결중...</div>
+                <div class="analysis-log" id="analysis-log"></div>
                 <div class="analysis-progress">
                     <div class="analysis-bar"><div class="analysis-bar-fill" id="analysis-bar"></div></div>
                     <div class="analysis-count" id="analysis-count">0 / 149</div>
@@ -151,19 +175,38 @@
             <div class="welcome-backdrop"></div>
             <div class="welcome-modal glass-panel">
                 <div class="welcome-icon">🌍</div>
-                <div class="welcome-title">AI 해외진출 전략 보고서</div>
-                <div class="welcome-desc">149개국 × 12개 산업 데이터를 AI가 분석하여<br>귀사에 최적화된 해외진출 전략을 제안합니다.</div>
+                <div class="welcome-title" data-i18n="welcomeTitle">AI 해외진출 전략 보고서</div>
+                <div class="welcome-desc" data-i18n="welcomeDesc">149개국 × 12개 산업 데이터를 AI가 분석하여<br>귀사에 최적화된 해외진출 전략을 제안합니다.</div>
                 <div class="welcome-features">
-                    <div class="welcome-feat">📦 수입 증가국 분석</div>
-                    <div class="welcome-feat">🏆 경쟁 환경 진단</div>
-                    <div class="welcome-feat">🎯 제품-시장 적합도</div>
+                    <div class="welcome-feat" data-i18n="welcomeFeat1">📦 수입 증가국 분석</div>
+                    <div class="welcome-feat" data-i18n="welcomeFeat2">🏆 경쟁 환경 진단</div>
+                    <div class="welcome-feat" data-i18n="welcomeFeat3">🎯 제품-시장 적합도</div>
                 </div>
-                <button class="welcome-cta" id="welcome-start-btn">🚀 무료 보고서 생성하기</button>
-                <button class="welcome-skip" id="welcome-skip-btn">나중에 할게요</button>
+                <button class="welcome-cta" id="welcome-start-btn" data-i18n="welcomeCta">🚀 무료 보고서 생성하기</button>
+                <button class="welcome-skip" id="welcome-skip-btn" data-i18n="welcomeSkip">나중에 할게요</button>
             </div>
         </div>
 
-        <!-- API Key Modal -->
+        <!-- Mobile Bottom Navigation -->
+        <nav id="mobile-nav" class="mobile-nav">
+            <button class="mobile-nav-btn active" data-tab="globe">
+                <span class="mobile-nav-icon">🌍</span>
+                <span class="mobile-nav-label">Globe</span>
+            </button>
+            <button class="mobile-nav-btn" data-tab="search">
+                <span class="mobile-nav-icon">🔍</span>
+                <span class="mobile-nav-label">Search</span>
+            </button>
+            <button class="mobile-nav-btn" data-tab="analysis">
+                <span class="mobile-nav-icon">🚀</span>
+                <span class="mobile-nav-label">Analysis</span>
+            </button>
+            <button class="mobile-nav-btn" data-tab="data">
+                <span class="mobile-nav-icon">📊</span>
+                <span class="mobile-nav-label">Data</span>
+            </button>
+        </nav>
+
         <footer id="ticker">
             <div class="ticker-wrap">
                 <div class="ticker-content" id="ticker-content"></div>
@@ -174,6 +217,6 @@
     <script src="https://unpkg.com/globe.gl@2.27.2/dist/globe.gl.min.js" integrity="sha384-F9OHjeWeuxp9JN/3Cc7QfqhpL4d2MXpYRH6eym5Id1g6450ZI+BcXgMoqMPQhjxs" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
     <script src="data.js?v=20260309b"></script>
-    <script src="app.js?v=20260310a"></script>
+    <script src="app.js?v=20260311a"></script>
 </body>
 </html>
