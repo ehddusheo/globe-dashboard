@@ -614,7 +614,7 @@
     "iso2": "ET",
     "iso3": "ETH",
     "region": "Sub-Saharan Africa ",
-    "income": "Not classified",
+    "income": "Low income",
     "capital": "Addis Ababa",
     "lat": 9.02274,
     "lng": 38.7468
@@ -664,7 +664,7 @@
     "iso2": "FM",
     "iso3": "FSM",
     "region": "East Asia & Pacific",
-    "income": "Lower middle income",
+    "income": "Upper middle income",
     "capital": "Palikir",
     "lat": 6.91771,
     "lng": 158.185
@@ -974,7 +974,7 @@
     "iso2": "JO",
     "iso3": "JOR",
     "region": "Middle East, North Africa, Afghanistan & Pakistan",
-    "income": "Lower middle income",
+    "income": "Upper middle income",
     "capital": "Amman",
     "lat": 31.9497,
     "lng": 35.9263
@@ -1134,7 +1134,7 @@
     "iso2": "LK",
     "iso3": "LKA",
     "region": "South Asia",
-    "income": "Lower middle income",
+    "income": "Upper middle income",
     "capital": "Colombo",
     "lat": 6.92148,
     "lng": 79.8528
@@ -1534,7 +1534,7 @@
     "iso2": "PH",
     "iso3": "PHL",
     "region": "East Asia & Pacific",
-    "income": "Lower middle income",
+    "income": "Upper middle income",
     "capital": "Manila",
     "lat": 14.5515,
     "lng": 121.035
@@ -1894,7 +1894,7 @@
     "iso2": "TG",
     "iso3": "TGO",
     "region": "Sub-Saharan Africa ",
-    "income": "Low income",
+    "income": "Lower middle income",
     "capital": "Lome",
     "lat": 6.1228,
     "lng": 1.2255
@@ -2064,7 +2064,7 @@
     "iso2": "VE",
     "iso3": "VEN",
     "region": "Latin America & Caribbean ",
-    "income": "Not classified",
+    "income": "Lower middle income",
     "capital": "Caracas",
     "lat": 9.08165,
     "lng": -69.8371
@@ -2094,7 +2094,7 @@
     "iso2": "VN",
     "iso3": "VNM",
     "region": "East Asia & Pacific",
-    "income": "Lower middle income",
+    "income": "Upper middle income",
     "capital": "Hanoi",
     "lat": 21.0069,
     "lng": 105.825
