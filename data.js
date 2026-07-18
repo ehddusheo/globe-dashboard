@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-07-17 21:56:07
+// Auto-generated: 2026-07-18 21:55:08
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -723,7 +723,7 @@ const COUNTRIES = {
         "lat": 24.4764,
         "lng": 54.3705,
         "gdp": 552.3,
-        "pop": 11.0,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -4750,7 +4750,7 @@ const COUNTRIES = {
         "lat": 46.948,
         "lng": 7.44821,
         "gdp": 969.9,
-        "pop": 9.0,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -8563,7 +8563,7 @@ const COUNTRIES = {
         "lat": 40.4167,
         "lng": -3.70327,
         "gdp": 1725.7,
-        "pop": 48.8,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -9834,7 +9834,7 @@ const COUNTRIES = {
         "lat": 51.5002,
         "lng": -0.126236,
         "gdp": 3695.5,
-        "pop": 69.3,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -13648,7 +13648,7 @@ const COUNTRIES = {
         "lat": 31.7717,
         "lng": 35.2035,
         "gdp": 542.3,
-        "pop": 10.0,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -13860,7 +13860,7 @@ const COUNTRIES = {
         "lat": 41.8955,
         "lng": 12.4823,
         "gdp": 2383.4,
-        "pop": 59.0,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -14072,7 +14072,7 @@ const COUNTRIES = {
         "lat": 17.9927,
         "lng": -76.792,
         "gdp": 22.0,
-        "pop": 2.8,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -14283,7 +14283,7 @@ const COUNTRIES = {
         "lat": 31.9497,
         "lng": 35.9263,
         "gdp": 58.6,
-        "pop": 11.6,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -14494,7 +14494,7 @@ const COUNTRIES = {
         "lat": 35.67,
         "lng": 139.77,
         "gdp": 4190.0,
-        "pop": 124.0,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -14706,7 +14706,7 @@ const COUNTRIES = {
         "lat": 51.1879,
         "lng": 71.4382,
         "gdp": 291.5,
-        "pop": 20.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -14918,7 +14918,7 @@ const COUNTRIES = {
         "lat": -1.27975,
         "lng": 36.8126,
         "gdp": 120.4,
-        "pop": 56.4,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -15130,7 +15130,7 @@ const COUNTRIES = {
         "lat": 42.8851,
         "lng": 74.6057,
         "gdp": 18.2,
-        "pop": 7.2,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -15554,7 +15554,7 @@ const COUNTRIES = {
         "lat": 37.5323,
         "lng": 126.957,
         "gdp": 1875.4,
-        "pop": 51.8,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -15766,7 +15766,7 @@ const COUNTRIES = {
         "lat": 29.3721,
         "lng": 47.9824,
         "gdp": 160.9,
-        "pop": 4.9,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -15978,7 +15978,7 @@ const COUNTRIES = {
         "lat": 18.5826,
         "lng": 102.177,
         "gdp": 16.5,
-        "pop": 7.8,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -16189,7 +16189,7 @@ const COUNTRIES = {
         "lat": 33.8872,
         "lng": 35.5134,
         "gdp": 26.0,
-        "pop": 5.8,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -16401,7 +16401,7 @@ const COUNTRIES = {
         "lat": 32.8578,
         "lng": 13.1072,
         "gdp": 48.5,
-        "pop": 7.4,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -16613,7 +16613,7 @@ const COUNTRIES = {
         "lat": 6.92148,
         "lng": 79.8528,
         "gdp": 99.6,
-        "pop": 21.9,
+        "pop": 0,
         "region": "South Asia",
         "income": "Upper middle income",
         "industries": {
@@ -16824,7 +16824,7 @@ const COUNTRIES = {
         "lat": 54.6896,
         "lng": 25.2799,
         "gdp": 85.5,
-        "pop": 2.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17036,7 +17036,7 @@ const COUNTRIES = {
         "lat": 49.61,
         "lng": 6.1296,
         "gdp": 93.3,
-        "pop": 0.7,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17248,7 +17248,7 @@ const COUNTRIES = {
         "lat": 56.9465,
         "lng": 24.1048,
         "gdp": 44.0,
-        "pop": 1.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -17460,7 +17460,7 @@ const COUNTRIES = {
         "lat": 33.9905,
         "lng": -6.8704,
         "gdp": 160.6,
-        "pop": 38.1,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -17672,7 +17672,7 @@ const COUNTRIES = {
         "lat": 47.0167,
         "lng": 28.8497,
         "gdp": 18.2,
-        "pop": 2.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -17884,7 +17884,7 @@ const COUNTRIES = {
         "lat": -20.4667,
         "lng": 45.7167,
         "gdp": 17.6,
-        "pop": 32.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -18096,7 +18096,7 @@ const COUNTRIES = {
         "lat": 19.427,
         "lng": -99.1276,
         "gdp": 1830.5,
-        "pop": 130.9,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -18308,7 +18308,7 @@ const COUNTRIES = {
         "lat": 42.0024,
         "lng": 21.4361,
         "gdp": 17.0,
-        "pop": 1.8,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -18520,7 +18520,7 @@ const COUNTRIES = {
         "lat": 13.5667,
         "lng": -7.50034,
         "gdp": 26.8,
-        "pop": 24.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -18732,7 +18732,7 @@ const COUNTRIES = {
         "lat": 21.914,
         "lng": 95.9562,
         "gdp": 74.1,
-        "pop": 54.5,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -18943,7 +18943,7 @@ const COUNTRIES = {
         "lat": 42.4602,
         "lng": 19.2595,
         "gdp": 8.3,
-        "pop": 0.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -19155,7 +19155,7 @@ const COUNTRIES = {
         "lat": 47.9129,
         "lng": 106.937,
         "gdp": 23.8,
-        "pop": 3.5,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -19367,7 +19367,7 @@ const COUNTRIES = {
         "lat": -25.9664,
         "lng": 32.5713,
         "gdp": 22.8,
-        "pop": 34.6,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -19579,7 +19579,7 @@ const COUNTRIES = {
         "lat": 18.2367,
         "lng": -15.9824,
         "gdp": 10.9,
-        "pop": 5.2,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -19791,7 +19791,7 @@ const COUNTRIES = {
         "lat": -20.1605,
         "lng": 57.4977,
         "gdp": 14.9,
-        "pop": 1.2,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -20003,7 +20003,7 @@ const COUNTRIES = {
         "lat": -13.9899,
         "lng": 33.7703,
         "gdp": 11.3,
-        "pop": 21.7,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -20215,7 +20215,7 @@ const COUNTRIES = {
         "lat": 3.12433,
         "lng": 101.684,
         "gdp": 422.2,
-        "pop": 35.6,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -20427,7 +20427,7 @@ const COUNTRIES = {
         "lat": -22.5648,
         "lng": 17.0931,
         "gdp": 13.6,
-        "pop": 3.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -20639,7 +20639,7 @@ const COUNTRIES = {
         "lat": 13.514,
         "lng": 2.1073,
         "gdp": 19.7,
-        "pop": 27.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -20851,7 +20851,7 @@ const COUNTRIES = {
         "lat": 9.05804,
         "lng": 7.48906,
         "gdp": 252.3,
-        "pop": 232.7,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -21062,7 +21062,7 @@ const COUNTRIES = {
         "lat": 12.1475,
         "lng": -86.2734,
         "gdp": 19.7,
-        "pop": 6.9,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -21274,7 +21274,7 @@ const COUNTRIES = {
         "lat": 52.3738,
         "lng": 4.89095,
         "gdp": 1213.9,
-        "pop": 18.0,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -21486,7 +21486,7 @@ const COUNTRIES = {
         "lat": 59.9138,
         "lng": 10.7387,
         "gdp": 500.9,
-        "pop": 5.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -21698,7 +21698,7 @@ const COUNTRIES = {
         "lat": 27.6939,
         "lng": 85.3157,
         "gdp": 43.3,
-        "pop": 29.7,
+        "pop": 0,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -21910,7 +21910,7 @@ const COUNTRIES = {
         "lat": -41.2865,
         "lng": 174.776,
         "gdp": 261.5,
-        "pop": 5.3,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -22122,7 +22122,7 @@ const COUNTRIES = {
         "lat": 23.6105,
         "lng": 58.5874,
         "gdp": 107.1,
-        "pop": 5.3,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -22334,7 +22334,7 @@ const COUNTRIES = {
         "lat": 30.5167,
         "lng": 72.8,
         "gdp": 371.7,
-        "pop": 251.3,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -22546,7 +22546,7 @@ const COUNTRIES = {
         "lat": 8.99427,
         "lng": -79.5188,
         "gdp": 86.5,
-        "pop": 4.5,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -22758,7 +22758,7 @@ const COUNTRIES = {
         "lat": -12.0931,
         "lng": -77.0465,
         "gdp": 291.8,
-        "pop": 34.2,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -22970,7 +22970,7 @@ const COUNTRIES = {
         "lat": 14.5515,
         "lng": 121.035,
         "gdp": 461.7,
-        "pop": 115.8,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -23182,7 +23182,7 @@ const COUNTRIES = {
         "lat": -9.47357,
         "lng": 147.194,
         "gdp": 30.8,
-        "pop": 10.6,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -23393,7 +23393,7 @@ const COUNTRIES = {
         "lat": 52.26,
         "lng": 21.02,
         "gdp": 917.8,
-        "pop": 36.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -23605,7 +23605,7 @@ const COUNTRIES = {
         "lat": 38.7072,
         "lng": -9.13552,
         "gdp": 313.7,
-        "pop": 10.7,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -23817,7 +23817,7 @@ const COUNTRIES = {
         "lat": -25.3005,
         "lng": -57.6362,
         "gdp": 44.7,
-        "pop": 6.9,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -24029,7 +24029,7 @@ const COUNTRIES = {
         "lat": 25.2948,
         "lng": 51.5082,
         "gdp": 216.3,
-        "pop": 2.9,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -24241,7 +24241,7 @@ const COUNTRIES = {
         "lat": 44.4479,
         "lng": 26.0979,
         "gdp": 382.6,
-        "pop": 19.1,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -24453,7 +24453,7 @@ const COUNTRIES = {
         "lat": 55.7558,
         "lng": 37.6176,
         "gdp": 2186.5,
-        "pop": 143.7,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -24665,7 +24665,7 @@ const COUNTRIES = {
         "lat": -1.95325,
         "lng": 30.0587,
         "gdp": 15.1,
-        "pop": 14.3,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -24877,7 +24877,7 @@ const COUNTRIES = {
         "lat": 24.6748,
         "lng": 46.6977,
         "gdp": 1254.1,
-        "pop": 35.3,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -25089,7 +25089,7 @@ const COUNTRIES = {
         "lat": 15.5932,
         "lng": 32.5363,
         "gdp": 49.7,
-        "pop": 50.4,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -25299,7 +25299,7 @@ const COUNTRIES = {
         "lat": 14.7247,
         "lng": -17.4734,
         "gdp": 32.2,
-        "pop": 18.5,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -25510,7 +25510,7 @@ const COUNTRIES = {
         "lat": 1.28941,
         "lng": 103.85,
         "gdp": 572.9,
-        "pop": 6.0,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -25721,7 +25721,7 @@ const COUNTRIES = {
         "lat": 8.4821,
         "lng": -13.2134,
         "gdp": 7.0,
-        "pop": 8.6,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -26144,7 +26144,7 @@ const COUNTRIES = {
         "lat": 2.07515,
         "lng": 45.3254,
         "gdp": 12.0,
-        "pop": 19.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -26354,7 +26354,7 @@ const COUNTRIES = {
         "lat": 44.8024,
         "lng": 20.4656,
         "gdp": 90.1,
-        "pop": 6.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -26565,7 +26565,7 @@ const COUNTRIES = {
         "lat": 48.1484,
         "lng": 17.1073,
         "gdp": 140.9,
-        "pop": 5.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -26776,7 +26776,7 @@ const COUNTRIES = {
         "lat": 46.0546,
         "lng": 14.5044,
         "gdp": 73.0,
-        "pop": 2.1,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -26987,7 +26987,7 @@ const COUNTRIES = {
         "lat": 59.3327,
         "lng": 18.0645,
         "gdp": 604.8,
-        "pop": 10.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -27198,7 +27198,7 @@ const COUNTRIES = {
         "lat": 33.5146,
         "lng": 36.3119,
         "gdp": 23.7,
-        "pop": 24.7,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
@@ -27621,7 +27621,7 @@ const COUNTRIES = {
         "lat": 6.1228,
         "lng": 1.2255,
         "gdp": 10.6,
-        "pop": 8.4,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -27832,7 +27832,7 @@ const COUNTRIES = {
         "lat": 13.7308,
         "lng": 100.521,
         "gdp": 529.4,
-        "pop": 71.7,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -28043,7 +28043,7 @@ const COUNTRIES = {
         "lat": 38.5878,
         "lng": 68.7864,
         "gdp": 14.4,
-        "pop": 10.6,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -28253,7 +28253,7 @@ const COUNTRIES = {
         "lat": 37.9509,
         "lng": 58.3794,
         "gdp": 44.2,
-        "pop": 7.5,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -28462,7 +28462,7 @@ const COUNTRIES = {
         "lat": 10.6596,
         "lng": -61.4789,
         "gdp": 25.6,
-        "pop": 1.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -28672,7 +28672,7 @@ const COUNTRIES = {
         "lat": 36.7899,
         "lng": 10.21,
         "gdp": 51.4,
-        "pop": 12.3,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -28883,7 +28883,7 @@ const COUNTRIES = {
         "lat": 39.7153,
         "lng": 32.3606,
         "gdp": 1359.1,
-        "pop": 85.5,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -29094,7 +29094,7 @@ const COUNTRIES = {
         "lat": -6.17486,
         "lng": 35.7382,
         "gdp": 79.2,
-        "pop": 68.6,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -29305,7 +29305,7 @@ const COUNTRIES = {
         "lat": 0.314269,
         "lng": 32.5729,
         "gdp": 53.9,
-        "pop": 50.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -29516,7 +29516,7 @@ const COUNTRIES = {
         "lat": 50.4536,
         "lng": 30.5038,
         "gdp": 190.8,
-        "pop": 37.9,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -29727,7 +29727,7 @@ const COUNTRIES = {
         "lat": -34.8941,
         "lng": -56.0675,
         "gdp": 82.3,
-        "pop": 3.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -29938,7 +29938,7 @@ const COUNTRIES = {
         "lat": 38.8895,
         "lng": -77.032,
         "gdp": 29298.0,
-        "pop": 340.0,
+        "pop": 0,
         "region": "North America",
         "income": "High income",
         "industries": {
@@ -30149,7 +30149,7 @@ const COUNTRIES = {
         "lat": 41.3052,
         "lng": 69.269,
         "gdp": 121.4,
-        "pop": 36.4,
+        "pop": 0,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
@@ -30360,7 +30360,7 @@ const COUNTRIES = {
         "lat": 9.08165,
         "lng": -69.8371,
         "gdp": 120.6,
-        "pop": 28.4,
+        "pop": 0,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -30570,7 +30570,7 @@ const COUNTRIES = {
         "lat": 21.0069,
         "lng": 105.825,
         "gdp": 476.3,
-        "pop": 101.0,
+        "pop": 0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -30781,7 +30781,7 @@ const COUNTRIES = {
         "lat": 15.352,
         "lng": 44.2075,
         "gdp": 21.6,
-        "pop": 40.6,
+        "pop": 0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
@@ -30991,7 +30991,7 @@ const COUNTRIES = {
         "lat": -25.746,
         "lng": 28.1871,
         "gdp": 401.1,
-        "pop": 64.0,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -31202,7 +31202,7 @@ const COUNTRIES = {
         "lat": -15.3982,
         "lng": 28.2937,
         "gdp": 25.3,
-        "pop": 21.3,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -31413,7 +31413,7 @@ const COUNTRIES = {
         "lat": -17.8312,
         "lng": 31.0672,
         "gdp": 41.5,
-        "pop": 16.6,
+        "pop": 0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -31779,7 +31779,7 @@ const TICKER_DATA = [
     },
     {
         "label": "GBP/USD",
-        "value": "1.35",
+        "value": "1.34",
         "dir": "neutral"
     },
     {
@@ -31789,7 +31789,7 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/KRW",
-        "value": "1,480",
+        "value": "1,487",
         "dir": "neutral"
     },
     {
@@ -31799,12 +31799,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/INR",
-        "value": "96.40",
+        "value": "96.41",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.08",
+        "value": "5.10",
         "dir": "neutral"
     },
     {
@@ -31824,7 +31824,7 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,178",
+        "value": "26,203",
         "dir": "neutral"
     },
     {
