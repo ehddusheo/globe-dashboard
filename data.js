@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-08-04 22:22:37
+// Auto-generated: 2026-08-05 22:18:45
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -87,7 +87,7 @@ const COUNTRIES = {
         "lat": 34.5228,
         "lng": 69.1761,
         "gdp": 17.8,
-        "pop": 0,
+        "pop": 42.6,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
@@ -121,7 +121,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 140
+                "rank": 133
             },
             "finance": {
                 "size": 1.2,
@@ -185,7 +185,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 69
+                "rank": 74
             },
             "automotive": {
                 "size": 1,
@@ -265,7 +265,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 83
+                "rank": 85
             },
             "education": {
                 "size": 1,
@@ -286,7 +286,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 1.9,
         "inflation_pct": -6.6,
-        "unemployment_pct": 13.7,
         "trade_pct_gdp": 83.8,
         "renewable_energy_pct": 20
     },
@@ -298,7 +297,7 @@ const COUNTRIES = {
         "lat": -8.81155,
         "lng": 13.242,
         "gdp": 103.1,
-        "pop": 0,
+        "pop": 37.9,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -396,7 +395,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 33
+                "rank": 34
             },
             "automotive": {
                 "size": 3.1,
@@ -476,7 +475,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 84
+                "rank": 86
             },
             "education": {
                 "size": 1.6,
@@ -497,7 +496,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 5.0,
         "inflation_pct": 28.2,
-        "unemployment_pct": 14.0,
         "trade_pct_gdp": 49.8,
         "renewable_energy_pct": 52.9
     },
@@ -509,7 +507,7 @@ const COUNTRIES = {
         "lat": 41.3317,
         "lng": 19.8172,
         "gdp": 27.0,
-        "pop": 0,
+        "pop": 2.4,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -543,7 +541,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 134
+                "rank": 129
             },
             "finance": {
                 "size": 2.3,
@@ -607,7 +605,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 82
+                "rank": 90
             },
             "automotive": {
                 "size": 1.1,
@@ -687,7 +685,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 68
+                "rank": 70
             },
             "education": {
                 "size": 1,
@@ -708,7 +706,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 4.0,
         "inflation_pct": 2.2,
-        "unemployment_pct": 10.7,
         "trade_pct_gdp": 79.5,
         "renewable_energy_pct": 41.9
     },
@@ -720,14 +717,14 @@ const COUNTRIES = {
         "lat": 24.4764,
         "lng": 54.3705,
         "gdp": 552.3,
-        "pop": 0,
+        "pop": 11.0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 27.6,
-                "growth": 5.4,
-                "potential": 87,
+                "growth": 5.8,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -738,11 +735,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 32
+                "rank": 33
             },
             "manufacturing": {
-                "size": 66.3,
-                "growth": 2.7,
+                "size": 51.8,
+                "growth": 3.1,
                 "potential": 83,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -754,11 +751,11 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 36
+                "rank": 39
             },
             "finance": {
                 "size": 38.7,
-                "growth": 3.9,
+                "growth": 4.3,
                 "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -774,7 +771,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 22.0,
-                "growth": 4.8,
+                "growth": 5.2,
                 "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -790,8 +787,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 22.1,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 4.0,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -805,9 +802,9 @@ const COUNTRIES = {
                 "rank": 28
             },
             "agriculture": {
-                "size": 16.6,
-                "growth": 2.4,
-                "potential": 80,
+                "size": 4.2,
+                "growth": 2.8,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -818,12 +815,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 42
+                "rank": 91
             },
             "automotive": {
                 "size": 16.6,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 4.0,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -838,8 +835,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 33.1,
-                "growth": 4.2,
-                "potential": 85,
+                "growth": 4.6,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -854,8 +851,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 22.1,
-                "growth": 3.0,
-                "potential": 82,
+                "growth": 3.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -870,8 +867,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 11.0,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 4.0,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -885,8 +882,8 @@ const COUNTRIES = {
                 "rank": 30
             },
             "tourism": {
-                "size": 24.6,
-                "growth": 4.8,
+                "size": 11.0,
+                "growth": 5.2,
                 "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -898,12 +895,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 10
+                "rank": 25
             },
             "education": {
                 "size": 12.9,
-                "growth": 4.2,
-                "potential": 84,
+                "growth": 4.6,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -917,7 +914,8 @@ const COUNTRIES = {
                 "rank": 31
             }
         },
-        "unemployment_pct": 2.2,
+        "gdp_growth_pct": 4.0,
+        "inflation_pct": 1.7,
         "trade_pct_gdp": 199.0,
         "renewable_energy_pct": 1
     },
@@ -929,7 +927,7 @@ const COUNTRIES = {
         "lat": -34.6118,
         "lng": -58.4173,
         "gdp": 638.4,
-        "pop": 0,
+        "pop": 45.7,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -947,7 +945,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 27
+                "rank": 29
             },
             "manufacturing": {
                 "size": 96.9,
@@ -963,7 +961,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 27
+                "rank": 30
             },
             "finance": {
                 "size": 44.7,
@@ -1027,7 +1025,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 25
+                "rank": 26
             },
             "automotive": {
                 "size": 19.2,
@@ -1107,7 +1105,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 44
+                "rank": 48
             },
             "education": {
                 "size": 19.2,
@@ -1128,7 +1126,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": -1.3,
         "inflation_pct": 219.9,
-        "unemployment_pct": 7.2,
         "trade_pct_gdp": 27.9,
         "renewable_energy_pct": 9.2
     },
@@ -1140,7 +1137,7 @@ const COUNTRIES = {
         "lat": 40.1596,
         "lng": 44.509,
         "gdp": 26.0,
-        "pop": 0,
+        "pop": 3.0,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -1174,7 +1171,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 119
+                "rank": 112
             },
             "finance": {
                 "size": 2.2,
@@ -1238,7 +1235,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 107
+                "rank": 115
             },
             "automotive": {
                 "size": 1,
@@ -1318,7 +1315,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 85
+                "rank": 87
             },
             "education": {
                 "size": 1,
@@ -1339,7 +1336,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 5.9,
         "inflation_pct": 0.3,
-        "unemployment_pct": 12.4,
         "trade_pct_gdp": 150.1,
         "renewable_energy_pct": 9.1
     },
@@ -1351,7 +1347,7 @@ const COUNTRIES = {
         "lat": -35.282,
         "lng": 149.129,
         "gdp": 1757.0,
-        "pop": 0,
+        "pop": 27.2,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -1385,7 +1381,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 19
+                "rank": 24
             },
             "finance": {
                 "size": 123.0,
@@ -1449,7 +1445,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 27
             },
             "automotive": {
                 "size": 68.5,
@@ -1529,7 +1525,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 10
             },
             "education": {
                 "size": 53.3,
@@ -1550,7 +1546,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 1.4,
         "inflation_pct": 3.2,
-        "unemployment_pct": 3.9,
         "trade_pct_gdp": 47.1,
         "renewable_energy_pct": 12.3
     },
@@ -1562,7 +1557,7 @@ const COUNTRIES = {
         "lat": 48.2201,
         "lng": 16.3798,
         "gdp": 534.8,
-        "pop": 0,
+        "pop": 9.2,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -1596,7 +1591,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 29
+                "rank": 31
             },
             "finance": {
                 "size": 44.9,
@@ -1660,7 +1655,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 66
+                "rank": 70
             },
             "automotive": {
                 "size": 20.9,
@@ -1740,7 +1735,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 13
+                "rank": 14
             },
             "education": {
                 "size": 16.9,
@@ -1761,7 +1756,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": -0.7,
         "inflation_pct": 2.9,
-        "unemployment_pct": 5.2,
         "trade_pct_gdp": 108.8,
         "renewable_energy_pct": 36
     },
@@ -1773,7 +1767,7 @@ const COUNTRIES = {
         "lat": 40.3834,
         "lng": 49.8932,
         "gdp": 74.4,
-        "pop": 0,
+        "pop": 10.2,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -1807,7 +1801,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 105
+                "rank": 101
             },
             "finance": {
                 "size": 6.2,
@@ -1871,7 +1865,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 83
+                "rank": 92
             },
             "automotive": {
                 "size": 2.9,
@@ -1951,7 +1945,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 86
+                "rank": 88
             },
             "education": {
                 "size": 1.6,
@@ -1972,7 +1966,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 4.2,
         "inflation_pct": 2.2,
-        "unemployment_pct": 5.6,
         "trade_pct_gdp": 82.6,
         "renewable_energy_pct": 1.3
     },
@@ -1984,7 +1977,7 @@ const COUNTRIES = {
         "lat": 50.8371,
         "lng": 4.36761,
         "gdp": 671.0,
-        "pop": 0,
+        "pop": 11.9,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -2002,7 +1995,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 26
+                "rank": 27
             },
             "manufacturing": {
                 "size": 84.5,
@@ -2018,7 +2011,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 31
+                "rank": 33
             },
             "finance": {
                 "size": 56.4,
@@ -2082,7 +2075,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 76
+                "rank": 81
             },
             "automotive": {
                 "size": 26.2,
@@ -2162,7 +2155,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 29
+                "rank": 30
             },
             "education": {
                 "size": 25.3,
@@ -2183,7 +2176,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 1.1,
         "inflation_pct": 3.1,
-        "unemployment_pct": 5.7,
         "trade_pct_gdp": 159.0,
         "renewable_energy_pct": 11.7
     },
@@ -2195,7 +2187,7 @@ const COUNTRIES = {
         "lat": 6.4779,
         "lng": 2.6323,
         "gdp": 21.5,
-        "pop": 0,
+        "pop": 14.5,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -2229,7 +2221,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 129
+                "rank": 122
             },
             "finance": {
                 "size": 1.5,
@@ -2293,7 +2285,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 77
+                "rank": 83
             },
             "automotive": {
                 "size": 1,
@@ -2373,7 +2365,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 87
+                "rank": 89
             },
             "education": {
                 "size": 1,
@@ -2394,7 +2386,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 7.5,
         "inflation_pct": 1.2,
-        "unemployment_pct": 1.6,
         "trade_pct_gdp": 40.6,
         "renewable_energy_pct": 54.5
     },
@@ -2406,7 +2397,7 @@ const COUNTRIES = {
         "lat": 12.3605,
         "lng": -1.53395,
         "gdp": 23.1,
-        "pop": 0,
+        "pop": 23.5,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -2440,7 +2431,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 130
+                "rank": 123
             },
             "finance": {
                 "size": 1.6,
@@ -2504,7 +2495,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 80
+                "rank": 88
             },
             "automotive": {
                 "size": 1,
@@ -2584,7 +2575,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 88
+                "rank": 90
             },
             "education": {
                 "size": 1,
@@ -2604,7 +2595,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 4.8,
-        "unemployment_pct": 3.4,
+        "inflation_pct": 4.2,
         "trade_pct_gdp": 60.5,
         "renewable_energy_pct": 71.4
     },
@@ -2616,7 +2607,7 @@ const COUNTRIES = {
         "lat": 23.7055,
         "lng": 90.4113,
         "gdp": 450.1,
-        "pop": 0,
+        "pop": 173.6,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -2634,7 +2625,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 31
+                "rank": 32
             },
             "manufacturing": {
                 "size": 98.5,
@@ -2650,7 +2641,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 25
+                "rank": 28
             },
             "finance": {
                 "size": 31.5,
@@ -2714,7 +2705,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 7
+                "rank": 6
             },
             "automotive": {
                 "size": 13.5,
@@ -2794,7 +2785,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 54
+                "rank": 56
             },
             "education": {
                 "size": 6.6,
@@ -2815,7 +2806,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 4.2,
         "inflation_pct": 10.5,
-        "unemployment_pct": 3.6,
         "trade_pct_gdp": 26.8,
         "renewable_energy_pct": 25
     },
@@ -2827,7 +2817,7 @@ const COUNTRIES = {
         "lat": 42.7105,
         "lng": 23.3238,
         "gdp": 113.3,
-        "pop": 0,
+        "pop": 6.4,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -2861,7 +2851,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 65
+                "rank": 67
             },
             "finance": {
                 "size": 9.5,
@@ -2925,7 +2915,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 98
+                "rank": 108
             },
             "automotive": {
                 "size": 4.4,
@@ -3005,7 +2995,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 55
+                "rank": 57
             },
             "education": {
                 "size": 3.1,
@@ -3025,7 +3015,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.4,
-        "unemployment_pct": 4.2,
+        "inflation_pct": 2.4,
         "trade_pct_gdp": 110.2,
         "renewable_energy_pct": 20.4
     },
@@ -3037,7 +3027,7 @@ const COUNTRIES = {
         "lat": 26.1921,
         "lng": 50.5354,
         "gdp": 47.2,
-        "pop": 0,
+        "pop": 1.6,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -3071,7 +3061,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 83
+                "rank": 79
             },
             "finance": {
                 "size": 3.3,
@@ -3135,7 +3125,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 127
+                "rank": 132
             },
             "automotive": {
                 "size": 1.4,
@@ -3215,7 +3205,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 89
+                "rank": 91
             },
             "education": {
                 "size": 1,
@@ -3236,7 +3226,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 2.9,
         "inflation_pct": 0.9,
-        "unemployment_pct": 1.1,
         "trade_pct_gdp": 157.5,
         "renewable_energy_pct": 0
     },
@@ -3248,7 +3237,7 @@ const COUNTRIES = {
         "lat": 43.8607,
         "lng": 18.4214,
         "gdp": 29.7,
-        "pop": 0,
+        "pop": 3.2,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -3282,7 +3271,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 107
+                "rank": 104
             },
             "finance": {
                 "size": 2.5,
@@ -3346,7 +3335,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 120
+                "rank": 126
             },
             "automotive": {
                 "size": 1.2,
@@ -3426,7 +3415,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 90
+                "rank": 92
             },
             "education": {
                 "size": 1,
@@ -3446,7 +3435,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.2,
-        "unemployment_pct": 10.7,
+        "inflation_pct": 6.1,
         "trade_pct_gdp": 94.8,
         "renewable_energy_pct": 36.6
     },
@@ -3458,7 +3447,7 @@ const COUNTRIES = {
         "lat": 53.9678,
         "lng": 27.5766,
         "gdp": 78.6,
-        "pop": 0,
+        "pop": 9.1,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -3492,7 +3481,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 60
+                "rank": 59
             },
             "finance": {
                 "size": 6.6,
@@ -3556,7 +3545,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 73
+                "rank": 78
             },
             "automotive": {
                 "size": 3.1,
@@ -3636,7 +3625,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 91
+                "rank": 93
             },
             "education": {
                 "size": 2.4,
@@ -3657,7 +3646,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 4.3,
         "inflation_pct": 5.8,
-        "unemployment_pct": 3.5,
         "trade_pct_gdp": 128.2,
         "renewable_energy_pct": 8.2
     },
@@ -3669,7 +3657,7 @@ const COUNTRIES = {
         "lat": -13.9908,
         "lng": -66.1936,
         "gdp": 54.9,
-        "pop": 0,
+        "pop": 12.4,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -3703,7 +3691,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 85
+                "rank": 86
             },
             "finance": {
                 "size": 3.8,
@@ -3767,7 +3755,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 81
+                "rank": 89
             },
             "automotive": {
                 "size": 1.6,
@@ -3847,7 +3835,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 92
+                "rank": 94
             },
             "education": {
                 "size": 2.5,
@@ -3868,7 +3856,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": -1.1,
         "inflation_pct": 5.1,
-        "unemployment_pct": 3.3,
         "trade_pct_gdp": 47.0,
         "renewable_energy_pct": 12.8
     },
@@ -3880,7 +3867,7 @@ const COUNTRIES = {
         "lat": -15.7801,
         "lng": -47.9292,
         "gdp": 2185.8,
-        "pop": 0,
+        "pop": 212.0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -3914,7 +3901,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 12
+                "rank": 13
             },
             "finance": {
                 "size": 153.0,
@@ -4078,7 +4065,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.4,
-        "unemployment_pct": 6.8,
+        "inflation_pct": 4.4,
         "trade_pct_gdp": 35.6,
         "renewable_energy_pct": 46.5
     },
@@ -4090,7 +4077,7 @@ const COUNTRIES = {
         "lat": 4.94199,
         "lng": 114.946,
         "gdp": 15.3,
-        "pop": 0,
+        "pop": 0.5,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
@@ -4124,7 +4111,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 122
+                "rank": 115
             },
             "finance": {
                 "size": 1.1,
@@ -4188,7 +4175,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 128
+                "rank": 133
             },
             "automotive": {
                 "size": 1,
@@ -4268,7 +4255,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 93
+                "rank": 95
             },
             "education": {
                 "size": 1,
@@ -4288,7 +4275,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 4.1,
-        "unemployment_pct": 5.2,
+        "inflation_pct": -0.4,
         "trade_pct_gdp": 132.6,
         "renewable_energy_pct": 0
     },
@@ -4300,7 +4287,7 @@ const COUNTRIES = {
         "lat": -24.6544,
         "lng": 25.9201,
         "gdp": 19.3,
-        "pop": 0,
+        "pop": 2.5,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -4334,7 +4321,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 146
+                "rank": 143
             },
             "finance": {
                 "size": 1.4,
@@ -4398,7 +4385,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 129
+                "rank": 134
             },
             "automotive": {
                 "size": 1,
@@ -4478,7 +4465,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 94
+                "rank": 96
             },
             "education": {
                 "size": 1,
@@ -4498,7 +4485,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -2.8,
-        "unemployment_pct": 23.8,
+        "inflation_pct": 2.8,
         "trade_pct_gdp": 69.4,
         "renewable_energy_pct": 27.4
     },
@@ -4510,7 +4497,7 @@ const COUNTRIES = {
         "lat": 45.4215,
         "lng": -75.6919,
         "gdp": 2270.1,
-        "pop": 0,
+        "pop": 41.3,
         "region": "North America",
         "income": "High income",
         "industries": {
@@ -4528,7 +4515,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 7
             },
             "manufacturing": {
                 "size": 190.5,
@@ -4544,7 +4531,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 16
+                "rank": 20
             },
             "finance": {
                 "size": 238.4,
@@ -4608,7 +4595,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 17
+                "rank": 19
             },
             "automotive": {
                 "size": 68.1,
@@ -4708,7 +4695,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.0,
-        "unemployment_pct": 6.4,
+        "inflation_pct": 2.4,
         "trade_pct_gdp": 65.1,
         "renewable_energy_pct": 23.8
     },
@@ -4720,14 +4707,14 @@ const COUNTRIES = {
         "lat": 46.948,
         "lng": 7.44821,
         "gdp": 969.9,
-        "pop": 0,
+        "pop": 9.0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 48.5,
-                "growth": 5.4,
-                "potential": 88,
+                "growth": 4.8,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4738,12 +4725,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 21
             },
             "manufacturing": {
-                "size": 128.0,
-                "growth": 2.7,
-                "potential": 84,
+                "size": 203.4,
+                "growth": 2.1,
+                "potential": 83,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -4754,12 +4741,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 21
+                "rank": 17
             },
             "finance": {
                 "size": 81.5,
-                "growth": 3.9,
-                "potential": 86,
+                "growth": 3.3,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4774,8 +4761,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 90.7,
-                "growth": 4.8,
-                "potential": 87,
+                "growth": 4.2,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4790,70 +4777,6 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 42.7,
-                "growth": 3.6,
-                "potential": 84,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 20
-            },
-            "agriculture": {
-                "size": 29.1,
-                "growth": 2.4,
-                "potential": 81,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 29
-            },
-            "automotive": {
-                "size": 37.8,
-                "growth": 3.6,
-                "potential": 84,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 19
-            },
-            "retail": {
-                "size": 58.2,
-                "growth": 4.2,
-                "potential": 86,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 20
-            },
-            "realestate": {
-                "size": 38.8,
                 "growth": 3.0,
                 "potential": 83,
                 "oppo": [
@@ -4868,10 +4791,74 @@ const COUNTRIES = {
                 ],
                 "rank": 20
             },
+            "agriculture": {
+                "size": 5.9,
+                "growth": 1.8,
+                "potential": 78,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 76
+            },
+            "automotive": {
+                "size": 37.8,
+                "growth": 3.0,
+                "potential": 83,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 19
+            },
+            "retail": {
+                "size": 58.2,
+                "growth": 3.6,
+                "potential": 84,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 20
+            },
+            "realestate": {
+                "size": 38.8,
+                "growth": 2.4,
+                "potential": 82,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 20
+            },
             "telecom": {
                 "size": 19.4,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 3.0,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4885,8 +4872,8 @@ const COUNTRIES = {
                 "rank": 20
             },
             "tourism": {
-                "size": 13.0,
-                "growth": 4.8,
+                "size": 25.2,
+                "growth": 4.2,
                 "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -4898,12 +4885,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 11
             },
             "education": {
                 "size": 28.3,
-                "growth": 4.2,
-                "potential": 85,
+                "growth": 3.6,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -4917,7 +4904,8 @@ const COUNTRIES = {
                 "rank": 18
             }
         },
-        "unemployment_pct": 4.3,
+        "gdp_growth_pct": 1.4,
+        "inflation_pct": 1.1,
         "trade_pct_gdp": 130.4,
         "renewable_energy_pct": 27.7
     },
@@ -4929,7 +4917,7 @@ const COUNTRIES = {
         "lat": -33.475,
         "lng": -70.6475,
         "gdp": 329.3,
-        "pop": 0,
+        "pop": 19.8,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -5027,7 +5015,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 46
+                "rank": 47
             },
             "automotive": {
                 "size": 9.9,
@@ -5107,7 +5095,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 69
+                "rank": 71
             },
             "education": {
                 "size": 9.7,
@@ -5127,7 +5115,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.8,
-        "unemployment_pct": 8.7,
+        "inflation_pct": 4.3,
         "trade_pct_gdp": 64.0,
         "renewable_energy_pct": 24.2
     },
@@ -5139,7 +5127,7 @@ const COUNTRIES = {
         "lat": 40.0495,
         "lng": 116.286,
         "gdp": 18729.7,
-        "pop": 0,
+        "pop": 1409.0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -5317,7 +5305,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 1
+                "rank": 2
             },
             "education": {
                 "size": 438.0,
@@ -5337,7 +5325,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.0,
-        "unemployment_pct": 4.6,
+        "inflation_pct": 0.2,
         "trade_pct_gdp": 38.0,
         "renewable_energy_pct": 15.2
     },
@@ -5349,7 +5337,7 @@ const COUNTRIES = {
         "lat": 5.332,
         "lng": -4.0305,
         "gdp": 87.1,
-        "pop": 0,
+        "pop": 31.9,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -5383,7 +5371,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 76
+                "rank": 75
             },
             "finance": {
                 "size": 6.1,
@@ -5527,7 +5515,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 95
+                "rank": 97
             },
             "education": {
                 "size": 1.9,
@@ -5547,7 +5535,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 6.0,
-        "unemployment_pct": 2.3,
+        "inflation_pct": 3.5,
         "trade_pct_gdp": 51.3,
         "renewable_energy_pct": 58.2
     },
@@ -5559,7 +5547,7 @@ const COUNTRIES = {
         "lat": 3.8721,
         "lng": 11.5174,
         "gdp": 53.3,
-        "pop": 0,
+        "pop": 29.1,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -5657,7 +5645,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 53
+                "rank": 56
             },
             "automotive": {
                 "size": 1.6,
@@ -5737,7 +5725,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 96
+                "rank": 98
             },
             "education": {
                 "size": 1,
@@ -5757,7 +5745,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.5,
-        "unemployment_pct": 3.6,
+        "inflation_pct": 4.5,
         "trade_pct_gdp": 34.4,
         "renewable_energy_pct": 79.2
     },
@@ -5769,7 +5757,7 @@ const COUNTRIES = {
         "lat": -4.325,
         "lng": 15.3222,
         "gdp": 75.7,
-        "pop": 0,
+        "pop": 109.3,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -5803,7 +5791,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 90
+                "rank": 91
             },
             "finance": {
                 "size": 5.3,
@@ -5867,7 +5855,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 61
+                "rank": 65
             },
             "automotive": {
                 "size": 2.3,
@@ -5947,7 +5935,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 97
+                "rank": 99
             },
             "education": {
                 "size": 1.3,
@@ -5967,7 +5955,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 6.1,
-        "unemployment_pct": 4.4,
         "trade_pct_gdp": 94.2,
         "renewable_energy_pct": 96.3
     },
@@ -5979,7 +5966,7 @@ const COUNTRIES = {
         "lat": -4.2767,
         "lng": 15.2662,
         "gdp": 15.7,
-        "pop": 0,
+        "pop": 6.3,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -6013,7 +6000,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 133
+                "rank": 127
             },
             "finance": {
                 "size": 1.1,
@@ -6077,7 +6064,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 116
+                "rank": 124
             },
             "automotive": {
                 "size": 1,
@@ -6157,7 +6144,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 98
+                "rank": 100
             },
             "education": {
                 "size": 1,
@@ -6177,7 +6164,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.1,
-        "unemployment_pct": 19.9,
+        "inflation_pct": 3.1,
         "trade_pct_gdp": 93.2,
         "renewable_energy_pct": 71.4
     },
@@ -6189,7 +6176,7 @@ const COUNTRIES = {
         "lat": 4.60987,
         "lng": -74.082,
         "gdp": 420.5,
-        "pop": 0,
+        "pop": 52.9,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -6223,7 +6210,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 45
+                "rank": 43
             },
             "finance": {
                 "size": 29.4,
@@ -6287,7 +6274,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 23
+                "rank": 24
             },
             "automotive": {
                 "size": 12.6,
@@ -6367,7 +6354,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 59
+                "rank": 62
             },
             "education": {
                 "size": 13.3,
@@ -6387,7 +6374,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.5,
-        "unemployment_pct": 9.6,
+        "inflation_pct": 6.6,
         "trade_pct_gdp": 36.3,
         "renewable_energy_pct": 29.7
     },
@@ -6399,7 +6386,7 @@ const COUNTRIES = {
         "lat": 9.63701,
         "lng": -84.0089,
         "gdp": 96.7,
-        "pop": 0,
+        "pop": 5.1,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -6433,7 +6420,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 70
+                "rank": 71
             },
             "finance": {
                 "size": 6.8,
@@ -6497,7 +6484,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 92
+                "rank": 100
             },
             "automotive": {
                 "size": 2.9,
@@ -6577,7 +6564,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 70
+                "rank": 74
             },
             "education": {
                 "size": 3.1,
@@ -6597,7 +6584,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 4.1,
-        "unemployment_pct": 6.9,
+        "inflation_pct": -0.4,
         "trade_pct_gdp": 69.9,
         "renewable_energy_pct": 34.2
     },
@@ -6609,7 +6596,7 @@ const COUNTRIES = {
         "lat": 23.1333,
         "lng": -82.3667,
         "gdp": 107.4,
-        "pop": 0,
+        "pop": 11.0,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -6643,7 +6630,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 74
+                "rank": 73
             },
             "finance": {
                 "size": 7.5,
@@ -6707,7 +6694,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 121
+                "rank": 127
             },
             "automotive": {
                 "size": 3.2,
@@ -6787,7 +6774,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 75
+                "rank": 79
             },
             "education": {
                 "size": 5.4,
@@ -6807,7 +6794,6 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -1.1,
-        "unemployment_pct": 1.8,
         "trade_pct_gdp": 124.9,
         "renewable_energy_pct": 20.9
     },
@@ -6819,7 +6805,7 @@ const COUNTRIES = {
         "lat": 35.1676,
         "lng": 33.3736,
         "gdp": 37.6,
-        "pop": 0,
+        "pop": 1.4,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -6853,7 +6839,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 136
+                "rank": 130
             },
             "finance": {
                 "size": 3.2,
@@ -6917,7 +6903,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 130
+                "rank": 135
             },
             "automotive": {
                 "size": 1.5,
@@ -6997,7 +6983,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 99
+                "rank": 101
             },
             "education": {
                 "size": 1.1,
@@ -7017,7 +7003,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.9,
-        "unemployment_pct": 4.9,
+        "inflation_pct": 1.8,
         "trade_pct_gdp": 190.4,
         "renewable_energy_pct": 15.6
     },
@@ -7029,7 +7015,7 @@ const COUNTRIES = {
         "lat": 50.0878,
         "lng": 14.4205,
         "gdp": 347.1,
-        "pop": 0,
+        "pop": 10.9,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -7127,7 +7113,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 65
+                "rank": 69
             },
             "automotive": {
                 "size": 13.5,
@@ -7207,7 +7193,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 39
+                "rank": 41
             },
             "education": {
                 "size": 9.0,
@@ -7227,7 +7213,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.3,
-        "unemployment_pct": 2.6,
+        "inflation_pct": 2.4,
         "trade_pct_gdp": 131.5,
         "renewable_energy_pct": 17.2
     },
@@ -7239,7 +7225,7 @@ const COUNTRIES = {
         "lat": 52.5235,
         "lng": 13.4115,
         "gdp": 4685.6,
-        "pop": 0,
+        "pop": 83.5,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -7273,7 +7259,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 3
+                "rank": 4
             },
             "finance": {
                 "size": 393.6,
@@ -7337,7 +7323,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 18
+                "rank": 20
             },
             "automotive": {
                 "size": 182.7,
@@ -7437,7 +7423,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -0.5,
-        "unemployment_pct": 3.4,
+        "inflation_pct": 2.3,
         "trade_pct_gdp": 79.1,
         "renewable_energy_pct": 17.6
     },
@@ -7449,7 +7435,7 @@ const COUNTRIES = {
         "lat": 55.6763,
         "lng": 12.5681,
         "gdp": 424.5,
-        "pop": 0,
+        "pop": 6.0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -7483,7 +7469,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 32
+                "rank": 34
             },
             "finance": {
                 "size": 35.7,
@@ -7547,7 +7533,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 87
+                "rank": 95
             },
             "automotive": {
                 "size": 16.6,
@@ -7627,7 +7613,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 23
+                "rank": 21
             },
             "education": {
                 "size": 16.2,
@@ -7647,7 +7633,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.5,
-        "unemployment_pct": 5.4,
+        "inflation_pct": 1.4,
         "trade_pct_gdp": 131.8,
         "renewable_energy_pct": 39.5
     },
@@ -7659,7 +7645,7 @@ const COUNTRIES = {
         "lat": 18.479,
         "lng": -69.8908,
         "gdp": 124.3,
-        "pop": 0,
+        "pop": 11.4,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -7693,7 +7679,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 63
+                "rank": 65
             },
             "finance": {
                 "size": 8.7,
@@ -7757,7 +7743,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 74
+                "rank": 79
             },
             "automotive": {
                 "size": 3.7,
@@ -7837,7 +7823,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 31
+                "rank": 34
             },
             "education": {
                 "size": 2.8,
@@ -7857,7 +7843,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.0,
-        "unemployment_pct": 5.3,
+        "inflation_pct": 3.3,
         "trade_pct_gdp": 51.8,
         "renewable_energy_pct": 14.8
     },
@@ -7869,7 +7855,7 @@ const COUNTRIES = {
         "lat": 36.7397,
         "lng": 3.05097,
         "gdp": 269.3,
-        "pop": 0,
+        "pop": 46.8,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -7967,7 +7953,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 24
+                "rank": 25
             },
             "automotive": {
                 "size": 8.1,
@@ -8047,7 +8033,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 73
+                "rank": 77
             },
             "education": {
                 "size": 14.5,
@@ -8068,7 +8054,6 @@ const COUNTRIES = {
         },
         "gdp_growth_pct": 3.7,
         "inflation_pct": 4.0,
-        "unemployment_pct": 11.7,
         "trade_pct_gdp": 40.1,
         "renewable_energy_pct": 0.1
     },
@@ -8080,7 +8065,7 @@ const COUNTRIES = {
         "lat": -0.229498,
         "lng": -78.5243,
         "gdp": 123.8,
-        "pop": 0,
+        "pop": 18.1,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -8114,7 +8099,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 61
+                "rank": 63
             },
             "finance": {
                 "size": 8.7,
@@ -8258,7 +8243,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 100
+                "rank": 102
             },
             "education": {
                 "size": 2.7,
@@ -8278,7 +8263,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -1.9,
-        "unemployment_pct": 3.5,
+        "inflation_pct": 1.5,
         "trade_pct_gdp": 57.4,
         "renewable_energy_pct": 18.9
     },
@@ -8290,7 +8275,7 @@ const COUNTRIES = {
         "lat": 30.0982,
         "lng": 31.2461,
         "gdp": 389.1,
-        "pop": 0,
+        "pop": 116.5,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -8324,7 +8309,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 39
+                "rank": 38
             },
             "finance": {
                 "size": 27.2,
@@ -8388,7 +8373,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 12
+                "rank": 13
             },
             "automotive": {
                 "size": 11.7,
@@ -8468,7 +8453,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 40
+                "rank": 43
             },
             "education": {
                 "size": 7.8,
@@ -8488,7 +8473,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.4,
-        "unemployment_pct": 6.8,
+        "inflation_pct": 28.3,
         "trade_pct_gdp": 39.6,
         "renewable_energy_pct": 6.1
     },
@@ -8500,13 +8485,13 @@ const COUNTRIES = {
         "lat": 40.4167,
         "lng": -3.70327,
         "gdp": 1725.7,
-        "pop": 0,
+        "pop": 48.8,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 86.3,
-                "growth": 5.4,
+                "growth": 5.6,
                 "potential": 89,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -8521,9 +8506,9 @@ const COUNTRIES = {
                 "rank": 16
             },
             "manufacturing": {
-                "size": 227.8,
-                "growth": 2.7,
-                "potential": 84,
+                "size": 205.9,
+                "growth": 2.9,
+                "potential": 85,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -8534,12 +8519,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 13
+                "rank": 15
             },
             "finance": {
                 "size": 145.0,
-                "growth": 3.9,
-                "potential": 86,
+                "growth": 4.1,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -8554,7 +8539,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 127.3,
-                "growth": 4.8,
+                "growth": 5.0,
                 "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -8570,7 +8555,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 75.9,
-                "growth": 3.6,
+                "growth": 3.8,
                 "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -8585,8 +8570,8 @@ const COUNTRIES = {
                 "rank": 12
             },
             "agriculture": {
-                "size": 51.8,
-                "growth": 2.4,
+                "size": 47.5,
+                "growth": 2.6,
                 "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -8598,11 +8583,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 14
+                "rank": 17
             },
             "automotive": {
                 "size": 67.3,
-                "growth": 3.6,
+                "growth": 3.8,
                 "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -8618,8 +8603,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 103.5,
-                "growth": 4.2,
-                "potential": 86,
+                "growth": 4.4,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -8634,7 +8619,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 69.0,
-                "growth": 3.0,
+                "growth": 3.2,
                 "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -8650,7 +8635,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 34.5,
-                "growth": 3.6,
+                "growth": 3.8,
                 "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -8666,7 +8651,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 44.9,
-                "growth": 4.8,
+                "growth": 5.0,
                 "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -8682,8 +8667,8 @@ const COUNTRIES = {
             },
             "education": {
                 "size": 47.5,
-                "growth": 4.2,
-                "potential": 85,
+                "growth": 4.4,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -8697,7 +8682,8 @@ const COUNTRIES = {
                 "rank": 14
             }
         },
-        "unemployment_pct": 11.4,
+        "gdp_growth_pct": 3.5,
+        "inflation_pct": 2.7,
         "trade_pct_gdp": 70.0,
         "renewable_energy_pct": 19
     },
@@ -8709,7 +8695,7 @@ const COUNTRIES = {
         "lat": 59.4392,
         "lng": 24.7586,
         "gdp": 43.1,
-        "pop": 0,
+        "pop": 1.4,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -8743,7 +8729,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 101
+                "rank": 97
             },
             "finance": {
                 "size": 3.6,
@@ -8807,7 +8793,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 131
+                "rank": 136
             },
             "automotive": {
                 "size": 1.7,
@@ -8887,7 +8873,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 77
+                "rank": 80
             },
             "education": {
                 "size": 1.3,
@@ -8907,7 +8893,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -0.1,
-        "unemployment_pct": 7.6,
+        "inflation_pct": 3.5,
         "trade_pct_gdp": 151.0,
         "renewable_energy_pct": 38
     },
@@ -8919,7 +8905,7 @@ const COUNTRIES = {
         "lat": 9.02274,
         "lng": 38.7468,
         "gdp": 149.7,
-        "pop": 0,
+        "pop": 132.1,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -8953,7 +8939,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 89
+                "rank": 90
             },
             "finance": {
                 "size": 10.5,
@@ -9017,7 +9003,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 13
+                "rank": 14
             },
             "automotive": {
                 "size": 4.5,
@@ -9097,7 +9083,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 56
+                "rank": 58
             },
             "education": {
                 "size": 2.1,
@@ -9117,7 +9103,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 7.6,
-        "unemployment_pct": 3.4,
+        "inflation_pct": 21.0,
         "trade_pct_gdp": 17.4,
         "renewable_energy_pct": 90.6
     },
@@ -9129,7 +9115,7 @@ const COUNTRIES = {
         "lat": 60.1608,
         "lng": 24.9525,
         "gdp": 298.7,
-        "pop": 0,
+        "pop": 5.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -9163,7 +9149,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 43
+                "rank": 42
             },
             "finance": {
                 "size": 25.1,
@@ -9227,7 +9213,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 62
+                "rank": 66
             },
             "automotive": {
                 "size": 11.6,
@@ -9307,7 +9293,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 57
+                "rank": 59
             },
             "education": {
                 "size": 11.4,
@@ -9327,7 +9313,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 0.4,
-        "unemployment_pct": 8.4,
+        "inflation_pct": 1.6,
         "trade_pct_gdp": 83.5,
         "renewable_energy_pct": 50.2
     },
@@ -9339,7 +9325,7 @@ const COUNTRIES = {
         "lat": 48.8566,
         "lng": 2.35097,
         "gdp": 3160.4,
-        "pop": 0,
+        "pop": 68.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -9357,7 +9343,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 8
+                "rank": 9
             },
             "manufacturing": {
                 "size": 332.6,
@@ -9373,7 +9359,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 9
+                "rank": 10
             },
             "finance": {
                 "size": 265.5,
@@ -9437,7 +9423,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 22
             },
             "automotive": {
                 "size": 123.3,
@@ -9537,7 +9523,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 1.2,
-        "unemployment_pct": 7.4,
+        "inflation_pct": 2.0,
         "trade_pct_gdp": 68.1,
         "renewable_energy_pct": 16.2
     },
@@ -9549,7 +9535,7 @@ const COUNTRIES = {
         "lat": 0.38832,
         "lng": 9.45162,
         "gdp": 20.9,
-        "pop": 0,
+        "pop": 2.5,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -9583,7 +9569,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 108
+                "rank": 105
             },
             "finance": {
                 "size": 1.5,
@@ -9647,7 +9633,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 119
+                "rank": 125
             },
             "automotive": {
                 "size": 1,
@@ -9727,7 +9713,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 101
+                "rank": 103
             },
             "education": {
                 "size": 1,
@@ -9747,7 +9733,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.4,
-        "unemployment_pct": 20.1,
+        "inflation_pct": 1.2,
         "trade_pct_gdp": 92.0,
         "renewable_energy_pct": 91.3
     },
@@ -9759,14 +9745,14 @@ const COUNTRIES = {
         "lat": 51.5002,
         "lng": -0.126236,
         "gdp": 3695.5,
-        "pop": 0,
+        "pop": 69.3,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 184.8,
-                "growth": 5.4,
-                "potential": 90,
+                "growth": 4.6,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9777,12 +9763,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 7
+                "rank": 8
             },
             "manufacturing": {
-                "size": 487.8,
-                "growth": 2.7,
-                "potential": 85,
+                "size": 324.1,
+                "growth": 1.9,
+                "potential": 83,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -9793,12 +9779,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 6
+                "rank": 11
             },
             "finance": {
                 "size": 310.4,
-                "growth": 3.9,
-                "potential": 87,
+                "growth": 3.1,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9813,8 +9799,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 329.1,
-                "growth": 4.8,
-                "potential": 89,
+                "growth": 4.0,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9829,8 +9815,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 162.6,
-                "growth": 3.6,
-                "potential": 86,
+                "growth": 2.8,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9844,9 +9830,9 @@ const COUNTRIES = {
                 "rank": 5
             },
             "agriculture": {
-                "size": 110.9,
-                "growth": 2.4,
-                "potential": 83,
+                "size": 23.7,
+                "growth": 1.6,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9857,12 +9843,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 6
+                "rank": 32
             },
             "automotive": {
                 "size": 144.1,
-                "growth": 3.6,
-                "potential": 86,
+                "growth": 2.8,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9877,8 +9863,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 221.7,
-                "growth": 4.2,
-                "potential": 87,
+                "growth": 3.4,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9893,8 +9879,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 147.8,
-                "growth": 3.0,
-                "potential": 85,
+                "growth": 2.2,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9909,8 +9895,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 73.9,
-                "growth": 3.6,
-                "potential": 85,
+                "growth": 2.8,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9925,8 +9911,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 96.1,
-                "growth": 4.8,
-                "potential": 88,
+                "growth": 4.0,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9941,8 +9927,8 @@ const COUNTRIES = {
             },
             "education": {
                 "size": 131.0,
-                "growth": 4.2,
-                "potential": 87,
+                "growth": 3.4,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -9956,7 +9942,8 @@ const COUNTRIES = {
                 "rank": 4
             }
         },
-        "unemployment_pct": 4.4,
+        "gdp_growth_pct": 1.1,
+        "inflation_pct": 3.3,
         "trade_pct_gdp": 62.8,
         "renewable_energy_pct": 12.2
     },
@@ -9968,7 +9955,7 @@ const COUNTRIES = {
         "lat": 41.71,
         "lng": 44.793,
         "gdp": 34.2,
-        "pop": 0,
+        "pop": 3.8,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -10002,7 +9989,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 111
+                "rank": 109
             },
             "finance": {
                 "size": 2.9,
@@ -10066,7 +10053,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 108
+                "rank": 117
             },
             "automotive": {
                 "size": 1.3,
@@ -10146,7 +10133,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 102
+                "rank": 104
             },
             "education": {
                 "size": 1,
@@ -10166,7 +10153,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 9.7,
-        "unemployment_pct": 11.6,
+        "inflation_pct": 1.1,
         "trade_pct_gdp": 103.5,
         "renewable_energy_pct": 25.2
     },
@@ -10178,7 +10165,7 @@ const COUNTRIES = {
         "lat": 5.57045,
         "lng": -0.20795,
         "gdp": 83.3,
-        "pop": 0,
+        "pop": 34.4,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -10212,7 +10199,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 84
+                "rank": 80
             },
             "finance": {
                 "size": 5.8,
@@ -10276,7 +10263,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 39
+                "rank": 40
             },
             "automotive": {
                 "size": 2.5,
@@ -10356,7 +10343,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 103
+                "rank": 105
             },
             "education": {
                 "size": 1.5,
@@ -10376,7 +10363,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.8,
-        "unemployment_pct": 2.8,
+        "inflation_pct": 22.8,
         "trade_pct_gdp": 69.0,
         "renewable_energy_pct": 39
     },
@@ -10388,7 +10375,7 @@ const COUNTRIES = {
         "lat": 9.51667,
         "lng": -13.7,
         "gdp": 25.0,
-        "pop": 0,
+        "pop": 14.8,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
@@ -10422,7 +10409,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 112
+                "rank": 110
             },
             "finance": {
                 "size": 1.8,
@@ -10486,7 +10473,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 59
+                "rank": 63
             },
             "automotive": {
                 "size": 1,
@@ -10566,7 +10553,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 104
+                "rank": 106
             },
             "education": {
                 "size": 1,
@@ -10586,7 +10573,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.4,
-        "unemployment_pct": 5.1,
+        "inflation_pct": 8.1,
         "trade_pct_gdp": 97.8,
         "renewable_energy_pct": 66.6
     },
@@ -10598,7 +10585,7 @@ const COUNTRIES = {
         "lat": 3.7523,
         "lng": 8.7741,
         "gdp": 13.3,
-        "pop": 0,
+        "pop": 1.9,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
@@ -10632,7 +10619,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 110
+                "rank": 108
             },
             "finance": {
                 "size": 1,
@@ -10696,7 +10683,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 132
+                "rank": 137
             },
             "automotive": {
                 "size": 1,
@@ -10776,7 +10763,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 105
+                "rank": 107
             },
             "education": {
                 "size": 1,
@@ -10796,7 +10783,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 0.4,
-        "unemployment_pct": 8.3,
+        "inflation_pct": 2.9,
         "trade_pct_gdp": 74.3,
         "renewable_energy_pct": 4.2
     },
@@ -10808,7 +10795,7 @@ const COUNTRIES = {
         "lat": 37.9792,
         "lng": 23.7166,
         "gdp": 256.2,
-        "pop": 0,
+        "pop": 10.4,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -10906,7 +10893,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 54
+                "rank": 57
             },
             "automotive": {
                 "size": 10.0,
@@ -10986,7 +10973,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 30
+                "rank": 32
             },
             "education": {
                 "size": 5.2,
@@ -11006,7 +10993,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.1,
-        "unemployment_pct": 10.0,
+        "inflation_pct": 2.7,
         "trade_pct_gdp": 89.8,
         "renewable_energy_pct": 21.5
     },
@@ -11018,7 +11005,7 @@ const COUNTRIES = {
         "lat": 14.6248,
         "lng": -90.5328,
         "gdp": 113.2,
-        "pop": 0,
+        "pop": 18.4,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -11052,7 +11039,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 64
+                "rank": 66
             },
             "finance": {
                 "size": 7.9,
@@ -11116,7 +11103,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 50
+                "rank": 52
             },
             "automotive": {
                 "size": 3.4,
@@ -11196,7 +11183,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 106
+                "rank": 108
             },
             "education": {
                 "size": 2.1,
@@ -11216,7 +11203,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.7,
-        "unemployment_pct": 2.6,
+        "inflation_pct": 2.9,
         "trade_pct_gdp": 47.3,
         "renewable_energy_pct": 62.1
     },
@@ -11228,7 +11215,7 @@ const COUNTRIES = {
         "lat": 6.80461,
         "lng": -58.1548,
         "gdp": 24.7,
-        "pop": 0,
+        "pop": 0.8,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
@@ -11262,7 +11249,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 148
+                "rank": 144
             },
             "finance": {
                 "size": 1.7,
@@ -11326,7 +11313,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 109
+                "rank": 118
             },
             "automotive": {
                 "size": 1,
@@ -11406,7 +11393,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 107
+                "rank": 109
             },
             "education": {
                 "size": 1,
@@ -11426,7 +11413,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 43.8,
-        "unemployment_pct": 11.9,
+        "inflation_pct": 2.9,
         "renewable_energy_pct": 12.1
     },
     "340": {
@@ -11437,7 +11424,7 @@ const COUNTRIES = {
         "lat": 15.1333,
         "lng": -87.4667,
         "gdp": 37.0,
-        "pop": 0,
+        "pop": 10.8,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -11471,7 +11458,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 98
+                "rank": 96
             },
             "finance": {
                 "size": 2.6,
@@ -11535,7 +11522,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 84
+                "rank": 93
             },
             "automotive": {
                 "size": 1.1,
@@ -11615,7 +11602,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 108
+                "rank": 110
             },
             "education": {
                 "size": 1,
@@ -11635,7 +11622,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.6,
-        "unemployment_pct": 4.9,
+        "inflation_pct": 4.6,
         "trade_pct_gdp": 91.7,
         "renewable_energy_pct": 45.9
     },
@@ -11647,7 +11634,7 @@ const COUNTRIES = {
         "lat": 45.8069,
         "lng": 15.9614,
         "gdp": 93.0,
-        "pop": 0,
+        "pop": 3.9,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -11681,7 +11668,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 78
+                "rank": 76
             },
             "finance": {
                 "size": 7.8,
@@ -11745,7 +11732,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 99
+                "rank": 109
             },
             "automotive": {
                 "size": 3.6,
@@ -11825,7 +11812,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 32
+                "rank": 35
             },
             "education": {
                 "size": 2.3,
@@ -11845,7 +11832,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.8,
-        "unemployment_pct": 5,
+        "inflation_pct": 3.0,
         "trade_pct_gdp": 104.9,
         "renewable_energy_pct": 34.1
     },
@@ -11857,7 +11844,7 @@ const COUNTRIES = {
         "lat": 18.5392,
         "lng": -72.3288,
         "gdp": 24.3,
-        "pop": 0,
+        "pop": 11.8,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
@@ -11891,7 +11878,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 102
+                "rank": 98
             },
             "finance": {
                 "size": 1.7,
@@ -11955,7 +11942,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 86
+                "rank": 94
             },
             "automotive": {
                 "size": 1,
@@ -12035,7 +12022,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 109
+                "rank": 111
             },
             "education": {
                 "size": 1,
@@ -12055,7 +12042,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -4.2,
-        "unemployment_pct": 14.6,
+        "inflation_pct": 26.9,
         "trade_pct_gdp": 18.7,
         "renewable_energy_pct": 76.7
     },
@@ -12067,7 +12054,7 @@ const COUNTRIES = {
         "lat": 47.4984,
         "lng": 19.0408,
         "gdp": 222.8,
-        "pop": 0,
+        "pop": 9.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -12101,7 +12088,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 47
+                "rank": 46
             },
             "finance": {
                 "size": 18.7,
@@ -12165,7 +12152,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 70
+                "rank": 75
             },
             "automotive": {
                 "size": 8.7,
@@ -12245,7 +12232,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 36
+                "rank": 38
             },
             "education": {
                 "size": 5.1,
@@ -12265,7 +12252,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 0.7,
-        "unemployment_pct": 4.5,
+        "inflation_pct": 3.7,
         "trade_pct_gdp": 147.9,
         "renewable_energy_pct": 15.3
     },
@@ -12277,7 +12264,7 @@ const COUNTRIES = {
         "lat": -6.19752,
         "lng": 106.83,
         "gdp": 1396.3,
-        "pop": 0,
+        "pop": 283.5,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -12455,7 +12442,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 33
+                "rank": 36
             },
             "education": {
                 "size": 10.7,
@@ -12475,7 +12462,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.0,
-        "unemployment_pct": 3.3,
+        "inflation_pct": 2.2,
         "trade_pct_gdp": 42.8,
         "renewable_energy_pct": 20.2
     },
@@ -12487,7 +12474,7 @@ const COUNTRIES = {
         "lat": 28.6353,
         "lng": 77.225,
         "gdp": 3760.8,
-        "pop": 0,
+        "pop": 1450.9,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
@@ -12521,7 +12508,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 5
+                "rank": 6
             },
             "finance": {
                 "size": 263.3,
@@ -12665,7 +12652,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 14
+                "rank": 15
             },
             "education": {
                 "size": 111.0,
@@ -12685,7 +12672,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 7.1,
-        "unemployment_pct": 4.2,
+        "inflation_pct": 5.0,
         "trade_pct_gdp": 45.9,
         "renewable_energy_pct": 34.9
     },
@@ -12697,7 +12684,7 @@ const COUNTRIES = {
         "lat": 53.3441,
         "lng": -6.26749,
         "gdp": 609.2,
-        "pop": 0,
+        "pop": 5.4,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -12715,7 +12702,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 29
+                "rank": 31
             },
             "manufacturing": {
                 "size": 198.1,
@@ -12731,7 +12718,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 15
+                "rank": 19
             },
             "finance": {
                 "size": 51.2,
@@ -12795,7 +12782,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 68
+                "rank": 72
             },
             "automotive": {
                 "size": 23.8,
@@ -12875,7 +12862,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 37
+                "rank": 39
             },
             "education": {
                 "size": 10.6,
@@ -12895,7 +12882,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.6,
-        "unemployment_pct": 4.3,
+        "inflation_pct": 2.1,
         "trade_pct_gdp": 246.2,
         "renewable_energy_pct": 12.7
     },
@@ -12907,7 +12894,7 @@ const COUNTRIES = {
         "lat": 35.6878,
         "lng": 51.4447,
         "gdp": 475.3,
-        "pop": 0,
+        "pop": 91.6,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -12941,7 +12928,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 26
+                "rank": 29
             },
             "finance": {
                 "size": 33.3,
@@ -13085,7 +13072,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 38
+                "rank": 40
             },
             "education": {
                 "size": 8.1,
@@ -13105,7 +13092,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 3.7,
-        "unemployment_pct": 8.1,
+        "inflation_pct": 32.5,
         "trade_pct_gdp": 52.1,
         "renewable_energy_pct": 0.9
     },
@@ -13117,7 +13104,7 @@ const COUNTRIES = {
         "lat": 33.3302,
         "lng": 44.394,
         "gdp": 279.6,
-        "pop": 0,
+        "pop": 46.0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
@@ -13151,7 +13138,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 75
+                "rank": 74
             },
             "finance": {
                 "size": 19.6,
@@ -13215,7 +13202,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 55
+                "rank": 58
             },
             "automotive": {
                 "size": 8.4,
@@ -13295,7 +13282,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 72
+                "rank": 76
             },
             "education": {
                 "size": 5.6,
@@ -13315,7 +13302,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -1.5,
-        "unemployment_pct": 15.3,
+        "inflation_pct": 2.6,
         "trade_pct_gdp": 77.1,
         "renewable_energy_pct": 1.1
     },
@@ -13327,7 +13314,7 @@ const COUNTRIES = {
         "lat": 64.1353,
         "lng": -21.8952,
         "gdp": 33.2,
-        "pop": 0,
+        "pop": 0.4,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -13361,7 +13348,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 113
+                "rank": 111
             },
             "finance": {
                 "size": 2.8,
@@ -13425,7 +13412,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 124
+                "rank": 129
             },
             "automotive": {
                 "size": 1.3,
@@ -13505,7 +13492,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 110
+                "rank": 112
             },
             "education": {
                 "size": 1.5,
@@ -13525,7 +13512,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": -1.3,
-        "unemployment_pct": 3.6,
+        "inflation_pct": 5.9,
         "trade_pct_gdp": 86.2,
         "renewable_energy_pct": 82.4
     },
@@ -13537,14 +13524,14 @@ const COUNTRIES = {
         "lat": 31.7717,
         "lng": 35.2035,
         "gdp": 542.3,
-        "pop": 0,
+        "pop": 10.0,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 27.1,
-                "growth": 5.4,
-                "potential": 87,
+                "size": 51.6,
+                "growth": 4.6,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13555,12 +13542,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 33
+                "rank": 20
             },
             "manufacturing": {
-                "size": 65.1,
-                "growth": 2.7,
-                "potential": 83,
+                "size": 61.0,
+                "growth": 1.9,
+                "potential": 81,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -13571,12 +13558,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 38
+                "rank": 36
             },
             "finance": {
                 "size": 38.0,
-                "growth": 3.9,
-                "potential": 85,
+                "growth": 3.1,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13591,8 +13578,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 30.8,
-                "growth": 4.8,
-                "potential": 86,
+                "growth": 4.0,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13607,8 +13594,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 21.7,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 2.8,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13623,8 +13610,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 7.0,
-                "growth": 2.4,
-                "potential": 79,
+                "growth": 1.6,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13635,12 +13622,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 64
+                "rank": 68
             },
             "automotive": {
                 "size": 16.3,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 2.8,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13655,8 +13642,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 32.5,
-                "growth": 4.2,
-                "potential": 85,
+                "growth": 3.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13671,8 +13658,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 21.7,
-                "growth": 3.0,
-                "potential": 82,
+                "growth": 2.2,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13687,8 +13674,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 10.8,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 2.8,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13703,8 +13690,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 2.7,
-                "growth": 4.8,
-                "potential": 83,
+                "growth": 4.0,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13715,12 +13702,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 47
+                "rank": 51
             },
             "education": {
                 "size": 19.3,
-                "growth": 4.2,
-                "potential": 84,
+                "growth": 3.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13734,7 +13721,8 @@ const COUNTRIES = {
                 "rank": 23
             }
         },
-        "unemployment_pct": 3.6,
+        "gdp_growth_pct": 1.0,
+        "inflation_pct": 3.1,
         "trade_pct_gdp": 54.4,
         "renewable_energy_pct": 6.2
     },
@@ -13746,14 +13734,14 @@ const COUNTRIES = {
         "lat": 41.8955,
         "lng": 12.4823,
         "gdp": 2383.4,
-        "pop": 0,
+        "pop": 59.0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 119.2,
-                "growth": 5.4,
-                "potential": 89,
+                "growth": 4.5,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13767,9 +13755,9 @@ const COUNTRIES = {
                 "rank": 11
             },
             "manufacturing": {
-                "size": 314.6,
-                "growth": 2.7,
-                "potential": 85,
+                "size": 395.5,
+                "growth": 1.8,
+                "potential": 83,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -13780,12 +13768,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 10
+                "rank": 8
             },
             "finance": {
                 "size": 200.2,
-                "growth": 3.9,
-                "potential": 87,
+                "growth": 3.0,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13800,8 +13788,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 161.0,
-                "growth": 4.8,
-                "potential": 88,
+                "growth": 3.9,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13816,8 +13804,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 104.9,
-                "growth": 3.6,
-                "potential": 85,
+                "growth": 2.7,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13832,8 +13820,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 47.9,
-                "growth": 2.4,
-                "potential": 82,
+                "growth": 1.5,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13848,8 +13836,8 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 93.0,
-                "growth": 3.6,
-                "potential": 85,
+                "growth": 2.7,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13864,8 +13852,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 143.0,
-                "growth": 4.2,
-                "potential": 87,
+                "growth": 3.3,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13880,8 +13868,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 95.3,
-                "growth": 3.0,
-                "potential": 84,
+                "growth": 2.1,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13896,8 +13884,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 47.7,
-                "growth": 3.6,
-                "potential": 84,
+                "growth": 2.7,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13912,8 +13900,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 26.6,
-                "growth": 4.8,
-                "potential": 86,
+                "growth": 3.9,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13924,12 +13912,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 8
+                "rank": 9
             },
             "education": {
                 "size": 58.2,
-                "growth": 4.2,
-                "potential": 86,
+                "growth": 3.3,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -13943,7 +13931,8 @@ const COUNTRIES = {
                 "rank": 11
             }
         },
-        "unemployment_pct": 6.5,
+        "gdp_growth_pct": 0.8,
+        "inflation_pct": 1.0,
         "trade_pct_gdp": 62.6,
         "renewable_energy_pct": 17.5
     },
@@ -13955,124 +13944,12 @@ const COUNTRIES = {
         "lat": 17.9927,
         "lng": -76.792,
         "gdp": 22.0,
-        "pop": 0,
+        "pop": 2.8,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 1.1,
-                "growth": 5.4,
-                "potential": 79,
-                "oppo": [
-                    "IT 아웃소싱 성장",
-                    "스타트업 생태계 확대",
-                    "5G 인프라 구축"
-                ],
-                "risk": [
-                    "기술 격차 확대",
-                    "두뇌 유출",
-                    "규제 불확실성"
-                ],
-                "rank": 125
-            },
-            "manufacturing": {
-                "size": 2.6,
-                "growth": 2.7,
-                "potential": 75,
-                "oppo": [
-                    "글로벌 공급망 편입",
-                    "FDI 유치 확대",
-                    "산업 자동화"
-                ],
-                "risk": [
-                    "원자재 가격 변동",
-                    "기술 전환 비용",
-                    "노동 규제"
-                ],
-                "rank": 123
-            },
-            "finance": {
-                "size": 1.5,
-                "growth": 3.9,
-                "potential": 76,
-                "oppo": [
-                    "IT 아웃소싱 성장",
-                    "스타트업 생태계 확대",
-                    "5G 인프라 구축"
-                ],
-                "risk": [
-                    "기술 격차 확대",
-                    "두뇌 유출",
-                    "규제 불확실성"
-                ],
-                "rank": 125
-            },
-            "healthcare": {
-                "size": 1.3,
-                "growth": 4.8,
-                "potential": 78,
-                "oppo": [
-                    "IT 아웃소싱 성장",
-                    "스타트업 생태계 확대",
-                    "5G 인프라 구축"
-                ],
-                "risk": [
-                    "기술 격차 확대",
-                    "두뇌 유출",
-                    "규제 불확실성"
-                ],
-                "rank": 113
-            },
-            "energy": {
-                "size": 1,
-                "growth": 3.6,
-                "potential": 75,
-                "oppo": [
-                    "IT 아웃소싱 성장",
-                    "스타트업 생태계 확대",
-                    "5G 인프라 구축"
-                ],
-                "risk": [
-                    "기술 격차 확대",
-                    "두뇌 유출",
-                    "규제 불확실성"
-                ],
-                "rank": 124
-            },
-            "agriculture": {
-                "size": 1.8,
-                "growth": 2.4,
-                "potential": 74,
-                "oppo": [
-                    "IT 아웃소싱 성장",
-                    "스타트업 생태계 확대",
-                    "5G 인프라 구축"
-                ],
-                "risk": [
-                    "기술 격차 확대",
-                    "두뇌 유출",
-                    "규제 불확실성"
-                ],
-                "rank": 110
-            },
-            "automotive": {
-                "size": 1,
-                "growth": 3.6,
-                "potential": 75,
-                "oppo": [
-                    "IT 아웃소싱 성장",
-                    "스타트업 생태계 확대",
-                    "5G 인프라 구축"
-                ],
-                "risk": [
-                    "기술 격차 확대",
-                    "두뇌 유출",
-                    "규제 불확실성"
-                ],
-                "rank": 121
-            },
-            "retail": {
-                "size": 1.3,
                 "growth": 4.2,
                 "potential": 77,
                 "oppo": [
@@ -14087,10 +13964,122 @@ const COUNTRIES = {
                 ],
                 "rank": 125
             },
-            "realestate": {
+            "manufacturing": {
+                "size": 1.7,
+                "growth": 1.5,
+                "potential": 72,
+                "oppo": [
+                    "글로벌 공급망 편입",
+                    "FDI 유치 확대",
+                    "산업 자동화"
+                ],
+                "risk": [
+                    "원자재 가격 변동",
+                    "기술 전환 비용",
+                    "노동 규제"
+                ],
+                "rank": 131
+            },
+            "finance": {
+                "size": 1.5,
+                "growth": 2.7,
+                "potential": 74,
+                "oppo": [
+                    "IT 아웃소싱 성장",
+                    "스타트업 생태계 확대",
+                    "5G 인프라 구축"
+                ],
+                "risk": [
+                    "기술 격차 확대",
+                    "두뇌 유출",
+                    "규제 불확실성"
+                ],
+                "rank": 125
+            },
+            "healthcare": {
+                "size": 1.3,
+                "growth": 3.6,
+                "potential": 76,
+                "oppo": [
+                    "IT 아웃소싱 성장",
+                    "스타트업 생태계 확대",
+                    "5G 인프라 구축"
+                ],
+                "risk": [
+                    "기술 격차 확대",
+                    "두뇌 유출",
+                    "규제 불확실성"
+                ],
+                "rank": 113
+            },
+            "energy": {
                 "size": 1,
+                "growth": 2.4,
+                "potential": 73,
+                "oppo": [
+                    "IT 아웃소싱 성장",
+                    "스타트업 생태계 확대",
+                    "5G 인프라 구축"
+                ],
+                "risk": [
+                    "기술 격차 확대",
+                    "두뇌 유출",
+                    "규제 불확실성"
+                ],
+                "rank": 124
+            },
+            "agriculture": {
+                "size": 1.8,
+                "growth": 1.2,
+                "potential": 71,
+                "oppo": [
+                    "IT 아웃소싱 성장",
+                    "스타트업 생태계 확대",
+                    "5G 인프라 구축"
+                ],
+                "risk": [
+                    "기술 격차 확대",
+                    "두뇌 유출",
+                    "규제 불확실성"
+                ],
+                "rank": 119
+            },
+            "automotive": {
+                "size": 1,
+                "growth": 2.4,
+                "potential": 73,
+                "oppo": [
+                    "IT 아웃소싱 성장",
+                    "스타트업 생태계 확대",
+                    "5G 인프라 구축"
+                ],
+                "risk": [
+                    "기술 격차 확대",
+                    "두뇌 유출",
+                    "규제 불확실성"
+                ],
+                "rank": 121
+            },
+            "retail": {
+                "size": 1.3,
                 "growth": 3.0,
                 "potential": 74,
+                "oppo": [
+                    "IT 아웃소싱 성장",
+                    "스타트업 생태계 확대",
+                    "5G 인프라 구축"
+                ],
+                "risk": [
+                    "기술 격차 확대",
+                    "두뇌 유출",
+                    "규제 불확실성"
+                ],
+                "rank": 125
+            },
+            "realestate": {
+                "size": 1,
+                "growth": 1.8,
+                "potential": 72,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14105,8 +14094,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 2.4,
+                "potential": 73,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14121,8 +14110,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 3.6,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14133,12 +14122,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 111
+                "rank": 113
             },
             "education": {
                 "size": 1,
-                "growth": 4.2,
-                "potential": 76,
+                "growth": 3.0,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14152,7 +14141,8 @@ const COUNTRIES = {
                 "rank": 113
             }
         },
-        "unemployment_pct": 3.2,
+        "gdp_growth_pct": -0.5,
+        "inflation_pct": 5.4,
         "renewable_energy_pct": 10.5
     },
     "400": {
@@ -14163,13 +14153,13 @@ const COUNTRIES = {
         "lat": 31.9497,
         "lng": 35.9263,
         "gdp": 58.6,
-        "pop": 0,
+        "pop": 11.6,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 2.9,
-                "growth": 5.4,
+                "growth": 5.2,
                 "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14184,8 +14174,8 @@ const COUNTRIES = {
                 "rank": 88
             },
             "manufacturing": {
-                "size": 7.0,
-                "growth": 2.7,
+                "size": 9.9,
+                "growth": 2.5,
                 "potential": 76,
                 "oppo": [
                     "글로벌 공급망 편입",
@@ -14197,12 +14187,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 86
+                "rank": 78
             },
             "finance": {
                 "size": 4.1,
-                "growth": 3.9,
-                "potential": 78,
+                "growth": 3.7,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14217,7 +14207,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 3.6,
-                "growth": 4.8,
+                "growth": 4.6,
                 "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14233,7 +14223,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 2.3,
-                "growth": 3.6,
+                "growth": 3.4,
                 "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14249,7 +14239,7 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 3.1,
-                "growth": 2.4,
+                "growth": 2.2,
                 "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14261,11 +14251,11 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 93
+                "rank": 102
             },
             "automotive": {
                 "size": 1.8,
-                "growth": 3.6,
+                "growth": 3.4,
                 "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14281,7 +14271,7 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 3.5,
-                "growth": 4.2,
+                "growth": 4.0,
                 "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14297,7 +14287,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 2.3,
-                "growth": 3.0,
+                "growth": 2.8,
                 "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14313,7 +14303,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.2,
-                "growth": 3.6,
+                "growth": 3.4,
                 "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14329,7 +14319,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1.7,
-                "growth": 4.8,
+                "growth": 4.6,
                 "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -14341,12 +14331,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 66
+                "rank": 69
             },
             "education": {
                 "size": 1.1,
-                "growth": 4.2,
-                "potential": 77,
+                "growth": 4.0,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14360,7 +14350,8 @@ const COUNTRIES = {
                 "rank": 91
             }
         },
-        "unemployment_pct": 16.7,
+        "gdp_growth_pct": 2.6,
+        "inflation_pct": 1.6,
         "renewable_energy_pct": 11.5
     },
     "392": {
@@ -14371,14 +14362,14 @@ const COUNTRIES = {
         "lat": 35.67,
         "lng": 139.77,
         "gdp": 4190.0,
-        "pop": 0,
+        "pop": 124.0,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 314.3,
-                "growth": 5.4,
-                "potential": 90,
+                "size": 324.4,
+                "growth": 4.2,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14392,9 +14383,9 @@ const COUNTRIES = {
                 "rank": 3
             },
             "manufacturing": {
-                "size": 804.5,
-                "growth": 2.7,
-                "potential": 86,
+                "size": 1261.5,
+                "growth": 1.5,
+                "potential": 84,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -14405,12 +14396,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 4
+                "rank": 3
             },
             "finance": {
                 "size": 293.3,
-                "growth": 3.9,
-                "potential": 87,
+                "growth": 2.7,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14425,8 +14416,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 360.0,
-                "growth": 4.8,
-                "potential": 89,
+                "growth": 3.6,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14441,8 +14432,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 167.6,
-                "growth": 3.6,
-                "potential": 86,
+                "growth": 2.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14457,8 +14448,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 40.2,
-                "growth": 2.4,
-                "potential": 82,
+                "growth": 1.2,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14469,12 +14460,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 22
+                "rank": 23
             },
             "automotive": {
                 "size": 163.4,
-                "growth": 3.6,
-                "potential": 86,
+                "growth": 2.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14489,8 +14480,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 251.4,
-                "growth": 4.2,
-                "potential": 88,
+                "growth": 3.0,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14505,8 +14496,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 167.6,
-                "growth": 3.0,
-                "potential": 85,
+                "growth": 1.8,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14521,8 +14512,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 100.6,
-                "growth": 3.6,
-                "potential": 85,
+                "growth": 2.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14537,8 +14528,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 20.9,
-                "growth": 4.8,
-                "potential": 86,
+                "growth": 3.6,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14549,12 +14540,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 11
+                "rank": 13
             },
             "education": {
                 "size": 83.9,
-                "growth": 4.2,
-                "potential": 86,
+                "growth": 3.0,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -14568,7 +14559,8 @@ const COUNTRIES = {
                 "rank": 7
             }
         },
-        "unemployment_pct": 2.5,
+        "gdp_growth_pct": -0.2,
+        "inflation_pct": 2.7,
         "trade_pct_gdp": 44.9,
         "renewable_energy_pct": 8.8
     },
@@ -14580,14 +14572,14 @@ const COUNTRIES = {
         "lat": 51.1879,
         "lng": 71.4382,
         "gdp": 291.5,
-        "pop": 0,
+        "pop": 20.6,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 14.6,
-                "growth": 5.4,
-                "potential": 82,
+                "growth": 6.2,
+                "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14601,9 +14593,9 @@ const COUNTRIES = {
                 "rank": 48
             },
             "manufacturing": {
-                "size": 38.5,
-                "growth": 2.7,
-                "potential": 78,
+                "size": 39.7,
+                "growth": 3.5,
+                "potential": 80,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -14614,12 +14606,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 48
+                "rank": 45
             },
             "finance": {
                 "size": 24.5,
-                "growth": 3.9,
-                "potential": 80,
+                "growth": 4.7,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14634,8 +14626,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 8.8,
-                "growth": 4.8,
-                "potential": 80,
+                "growth": 5.6,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14650,8 +14642,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 12.8,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 4.4,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14666,8 +14658,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 11.3,
-                "growth": 2.4,
-                "potential": 76,
+                "growth": 3.2,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14682,8 +14674,8 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 11.4,
-                "growth": 3.6,
-                "potential": 78,
+                "growth": 4.4,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14698,8 +14690,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 17.5,
-                "growth": 4.2,
-                "potential": 80,
+                "growth": 5.0,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14714,8 +14706,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 11.7,
-                "growth": 3.0,
-                "potential": 77,
+                "growth": 3.8,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14730,8 +14722,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 5.8,
-                "growth": 3.6,
-                "potential": 77,
+                "growth": 4.4,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14746,8 +14738,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1.9,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 5.6,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14758,12 +14750,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 60
+                "rank": 64
             },
             "education": {
                 "size": 8.5,
-                "growth": 4.2,
-                "potential": 79,
+                "growth": 5.0,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -14777,7 +14769,8 @@ const COUNTRIES = {
                 "rank": 40
             }
         },
-        "unemployment_pct": 4.8,
+        "gdp_growth_pct": 5.0,
+        "inflation_pct": 8.7,
         "trade_pct_gdp": 57.2,
         "renewable_energy_pct": 2
     },
@@ -14789,14 +14782,14 @@ const COUNTRIES = {
         "lat": -1.27975,
         "lng": 36.8126,
         "gdp": 120.4,
-        "pop": 0,
+        "pop": 56.4,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 6.0,
-                "growth": 5.9,
-                "potential": 76,
+                "growth": 6.6,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14810,9 +14803,9 @@ const COUNTRIES = {
                 "rank": 65
             },
             "manufacturing": {
-                "size": 14.4,
-                "growth": 3.2,
-                "potential": 72,
+                "size": 8.8,
+                "growth": 3.9,
+                "potential": 73,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -14823,12 +14816,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 67
+                "rank": 81
             },
             "finance": {
                 "size": 8.4,
-                "growth": 4.4,
-                "potential": 74,
+                "growth": 5.1,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14843,8 +14836,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 4.2,
-                "growth": 5.3,
-                "potential": 74,
+                "growth": 6.0,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14859,8 +14852,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 4.8,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 4.8,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14875,8 +14868,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 27.0,
-                "growth": 2.9,
-                "potential": 72,
+                "growth": 3.6,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14891,8 +14884,8 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 3.6,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 4.8,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14907,8 +14900,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 7.2,
-                "growth": 4.7,
-                "potential": 74,
+                "growth": 5.4,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14923,8 +14916,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 4.8,
-                "growth": 3.5,
-                "potential": 71,
+                "growth": 4.2,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14939,8 +14932,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 2.4,
-                "growth": 4.1,
-                "potential": 71,
+                "growth": 4.8,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14955,8 +14948,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1.8,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 6.0,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14967,12 +14960,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 62
+                "rank": 67
             },
             "education": {
                 "size": 2.9,
-                "growth": 4.7,
-                "potential": 73,
+                "growth": 5.4,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -14986,7 +14979,8 @@ const COUNTRIES = {
                 "rank": 63
             }
         },
-        "unemployment_pct": 5.5,
+        "gdp_growth_pct": 4.7,
+        "inflation_pct": 4.5,
         "trade_pct_gdp": 40.0,
         "renewable_energy_pct": 67.7
     },
@@ -14998,14 +14992,14 @@ const COUNTRIES = {
         "lat": 42.8851,
         "lng": 74.6057,
         "gdp": 18.2,
-        "pop": 0,
+        "pop": 7.2,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 74,
+                "growth": 9.3,
+                "potential": 81,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15019,9 +15013,9 @@ const COUNTRIES = {
                 "rank": 133
             },
             "manufacturing": {
-                "size": 2.4,
-                "growth": 3.2,
-                "potential": 70,
+                "size": 2.5,
+                "growth": 6.6,
+                "potential": 76,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -15032,12 +15026,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 125
+                "rank": 118
             },
             "finance": {
                 "size": 1.5,
-                "growth": 4.4,
-                "potential": 71,
+                "growth": 7.8,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15052,8 +15046,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 8.7,
+                "potential": 79,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15068,8 +15062,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 7.5,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15084,8 +15078,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1.6,
-                "growth": 2.9,
-                "potential": 68,
+                "growth": 6.3,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15096,12 +15090,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 113
+                "rank": 122
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 7.5,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15116,8 +15110,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.1,
-                "growth": 4.7,
-                "potential": 72,
+                "growth": 8.1,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15132,8 +15126,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 6.9,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15148,8 +15142,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 7.5,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15164,8 +15158,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 8.7,
+                "potential": 79,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15176,12 +15170,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 112
+                "rank": 114
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 8.1,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15195,7 +15189,8 @@ const COUNTRIES = {
                 "rank": 114
             }
         },
-        "unemployment_pct": 3.5,
+        "gdp_growth_pct": 11.5,
+        "inflation_pct": 5.0,
         "trade_pct_gdp": 130.1,
         "renewable_energy_pct": 27.6
     },
@@ -15207,7 +15202,7 @@ const COUNTRIES = {
         "lat": 11.5556,
         "lng": 104.874,
         "gdp": 46.4,
-        "pop": 0,
+        "pop": 17.6,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
@@ -15241,7 +15236,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 56
+                "rank": 58
             },
             "finance": {
                 "size": 3.2,
@@ -15305,7 +15300,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 60
+                "rank": 64
             },
             "automotive": {
                 "size": 1.8,
@@ -15385,7 +15380,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 78
+                "rank": 81
             },
             "education": {
                 "size": 1,
@@ -15405,7 +15400,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 6.0,
-        "unemployment_pct": 0.3,
+        "inflation_pct": 0.8,
         "trade_pct_gdp": 143.4,
         "renewable_energy_pct": 52.4
     },
@@ -15417,13 +15412,13 @@ const COUNTRIES = {
         "lat": 37.5323,
         "lng": 126.957,
         "gdp": 1875.4,
-        "pop": 0,
+        "pop": 51.8,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 140.7,
-                "growth": 5.4,
+                "size": 208.6,
+                "growth": 5.0,
                 "potential": 89,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -15435,11 +15430,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 9
+                "rank": 6
             },
             "manufacturing": {
-                "size": 360.1,
-                "growth": 2.7,
+                "size": 798.7,
+                "growth": 2.3,
                 "potential": 85,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -15451,12 +15446,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 8
+                "rank": 5
             },
             "finance": {
                 "size": 131.3,
-                "growth": 3.9,
-                "potential": 86,
+                "growth": 3.5,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15471,8 +15466,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 130.2,
-                "growth": 4.8,
-                "potential": 88,
+                "growth": 4.4,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15487,8 +15482,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 75.0,
-                "growth": 3.6,
-                "potential": 85,
+                "growth": 3.2,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15503,8 +15498,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 27.3,
-                "growth": 2.4,
-                "potential": 81,
+                "growth": 2.0,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15519,8 +15514,8 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 73.1,
-                "growth": 3.6,
-                "potential": 85,
+                "growth": 3.2,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15535,8 +15530,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 112.5,
-                "growth": 4.2,
-                "potential": 87,
+                "growth": 3.8,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15551,8 +15546,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 75.0,
-                "growth": 3.0,
-                "potential": 84,
+                "growth": 2.6,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15567,8 +15562,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 45.0,
-                "growth": 3.6,
-                "potential": 84,
+                "growth": 3.2,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15583,8 +15578,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 11.8,
-                "growth": 4.8,
-                "potential": 85,
+                "growth": 4.4,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15595,12 +15590,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 24
+                "rank": 22
             },
             "education": {
                 "size": 60.9,
-                "growth": 4.2,
-                "potential": 86,
+                "growth": 3.8,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15614,7 +15609,8 @@ const COUNTRIES = {
                 "rank": 10
             }
         },
-        "unemployment_pct": 2.8,
+        "gdp_growth_pct": 2.0,
+        "inflation_pct": 2.3,
         "trade_pct_gdp": 84.6,
         "renewable_energy_pct": 3.6
     },
@@ -15626,14 +15622,14 @@ const COUNTRIES = {
         "lat": 29.3721,
         "lng": 47.9824,
         "gdp": 160.9,
-        "pop": 0,
+        "pop": 4.9,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 8.0,
-                "growth": 5.4,
-                "potential": 86,
+                "growth": 4.2,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15647,9 +15643,9 @@ const COUNTRIES = {
                 "rank": 57
             },
             "manufacturing": {
-                "size": 19.3,
-                "growth": 2.7,
-                "potential": 81,
+                "size": 12.8,
+                "growth": 1.5,
+                "potential": 78,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -15660,12 +15656,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 57
+                "rank": 69
             },
             "finance": {
                 "size": 11.3,
-                "growth": 3.9,
-                "potential": 83,
+                "growth": 2.7,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15680,8 +15676,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 6.4,
-                "growth": 4.8,
-                "potential": 84,
+                "growth": 3.6,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15696,8 +15692,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 6.4,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 2.4,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15712,8 +15708,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.4,
-                "potential": 77,
+                "growth": 1.2,
+                "potential": 74,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15724,12 +15720,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 133
+                "rank": 138
             },
             "automotive": {
                 "size": 4.8,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 2.4,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15744,8 +15740,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 9.7,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 3.0,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15760,8 +15756,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 6.4,
-                "growth": 3.0,
-                "potential": 80,
+                "growth": 1.8,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15776,8 +15772,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 3.2,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 2.4,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15792,8 +15788,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 82,
+                "growth": 3.6,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15804,12 +15800,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 113
+                "rank": 115
             },
             "education": {
                 "size": 6.2,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 3.0,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -15823,7 +15819,8 @@ const COUNTRIES = {
                 "rank": 50
             }
         },
-        "unemployment_pct": 2.2,
+        "gdp_growth_pct": -1.5,
+        "inflation_pct": 2.9,
         "trade_pct_gdp": 94.0,
         "renewable_energy_pct": 0.1
     },
@@ -15835,14 +15832,14 @@ const COUNTRIES = {
         "lat": 18.5826,
         "lng": 102.177,
         "gdp": 16.5,
-        "pop": 0,
+        "pop": 7.8,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1.2,
-                "growth": 5.9,
-                "potential": 74,
+                "growth": 6.4,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15856,9 +15853,9 @@ const COUNTRIES = {
                 "rank": 121
             },
             "manufacturing": {
-                "size": 3.2,
-                "growth": 3.2,
-                "potential": 70,
+                "size": 2.4,
+                "growth": 3.7,
+                "potential": 71,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -15869,12 +15866,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 114
+                "rank": 119
             },
             "finance": {
                 "size": 1.2,
-                "growth": 4.4,
-                "potential": 71,
+                "growth": 4.9,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15889,8 +15886,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 5.8,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15905,8 +15902,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.6,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15921,8 +15918,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 2.8,
-                "growth": 2.9,
-                "potential": 69,
+                "growth": 3.4,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15933,12 +15930,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 96
+                "rank": 106
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.6,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15953,8 +15950,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 5.2,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15969,8 +15966,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 4.0,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -15985,8 +15982,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.6,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16001,8 +15998,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 5.8,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16013,12 +16010,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 114
+                "rank": 116
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 5.2,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16032,7 +16029,8 @@ const COUNTRIES = {
                 "rank": 116
             }
         },
-        "unemployment_pct": 1.2,
+        "gdp_growth_pct": 4.1,
+        "inflation_pct": 23.1,
         "renewable_energy_pct": 49.2
     },
     "422": {
@@ -16043,14 +16041,14 @@ const COUNTRIES = {
         "lat": 33.8872,
         "lng": 35.5134,
         "gdp": 26.0,
-        "pop": 0,
+        "pop": 5.8,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1.3,
-                "growth": 5.9,
-                "potential": 74,
+                "growth": 4.7,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16064,9 +16062,9 @@ const COUNTRIES = {
                 "rank": 113
             },
             "manufacturing": {
-                "size": 3.1,
-                "growth": 3.2,
-                "potential": 70,
+                "size": 1,
+                "growth": 2.0,
+                "potential": 66,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -16077,12 +16075,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 116
+                "rank": 145
             },
             "finance": {
                 "size": 1.8,
-                "growth": 4.4,
-                "potential": 72,
+                "growth": 3.2,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16097,8 +16095,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.2,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 4.1,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16113,8 +16111,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 2.9,
+                "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16129,8 +16127,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.9,
-                "potential": 68,
+                "growth": 1.7,
+                "potential": 65,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16141,12 +16139,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 134
+                "rank": 139
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 2.9,
+                "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16161,8 +16159,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.6,
-                "growth": 4.7,
-                "potential": 72,
+                "growth": 3.5,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16177,8 +16175,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 2.3,
+                "potential": 67,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16193,8 +16191,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 2.9,
+                "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16209,8 +16207,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 2.4,
-                "growth": 5.3,
-                "potential": 74,
+                "growth": 4.1,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16221,12 +16219,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 52
+                "rank": 54
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 3.5,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -16240,7 +16238,8 @@ const COUNTRIES = {
                 "rank": 117
             }
         },
-        "unemployment_pct": 11.0,
+        "gdp_growth_pct": -7.1,
+        "inflation_pct": 45.2,
         "trade_pct_gdp": 82.2,
         "renewable_energy_pct": 6.8
     },
@@ -16252,14 +16251,14 @@ const COUNTRIES = {
         "lat": 32.8578,
         "lng": 13.1072,
         "gdp": 48.5,
-        "pop": 0,
+        "pop": 7.4,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 2.4,
-                "growth": 5.4,
-                "potential": 80,
+                "growth": 5.0,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16274,8 +16273,8 @@ const COUNTRIES = {
             },
             "manufacturing": {
                 "size": 5.8,
-                "growth": 2.7,
-                "potential": 76,
+                "growth": 2.3,
+                "potential": 75,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -16286,11 +16285,11 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 95
+                "rank": 94
             },
             "finance": {
                 "size": 3.4,
-                "growth": 3.9,
+                "growth": 3.5,
                 "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -16306,8 +16305,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 3.0,
-                "growth": 4.8,
-                "potential": 79,
+                "growth": 4.4,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16322,8 +16321,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1.9,
-                "growth": 3.6,
-                "potential": 76,
+                "growth": 3.2,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16338,8 +16337,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1.2,
-                "growth": 2.4,
-                "potential": 73,
+                "growth": 2.0,
+                "potential": 72,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16350,12 +16349,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 125
+                "rank": 130
             },
             "automotive": {
                 "size": 1.5,
-                "growth": 3.6,
-                "potential": 76,
+                "growth": 3.2,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16370,8 +16369,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 2.9,
-                "growth": 4.2,
-                "potential": 78,
+                "growth": 3.8,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16386,8 +16385,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1.9,
-                "growth": 3.0,
-                "potential": 75,
+                "growth": 2.6,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16402,8 +16401,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 3.2,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16418,8 +16417,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 4.4,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16430,11 +16429,11 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 115
+                "rank": 117
             },
             "education": {
                 "size": 1,
-                "growth": 4.2,
+                "growth": 3.8,
                 "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -16449,7 +16448,8 @@ const COUNTRIES = {
                 "rank": 118
             }
         },
-        "unemployment_pct": 19.1,
+        "gdp_growth_pct": 1.9,
+        "inflation_pct": 2.1,
         "trade_pct_gdp": 137.5,
         "renewable_energy_pct": 3.1
     },
@@ -16461,14 +16461,14 @@ const COUNTRIES = {
         "lat": 6.92148,
         "lng": 79.8528,
         "gdp": 99.6,
-        "pop": 0,
+        "pop": 21.9,
         "region": "South Asia",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 6.5,
-                "growth": 5.4,
-                "potential": 81,
+                "growth": 6.2,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16482,9 +16482,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "manufacturing": {
-                "size": 12.0,
-                "growth": 2.7,
-                "potential": 77,
+                "size": 17.4,
+                "growth": 3.5,
+                "potential": 79,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -16495,12 +16495,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 72
+                "rank": 62
             },
             "finance": {
                 "size": 7.0,
-                "growth": 3.9,
-                "potential": 78,
+                "growth": 4.7,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16515,8 +16515,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 2.9,
-                "growth": 4.8,
-                "potential": 79,
+                "growth": 5.6,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16531,8 +16531,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 4.0,
-                "growth": 3.6,
-                "potential": 77,
+                "growth": 4.4,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16546,9 +16546,9 @@ const COUNTRIES = {
                 "rank": 73
             },
             "agriculture": {
-                "size": 5.4,
-                "growth": 2.4,
-                "potential": 75,
+                "size": 15.0,
+                "growth": 3.2,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16559,12 +16559,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 75
+                "rank": 43
             },
             "automotive": {
                 "size": 3.0,
-                "growth": 3.6,
-                "potential": 77,
+                "growth": 4.4,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16579,8 +16579,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 7.8,
-                "growth": 4.2,
-                "potential": 79,
+                "growth": 5.0,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16595,8 +16595,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 4.0,
-                "growth": 3.0,
-                "potential": 76,
+                "growth": 3.8,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16611,8 +16611,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 2.0,
-                "growth": 3.6,
-                "potential": 76,
+                "growth": 4.4,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16626,9 +16626,9 @@ const COUNTRIES = {
                 "rank": 71
             },
             "tourism": {
-                "size": 1.1,
-                "growth": 4.8,
-                "potential": 78,
+                "size": 2.0,
+                "growth": 5.6,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16639,12 +16639,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 79
+                "rank": 63
             },
             "education": {
                 "size": 1.3,
-                "growth": 4.2,
-                "potential": 77,
+                "growth": 5.0,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -16658,7 +16658,8 @@ const COUNTRIES = {
                 "rank": 87
             }
         },
-        "unemployment_pct": 4.2,
+        "gdp_growth_pct": 5.0,
+        "inflation_pct": -0.4,
         "trade_pct_gdp": 42.1,
         "renewable_energy_pct": 48.8
     },
@@ -16670,7 +16671,7 @@ const COUNTRIES = {
         "lat": 54.6896,
         "lng": 25.2799,
         "gdp": 85.5,
-        "pop": 0,
+        "pop": 2.9,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -16691,7 +16692,7 @@ const COUNTRIES = {
                 "rank": 78
             },
             "manufacturing": {
-                "size": 11.3,
+                "size": 12.8,
                 "growth": 2.7,
                 "potential": 81,
                 "oppo": [
@@ -16704,7 +16705,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 77
+                "rank": 70
             },
             "finance": {
                 "size": 7.2,
@@ -16768,7 +16769,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 105
+                "rank": 113
             },
             "automotive": {
                 "size": 3.3,
@@ -16848,7 +16849,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 58
+                "rank": 61
             },
             "education": {
                 "size": 2.2,
@@ -16867,7 +16868,8 @@ const COUNTRIES = {
                 "rank": 73
             }
         },
-        "unemployment_pct": 6.9,
+        "gdp_growth_pct": 3.0,
+        "inflation_pct": 0.7,
         "trade_pct_gdp": 142.4,
         "renewable_energy_pct": 33.2
     },
@@ -16879,14 +16881,14 @@ const COUNTRIES = {
         "lat": 49.61,
         "lng": 6.1296,
         "gdp": 93.3,
-        "pop": 0,
+        "pop": 0.7,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 4.7,
-                "growth": 5.4,
-                "potential": 85,
+                "growth": 4.3,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -16900,9 +16902,9 @@ const COUNTRIES = {
                 "rank": 75
             },
             "manufacturing": {
-                "size": 12.3,
-                "growth": 2.7,
-                "potential": 81,
+                "size": 4.1,
+                "growth": 1.6,
+                "potential": 77,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -16913,12 +16915,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 71
+                "rank": 106
             },
             "finance": {
                 "size": 7.8,
-                "growth": 3.9,
-                "potential": 82,
+                "growth": 2.8,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -16933,8 +16935,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 4.4,
-                "growth": 4.8,
-                "potential": 84,
+                "growth": 3.7,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -16949,8 +16951,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 4.1,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 2.5,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -16965,8 +16967,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.4,
-                "potential": 77,
+                "growth": 1.3,
+                "potential": 75,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -16977,12 +16979,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 135
+                "rank": 140
             },
             "automotive": {
                 "size": 3.6,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 2.5,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -16997,8 +16999,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 5.6,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 3.1,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17013,8 +17015,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 3.7,
-                "growth": 3.0,
-                "potential": 80,
+                "growth": 1.9,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17029,8 +17031,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.9,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 2.5,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17045,8 +17047,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 5.8,
-                "growth": 4.8,
-                "potential": 84,
+                "growth": 3.7,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17057,12 +17059,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 35
+                "rank": 37
             },
             "education": {
                 "size": 2.1,
-                "growth": 4.2,
-                "potential": 81,
+                "growth": 3.1,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17076,7 +17078,8 @@ const COUNTRIES = {
                 "rank": 76
             }
         },
-        "unemployment_pct": 6.4,
+        "gdp_growth_pct": 0.4,
+        "inflation_pct": 2.1,
         "trade_pct_gdp": 351.3,
         "renewable_energy_pct": 20.5
     },
@@ -17088,14 +17091,14 @@ const COUNTRIES = {
         "lat": 56.9465,
         "lng": 24.1048,
         "gdp": 44.0,
-        "pop": 0,
+        "pop": 1.9,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 2.2,
-                "growth": 5.4,
-                "potential": 84,
+                "growth": 4.2,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17109,9 +17112,9 @@ const COUNTRIES = {
                 "rank": 99
             },
             "manufacturing": {
-                "size": 5.8,
-                "growth": 2.7,
-                "potential": 80,
+                "size": 4.8,
+                "growth": 1.5,
+                "potential": 77,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -17122,12 +17125,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 96
+                "rank": 99
             },
             "finance": {
                 "size": 3.7,
-                "growth": 3.9,
-                "potential": 82,
+                "growth": 2.7,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17142,8 +17145,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 2.6,
-                "growth": 4.8,
-                "potential": 83,
+                "growth": 3.6,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17158,8 +17161,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1.9,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 2.4,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17174,8 +17177,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1.7,
-                "growth": 2.4,
-                "potential": 77,
+                "growth": 1.2,
+                "potential": 75,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17186,12 +17189,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 111
+                "rank": 120
             },
             "automotive": {
                 "size": 1.7,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 2.4,
+                "potential": 77,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17206,8 +17209,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 2.6,
-                "growth": 4.2,
-                "potential": 82,
+                "growth": 3.0,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17222,8 +17225,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1.8,
-                "growth": 3.0,
-                "potential": 79,
+                "growth": 1.8,
+                "potential": 76,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17238,8 +17241,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 2.4,
+                "potential": 77,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17254,8 +17257,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1.1,
-                "growth": 4.8,
-                "potential": 82,
+                "growth": 3.6,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17266,12 +17269,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 80
+                "rank": 82
             },
             "education": {
                 "size": 1.1,
-                "growth": 4.2,
-                "potential": 81,
+                "growth": 3.0,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -17285,7 +17288,8 @@ const COUNTRIES = {
                 "rank": 92
             }
         },
-        "unemployment_pct": 6.9,
+        "gdp_growth_pct": -0.0,
+        "inflation_pct": 1.3,
         "trade_pct_gdp": 131.3,
         "renewable_energy_pct": 44
     },
@@ -17297,13 +17301,13 @@ const COUNTRIES = {
         "lat": 33.9905,
         "lng": -6.8704,
         "gdp": 160.6,
-        "pop": 0,
+        "pop": 38.1,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 8.0,
-                "growth": 5.9,
+                "growth": 6.2,
                 "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -17318,9 +17322,9 @@ const COUNTRIES = {
                 "rank": 58
             },
             "manufacturing": {
-                "size": 19.3,
-                "growth": 3.2,
-                "potential": 72,
+                "size": 24.5,
+                "growth": 3.5,
+                "potential": 73,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -17331,12 +17335,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 58
+                "rank": 56
             },
             "finance": {
                 "size": 11.2,
-                "growth": 4.4,
-                "potential": 74,
+                "growth": 4.7,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -17351,8 +17355,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 7.8,
-                "growth": 5.3,
-                "potential": 75,
+                "growth": 5.6,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -17367,7 +17371,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 6.4,
-                "growth": 4.1,
+                "growth": 4.4,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -17383,8 +17387,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 17.0,
-                "growth": 2.9,
-                "potential": 71,
+                "growth": 3.2,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -17395,12 +17399,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 40
+                "rank": 41
             },
             "automotive": {
                 "size": 4.8,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 4.4,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -17415,8 +17419,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 9.6,
-                "growth": 4.7,
-                "potential": 74,
+                "growth": 5.0,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -17431,8 +17435,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 6.4,
-                "growth": 3.5,
-                "potential": 71,
+                "growth": 3.8,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -17447,7 +17451,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 3.2,
-                "growth": 4.1,
+                "growth": 4.4,
                 "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -17463,7 +17467,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 4.5,
-                "growth": 5.3,
+                "growth": 5.6,
                 "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -17475,11 +17479,11 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 41
+                "rank": 44
             },
             "education": {
                 "size": 5.8,
-                "growth": 4.7,
+                "growth": 5.0,
                 "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -17494,7 +17498,8 @@ const COUNTRIES = {
                 "rank": 52
             }
         },
-        "unemployment_pct": 9.1,
+        "gdp_growth_pct": 3.8,
+        "inflation_pct": 1.0,
         "trade_pct_gdp": 92.2,
         "renewable_energy_pct": 10.9
     },
@@ -17506,14 +17511,14 @@ const COUNTRIES = {
         "lat": 47.0167,
         "lng": 28.8497,
         "gdp": 18.2,
-        "pop": 0,
+        "pop": 2.4,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.4,
-                "potential": 79,
+                "growth": 4.3,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17527,9 +17532,9 @@ const COUNTRIES = {
                 "rank": 134
             },
             "manufacturing": {
-                "size": 2.4,
-                "growth": 2.7,
-                "potential": 75,
+                "size": 1.5,
+                "growth": 1.6,
+                "potential": 72,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -17540,12 +17545,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 126
+                "rank": 134
             },
             "finance": {
                 "size": 1.5,
-                "growth": 3.9,
-                "potential": 76,
+                "growth": 2.8,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17560,8 +17565,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 3.7,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17576,8 +17581,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 2.5,
+                "potential": 73,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17592,8 +17597,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1.3,
-                "growth": 2.4,
-                "potential": 73,
+                "growth": 1.3,
+                "potential": 71,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17604,12 +17609,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 122
+                "rank": 128
             },
             "automotive": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 2.5,
+                "potential": 73,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17624,8 +17629,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.1,
-                "growth": 4.2,
-                "potential": 77,
+                "growth": 3.1,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17640,8 +17645,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.0,
-                "potential": 74,
+                "growth": 1.9,
+                "potential": 72,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17656,8 +17661,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 2.5,
+                "potential": 73,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17672,8 +17677,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 3.7,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17684,12 +17689,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 116
+                "rank": 118
             },
             "education": {
                 "size": 1,
-                "growth": 4.2,
-                "potential": 76,
+                "growth": 3.1,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17703,7 +17708,8 @@ const COUNTRIES = {
                 "rank": 119
             }
         },
-        "unemployment_pct": 1.4,
+        "gdp_growth_pct": 0.3,
+        "inflation_pct": 4.7,
         "trade_pct_gdp": 88.9,
         "renewable_energy_pct": 21.4
     },
@@ -17715,14 +17721,14 @@ const COUNTRIES = {
         "lat": -20.4667,
         "lng": 45.7167,
         "gdp": 17.6,
-        "pop": 0,
+        "pop": 32.0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 62,
+                "growth": 6.4,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17736,9 +17742,9 @@ const COUNTRIES = {
                 "rank": 135
             },
             "manufacturing": {
-                "size": 2.1,
-                "growth": 3.2,
-                "potential": 57,
+                "size": 2.3,
+                "growth": 3.7,
+                "potential": 58,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -17749,12 +17755,12 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 132
+                "rank": 120
             },
             "finance": {
                 "size": 1.2,
-                "growth": 4.4,
-                "potential": 59,
+                "growth": 4.9,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17769,8 +17775,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 5.8,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17785,8 +17791,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.6,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17801,8 +17807,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 3.9,
-                "growth": 2.9,
-                "potential": 58,
+                "growth": 3.4,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17813,12 +17819,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 88
+                "rank": 96
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.6,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17833,8 +17839,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.1,
-                "growth": 4.7,
-                "potential": 60,
+                "growth": 5.2,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17849,8 +17855,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 57,
+                "growth": 4.0,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17865,8 +17871,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.6,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17881,8 +17887,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 5.8,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17893,12 +17899,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 117
+                "rank": 119
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 5.2,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -17912,7 +17918,8 @@ const COUNTRIES = {
                 "rank": 120
             }
         },
-        "unemployment_pct": 3.1,
+        "gdp_growth_pct": 4.3,
+        "inflation_pct": 7.6,
         "trade_pct_gdp": 57.5,
         "renewable_energy_pct": 83.1
     },
@@ -17924,14 +17931,14 @@ const COUNTRIES = {
         "lat": 19.427,
         "lng": -99.1276,
         "gdp": 1830.5,
-        "pop": 0,
+        "pop": 130.9,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 91.5,
-                "growth": 5.4,
-                "potential": 85,
+                "growth": 4.7,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17945,8 +17952,8 @@ const COUNTRIES = {
                 "rank": 15
             },
             "manufacturing": {
-                "size": 219.7,
-                "growth": 2.7,
+                "size": 368.5,
+                "growth": 2.0,
                 "potential": 80,
                 "oppo": [
                     "글로벌 공급망 편입",
@@ -17958,12 +17965,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 14
+                "rank": 9
             },
             "finance": {
                 "size": 128.1,
-                "growth": 3.9,
-                "potential": 82,
+                "growth": 3.2,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17978,8 +17985,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 80.6,
-                "growth": 4.8,
-                "potential": 83,
+                "growth": 4.1,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -17994,8 +18001,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 73.2,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 2.9,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18010,8 +18017,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 70.8,
-                "growth": 2.4,
-                "potential": 78,
+                "growth": 1.7,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18026,8 +18033,8 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 54.9,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 2.9,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18042,8 +18049,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 109.8,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 3.5,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18058,8 +18065,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 73.2,
-                "growth": 3.0,
-                "potential": 80,
+                "growth": 2.3,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18074,8 +18081,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 36.6,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 2.9,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18090,8 +18097,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 11.4,
-                "growth": 4.8,
-                "potential": 81,
+                "growth": 4.1,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18102,12 +18109,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 25
+                "rank": 24
             },
             "education": {
                 "size": 44.6,
-                "growth": 4.2,
-                "potential": 81,
+                "growth": 3.5,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18121,7 +18128,8 @@ const COUNTRIES = {
                 "rank": 15
             }
         },
-        "unemployment_pct": 2.7,
+        "gdp_growth_pct": 1.4,
+        "inflation_pct": 4.7,
         "trade_pct_gdp": 75.4,
         "renewable_energy_pct": 13
     },
@@ -18133,7 +18141,7 @@ const COUNTRIES = {
         "lat": 42.0024,
         "lng": 21.4361,
         "gdp": 17.0,
-        "pop": 0,
+        "pop": 1.8,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
@@ -18154,9 +18162,9 @@ const COUNTRIES = {
                 "rank": 136
             },
             "manufacturing": {
-                "size": 2.2,
+                "size": 2.7,
                 "growth": 2.7,
-                "potential": 74,
+                "potential": 75,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -18167,7 +18175,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 131
+                "rank": 114
             },
             "finance": {
                 "size": 1.4,
@@ -18231,7 +18239,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 136
+                "rank": 141
             },
             "automotive": {
                 "size": 1,
@@ -18311,7 +18319,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 118
+                "rank": 120
             },
             "education": {
                 "size": 1,
@@ -18330,7 +18338,8 @@ const COUNTRIES = {
                 "rank": 121
             }
         },
-        "unemployment_pct": 12.3,
+        "gdp_growth_pct": 3.0,
+        "inflation_pct": 3.5,
         "trade_pct_gdp": 136.3,
         "renewable_energy_pct": 19.5
     },
@@ -18342,14 +18351,14 @@ const COUNTRIES = {
         "lat": 13.5667,
         "lng": -7.50034,
         "gdp": 26.8,
-        "pop": 0,
+        "pop": 24.5,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1.3,
-                "growth": 5.9,
-                "potential": 62,
+                "growth": 6.7,
+                "potential": 64,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18363,9 +18372,9 @@ const COUNTRIES = {
                 "rank": 114
             },
             "manufacturing": {
-                "size": 3.2,
-                "growth": 3.2,
-                "potential": 58,
+                "size": 2.0,
+                "growth": 4.0,
+                "potential": 59,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -18376,12 +18385,12 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 115
+                "rank": 128
             },
             "finance": {
                 "size": 1.9,
-                "growth": 4.4,
-                "potential": 60,
+                "growth": 5.2,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18396,8 +18405,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 6.1,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18412,8 +18421,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1.1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.9,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18428,8 +18437,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 8.7,
-                "growth": 2.9,
-                "potential": 59,
+                "growth": 3.7,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18440,12 +18449,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 57
+                "rank": 60
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.9,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18460,8 +18469,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.6,
-                "growth": 4.7,
-                "potential": 60,
+                "growth": 5.5,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18476,8 +18485,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1.1,
-                "growth": 3.5,
-                "potential": 57,
+                "growth": 4.3,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18492,8 +18501,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.9,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18508,8 +18517,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 6.1,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18520,12 +18529,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 119
+                "rank": 121
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 5.5,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -18539,7 +18548,8 @@ const COUNTRIES = {
                 "rank": 122
             }
         },
-        "unemployment_pct": 2.9,
+        "gdp_growth_pct": 5.0,
+        "inflation_pct": 3.2,
         "trade_pct_gdp": 49.8,
         "renewable_energy_pct": 71.1
     },
@@ -18551,14 +18561,14 @@ const COUNTRIES = {
         "lat": 21.914,
         "lng": 95.9562,
         "gdp": 74.1,
-        "pop": 0,
+        "pop": 54.5,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 5.6,
-                "growth": 5.9,
-                "potential": 76,
+                "growth": 4.7,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18572,9 +18582,9 @@ const COUNTRIES = {
                 "rank": 69
             },
             "manufacturing": {
-                "size": 14.2,
-                "growth": 3.2,
-                "potential": 72,
+                "size": 29.8,
+                "growth": 2.0,
+                "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -18585,12 +18595,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 68
+                "rank": 51
             },
             "finance": {
                 "size": 5.2,
-                "growth": 4.4,
-                "potential": 73,
+                "growth": 3.2,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18605,8 +18615,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 2.6,
-                "growth": 5.3,
-                "potential": 74,
+                "growth": 4.1,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18621,8 +18631,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 3.0,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 2.9,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18637,8 +18647,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 18.7,
-                "growth": 2.9,
-                "potential": 72,
+                "growth": 1.7,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18649,12 +18659,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 36
+                "rank": 38
             },
             "automotive": {
                 "size": 2.9,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 2.9,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18669,8 +18679,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 4.4,
-                "growth": 4.7,
-                "potential": 73,
+                "growth": 3.5,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18685,8 +18695,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 3.0,
-                "growth": 3.5,
-                "potential": 70,
+                "growth": 2.3,
+                "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18701,8 +18711,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.8,
-                "growth": 4.1,
-                "potential": 71,
+                "growth": 2.9,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18717,8 +18727,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 2.5,
-                "growth": 5.3,
-                "potential": 74,
+                "growth": 4.1,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18729,12 +18739,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 50
+                "rank": 52
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 3.5,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -18748,7 +18758,8 @@ const COUNTRIES = {
                 "rank": 123
             }
         },
-        "unemployment_pct": 2.9,
+        "gdp_growth_pct": -1.0,
+        "inflation_pct": 8.8,
         "renewable_energy_pct": 62.9
     },
     "499": {
@@ -18759,13 +18770,13 @@ const COUNTRIES = {
         "lat": 42.4602,
         "lng": 19.2595,
         "gdp": 8.3,
-        "pop": 0,
+        "pop": 0.6,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.4,
+                "growth": 5.5,
                 "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18780,8 +18791,8 @@ const COUNTRIES = {
                 "rank": 137
             },
             "manufacturing": {
-                "size": 1.1,
-                "growth": 2.7,
+                "size": 1,
+                "growth": 2.8,
                 "potential": 74,
                 "oppo": [
                     "글로벌 공급망 편입",
@@ -18793,11 +18804,11 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 147
+                "rank": 146
             },
             "finance": {
                 "size": 1,
-                "growth": 3.9,
+                "growth": 4.0,
                 "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18813,7 +18824,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 4.8,
+                "growth": 4.9,
                 "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18829,7 +18840,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18845,7 +18856,7 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.4,
+                "growth": 2.5,
                 "potential": 73,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18857,11 +18868,11 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 137
+                "rank": 142
             },
             "automotive": {
                 "size": 1,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18877,8 +18888,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.2,
-                "potential": 76,
+                "growth": 4.3,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18893,7 +18904,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.0,
+                "growth": 3.1,
                 "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18909,7 +18920,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18925,7 +18936,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
+                "growth": 4.9,
                 "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -18937,12 +18948,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 120
+                "rank": 122
             },
             "education": {
                 "size": 1,
-                "growth": 4.2,
-                "potential": 76,
+                "growth": 4.3,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18956,7 +18967,8 @@ const COUNTRIES = {
                 "rank": 124
             }
         },
-        "unemployment_pct": 13.2,
+        "gdp_growth_pct": 3.2,
+        "inflation_pct": 3.3,
         "trade_pct_gdp": 109.9,
         "renewable_energy_pct": 39.6
     },
@@ -18968,14 +18980,14 @@ const COUNTRIES = {
         "lat": 47.9129,
         "lng": 106.937,
         "gdp": 23.8,
-        "pop": 0,
+        "pop": 3.5,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 1.8,
-                "growth": 5.4,
-                "potential": 80,
+                "growth": 6.2,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -18989,9 +19001,9 @@ const COUNTRIES = {
                 "rank": 105
             },
             "manufacturing": {
-                "size": 4.6,
-                "growth": 2.7,
-                "potential": 75,
+                "size": 2.1,
+                "growth": 3.5,
+                "potential": 76,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -19002,12 +19014,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 104
+                "rank": 125
             },
             "finance": {
                 "size": 1.7,
-                "growth": 3.9,
-                "potential": 76,
+                "growth": 4.7,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19022,8 +19034,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.2,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 5.6,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19038,8 +19050,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 4.4,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19054,8 +19066,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1.7,
-                "growth": 2.4,
-                "potential": 73,
+                "growth": 3.2,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19066,12 +19078,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 112
+                "rank": 121
             },
             "automotive": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 4.4,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19086,8 +19098,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.4,
-                "growth": 4.2,
-                "potential": 77,
+                "growth": 5.0,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19102,8 +19114,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.0,
-                "potential": 74,
+                "growth": 3.8,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19118,8 +19130,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 4.4,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19134,8 +19146,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 5.6,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19146,12 +19158,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 121
+                "rank": 123
             },
             "education": {
                 "size": 1,
-                "growth": 4.2,
-                "potential": 76,
+                "growth": 5.0,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19165,7 +19177,8 @@ const COUNTRIES = {
                 "rank": 125
             }
         },
-        "unemployment_pct": 5.2,
+        "gdp_growth_pct": 5.1,
+        "inflation_pct": 6.2,
         "trade_pct_gdp": 138.4,
         "renewable_energy_pct": 3
     },
@@ -19177,14 +19190,14 @@ const COUNTRIES = {
         "lat": -25.9664,
         "lng": 32.5713,
         "gdp": 22.8,
-        "pop": 0,
+        "pop": 34.6,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1.1,
-                "growth": 5.9,
-                "potential": 62,
+                "growth": 5.6,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19198,9 +19211,9 @@ const COUNTRIES = {
                 "rank": 126
             },
             "manufacturing": {
-                "size": 2.7,
-                "growth": 3.2,
-                "potential": 58,
+                "size": 1.5,
+                "growth": 2.9,
+                "potential": 56,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -19211,11 +19224,11 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 121
+                "rank": 135
             },
             "finance": {
                 "size": 1.6,
-                "growth": 4.4,
+                "growth": 4.1,
                 "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -19231,7 +19244,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.6,
-                "growth": 5.3,
+                "growth": 5.0,
                 "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -19247,7 +19260,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
+                "growth": 3.8,
                 "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -19263,8 +19276,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 5.7,
-                "growth": 2.9,
-                "potential": 58,
+                "growth": 2.6,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19275,11 +19288,11 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 71
+                "rank": 77
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
+                "growth": 3.8,
                 "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -19295,8 +19308,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.4,
-                "growth": 4.7,
-                "potential": 60,
+                "growth": 4.4,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19311,8 +19324,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 57,
+                "growth": 3.2,
+                "potential": 56,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19327,7 +19340,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
+                "growth": 3.8,
                 "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -19343,8 +19356,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 5.0,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19355,11 +19368,11 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 122
+                "rank": 124
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
+                "growth": 4.4,
                 "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -19374,7 +19387,8 @@ const COUNTRIES = {
                 "rank": 126
             }
         },
-        "unemployment_pct": 6.7,
+        "gdp_growth_pct": 2.1,
+        "inflation_pct": 4.1,
         "trade_pct_gdp": 95.6,
         "renewable_energy_pct": 76.9
     },
@@ -19386,14 +19400,14 @@ const COUNTRIES = {
         "lat": 18.2367,
         "lng": -15.9824,
         "gdp": 10.9,
-        "pop": 0,
+        "pop": 5.2,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 74,
+                "growth": 7.2,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19407,9 +19421,9 @@ const COUNTRIES = {
                 "rank": 138
             },
             "manufacturing": {
-                "size": 1.3,
-                "growth": 3.2,
-                "potential": 69,
+                "size": 1,
+                "growth": 4.5,
+                "potential": 71,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -19420,12 +19434,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 143
+                "rank": 147
             },
             "finance": {
                 "size": 1,
-                "growth": 4.4,
-                "potential": 71,
+                "growth": 5.7,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19440,8 +19454,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 6.6,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19456,8 +19470,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 5.4,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19472,8 +19486,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 2.1,
-                "growth": 2.9,
-                "potential": 69,
+                "growth": 4.2,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19484,12 +19498,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 106
+                "rank": 114
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 5.4,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19504,8 +19518,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 6.0,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19520,8 +19534,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 4.8,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19536,8 +19550,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 5.4,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19552,8 +19566,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 6.6,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19564,12 +19578,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 123
+                "rank": 125
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 6.0,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -19583,7 +19597,8 @@ const COUNTRIES = {
                 "rank": 127
             }
         },
-        "unemployment_pct": 10.3,
+        "gdp_growth_pct": 6.3,
+        "inflation_pct": 2.5,
         "trade_pct_gdp": 93.6,
         "renewable_energy_pct": 19.6
     },
@@ -19595,14 +19610,14 @@ const COUNTRIES = {
         "lat": -20.1605,
         "lng": 57.4977,
         "gdp": 14.9,
-        "pop": 0,
+        "pop": 1.2,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.4,
-                "potential": 79,
+                "growth": 6.2,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19616,9 +19631,9 @@ const COUNTRIES = {
                 "rank": 139
             },
             "manufacturing": {
-                "size": 1.8,
-                "growth": 2.7,
-                "potential": 74,
+                "size": 1.7,
+                "growth": 3.5,
+                "potential": 76,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -19629,12 +19644,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 137
+                "rank": 132
             },
             "finance": {
                 "size": 1,
-                "growth": 3.9,
-                "potential": 76,
+                "growth": 4.7,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19649,8 +19664,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 5.6,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19665,8 +19680,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 4.4,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19681,8 +19696,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.4,
-                "potential": 73,
+                "growth": 3.2,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19693,12 +19708,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 138
+                "rank": 143
             },
             "automotive": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 4.4,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19713,8 +19728,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.2,
-                "potential": 76,
+                "growth": 5.0,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19729,8 +19744,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.0,
-                "potential": 74,
+                "growth": 3.8,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19745,8 +19760,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 4.4,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19761,8 +19776,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 5.6,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19773,12 +19788,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 124
+                "rank": 126
             },
             "education": {
                 "size": 1,
-                "growth": 4.2,
-                "potential": 76,
+                "growth": 5.0,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -19792,7 +19807,8 @@ const COUNTRIES = {
                 "rank": 128
             }
         },
-        "unemployment_pct": 5.5,
+        "gdp_growth_pct": 4.9,
+        "inflation_pct": 3.6,
         "trade_pct_gdp": 145.4,
         "renewable_energy_pct": 8.6
     },
@@ -19804,14 +19820,14 @@ const COUNTRIES = {
         "lat": -13.9899,
         "lng": 33.7703,
         "gdp": 11.3,
-        "pop": 0,
+        "pop": 21.7,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 62,
+                "growth": 5.4,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19825,9 +19841,9 @@ const COUNTRIES = {
                 "rank": 140
             },
             "manufacturing": {
-                "size": 1.4,
-                "growth": 3.2,
-                "potential": 57,
+                "size": 1.2,
+                "growth": 2.7,
+                "potential": 56,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -19838,12 +19854,12 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 141
+                "rank": 140
             },
             "finance": {
                 "size": 1,
-                "growth": 4.4,
-                "potential": 59,
+                "growth": 3.9,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19858,8 +19874,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 4.8,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19874,8 +19890,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 3.6,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19890,8 +19906,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 3.6,
-                "growth": 2.9,
-                "potential": 57,
+                "growth": 2.4,
+                "potential": 56,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19902,12 +19918,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 89
+                "rank": 97
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 3.6,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19922,8 +19938,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 4.2,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19938,8 +19954,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 57,
+                "growth": 3.0,
+                "potential": 56,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19954,8 +19970,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 3.6,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19970,8 +19986,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 4.8,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -19982,12 +19998,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 125
+                "rank": 127
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 4.2,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20001,7 +20017,8 @@ const COUNTRIES = {
                 "rank": 129
             }
         },
-        "unemployment_pct": 5.1,
+        "gdp_growth_pct": 1.7,
+        "inflation_pct": 32.2,
         "trade_pct_gdp": 41.9,
         "renewable_energy_pct": 62.9
     },
@@ -20013,14 +20030,14 @@ const COUNTRIES = {
         "lat": 3.12433,
         "lng": 101.684,
         "gdp": 422.2,
-        "pop": 0,
+        "pop": 35.6,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 31.7,
-                "growth": 5.4,
-                "potential": 83,
+                "growth": 6.2,
+                "potential": 85,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20031,12 +20048,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 28
+                "rank": 30
             },
             "manufacturing": {
-                "size": 81.1,
-                "growth": 2.7,
-                "potential": 79,
+                "size": 152.0,
+                "growth": 3.5,
+                "potential": 82,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -20047,12 +20064,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 33
+                "rank": 23
             },
             "finance": {
                 "size": 29.6,
-                "growth": 3.9,
-                "potential": 80,
+                "growth": 4.7,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20067,8 +20084,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 13.4,
-                "growth": 4.8,
-                "potential": 81,
+                "growth": 5.6,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20083,8 +20100,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 16.9,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 4.4,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20099,8 +20116,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 34.3,
-                "growth": 2.4,
-                "potential": 77,
+                "growth": 3.2,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20111,12 +20128,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 27
+                "rank": 28
             },
             "automotive": {
                 "size": 16.5,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 4.4,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20131,8 +20148,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 25.3,
-                "growth": 4.2,
-                "potential": 81,
+                "growth": 5.0,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20147,8 +20164,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 16.9,
-                "growth": 3.0,
-                "potential": 78,
+                "growth": 3.8,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20163,8 +20180,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 10.1,
-                "growth": 3.6,
-                "potential": 78,
+                "growth": 4.4,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20179,8 +20196,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 3.4,
-                "growth": 4.8,
-                "potential": 79,
+                "growth": 5.6,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20191,12 +20208,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 42
+                "rank": 46
             },
             "education": {
                 "size": 8.9,
-                "growth": 4.2,
-                "potential": 79,
+                "growth": 5.0,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -20210,7 +20227,8 @@ const COUNTRIES = {
                 "rank": 38
             }
         },
-        "unemployment_pct": 3.8,
+        "gdp_growth_pct": 5.1,
+        "inflation_pct": 1.8,
         "trade_pct_gdp": 137.4,
         "renewable_energy_pct": 7.5
     },
@@ -20222,13 +20240,13 @@ const COUNTRIES = {
         "lat": -22.5648,
         "lng": 17.0931,
         "gdp": 13.6,
-        "pop": 0,
+        "pop": 3.0,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
+                "growth": 6.2,
                 "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20243,8 +20261,8 @@ const COUNTRIES = {
                 "rank": 141
             },
             "manufacturing": {
-                "size": 1.6,
-                "growth": 3.2,
+                "size": 1.4,
+                "growth": 3.5,
                 "potential": 69,
                 "oppo": [
                     "노동집약적 제조 기회",
@@ -20256,11 +20274,11 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 139
+                "rank": 136
             },
             "finance": {
                 "size": 1,
-                "growth": 4.4,
+                "growth": 4.7,
                 "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20276,7 +20294,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.6,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20292,8 +20310,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.4,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20308,7 +20326,7 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.9,
+                "growth": 3.2,
                 "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20320,12 +20338,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 139
+                "rank": 144
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.4,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20340,8 +20358,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 5.0,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20356,8 +20374,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 3.8,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20372,8 +20390,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.4,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20388,7 +20406,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.6,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20400,12 +20418,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 126
+                "rank": 128
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 5.0,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20419,7 +20437,8 @@ const COUNTRIES = {
                 "rank": 130
             }
         },
-        "unemployment_pct": 19.2,
+        "gdp_growth_pct": 3.8,
+        "inflation_pct": 4.2,
         "trade_pct_gdp": 108.0,
         "renewable_energy_pct": 30
     },
@@ -20431,14 +20450,14 @@ const COUNTRIES = {
         "lat": 13.514,
         "lng": 2.1073,
         "gdp": 19.7,
-        "pop": 0,
+        "pop": 27.0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 62,
+                "growth": 8.0,
+                "potential": 66,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20452,9 +20471,9 @@ const COUNTRIES = {
                 "rank": 142
             },
             "manufacturing": {
-                "size": 2.4,
-                "growth": 3.2,
-                "potential": 58,
+                "size": 1.4,
+                "growth": 5.3,
+                "potential": 61,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -20465,12 +20484,12 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 127
+                "rank": 137
             },
             "finance": {
                 "size": 1.4,
-                "growth": 4.4,
-                "potential": 59,
+                "growth": 6.5,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20485,8 +20504,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 7.4,
+                "potential": 65,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20501,8 +20520,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 6.2,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20517,8 +20536,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 9.4,
-                "growth": 2.9,
-                "potential": 59,
+                "growth": 5.0,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20529,12 +20548,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 56
+                "rank": 59
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 6.2,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20549,8 +20568,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.2,
-                "growth": 4.7,
-                "potential": 60,
+                "growth": 6.8,
+                "potential": 64,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20565,8 +20584,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 57,
+                "growth": 5.6,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20581,8 +20600,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 6.2,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20597,8 +20616,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 7.4,
+                "potential": 65,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20609,12 +20628,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 127
+                "rank": 129
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 6.8,
+                "potential": 64,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -20628,7 +20647,8 @@ const COUNTRIES = {
                 "rank": 131
             }
         },
-        "unemployment_pct": 0.4,
+        "gdp_growth_pct": 8.3,
+        "inflation_pct": 9.1,
         "trade_pct_gdp": 24.4,
         "renewable_energy_pct": 79.6
     },
@@ -20640,14 +20660,14 @@ const COUNTRIES = {
         "lat": 9.05804,
         "lng": 7.48906,
         "gdp": 252.3,
-        "pop": 0,
+        "pop": 232.7,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 12.6,
-                "growth": 5.9,
-                "potential": 77,
+                "growth": 6.3,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20661,8 +20681,8 @@ const COUNTRIES = {
                 "rank": 53
             },
             "manufacturing": {
-                "size": 30.3,
-                "growth": 3.2,
+                "size": 21.8,
+                "growth": 3.6,
                 "potential": 73,
                 "oppo": [
                     "노동집약적 제조 기회",
@@ -20674,11 +20694,11 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 51
+                "rank": 57
             },
             "finance": {
                 "size": 17.7,
-                "growth": 4.4,
+                "growth": 4.8,
                 "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20694,8 +20714,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 8.5,
-                "growth": 5.3,
-                "potential": 75,
+                "growth": 5.7,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20710,8 +20730,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 10.1,
-                "growth": 4.1,
-                "potential": 73,
+                "growth": 4.5,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20726,8 +20746,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 65.3,
-                "growth": 2.9,
-                "potential": 73,
+                "growth": 3.3,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20742,8 +20762,8 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 7.6,
-                "growth": 4.1,
-                "potential": 73,
+                "growth": 4.5,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20758,8 +20778,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 15.1,
-                "growth": 4.7,
-                "potential": 75,
+                "growth": 5.1,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20774,8 +20794,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 10.1,
-                "growth": 3.5,
-                "potential": 72,
+                "growth": 3.9,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20790,8 +20810,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 5.0,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 4.5,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20806,8 +20826,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1.3,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 5.7,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20818,12 +20838,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 74
+                "rank": 78
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 5.1,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20837,7 +20857,8 @@ const COUNTRIES = {
                 "rank": 132
             }
         },
-        "unemployment_pct": 3.0,
+        "gdp_growth_pct": 4.1,
+        "inflation_pct": 33.2,
         "renewable_energy_pct": 80.3
     },
     "558": {
@@ -20848,13 +20869,13 @@ const COUNTRIES = {
         "lat": 12.1475,
         "lng": -86.2734,
         "gdp": 19.7,
-        "pop": 0,
+        "pop": 6.9,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
+                "growth": 6.1,
                 "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20869,8 +20890,8 @@ const COUNTRIES = {
                 "rank": 143
             },
             "manufacturing": {
-                "size": 2.4,
-                "growth": 3.2,
+                "size": 2.6,
+                "growth": 3.4,
                 "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
@@ -20882,12 +20903,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 128
+                "rank": 116
             },
             "finance": {
                 "size": 1.4,
-                "growth": 4.4,
-                "potential": 71,
+                "growth": 4.6,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20902,7 +20923,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.3,
-                "growth": 5.3,
+                "growth": 5.5,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20918,8 +20939,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.3,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20934,8 +20955,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 2.9,
-                "growth": 2.9,
-                "potential": 69,
+                "growth": 3.1,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20946,12 +20967,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 95
+                "rank": 104
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.3,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -20966,7 +20987,7 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.2,
-                "growth": 4.7,
+                "growth": 4.9,
                 "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20982,7 +21003,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
+                "growth": 3.7,
                 "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -20998,8 +21019,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.3,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21014,7 +21035,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.5,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -21026,12 +21047,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 128
+                "rank": 130
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 4.9,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21045,7 +21066,8 @@ const COUNTRIES = {
                 "rank": 133
             }
         },
-        "unemployment_pct": 5.0,
+        "gdp_growth_pct": 3.6,
+        "inflation_pct": 4.6,
         "trade_pct_gdp": 99.1,
         "renewable_energy_pct": 50.4
     },
@@ -21057,14 +21079,14 @@ const COUNTRIES = {
         "lat": 52.3738,
         "lng": 4.89095,
         "gdp": 1213.9,
-        "pop": 0,
+        "pop": 18.0,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 60.7,
-                "growth": 5.4,
-                "potential": 88,
+                "growth": 4.6,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21078,9 +21100,9 @@ const COUNTRIES = {
                 "rank": 19
             },
             "manufacturing": {
-                "size": 160.2,
-                "growth": 2.7,
-                "potential": 84,
+                "size": 134.6,
+                "growth": 1.9,
+                "potential": 82,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -21091,12 +21113,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 18
+                "rank": 26
             },
             "finance": {
                 "size": 102.0,
-                "growth": 3.9,
-                "potential": 86,
+                "growth": 3.1,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21111,8 +21133,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 97.2,
-                "growth": 4.8,
-                "potential": 88,
+                "growth": 4.0,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21127,8 +21149,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 53.4,
-                "growth": 3.6,
-                "potential": 84,
+                "growth": 2.8,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21143,8 +21165,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 21.0,
-                "growth": 2.4,
-                "potential": 81,
+                "growth": 1.6,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21155,12 +21177,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 35
+                "rank": 37
             },
             "automotive": {
                 "size": 47.3,
-                "growth": 3.6,
-                "potential": 84,
+                "growth": 2.8,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21175,8 +21197,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 72.8,
-                "growth": 4.2,
-                "potential": 86,
+                "growth": 3.4,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21191,8 +21213,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 48.6,
-                "growth": 3.0,
-                "potential": 83,
+                "growth": 2.2,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21207,8 +21229,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 24.3,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 2.8,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21223,8 +21245,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 14.2,
-                "growth": 4.8,
-                "potential": 85,
+                "growth": 4.0,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21235,12 +21257,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 19
+                "rank": 18
             },
             "education": {
                 "size": 37.7,
-                "growth": 4.2,
-                "potential": 85,
+                "growth": 3.4,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21254,7 +21276,8 @@ const COUNTRIES = {
                 "rank": 16
             }
         },
-        "unemployment_pct": 3.7,
+        "gdp_growth_pct": 1.1,
+        "inflation_pct": 3.3,
         "trade_pct_gdp": 154.0,
         "renewable_energy_pct": 12.2
     },
@@ -21266,14 +21289,14 @@ const COUNTRIES = {
         "lat": 59.9138,
         "lng": 10.7387,
         "gdp": 500.9,
-        "pop": 0,
+        "pop": 5.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 25.0,
-                "growth": 5.4,
-                "potential": 87,
+                "growth": 4.8,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21287,9 +21310,9 @@ const COUNTRIES = {
                 "rank": 35
             },
             "manufacturing": {
-                "size": 66.1,
-                "growth": 2.7,
-                "potential": 83,
+                "size": 31.8,
+                "growth": 2.1,
+                "potential": 81,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -21300,12 +21323,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 37
+                "rank": 49
             },
             "finance": {
                 "size": 42.1,
-                "growth": 3.9,
-                "potential": 85,
+                "growth": 3.3,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21320,8 +21343,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 37.8,
-                "growth": 4.8,
-                "potential": 86,
+                "growth": 4.2,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21336,8 +21359,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 22.0,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 3.0,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21352,8 +21375,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 8.5,
-                "growth": 2.4,
-                "potential": 80,
+                "growth": 1.8,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21364,12 +21387,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 58
+                "rank": 62
             },
             "automotive": {
                 "size": 19.5,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 3.0,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21384,8 +21407,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 30.1,
-                "growth": 4.2,
-                "potential": 85,
+                "growth": 3.6,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21400,8 +21423,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 20.0,
-                "growth": 3.0,
-                "potential": 82,
+                "growth": 2.4,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21416,8 +21439,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 10.0,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 3.0,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21432,8 +21455,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 3.3,
-                "growth": 4.8,
-                "potential": 83,
+                "growth": 4.2,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21444,12 +21467,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 43
+                "rank": 47
             },
             "education": {
                 "size": 16.3,
-                "growth": 4.2,
-                "potential": 84,
+                "growth": 3.6,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21463,7 +21486,8 @@ const COUNTRIES = {
                 "rank": 26
             }
         },
-        "unemployment_pct": 4,
+        "gdp_growth_pct": 1.4,
+        "inflation_pct": 3.1,
         "trade_pct_gdp": 79.6,
         "renewable_energy_pct": 61.4
     },
@@ -21475,14 +21499,14 @@ const COUNTRIES = {
         "lat": 27.6939,
         "lng": 85.3157,
         "gdp": 43.3,
-        "pop": 0,
+        "pop": 29.7,
         "region": "South Asia",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 2.8,
-                "growth": 5.9,
-                "potential": 75,
+                "growth": 6.2,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21496,9 +21520,9 @@ const COUNTRIES = {
                 "rank": 89
             },
             "manufacturing": {
-                "size": 5.2,
-                "growth": 3.2,
-                "potential": 71,
+                "size": 2.2,
+                "growth": 3.5,
+                "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -21509,12 +21533,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 100
+                "rank": 124
             },
             "finance": {
                 "size": 3.0,
-                "growth": 4.4,
-                "potential": 72,
+                "growth": 4.7,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21529,7 +21553,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 2.1,
-                "growth": 5.3,
+                "growth": 5.6,
                 "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -21545,7 +21569,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1.7,
-                "growth": 4.1,
+                "growth": 4.4,
                 "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -21561,8 +21585,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 16.9,
-                "growth": 2.9,
-                "potential": 71,
+                "growth": 3.2,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21573,11 +21597,11 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 41
+                "rank": 42
             },
             "automotive": {
                 "size": 1.3,
-                "growth": 4.1,
+                "growth": 4.4,
                 "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -21593,8 +21617,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 3.4,
-                "growth": 4.7,
-                "potential": 73,
+                "growth": 5.0,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21609,7 +21633,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1.7,
-                "growth": 3.5,
+                "growth": 3.8,
                 "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -21625,8 +21649,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.4,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -21641,7 +21665,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.6,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -21653,11 +21677,11 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 129
+                "rank": 131
             },
             "education": {
                 "size": 1.1,
-                "growth": 4.7,
+                "growth": 5.0,
                 "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -21672,7 +21696,8 @@ const COUNTRIES = {
                 "rank": 93
             }
         },
-        "unemployment_pct": 10.5,
+        "gdp_growth_pct": 3.7,
+        "inflation_pct": 4.7,
         "trade_pct_gdp": 40.2,
         "renewable_energy_pct": 73.7
     },
@@ -21684,14 +21709,14 @@ const COUNTRIES = {
         "lat": -41.2865,
         "lng": 174.776,
         "gdp": 261.5,
-        "pop": 0,
+        "pop": 5.3,
         "region": "East Asia & Pacific",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 19.6,
-                "growth": 5.4,
-                "potential": 87,
+                "growth": 4.2,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21705,9 +21730,9 @@ const COUNTRIES = {
                 "rank": 40
             },
             "manufacturing": {
-                "size": 50.2,
-                "growth": 2.7,
-                "potential": 83,
+                "size": 34.6,
+                "growth": 1.5,
+                "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -21718,12 +21743,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 41
+                "rank": 48
             },
             "finance": {
                 "size": 18.3,
-                "growth": 3.9,
-                "potential": 84,
+                "growth": 2.7,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21738,8 +21763,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 21.0,
-                "growth": 4.8,
-                "potential": 86,
+                "growth": 3.6,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21754,22 +21779,6 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 10.5,
-                "growth": 3.6,
-                "potential": 82,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 52
-            },
-            "agriculture": {
-                "size": 10.5,
                 "growth": 2.4,
                 "potential": 80,
                 "oppo": [
@@ -21784,10 +21793,26 @@ const COUNTRIES = {
                 ],
                 "rank": 52
             },
+            "agriculture": {
+                "size": 10.5,
+                "growth": 1.2,
+                "potential": 77,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 54
+            },
             "automotive": {
                 "size": 10.2,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 2.4,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21802,8 +21827,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 15.7,
-                "growth": 4.2,
-                "potential": 84,
+                "growth": 3.0,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21818,8 +21843,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 10.5,
-                "growth": 3.0,
-                "potential": 81,
+                "growth": 1.8,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21834,8 +21859,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 6.3,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 2.4,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21850,8 +21875,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 11.0,
-                "growth": 4.8,
-                "potential": 85,
+                "growth": 3.6,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21866,8 +21891,8 @@ const COUNTRIES = {
             },
             "education": {
                 "size": 8.2,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 3.0,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21881,7 +21906,8 @@ const COUNTRIES = {
                 "rank": 42
             }
         },
-        "unemployment_pct": 4.7,
+        "gdp_growth_pct": -0.9,
+        "inflation_pct": 2.9,
         "trade_pct_gdp": 50.7,
         "renewable_energy_pct": 28.9
     },
@@ -21893,14 +21919,14 @@ const COUNTRIES = {
         "lat": 23.6105,
         "lng": 58.5874,
         "gdp": 107.1,
-        "pop": 0,
+        "pop": 5.3,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 5.4,
-                "growth": 5.4,
-                "potential": 85,
+                "growth": 4.9,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21914,9 +21940,9 @@ const COUNTRIES = {
                 "rank": 71
             },
             "manufacturing": {
-                "size": 12.9,
-                "growth": 2.7,
-                "potential": 81,
+                "size": 10.7,
+                "growth": 2.2,
+                "potential": 79,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -21927,12 +21953,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 69
+                "rank": 77
             },
             "finance": {
                 "size": 7.5,
-                "growth": 3.9,
-                "potential": 82,
+                "growth": 3.4,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21947,8 +21973,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 3.0,
-                "growth": 4.8,
-                "potential": 83,
+                "growth": 4.3,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21963,8 +21989,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 4.3,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 3.1,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21979,8 +22005,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 2.8,
-                "growth": 2.4,
-                "potential": 78,
+                "growth": 1.9,
+                "potential": 77,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -21991,12 +22017,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 97
+                "rank": 107
             },
             "automotive": {
                 "size": 3.2,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 3.1,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22011,8 +22037,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 6.4,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 3.7,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22027,8 +22053,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 4.3,
-                "growth": 3.0,
-                "potential": 80,
+                "growth": 2.5,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22043,8 +22069,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 2.1,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 3.1,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22059,8 +22085,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 82,
+                "growth": 4.3,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22071,12 +22097,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 130
+                "rank": 132
             },
             "education": {
                 "size": 2.8,
-                "growth": 4.2,
-                "potential": 82,
+                "growth": 3.7,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22090,7 +22116,8 @@ const COUNTRIES = {
                 "rank": 65
             }
         },
-        "unemployment_pct": 3.2,
+        "gdp_growth_pct": 1.6,
+        "inflation_pct": 0.6,
         "trade_pct_gdp": 114.9,
         "renewable_energy_pct": 0.1
     },
@@ -22102,7 +22129,7 @@ const COUNTRIES = {
         "lat": 30.5167,
         "lng": 72.8,
         "gdp": 371.7,
-        "pop": 0,
+        "pop": 251.3,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
@@ -22123,7 +22150,7 @@ const COUNTRIES = {
                 "rank": 43
             },
             "manufacturing": {
-                "size": 44.6,
+                "size": 48.9,
                 "growth": 3.2,
                 "potential": 73,
                 "oppo": [
@@ -22136,7 +22163,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 44
+                "rank": 41
             },
             "finance": {
                 "size": 26.0,
@@ -22200,7 +22227,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 8
+                "rank": 7
             },
             "automotive": {
                 "size": 11.2,
@@ -22280,7 +22307,7 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 61
+                "rank": 65
             },
             "education": {
                 "size": 4.3,
@@ -22299,7 +22326,8 @@ const COUNTRIES = {
                 "rank": 57
             }
         },
-        "unemployment_pct": 5.5,
+        "gdp_growth_pct": 3.1,
+        "inflation_pct": 12.6,
         "trade_pct_gdp": 27.6,
         "renewable_energy_pct": 41.6
     },
@@ -22311,13 +22339,13 @@ const COUNTRIES = {
         "lat": 8.99427,
         "lng": -79.5188,
         "gdp": 86.5,
-        "pop": 0,
+        "pop": 4.5,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 4.3,
-                "growth": 5.4,
+                "growth": 5.3,
                 "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22332,9 +22360,9 @@ const COUNTRIES = {
                 "rank": 79
             },
             "manufacturing": {
-                "size": 10.4,
-                "growth": 2.7,
-                "potential": 80,
+                "size": 4.3,
+                "growth": 2.6,
+                "potential": 79,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -22345,11 +22373,11 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 79
+                "rank": 103
             },
             "finance": {
                 "size": 6.1,
-                "growth": 3.9,
+                "growth": 3.8,
                 "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22365,7 +22393,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 5.8,
-                "growth": 4.8,
+                "growth": 4.7,
                 "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22381,7 +22409,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 3.5,
-                "growth": 3.6,
+                "growth": 3.5,
                 "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22397,7 +22425,7 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 2.3,
-                "growth": 2.4,
+                "growth": 2.3,
                 "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22409,11 +22437,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 103
+                "rank": 110
             },
             "automotive": {
                 "size": 2.6,
-                "growth": 3.6,
+                "growth": 3.5,
                 "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22429,8 +22457,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 5.2,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 4.1,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22445,8 +22473,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 3.5,
-                "growth": 3.0,
-                "potential": 80,
+                "growth": 2.9,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -22461,7 +22489,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.7,
-                "growth": 3.6,
+                "growth": 3.5,
                 "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22477,7 +22505,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1.8,
-                "growth": 4.8,
+                "growth": 4.7,
                 "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22489,11 +22517,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 63
+                "rank": 68
             },
             "education": {
                 "size": 1.3,
-                "growth": 4.2,
+                "growth": 4.1,
                 "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -22508,7 +22536,8 @@ const COUNTRIES = {
                 "rank": 88
             }
         },
-        "unemployment_pct": 8.5,
+        "gdp_growth_pct": 2.7,
+        "inflation_pct": 0.7,
         "trade_pct_gdp": 83.7,
         "renewable_energy_pct": 28
     },
@@ -22520,14 +22549,14 @@ const COUNTRIES = {
         "lat": -12.0931,
         "lng": -77.0465,
         "gdp": 291.8,
-        "pop": 0,
+        "pop": 34.2,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 14.6,
-                "growth": 5.4,
-                "potential": 82,
+                "growth": 5.6,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22541,8 +22570,8 @@ const COUNTRIES = {
                 "rank": 49
             },
             "manufacturing": {
-                "size": 35.0,
-                "growth": 2.7,
+                "size": 35.7,
+                "growth": 2.9,
                 "potential": 78,
                 "oppo": [
                     "글로벌 공급망 편입",
@@ -22554,11 +22583,11 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 49
+                "rank": 47
             },
             "finance": {
                 "size": 20.4,
-                "growth": 3.9,
+                "growth": 4.1,
                 "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -22574,7 +22603,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 13.2,
-                "growth": 4.8,
+                "growth": 5.0,
                 "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -22590,8 +22619,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 11.7,
-                "growth": 3.6,
-                "potential": 78,
+                "growth": 3.8,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22606,7 +22635,7 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 21.8,
-                "growth": 2.4,
+                "growth": 2.6,
                 "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -22618,11 +22647,11 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 34
+                "rank": 35
             },
             "automotive": {
                 "size": 8.8,
-                "growth": 3.6,
+                "growth": 3.8,
                 "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -22638,8 +22667,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 17.5,
-                "growth": 4.2,
-                "potential": 80,
+                "growth": 4.4,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22654,8 +22683,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 11.7,
-                "growth": 3.0,
-                "potential": 77,
+                "growth": 3.2,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22670,8 +22699,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 5.8,
-                "growth": 3.6,
-                "potential": 77,
+                "growth": 3.8,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22686,8 +22715,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1.5,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 5.0,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22698,11 +22727,11 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 71
+                "rank": 75
             },
             "education": {
                 "size": 7.6,
-                "growth": 4.2,
+                "growth": 4.4,
                 "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -22717,7 +22746,8 @@ const COUNTRIES = {
                 "rank": 46
             }
         },
-        "unemployment_pct": 5.2,
+        "gdp_growth_pct": 3.5,
+        "inflation_pct": 2.0,
         "trade_pct_gdp": 51.7,
         "renewable_energy_pct": 30.6
     },
@@ -22729,14 +22759,14 @@ const COUNTRIES = {
         "lat": 14.5515,
         "lng": 121.035,
         "gdp": 461.7,
-        "pop": 0,
+        "pop": 115.8,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 34.6,
-                "growth": 5.4,
-                "potential": 83,
+                "growth": 6.5,
+                "potential": 86,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22747,12 +22777,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 25
+                "rank": 26
             },
             "manufacturing": {
-                "size": 88.6,
-                "growth": 2.7,
-                "potential": 79,
+                "size": 115.8,
+                "growth": 3.8,
+                "potential": 82,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -22763,12 +22793,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 30
+                "rank": 27
             },
             "finance": {
                 "size": 32.3,
-                "growth": 3.9,
-                "potential": 80,
+                "growth": 5.0,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22783,8 +22813,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 18.8,
-                "growth": 4.8,
-                "potential": 81,
+                "growth": 5.9,
+                "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22799,8 +22829,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 18.5,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 4.7,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22815,8 +22845,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 42.0,
-                "growth": 2.4,
-                "potential": 78,
+                "growth": 3.5,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22827,12 +22857,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 19
+                "rank": 21
             },
             "automotive": {
                 "size": 18.0,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 4.7,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22847,8 +22877,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 27.7,
-                "growth": 4.2,
-                "potential": 81,
+                "growth": 5.3,
+                "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22863,8 +22893,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 18.5,
-                "growth": 3.0,
-                "potential": 78,
+                "growth": 4.1,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22879,8 +22909,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 11.1,
-                "growth": 3.6,
-                "potential": 78,
+                "growth": 4.7,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22895,8 +22925,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 2.8,
-                "growth": 4.8,
-                "potential": 79,
+                "growth": 5.9,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22907,12 +22937,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 46
+                "rank": 50
             },
             "education": {
                 "size": 10.9,
-                "growth": 4.2,
-                "potential": 80,
+                "growth": 5.3,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -22926,7 +22956,8 @@ const COUNTRIES = {
                 "rank": 33
             }
         },
-        "unemployment_pct": 2.2,
+        "gdp_growth_pct": 5.7,
+        "inflation_pct": 3.2,
         "trade_pct_gdp": 65.9,
         "renewable_energy_pct": 28
     },
@@ -22938,14 +22969,14 @@ const COUNTRIES = {
         "lat": -9.47357,
         "lng": 147.194,
         "gdp": 30.8,
-        "pop": 0,
+        "pop": 10.6,
         "region": "East Asia & Pacific",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 2.3,
-                "growth": 5.9,
-                "potential": 75,
+                "growth": 6.3,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -22959,9 +22990,9 @@ const COUNTRIES = {
                 "rank": 97
             },
             "manufacturing": {
-                "size": 5.9,
-                "growth": 3.2,
-                "potential": 71,
+                "size": 1,
+                "growth": 3.6,
+                "potential": 69,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -22972,12 +23003,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 94
+                "rank": 148
             },
             "finance": {
                 "size": 2.2,
-                "growth": 4.4,
-                "potential": 72,
+                "growth": 4.8,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -22992,7 +23023,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.7,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -23008,8 +23039,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1.2,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.5,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23024,8 +23055,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 5.2,
-                "growth": 2.9,
-                "potential": 70,
+                "growth": 3.3,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23036,12 +23067,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 78
+                "rank": 84
             },
             "automotive": {
                 "size": 1.2,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.5,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23056,8 +23087,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.8,
-                "growth": 4.7,
-                "potential": 72,
+                "growth": 5.1,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23072,8 +23103,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1.2,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 3.9,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23088,8 +23119,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.5,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23104,7 +23135,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.7,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -23116,12 +23147,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 131
+                "rank": 133
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 5.1,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -23135,7 +23166,8 @@ const COUNTRIES = {
                 "rank": 134
             }
         },
-        "unemployment_pct": 2.6,
+        "gdp_growth_pct": 3.9,
+        "inflation_pct": 0.6,
         "renewable_energy_pct": 54.6
     },
     "616": {
@@ -23146,7 +23178,7 @@ const COUNTRIES = {
         "lat": 52.26,
         "lng": 21.02,
         "gdp": 917.8,
-        "pop": 0,
+        "pop": 36.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
@@ -23164,10 +23196,10 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 22
             },
             "manufacturing": {
-                "size": 121.1,
+                "size": 162.3,
                 "growth": 2.7,
                 "potential": 84,
                 "oppo": [
@@ -23244,7 +23276,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 32
+                "rank": 33
             },
             "automotive": {
                 "size": 35.8,
@@ -23343,7 +23375,8 @@ const COUNTRIES = {
                 "rank": 22
             }
         },
-        "unemployment_pct": 2.8,
+        "gdp_growth_pct": 3.0,
+        "inflation_pct": 3.8,
         "trade_pct_gdp": 100.4,
         "renewable_energy_pct": 15.2
     },
@@ -23355,13 +23388,13 @@ const COUNTRIES = {
         "lat": 38.7072,
         "lng": -9.13552,
         "gdp": 313.7,
-        "pop": 0,
+        "pop": 10.7,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 15.7,
-                "growth": 5.4,
+                "growth": 5.1,
                 "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -23376,8 +23409,8 @@ const COUNTRIES = {
                 "rank": 46
             },
             "manufacturing": {
-                "size": 41.4,
-                "growth": 2.7,
+                "size": 40.5,
+                "growth": 2.4,
                 "potential": 82,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -23389,12 +23422,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 46
+                "rank": 44
             },
             "finance": {
                 "size": 26.4,
-                "growth": 3.9,
-                "potential": 84,
+                "growth": 3.6,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23409,8 +23442,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 25.7,
-                "growth": 4.8,
-                "potential": 86,
+                "growth": 4.5,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23425,8 +23458,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 13.8,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 3.3,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23441,7 +23474,7 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 6.3,
-                "growth": 2.4,
+                "growth": 2.1,
                 "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -23453,11 +23486,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 67
+                "rank": 71
             },
             "automotive": {
                 "size": 12.2,
-                "growth": 3.6,
+                "growth": 3.3,
                 "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -23473,7 +23506,7 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 18.8,
-                "growth": 4.2,
+                "growth": 3.9,
                 "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -23489,7 +23522,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 12.5,
-                "growth": 3.0,
+                "growth": 2.7,
                 "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -23505,8 +23538,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 6.3,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 3.3,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23521,8 +23554,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 13.7,
-                "growth": 4.8,
-                "potential": 85,
+                "growth": 4.5,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -23533,11 +23566,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 21
+                "rank": 20
             },
             "education": {
                 "size": 8.6,
-                "growth": 4.2,
+                "growth": 3.9,
                 "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -23552,7 +23585,8 @@ const COUNTRIES = {
                 "rank": 39
             }
         },
-        "unemployment_pct": 6.5,
+        "gdp_growth_pct": 2.2,
+        "inflation_pct": 2.4,
         "trade_pct_gdp": 89.7,
         "renewable_energy_pct": 32.3
     },
@@ -23564,14 +23598,14 @@ const COUNTRIES = {
         "lat": -25.3005,
         "lng": -57.6362,
         "gdp": 44.7,
-        "pop": 0,
+        "pop": 6.9,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 2.2,
-                "growth": 5.4,
-                "potential": 80,
+                "growth": 6.1,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23585,9 +23619,9 @@ const COUNTRIES = {
                 "rank": 100
             },
             "manufacturing": {
-                "size": 5.4,
-                "growth": 2.7,
-                "potential": 76,
+                "size": 8.6,
+                "growth": 3.4,
+                "potential": 78,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -23598,12 +23632,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 99
+                "rank": 82
             },
             "finance": {
                 "size": 3.1,
-                "growth": 3.9,
-                "potential": 77,
+                "growth": 4.6,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23618,8 +23652,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 3.0,
-                "growth": 4.8,
-                "potential": 79,
+                "growth": 5.5,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23634,8 +23668,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1.8,
-                "growth": 3.6,
-                "potential": 76,
+                "growth": 4.3,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23650,8 +23684,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 5.0,
-                "growth": 2.4,
-                "potential": 75,
+                "growth": 3.1,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23662,12 +23696,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 79
+                "rank": 85
             },
             "automotive": {
                 "size": 1.3,
-                "growth": 3.6,
-                "potential": 76,
+                "growth": 4.3,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23682,8 +23716,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 2.7,
-                "growth": 4.2,
-                "potential": 78,
+                "growth": 4.9,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23698,8 +23732,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1.8,
-                "growth": 3.0,
-                "potential": 75,
+                "growth": 3.7,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23714,8 +23748,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 4.3,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23730,8 +23764,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 5.5,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23742,12 +23776,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 132
+                "rank": 134
             },
             "education": {
                 "size": 1,
-                "growth": 4.2,
-                "potential": 76,
+                "growth": 4.9,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -23761,7 +23795,8 @@ const COUNTRIES = {
                 "rank": 135
             }
         },
-        "unemployment_pct": 5.7,
+        "gdp_growth_pct": 4.7,
+        "inflation_pct": 3.8,
         "trade_pct_gdp": 77.1,
         "renewable_energy_pct": 58.8
     },
@@ -23773,7 +23808,7 @@ const COUNTRIES = {
         "lat": 25.2948,
         "lng": 51.5082,
         "gdp": 216.3,
-        "pop": 0,
+        "pop": 2.9,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
@@ -23794,9 +23829,9 @@ const COUNTRIES = {
                 "rank": 55
             },
             "manufacturing": {
-                "size": 26.0,
+                "size": 17.7,
                 "growth": 2.7,
-                "potential": 82,
+                "potential": 81,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -23807,7 +23842,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 52
+                "rank": 60
             },
             "finance": {
                 "size": 15.1,
@@ -23871,7 +23906,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 140
+                "rank": 145
             },
             "automotive": {
                 "size": 6.5,
@@ -23951,7 +23986,7 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 18
+                "rank": 17
             },
             "education": {
                 "size": 4.2,
@@ -23970,7 +24005,8 @@ const COUNTRIES = {
                 "rank": 58
             }
         },
-        "unemployment_pct": 0.1,
+        "gdp_growth_pct": 3.1,
+        "inflation_pct": 1.3,
         "trade_pct_gdp": 100.2,
         "renewable_energy_pct": 0
     },
@@ -23982,14 +24018,14 @@ const COUNTRIES = {
         "lat": 44.4479,
         "lng": 26.0979,
         "gdp": 382.6,
-        "pop": 0,
+        "pop": 19.1,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 19.1,
-                "growth": 5.4,
-                "potential": 87,
+                "growth": 4.6,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24003,9 +24039,9 @@ const COUNTRIES = {
                 "rank": 42
             },
             "manufacturing": {
-                "size": 50.5,
-                "growth": 2.7,
-                "potential": 83,
+                "size": 55.5,
+                "growth": 1.9,
+                "potential": 81,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -24016,12 +24052,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 40
+                "rank": 37
             },
             "finance": {
                 "size": 32.1,
-                "growth": 3.9,
-                "potential": 84,
+                "growth": 3.1,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24036,8 +24072,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 17.5,
-                "growth": 4.8,
-                "potential": 85,
+                "growth": 4.0,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24052,8 +24088,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 16.8,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 2.8,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24068,8 +24104,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 10.8,
-                "growth": 2.4,
-                "potential": 80,
+                "growth": 1.6,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24080,12 +24116,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 51
+                "rank": 53
             },
             "automotive": {
                 "size": 14.9,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 2.8,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24100,8 +24136,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 23.0,
-                "growth": 4.2,
-                "potential": 84,
+                "growth": 3.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24116,8 +24152,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 15.3,
-                "growth": 3.0,
-                "potential": 82,
+                "growth": 2.2,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24132,8 +24168,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 7.7,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 2.8,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24148,8 +24184,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 2.5,
-                "growth": 4.8,
-                "potential": 83,
+                "growth": 4.0,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24160,12 +24196,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 51
+                "rank": 53
             },
             "education": {
                 "size": 7.5,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 3.4,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24179,7 +24215,8 @@ const COUNTRIES = {
                 "rank": 47
             }
         },
-        "unemployment_pct": 5.4,
+        "gdp_growth_pct": 0.9,
+        "inflation_pct": 5.7,
         "trade_pct_gdp": 77.2,
         "renewable_energy_pct": 23.6
     },
@@ -24191,14 +24228,14 @@ const COUNTRIES = {
         "lat": 55.7558,
         "lng": 37.6176,
         "gdp": 2186.5,
-        "pop": 0,
+        "pop": 143.7,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 109.3,
-                "growth": 5.4,
-                "potential": 89,
+                "growth": 6.2,
+                "potential": 91,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24212,9 +24249,9 @@ const COUNTRIES = {
                 "rank": 13
             },
             "manufacturing": {
-                "size": 288.6,
-                "growth": 2.7,
-                "potential": 85,
+                "size": 319.0,
+                "growth": 3.5,
+                "potential": 87,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -24225,12 +24262,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 11
+                "rank": 12
             },
             "finance": {
                 "size": 183.7,
-                "growth": 3.9,
-                "potential": 87,
+                "growth": 4.7,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24245,8 +24282,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 123.2,
-                "growth": 4.8,
-                "potential": 88,
+                "growth": 5.6,
+                "potential": 89,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24261,8 +24298,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 96.2,
-                "growth": 3.6,
-                "potential": 85,
+                "growth": 4.4,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24277,8 +24314,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 63.5,
-                "growth": 2.4,
-                "potential": 82,
+                "growth": 3.2,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24293,8 +24330,8 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 85.3,
-                "growth": 3.6,
-                "potential": 85,
+                "growth": 4.4,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24309,8 +24346,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 131.2,
-                "growth": 4.2,
-                "potential": 87,
+                "growth": 5.0,
+                "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24325,8 +24362,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 87.5,
-                "growth": 3.0,
-                "potential": 84,
+                "growth": 3.8,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24341,8 +24378,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 43.7,
-                "growth": 3.6,
-                "potential": 84,
+                "growth": 4.4,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24357,8 +24394,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 14.2,
-                "growth": 4.8,
-                "potential": 85,
+                "growth": 5.6,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24369,12 +24406,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 20
+                "rank": 19
             },
             "education": {
                 "size": 54.6,
-                "growth": 4.2,
-                "potential": 86,
+                "growth": 5.0,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24388,7 +24425,8 @@ const COUNTRIES = {
                 "rank": 12
             }
         },
-        "unemployment_pct": 2.4,
+        "gdp_growth_pct": 4.9,
+        "inflation_pct": 8.4,
         "trade_pct_gdp": 39.4,
         "renewable_energy_pct": 3.5
     },
@@ -24400,14 +24438,14 @@ const COUNTRIES = {
         "lat": -1.95325,
         "lng": 30.0587,
         "gdp": 15.1,
-        "pop": 0,
+        "pop": 14.3,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 62,
+                "growth": 7.6,
+                "potential": 65,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24421,9 +24459,9 @@ const COUNTRIES = {
                 "rank": 144
             },
             "manufacturing": {
-                "size": 1.8,
-                "growth": 3.2,
-                "potential": 57,
+                "size": 1.2,
+                "growth": 4.9,
+                "potential": 60,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -24434,12 +24472,12 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 138
+                "rank": 141
             },
             "finance": {
                 "size": 1.1,
-                "growth": 4.4,
-                "potential": 59,
+                "growth": 6.1,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24454,8 +24492,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 7.0,
+                "potential": 64,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24470,8 +24508,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 5.8,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24486,8 +24524,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 3.1,
-                "growth": 2.9,
-                "potential": 57,
+                "growth": 4.6,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24498,12 +24536,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 94
+                "rank": 103
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 5.8,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24518,8 +24556,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 6.4,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24534,8 +24572,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 57,
+                "growth": 5.2,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24550,8 +24588,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 5.8,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24566,8 +24604,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 7.0,
+                "potential": 64,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24578,12 +24616,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 133
+                "rank": 135
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 6.4,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -24597,7 +24635,8 @@ const COUNTRIES = {
                 "rank": 136
             }
         },
-        "unemployment_pct": 11.3,
+        "gdp_growth_pct": 7.2,
+        "inflation_pct": 1.8,
         "trade_pct_gdp": 71.7,
         "renewable_energy_pct": 79.9
     },
@@ -24609,13 +24648,13 @@ const COUNTRIES = {
         "lat": 24.6748,
         "lng": 46.6977,
         "gdp": 1254.1,
-        "pop": 0,
+        "pop": 35.3,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 62.7,
-                "growth": 5.4,
+                "growth": 5.3,
                 "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -24630,8 +24669,8 @@ const COUNTRIES = {
                 "rank": 18
             },
             "manufacturing": {
-                "size": 150.5,
-                "growth": 2.7,
+                "size": 202.0,
+                "growth": 2.6,
                 "potential": 84,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -24643,12 +24682,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 20
+                "rank": 18
             },
             "finance": {
                 "size": 87.8,
-                "growth": 3.9,
-                "potential": 86,
+                "growth": 3.8,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -24663,7 +24702,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 57.1,
-                "growth": 4.8,
+                "growth": 4.7,
                 "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -24679,7 +24718,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 50.2,
-                "growth": 3.6,
+                "growth": 3.5,
                 "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -24695,7 +24734,7 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 31.4,
-                "growth": 2.4,
+                "growth": 2.3,
                 "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -24707,11 +24746,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 28
+                "rank": 29
             },
             "automotive": {
                 "size": 37.6,
-                "growth": 3.6,
+                "growth": 3.5,
                 "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -24727,7 +24766,7 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 75.2,
-                "growth": 4.2,
+                "growth": 4.1,
                 "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -24743,7 +24782,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 50.2,
-                "growth": 3.0,
+                "growth": 2.9,
                 "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -24759,7 +24798,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 25.1,
-                "growth": 3.6,
+                "growth": 3.5,
                 "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -24774,635 +24813,8 @@ const COUNTRIES = {
                 "rank": 18
             },
             "tourism": {
-                "size": 6.3,
-                "growth": 4.8,
-                "potential": 84,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 34
-            },
-            "education": {
-                "size": 33.7,
-                "growth": 4.2,
-                "potential": 85,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 17
-            }
-        },
-        "unemployment_pct": 3.5,
-        "trade_pct_gdp": 56.4,
-        "renewable_energy_pct": 0.1
-    },
-    "729": {
-        "name": "Sudan",
-        "nameEn": "Sudan",
-        "code": "SD",
-        "flag": "🇸🇩",
-        "lat": 15.5932,
-        "lng": 32.5363,
-        "gdp": 49.7,
-        "pop": 0,
-        "region": "Sub-Saharan Africa ",
-        "income": "Low income",
-        "industries": {
-            "tech": {
-                "size": 2.5,
-                "growth": 5.9,
-                "potential": 63,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 94
-            },
-            "manufacturing": {
-                "size": 6.0,
-                "growth": 3.2,
-                "potential": 59,
-                "oppo": [
-                    "기초 제조업 도입",
-                    "농산물 가공",
-                    "섬유/의류 산업"
-                ],
-                "risk": [
-                    "전력 부족",
-                    "운송 인프라 미비",
-                    "자본 부족"
-                ],
-                "rank": 93
-            },
-            "finance": {
-                "size": 3.5,
-                "growth": 4.4,
-                "potential": 60,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 95
-            },
-            "healthcare": {
-                "size": 1.1,
-                "growth": 5.3,
-                "potential": 61,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 118
-            },
-            "energy": {
-                "size": 2.0,
-                "growth": 4.1,
-                "potential": 59,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 92
-            },
-            "agriculture": {
-                "size": 1.5,
-                "growth": 2.9,
-                "potential": 56,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 117
-            },
-            "automotive": {
-                "size": 1.5,
-                "growth": 4.1,
-                "potential": 59,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 97
-            },
-            "retail": {
-                "size": 3.0,
+                "size": 25.1,
                 "growth": 4.7,
-                "potential": 61,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 93
-            },
-            "realestate": {
-                "size": 2.0,
-                "growth": 3.5,
-                "potential": 58,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 92
-            },
-            "telecom": {
-                "size": 1,
-                "growth": 4.1,
-                "potential": 58,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 135
-            },
-            "tourism": {
-                "size": 1,
-                "growth": 5.3,
-                "potential": 61,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 134
-            },
-            "education": {
-                "size": 1,
-                "growth": 4.7,
-                "potential": 59,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 137
-            }
-        },
-        "unemployment_pct": 7.5,
-        "trade_pct_gdp": 2.0,
-        "renewable_energy_pct": 61
-    },
-    "686": {
-        "name": "Senegal",
-        "nameEn": "Senegal",
-        "code": "SN",
-        "flag": "🇸🇳",
-        "lat": 14.7247,
-        "lng": -17.4734,
-        "gdp": 32.2,
-        "pop": 0,
-        "region": "Sub-Saharan Africa ",
-        "income": "Lower middle income",
-        "industries": {
-            "tech": {
-                "size": 1.6,
-                "growth": 5.9,
-                "potential": 74,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 109
-            },
-            "manufacturing": {
-                "size": 3.9,
-                "growth": 3.2,
-                "potential": 70,
-                "oppo": [
-                    "노동집약적 제조 기회",
-                    "산업단지 개발",
-                    "경공업 성장"
-                ],
-                "risk": [
-                    "인프라 부족",
-                    "기술력 한계",
-                    "물류 비용"
-                ],
-                "rank": 109
-            },
-            "finance": {
-                "size": 2.3,
-                "growth": 4.4,
-                "potential": 72,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 109
-            },
-            "healthcare": {
-                "size": 1.1,
-                "growth": 5.3,
-                "potential": 73,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 119
-            },
-            "energy": {
-                "size": 1.3,
-                "growth": 4.1,
-                "potential": 71,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 108
-            },
-            "agriculture": {
-                "size": 1,
-                "growth": 2.9,
-                "potential": 68,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 141
-            },
-            "automotive": {
-                "size": 1,
-                "growth": 4.1,
-                "potential": 70,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 139
-            },
-            "retail": {
-                "size": 1.9,
-                "growth": 4.7,
-                "potential": 72,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 107
-            },
-            "realestate": {
-                "size": 1.3,
-                "growth": 3.5,
-                "potential": 69,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 107
-            },
-            "telecom": {
-                "size": 1,
-                "growth": 4.1,
-                "potential": 70,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 136
-            },
-            "tourism": {
-                "size": 1,
-                "growth": 5.3,
-                "potential": 73,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 135
-            },
-            "education": {
-                "size": 1.2,
-                "growth": 4.7,
-                "potential": 72,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 89
-            }
-        },
-        "unemployment_pct": 2.8,
-        "trade_pct_gdp": 68.2,
-        "renewable_energy_pct": 35.4
-    },
-    "702": {
-        "name": "싱가포르",
-        "nameEn": "Singapore",
-        "code": "SG",
-        "flag": "🇸🇬",
-        "lat": 1.28941,
-        "lng": 103.85,
-        "gdp": 572.9,
-        "pop": 0,
-        "region": "East Asia & Pacific",
-        "income": "High income",
-        "industries": {
-            "tech": {
-                "size": 43.0,
-                "growth": 5.4,
-                "potential": 88,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 22
-            },
-            "manufacturing": {
-                "size": 110.0,
-                "growth": 2.7,
-                "potential": 84,
-                "oppo": [
-                    "스마트팩토리 전환",
-                    "친환경 제조 전환",
-                    "첨단 소재 개발"
-                ],
-                "risk": [
-                    "인건비 상승",
-                    "환경 규제 강화",
-                    "공급망 리스크"
-                ],
-                "rank": 23
-            },
-            "finance": {
-                "size": 40.1,
-                "growth": 3.9,
-                "potential": 85,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 28
-            },
-            "healthcare": {
-                "size": 20.6,
-                "growth": 4.8,
-                "potential": 86,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 39
-            },
-            "energy": {
-                "size": 22.9,
-                "growth": 3.6,
-                "potential": 83,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 27
-            },
-            "agriculture": {
-                "size": 17.2,
-                "growth": 2.4,
-                "potential": 81,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 38
-            },
-            "automotive": {
-                "size": 22.3,
-                "growth": 3.6,
-                "potential": 83,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 25
-            },
-            "retail": {
-                "size": 34.4,
-                "growth": 4.2,
-                "potential": 85,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 27
-            },
-            "realestate": {
-                "size": 22.9,
-                "growth": 3.0,
-                "potential": 82,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 26
-            },
-            "telecom": {
-                "size": 13.7,
-                "growth": 3.6,
-                "potential": 83,
-                "oppo": [
-                    "AI/ML 투자 확대",
-                    "클라우드 인프라 성장",
-                    "사이버보안 수요 증가"
-                ],
-                "risk": [
-                    "규제 강화 리스크",
-                    "인재 확보 경쟁",
-                    "기술 패권 경쟁"
-                ],
-                "rank": 22
-            },
-            "tourism": {
-                "size": 20.4,
-                "growth": 4.8,
                 "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -25417,9 +24829,9 @@ const COUNTRIES = {
                 "rank": 12
             },
             "education": {
-                "size": 7.5,
-                "growth": 4.2,
-                "potential": 83,
+                "size": 33.7,
+                "growth": 4.1,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -25430,76 +24842,29 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 48
+                "rank": 17
             }
         },
-        "unemployment_pct": 2.7,
-        "trade_pct_gdp": 313.3,
-        "renewable_energy_pct": 1.1
+        "gdp_growth_pct": 2.6,
+        "inflation_pct": 1.7,
+        "trade_pct_gdp": 56.4,
+        "renewable_energy_pct": 0.1
     },
-    "694": {
-        "name": "Sierra Leone",
-        "nameEn": "Sierra Leone",
-        "code": "SL",
-        "flag": "🇸🇱",
-        "lat": 8.4821,
-        "lng": -13.2134,
-        "gdp": 7.0,
-        "pop": 0,
+    "729": {
+        "name": "Sudan",
+        "nameEn": "Sudan",
+        "code": "SD",
+        "flag": "🇸🇩",
+        "lat": 15.5932,
+        "lng": 32.5363,
+        "gdp": 49.7,
+        "pop": 50.4,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
-                "size": 1,
-                "growth": 5.9,
-                "potential": 62,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 145
-            },
-            "manufacturing": {
-                "size": 1,
-                "growth": 3.2,
-                "potential": 56,
-                "oppo": [
-                    "기초 제조업 도입",
-                    "농산물 가공",
-                    "섬유/의류 산업"
-                ],
-                "risk": [
-                    "전력 부족",
-                    "운송 인프라 미비",
-                    "자본 부족"
-                ],
-                "rank": 149
-            },
-            "finance": {
-                "size": 1,
-                "growth": 4.4,
-                "potential": 59,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 147
-            },
-            "healthcare": {
-                "size": 1,
-                "growth": 5.3,
+                "size": 2.5,
+                "growth": 4.7,
                 "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -25511,10 +24876,42 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 143
+                "rank": 94
             },
-            "energy": {
-                "size": 1,
+            "manufacturing": {
+                "size": 6.0,
+                "growth": 2.0,
+                "potential": 56,
+                "oppo": [
+                    "기초 제조업 도입",
+                    "농산물 가공",
+                    "섬유/의류 산업"
+                ],
+                "risk": [
+                    "전력 부족",
+                    "운송 인프라 미비",
+                    "자본 부족"
+                ],
+                "rank": 93
+            },
+            "finance": {
+                "size": 3.5,
+                "growth": 3.2,
+                "potential": 58,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 95
+            },
+            "healthcare": {
+                "size": 1.1,
                 "growth": 4.1,
                 "potential": 58,
                 "oppo": [
@@ -25527,9 +24924,89 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 141
+                "rank": 118
+            },
+            "energy": {
+                "size": 2.0,
+                "growth": 2.9,
+                "potential": 57,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 92
             },
             "agriculture": {
+                "size": 11.0,
+                "growth": 1.7,
+                "potential": 57,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 51
+            },
+            "automotive": {
+                "size": 1.5,
+                "growth": 2.9,
+                "potential": 56,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 97
+            },
+            "retail": {
+                "size": 3.0,
+                "growth": 3.5,
+                "potential": 58,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 93
+            },
+            "realestate": {
+                "size": 2.0,
+                "growth": 2.3,
+                "potential": 56,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 92
+            },
+            "telecom": {
                 "size": 1,
                 "growth": 2.9,
                 "potential": 56,
@@ -25543,76 +25020,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 142
-            },
-            "automotive": {
-                "size": 1,
-                "growth": 4.1,
-                "potential": 58,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 140
-            },
-            "retail": {
-                "size": 1,
-                "growth": 4.7,
-                "potential": 59,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 146
-            },
-            "realestate": {
-                "size": 1,
-                "growth": 3.5,
-                "potential": 57,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 141
-            },
-            "telecom": {
-                "size": 1,
-                "growth": 4.1,
-                "potential": 58,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 137
+                "rank": 135
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 4.1,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25627,8 +25040,638 @@ const COUNTRIES = {
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
+                "growth": 3.5,
+                "potential": 57,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 137
+            }
+        },
+        "gdp_growth_pct": -14.0,
+        "inflation_pct": 138.8,
+        "trade_pct_gdp": 2.0,
+        "renewable_energy_pct": 61
+    },
+    "686": {
+        "name": "Senegal",
+        "nameEn": "Senegal",
+        "code": "SN",
+        "flag": "🇸🇳",
+        "lat": 14.7247,
+        "lng": -17.4734,
+        "gdp": 32.2,
+        "pop": 18.5,
+        "region": "Sub-Saharan Africa ",
+        "income": "Lower middle income",
+        "industries": {
+            "tech": {
+                "size": 1.6,
+                "growth": 7.3,
+                "potential": 77,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 109
+            },
+            "manufacturing": {
+                "size": 4.6,
+                "growth": 4.6,
+                "potential": 73,
+                "oppo": [
+                    "노동집약적 제조 기회",
+                    "산업단지 개발",
+                    "경공업 성장"
+                ],
+                "risk": [
+                    "인프라 부족",
+                    "기술력 한계",
+                    "물류 비용"
+                ],
+                "rank": 100
+            },
+            "finance": {
+                "size": 2.3,
+                "growth": 5.8,
+                "potential": 75,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 109
+            },
+            "healthcare": {
+                "size": 1.1,
+                "growth": 6.7,
+                "potential": 76,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 119
+            },
+            "energy": {
+                "size": 1.3,
+                "growth": 5.5,
+                "potential": 73,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 108
+            },
+            "agriculture": {
+                "size": 5.0,
+                "growth": 4.3,
+                "potential": 73,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 86
+            },
+            "automotive": {
+                "size": 1,
+                "growth": 5.5,
+                "potential": 73,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 139
+            },
+            "retail": {
+                "size": 1.9,
+                "growth": 6.1,
+                "potential": 75,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 107
+            },
+            "realestate": {
+                "size": 1.3,
+                "growth": 4.9,
+                "potential": 72,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 107
+            },
+            "telecom": {
+                "size": 1,
+                "growth": 5.5,
+                "potential": 73,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 136
+            },
+            "tourism": {
+                "size": 1,
+                "growth": 6.7,
+                "potential": 75,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 137
+            },
+            "education": {
+                "size": 1.2,
+                "growth": 6.1,
+                "potential": 74,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 89
+            }
+        },
+        "gdp_growth_pct": 6.5,
+        "inflation_pct": 0.8,
+        "trade_pct_gdp": 68.2,
+        "renewable_energy_pct": 35.4
+    },
+    "702": {
+        "name": "싱가포르",
+        "nameEn": "Singapore",
+        "code": "SG",
+        "flag": "🇸🇬",
+        "lat": 1.28941,
+        "lng": 103.85,
+        "gdp": 572.9,
+        "pop": 6.0,
+        "region": "East Asia & Pacific",
+        "income": "High income",
+        "industries": {
+            "tech": {
+                "size": 43.0,
+                "growth": 6.3,
+                "potential": 90,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 23
+            },
+            "manufacturing": {
+                "size": 149.0,
+                "growth": 3.6,
+                "potential": 86,
+                "oppo": [
+                    "스마트팩토리 전환",
+                    "친환경 제조 전환",
+                    "첨단 소재 개발"
+                ],
+                "risk": [
+                    "인건비 상승",
+                    "환경 규제 강화",
+                    "공급망 리스크"
+                ],
+                "rank": 25
+            },
+            "finance": {
+                "size": 40.1,
+                "growth": 4.8,
+                "potential": 86,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 28
+            },
+            "healthcare": {
+                "size": 20.6,
+                "growth": 5.7,
+                "potential": 87,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 39
+            },
+            "energy": {
+                "size": 22.9,
+                "growth": 4.5,
+                "potential": 85,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 27
+            },
+            "agriculture": {
+                "size": 1,
+                "growth": 3.3,
+                "potential": 79,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 146
+            },
+            "automotive": {
+                "size": 22.3,
+                "growth": 4.5,
+                "potential": 85,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 25
+            },
+            "retail": {
+                "size": 34.4,
+                "growth": 5.1,
+                "potential": 87,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 27
+            },
+            "realestate": {
+                "size": 22.9,
+                "growth": 3.9,
+                "potential": 84,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 26
+            },
+            "telecom": {
+                "size": 13.7,
+                "growth": 4.5,
+                "potential": 84,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 22
+            },
+            "tourism": {
+                "size": 11.5,
+                "growth": 5.7,
+                "potential": 87,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 23
+            },
+            "education": {
+                "size": 7.5,
+                "growth": 5.1,
+                "potential": 85,
+                "oppo": [
+                    "AI/ML 투자 확대",
+                    "클라우드 인프라 성장",
+                    "사이버보안 수요 증가"
+                ],
+                "risk": [
+                    "규제 강화 리스크",
+                    "인재 확보 경쟁",
+                    "기술 패권 경쟁"
+                ],
+                "rank": 48
+            }
+        },
+        "gdp_growth_pct": 5.3,
+        "inflation_pct": 2.4,
+        "trade_pct_gdp": 313.3,
+        "renewable_energy_pct": 1.1
+    },
+    "694": {
+        "name": "Sierra Leone",
+        "nameEn": "Sierra Leone",
+        "code": "SL",
+        "flag": "🇸🇱",
+        "lat": 8.4821,
+        "lng": -13.2134,
+        "gdp": 7.0,
+        "pop": 8.6,
+        "region": "Sub-Saharan Africa ",
+        "income": "Low income",
+        "industries": {
+            "tech": {
+                "size": 1,
+                "growth": 6.4,
+                "potential": 63,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 145
+            },
+            "manufacturing": {
+                "size": 1,
+                "growth": 3.7,
+                "potential": 57,
+                "oppo": [
+                    "기초 제조업 도입",
+                    "농산물 가공",
+                    "섬유/의류 산업"
+                ],
+                "risk": [
+                    "전력 부족",
+                    "운송 인프라 미비",
+                    "자본 부족"
+                ],
+                "rank": 149
+            },
+            "finance": {
+                "size": 1,
+                "growth": 4.9,
+                "potential": 60,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 147
+            },
+            "healthcare": {
+                "size": 1,
+                "growth": 5.8,
+                "potential": 62,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 143
+            },
+            "energy": {
+                "size": 1,
+                "growth": 4.6,
                 "potential": 59,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 141
+            },
+            "agriculture": {
+                "size": 2.0,
+                "growth": 3.4,
+                "potential": 58,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 116
+            },
+            "automotive": {
+                "size": 1,
+                "growth": 4.6,
+                "potential": 59,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 140
+            },
+            "retail": {
+                "size": 1,
+                "growth": 5.2,
+                "potential": 60,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 146
+            },
+            "realestate": {
+                "size": 1,
+                "growth": 4.0,
+                "potential": 58,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 141
+            },
+            "telecom": {
+                "size": 1,
+                "growth": 4.6,
+                "potential": 59,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 137
+            },
+            "tourism": {
+                "size": 1,
+                "growth": 5.8,
+                "potential": 62,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 138
+            },
+            "education": {
+                "size": 1,
+                "growth": 5.2,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25642,7 +25685,8 @@ const COUNTRIES = {
                 "rank": 138
             }
         },
-        "unemployment_pct": 3.1,
+        "gdp_growth_pct": 4.3,
+        "inflation_pct": 28.6,
         "trade_pct_gdp": 40.5,
         "renewable_energy_pct": 71.6
     },
@@ -25654,7 +25698,7 @@ const COUNTRIES = {
         "lat": 13.7034,
         "lng": -89.2073,
         "gdp": 34.9,
-        "pop": 0,
+        "pop": 6.3,
         "region": "Latin America & Caribbean ",
         "income": "Upper middle income",
         "industries": {
@@ -25688,7 +25732,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 106
+                "rank": 102
             },
             "finance": {
                 "size": 2.4,
@@ -25752,7 +25796,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 114
+                "rank": 123
             },
             "automotive": {
                 "size": 1,
@@ -25832,7 +25876,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 137
+                "rank": 139
             },
             "education": {
                 "size": 1,
@@ -25852,7 +25896,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 2.6,
-        "unemployment_pct": 3.3,
+        "inflation_pct": 0.9,
         "trade_pct_gdp": 85.7,
         "renewable_energy_pct": 21.9
     },
@@ -25864,14 +25908,14 @@ const COUNTRIES = {
         "lat": 2.07515,
         "lng": 45.3254,
         "gdp": 12.0,
-        "pop": 0,
+        "pop": 19.0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 62,
+                "growth": 6.3,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25886,8 +25930,8 @@ const COUNTRIES = {
             },
             "manufacturing": {
                 "size": 1.4,
-                "growth": 3.2,
-                "potential": 57,
+                "growth": 3.6,
+                "potential": 58,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -25898,12 +25942,12 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 142
+                "rank": 138
             },
             "finance": {
                 "size": 1,
-                "growth": 4.4,
-                "potential": 59,
+                "growth": 4.8,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25918,7 +25962,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.7,
                 "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -25934,8 +25978,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.5,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25950,8 +25994,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.9,
-                "potential": 56,
+                "growth": 3.3,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25962,12 +26006,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 143
+                "rank": 147
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.5,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25982,8 +26026,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 5.1,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -25998,8 +26042,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 57,
+                "growth": 3.9,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -26014,8 +26058,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 4.5,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -26030,7 +26074,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.7,
                 "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -26042,12 +26086,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 138
+                "rank": 140
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 5.1,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -26061,7 +26105,7 @@ const COUNTRIES = {
                 "rank": 140
             }
         },
-        "unemployment_pct": 18.9,
+        "gdp_growth_pct": 4.1,
         "trade_pct_gdp": 130.3,
         "renewable_energy_pct": 95.4
     },
@@ -26073,14 +26117,14 @@ const COUNTRIES = {
         "lat": 44.8024,
         "lng": 20.4656,
         "gdp": 90.1,
-        "pop": 0,
+        "pop": 6.6,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 4.5,
-                "growth": 5.4,
-                "potential": 81,
+                "growth": 5.8,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26094,9 +26138,9 @@ const COUNTRIES = {
                 "rank": 76
             },
             "manufacturing": {
-                "size": 11.9,
-                "growth": 2.7,
-                "potential": 77,
+                "size": 12.6,
+                "growth": 3.1,
+                "potential": 78,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -26107,12 +26151,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 73
+                "rank": 72
             },
             "finance": {
                 "size": 7.6,
-                "growth": 3.9,
-                "potential": 78,
+                "growth": 4.3,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26127,8 +26171,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 5.8,
-                "growth": 4.8,
-                "potential": 80,
+                "growth": 5.2,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26143,8 +26187,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 4.0,
-                "growth": 3.6,
-                "potential": 77,
+                "growth": 4.0,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26158,9 +26202,9 @@ const COUNTRIES = {
                 "rank": 74
             },
             "agriculture": {
-                "size": 2.7,
-                "growth": 2.4,
-                "potential": 74,
+                "size": 2.9,
+                "growth": 2.8,
+                "potential": 75,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26171,12 +26215,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 100
+                "rank": 105
             },
             "automotive": {
                 "size": 3.5,
-                "growth": 3.6,
-                "potential": 77,
+                "growth": 4.0,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26191,7 +26235,7 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 5.4,
-                "growth": 4.2,
+                "growth": 4.6,
                 "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -26207,7 +26251,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 3.6,
-                "growth": 3.0,
+                "growth": 3.4,
                 "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -26223,8 +26267,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.8,
-                "growth": 3.6,
-                "potential": 76,
+                "growth": 4.0,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26238,9 +26282,9 @@ const COUNTRIES = {
                 "rank": 76
             },
             "tourism": {
-                "size": 1.8,
-                "growth": 4.8,
-                "potential": 78,
+                "size": 2.3,
+                "growth": 5.2,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26251,12 +26295,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 64
+                "rank": 60
             },
             "education": {
                 "size": 1.8,
-                "growth": 4.2,
-                "potential": 77,
+                "growth": 4.6,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -26270,7 +26314,8 @@ const COUNTRIES = {
                 "rank": 79
             }
         },
-        "unemployment_pct": 7.2,
+        "gdp_growth_pct": 3.9,
+        "inflation_pct": 4.7,
         "trade_pct_gdp": 111.7,
         "renewable_energy_pct": 27.2
     },
@@ -26282,13 +26327,13 @@ const COUNTRIES = {
         "lat": 48.1484,
         "lng": 17.1073,
         "gdp": 140.9,
-        "pop": 0,
+        "pop": 5.4,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 7.0,
-                "growth": 5.4,
+                "growth": 5.0,
                 "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -26303,8 +26348,8 @@ const COUNTRIES = {
                 "rank": 60
             },
             "manufacturing": {
-                "size": 18.6,
-                "growth": 2.7,
+                "size": 25.3,
+                "growth": 2.3,
                 "potential": 81,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -26316,12 +26361,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 59
+                "rank": 55
             },
             "finance": {
                 "size": 11.8,
-                "growth": 3.9,
-                "potential": 83,
+                "growth": 3.5,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26336,7 +26381,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 8.3,
-                "growth": 4.8,
+                "growth": 4.4,
                 "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -26352,8 +26397,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 6.2,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 3.2,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26367,9 +26412,9 @@ const COUNTRIES = {
                 "rank": 59
             },
             "agriculture": {
-                "size": 4.2,
-                "growth": 2.4,
-                "potential": 79,
+                "size": 2.2,
+                "growth": 2.0,
+                "potential": 77,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26380,11 +26425,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 85
+                "rank": 112
             },
             "automotive": {
                 "size": 5.5,
-                "growth": 3.6,
+                "growth": 3.2,
                 "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -26400,8 +26445,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 8.5,
-                "growth": 4.2,
-                "potential": 83,
+                "growth": 3.8,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26416,8 +26461,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 5.6,
-                "growth": 3.0,
-                "potential": 80,
+                "growth": 2.6,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26432,8 +26477,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 2.8,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 3.2,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26447,9 +26492,9 @@ const COUNTRIES = {
                 "rank": 60
             },
             "tourism": {
-                "size": 1.7,
-                "growth": 4.8,
-                "potential": 82,
+                "size": 3.7,
+                "growth": 4.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26460,12 +26505,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 67
+                "rank": 45
             },
             "education": {
                 "size": 3.9,
-                "growth": 4.2,
-                "potential": 82,
+                "growth": 3.8,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26479,7 +26524,8 @@ const COUNTRIES = {
                 "rank": 60
             }
         },
-        "unemployment_pct": 5.3,
+        "gdp_growth_pct": 1.9,
+        "inflation_pct": 2.8,
         "trade_pct_gdp": 171.2,
         "renewable_energy_pct": 17.9
     },
@@ -26491,14 +26537,14 @@ const COUNTRIES = {
         "lat": 46.0546,
         "lng": 14.5044,
         "gdp": 73.0,
-        "pop": 0,
+        "pop": 2.1,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 3.7,
-                "growth": 5.4,
-                "potential": 85,
+                "growth": 4.9,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26512,8 +26558,8 @@ const COUNTRIES = {
                 "rank": 86
             },
             "manufacturing": {
-                "size": 9.6,
-                "growth": 2.7,
+                "size": 15.6,
+                "growth": 2.2,
                 "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -26525,12 +26571,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 81
+                "rank": 64
             },
             "finance": {
                 "size": 6.1,
-                "growth": 3.9,
-                "potential": 82,
+                "growth": 3.4,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26545,8 +26591,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 5.8,
-                "growth": 4.8,
-                "potential": 84,
+                "growth": 4.3,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26561,8 +26607,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 3.2,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 3.1,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26576,9 +26622,9 @@ const COUNTRIES = {
                 "rank": 83
             },
             "agriculture": {
-                "size": 2.2,
-                "growth": 2.4,
-                "potential": 78,
+                "size": 1.1,
+                "growth": 1.9,
+                "potential": 76,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26589,12 +26635,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 104
+                "rank": 131
             },
             "automotive": {
                 "size": 2.8,
-                "growth": 3.6,
-                "potential": 81,
+                "growth": 3.1,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26609,8 +26655,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 4.4,
-                "growth": 4.2,
-                "potential": 82,
+                "growth": 3.7,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26625,8 +26671,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 2.9,
-                "growth": 3.0,
-                "potential": 79,
+                "growth": 2.5,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26641,8 +26687,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.5,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 3.1,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26656,9 +26702,9 @@ const COUNTRIES = {
                 "rank": 86
             },
             "tourism": {
-                "size": 1.8,
-                "growth": 4.8,
-                "potential": 82,
+                "size": 1.9,
+                "growth": 4.3,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26669,12 +26715,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 65
+                "rank": 66
             },
             "education": {
                 "size": 2.3,
-                "growth": 4.2,
-                "potential": 81,
+                "growth": 3.7,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26688,7 +26734,8 @@ const COUNTRIES = {
                 "rank": 72
             }
         },
-        "unemployment_pct": 3.7,
+        "gdp_growth_pct": 1.7,
+        "inflation_pct": 2.0,
         "trade_pct_gdp": 155.7,
         "renewable_energy_pct": 23.4
     },
@@ -26700,14 +26747,14 @@ const COUNTRIES = {
         "lat": 59.3327,
         "lng": 18.0645,
         "gdp": 604.8,
-        "pop": 0,
+        "pop": 10.6,
         "region": "Europe & Central Asia",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 30.2,
-                "growth": 5.4,
-                "potential": 87,
+                "size": 32.7,
+                "growth": 4.6,
+                "potential": 86,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26718,12 +26765,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 30
+                "rank": 28
             },
             "manufacturing": {
-                "size": 79.8,
-                "growth": 2.7,
-                "potential": 83,
+                "size": 86.9,
+                "growth": 1.9,
+                "potential": 82,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -26734,12 +26781,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 34
+                "rank": 32
             },
             "finance": {
                 "size": 50.8,
-                "growth": 3.9,
-                "potential": 85,
+                "growth": 3.1,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26754,8 +26801,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 54.3,
-                "growth": 4.8,
-                "potential": 87,
+                "growth": 4.0,
+                "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26770,8 +26817,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 26.6,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 2.8,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26785,9 +26832,9 @@ const COUNTRIES = {
                 "rank": 24
             },
             "agriculture": {
-                "size": 18.1,
-                "growth": 2.4,
-                "potential": 81,
+                "size": 8.7,
+                "growth": 1.6,
+                "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26798,12 +26845,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 37
+                "rank": 61
             },
             "automotive": {
                 "size": 23.6,
-                "growth": 3.6,
-                "potential": 83,
+                "growth": 2.8,
+                "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26818,8 +26865,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 36.3,
-                "growth": 4.2,
-                "potential": 85,
+                "growth": 3.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26834,8 +26881,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 24.2,
-                "growth": 3.0,
-                "potential": 82,
+                "growth": 2.2,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26850,8 +26897,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 12.1,
-                "growth": 3.6,
-                "potential": 82,
+                "growth": 2.8,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26866,8 +26913,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 15.7,
-                "growth": 4.8,
-                "potential": 85,
+                "growth": 4.0,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26882,8 +26929,8 @@ const COUNTRIES = {
             },
             "education": {
                 "size": 26.6,
-                "growth": 4.2,
-                "potential": 85,
+                "growth": 3.4,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -26897,7 +26944,8 @@ const COUNTRIES = {
                 "rank": 19
             }
         },
-        "unemployment_pct": 8.4,
+        "gdp_growth_pct": 1.0,
+        "inflation_pct": 2.8,
         "trade_pct_gdp": 106.0,
         "renewable_energy_pct": 57.9
     },
@@ -26909,124 +26957,12 @@ const COUNTRIES = {
         "lat": 33.5146,
         "lng": 36.3119,
         "gdp": 23.7,
-        "pop": 0,
+        "pop": 24.7,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1.2,
-                "growth": 5.9,
-                "potential": 62,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 122
-            },
-            "manufacturing": {
-                "size": 2.8,
-                "growth": 3.2,
-                "potential": 58,
-                "oppo": [
-                    "기초 제조업 도입",
-                    "농산물 가공",
-                    "섬유/의류 산업"
-                ],
-                "risk": [
-                    "전력 부족",
-                    "운송 인프라 미비",
-                    "자본 부족"
-                ],
-                "rank": 120
-            },
-            "finance": {
-                "size": 1.7,
-                "growth": 4.4,
-                "potential": 59,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 120
-            },
-            "healthcare": {
-                "size": 1,
-                "growth": 5.3,
-                "potential": 61,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 145
-            },
-            "energy": {
-                "size": 1,
-                "growth": 4.1,
-                "potential": 58,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 143
-            },
-            "agriculture": {
-                "size": 1,
-                "growth": 2.9,
-                "potential": 56,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 144
-            },
-            "automotive": {
-                "size": 1,
-                "growth": 4.1,
-                "potential": 58,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 143
-            },
-            "retail": {
-                "size": 1.4,
                 "growth": 4.7,
                 "potential": 60,
                 "oppo": [
@@ -27041,10 +26977,122 @@ const COUNTRIES = {
                 ],
                 "rank": 122
             },
-            "realestate": {
+            "manufacturing": {
+                "size": 2.8,
+                "growth": 2.0,
+                "potential": 55,
+                "oppo": [
+                    "기초 제조업 도입",
+                    "농산물 가공",
+                    "섬유/의류 산업"
+                ],
+                "risk": [
+                    "전력 부족",
+                    "운송 인프라 미비",
+                    "자본 부족"
+                ],
+                "rank": 113
+            },
+            "finance": {
+                "size": 1.7,
+                "growth": 3.2,
+                "potential": 57,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 120
+            },
+            "healthcare": {
                 "size": 1,
+                "growth": 4.1,
+                "potential": 58,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 145
+            },
+            "energy": {
+                "size": 1,
+                "growth": 2.9,
+                "potential": 56,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 143
+            },
+            "agriculture": {
+                "size": 10.2,
+                "growth": 1.7,
+                "potential": 56,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 55
+            },
+            "automotive": {
+                "size": 1,
+                "growth": 2.9,
+                "potential": 56,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 143
+            },
+            "retail": {
+                "size": 1.4,
                 "growth": 3.5,
                 "potential": 57,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 122
+            },
+            "realestate": {
+                "size": 1,
+                "growth": 2.3,
+                "potential": 55,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -27059,8 +27107,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 2.9,
+                "potential": 56,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -27075,8 +27123,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 4.1,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -27087,12 +27135,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 139
+                "rank": 141
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 3.5,
+                "potential": 57,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -27106,7 +27154,8 @@ const COUNTRIES = {
                 "rank": 141
             }
         },
-        "unemployment_pct": 13.4,
+        "gdp_growth_pct": -0.2,
+        "inflation_pct": 13.4,
         "trade_pct_gdp": 35.4,
         "renewable_energy_pct": 1.1
     },
@@ -27118,7 +27167,7 @@ const COUNTRIES = {
         "lat": 12.1048,
         "lng": 15.0445,
         "gdp": 19.9,
-        "pop": 0,
+        "pop": 20.3,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
@@ -27152,7 +27201,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 144
+                "rank": 139
             },
             "finance": {
                 "size": 1.4,
@@ -27216,7 +27265,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 63
+                "rank": 67
             },
             "automotive": {
                 "size": 1,
@@ -27296,7 +27345,7 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 140
+                "rank": 142
             },
             "education": {
                 "size": 1,
@@ -27316,7 +27365,7 @@ const COUNTRIES = {
             }
         },
         "gdp_growth_pct": 5.0,
-        "unemployment_pct": 1.1,
+        "inflation_pct": 8.9,
         "trade_pct_gdp": 44.6,
         "renewable_energy_pct": 70
     },
@@ -27328,14 +27377,14 @@ const COUNTRIES = {
         "lat": 6.1228,
         "lng": 1.2255,
         "gdp": 10.6,
-        "pop": 0,
+        "pop": 8.4,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 74,
+                "growth": 7.3,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27349,9 +27398,9 @@ const COUNTRIES = {
                 "rank": 148
             },
             "manufacturing": {
-                "size": 1.3,
-                "growth": 3.2,
-                "potential": 69,
+                "size": 1.2,
+                "growth": 4.6,
+                "potential": 71,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -27362,12 +27411,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 145
+                "rank": 142
             },
             "finance": {
                 "size": 1,
-                "growth": 4.4,
-                "potential": 71,
+                "growth": 5.8,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27382,8 +27431,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 6.7,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27398,8 +27447,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 5.5,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27413,9 +27462,9 @@ const COUNTRIES = {
                 "rank": 145
             },
             "agriculture": {
-                "size": 1,
-                "growth": 2.9,
-                "potential": 68,
+                "size": 2.3,
+                "growth": 4.3,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27426,12 +27475,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 145
+                "rank": 111
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 5.5,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27446,8 +27495,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 6.1,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27462,8 +27511,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 4.9,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27478,8 +27527,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 5.5,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27494,8 +27543,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 6.7,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27506,12 +27555,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 141
+                "rank": 143
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 6.1,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27525,7 +27574,8 @@ const COUNTRIES = {
                 "rank": 143
             }
         },
-        "unemployment_pct": 1.9,
+        "gdp_growth_pct": 6.5,
+        "inflation_pct": 2.9,
         "trade_pct_gdp": 59.9,
         "renewable_energy_pct": 75.1
     },
@@ -27537,7 +27587,7 @@ const COUNTRIES = {
         "lat": 13.7308,
         "lng": 100.521,
         "gdp": 529.4,
-        "pop": 0,
+        "pop": 71.7,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
@@ -27555,12 +27605,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 23
+                "rank": 24
             },
             "manufacturing": {
-                "size": 101.6,
+                "size": 205.3,
                 "growth": 2.7,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -27571,7 +27621,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 24
+                "rank": 16
             },
             "finance": {
                 "size": 37.1,
@@ -27622,9 +27672,9 @@ const COUNTRIES = {
                 "rank": 31
             },
             "agriculture": {
-                "size": 15.9,
+                "size": 47.1,
                 "growth": 2.4,
-                "potential": 76,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -27635,7 +27685,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 43
+                "rank": 18
             },
             "automotive": {
                 "size": 20.6,
@@ -27702,7 +27752,7 @@ const COUNTRIES = {
                 "rank": 25
             },
             "tourism": {
-                "size": 15.4,
+                "size": 10.6,
                 "growth": 4.8,
                 "potential": 81,
                 "oppo": [
@@ -27715,7 +27765,7 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 17
+                "rank": 29
             },
             "education": {
                 "size": 8.0,
@@ -27734,7 +27784,8 @@ const COUNTRIES = {
                 "rank": 44
             }
         },
-        "unemployment_pct": 0.8,
+        "gdp_growth_pct": 2.9,
+        "inflation_pct": 0.4,
         "trade_pct_gdp": 135.7,
         "renewable_energy_pct": 19
     },
@@ -27746,14 +27797,14 @@ const COUNTRIES = {
         "lat": 38.5878,
         "lng": 68.7864,
         "gdp": 14.4,
-        "pop": 0,
+        "pop": 10.6,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1,
-                "growth": 5.9,
-                "potential": 74,
+                "growth": 8.1,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27767,9 +27818,9 @@ const COUNTRIES = {
                 "rank": 149
             },
             "manufacturing": {
-                "size": 1.9,
-                "growth": 3.2,
-                "potential": 69,
+                "size": 2.1,
+                "growth": 5.4,
+                "potential": 74,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -27780,12 +27831,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 135
+                "rank": 126
             },
             "finance": {
                 "size": 1.2,
-                "growth": 4.4,
-                "potential": 71,
+                "growth": 6.6,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27800,8 +27851,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 7.5,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27816,8 +27867,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 6.3,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27831,9 +27882,9 @@ const COUNTRIES = {
                 "rank": 146
             },
             "agriculture": {
-                "size": 1,
-                "growth": 2.9,
-                "potential": 68,
+                "size": 3.3,
+                "growth": 5.1,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27844,12 +27895,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 146
+                "rank": 101
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 6.3,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27864,8 +27915,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 6.9,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27880,8 +27931,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 5.7,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27896,8 +27947,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 6.3,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27912,8 +27963,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 7.5,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27924,12 +27975,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 142
+                "rank": 144
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 6.9,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -27943,7 +27994,7 @@ const COUNTRIES = {
                 "rank": 144
             }
         },
-        "unemployment_pct": 7.0,
+        "gdp_growth_pct": 8.4,
         "trade_pct_gdp": 59.1,
         "renewable_energy_pct": 34.9
     },
@@ -27955,14 +28006,14 @@ const COUNTRIES = {
         "lat": 37.9509,
         "lng": 58.3794,
         "gdp": 44.2,
-        "pop": 0,
+        "pop": 7.5,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 2.2,
-                "growth": 5.4,
-                "potential": 80,
+                "growth": 6.7,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -27977,8 +28028,8 @@ const COUNTRIES = {
             },
             "manufacturing": {
                 "size": 5.8,
-                "growth": 2.7,
-                "potential": 76,
+                "growth": 4.0,
+                "potential": 78,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -27989,12 +28040,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 97
+                "rank": 95
             },
             "finance": {
                 "size": 3.7,
-                "growth": 3.9,
-                "potential": 78,
+                "growth": 5.2,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28009,8 +28060,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.9,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 6.1,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28025,8 +28076,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1.9,
-                "growth": 3.6,
-                "potential": 76,
+                "growth": 4.9,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28040,9 +28091,9 @@ const COUNTRIES = {
                 "rank": 98
             },
             "agriculture": {
-                "size": 1.3,
-                "growth": 2.4,
-                "potential": 73,
+                "size": 5.4,
+                "growth": 3.7,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28053,12 +28104,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 123
+                "rank": 80
             },
             "automotive": {
                 "size": 1.7,
-                "growth": 3.6,
-                "potential": 76,
+                "growth": 4.9,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28073,8 +28124,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 2.7,
-                "growth": 4.2,
-                "potential": 78,
+                "growth": 5.5,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28089,8 +28140,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1.8,
-                "growth": 3.0,
-                "potential": 75,
+                "growth": 4.3,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28105,8 +28156,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
-                "potential": 75,
+                "growth": 4.9,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28121,8 +28172,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1.1,
-                "growth": 4.8,
-                "potential": 78,
+                "growth": 6.1,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28133,12 +28184,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 81
+                "rank": 83
             },
             "education": {
                 "size": 1.1,
-                "growth": 4.2,
-                "potential": 77,
+                "growth": 5.5,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28152,7 +28203,7 @@ const COUNTRIES = {
                 "rank": 94
             }
         },
-        "unemployment_pct": 4.0,
+        "gdp_growth_pct": 6.3,
         "trade_pct_gdp": 28.7,
         "renewable_energy_pct": 0.1
     },
@@ -28164,13 +28215,13 @@ const COUNTRIES = {
         "lat": 10.6596,
         "lng": -61.4789,
         "gdp": 25.6,
-        "pop": 0,
+        "pop": 1.4,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 1.3,
-                "growth": 5.4,
+                "growth": 5.2,
                 "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -28185,8 +28236,8 @@ const COUNTRIES = {
                 "rank": 115
             },
             "manufacturing": {
-                "size": 3.1,
-                "growth": 2.7,
+                "size": 3.7,
+                "growth": 2.5,
                 "potential": 79,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -28198,12 +28249,12 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 117
+                "rank": 107
             },
             "finance": {
                 "size": 1.8,
-                "growth": 3.9,
-                "potential": 81,
+                "growth": 3.7,
+                "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -28218,7 +28269,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.5,
-                "growth": 4.8,
+                "growth": 4.6,
                 "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -28234,7 +28285,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 3.6,
+                "growth": 3.4,
                 "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -28250,8 +28301,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.4,
-                "potential": 77,
+                "growth": 2.2,
+                "potential": 76,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -28262,11 +28313,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 147
+                "rank": 148
             },
             "automotive": {
                 "size": 1,
-                "growth": 3.6,
+                "growth": 3.4,
                 "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -28282,7 +28333,7 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.5,
-                "growth": 4.2,
+                "growth": 4.0,
                 "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -28298,7 +28349,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.0,
+                "growth": 2.8,
                 "potential": 78,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -28314,7 +28365,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 3.6,
+                "growth": 3.4,
                 "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -28330,8 +28381,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 4.8,
-                "potential": 82,
+                "growth": 4.6,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -28342,11 +28393,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 143
+                "rank": 145
             },
             "education": {
                 "size": 1,
-                "growth": 4.2,
+                "growth": 4.0,
                 "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -28361,7 +28412,8 @@ const COUNTRIES = {
                 "rank": 145
             }
         },
-        "unemployment_pct": 3.3,
+        "gdp_growth_pct": 2.5,
+        "inflation_pct": 0.5,
         "renewable_energy_pct": 0.5
     },
     "788": {
@@ -28372,14 +28424,14 @@ const COUNTRIES = {
         "lat": 36.7899,
         "lng": 10.21,
         "gdp": 51.4,
-        "pop": 0,
+        "pop": 12.3,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 2.6,
-                "growth": 5.9,
-                "potential": 75,
+                "growth": 5.3,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28393,9 +28445,9 @@ const COUNTRIES = {
                 "rank": 93
             },
             "manufacturing": {
-                "size": 6.2,
-                "growth": 3.2,
-                "potential": 71,
+                "size": 7.6,
+                "growth": 2.6,
+                "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -28406,12 +28458,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 92
+                "rank": 85
             },
             "finance": {
                 "size": 3.6,
-                "growth": 4.4,
-                "potential": 72,
+                "growth": 3.8,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28426,8 +28478,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 3.3,
-                "growth": 5.3,
-                "potential": 74,
+                "growth": 4.7,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28441,70 +28493,6 @@ const COUNTRIES = {
                 "rank": 79
             },
             "energy": {
-                "size": 2.1,
-                "growth": 4.1,
-                "potential": 71,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 91
-            },
-            "agriculture": {
-                "size": 1.5,
-                "growth": 2.9,
-                "potential": 68,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 118
-            },
-            "automotive": {
-                "size": 1.5,
-                "growth": 4.1,
-                "potential": 71,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 98
-            },
-            "retail": {
-                "size": 3.1,
-                "growth": 4.7,
-                "potential": 73,
-                "oppo": [
-                    "디지털 경제 도입기",
-                    "모바일 서비스 확대",
-                    "기술 인력 양성"
-                ],
-                "risk": [
-                    "디지털 격차",
-                    "자본 부족",
-                    "인재 부족"
-                ],
-                "rank": 92
-            },
-            "realestate": {
                 "size": 2.1,
                 "growth": 3.5,
                 "potential": 70,
@@ -28520,10 +28508,74 @@ const COUNTRIES = {
                 ],
                 "rank": 91
             },
+            "agriculture": {
+                "size": 5.0,
+                "growth": 2.3,
+                "potential": 69,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 87
+            },
+            "automotive": {
+                "size": 1.5,
+                "growth": 3.5,
+                "potential": 70,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 98
+            },
+            "retail": {
+                "size": 3.1,
+                "growth": 4.1,
+                "potential": 72,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 92
+            },
+            "realestate": {
+                "size": 2.1,
+                "growth": 2.9,
+                "potential": 69,
+                "oppo": [
+                    "디지털 경제 도입기",
+                    "모바일 서비스 확대",
+                    "기술 인력 양성"
+                ],
+                "risk": [
+                    "디지털 격차",
+                    "자본 부족",
+                    "인재 부족"
+                ],
+                "rank": 91
+            },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 3.5,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28538,8 +28590,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 4.7,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28550,12 +28602,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 144
+                "rank": 146
             },
             "education": {
                 "size": 2.1,
-                "growth": 4.7,
-                "potential": 72,
+                "growth": 4.1,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28569,7 +28621,8 @@ const COUNTRIES = {
                 "rank": 77
             }
         },
-        "unemployment_pct": 15.3,
+        "gdp_growth_pct": 1.6,
+        "inflation_pct": 7.2,
         "trade_pct_gdp": 106.3,
         "renewable_energy_pct": 11.6
     },
@@ -28581,13 +28634,13 @@ const COUNTRIES = {
         "lat": 39.7153,
         "lng": 32.3606,
         "gdp": 1359.1,
-        "pop": 0,
+        "pop": 85.5,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 68.0,
-                "growth": 5.4,
+                "growth": 5.5,
                 "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -28602,9 +28655,9 @@ const COUNTRIES = {
                 "rank": 17
             },
             "manufacturing": {
-                "size": 179.4,
-                "growth": 2.7,
-                "potential": 80,
+                "size": 251.8,
+                "growth": 2.8,
+                "potential": 81,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -28615,11 +28668,11 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 17
+                "rank": 14
             },
             "finance": {
                 "size": 114.2,
-                "growth": 3.9,
+                "growth": 4.0,
                 "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -28635,7 +28688,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 46.5,
-                "growth": 4.8,
+                "growth": 4.9,
                 "potential": 83,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -28651,7 +28704,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 59.8,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -28666,9 +28719,9 @@ const COUNTRIES = {
                 "rank": 16
             },
             "agriculture": {
-                "size": 40.8,
-                "growth": 2.4,
-                "potential": 78,
+                "size": 79.1,
+                "growth": 2.5,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28679,12 +28732,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 21
+                "rank": 8
             },
             "automotive": {
                 "size": 53.0,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 3.7,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28699,7 +28752,7 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 81.5,
-                "growth": 4.2,
+                "growth": 4.3,
                 "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -28715,7 +28768,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 54.4,
-                "growth": 3.0,
+                "growth": 3.1,
                 "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -28731,7 +28784,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 27.2,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -28746,9 +28799,9 @@ const COUNTRIES = {
                 "rank": 17
             },
             "tourism": {
-                "size": 17.9,
-                "growth": 4.8,
-                "potential": 81,
+                "size": 35.3,
+                "growth": 4.9,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -28759,11 +28812,11 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 15
+                "rank": 8
             },
             "education": {
                 "size": 25.2,
-                "growth": 4.2,
+                "growth": 4.3,
                 "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -28778,7 +28831,8 @@ const COUNTRIES = {
                 "rank": 21
             }
         },
-        "unemployment_pct": 8.8,
+        "gdp_growth_pct": 3.3,
+        "inflation_pct": 58.5,
         "trade_pct_gdp": 54.6,
         "renewable_energy_pct": 12
     },
@@ -28790,14 +28844,14 @@ const COUNTRIES = {
         "lat": -6.17486,
         "lng": 35.7382,
         "gdp": 79.2,
-        "pop": 0,
+        "pop": 68.6,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 4.0,
-                "growth": 5.9,
-                "potential": 76,
+                "growth": 6.9,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28811,9 +28865,9 @@ const COUNTRIES = {
                 "rank": 82
             },
             "manufacturing": {
-                "size": 9.5,
-                "growth": 3.2,
-                "potential": 71,
+                "size": 6.7,
+                "growth": 4.2,
+                "potential": 73,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -28824,12 +28878,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 82
+                "rank": 89
             },
             "finance": {
                 "size": 5.5,
-                "growth": 4.4,
-                "potential": 73,
+                "growth": 5.4,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28844,8 +28898,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.9,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 6.3,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28860,8 +28914,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 3.2,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 5.1,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28875,9 +28929,9 @@ const COUNTRIES = {
                 "rank": 84
             },
             "agriculture": {
-                "size": 2.4,
-                "growth": 2.9,
-                "potential": 69,
+                "size": 18.5,
+                "growth": 3.9,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28888,12 +28942,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 102
+                "rank": 39
             },
             "automotive": {
                 "size": 2.4,
-                "growth": 4.1,
-                "potential": 71,
+                "growth": 5.1,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28908,8 +28962,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 4.8,
-                "growth": 4.7,
-                "potential": 73,
+                "growth": 5.7,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28924,8 +28978,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 3.2,
-                "growth": 3.5,
-                "potential": 71,
+                "growth": 4.5,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28940,8 +28994,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.6,
-                "growth": 4.1,
-                "potential": 71,
+                "growth": 5.1,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28955,9 +29009,9 @@ const COUNTRIES = {
                 "rank": 82
             },
             "tourism": {
-                "size": 2.6,
-                "growth": 5.3,
-                "potential": 74,
+                "size": 1.6,
+                "growth": 6.3,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28968,12 +29022,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 49
+                "rank": 72
             },
             "education": {
                 "size": 1.5,
-                "growth": 4.7,
-                "potential": 72,
+                "growth": 5.7,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -28987,7 +29041,8 @@ const COUNTRIES = {
                 "rank": 84
             }
         },
-        "unemployment_pct": 1.6,
+        "gdp_growth_pct": 5.5,
+        "inflation_pct": 3.1,
         "trade_pct_gdp": 41.3,
         "renewable_energy_pct": 78.3
     },
@@ -28999,14 +29054,14 @@ const COUNTRIES = {
         "lat": 0.314269,
         "lng": 32.5729,
         "gdp": 53.9,
-        "pop": 0,
+        "pop": 50.0,
         "region": "Sub-Saharan Africa ",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 2.7,
-                "growth": 5.9,
-                "potential": 63,
+                "growth": 7.1,
+                "potential": 65,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29020,9 +29075,9 @@ const COUNTRIES = {
                 "rank": 92
             },
             "manufacturing": {
-                "size": 6.5,
-                "growth": 3.2,
-                "potential": 59,
+                "size": 8.1,
+                "growth": 4.4,
+                "potential": 62,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -29033,12 +29088,12 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 91
+                "rank": 84
             },
             "finance": {
                 "size": 3.8,
-                "growth": 4.4,
-                "potential": 61,
+                "growth": 5.6,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29053,8 +29108,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.8,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 6.5,
+                "potential": 64,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29069,8 +29124,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 2.2,
-                "growth": 4.1,
-                "potential": 59,
+                "growth": 5.3,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29084,9 +29139,9 @@ const COUNTRIES = {
                 "rank": 89
             },
             "agriculture": {
-                "size": 1.6,
-                "growth": 2.9,
-                "potential": 56,
+                "size": 13.3,
+                "growth": 4.1,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29097,12 +29152,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 115
+                "rank": 46
             },
             "automotive": {
                 "size": 1.6,
-                "growth": 4.1,
-                "potential": 59,
+                "growth": 5.3,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29117,8 +29172,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 3.2,
-                "growth": 4.7,
-                "potential": 61,
+                "growth": 5.9,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29133,8 +29188,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 2.2,
-                "growth": 3.5,
-                "potential": 58,
+                "growth": 4.7,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29149,8 +29204,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 5.3,
+                "potential": 61,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29164,9 +29219,9 @@ const COUNTRIES = {
                 "rank": 91
             },
             "tourism": {
-                "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "size": 1.1,
+                "growth": 6.5,
+                "potential": 63,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29177,12 +29232,12 @@ const COUNTRIES = {
                     "자본 극심한 부족",
                     "교육 시스템 미비"
                 ],
-                "rank": 145
+                "rank": 84
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 5.9,
+                "potential": 62,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -29196,7 +29251,8 @@ const COUNTRIES = {
                 "rank": 146
             }
         },
-        "unemployment_pct": 2.7,
+        "gdp_growth_pct": 6.1,
+        "inflation_pct": 3.3,
         "trade_pct_gdp": 42.7,
         "renewable_energy_pct": 90.9
     },
@@ -29208,13 +29264,13 @@ const COUNTRIES = {
         "lat": 50.4536,
         "lng": 30.5038,
         "gdp": 190.8,
-        "pop": 0,
+        "pop": 37.9,
         "region": "Europe & Central Asia",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 9.5,
-                "growth": 5.4,
+                "growth": 5.5,
                 "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -29229,9 +29285,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "manufacturing": {
-                "size": 25.2,
-                "growth": 2.7,
-                "potential": 78,
+                "size": 17.7,
+                "growth": 2.8,
+                "potential": 77,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -29242,12 +29298,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 55
+                "rank": 61
             },
             "finance": {
                 "size": 16.0,
-                "growth": 3.9,
-                "potential": 79,
+                "growth": 4.0,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -29262,7 +29318,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 12.5,
-                "growth": 4.8,
+                "growth": 4.9,
                 "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -29278,7 +29334,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 8.4,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -29293,9 +29349,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "agriculture": {
-                "size": 5.7,
-                "growth": 2.4,
-                "potential": 75,
+                "size": 13.9,
+                "growth": 2.5,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -29306,11 +29362,11 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 72
+                "rank": 44
             },
             "automotive": {
                 "size": 7.4,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -29326,7 +29382,7 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 11.4,
-                "growth": 4.2,
+                "growth": 4.3,
                 "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -29342,7 +29398,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 7.6,
-                "growth": 3.0,
+                "growth": 3.1,
                 "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -29358,7 +29414,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 3.8,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -29373,9 +29429,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "tourism": {
-                "size": 1.2,
-                "growth": 4.8,
-                "potential": 78,
+                "size": 5.0,
+                "growth": 4.9,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -29386,11 +29442,11 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 76
+                "rank": 42
             },
             "education": {
                 "size": 5.9,
-                "growth": 4.2,
+                "growth": 4.3,
                 "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
@@ -29405,7 +29461,8 @@ const COUNTRIES = {
                 "rank": 51
             }
         },
-        "unemployment_pct": 9.8,
+        "gdp_growth_pct": 3.2,
+        "inflation_pct": 6.5,
         "trade_pct_gdp": 79.7,
         "renewable_energy_pct": 8.9
     },
@@ -29417,13 +29474,13 @@ const COUNTRIES = {
         "lat": -34.8941,
         "lng": -56.0675,
         "gdp": 82.3,
-        "pop": 0,
+        "pop": 3.4,
         "region": "Latin America & Caribbean ",
         "income": "High income",
         "industries": {
             "tech": {
                 "size": 4.1,
-                "growth": 5.4,
+                "growth": 5.5,
                 "potential": 85,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29438,8 +29495,8 @@ const COUNTRIES = {
                 "rank": 81
             },
             "manufacturing": {
-                "size": 9.9,
-                "growth": 2.7,
+                "size": 8.2,
+                "growth": 2.8,
                 "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -29451,11 +29508,11 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 80
+                "rank": 83
             },
             "finance": {
                 "size": 5.8,
-                "growth": 3.9,
+                "growth": 4.0,
                 "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29471,7 +29528,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 5.9,
-                "growth": 4.8,
+                "growth": 4.9,
                 "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29487,7 +29544,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 3.3,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29502,9 +29559,9 @@ const COUNTRIES = {
                 "rank": 82
             },
             "agriculture": {
-                "size": 2.5,
-                "growth": 2.4,
-                "potential": 78,
+                "size": 5.3,
+                "growth": 2.5,
+                "potential": 79,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29515,12 +29572,12 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 101
+                "rank": 82
             },
             "automotive": {
                 "size": 2.5,
-                "growth": 3.6,
-                "potential": 80,
+                "growth": 3.7,
+                "potential": 81,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29535,8 +29592,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 4.9,
-                "growth": 4.2,
-                "potential": 82,
+                "growth": 4.3,
+                "potential": 83,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29551,7 +29608,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 3.3,
-                "growth": 3.0,
+                "growth": 3.1,
                 "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29567,7 +29624,7 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1.6,
-                "growth": 3.6,
+                "growth": 3.7,
                 "potential": 80,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29582,8 +29639,8 @@ const COUNTRIES = {
                 "rank": 83
             },
             "tourism": {
-                "size": 1.1,
-                "growth": 4.8,
+                "size": 1.6,
+                "growth": 4.9,
                 "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29595,11 +29652,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 82
+                "rank": 73
             },
             "education": {
                 "size": 2.4,
-                "growth": 4.2,
+                "growth": 4.3,
                 "potential": 82,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29614,7 +29671,8 @@ const COUNTRIES = {
                 "rank": 69
             }
         },
-        "unemployment_pct": 8.2,
+        "gdp_growth_pct": 3.3,
+        "inflation_pct": 4.8,
         "trade_pct_gdp": 51.5,
         "renewable_energy_pct": 57.8
     },
@@ -29626,13 +29684,13 @@ const COUNTRIES = {
         "lat": 38.8895,
         "lng": -77.032,
         "gdp": 29298.0,
-        "pop": 0,
+        "pop": 340.0,
         "region": "North America",
         "income": "High income",
         "industries": {
             "tech": {
-                "size": 2636.8,
-                "growth": 5.4,
+                "size": 2726.9,
+                "growth": 5.3,
                 "potential": 93,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29647,8 +29705,8 @@ const COUNTRIES = {
                 "rank": 1
             },
             "manufacturing": {
-                "size": 3164.2,
-                "growth": 2.7,
+                "size": 2775.3,
+                "growth": 2.6,
                 "potential": 88,
                 "oppo": [
                     "스마트팩토리 전환",
@@ -29664,7 +29722,7 @@ const COUNTRIES = {
             },
             "finance": {
                 "size": 3076.3,
-                "growth": 3.9,
+                "growth": 3.8,
                 "potential": 90,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29680,7 +29738,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 6260.5,
-                "growth": 4.8,
+                "growth": 4.7,
                 "potential": 93,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29696,7 +29754,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1171.9,
-                "growth": 3.6,
+                "growth": 3.5,
                 "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29711,9 +29769,9 @@ const COUNTRIES = {
                 "rank": 1
             },
             "agriculture": {
-                "size": 878.9,
-                "growth": 2.4,
-                "potential": 86,
+                "size": 276.3,
+                "growth": 2.3,
+                "potential": 84,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29728,7 +29786,7 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 878.9,
-                "growth": 3.6,
+                "growth": 3.5,
                 "potential": 88,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29744,8 +29802,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 2461.0,
-                "growth": 4.2,
-                "potential": 91,
+                "growth": 4.1,
+                "potential": 90,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29760,7 +29818,7 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1171.9,
-                "growth": 3.0,
+                "growth": 2.9,
                 "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29776,8 +29834,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 586.0,
-                "growth": 3.6,
-                "potential": 88,
+                "growth": 3.5,
+                "potential": 87,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29791,9 +29849,9 @@ const COUNTRIES = {
                 "rank": 1
             },
             "tourism": {
-                "size": 146.5,
-                "growth": 4.8,
-                "potential": 88,
+                "size": 586.0,
+                "growth": 4.7,
+                "potential": 90,
                 "oppo": [
                     "AI/ML 투자 확대",
                     "클라우드 인프라 성장",
@@ -29804,11 +29862,11 @@ const COUNTRIES = {
                     "인재 확보 경쟁",
                     "기술 패권 경쟁"
                 ],
-                "rank": 2
+                "rank": 1
             },
             "education": {
                 "size": 952.8,
-                "growth": 4.2,
+                "growth": 4.1,
                 "potential": 89,
                 "oppo": [
                     "AI/ML 투자 확대",
@@ -29823,7 +29881,8 @@ const COUNTRIES = {
                 "rank": 1
             }
         },
-        "unemployment_pct": 4.0,
+        "gdp_growth_pct": 2.8,
+        "inflation_pct": 2.9,
         "trade_pct_gdp": 25.0,
         "renewable_energy_pct": 10.9
     },
@@ -29835,14 +29894,14 @@ const COUNTRIES = {
         "lat": 41.3052,
         "lng": 69.269,
         "gdp": 121.4,
-        "pop": 0,
+        "pop": 36.4,
         "region": "Europe & Central Asia",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 6.1,
-                "growth": 5.9,
-                "potential": 76,
+                "growth": 7.4,
+                "potential": 79,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29856,9 +29915,9 @@ const COUNTRIES = {
                 "rank": 64
             },
             "manufacturing": {
-                "size": 16.0,
-                "growth": 3.2,
-                "potential": 72,
+                "size": 26.6,
+                "growth": 4.7,
+                "potential": 76,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -29869,12 +29928,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 62
+                "rank": 52
             },
             "finance": {
                 "size": 10.2,
-                "growth": 4.4,
-                "potential": 74,
+                "growth": 5.9,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29889,8 +29948,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 6.5,
-                "growth": 5.3,
-                "potential": 75,
+                "growth": 6.8,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29905,8 +29964,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 5.3,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 5.6,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29920,9 +29979,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "agriculture": {
-                "size": 3.6,
-                "growth": 2.9,
-                "potential": 69,
+                "size": 21.5,
+                "growth": 4.4,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29933,12 +29992,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 90
+                "rank": 36
             },
             "automotive": {
                 "size": 4.7,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 5.6,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29953,8 +30012,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 7.3,
-                "growth": 4.7,
-                "potential": 74,
+                "growth": 6.2,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29969,8 +30028,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 4.9,
-                "growth": 3.5,
-                "potential": 71,
+                "growth": 5.0,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -29985,8 +30044,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 2.4,
-                "growth": 4.1,
-                "potential": 71,
+                "growth": 5.6,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30000,9 +30059,9 @@ const COUNTRIES = {
                 "rank": 64
             },
             "tourism": {
-                "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "size": 3.2,
+                "growth": 6.8,
+                "potential": 77,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30013,12 +30072,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 146
+                "rank": 49
             },
             "education": {
                 "size": 4.0,
-                "growth": 4.7,
-                "potential": 73,
+                "growth": 6.2,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30032,7 +30091,8 @@ const COUNTRIES = {
                 "rank": 59
             }
         },
-        "unemployment_pct": 4.4,
+        "gdp_growth_pct": 6.7,
+        "inflation_pct": 9.6,
         "trade_pct_gdp": 57.5,
         "renewable_energy_pct": 1
     },
@@ -30044,14 +30104,14 @@ const COUNTRIES = {
         "lat": 9.08165,
         "lng": -69.8371,
         "gdp": 120.6,
-        "pop": 0,
+        "pop": 28.4,
         "region": "Latin America & Caribbean ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 6.0,
-                "growth": 5.9,
-                "potential": 76,
+                "growth": 6.9,
+                "potential": 78,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30066,8 +30126,8 @@ const COUNTRIES = {
             },
             "manufacturing": {
                 "size": 14.5,
-                "growth": 3.2,
-                "potential": 72,
+                "growth": 4.2,
+                "potential": 74,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -30078,12 +30138,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 66
+                "rank": 68
             },
             "finance": {
                 "size": 8.4,
-                "growth": 4.4,
-                "potential": 74,
+                "growth": 5.4,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30098,8 +30158,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 3.6,
-                "growth": 5.3,
-                "potential": 74,
+                "growth": 6.3,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30114,8 +30174,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 4.8,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 5.1,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30130,8 +30190,8 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 3.6,
-                "growth": 2.9,
-                "potential": 69,
+                "growth": 3.9,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30142,12 +30202,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 91
+                "rank": 98
             },
             "automotive": {
                 "size": 3.6,
-                "growth": 4.1,
-                "potential": 72,
+                "growth": 5.1,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30162,8 +30222,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 7.2,
-                "growth": 4.7,
-                "potential": 74,
+                "growth": 5.7,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30178,8 +30238,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 4.8,
-                "growth": 3.5,
-                "potential": 71,
+                "growth": 4.5,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30194,8 +30254,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 2.4,
-                "growth": 4.1,
-                "potential": 71,
+                "growth": 5.1,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30210,8 +30270,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 2.4,
-                "growth": 5.3,
-                "potential": 74,
+                "growth": 6.3,
+                "potential": 76,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30222,12 +30282,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 53
+                "rank": 55
             },
             "education": {
                 "size": 2.4,
-                "growth": 4.7,
-                "potential": 73,
+                "growth": 5.7,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30241,7 +30301,7 @@ const COUNTRIES = {
                 "rank": 70
             }
         },
-        "unemployment_pct": 5.3,
+        "gdp_growth_pct": 5.5,
         "trade_pct_gdp": 26.2,
         "renewable_energy_pct": 33.7
     },
@@ -30253,14 +30313,14 @@ const COUNTRIES = {
         "lat": 21.0069,
         "lng": 105.825,
         "gdp": 476.3,
-        "pop": 0,
+        "pop": 101.0,
         "region": "East Asia & Pacific",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 35.7,
-                "growth": 5.4,
-                "potential": 83,
+                "growth": 7.0,
+                "potential": 87,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30271,12 +30331,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 24
+                "rank": 25
             },
             "manufacturing": {
-                "size": 91.4,
-                "growth": 2.7,
-                "potential": 79,
+                "size": 185.4,
+                "growth": 4.3,
+                "potential": 83,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -30287,12 +30347,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 28
+                "rank": 21
             },
             "finance": {
                 "size": 33.3,
-                "growth": 3.9,
-                "potential": 80,
+                "growth": 5.5,
+                "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30307,8 +30367,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 17.4,
-                "growth": 4.8,
-                "potential": 81,
+                "growth": 6.4,
+                "potential": 85,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30323,8 +30383,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 19.1,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 5.2,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30338,9 +30398,9 @@ const COUNTRIES = {
                 "rank": 32
             },
             "agriculture": {
-                "size": 14.3,
-                "growth": 2.4,
-                "potential": 76,
+                "size": 57.3,
+                "growth": 4.0,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30351,12 +30411,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 44
+                "rank": 12
             },
             "automotive": {
                 "size": 18.6,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 5.2,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30371,8 +30431,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 28.6,
-                "growth": 4.2,
-                "potential": 81,
+                "growth": 5.8,
+                "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30387,8 +30447,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 19.1,
-                "growth": 3.0,
-                "potential": 78,
+                "growth": 4.6,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30403,8 +30463,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 11.4,
-                "growth": 3.6,
-                "potential": 78,
+                "growth": 5.2,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30418,9 +30478,9 @@ const COUNTRIES = {
                 "rank": 28
             },
             "tourism": {
-                "size": 3.2,
-                "growth": 4.8,
-                "potential": 79,
+                "size": 9.5,
+                "growth": 6.4,
+                "potential": 84,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30431,12 +30491,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 45
+                "rank": 31
             },
             "education": {
                 "size": 8.3,
-                "growth": 4.2,
-                "potential": 79,
+                "growth": 5.8,
+                "potential": 82,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30450,7 +30510,8 @@ const COUNTRIES = {
                 "rank": 41
             }
         },
-        "unemployment_pct": 1.6,
+        "gdp_growth_pct": 7.0,
+        "inflation_pct": 3.6,
         "trade_pct_gdp": 173.9,
         "renewable_energy_pct": 24.2
     },
@@ -30462,14 +30523,14 @@ const COUNTRIES = {
         "lat": 15.352,
         "lng": 44.2075,
         "gdp": 21.6,
-        "pop": 0,
+        "pop": 40.6,
         "region": "Middle East, North Africa, Afghanistan & Pakistan",
         "income": "Low income",
         "industries": {
             "tech": {
                 "size": 1.1,
-                "growth": 5.9,
-                "potential": 62,
+                "growth": 5.0,
+                "potential": 60,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30484,8 +30545,8 @@ const COUNTRIES = {
             },
             "manufacturing": {
                 "size": 2.6,
-                "growth": 3.2,
-                "potential": 58,
+                "growth": 2.3,
+                "potential": 56,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -30496,12 +30557,12 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 124
+                "rank": 117
             },
             "finance": {
                 "size": 1.5,
-                "growth": 4.4,
-                "potential": 59,
+                "growth": 3.5,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30516,8 +30577,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.7,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 4.4,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30532,23 +30593,7 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
-                "oppo": [
-                    "모바일 뱅킹 보급",
-                    "기본 인프라 디지털화",
-                    "기술 교육 확대"
-                ],
-                "risk": [
-                    "기본 인프라 부재",
-                    "자본 극심한 부족",
-                    "교육 시스템 미비"
-                ],
-                "rank": 148
-            },
-            "agriculture": {
-                "size": 1,
-                "growth": 2.9,
+                "growth": 3.2,
                 "potential": 56,
                 "oppo": [
                     "모바일 뱅킹 보급",
@@ -30562,10 +30607,26 @@ const COUNTRIES = {
                 ],
                 "rank": 148
             },
+            "agriculture": {
+                "size": 6.2,
+                "growth": 2.0,
+                "potential": 56,
+                "oppo": [
+                    "모바일 뱅킹 보급",
+                    "기본 인프라 디지털화",
+                    "기술 교육 확대"
+                ],
+                "risk": [
+                    "기본 인프라 부재",
+                    "자본 극심한 부족",
+                    "교육 시스템 미비"
+                ],
+                "rank": 73
+            },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 3.2,
+                "potential": 56,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30580,8 +30641,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.3,
-                "growth": 4.7,
-                "potential": 60,
+                "growth": 3.8,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30596,8 +30657,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 57,
+                "growth": 2.6,
+                "potential": 55,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30612,8 +30673,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 58,
+                "growth": 3.2,
+                "potential": 56,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30628,8 +30689,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 61,
+                "growth": 4.4,
+                "potential": 59,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30644,8 +30705,8 @@ const COUNTRIES = {
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 59,
+                "growth": 3.8,
+                "potential": 58,
                 "oppo": [
                     "모바일 뱅킹 보급",
                     "기본 인프라 디지털화",
@@ -30659,7 +30720,7 @@ const COUNTRIES = {
                 "rank": 147
             }
         },
-        "unemployment_pct": 17.0,
+        "gdp_growth_pct": 0.8,
         "trade_pct_gdp": 56.1,
         "renewable_energy_pct": 3.7
     },
@@ -30671,14 +30732,14 @@ const COUNTRIES = {
         "lat": -25.746,
         "lng": 28.1871,
         "gdp": 401.1,
-        "pop": 0,
+        "pop": 64.0,
         "region": "Sub-Saharan Africa ",
         "income": "Upper middle income",
         "industries": {
             "tech": {
                 "size": 20.1,
-                "growth": 5.4,
-                "potential": 83,
+                "growth": 4.4,
+                "potential": 81,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30692,9 +30753,9 @@ const COUNTRIES = {
                 "rank": 39
             },
             "manufacturing": {
-                "size": 48.1,
-                "growth": 2.7,
-                "potential": 78,
+                "size": 51.3,
+                "growth": 1.7,
+                "potential": 77,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -30705,12 +30766,12 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 42
+                "rank": 40
             },
             "finance": {
                 "size": 28.1,
-                "growth": 3.9,
-                "potential": 80,
+                "growth": 2.9,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30725,8 +30786,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 28.6,
-                "growth": 4.8,
-                "potential": 82,
+                "growth": 3.8,
+                "potential": 80,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30741,8 +30802,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 16.0,
-                "growth": 3.6,
-                "potential": 79,
+                "growth": 2.6,
+                "potential": 77,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30756,9 +30817,9 @@ const COUNTRIES = {
                 "rank": 40
             },
             "agriculture": {
-                "size": 12.0,
-                "growth": 2.4,
-                "potential": 76,
+                "size": 11.3,
+                "growth": 1.4,
+                "potential": 74,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30769,12 +30830,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 47
+                "rank": 50
             },
             "automotive": {
                 "size": 12.0,
-                "growth": 3.6,
-                "potential": 78,
+                "growth": 2.6,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30789,8 +30850,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 24.1,
-                "growth": 4.2,
-                "potential": 81,
+                "growth": 3.2,
+                "potential": 79,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30805,8 +30866,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 16.0,
-                "growth": 3.0,
-                "potential": 78,
+                "growth": 2.0,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30821,8 +30882,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 8.0,
-                "growth": 3.6,
-                "potential": 78,
+                "growth": 2.6,
+                "potential": 76,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30836,9 +30897,9 @@ const COUNTRIES = {
                 "rank": 39
             },
             "tourism": {
-                "size": 2.7,
-                "growth": 4.8,
-                "potential": 79,
+                "size": 8.0,
+                "growth": 3.8,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30849,12 +30910,12 @@ const COUNTRIES = {
                     "두뇌 유출",
                     "규제 불확실성"
                 ],
-                "rank": 48
+                "rank": 33
             },
             "education": {
                 "size": 14.5,
-                "growth": 4.2,
-                "potential": 80,
+                "growth": 3.2,
+                "potential": 78,
                 "oppo": [
                     "IT 아웃소싱 성장",
                     "스타트업 생태계 확대",
@@ -30868,7 +30929,8 @@ const COUNTRIES = {
                 "rank": 29
             }
         },
-        "unemployment_pct": 32.3,
+        "gdp_growth_pct": 0.5,
+        "inflation_pct": 4.4,
         "trade_pct_gdp": 61.6,
         "renewable_energy_pct": 9.7
     },
@@ -30880,14 +30942,14 @@ const COUNTRIES = {
         "lat": -15.3982,
         "lng": 28.2937,
         "gdp": 25.3,
-        "pop": 0,
+        "pop": 21.3,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 1.3,
-                "growth": 5.9,
-                "potential": 74,
+                "growth": 6.2,
+                "potential": 75,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30901,8 +30963,8 @@ const COUNTRIES = {
                 "rank": 116
             },
             "manufacturing": {
-                "size": 3.0,
-                "growth": 3.2,
+                "size": 2.3,
+                "growth": 3.5,
                 "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
@@ -30914,11 +30976,11 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 118
+                "rank": 121
             },
             "finance": {
                 "size": 1.8,
-                "growth": 4.4,
+                "growth": 4.7,
                 "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -30934,7 +30996,7 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1.2,
-                "growth": 5.3,
+                "growth": 5.6,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -30950,8 +31012,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.4,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30966,7 +31028,7 @@ const COUNTRIES = {
             },
             "agriculture": {
                 "size": 1,
-                "growth": 2.9,
+                "growth": 3.2,
                 "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -30982,8 +31044,8 @@ const COUNTRIES = {
             },
             "automotive": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.4,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -30998,8 +31060,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 1.5,
-                "growth": 4.7,
-                "potential": 72,
+                "growth": 5.0,
+                "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31014,8 +31076,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1,
-                "growth": 3.5,
-                "potential": 69,
+                "growth": 3.8,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31030,8 +31092,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 4.4,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31046,7 +31108,7 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
+                "growth": 5.6,
                 "potential": 73,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -31062,8 +31124,8 @@ const COUNTRIES = {
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 5.0,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31077,7 +31139,8 @@ const COUNTRIES = {
                 "rank": 148
             }
         },
-        "unemployment_pct": 5.9,
+        "gdp_growth_pct": 3.8,
+        "inflation_pct": 15.0,
         "trade_pct_gdp": 62.5,
         "renewable_energy_pct": 83
     },
@@ -31089,14 +31152,14 @@ const COUNTRIES = {
         "lat": -17.8312,
         "lng": 31.0672,
         "gdp": 41.5,
-        "pop": 0,
+        "pop": 16.6,
         "region": "Sub-Saharan Africa ",
         "income": "Lower middle income",
         "industries": {
             "tech": {
                 "size": 2.1,
-                "growth": 5.9,
-                "potential": 75,
+                "growth": 5.4,
+                "potential": 74,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31110,8 +31173,8 @@ const COUNTRIES = {
                 "rank": 102
             },
             "manufacturing": {
-                "size": 5.0,
-                "growth": 3.2,
+                "size": 6.5,
+                "growth": 2.7,
                 "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
@@ -31123,12 +31186,12 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 103
+                "rank": 92
             },
             "finance": {
                 "size": 2.9,
-                "growth": 4.4,
-                "potential": 72,
+                "growth": 3.9,
+                "potential": 71,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31143,8 +31206,8 @@ const COUNTRIES = {
             },
             "healthcare": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 4.8,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31159,8 +31222,8 @@ const COUNTRIES = {
             },
             "energy": {
                 "size": 1.7,
-                "growth": 4.1,
-                "potential": 71,
+                "growth": 3.6,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31174,8 +31237,8 @@ const COUNTRIES = {
                 "rank": 102
             },
             "agriculture": {
-                "size": 1.2,
-                "growth": 2.9,
+                "size": 3.6,
+                "growth": 2.4,
                 "potential": 68,
                 "oppo": [
                     "디지털 경제 도입기",
@@ -31187,12 +31250,12 @@ const COUNTRIES = {
                     "자본 부족",
                     "인재 부족"
                 ],
-                "rank": 126
+                "rank": 99
             },
             "automotive": {
                 "size": 1.2,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 3.6,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31207,8 +31270,8 @@ const COUNTRIES = {
             },
             "retail": {
                 "size": 2.5,
-                "growth": 4.7,
-                "potential": 73,
+                "growth": 4.2,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31223,8 +31286,8 @@ const COUNTRIES = {
             },
             "realestate": {
                 "size": 1.7,
-                "growth": 3.5,
-                "potential": 70,
+                "growth": 3.0,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31239,8 +31302,8 @@ const COUNTRIES = {
             },
             "telecom": {
                 "size": 1,
-                "growth": 4.1,
-                "potential": 70,
+                "growth": 3.6,
+                "potential": 69,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31255,8 +31318,8 @@ const COUNTRIES = {
             },
             "tourism": {
                 "size": 1,
-                "growth": 5.3,
-                "potential": 73,
+                "growth": 4.8,
+                "potential": 72,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31271,8 +31334,8 @@ const COUNTRIES = {
             },
             "education": {
                 "size": 1,
-                "growth": 4.7,
-                "potential": 71,
+                "growth": 4.2,
+                "potential": 70,
                 "oppo": [
                     "디지털 경제 도입기",
                     "모바일 서비스 확대",
@@ -31286,7 +31349,8 @@ const COUNTRIES = {
                 "rank": 149
             }
         },
-        "unemployment_pct": 9.4,
+        "gdp_growth_pct": 1.7,
+        "inflation_pct": 104.7,
         "trade_pct_gdp": 41.5,
         "renewable_energy_pct": 82.4
     }
@@ -31458,27 +31522,27 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/JPY",
-        "value": "157",
+        "value": "158",
         "dir": "neutral"
     },
     {
         "label": "USD/KRW",
-        "value": "1,430",
+        "value": "1,429",
         "dir": "neutral"
     },
     {
         "label": "USD/CNY",
-        "value": "6.77",
+        "value": "6.76",
         "dir": "neutral"
     },
     {
         "label": "USD/INR",
-        "value": "95.40",
+        "value": "95.35",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.07",
+        "value": "5.10",
         "dir": "neutral"
     },
     {
@@ -31498,12 +31562,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,161",
+        "value": "26,157",
         "dir": "neutral"
     },
     {
         "label": "USD/AUD",
-        "value": "1.43",
+        "value": "1.42",
         "dir": "neutral"
     }
 ];
