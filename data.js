@@ -1,5 +1,5 @@
 // === GLOBAL INDUSTRY INTELLIGENCE DATABASE ===
-// Auto-generated: 2026-08-11 21:53:46
+// Auto-generated: 2026-08-12 21:48:28
 // Sources: World Bank, IMF, Yahoo Finance, ExchangeRate API
 // Countries: 149 | Industries: 12
 
@@ -333,7 +333,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 87
+                "rank": 88
             },
             "finance": {
                 "size": 7.2,
@@ -545,7 +545,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 128
+                "rank": 129
             },
             "finance": {
                 "size": 2.3,
@@ -744,9 +744,9 @@ const COUNTRIES = {
                 "rank": 33
             },
             "manufacturing": {
-                "size": 66.3,
+                "size": 51.8,
                 "growth": 3.1,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -757,7 +757,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 36
+                "rank": 39
             },
             "finance": {
                 "size": 38.7,
@@ -969,7 +969,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 29
+                "rank": 30
             },
             "finance": {
                 "size": 44.7,
@@ -1181,7 +1181,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 113
+                "rank": 112
             },
             "finance": {
                 "size": 2.2,
@@ -1393,7 +1393,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 21
+                "rank": 24
             },
             "finance": {
                 "size": 123.0,
@@ -1817,7 +1817,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 100
+                "rank": 101
             },
             "finance": {
                 "size": 6.2,
@@ -2029,7 +2029,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 32
+                "rank": 33
             },
             "finance": {
                 "size": 56.4,
@@ -2665,7 +2665,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 27
+                "rank": 28
             },
             "finance": {
                 "size": 31.5,
@@ -2877,7 +2877,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 65
+                "rank": 67
             },
             "finance": {
                 "size": 9.5,
@@ -3089,7 +3089,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 81
+                "rank": 79
             },
             "finance": {
                 "size": 3.3,
@@ -3301,7 +3301,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 103
+                "rank": 104
             },
             "finance": {
                 "size": 2.5,
@@ -3725,7 +3725,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 85
+                "rank": 86
             },
             "finance": {
                 "size": 3.8,
@@ -4149,7 +4149,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 116
+                "rank": 115
             },
             "finance": {
                 "size": 1.1,
@@ -4573,7 +4573,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 17
+                "rank": 20
             },
             "finance": {
                 "size": 238.4,
@@ -4772,7 +4772,7 @@ const COUNTRIES = {
                 "rank": 21
             },
             "manufacturing": {
-                "size": 128.0,
+                "size": 203.4,
                 "growth": 2.1,
                 "potential": 83,
                 "oppo": [
@@ -4785,7 +4785,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 23
+                "rank": 17
             },
             "finance": {
                 "size": 81.5,
@@ -5421,7 +5421,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 74
+                "rank": 75
             },
             "finance": {
                 "size": 6.1,
@@ -5633,7 +5633,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 86
+                "rank": 87
             },
             "finance": {
                 "size": 3.7,
@@ -5845,7 +5845,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 89
+                "rank": 91
             },
             "finance": {
                 "size": 5.3,
@@ -6056,7 +6056,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 126
+                "rank": 127
             },
             "finance": {
                 "size": 1.1,
@@ -6480,7 +6480,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 69
+                "rank": 71
             },
             "finance": {
                 "size": 6.8,
@@ -6692,7 +6692,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 72
+                "rank": 73
             },
             "finance": {
                 "size": 7.5,
@@ -7539,7 +7539,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 33
+                "rank": 34
             },
             "finance": {
                 "size": 35.7,
@@ -7751,7 +7751,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 63
+                "rank": 65
             },
             "finance": {
                 "size": 8.7,
@@ -7963,7 +7963,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 52
+                "rank": 53
             },
             "finance": {
                 "size": 18.9,
@@ -8175,7 +8175,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 61
+                "rank": 63
             },
             "finance": {
                 "size": 8.7,
@@ -8387,7 +8387,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 39
+                "rank": 38
             },
             "finance": {
                 "size": 27.2,
@@ -8586,7 +8586,7 @@ const COUNTRIES = {
                 "rank": 16
             },
             "manufacturing": {
-                "size": 227.8,
+                "size": 205.9,
                 "growth": 2.9,
                 "potential": 85,
                 "oppo": [
@@ -8599,7 +8599,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 14
+                "rank": 15
             },
             "finance": {
                 "size": 145.0,
@@ -8811,7 +8811,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 96
+                "rank": 97
             },
             "finance": {
                 "size": 3.6,
@@ -9023,7 +9023,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 88
+                "rank": 90
             },
             "finance": {
                 "size": 10.5,
@@ -9447,7 +9447,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 11
+                "rank": 10
             },
             "finance": {
                 "size": 265.5,
@@ -9659,7 +9659,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 104
+                "rank": 105
             },
             "finance": {
                 "size": 1.5,
@@ -9858,9 +9858,9 @@ const COUNTRIES = {
                 "rank": 8
             },
             "manufacturing": {
-                "size": 487.8,
+                "size": 324.1,
                 "growth": 1.9,
-                "potential": 84,
+                "potential": 83,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -9871,7 +9871,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 7
+                "rank": 11
             },
             "finance": {
                 "size": 310.4,
@@ -10083,7 +10083,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 108
+                "rank": 109
             },
             "finance": {
                 "size": 2.9,
@@ -10295,7 +10295,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 82
+                "rank": 80
             },
             "finance": {
                 "size": 5.8,
@@ -10507,7 +10507,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 109
+                "rank": 110
             },
             "finance": {
                 "size": 1.8,
@@ -10719,7 +10719,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 107
+                "rank": 108
             },
             "finance": {
                 "size": 1,
@@ -10931,7 +10931,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 53
+                "rank": 54
             },
             "finance": {
                 "size": 21.5,
@@ -11143,7 +11143,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 64
+                "rank": 66
             },
             "finance": {
                 "size": 7.9,
@@ -11566,7 +11566,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 95
+                "rank": 96
             },
             "finance": {
                 "size": 2.6,
@@ -11778,7 +11778,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 75
+                "rank": 76
             },
             "finance": {
                 "size": 7.8,
@@ -11990,7 +11990,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 97
+                "rank": 98
             },
             "finance": {
                 "size": 1.7,
@@ -12414,7 +12414,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 8
+                "rank": 7
             },
             "finance": {
                 "size": 97.7,
@@ -12838,7 +12838,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 16
+                "rank": 19
             },
             "finance": {
                 "size": 51.2,
@@ -13050,7 +13050,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 28
+                "rank": 29
             },
             "finance": {
                 "size": 33.3,
@@ -13262,7 +13262,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 73
+                "rank": 74
             },
             "finance": {
                 "size": 19.6,
@@ -13474,7 +13474,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 110
+                "rank": 111
             },
             "finance": {
                 "size": 2.8,
@@ -13686,7 +13686,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 37
+                "rank": 36
             },
             "finance": {
                 "size": 38.0,
@@ -13898,7 +13898,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 9
+                "rank": 8
             },
             "finance": {
                 "size": 200.2,
@@ -14321,7 +14321,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 77
+                "rank": 78
             },
             "finance": {
                 "size": 4.1,
@@ -14956,7 +14956,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 83
+                "rank": 81
             },
             "finance": {
                 "size": 8.4,
@@ -15168,7 +15168,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 119
+                "rank": 118
             },
             "finance": {
                 "size": 1.5,
@@ -15380,7 +15380,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 57
+                "rank": 58
             },
             "finance": {
                 "size": 3.2,
@@ -15804,7 +15804,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 67
+                "rank": 69
             },
             "finance": {
                 "size": 11.3,
@@ -16016,7 +16016,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 120
+                "rank": 119
             },
             "finance": {
                 "size": 1.2,
@@ -16439,7 +16439,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 93
+                "rank": 94
             },
             "finance": {
                 "size": 3.4,
@@ -16638,9 +16638,9 @@ const COUNTRIES = {
                 "rank": 61
             },
             "manufacturing": {
-                "size": 12.0,
+                "size": 17.4,
                 "growth": 3.5,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -16651,7 +16651,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 70
+                "rank": 62
             },
             "finance": {
                 "size": 7.0,
@@ -16863,7 +16863,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 68
+                "rank": 70
             },
             "finance": {
                 "size": 7.2,
@@ -17075,7 +17075,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 105
+                "rank": 106
             },
             "finance": {
                 "size": 7.8,
@@ -17499,7 +17499,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 55
+                "rank": 56
             },
             "finance": {
                 "size": 11.2,
@@ -17923,7 +17923,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 121
+                "rank": 120
             },
             "finance": {
                 "size": 1.2,
@@ -18135,7 +18135,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 10
+                "rank": 9
             },
             "finance": {
                 "size": 128.1,
@@ -18347,7 +18347,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 115
+                "rank": 114
             },
             "finance": {
                 "size": 1.4,
@@ -18559,7 +18559,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 127
+                "rank": 128
             },
             "finance": {
                 "size": 1.9,
@@ -20042,7 +20042,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 141
+                "rank": 140
             },
             "finance": {
                 "size": 1,
@@ -20254,7 +20254,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 20
+                "rank": 23
             },
             "finance": {
                 "size": 29.6,
@@ -20890,7 +20890,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 56
+                "rank": 57
             },
             "finance": {
                 "size": 17.7,
@@ -21101,7 +21101,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 117
+                "rank": 116
             },
             "finance": {
                 "size": 1.4,
@@ -21313,7 +21313,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 22
+                "rank": 26
             },
             "finance": {
                 "size": 102.0,
@@ -22161,7 +22161,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 76
+                "rank": 77
             },
             "finance": {
                 "size": 7.5,
@@ -22373,7 +22373,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 40
+                "rank": 41
             },
             "finance": {
                 "size": 26.0,
@@ -22585,7 +22585,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 102
+                "rank": 103
             },
             "finance": {
                 "size": 6.1,
@@ -23009,7 +23009,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 24
+                "rank": 27
             },
             "finance": {
                 "size": 32.3,
@@ -23432,7 +23432,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 19
+                "rank": 22
             },
             "finance": {
                 "size": 77.1,
@@ -23856,7 +23856,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 84
+                "rank": 82
             },
             "finance": {
                 "size": 3.1,
@@ -24280,7 +24280,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 38
+                "rank": 37
             },
             "finance": {
                 "size": 32.1,
@@ -24704,7 +24704,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 142
+                "rank": 141
             },
             "finance": {
                 "size": 1.1,
@@ -24916,7 +24916,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 15
+                "rank": 18
             },
             "finance": {
                 "size": 87.8,
@@ -25128,7 +25128,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 92
+                "rank": 93
             },
             "finance": {
                 "size": 3.5,
@@ -25326,7 +25326,7 @@ const COUNTRIES = {
                 "rank": 109
             },
             "manufacturing": {
-                "size": 3.9,
+                "size": 4.6,
                 "growth": 4.6,
                 "potential": 73,
                 "oppo": [
@@ -25339,7 +25339,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 106
+                "rank": 100
             },
             "finance": {
                 "size": 2.3,
@@ -25538,9 +25538,9 @@ const COUNTRIES = {
                 "rank": 23
             },
             "manufacturing": {
-                "size": 110.0,
+                "size": 149.0,
                 "growth": 3.6,
-                "potential": 85,
+                "potential": 86,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -25975,7 +25975,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 101
+                "rank": 102
             },
             "finance": {
                 "size": 2.4,
@@ -26385,9 +26385,9 @@ const COUNTRIES = {
                 "rank": 76
             },
             "manufacturing": {
-                "size": 11.9,
+                "size": 12.6,
                 "growth": 3.1,
-                "potential": 77,
+                "potential": 78,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -26398,7 +26398,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 71
+                "rank": 72
             },
             "finance": {
                 "size": 7.6,
@@ -26597,9 +26597,9 @@ const COUNTRIES = {
                 "rank": 60
             },
             "manufacturing": {
-                "size": 18.6,
+                "size": 25.3,
                 "growth": 2.3,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -26610,7 +26610,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 58
+                "rank": 55
             },
             "finance": {
                 "size": 11.8,
@@ -26809,9 +26809,9 @@ const COUNTRIES = {
                 "rank": 86
             },
             "manufacturing": {
-                "size": 9.6,
+                "size": 15.6,
                 "growth": 2.2,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -26822,7 +26822,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 79
+                "rank": 64
             },
             "finance": {
                 "size": 6.1,
@@ -27021,7 +27021,7 @@ const COUNTRIES = {
                 "rank": 28
             },
             "manufacturing": {
-                "size": 79.8,
+                "size": 86.9,
                 "growth": 1.9,
                 "potential": 82,
                 "oppo": [
@@ -27034,7 +27034,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 34
+                "rank": 32
             },
             "finance": {
                 "size": 50.8,
@@ -27246,7 +27246,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 114
+                "rank": 113
             },
             "finance": {
                 "size": 1.7,
@@ -27657,9 +27657,9 @@ const COUNTRIES = {
                 "rank": 148
             },
             "manufacturing": {
-                "size": 1.3,
+                "size": 1.2,
                 "growth": 4.6,
-                "potential": 72,
+                "potential": 71,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -27670,7 +27670,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 140
+                "rank": 142
             },
             "finance": {
                 "size": 1,
@@ -27869,9 +27869,9 @@ const COUNTRIES = {
                 "rank": 24
             },
             "manufacturing": {
-                "size": 101.6,
+                "size": 205.3,
                 "growth": 2.7,
-                "potential": 79,
+                "potential": 80,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -27882,7 +27882,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 26
+                "rank": 16
             },
             "finance": {
                 "size": 37.1,
@@ -28081,7 +28081,7 @@ const COUNTRIES = {
                 "rank": 149
             },
             "manufacturing": {
-                "size": 1.9,
+                "size": 2.1,
                 "growth": 5.4,
                 "potential": 74,
                 "oppo": [
@@ -28094,7 +28094,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 129
+                "rank": 126
             },
             "finance": {
                 "size": 1.2,
@@ -28305,7 +28305,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 94
+                "rank": 95
             },
             "finance": {
                 "size": 3.7,
@@ -28502,9 +28502,9 @@ const COUNTRIES = {
                 "rank": 115
             },
             "manufacturing": {
-                "size": 3.1,
+                "size": 3.7,
                 "growth": 2.5,
-                "potential": 78,
+                "potential": 79,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -28515,7 +28515,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 111
+                "rank": 107
             },
             "finance": {
                 "size": 1.8,
@@ -28713,7 +28713,7 @@ const COUNTRIES = {
                 "rank": 93
             },
             "manufacturing": {
-                "size": 6.2,
+                "size": 7.6,
                 "growth": 2.6,
                 "potential": 70,
                 "oppo": [
@@ -28726,7 +28726,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 91
+                "rank": 85
             },
             "finance": {
                 "size": 3.6,
@@ -28925,9 +28925,9 @@ const COUNTRIES = {
                 "rank": 17
             },
             "manufacturing": {
-                "size": 179.4,
+                "size": 251.8,
                 "growth": 2.8,
-                "potential": 80,
+                "potential": 81,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -28938,7 +28938,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 18
+                "rank": 14
             },
             "finance": {
                 "size": 114.2,
@@ -29137,7 +29137,7 @@ const COUNTRIES = {
                 "rank": 82
             },
             "manufacturing": {
-                "size": 9.5,
+                "size": 6.7,
                 "growth": 4.2,
                 "potential": 73,
                 "oppo": [
@@ -29150,7 +29150,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 80
+                "rank": 89
             },
             "finance": {
                 "size": 5.5,
@@ -29349,9 +29349,9 @@ const COUNTRIES = {
                 "rank": 92
             },
             "manufacturing": {
-                "size": 6.5,
+                "size": 8.1,
                 "growth": 4.4,
-                "potential": 61,
+                "potential": 62,
                 "oppo": [
                     "기초 제조업 도입",
                     "농산물 가공",
@@ -29362,7 +29362,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 90
+                "rank": 84
             },
             "finance": {
                 "size": 3.8,
@@ -29561,9 +29561,9 @@ const COUNTRIES = {
                 "rank": 56
             },
             "manufacturing": {
-                "size": 25.2,
+                "size": 17.7,
                 "growth": 2.8,
-                "potential": 78,
+                "potential": 77,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -29574,7 +29574,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 54
+                "rank": 61
             },
             "finance": {
                 "size": 16.0,
@@ -29773,9 +29773,9 @@ const COUNTRIES = {
                 "rank": 81
             },
             "manufacturing": {
-                "size": 9.9,
+                "size": 8.2,
                 "growth": 2.8,
-                "potential": 81,
+                "potential": 80,
                 "oppo": [
                     "스마트팩토리 전환",
                     "친환경 제조 전환",
@@ -29786,7 +29786,7 @@ const COUNTRIES = {
                     "환경 규제 강화",
                     "공급망 리스크"
                 ],
-                "rank": 78
+                "rank": 83
             },
             "finance": {
                 "size": 5.8,
@@ -29985,7 +29985,7 @@ const COUNTRIES = {
                 "rank": 1
             },
             "manufacturing": {
-                "size": 3164.2,
+                "size": 2775.3,
                 "growth": 2.6,
                 "potential": 88,
                 "oppo": [
@@ -30197,9 +30197,9 @@ const COUNTRIES = {
                 "rank": 64
             },
             "manufacturing": {
-                "size": 16.0,
+                "size": 26.6,
                 "growth": 4.7,
-                "potential": 75,
+                "potential": 76,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -30210,7 +30210,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 62
+                "rank": 52
             },
             "finance": {
                 "size": 10.2,
@@ -30422,7 +30422,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 66
+                "rank": 68
             },
             "finance": {
                 "size": 8.4,
@@ -30620,9 +30620,9 @@ const COUNTRIES = {
                 "rank": 25
             },
             "manufacturing": {
-                "size": 91.4,
+                "size": 185.4,
                 "growth": 4.3,
-                "potential": 82,
+                "potential": 83,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -30633,7 +30633,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 30
+                "rank": 21
             },
             "finance": {
                 "size": 33.3,
@@ -30845,7 +30845,7 @@ const COUNTRIES = {
                     "운송 인프라 미비",
                     "자본 부족"
                 ],
-                "rank": 118
+                "rank": 117
             },
             "finance": {
                 "size": 1.5,
@@ -31043,9 +31043,9 @@ const COUNTRIES = {
                 "rank": 39
             },
             "manufacturing": {
-                "size": 48.1,
+                "size": 51.3,
                 "growth": 1.7,
-                "potential": 76,
+                "potential": 77,
                 "oppo": [
                     "글로벌 공급망 편입",
                     "FDI 유치 확대",
@@ -31056,7 +31056,7 @@ const COUNTRIES = {
                     "기술 전환 비용",
                     "노동 규제"
                 ],
-                "rank": 41
+                "rank": 40
             },
             "finance": {
                 "size": 28.1,
@@ -31255,7 +31255,7 @@ const COUNTRIES = {
                 "rank": 116
             },
             "manufacturing": {
-                "size": 3.0,
+                "size": 2.3,
                 "growth": 3.5,
                 "potential": 70,
                 "oppo": [
@@ -31268,7 +31268,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 112
+                "rank": 121
             },
             "finance": {
                 "size": 1.8,
@@ -31467,9 +31467,9 @@ const COUNTRIES = {
                 "rank": 102
             },
             "manufacturing": {
-                "size": 5.0,
+                "size": 6.5,
                 "growth": 2.7,
-                "potential": 69,
+                "potential": 70,
                 "oppo": [
                     "노동집약적 제조 기회",
                     "산업단지 개발",
@@ -31480,7 +31480,7 @@ const COUNTRIES = {
                     "기술력 한계",
                     "물류 비용"
                 ],
-                "rank": 98
+                "rank": 92
             },
             "finance": {
                 "size": 2.9,
@@ -31823,7 +31823,7 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/KRW",
-        "value": "1,417",
+        "value": "1,413",
         "dir": "neutral"
     },
     {
@@ -31833,12 +31833,12 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/INR",
-        "value": "95.37",
+        "value": "95.46",
         "dir": "neutral"
     },
     {
         "label": "USD/BRL",
-        "value": "5.09",
+        "value": "5.12",
         "dir": "neutral"
     },
     {
@@ -31858,7 +31858,7 @@ const TICKER_DATA = [
     },
     {
         "label": "USD/VND",
-        "value": "26,072",
+        "value": "26,033",
         "dir": "neutral"
     },
     {
