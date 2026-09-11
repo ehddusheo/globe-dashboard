@@ -1,28 +1,28 @@
 {
-  "updated": "2026-09-10T22:59:21.254037",
+  "updated": "2026-09-11T23:03:29.656815",
   "quotes": {
     "EUR/USD": {
       "name": "EUR/USD",
       "type": "currency",
-      "price": 1.1634,
+      "price": 1.1618,
       "change_pct": 0
     },
     "GBP/USD": {
       "name": "GBP/USD",
       "type": "currency",
-      "price": 1.3549,
+      "price": 1.3518,
       "change_pct": 0
     },
     "USD/JPY": {
       "name": "USD/JPY",
       "type": "currency",
-      "price": 153.59,
+      "price": 154.25,
       "change_pct": 0
     },
     "USD/KRW": {
       "name": "USD/KRW",
       "type": "currency",
-      "price": 1339.0,
+      "price": 1345.06,
       "change_pct": 0
     },
     "USD/CNY": {
@@ -34,19 +34,19 @@
     "USD/INR": {
       "name": "USD/INR",
       "type": "currency",
-      "price": 95.12,
+      "price": 95.51,
       "change_pct": 0
     },
     "USD/BRL": {
       "name": "USD/BRL",
       "type": "currency",
-      "price": 5.1,
+      "price": 5.11,
       "change_pct": 0
     },
     "USD/SGD": {
       "name": "USD/SGD",
       "type": "currency",
-      "price": 1.26,
+      "price": 1.27,
       "change_pct": 0
     },
     "USD/AED": {
@@ -64,13 +64,13 @@
     "USD/VND": {
       "name": "USD/VND",
       "type": "currency",
-      "price": 25858.29,
+      "price": 25879.19,
       "change_pct": 0
     },
     "USD/AUD": {
       "name": "USD/AUD",
       "type": "currency",
-      "price": 1.38,
+      "price": 1.39,
       "change_pct": 0
     }
   }
