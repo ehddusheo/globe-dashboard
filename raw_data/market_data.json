@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-17T22:59:29.852530",
+  "updated": "2026-10-18T22:52:04.389886",
   "quotes": {
     "EUR/USD": {
       "name": "EUR/USD",
       "type": "currency",
-      "price": 1.1242,
+      "price": 1.1241,
       "change_pct": 0
     },
     "GBP/USD": {
@@ -16,13 +16,13 @@
     "USD/JPY": {
       "name": "USD/JPY",
       "type": "currency",
-      "price": 157.99,
+      "price": 158.0,
       "change_pct": 0
     },
     "USD/KRW": {
       "name": "USD/KRW",
       "type": "currency",
-      "price": 1334.89,
+      "price": 1334.77,
       "change_pct": 0
     },
     "USD/CNY": {
@@ -34,7 +34,7 @@
     "USD/INR": {
       "name": "USD/INR",
       "type": "currency",
-      "price": 95.11,
+      "price": 95.08,
       "change_pct": 0
     },
     "USD/BRL": {
@@ -64,7 +64,7 @@
     "USD/VND": {
       "name": "USD/VND",
       "type": "currency",
-      "price": 25868.9,
+      "price": 25860.56,
       "change_pct": 0
     },
     "USD/AUD": {
